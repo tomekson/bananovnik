@@ -2257,7 +2257,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.13';
+const APP_VERSION = '4.14';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2268,7 +2268,6 @@ if ('serviceWorker' in navigator) {
     const lastSeen = sessionStorage.getItem('bananovnik-v');
     if (lastSeen === APP_VERSION) return;
     document.getElementById('update-banner').style.display = '';
-    document.getElementById('pull-hint').textContent = '↓ Potáhni dolů pro aktualizaci';
   }
 
   function listenForUpdate(reg) {
@@ -2297,8 +2296,7 @@ if ('serviceWorker' in navigator) {
       fetch('version.json?t=' + Date.now()).then(r => r.json()).then(d => {
         if (d.v !== APP_VERSION) {
           document.getElementById('update-banner').style.display = '';
-          document.getElementById('pull-hint').textContent = '↓ Potáhni dolů pro aktualizaci';
-          if (swReg) swReg.update();
+                if (swReg) swReg.update();
         }
       }).catch(() => {});
     }

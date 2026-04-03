@@ -2163,7 +2163,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.14';
+const APP_VERSION = '3.15';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2213,7 +2213,10 @@ if ('serviceWorker' in navigator) {
     if (!pulling) return;
     pulling = false;
     if (document.getElementById('pull-hint').style.opacity === '1') {
-      location.reload();
+      const ph = document.getElementById('pull-hint');
+      ph.textContent = 'Aktualizuji...';
+      ph.style.opacity = '1';
+      setTimeout(() => location.reload(), 400);
     }
     document.getElementById('pull-hint').style.opacity = '0';
   });

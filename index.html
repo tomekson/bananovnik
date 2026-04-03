@@ -73,9 +73,17 @@ body {
   content: ''; position: absolute; inset: 0; border-radius: 12px;
   background: var(--yellow); opacity: .25; transform: translate(-3px, -3px); z-index: -1;
 }
-.logo-name { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); }
-.start-h { font-size: 30px; font-weight: 800; letter-spacing: -.6px; line-height: 1.15; }
+.logo-name { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); position: relative; isolation: isolate; }
+.logo-name::before {
+  content: attr(data-text); position: absolute; top: 1.5px; left: 1.5px;
+  color: var(--yellow); opacity: .5; z-index: -1;
+}
+.start-h { font-size: 30px; font-weight: 800; letter-spacing: -.6px; line-height: 1.15; position: relative; isolation: isolate; }
 .start-h em { font-style: normal; color: var(--blue); }
+.start-h::before {
+  content: attr(data-text); position: absolute; top: 1.5px; left: 1.5px;
+  color: var(--yellow); opacity: .5; z-index: -1; font-style: normal;
+}
 
 /* Sekce */
 .sec { display: flex; flex-direction: column; gap: 8px; }
@@ -97,7 +105,7 @@ body {
   transition: background .15s;
 }
 .mode-card.active { border-color: var(--blue); background: var(--blue-bg); }
-.mode-card.active::before { background: var(--yellow-mid); inset: 0; border: 2px solid var(--yellow); }
+.mode-card.active::before { background: var(--yellow-mid); inset: -3px; border: 2px solid var(--yellow); }
 .mode-card:active:not(.active) { background: var(--card2); }
 .mode-radio {
   width: 20px; height: 20px; border-radius: 50%;
@@ -131,7 +139,7 @@ body {
   transition: background .15s;
 }
 .cpill.active { background: var(--blue-bg); border-color: var(--blue); color: var(--blue); }
-.cpill.active::before { background: var(--yellow-mid); inset: 0; border: 2px solid var(--yellow); }
+.cpill.active::before { background: var(--yellow-mid); inset: -3px; border: 2px solid var(--yellow); }
 .cpill:active:not(.active) { background: var(--card2); }
 
 /* Range inputs */
@@ -141,10 +149,11 @@ body {
   flex: 1; background: var(--card); border: 2px solid var(--line2);
   border-radius: 10px; padding: 10px 12px; font-size: 16px; font-weight: 600;
   color: var(--text); text-align: center; min-width: 0;
-  -webkit-appearance: none; outline: none; box-shadow: var(--shadow);
+  -webkit-appearance: none; outline: none;
   transition: border-color .15s;
+  position: relative; isolation: isolate;
 }
-.range-input:focus { border-color: var(--blue); }
+.range-input:focus { border-color: var(--blue); background: var(--yellow-bg); box-shadow: 6px 6px 0 0 var(--yellow-mid); color: var(--blue); }
 .range-info { font-size: 13px; color: var(--dim); margin-top: 4px; }
 .range-info strong { color: var(--text); }
 .range-info.warn { color: var(--red); }
@@ -206,7 +215,7 @@ body {
 .btn-start::before {
   content: ''; position: absolute; inset: 0; border-radius: var(--r);
   background: var(--yellow-mid); border: 2px solid var(--yellow);
-  transform: translate(6px, 6px); z-index: -1;
+  transform: translate(3px, 3px); z-index: -1;
 }
 .btn-start:active { opacity: .88; transform: scale(.98); }
 .btn-start:disabled { opacity: .35; cursor: default; transform: none; }
@@ -421,13 +430,13 @@ body {
     <div class="logo-row">
       <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
       <div>
-        <div class="logo-name">Banánovník</div>
+        <div class="logo-name" data-text="Banánovník">Banánovník</div>
         <div style="font-size:10px;color:var(--muted);font-weight:500;letter-spacing:1px;">v<span id="app-version"></span></div>
       </div>
     </div>
 
     <div>
-      <div class="start-h"><em>Komunikace a komunikační dovednosti</em></div>
+      <div class="start-h" data-text="Komunikace a komunikační dovednosti"><em>Komunikace a komunikační dovednosti</em></div>
       <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;"><span id="db-qcount"></span> otázek v databázi · otázky aktualizovány 3. dubna 2026</div>
       <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci. Rozdělaný test nebude uložen.</div>
       <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">Zkouškový test: 60 min., 25 otázek po 4 bodech <br>Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.</div>
@@ -464,7 +473,7 @@ body {
         <div class="cpill active" id="cp-0" onclick="setCount(0)">Vše</div>
       </div>
       <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
-        <input class="range-input" id="custom-count" type="number" min="1" placeholder="Vlastní počet" oninput="setCustomCount()" onfocus="setCustomCount()" inputmode="numeric" style="flex:1;text-align:left;font-size:14px;font-weight:500;padding:10px 12px;">
+        <input class="range-input" id="custom-count" type="number" min="1" placeholder="Vlastní počet" oninput="this.value=this.value.replace(/[^0-9]/g,'');setCustomCount()" onfocus="setCustomCount()" inputmode="numeric" style="flex:1;text-align:left;font-size:15px;font-weight:700;padding:10px 12px;" pattern="[0-9]*">
       </div>
     </div>
 
@@ -2214,7 +2223,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.29';
+const APP_VERSION = '3.30';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

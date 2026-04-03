@@ -366,7 +366,8 @@ body {
 
     <div>
       <div class="start-h"><em>Komunikace a komunikační dovednosti</em></div>
-      <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;"><span id="db-qcount"></span> otázek v databázi · Poslední aktualizace 3. dubna 2026</div>
+      <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;"><span id="db-qcount"></span> otázek v databázi · v<span id="app-version"></span> · 3. dubna 2026</div>
+      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci</div>
       <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.</div>
     </div>
 
@@ -570,7 +571,7 @@ const QUESTIONS = [
       `vynášení soudů`,
       `zavádějící srovnání`,
       `separace a ideová partenogeneze`,
-      `Terium non datur`
+      `Tertium non datur`
     ],
     correct: [2, 4]
   },
@@ -633,7 +634,7 @@ const QUESTIONS = [
     q: `Uveďte jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: Př. „Máš pravdu, nemusel jsem to dělat právě takhle. Teď si to uvědomuju, že to šlo udělat i jinak a lépe. Jak to mohu napravit?"`,
     opts: [
       `asertivní ne`,
-      `zaseknutá gramodesky`,
+      `zaseknutá gramodeska`,
       `asertivní obligace`,
       `asertivní ano`,
       `asertivní aserce`
@@ -751,7 +752,7 @@ const QUESTIONS = [
     correct: [1, 2, 4]
   },
   {
-    q: `Pro zvládnutí kritiky se doporučuje požít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace: Př. „Co přesně dělám špatně?" „V čem ještě chybuji?" „Jak se to konkrétně projevuje?" „Jaké mám ještě nedostatky?" „V čem ještě jsem tak hrozný"`,
+    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace: Př. „Co přesně dělám špatně?" „V čem ještě chybuji?" „Jak se to konkrétně projevuje?" „Jaké mám ještě nedostatky?" „V čem ještě jsem tak hrozný"`,
     opts: [
       `negativní dotazování`,
       `požádání o laskavost`,
@@ -775,7 +776,7 @@ const QUESTIONS = [
   {
     q: `Za asertivní se považuje takové chování, kdy jednající člověk`,
     opts: [
-      `ostatní lidi považuje za „dobré a tak si umí říct o laskavost a sám ji také poskytnout`,
+      `ostatní lidi považuje za „dobré" a tak si umí říct o laskavost a sám ji také poskytnout`,
       `dokáže přesně a jasně definovat, o co mu jde, co si myslí a jak prožívá`,
       `má pozitivní postoj k druhým lidem`,
       `je nejistý`,
@@ -909,7 +910,7 @@ const QUESTIONS = [
     opts: [
       `zaměření pohledu, délka pohledu, úhel pootevření víček, sdělování pohybem obočí, četností pohledu, frekvencí mrkacích pohybů aj.`,
       `sdělování fyzickými postoji, poloha nohou, rukou může sdělit přátelský či nepřátelský postoj, zda s nimi chce dál jednat či nikoliv`,
-      `sdělování vzájemným přiblížením či oddálením, fyzická vzdálenost zpravidla koreluje se vzdáleností psychikou. Vzdálenosti ovlivňují genderové, statusové a společenské odlišnosti`,
+      `sdělování vzájemným přiblížením či oddálením, fyzická vzdálenost zpravidla koreluje se vzdáleností psychickou. Vzdálenosti ovlivňují genderové, statusové a společenské odlišnosti`,
       `sdělování pohybem, rozsah pohybu souvisí s intenzitou emocionálního prožívání určité situace. Poznáme intenzitu prožitků, řadíme sem především pohyby hlavou a krku.`,
       `tradování kulturou (zdvořilostní úsměv) často takto sdělujeme emoce (city, pocity, nálady, afekty)`
     ],
@@ -1065,7 +1066,7 @@ const QUESTIONS = [
       `představuje, že existují pouze 2 možná řešení`,
       `„všichni dokonalí muži nosí prádlo uragán..."`,
       `kilo peří x kilo železa`,
-      `„nepřipustí zobecnění typu „všichni muži jsou stejní"`
+      `„nepřipustí zobecnění typu „všichni muži jsou stejní""`
     ],
     correct: [3]
   },
@@ -2019,7 +2020,7 @@ function openReview() {
       let cls = 'ro ro-dim';
       let icon = ``;
 
-      if (showFb) {
+      if (confirmed) {
         if (isSel && isCorrect)  { cls = 'ro ro-ok';   icon = '✓'; }
         else if (isSel)          { cls = 'ro ro-bad';  icon = '✗'; }
         else if (isCorrect)      { cls = 'ro ro-miss'; icon = '○'; }
@@ -2070,7 +2071,21 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+const APP_VERSION = '1.0';
+document.getElementById('app-version').textContent = APP_VERSION;
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then(reg => {
+    reg.addEventListener('updatefound', () => {
+      const nw = reg.installing;
+      nw.addEventListener('statechange', () => {
+        if (nw.state === 'activated' && navigator.serviceWorker.controller) {
+          document.getElementById('update-banner').style.display = '';
+        }
+      });
+    });
+  });
+}
 </script>
 </body>
 </html>

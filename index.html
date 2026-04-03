@@ -2153,6 +2153,13 @@ function shuffle(a) {
 // Init
 // ─────────────────────────────────────────────────────────────────
 (function init() {
+  if (sessionStorage.getItem('bananovnik-refreshed')) {
+    sessionStorage.removeItem('bananovnik-refreshed');
+    const ph = document.getElementById('pull-hint');
+    ph.textContent = '✓ Aktualizováno';
+    ph.style.opacity = '1';
+    setTimeout(() => { ph.style.opacity = '0'; }, 2000);
+  }
   const total = QUESTIONS.length;
   document.getElementById('q-count-label').textContent = total;
   document.getElementById('db-qcount').textContent = total;
@@ -2163,34 +2170,44 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.15';
+const APP_VERSION = '3.16';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
   const hasExisting = !!navigator.serviceWorker.controller;
+  let swReg = null;
+
+  function showBannerIfNeeded() {
+    const lastSeen = sessionStorage.getItem('bananovnik-v');
+    if (lastSeen === APP_VERSION) return;
+    document.getElementById('update-banner').style.display = '';
+  }
+
+  function listenForUpdate(reg) {
+    reg.addEventListener('updatefound', () => {
+      const nw = reg.installing;
+      if (!nw) return;
+      nw.addEventListener('statechange', () => {
+        if (nw.state === 'activated') showBannerIfNeeded();
+      });
+    });
+  }
+
   navigator.serviceWorker.register('sw.js').then(reg => {
+    swReg = reg;
     if (navigator.onLine && hasExisting) {
       reg.update();
-      reg.addEventListener('updatefound', () => {
-        const nw = reg.installing;
-        if (!nw) return;
-        nw.addEventListener('statechange', () => {
-          if (nw.state === 'activated') {
-            // Show banner only if page was loaded from old cache
-            const lastSeen = sessionStorage.getItem('bananovnik-v');
-            if (lastSeen === APP_VERSION) return;
-            document.getElementById('update-banner').style.display = '';
-          }
-        });
-      });
+      listenForUpdate(reg);
     }
   });
+
   sessionStorage.setItem('bananovnik-v', APP_VERSION);
 
   // Check for updates when app returns to foreground
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible' && navigator.onLine) {
-      navigator.serviceWorker.getRegistration().then(r => { if (r) r.update(); });
+    if (document.visibilityState === 'visible' && navigator.onLine && swReg) {
+      listenForUpdate(swReg);
+      swReg.update();
     }
   });
 }
@@ -2216,6 +2233,7 @@ if ('serviceWorker' in navigator) {
       const ph = document.getElementById('pull-hint');
       ph.textContent = 'Aktualizuji...';
       ph.style.opacity = '1';
+      sessionStorage.setItem('bananovnik-refreshed', '1');
       setTimeout(() => location.reload(), 400);
     }
     document.getElementById('pull-hint').style.opacity = '0';

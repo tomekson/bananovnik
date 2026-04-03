@@ -1,5 +1,5 @@
-const CACHE = 'bananovnik-v3.28';
-const ASSETS = ['./', './index.html', './manifest.json', './favicon.svg'];
+const CACHE = 'bananovnik-v3.29';
+const ASSETS = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));

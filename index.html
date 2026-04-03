@@ -424,6 +424,12 @@ body {
   padding: 24px 20px max(24px, env(safe-area-inset-bottom));
   width: 100%; max-width: 480px;
   animation: slideUp .25s cubic-bezier(.4,0,.2,1);
+  position: relative; isolation: isolate;
+}
+.dialog::before {
+  content: ''; position: absolute; inset: 0; border-radius: 20px 20px 0 0;
+  background: var(--yellow-mid); border: 2px solid var(--yellow); border-bottom: none;
+  transform: translate(5px, -5px); z-index: -1;
 }
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 .dialog-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
@@ -433,6 +439,12 @@ body {
   background: var(--red-bg); color: var(--red); border: 1px solid rgba(220,38,38,.2);
   border-radius: var(--r); padding: 15px; font-size: 16px; font-weight: 600;
   cursor: pointer; -webkit-appearance: none; transition: opacity .15s;
+  position: relative; isolation: isolate;
+}
+.btn-danger::before {
+  content: ''; position: absolute; inset: 0; border-radius: var(--r);
+  background: rgba(224,82,82,.08); border: 1.5px solid rgba(224,82,82,.2);
+  transform: translate(3px, 3px); z-index: -1;
 }
 .btn-danger:active { opacity: .8; }
 </style>
@@ -528,7 +540,7 @@ body {
 
     <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test →</button>
 
-    <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline — v menu prohlížeče zvol „Přidat na plochu" nebo „Instalovat aplikaci".</div>
+    <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline — v prohlížeče zvol „Sdílet - Přidat na plochu" nebo „Menu - Instalovat aplikaci".</div>
 
 
   </div>
@@ -2245,7 +2257,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.10';
+const APP_VERSION = '4.11';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

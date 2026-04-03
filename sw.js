@@ -1,4 +1,4 @@
-const CACHE = 'bananovnik-v3.13';
+const CACHE = 'bananovnik-v3.14';
 const ASSETS = ['./', './index.html', './manifest.json'];
 
 self.addEventListener('install', e => {

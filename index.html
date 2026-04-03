@@ -2163,7 +2163,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.13';
+const APP_VERSION = '3.14';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2186,6 +2186,13 @@ if ('serviceWorker' in navigator) {
     }
   });
   sessionStorage.setItem('bananovnik-v', APP_VERSION);
+
+  // Check for updates when app returns to foreground
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && navigator.onLine) {
+      navigator.serviceWorker.getRegistration().then(r => { if (r) r.update(); });
+    }
+  });
 }
 
 // Pull-to-refresh (start screen only)

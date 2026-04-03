@@ -374,6 +374,7 @@ body {
 
 <!-- ═══════════════════════════ START ═══════════════════════════ -->
 <div id="screen-start" class="screen active">
+  <div id="pull-hint" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;opacity:0;transition:opacity .2s;">↓ Aktualizovat</div>
   <div class="start-inner">
 
     <div class="logo-row">
@@ -2162,17 +2163,18 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.10';
+const APP_VERSION = '3.11';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
+  const hasExisting = !!navigator.serviceWorker.controller;
   navigator.serviceWorker.register('sw.js').then(reg => {
-    if (navigator.onLine) {
+    if (navigator.onLine && hasExisting) {
       reg.update();
       reg.addEventListener('updatefound', () => {
         const nw = reg.installing;
         nw.addEventListener('statechange', () => {
-          if (nw.state === 'activated' && navigator.serviceWorker.controller) {
+          if (nw.state === 'activated') {
             document.getElementById('update-banner').style.display = '';
           }
         });
@@ -2180,6 +2182,30 @@ if ('serviceWorker' in navigator) {
     }
   });
 }
+
+// Pull-to-refresh (start screen only)
+(function() {
+  let startY = 0;
+  let pulling = false;
+  document.addEventListener('touchstart', e => {
+    if (!document.getElementById('screen-start').classList.contains('active')) return;
+    if (window.scrollY === 0) { startY = e.touches[0].clientY; pulling = true; }
+  });
+  document.addEventListener('touchmove', e => {
+    if (!pulling) return;
+    const dy = e.touches[0].clientY - startY;
+    if (dy > 80) document.getElementById('pull-hint').style.opacity = '1';
+    else document.getElementById('pull-hint').style.opacity = '0';
+  });
+  document.addEventListener('touchend', () => {
+    if (!pulling) return;
+    pulling = false;
+    if (document.getElementById('pull-hint').style.opacity === '1') {
+      location.reload();
+    }
+    document.getElementById('pull-hint').style.opacity = '0';
+  });
+})();
 </script>
 </body>
 </html>

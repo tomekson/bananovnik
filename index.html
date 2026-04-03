@@ -427,23 +427,23 @@ body {
   position: relative; isolation: isolate;
 }
 .dialog::before {
-  content: ''; position: absolute; inset: 0; border-radius: 20px 20px 0 0;
-  background: var(--yellow-mid); border: 2px solid var(--yellow); border-bottom: none;
-  transform: translate(5px, -5px); z-index: -1;
+  content: ''; position: absolute; inset: -3px; border-radius: 22px 22px 0 0;
+  background: var(--yellow-mid); border: 2px solid var(--yellow);
+  border-bottom: none; transform: translate(0, -5px); z-index: -1;
 }
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 .dialog-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
 .dialog-body  { font-size: 15px; color: var(--dim); margin-bottom: 20px; line-height: 1.5; }
 .dialog-btns  { display: flex; flex-direction: column; gap: 9px; }
 .btn-danger {
-  background: var(--red-bg); color: var(--red); border: 1px solid rgba(220,38,38,.2);
+  background: var(--red-bg); color: var(--red); border: 2px solid rgba(220,38,38,.35);
   border-radius: var(--r); padding: 15px; font-size: 16px; font-weight: 600;
   cursor: pointer; -webkit-appearance: none; transition: opacity .15s;
   position: relative; isolation: isolate;
 }
 .btn-danger::before {
-  content: ''; position: absolute; inset: 0; border-radius: var(--r);
-  background: rgba(224,82,82,.08); border: 1.5px solid rgba(224,82,82,.2);
+  content: ''; position: absolute; inset: -2px; border-radius: var(--r);
+  background: rgba(224,82,82,.12); border: 2px solid rgba(224,82,82,.3);
   transform: translate(3px, 3px); z-index: -1;
 }
 .btn-danger:active { opacity: .8; }
@@ -632,7 +632,7 @@ body {
     <div class="dialog-body">Váš postup a skóre nebudou uloženy.</div>
     <div class="dialog-btns">
       <button class="btn-danger" onclick="doAbort()">Ukončit test</button>
-      <button class="btn-sec"    onclick="closeAbort()">Pokračovat v testu</button>
+      <button class="btn-start"  onclick="closeAbort()">Pokračovat v testu</button>
     </div>
   </div>
 </div>
@@ -2257,7 +2257,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.11';
+const APP_VERSION = '4.12';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

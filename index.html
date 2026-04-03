@@ -192,6 +192,8 @@ body {
 .prog-label b { color: var(--text); }
 .pbar { height: 4px; background: var(--card2); border-radius: 100px; overflow: hidden; }
 .pbar-fill { height: 100%; background: var(--blue); border-radius: 100px; transition: width .4s cubic-bezier(.4,0,.2,1); }
+.btn-nav { width: 28px; height: 28px; font-size: 18px; font-weight: 700; border-radius: 7px; }
+.btn-nav:disabled { opacity: .25; cursor: default; }
 
 .quiz-body { padding: 20px 18px; padding-bottom: 160px; flex: 1; max-width: 640px; margin: 0 auto; width: 100%; }
 .q-num {
@@ -202,6 +204,12 @@ body {
 .q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); }
 .q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; }
 .q-hint.done { color: var(--dim); }
+.hint-btn {
+  display: inline-block; padding: 4px 10px; border-radius: 6px;
+  background: var(--card2); border: 1px solid var(--line2); color: var(--dim);
+  font-size: 11px; font-weight: 600; cursor: pointer; letter-spacing: .3px;
+}
+.hint-btn:active { background: var(--line); }
 
 .opts { display: flex; flex-direction: column; gap: 9px; margin-bottom: 18px; }
 .opt {
@@ -258,13 +266,22 @@ body {
 
 .quiz-ftr {
   position: fixed; bottom: 0; left: 0; right: 0;
-  padding: 11px 18px max(14px, env(safe-area-inset-bottom));
+  padding: 11px 18px max(28px, env(safe-area-inset-bottom));
   background: var(--card); border-top: 1px solid var(--line);
   box-shadow: 0 -1px 6px rgba(0,0,0,.04); display: flex; gap: 9px;
   justify-content: center;
 }
 .quiz-ftr-inner { max-width: 640px; width: 100%; display: flex; flex-direction: column; gap: 6px; }
 .quiz-ftr-inner .btn-start { width: 100%; padding: 14px; font-size: 16px; }
+.quiz-ftr-row { display: flex; gap: 9px; }
+.quiz-ftr-row .btn-start { flex: 1; }
+.btn-retry {
+  flex: 0 0 auto; padding: 14px 18px; border-radius: var(--r);
+  font-size: 14px; font-weight: 600; cursor: pointer; border: none;
+  background: var(--amber-bg); color: var(--amber); border: 1.5px solid rgba(180,83,9,.25);
+  transition: opacity .15s; -webkit-appearance: none;
+}
+.btn-retry:active { opacity: .7; }
 .btn-sec {
   background: var(--card2); color: var(--text);
   border: 1.5px solid var(--line2); border-radius: var(--r);
@@ -367,8 +384,8 @@ body {
     <div>
       <div class="start-h"><em>Komunikace a komunikační dovednosti</em></div>
       <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;"><span id="db-qcount"></span> otázek v databázi · v<span id="app-version"></span> · 3. dubna 2026</div>
-      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci</div>
-      <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.</div>
+      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci. Rozdělaný test nebude uložen.</div>
+      <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">Zkouškový test: 60 min., 25 otázek po 4 bodech <br>Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.</div>
     </div>
 
     <!-- Výběr otázek -->
@@ -401,6 +418,9 @@ body {
         <div class="cpill" id="cp-50"  onclick="setCount(50)">50</div>
         <div class="cpill active" id="cp-0" onclick="setCount(0)">Vše</div>
       </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+        <input class="range-input" id="custom-count" type="number" min="1" placeholder="Vlastní počet" oninput="setCustomCount()" onfocus="setCustomCount()" inputmode="numeric" style="flex:1;text-align:left;font-size:14px;font-weight:500;padding:10px 12px;">
+      </div>
     </div>
 
     <!-- Rozsah otázek -->
@@ -426,21 +446,12 @@ body {
       </div>
     </div>
 
-    <!-- Zobrazit počet správných odpovědí (výchozí: vypnuto) -->
-    <div class="tog-row" onclick="togOpt('showCount')">
-      <div>
-        <div class="tog-label">Zobrazit počet správných</div>
-        <div class="tog-sub">Nápověda: kolik možností vybrat</div>
-      </div>
-      <div class="tog" id="tog-showCount"></div>
-    </div>
-
     <!-- Pořadí otázek -->
     <div class="sec">
       <div class="sec-label">Pořadí otázek</div>
       <div class="seg" id="seg-qorder">
-        <button class="seg-btn active" onclick="setSeg('qorder','random')">✓ Náhodně</button>
-        <button class="seg-btn"        onclick="setSeg('qorder','seq')">Postupně</button>
+        <button class="seg-btn"        onclick="setSeg('qorder','random')">Náhodně</button>
+        <button class="seg-btn active" onclick="setSeg('qorder','seq')">✓ Postupně</button>
       </div>
     </div>
 
@@ -458,7 +469,11 @@ body {
     <div class="quiz-hdr-inner">
       <div class="quiz-nav">
         <button class="btn-ico" onclick="askAbort()">✕</button>
-        <span class="prog-label"><b id="p-cur">1</b> / <span id="p-tot">—</span></span>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <button class="btn-ico btn-nav" id="btn-prev" onclick="goQ(-1)">‹</button>
+          <span class="prog-label"><b id="p-cur">1</b> / <span id="p-tot">—</span></span>
+          <button class="btn-ico btn-nav" id="btn-next" onclick="goQ(1)">›</button>
+        </div>
         <button class="btn-ico" onclick="openReview()" style="font-size:13px">☰</button>
       </div>
       <div class="pbar"><div class="pbar-fill" id="pbar-fill"></div></div>
@@ -480,6 +495,10 @@ body {
         <span class="fb-pts"  id="fb-pts"></span>
       </div>
       <button class="btn-start" id="btn-main" onclick="mainBtn()">Potvrdit</button>
+      <div class="quiz-ftr-row" id="ftr-row" style="display:none">
+        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat</button>
+        <button class="btn-start" onclick="mainBtn()">Další otázka →</button>
+      </div>
     </div>
   </div>
 </div>
@@ -503,6 +522,7 @@ body {
       <div class="scel"><div class="scel-val r" id="r-miss">—</div><div class="scel-lbl">Špatně / 0</div></div>
     </div>
     <div class="r-actions">
+      <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Zopakovat chybné</button>
       <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
       <button class="btn-sec"   onclick="startQuiz()">Opakovat stejné nastavení</button>
       <button class="btn-sec"   onclick="show('screen-start')">Zpět na nastavení</button>
@@ -1681,9 +1701,8 @@ const cfg = {
   mode:      'all',      // 'all' | 'range'
   count:     0,          // 0 = vše
   fb:        'ihned',    // 'ihned' | 'after'
-  qorder:    'random',   // 'random' | 'seq'
+  qorder:    'seq',      // 'random' | 'seq'
   oorder:    'random',   // 'random' | 'seq'
-  showCount: false,      // výchozí OFF
 };
 
 // Segmented controls
@@ -1708,12 +1727,6 @@ function setSeg(key, val) {
   });
 }
 
-// Toggle (pouze showCount)
-function togOpt(k) {
-  cfg[k] = !cfg[k];
-  document.getElementById('tog-' + k).classList.toggle('on', cfg[k]);
-}
-
 // Mode
 function setMode(m) {
   cfg.mode = m;
@@ -1732,6 +1745,16 @@ function setCount(n) {
     const el = document.getElementById('cp-' + v);
     if (el) el.classList.toggle('active', String(n) === v);
   });
+  document.getElementById('custom-count').value = '';
+}
+
+function setCustomCount() {
+  ['0','10','25','50'].forEach(v => {
+    const el = document.getElementById('cp-' + v);
+    if (el) el.classList.remove('active');
+  });
+  const val = parseInt(document.getElementById('custom-count').value);
+  cfg.count = val > 0 ? val : 0;
 }
 
 // Range info
@@ -1807,6 +1830,8 @@ function startQuiz() {
     answers:    questions.map(() => []),
     scores:     questions.map(() => null),
     confirmed:  questions.map(() => false),
+    retried:    questions.map(() => false),
+    hintUsed:   questions.map(() => false),
     prevScreen: null,
   };
 
@@ -1833,13 +1858,17 @@ function renderQ() {
   document.getElementById('q-text').textContent    = q.q;
 
   const hintEl = document.getElementById('q-hint');
-  if (cfg.showCount) {
-    const c = q.correct.length;
-    hintEl.textContent = c === 1 ? '1 správná odpověď' : `${c} správné odpovědi`;
-    hintEl.className   = 'q-hint' + (done ? ' done' : '');
-  } else {
-    hintEl.textContent = '';
+  const c = q.correct.length;
+  const hintTxt = c === 1 ? '1 správná odpověď' : `${c} správné odpovědi`;
+  if (done) {
+    hintEl.textContent = hintTxt;
+    hintEl.className   = 'q-hint done';
+  } else if (S.hintUsed[n]) {
+    hintEl.textContent = hintTxt;
     hintEl.className   = 'q-hint';
+  } else {
+    hintEl.innerHTML = `<span class="hint-btn" onclick="S.hintUsed[${n}]=true;renderQ()">Nápověda</span>`;
+    hintEl.className = 'q-hint';
   }
 
   // Možnosti
@@ -1900,18 +1929,72 @@ function renderQ() {
     fbEl.className = 'fb';
   }
 
-  // Tlačítko
-  const btn = document.getElementById('btn-main');
+  // Tlačítka
+  const btn    = document.getElementById('btn-main');
+  const ftrRow = document.getElementById('ftr-row');
+  const score  = S.scores[n];
+
   if (!done) {
     btn.textContent   = 'Potvrdit';
     btn.style.opacity = sel.length === 0 ? '0.4' : '1';
-  } else if (n < tot - 1) {
-    btn.textContent   = 'Další otázka →';
-    btn.style.opacity = '1';
+    btn.style.display = '';
+    ftrRow.style.display = 'none';
+  } else if (done && score < 1 && cfg.fb === 'ihned') {
+    // Skóre < 1 → zobrazit retry + další/výsledky
+    btn.style.display = 'none';
+    ftrRow.style.display = '';
+    const ftrNext = ftrRow.querySelector('.btn-start');
+    ftrNext.textContent = n < tot - 1 ? 'Další otázka →' : 'Zobrazit výsledky →';
   } else {
-    btn.textContent   = 'Zobrazit výsledky →';
+    btn.style.display = '';
+    ftrRow.style.display = 'none';
+    btn.textContent = n < tot - 1 ? 'Další otázka →' : 'Zobrazit výsledky →';
     btn.style.opacity = '1';
   }
+
+  // Navigace ← →
+  document.getElementById('btn-prev').disabled = n === 0;
+  document.getElementById('btn-next').disabled = n === tot - 1;
+
+}
+
+function retryQ() {
+  const n = S.cur;
+  S.answers[n]   = [];
+  S.scores[n]    = null;
+  S.confirmed[n] = false;
+  S.retried[n]   = true;
+  S.hintUsed[n]  = false;
+  window.scrollTo(0, 0);
+  renderQ();
+}
+
+function retryWrong() {
+  const wrong = [];
+  S.questions.forEach((q, i) => {
+    if (S.scores[i] < 1) wrong.push(q);
+  });
+  if (wrong.length === 0) return;
+  S = {
+    questions:  wrong,
+    cur:        0,
+    answers:    wrong.map(() => []),
+    scores:     wrong.map(() => null),
+    confirmed:  wrong.map(() => false),
+    retried:    wrong.map(() => false),
+    hintUsed:   wrong.map(() => false),
+    prevScreen: null,
+  };
+  show('screen-quiz');
+  renderQ();
+}
+
+function goQ(dir) {
+  const next = S.cur + dir;
+  if (next < 0 || next >= S.questions.length) return;
+  S.cur = next;
+  window.scrollTo(0, 0);
+  renderQ();
 }
 
 function toggleOpt(i) {
@@ -1932,7 +2015,7 @@ function mainBtn() {
     const hasWrong  = sel.some(i => !correctSet.has(i));
     let score = 0;
     if (!hasWrong && sel.length > 0)
-      score = sel.filter(i => correctSet.has(i)).length / q.correct.length;
+      score = Math.floor(sel.filter(i => correctSet.has(i)).length / q.correct.length * 100) / 100;
     S.scores[n]    = score;
     S.confirmed[n] = true;
     renderQ();
@@ -1963,6 +2046,9 @@ function showResults() {
   document.getElementById('r-badge').innerHTML   = pct >= PASS_THRESHOLD
     ? '<div class="badge badge-pass">✓ Prošel/a</div>'
     : '<div class="badge badge-fail">✗ Neprošel/a</div>';
+
+  const hasWrong = S.scores.some(s => s < 1);
+  document.getElementById('btn-retry-wrong').style.display = hasWrong ? '' : 'none';
 
   S.prevScreen = 'screen-results';
   show('screen-results');
@@ -2073,7 +2159,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '1.01';
+const APP_VERSION = '3.00';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

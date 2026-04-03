@@ -2163,7 +2163,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.12';
+const APP_VERSION = '3.13';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2173,14 +2173,19 @@ if ('serviceWorker' in navigator) {
       reg.update();
       reg.addEventListener('updatefound', () => {
         const nw = reg.installing;
+        if (!nw) return;
         nw.addEventListener('statechange', () => {
           if (nw.state === 'activated') {
+            // Show banner only if page was loaded from old cache
+            const lastSeen = sessionStorage.getItem('bananovnik-v');
+            if (lastSeen === APP_VERSION) return;
             document.getElementById('update-banner').style.display = '';
           }
         });
       });
     }
   });
+  sessionStorage.setItem('bananovnik-v', APP_VERSION);
 }
 
 // Pull-to-refresh (start screen only)

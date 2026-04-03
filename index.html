@@ -467,7 +467,7 @@ body {
     <div>
       <div class="start-h" data-text="Komunikace a komunikační dovednosti"><em>Komunikace a komunikační dovednosti</em></div>
       <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;"><span id="db-qcount"></span> otázek v databázi · otázky aktualizovány 3. dubna 2026</div>
-      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci. Rozdělaný test nebude uložen.</div>
+      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</div>
       <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">Zkouškový test: 60 min., 25 otázek po 4 bodech <br>Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.</div>
     </div>
 
@@ -2257,7 +2257,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.12';
+const APP_VERSION = '4.13';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2318,7 +2318,7 @@ if ('serviceWorker' in navigator) {
   document.addEventListener('touchmove', e => {
     if (!pulling) return;
     const dy = e.touches[0].clientY - startY;
-    if (dy > 80 && !ready) { ph.textContent = '↑ Pusť pro aktualizaci'; ph.style.color = 'var(--blue)'; ready = true; }
+    if (dy > 80 && !ready) { ph.textContent = '↑ Pusť pro obnovení'; ph.style.color = 'var(--muted)'; ready = true; }
     else if (dy <= 80 && ready) { ph.textContent = ''; ph.style.color = ''; ready = false; }
   });
   document.addEventListener('touchend', () => {
@@ -2330,7 +2330,7 @@ if ('serviceWorker' in navigator) {
       sessionStorage.setItem('bananovnik-refreshed', '1');
       setTimeout(() => location.reload(), 400);
     } else {
-      ph.textContent = '↓ Potáhni dolů pro aktualizaci';
+      ph.textContent = '';
       ph.style.color = '';
     }
   });

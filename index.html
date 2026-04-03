@@ -437,11 +437,11 @@ body {
       <div class="range-info" id="range-info"></div>
     </div>
 
-    <!-- Okamžitá zpětná vazba -->
+    <!-- Vyhodnocení odpovědí -->
     <div class="sec">
-      <div class="sec-label">Okamžitá zpětná vazba</div>
+      <div class="sec-label">Vyhodnocení odpovědí</div>
       <div class="seg" id="seg-fb">
-        <button class="seg-btn active" onclick="setSeg('fb','ihned')">✓ Ihned</button>
+        <button class="seg-btn active" onclick="setSeg('fb','ihned')">✓ Po každé otázce</button>
         <button class="seg-btn"       onclick="setSeg('fb','after')">Po dokončení testu</button>
       </div>
     </div>
@@ -1716,7 +1716,7 @@ function setSeg(key, val) {
     const isActive = vals[i] === val;
     btn.classList.toggle('active', isActive);
     const labels = {
-      fb:     [['✓ Ihned','Po dokončení testu'], ['Ihned','✓ Po dokončení testu']],
+      fb:     [['✓ Po každé otázce','Po dokončení testu'], ['Po každé otázce','✓ Po dokončení testu']],
       qorder: [['✓ Náhodně','Postupně'], ['Náhodně','✓ Postupně']],
       oorder: [['✓ Náhodně','Postupně'], ['Náhodně','✓ Postupně']],
     };
@@ -1860,9 +1860,12 @@ function renderQ() {
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
   const hintTxt = c === 1 ? '1 správná odpověď' : `${c} správné odpovědi`;
-  if (done) {
+  if (done && cfg.fb === 'ihned') {
     hintEl.textContent = hintTxt;
     hintEl.className   = 'q-hint done';
+  } else if (cfg.fb === 'after') {
+    hintEl.textContent = '';
+    hintEl.className   = 'q-hint';
   } else if (S.hintUsed[n]) {
     hintEl.textContent = hintTxt;
     hintEl.className   = 'q-hint';
@@ -1887,7 +1890,7 @@ function renderQ() {
       else                     { cls += ' locked'; }
     } else if (done) {
       cls += ' locked';
-      if (isSel) { cls += ' sel'; box = '✓'; }
+      if (isSel) { cls += ' sel picked'; box = '•'; }
     } else {
       if (isSel) { cls += ' sel'; box = '✓'; }
     }
@@ -2159,7 +2162,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.00';
+const APP_VERSION = '3.10';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

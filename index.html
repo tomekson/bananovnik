@@ -374,7 +374,7 @@ body {
 
 <!-- ═══════════════════════════ START ═══════════════════════════ -->
 <div id="screen-start" class="screen active">
-  <div id="pull-hint" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;transition:opacity .2s;">↓ Potáhni dolů pro aktualizaci</div>
+  <div id="pull-hint" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;transition:opacity .2s;"></div>
   <div class="start-inner">
 
     <div class="logo-row">
@@ -2158,7 +2158,7 @@ function shuffle(a) {
     const ph = document.getElementById('pull-hint');
     ph.textContent = '✓ Aktualizováno';
     ph.style.color = 'var(--green)';
-    setTimeout(() => { ph.textContent = '↓ Potáhni dolů pro aktualizaci'; ph.style.color = ''; }, 2500);
+    setTimeout(() => { ph.textContent = ''; ph.style.color = ''; }, 2500);
   }
   const total = QUESTIONS.length;
   document.getElementById('q-count-label').textContent = total;
@@ -2170,7 +2170,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '3.17';
+const APP_VERSION = '3.18';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2181,6 +2181,7 @@ if ('serviceWorker' in navigator) {
     const lastSeen = sessionStorage.getItem('bananovnik-v');
     if (lastSeen === APP_VERSION) return;
     document.getElementById('update-banner').style.display = '';
+    document.getElementById('pull-hint').textContent = '↓ Potáhni dolů pro aktualizaci';
   }
 
   function listenForUpdate(reg) {
@@ -2205,9 +2206,14 @@ if ('serviceWorker' in navigator) {
 
   // Check for updates when app returns to foreground
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible' && navigator.onLine && swReg) {
-      listenForUpdate(swReg);
-      swReg.update();
+    if (document.visibilityState === 'visible' && navigator.onLine) {
+      fetch('version.json?t=' + Date.now()).then(r => r.json()).then(d => {
+        if (d.v !== APP_VERSION) {
+          document.getElementById('update-banner').style.display = '';
+          document.getElementById('pull-hint').textContent = '↓ Potáhni dolů pro aktualizaci';
+          if (swReg) swReg.update();
+        }
+      }).catch(() => {});
     }
   });
 }
@@ -2226,7 +2232,7 @@ if ('serviceWorker' in navigator) {
     if (!pulling) return;
     const dy = e.touches[0].clientY - startY;
     if (dy > 80 && !ready) { ph.textContent = '↑ Pusť pro aktualizaci'; ph.style.color = 'var(--blue)'; ready = true; }
-    else if (dy <= 80 && ready) { ph.textContent = '↓ Potáhni dolů pro aktualizaci'; ph.style.color = ''; ready = false; }
+    else if (dy <= 80 && ready) { ph.textContent = ''; ph.style.color = ''; ready = false; }
   });
   document.addEventListener('touchend', () => {
     if (!pulling) return;

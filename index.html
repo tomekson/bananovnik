@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍌</text></svg>">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2d8a4e">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍌</text></svg>">
+<title>Komunikace a komunikační dovednosti | Banánovník</title>
+<style>
+:root {
+  --bg: #f5f6f0;
+  --card: #ffffff;
+  --card2: #f7f8fb;
+  --line: rgba(0,0,0,0.05);
+  --line2: rgba(0,0,0,0.09);
+  --blue: #2d8a4e;
+  --blue-bg: rgba(45,138,78,0.06);
+  --blue-mid: rgba(45,138,78,0.11);
+  --text: #1e293b;
+  --muted: #a0aec0;
+  --dim: #718096;
+  --green: #22915a;
+  --green-bg: rgba(34,145,90,0.07);
+  --red: #e05252;
+  --red-bg: rgba(224,82,82,0.07);
+  --amber: #c67b1a;
+  --amber-bg: rgba(198,123,26,0.07);
+  --r: 14px;
+  --r-sm: 9px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 3px 12px rgba(0,0,0,0.03);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html { height: 100%; background: var(--bg); }
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* ── SCREENS ─────────────────────────────────────── */
+.screen { display: none; min-height: 100svh; flex-direction: column; animation: fadeUp .26s ease; }
+.screen.active { display: flex; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── START ───────────────────────────────────────── */
+#screen-start {
+  align-items: center;
+  padding: 32px 18px max(32px, env(safe-area-inset-bottom));
+}
+.start-inner { width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 18px; }
+
+.logo-row { display: flex; align-items: center; gap: 11px; }
+.logo-mark {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--blue-bg); border: 1px solid var(--blue-mid);
+  display: flex; align-items: center; justify-content: center; font-size: 20px;
+}
+.logo-name { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); }
+.start-h { font-size: 30px; font-weight: 800; letter-spacing: -.6px; line-height: 1.15; }
+.start-h em { font-style: normal; color: var(--blue); }
+
+/* Sekce */
+.sec { display: flex; flex-direction: column; gap: 8px; }
+.sec-label { font-size: 13px; font-weight: 600; color: var(--dim); }
+
+/* Mode radio cards */
+.mode-cards { display: flex; flex-direction: column; gap: 8px; }
+.mode-card {
+  display: flex; align-items: flex-start; gap: 14px;
+  background: var(--card); border: 2px solid var(--line2);
+  border-radius: var(--r); padding: 14px 16px;
+  cursor: pointer; transition: border-color .15s, background .15s;
+  -webkit-user-select: none;
+}
+.mode-card.active { border-color: var(--blue); background: var(--blue-bg); }
+.mode-card:active:not(.active) { background: var(--card2); }
+.mode-radio {
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 2px solid var(--line2); background: white;
+  flex-shrink: 0; margin-top: 2px;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color .15s;
+}
+.mode-card.active .mode-radio { border-color: var(--blue); }
+.mode-radio::after {
+  content: ''; width: 10px; height: 10px; border-radius: 50%;
+  background: var(--blue); opacity: 0; transition: opacity .15s;
+}
+.mode-card.active .mode-radio::after { opacity: 1; }
+.mode-card-text {}
+.mode-card-title { font-size: 15px; font-weight: 600; }
+.mode-card-sub   { font-size: 13px; color: var(--dim); margin-top: 1px; }
+
+/* Count pills */
+.count-pills { display: flex; gap: 8px; }
+.cpill {
+  flex: 1; padding: 10px 6px; border-radius: 10px;
+  font-size: 15px; font-weight: 700; text-align: center; cursor: pointer;
+  background: var(--card); border: 2px solid var(--line2); color: var(--dim);
+  transition: all .15s; -webkit-user-select: none; box-shadow: var(--shadow);
+}
+.cpill.active { background: var(--blue-bg); border-color: var(--blue); color: var(--blue); }
+.cpill:active:not(.active) { background: var(--card2); }
+
+/* Range inputs */
+.range-row { display: flex; align-items: center; gap: 10px; }
+.range-row label { font-size: 14px; color: var(--dim); white-space: nowrap; font-weight: 500; }
+.range-input {
+  flex: 1; background: var(--card); border: 2px solid var(--line2);
+  border-radius: 10px; padding: 10px 12px; font-size: 16px; font-weight: 600;
+  color: var(--text); text-align: center; min-width: 0;
+  -webkit-appearance: none; outline: none; box-shadow: var(--shadow);
+  transition: border-color .15s;
+}
+.range-input:focus { border-color: var(--blue); }
+.range-info { font-size: 13px; color: var(--dim); margin-top: 4px; }
+.range-info strong { color: var(--text); }
+.range-info.warn { color: var(--red); }
+
+/* Segmented control */
+.seg { display: flex; background: var(--card2); border: 1.5px solid var(--line2); border-radius: 100px; overflow: hidden; }
+.seg-btn {
+  flex: 1; padding: 10px 8px; font-size: 14px; font-weight: 500; text-align: center;
+  cursor: pointer; background: transparent; color: var(--dim); border: none;
+  transition: all .15s; -webkit-user-select: none; -webkit-appearance: none;
+}
+.seg-btn.active { background: var(--blue-mid); color: var(--blue); font-weight: 700; }
+
+/* Toggle */
+.tog-row {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--card); border: 1.5px solid var(--line2);
+  border-radius: var(--r); padding: 14px 16px; gap: 16px;
+  cursor: pointer; box-shadow: var(--shadow);
+}
+.tog-row:active { background: var(--card2); }
+.tog-label { font-size: 15px; font-weight: 500; }
+.tog-sub   { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.tog {
+  width: 48px; height: 27px; border-radius: 100px;
+  background: #d1d5db; border: none;
+  position: relative; flex-shrink: 0; transition: background .2s;
+}
+.tog.on { background: var(--blue); }
+.tog::after {
+  content: ''; position: absolute; top: 3px; left: 3px;
+  width: 21px; height: 21px; background: white; border-radius: 50%;
+  transition: transform .2s; box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.tog.on::after { transform: translateX(21px); }
+
+/* Start button */
+.btn-start {
+  background: var(--blue); color: white; border: none;
+  border-radius: var(--r); padding: 16px 24px;
+  font-size: 17px; font-weight: 700; letter-spacing: -.2px;
+  cursor: pointer; width: 100%;
+  transition: opacity .15s, transform .1s; -webkit-appearance: none;
+  box-shadow: 0 3px 10px rgba(45,138,78,.22);
+}
+.btn-start:active { opacity: .88; transform: scale(.98); }
+.btn-start:disabled { opacity: .35; cursor: default; transform: none; }
+
+.start-footer { text-align: center; font-size: 11px; color: var(--muted); letter-spacing: .3px; margin-top: 4px; }
+
+/* ── QUIZ ────────────────────────────────────────── */
+#screen-quiz { background: var(--bg); }
+.quiz-hdr {
+  padding: 13px 18px 12px; position: sticky; top: 0;
+  background: var(--card); z-index: 10; border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+.quiz-hdr-inner { max-width: 640px; margin: 0 auto; }
+.quiz-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.btn-ico {
+  width: 34px; height: 34px; border-radius: 9px;
+  background: var(--card2); border: 1px solid var(--line2); color: var(--dim);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 15px; transition: background .15s; -webkit-appearance: none;
+}
+.btn-ico:active { background: var(--line); }
+.prog-label { font-size: 13px; color: var(--dim); font-weight: 500; }
+.prog-label b { color: var(--text); }
+.pbar { height: 4px; background: var(--card2); border-radius: 100px; overflow: hidden; }
+.pbar-fill { height: 100%; background: var(--blue); border-radius: 100px; transition: width .4s cubic-bezier(.4,0,.2,1); }
+
+.quiz-body { padding: 20px 18px; padding-bottom: 160px; flex: 1; max-width: 640px; margin: 0 auto; width: 100%; }
+.q-num {
+  font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase;
+  color: var(--blue); margin-bottom: 10px;
+  font-family: 'SF Mono','Fira Code','Cascadia Code',monospace;
+}
+.q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); }
+.q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; }
+.q-hint.done { color: var(--dim); }
+
+.opts { display: flex; flex-direction: column; gap: 9px; margin-bottom: 18px; }
+.opt {
+  background: var(--card); border: 2px solid var(--line);
+  border-radius: var(--r); padding: 14px 15px;
+  display: flex; align-items: flex-start; gap: 13px;
+  cursor: pointer; transition: border-color .15s, background .15s;
+  -webkit-user-select: none; box-shadow: var(--shadow);
+}
+.opt:active:not(.locked) { background: var(--card2); }
+.opt.sel   { background: var(--blue-bg);   border-color: rgba(30,64,175,.35); }
+.opt.ok    { background: var(--green-bg);  border-color: rgba(21,128,61,.3); }
+.opt.bad   { background: var(--red-bg);    border-color: rgba(220,38,38,.3); }
+.opt.miss  { background: var(--amber-bg);  border-color: rgba(180,83,9,.3); }
+.opt-box {
+  width: 22px; height: 22px; border-radius: 6px;
+  border: 2px solid var(--line2); background: var(--card2);
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; transition: all .15s; margin-top: 1px;
+}
+.opt.sel  .opt-box { background: var(--blue);  border-color: var(--blue);  color: white; }
+.opt.ok   .opt-box { background: var(--green); border-color: var(--green); color: white; }
+.opt.bad  .opt-box { background: var(--red);   border-color: var(--red);   color: white; }
+.opt.miss .opt-box { background: var(--amber); border-color: var(--amber); color: white; }
+.opt-txt { font-size: 15px; line-height: 1.45; flex: 1; color: var(--text); }
+.opt-ltr { font-size: 10px; font-weight: 700; font-family: monospace; opacity: .35; margin-right: 5px; }
+.opt.ok   .opt-txt { color: var(--green); font-weight: 600; }
+.opt.bad  .opt-txt { color: var(--red);   font-weight: 600; }
+.opt.miss .opt-txt { color: var(--amber); font-weight: 600; }
+.opt.picked::after {
+  content: 'vybráno'; position: absolute; top: 6px; right: 10px;
+  font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
+  color: var(--muted); opacity: .7;
+}
+.opt.bad.picked::after {
+  content: 'chybná'; color: var(--red); opacity: .6;
+}
+.opt.miss::after {
+  content: 'správná'; position: absolute; top: 6px; right: 10px;
+  font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
+  color: var(--amber); opacity: .6;
+}
+.opt { position: relative; }
+
+.fb {
+  display: none; padding: 10px 15px;
+  gap: 10px; align-items: center;
+}
+.fb.show { display: flex; animation: fadeUp .2s ease; }
+.fb-icon { font-size: 20px; }
+.fb-txt  { flex: 1; font-size: 14px; color: var(--dim); }
+.fb-txt strong { color: var(--text); }
+.fb-pts  { font-size: 20px; font-weight: 700; font-family: 'SF Mono',monospace; }
+
+.quiz-ftr {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  padding: 11px 18px max(14px, env(safe-area-inset-bottom));
+  background: var(--card); border-top: 1px solid var(--line);
+  box-shadow: 0 -1px 6px rgba(0,0,0,.04); display: flex; gap: 9px;
+  justify-content: center;
+}
+.quiz-ftr-inner { max-width: 640px; width: 100%; display: flex; flex-direction: column; gap: 6px; }
+.quiz-ftr-inner .btn-start { width: 100%; padding: 14px; font-size: 16px; }
+.btn-sec {
+  background: var(--card2); color: var(--text);
+  border: 1.5px solid var(--line2); border-radius: var(--r);
+  padding: 14px 18px; font-size: 15px; font-weight: 600;
+  cursor: pointer; transition: background .15s; -webkit-appearance: none;
+}
+.btn-sec:active { background: var(--line); }
+
+/* ── RESULTS ─────────────────────────────────────── */
+#screen-results {
+  align-items: center;
+  padding: 36px 18px max(36px, env(safe-area-inset-bottom));
+}
+.results-inner { width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 16px; }
+.r-heading { font-size: 12px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); }
+.score-card {
+  background: var(--card); border: 1.5px solid var(--line2);
+  border-radius: 20px; padding: 28px 22px; text-align: center;
+  box-shadow: var(--shadow);
+}
+.score-big { font-size: 80px; font-weight: 800; color: var(--blue); line-height: 1; letter-spacing: -5px; font-variant-numeric: tabular-nums; }
+.score-denom { font-size: 30px; font-weight: 400; color: var(--muted); letter-spacing: -1px; }
+.score-sub { font-size: 14px; color: var(--dim); margin-top: 8px; }
+.score-sub strong { color: var(--text); }
+.badge { display: inline-flex; align-items: center; gap: 6px; border-radius: 100px; padding: 6px 14px; font-size: 13px; font-weight: 600; margin-top: 12px; }
+.badge-pass { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,.2); }
+.badge-fail { background: var(--red-bg);   color: var(--red);   border: 1px solid rgba(220,38,38,.2); }
+.stats-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; }
+.scel { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 14px 8px; text-align: center; box-shadow: var(--shadow); }
+.scel-val { font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.scel-val.g { color: var(--green); }
+.scel-val.a { color: var(--amber); }
+.scel-val.r { color: var(--red); }
+.scel-lbl { font-size: 11px; color: var(--muted); margin-top: 3px; font-weight: 500; }
+.r-actions { display: flex; flex-direction: column; gap: 9px; }
+
+/* ── REVIEW ──────────────────────────────────────── */
+#screen-review { background: var(--bg); }
+.rev-hdr {
+  padding: 14px 18px; border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; background: var(--card); z-index: 10;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+.rev-title { font-size: 17px; font-weight: 600; flex: 1; }
+.rev-hdr-inner { max-width: 640px; margin: 0 auto; display: flex; align-items: center; gap: 13px; width: 100%; }
+.rev-body { padding: 18px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 12px; max-width: 640px; margin: 0 auto; width: 100%; }
+.rq-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
+.rq-head { padding: 12px 14px; border-bottom: 1px solid var(--line); display: flex; gap: 10px; align-items: flex-start; }
+.rq-badge { font-size: 11px; font-weight: 700; font-family: monospace; padding: 3px 9px; border-radius: 100px; flex-shrink: 0; white-space: nowrap; }
+.rb-full { background: var(--green-bg); color: var(--green); }
+.rb-part { background: var(--amber-bg); color: var(--amber); }
+.rb-zero { background: var(--red-bg);   color: var(--red); }
+.rb-skip { background: var(--card2);    color: var(--muted); }
+.rq-txt { font-size: 14px; font-weight: 600; line-height: 1.4; flex: 1; }
+.rq-opts { padding: 8px; display: flex; flex-direction: column; gap: 5px; }
+.ro { display: flex; align-items: flex-start; gap: 9px; padding: 9px 10px; border-radius: 8px; font-size: 13px; line-height: 1.4; }
+.ro-ok   { background: var(--green-bg); color: var(--green); }
+.ro-bad  { background: var(--red-bg);   color: var(--red); }
+.ro-miss { background: var(--amber-bg); color: var(--amber); }
+.ro-dim  { color: var(--muted); }
+.ro-icon { flex-shrink: 0; margin-top: 1px; width: 14px; text-align: center; }
+
+/* ── DIALOG ──────────────────────────────────────── */
+.overlay {
+  display: none; position: fixed; inset: 0; z-index: 100;
+  background: rgba(0,0,0,.4); align-items: flex-end; justify-content: center;
+  backdrop-filter: blur(4px);
+}
+.overlay.show { display: flex; }
+.dialog {
+  background: var(--card); border: 1px solid var(--line2);
+  border-radius: 20px 20px 0 0;
+  padding: 24px 20px max(24px, env(safe-area-inset-bottom));
+  width: 100%; max-width: 480px;
+  animation: slideUp .25s cubic-bezier(.4,0,.2,1);
+}
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.dialog-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.dialog-body  { font-size: 15px; color: var(--dim); margin-bottom: 20px; line-height: 1.5; }
+.dialog-btns  { display: flex; flex-direction: column; gap: 9px; }
+.btn-danger {
+  background: var(--red-bg); color: var(--red); border: 1px solid rgba(220,38,38,.2);
+  border-radius: var(--r); padding: 15px; font-size: 16px; font-weight: 600;
+  cursor: pointer; -webkit-appearance: none; transition: opacity .15s;
+}
+.btn-danger:active { opacity: .8; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ START ═══════════════════════════ -->
+<div id="screen-start" class="screen active">
+  <div class="start-inner">
+
+    <div class="logo-row">
+      <div class="logo-mark">🍌</div>
+      <div class="logo-name">Banánovník</div>
+    </div>
+
+    <div>
+      <div class="start-h"><em>Komunikace a komunikační dovednosti</em></div>
+      <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;"><span id="db-qcount"></span> otázek v databázi · Poslední aktualizace 3. dubna 2026</div>
+      <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.</div>
+    </div>
+
+    <!-- Výběr otázek -->
+    <div class="sec">
+      <div class="sec-label">Výběr otázek</div>
+      <div class="mode-cards">
+        <div class="mode-card active" id="mode-all" onclick="setMode('all')">
+          <div class="mode-radio"></div>
+          <div class="mode-card-text">
+            <div class="mode-card-title">Všechny otázky (<span id="q-count-label">—</span>)</div>
+            <div class="mode-card-sub">Výběr náhodných otázek. Doporučujeme tímto začít.</div>
+          </div>
+        </div>
+        <div class="mode-card" id="mode-range" onclick="setMode('range')">
+          <div class="mode-radio"></div>
+          <div class="mode-card-text">
+            <div class="mode-card-title">Rozsah otázek</div>
+            <div class="mode-card-sub">Rozděl si test podle svého.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Počet otázek (režim "všechny") -->
+    <div class="sec" id="count-section">
+      <div class="sec-label">Počet otázek</div>
+      <div class="count-pills">
+        <div class="cpill" id="cp-10"  onclick="setCount(10)">10</div>
+        <div class="cpill" id="cp-25"  onclick="setCount(25)">25</div>
+        <div class="cpill" id="cp-50"  onclick="setCount(50)">50</div>
+        <div class="cpill active" id="cp-0" onclick="setCount(0)">Vše</div>
+      </div>
+    </div>
+
+    <!-- Rozsah otázek -->
+    <div class="sec" id="range-section" style="display:none">
+      <div class="sec-label">Rozsah otázek</div>
+      <div class="range-row">
+        <label>Od</label>
+        <input class="range-input" id="range-from" type="number" min="1" value="1"
+               oninput="updateRangeInfo()" inputmode="numeric">
+        <label>do</label>
+        <input class="range-input" id="range-to"   type="number" min="1"
+               oninput="updateRangeInfo()" inputmode="numeric">
+      </div>
+      <div class="range-info" id="range-info"></div>
+    </div>
+
+    <!-- Okamžitá zpětná vazba -->
+    <div class="sec">
+      <div class="sec-label">Okamžitá zpětná vazba</div>
+      <div class="seg" id="seg-fb">
+        <button class="seg-btn active" onclick="setSeg('fb','ihned')">✓ Ihned</button>
+        <button class="seg-btn"       onclick="setSeg('fb','after')">Po dokončení testu</button>
+      </div>
+    </div>
+
+    <!-- Zobrazit počet správných odpovědí (výchozí: vypnuto) -->
+    <div class="tog-row" onclick="togOpt('showCount')">
+      <div>
+        <div class="tog-label">Zobrazit počet správných</div>
+        <div class="tog-sub">Nápověda: kolik možností vybrat</div>
+      </div>
+      <div class="tog" id="tog-showCount"></div>
+    </div>
+
+    <!-- Pořadí otázek -->
+    <div class="sec">
+      <div class="sec-label">Pořadí otázek</div>
+      <div class="seg" id="seg-qorder">
+        <button class="seg-btn active" onclick="setSeg('qorder','random')">✓ Náhodně</button>
+        <button class="seg-btn"        onclick="setSeg('qorder','seq')">Postupně</button>
+      </div>
+    </div>
+
+    <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test →</button>
+
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════ QUIZ ════════════════════════════ -->
+<div id="screen-quiz" class="screen">
+  <div class="quiz-hdr">
+    <div class="quiz-hdr-inner">
+      <div class="quiz-nav">
+        <button class="btn-ico" onclick="askAbort()">✕</button>
+        <span class="prog-label"><b id="p-cur">1</b> / <span id="p-tot">—</span></span>
+        <button class="btn-ico" onclick="openReview()" style="font-size:13px">☰</button>
+      </div>
+      <div class="pbar"><div class="pbar-fill" id="pbar-fill"></div></div>
+    </div>
+  </div>
+
+  <div class="quiz-body">
+    <div class="q-num"  id="q-num"></div>
+    <div class="q-text" id="q-text"></div>
+    <div class="q-hint" id="q-hint"></div>
+    <div class="opts"   id="opts"></div>
+  </div>
+
+  <div class="quiz-ftr">
+    <div class="quiz-ftr-inner">
+      <div class="fb" id="fb">
+        <span class="fb-icon" id="fb-icon"></span>
+        <span class="fb-txt"  id="fb-txt"></span>
+        <span class="fb-pts"  id="fb-pts"></span>
+      </div>
+      <button class="btn-start" id="btn-main" onclick="mainBtn()">Potvrdit</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════ RESULTS ════════════════════════════ -->
+<div id="screen-results" class="screen">
+  <div class="results-inner">
+    <div class="r-heading">Výsledek testu</div>
+    <div class="score-card">
+      <div style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Celkový počet bodů</div>
+      <div>
+        <span class="score-big" id="r-score">0</span>
+        <span class="score-denom" id="r-max"></span>
+      </div>
+      <div class="score-sub">Nezaokrouhleno: <strong id="r-raw">—</strong> b &nbsp;·&nbsp; Úspěšnost: <strong id="r-pct">—</strong></div>
+      <div id="r-badge"></div>
+    </div>
+    <div class="stats-grid">
+      <div class="scel"><div class="scel-val g" id="r-full">—</div><div class="scel-lbl">Plný bod</div></div>
+      <div class="scel"><div class="scel-val a" id="r-part">—</div><div class="scel-lbl">Částečný</div></div>
+      <div class="scel"><div class="scel-val r" id="r-miss">—</div><div class="scel-lbl">Špatně / 0</div></div>
+    </div>
+    <div class="r-actions">
+      <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
+      <button class="btn-sec"   onclick="startQuiz()">Opakovat stejné nastavení</button>
+      <button class="btn-sec"   onclick="show('screen-start')">Zpět na nastavení</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════ REVIEW ════════════════════════════ -->
+<div id="screen-review" class="screen">
+  <div class="rev-hdr">
+    <div class="rev-hdr-inner">
+      <button class="btn-ico" onclick="reviewBack()">←</button>
+      <div class="rev-title">Přehled odpovědí</div>
+      <button class="btn-sec" onclick="startQuiz()" style="padding:7px 13px;font-size:13px;border-radius:9px;">Opakovat</button>
+    </div>
+  </div>
+  <div class="rev-body" id="rev-body"></div>
+</div>
+
+<!-- ════════════════════════ ABORT DIALOG ═══════════════════════ -->
+<div class="overlay" id="overlay-abort">
+  <div class="dialog">
+    <div class="dialog-title">Ukončit test?</div>
+    <div class="dialog-body">Váš postup a skóre nebudou uloženy.</div>
+    <div class="dialog-btns">
+      <button class="btn-danger" onclick="doAbort()">Ukončit test</button>
+      <button class="btn-sec"    onclick="closeAbort()">Pokračovat v testu</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ╔══════════════════════════════════════════════════════════════╗
+// ║  OTÁZKY — editujte tuto část                                 ║
+// ║                                                              ║
+// ║  Formát každé otázky:                                        ║
+// ║    q:       "Text otázky"                                    ║
+// ║    opts:    ["Možnost A", "Možnost B", "C", "D", "E"]        ║
+// ║    correct: [0, 2]   ← indexy správných (0 = první)          ║
+// ╚══════════════════════════════════════════════════════════════╝
+const QUESTIONS = [
+  {
+    q: `Mezi paralingvistické prostředky komunikace nepatří`,
+    opts: [
+      `význam hlasového projevu`,
+      `délka projevu`,
+      `tempo řeči`,
+      `intenzita hlasového projevu`,
+      `parazitární slova`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Při vyjednávání se můžeme setkat se základními typy vyjednávačů. Označte správný název typu vyjednávače, který odpovídá uvedené charakteristice. Příklad: \"Člověk, který je pokládán za optimálního vyjednávače, který se snaží o nalezení kompromisu pro obě strany. K problému přistupuje racionálně a jde mu jako o materiální podmínky, tak i o vztah mezi ním a partnerem. Dokáže poskytovat prostor k vytvoření variant řešení a během vlastního vyjednávání je značně flexibilní. Hlavním nástrojem tohoto vyjednávače je vědomí reálnosti.\"`,
+    opts: [
+      `principiální vyjednávač`,
+      `vztahový vyjednávač`,
+      `flexibilní vyjednávač`,
+      `silový vyjednávač`,
+      `tvrdý vyjednávač`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Bariéry v komunikaci vznikají dvojím způsobem, a to spontánně nebo prostřednictvím použití manipulativních technik. Označte manipulativní techniky.`,
+    opts: [
+      `lhostejnost`,
+      `vynášení soudů`,
+      `zavádějící srovnání`,
+      `separace a ideová partenogeneze`,
+      `Terium non datur`
+    ],
+    correct: [2, 4]
+  },
+  {
+    q: `Co patří mezi asertivní techniky?`,
+    opts: [
+      `asertivní ne`,
+      `asertivní ano`,
+      `asertivní aserce`,
+      `zaseknutá gramodeska`,
+      `asertivní obligace`
+    ],
+    correct: [0, 2, 3]
+  },
+  {
+    q: `Percepce je zkreslována následujícími vlivy`,
+    opts: [
+      `stereotyp – znamená zafixování vnímání a je typem schématu`,
+      `snižováním nejistoty – tento faktor způsobuje zvyšování uspokojení z komunikace`,
+      `kauzální atribuování – připisování významu určitému objektu nebo situaci, např. Přeceňování interních faktorů (osobnostní vlastnosti člověka) a podceňování faktorů externích (situace, kontext, v němž se člověk nachází)`,
+      `implicitními teoriemi osobnosti – jedná se o jakýsi systém pravidel, která určují, které vlastnosti osobnosti se společně vyskytují a které nikoli`,
+      `první dojem a aktuální dojem – první dojem je důležitý ve funkci určitého filtru, který propouští, případně blokuje další informace pro vnímání osoby`
+    ],
+    correct: [0, 2, 3, 4]
+  },
+  {
+    q: `Označte možné strategie řešení konfliktních situací`,
+    opts: [
+      `přizpůsobení`,
+      `kondenzace`,
+      `spolupráce`,
+      `soutěžení`,
+      `vyhýbání`
+    ],
+    correct: [0, 2, 3, 4]
+  },
+  {
+    q: `Uveďte, co může způsobovat komunikační bariéry (obtíže), které mohou působit jako sociální stigma`,
+    opts: [
+      `deficit porozumění sdělovanému`,
+      `absence jazykových kompetencí`,
+      `apetence`,
+      `nezvládnutí konotačního významu komunikace`,
+      `horší schopnost se vyjádřit`
+    ],
+    correct: [0, 1, 3, 4]
+  },
+  {
+    q: `Komunikace = znamená`,
+    opts: [
+      `výměnu informací`,
+      `„něco spojovat"`,
+      `spolupodílet se s někým na něčem, mít podíl na něčem společném`,
+      `práci s informacemi, jejich analýzu, sdílení`,
+      `učinit jednotlivým`
+    ],
+    correct: [0, 1, 2, 3]
+  },
+  {
+    q: `Uveďte jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: Př. „Máš pravdu, nemusel jsem to dělat právě takhle. Teď si to uvědomuju, že to šlo udělat i jinak a lépe. Jak to mohu napravit?"`,
+    opts: [
+      `asertivní ne`,
+      `zaseknutá gramodesky`,
+      `asertivní obligace`,
+      `asertivní ano`,
+      `asertivní aserce`
+    ],
+    correct: [4]
+  },
+  {
+    q: `O preferenčních postojích manažerů platí, že`,
+    opts: [
+      `mohou mít podobu podhodnocování pracovníků`,
+      `jsou vyjádřeny snahou šikanovat podřízené`,
+      `jsou vyjádřeny zesílenou zaměřeností manažera na určité pracovníky`,
+      `jsou vyjádřeny snahou o neutrální hodnocení`,
+      `mohou mít podobu nadhodnocování pracovníků (přeceňování pozitiv a přehlížení nedostatků)`
+    ],
+    correct: [0, 2, 4]
+  },
+  {
+    q: `Označte, co patří mezi externí bariéry v komunikaci`,
+    opts: [
+      `nerespektování komunikační úrovně partnera, rozdíly mohou být dány také odlišností kultury, objemem slovní zásoby, používání nářečí, slangu, odborného jazyka`,
+      `vyrušování`,
+      `stereotypizace`,
+      `obavy z neúspěchu, selhání`,
+      `fyzické nepohodlí, bolest`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Jaké předpoklady je třeba splnit, pokud usilujeme o porozumění, o důvěru?`,
+    opts: [
+      `pečlivá příprava`,
+      `percepčně postojové orientace manažera`,
+      `sebepřijetí`,
+      `opravdovost`,
+      `despekt`
+    ],
+    correct: [2, 3]
+  },
+  {
+    q: `Bariérou v komunikaci není:`,
+    opts: [
+      `hlučné prostředí`,
+      `asertivita`,
+      `manipulace`,
+      `komunikace online`,
+      `absence očního kontaktu`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace? Příklad: Namísto \"Ty nevidíš, že umývám okna, ležíš si na gauči a ještě čteš noviny!\" -- \"Prosím tě, pomoz mi dnes s úklidem.\"`,
+    opts: [
+      `separace a ideová partenogeneze`,
+      `tertium non datur`,
+      `technika otevření dveří`,
+      `negativní dotazování`,
+      `požádání o laskavost`
+    ],
+    correct: [4]
+  },
+  {
+    q: `Synonymem pro asertivní techniku „otevřených dveří" je`,
+    opts: [
+      `asertivní ano`,
+      `asertivní ne`,
+      `asertivní aserce`,
+      `asertivní obligace`,
+      `asertivní gramodeska`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: \"Já chápu, že chceš jít domů jako obvykle, ale trvám na tom, abys tu rozdělanou analýzu dokončil ještě dnes. Ten materiál nutně potřebuji.\"`,
+    opts: [
+      `zaseknutá gramodeska`,
+      `asertivní obligace`,
+      `asertivní ano`,
+      `asertivní aserce`,
+      `asertivní ne`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Posturologie znamená`,
+    opts: [
+      `sdělování vzájemným přiblížením či oddálením, fyzická vzdálenost zpravidla koreluje se vzdáleností psychickou. Vzdálenosti ovlivňují genderové, statusové a společenské odlišnosti`,
+      `sdělování fyzickými postoji, poloha rukou, nohou může sdělit přátelský či nepřátelský postoj, zda s nimi chce dál jednat či nikoli`,
+      `sdělování pohybem, rozsah pohybů souvisí s intenzitou emocionálního prožívání určité situace. Poznáme intenzitu prožitku, řadíme sem především pohyby hlavy a krku`,
+      `sdělování úpravou zevnějšku`,
+      `sdělování dotykem, hmatovým kontaktem`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti, které se předávají z generace na generaci. Tyto stereotypy jsou nám předávány v podobě pověr, které jsme si právě díky výchově osvojili. Reakce založené na těchto pověrách umožňují ostatním lidem, aby s námi manipulovali. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? Pověra: \"Měl bys znát odpovědi na všechny otázky týkající se možných důsledků tvého chování, protože když tyto odpovědi neznáš, nejsi si vědom následků a problémů, které působíš ostatním lidem, nejsi zodpovědný a měl bys být kontrolován.\"`,
+    opts: [
+      `8. asertivní právo. Člověk má právo dělat nelogická rozhodnutí`,
+      `2. asertivní právo. Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`,
+      `1. asertivní právo. Člověk má právo posuzovat své vlastní chování, myšlenky a emoce a být za ně zodpovědný`,
+      `10. asertivní právo. Člověk má právo říct „je mi to jedno"`,
+      `5. asertivní právo. Člověk má právo říci „já nevím"`
+    ],
+    correct: [4]
+  },
+  {
+    q: `Asertivita znamená`,
+    opts: [
+      `uvést do popředí své povinnosti`,
+      `zachovat klid v krizi`,
+      `zůstat chladný „v ohni" - vypořádat se s kritikou`,
+      `získat co nejméně z pozitivní zpětné vazby`,
+      `být odpovědný za sebe`
+    ],
+    correct: [1, 2, 4]
+  },
+  {
+    q: `Pro zvládnutí kritiky se doporučuje požít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace: Př. „Co přesně dělám špatně?" „V čem ještě chybuji?" „Jak se to konkrétně projevuje?" „Jaké mám ještě nedostatky?" „V čem ještě jsem tak hrozný"`,
+    opts: [
+      `negativní dotazování`,
+      `požádání o laskavost`,
+      `tertium non datur`,
+      `separace a ideová partenogeneze`,
+      `technika otevřených dveří`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Aspekty porozumění se řadí mezi vztahové aspekty dialogu. Označte odpověď, která mezi klíčové aspekty porozumění nepatří.`,
+    opts: [
+      `akceptace partnera`,
+      `kladení otázek`,
+      `očekávání odpovědi`,
+      `zpětná vazba`,
+      `aktivní naslouchání`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Za asertivní se považuje takové chování, kdy jednající člověk`,
+    opts: [
+      `ostatní lidi považuje za „dobré a tak si umí říct o laskavost a sám ji také poskytnout`,
+      `dokáže přesně a jasně definovat, o co mu jde, co si myslí a jak prožívá`,
+      `má pozitivní postoj k druhým lidem`,
+      `je nejistý`,
+      `za neúspěch neviní ostatní lidi, ale vždy a pouze obviňuje sebe`
+    ],
+    correct: [0, 1, 2]
+  },
+  {
+    q: `Dělení kritiky`,
+    opts: [
+      `skrytá`,
+      `uzavřená`,
+      `oprávněná`,
+      `neoprávněná`,
+      `útočná (otevřená, agresivní)`
+    ],
+    correct: [0, 2, 3]
+  },
+  {
+    q: `Označte rozlišení druhů konfliktů`,
+    opts: [
+      `obsahový – vztahový`,
+      `pozitivní – negativní`,
+      `blízký – vzdálený`,
+      `lokalizovaný – difúzní`,
+      `velký – malý`
+    ],
+    correct: [0, 1]
+  },
+  {
+    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? Pověra: „Neměl bys hodnotit sám sebe a své akce, musíš být posuzován vnějšími pravidly a autoritou, která je moudřejší, než jsi ty sám."`,
+    opts: [
+      `10. asertivní právo. Člověk má právo říct „je mi to jedno"`,
+      `1. asertivní právo. Člověk má právo posuzovat své vlastní chování, myšlenky a emoce a být za ně odpovědný`,
+      `5. asertivní právo. Člověk má právo říci „já nevím"`,
+      `8. asertivní právo. Člověk má právo dělat nelogická rozhodnutí`,
+      `2. asertivní právo. Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Jak tedy posilovat sebeúctu?`,
+    opts: [
+      `pracujte na výjimečných a velmi náročných projektech`,
+      `bojujte proti sebezničujícím myšlenkám`,
+      `připomínejte si své úspěchy`,
+      `vyhledávejte náročné nadřízené`,
+      `používejte afirmaci – sebepotvrzení, chvalte se, komunikujte s pozitivními lidmi, identifikujte se s vámi nejbližší kulturní skupinou`
+    ],
+    correct: [1, 2, 4]
+  },
+  {
+    q: `Uveďte následky sociálního stigmatu`,
+    opts: [
+      `afirmace`,
+      `přisuzování nižší inteligence`,
+      `sociální izolace`,
+      `nejistota`,
+      `horší (sebe)hodnocení`
+    ],
+    correct: [0, 1, 2, 3, 4]
+  },
+  {
+    q: `Označte nevhodné strategie pro řešení konfliktních situací`,
+    opts: [
+      `posilování sebeobrazu druhého`,
+      `obranný postoj`,
+      `vyhýbání se konfliktu`,
+      `hromadění stížností`,
+      `verbální agresivita`
+    ],
+    correct: [0, 1, 2, 3, 4]
+  },
+  {
+    q: `Uveďte, o jaký druh dialogu se jedná. Jistě poznáte úryvek z knihy \"Osudy dobrého vojáka Švejka za světové války\" J. Haška. \"To nevadí, pane feldkurát\", řekl Švejk, \"já tu taky mohu zastat.\" -- \"A umíte ministrovat?\" -- \"Nikdy jsem to nedělal,\" odpověděl Švejk, \"ale zkusit se může všechno... myslím, že to není nic těžkýho, chodit kolem vás jako kočka kolem horký kaše. A mejt vám ruce a nalejvat z konviček víno....\" -- \"Dobře\", řekl polní kurát, \"ale vodu mně nelejte. Raději si hned do té druhé konvičky nalejte také víno... Nemáte trému?\" -- \"Já se ničeho nebojím, pane feldkurát, ani ministrování.\"`,
+    opts: [
+      `potvrzovací dialog`,
+      `meditativní dialog`,
+      `ověřovací dialog`,
+      `facilitovaný dialog`,
+      `přímý dialog`
+    ],
+    correct: [4]
+  },
+  {
+    q: `Mezi bariéry ve vyjednávání lze zařadit`,
+    opts: [
+      `partnerova důvěra`,
+      `partnerův navyklý styl jednání`,
+      `vaše reakce`,
+      `partnerovy negativní emoce`,
+      `partnerovo vnímání své vlastní vyjednávací síly`
+    ],
+    correct: [1, 2, 3, 4]
+  },
+  {
+    q: `Uveďte, o jaký typ dialogu se jedná. Jistě poznáte úryvek z knihy „Osudy dobrého vojáka Švejka za světové války" J. Haška. Př. „A najdete pana nadporučíka" - „To nevím" - „Myslíte tedy, že pana nadporučíka nenajdete?" - „To nemyslím" - „A kde myslíte, že by mohl být?" - „To nevím..`,
+    opts: [
+      `mediační dialog`,
+      `facilitovaný dialog`,
+      `meditativní dialog`,
+      `ověřovací dialog`,
+      `potvrzovací dialog`
+    ],
+    correct: [3]
+  },
+  {
+    q: `Jde o nestranný způsob řešení problémů, usnadňování řešení problémů, kde problémy mají „věcnou povahu". Označte správně jednoslovným názvem.`,
+    opts: [
+      `afiliace`,
+      `mediace`,
+      `facilitace`,
+      `akceptace`,
+      `meditace`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Nonverbální komunikace rozlišuje způsoby sdělování`,
+    opts: [
+      `mimika`,
+      `haptologie`,
+      `řeč očí`,
+      `kinestetika`,
+      `posturologie`
+    ],
+    correct: [0, 1, 2, 4]
+  },
+  {
+    q: `Proxemika znamená`,
+    opts: [
+      `zaměření pohledu, délka pohledu, úhel pootevření víček, sdělování pohybem obočí, četností pohledu, frekvencí mrkacích pohybů aj.`,
+      `sdělování fyzickými postoji, poloha nohou, rukou může sdělit přátelský či nepřátelský postoj, zda s nimi chce dál jednat či nikoliv`,
+      `sdělování vzájemným přiblížením či oddálením, fyzická vzdálenost zpravidla koreluje se vzdáleností psychikou. Vzdálenosti ovlivňují genderové, statusové a společenské odlišnosti`,
+      `sdělování pohybem, rozsah pohybu souvisí s intenzitou emocionálního prožívání určité situace. Poznáme intenzitu prožitků, řadíme sem především pohyby hlavou a krku.`,
+      `tradování kulturou (zdvořilostní úsměv) často takto sdělujeme emoce (city, pocity, nálady, afekty)`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Správně označte název sdělení, které obsahuje denotační význam termínu, význam připisovaný slovu (např. ve slovníku)`,
+    opts: [
+      `objektivní`,
+      `subjektivní`,
+      `kritické`,
+      `suicidální`,
+      `paraverbální`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Co patří mezi komunikační přístupy?`,
+    opts: [
+      `agresivita`,
+      `aserce`,
+      `pasivita`,
+      `manipulace`,
+      `asertivita`
+    ],
+    correct: [0, 2, 3, 4]
+  },
+  {
+    q: `Vymezte charakteristiky problémových lidí`,
+    opts: [
+      `nezáleží na chování, na přístupu k těmto lidem`,
+      `ve společnosti existuje „společenský konsensus", který říká, jaké chování lidí je považováno za problémové, kteří lidé jsou problémoví`,
+      `nedělají to, co je žádoucí a naopak dělají, co žádoucí není, aby dělali, a je obtížné to změnit`,
+      `je obtížné změnit jejich chování, ale lze s nimi komunikovat tak, aby se změnili sami`,
+      `jsou empatičtí`
+    ],
+    correct: [1, 2, 3]
+  },
+  {
+    q: `Bariéry v komunikaci vznikají dvojím způsobem, a to spontánně nebo prostřednictvím použití manipulativních technik. Označte způsoby spontánně vznikajících potíží`,
+    opts: [
+      `separací a ideovou partenogenezí`,
+      `tertium non datur`,
+      `lhostejností`,
+      `vynášení soudu`,
+      `zavádějícím srovnáním`
+    ],
+    correct: [0, 2, 3]
+  },
+  {
+    q: `Strategie, jak zvýšit přesnost percepce`,
+    opts: [
+      `zvyšujte nejistotu`,
+      `dodržujte Pygmalion efekt`,
+      `analyzujte své vjemy`,
+      `kontrolujte svou percepci – cílem není dokázat, že prvotní vjem byl správný`,
+      `posilujte svou kulturní vnímavost`
+    ],
+    correct: [2, 3, 4]
+  },
+  {
+    q: `Z níže uvedených vyberte nejméně častý (nejnižší četnost výskytu) „zdroj konfliktů" (Kurdek, 1994)`,
+    opts: [
+      `mocenské problémy – nadměrné požadavky, panovačnost, žárlivost`,
+      `problémy týkající se (ne)důvěry – podvod, lež`,
+      `osobnosti vady – alkoholismus, nikotinismus, osobní hygiena, styl řízení vozidla`,
+      `intimní problémy – láska, sex`,
+      `společenské problémy – politika, sociální záležitosti, rodiče, osobní hodnoty`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Jak lze označit komunikaci, která zahrnuje nejen účastníky komunikace, ale i komunikační prostředky, probíhá v určitém kontextu, plní určité funkce a ve výsledku dosahuje či nedosahuje nějakých efektů. Lze ji specifikovat jako interakce prostřednictvím symbolů verbálních nebo neverbálních. Chápeme ji jako interakční proces mezilidského dorozumívání, kdy dochází ke sdělování významů pomocí konvenčních znaků.`,
+    opts: [
+      `agresivní`,
+      `neobjektivní`,
+      `sociální`,
+      `patologická`,
+      `paraverbální`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Přeceňování interních faktorů (osobnostní vlastnosti člověka) a podceňování faktorů externích (situace, kontext, v němž se člověk nachází) lze označit jako`,
+    opts: [
+      `facilitaci`,
+      `afiliaci`,
+      `atribuční chybu`,
+      `Johariho okno`,
+      `asertivní právo`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Mezi zdroje osobnostních rozdílů lze zařadit`,
+    opts: [
+      `dědičnost`,
+      `rodina`,
+      `skupinová příslušnost – k formální i neformálním skupinám`,
+      `kultura`,
+      `komunikační dovednosti`
+    ],
+    correct: [0, 1, 2, 3]
+  },
+  {
+    q: `Správně označte název sdělení, které obsahuje subjektivní nebo emocionální význam`,
+    opts: [
+      `suicidální`,
+      `denotační`,
+      `paraverbální`,
+      `konotační`,
+      `kritické`
+    ],
+    correct: [3]
+  },
+  {
+    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: Př. Já tě naprosto chápu (empatie). Opravdu ti však v tom nemohu pomoci (asertivní ne)`,
+    opts: [
+      `asertivní obligace`,
+      `asertivní ano`,
+      `asertivní ne`,
+      `zaseknutá gramodeska`,
+      `asertivní aserce`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Atribuční teorie uspořádává do smysluplné taxonomie obecnější společné charakteristiky v pozadí stojících příčin. Klasifikace příčin a jejich zařazení do jednotlivých dimenzí umožňuje pochopit motivaci pracovníků ve výkonových situacích. Které dimenze to jsou?`,
+    opts: [
+      `dimenze místa - rozlišuje příčiny z hlediska jednající osoby na vnitřní (výsledek výkonového chování je vnímán jako výsledek schopnosti, úsilí, nálady a vědomosti) a vnější (výsledek je připisován náhodě, štěstí atp.)`,
+      `dimenze přijetí - pracovník cíl (úkol) vnitřně přijal (úkol pro něho má smysl) nebo pracovník úkol vnitřně nepřijal`,
+      `dimenze řízení (kontroly) – umožňuje rozlišení příčin jako je nálada a úsilí`,
+      `dimenze úrovně dosažení cíle - pracovníkova prožitku úspěchu či neúspěchu`,
+      `dimenze stability - rozlišuje příčiny z hlediska stálosti na příčiny dispoziční (např. schopnosti) a příčiny nestabilní (např. štěstí, smůla, náhoda..)`
+    ],
+    correct: [0, 2, 4]
+  },
+  {
+    q: `Při komunikaci s člověkem s poruchami řeči je třeba`,
+    opts: [
+      `vyvarovat se rozpaků`,
+      `dokončovat za komunikátory věty`,
+      `bedlivě udržovat oční kontakt`,
+      `taktnosti a trpělivosti`,
+      `dávat pokyny typu „zpomalte, uklidněte se" apod.`
+    ],
+    correct: [0, 2, 3]
+  },
+  {
+    q: `Označte správný příklad manipulativní techniky „zavádějící srovnání"`,
+    opts: [
+      `„vy darwinisté možná pocházíte z opice, ale já odmítám uznat nějakou gorilu za svoji babičku..."`,
+      `představuje, že existují pouze 2 možná řešení`,
+      `„všichni dokonalí muži nosí prádlo uragán..."`,
+      `kilo peří x kilo železa`,
+      `„nepřipustí zobecnění typu „všichni muži jsou stejní"`
+    ],
+    correct: [3]
+  },
+  {
+    q: `Postup, který může pomoci vyhnout se skutečným konfliktům. Musí být veden s ohledem na pozice a zájmy všech zainteresovaných stran. Situace "vítěz - vítěz", která je dosažená otevřenými způsoby, je vždy žádoucím výsledkem. Označte všechny správné názvy.`,
+    opts: [
+      `meditace`,
+      `afiliace`,
+      `vyjednávání`,
+      `proxemika`,
+      `atribuce`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Řešení konfliktů ve skupině v podnikatelské sféře má určitá specifika, proto využívá i specifických metod (technik). Označte správný název metody, techniky, která odpovídá níže uvedenému popisu. Příklad: Skupina odborníků, která je geograficky vzdálena. Sepíšou se návrhy řešení, seznam se rozešle, členové mají vybrat určitý počet možných řešení, to se několikrát opakuje, až je shoda ve "finálním řešení".`,
+    opts: [
+      `technika nominální skupiny`,
+      `brainwashing`,
+      `delfská metoda`,
+      `kroužky kvality`,
+      `brainstorming`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Označte obecné mechanismy, které se uplatňují při vytváření percepčně postojové orientace manažera`,
+    opts: [
+      `haló efekt`,
+      `první dojem`,
+      `negativismus`,
+      `favoritismus`,
+      `působení kontrastu`
+    ],
+    correct: [0, 1, 3, 4]
+  },
+  {
+    q: `Řešení konfliktů ve skupině v podnikatelské sféře má určitá specifika, proto využívá i specifických metod (technik). Označte správný název metody, techniky, který odpovídá níže uvedenému popisu. Příklad: "Řešení problému pomocí omezené diskuse a tajného hlasování. Návrhy řešení všech členů se zapíšou na tabuli, každý člen určí jejich pořadí, určí se celkové pořadí, diskutují se, vysvětlují se preferovaná řešení."`,
+    opts: [
+      `technika nominální skupiny`,
+      `delfská metoda`,
+      `brainwashing`,
+      `brainstorming`,
+      `kroužky kvality`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Komunikace znamená`,
+    opts: [
+      `vysílat signály`,
+      `interpretovat signály`,
+      `slyšet`,
+      `vidět`,
+      `přijímat signály`
+    ],
+    correct: [0, 1, 4]
+  },
+  {
+    q: `Označte, která ze zásad nepatří mezi pravidla pro efektivní komunikaci`,
+    opts: [
+      `pro kódování je třeba využít symbolů, které jsou zřejmé pro všechny zúčastněné`,
+      `komunikátor musí vědět, co chce sdělit`,
+      `diagnostikovat adekvátní míru poskytnutých informací komunikantovi`,
+      `rozdílnost mezi verbálním a neverbálním sdělením`,
+      `pečlivá příprava komunikace`
+    ],
+    correct: [3]
+  },
+  {
+    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti, které se předávají z generace na generaci. Tyto stereotypy jsou nám předávány v podobě pověr, které jsme si právě díky výchově osvojili. Reakce založené na těchto pověrách umožňují ostatním lidem, aby s námi manipulovali. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? POVĚRA: „Naši bližní často dokážou logicky racionalizovat nejrůznější požadavky, které na nás mají a důvody, pro které bychom neměli dělat to a ono a měli dělat to a nebo něco jiného"`,
+    opts: [
+      `2. asertivní právo: Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`,
+      `5. asertivní právo: Člověk má právo říci „Já nevím"`,
+      `8. asertivní právo: Člověk má právo dělat nelogická rozhodnutí`,
+      `10. asertivní právo: Člověk má právo říci „Je mi to jedno"`,
+      `1. asertivní právo: Člověk má právo posuzovat své chování, myšlenky a emoce a být za ně zodpovědný`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Při vyjednávání se můžeme setkat se základními typy vyjednávačů. Označte správný název typu vyjednávače, který odpovídá uvedené charakteristice. Příklad: „Člověk, který stojí razantně na svých pozicích a odmítá veškeré ústupky. Do jednání pak vstupuje s maximálním cílem, vlastní profit za jakoukoliv cenu. Typické je pro něho, že neuznává potřeby a nároky dalších zúčastněných stran. Jde mu pouze o vítězství, což současně znamená, že ignoruje vytvoření vztahu mezi ním a protistranou. Hlavním nástrojem tohoto vyjednávače je vyjednávací síla."`,
+    opts: [
+      `tvrdý vyjednávač`,
+      `principiální vyjednávač`,
+      `razantní vyjednávač`,
+      `silový vyjednávač`,
+      `vyjednávač ignorant`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Jak postupovat při obraně proti manipulaci`,
+    opts: [
+      `reagujte kauzálně – neférová situace!`,
+      `dejte najevo, že se vás to dotklo. „To si ke mně nesmí dovolovat!"`,
+      `zůstaňte věcní a féroví – projevujte se jako nesmlouvavě kooperativní partner, manipulátora znejistíte`,
+      `soustřeďte se na konkrétní chování, nikoli na své domněnky a předsudky`,
+      `sledujte svůj cíl, pokud cíl nelze sledovat, přerušte kontakt s manipulátorem`
+    ],
+    correct: [2, 3, 4]
+  },
+  {
+    q: `Co patří mezi zásady verbálního sdělení?`,
+    opts: [
+      `sdělení mohou vyjadřovat různou míru přímočarosti`,
+      `významy sdělení jsou v lidech`,
+      `sdělení jsou denotační a konotační`,
+      `sdělení jsou ovlivněna IQ jedince`,
+      `sdělení nevyjadřují různou míru abstrakce`
+    ],
+    correct: [0, 1, 2]
+  },
+  {
+    q: `Komunikace probíhá většinou`,
+    opts: [
+      `v diskrétní rovině`,
+      `v trojúhelníku`,
+      `v kruhu`,
+      `ve vztahové rovině`,
+      `ve věcné (obsahové) rovině`
+    ],
+    correct: [3, 4]
+  },
+  {
+    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti, které se předávají z generace na generaci. Tyto stereotypy jsou nám předávány v podobě pověr, které jsme si právě díky výchově osvojili. Reakce založené na těchto pověrách umožňují ostatním lidem, aby s námi manipulovali. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? Pověra: „Musíš se snažit být lepší, dokud nebudeš ve všech ohledech perfektní. Asi se ti to nepovede, ale musíš se o to snažit. Když to neuděláš, jsi líný, degenerovaný, bezcenný a nezasloužíš si respekt od nikoho, ani od sebe."`,
+    opts: [
+      `10. asertivní právo. Člověk má právo říct "je mi to jedno"`,
+      `8. asertivní právo. Člověk má právo dělat nelogická rozhodnutí`,
+      `5. asertivní právo. Člověk má právo říct "já nevím"`,
+      `2. asertivní právo. Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`,
+      `1. asertivní právo. Člověk má právo posuzovat své vlastní chování, myšlenky a emoce a být za ně zodpovědný`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Mezi nejobvyklejší bariéry komunikace lze řadit`,
+    opts: [
+      `chybějící filtrování`,
+      `neselektivní vnímání`,
+      `odlišnost postojů, názorů, znalostí a zkušeností`,
+      `věrohodnost zdroje`,
+      `sémantické problémy`
+    ],
+    correct: [2, 3, 4]
+  },
+  {
+    q: `Uveďte typy dialogu z pohledu struktury dialogu`,
+    opts: [
+      `meditativní dialog`,
+      `facilitovaný dialog`,
+      `přímý dialog`,
+      `potvrzovací dialog`,
+      `ověřovací dialog`
+    ],
+    correct: [1, 2, 3, 4]
+  },
+  {
+    q: `K čemu slouží nebo by měla sloužit kritika v pracovním životě?`,
+    opts: [
+      `odhalování chyb a jejich příčin`,
+      `k získání větší autority`,
+      `hledání řešení`,
+      `zjišťování možností zlepšení`,
+      `předcházení chybám do budoucna`
+    ],
+    correct: [0, 2, 3, 4]
+  },
+  {
+    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace? Příklad: Namísto "Ty nevidíš, že umývám okna, ležíš si na gauči a ještě čteš noviny!" -- "Prosím tě, pomoz mi dnes s úklidem." (varianta B)`,
+    opts: [
+      `separace a ideová partenogeneze`,
+      `tertium non datur`,
+      `technika otevření dveří`,
+      `negativní dotazování`,
+      `požádání o laskavost`
+    ],
+    correct: [4]
+  },
+  {
+    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: "Já tě naprosto chápu. Opravdu ti však v tom nemohu pomoci."`,
+    opts: [
+      `asertivní ano`,
+      `zaseknutá gramodeska`,
+      `asertivní aserce`,
+      `asertivní obligace`,
+      `asertivní ne`
+    ],
+    correct: [4]
+  },
+  {
+    q: `Sociální komunikace zahrnuje`,
+    opts: [
+      `výsledek, dosažení či nedosažení efektu`,
+      `komunikátora`,
+      `plnění určitých funkcí – předání informace, sdělení emoce`,
+      `komunikační formy`,
+      `komunikanta`
+    ],
+    correct: [0, 1, 2, 4]
+  },
+  {
+    q: `Jednou z užitečných analýz lidských motivů je stupňová hierarchie potřeb, která vychází z premisy, podle které se člověk snaží naplnit potřeby na té nejnižší úrovni, a teprve až jsou uspokojeny, začínají chování člověka ovlivňovat potřeby vyššího stupně. Jejím autorem je:`,
+    opts: [
+      `E.E. Lawler`,
+      `C.P. Alderfer`,
+      `A.H. Maslow`,
+      `L.W. Porte`,
+      `F. Herzberg`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Zdroje sebepojetí`,
+    opts: [
+      `stereotyp – znamená zafixování vnímání a je typem schématu`,
+      `sociální komparace – Jaký jsem ve srovnání se sobě rovnými? Jaké mají známky ve škole, odměny, výsledky ve sportu`,
+      `implicitní teorie osobnosti – jedná se o jakýsi systém pravidel, která určují, které vlastnosti osobnosti se společně vyskytují a které nikoli`,
+      `kulturní vlivy – Jak se řídím „pravidly kultury", ke které patřím? Pokud projevíme vlastnosti, které naše kultura oceňuje, pravděpodobně budeme chváleni a bude tak posilováno naše sebepojetí (a opačně)`,
+      `interpretace a hodnocení sebe sama – Jak hodnotím své vlastní názory a chování? Co považuji za správné, vyvolává kladné sebepojetí (anebo opačně)`
+    ],
+    correct: [1, 3, 4]
+  },
+  {
+    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace? Příklad: "Jak to, že jsi ještě nepřipravil materiály na dnešní poradu?". - "Uznávám, že jsem to měl připravit, ale zapomněl jsem na to." - "Už zase? To se ti stává pokaždé!" - "Ano, máš pravdu, poslední dobou se mi to několikrát stalo."`,
+    opts: [
+      `požádání o laskavost`,
+      `tertium non datur`,
+      `separace a ideová partenogeneze`,
+      `technika otevřených dveří`,
+      `negativní dotazování`
+    ],
+    correct: [3]
+  },
+  {
+    q: `Jedná se o metodu řešení mezilidských konfliktů, při níž neutrální kvalifikovaná osoba pomáhá účastníkům konfliktu ve vzájemné komunikaci a dorozumění. Jejím cílem je dosažení spokojenosti i s výsledkem i průběhem řešení tohoto konfliktu. Je to metoda komunikace, která využívá poznatků z různých vědních oborů, nejobecněji z filozofie, sociální psychologie, sociologie a práva. Označte správně jednoslovným názvem.`,
+    opts: [
+      `meditace`,
+      `facilitace`,
+      `afiliace`,
+      `mediace`,
+      `akceptace`
+    ],
+    correct: [3]
+  },
+  {
+    q: `Označte správný příklad manipulativní techniky „Tertium non datur"`,
+    opts: [
+      `brilantní postřeh, nálepkování, vulgární zesměšňování`,
+      `představuje, že existují pouze 2 možná řešení, např.: „buď jste s námi nebo jste s teroristy"`,
+      `„vy darwinisté možná pocházíte z opice, ale já odmítám uznat nějakou gorilu za svoji babičku..."`,
+      `nepřípustné zobecnění typu „všichni muži jsou stejní..."`,
+      `„tak já to udělám sám..."`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Volba strategií, které pro zvládání a řešení konfliktů zvolíme, budou ovlivněny těmito faktory`,
+    opts: [
+      `emocionálním stavem`,
+      `kvalitou života`,
+      `cíli, kterých chceme dosáhnout`,
+      `kognitivním posouzením situace`,
+      `osobnostními a komunikačními schopnostmi`
+    ],
+    correct: [0, 2, 3, 4]
+  },
+  {
+    q: `Označte, které tvrzení nelze zařadit mezi pravidla ke zvládání konfliktů`,
+    opts: [
+      `zvažujte, co chcete a můžete mít pod kontrolou (řešení vyjednáváním, facilitací, mediací)`,
+      `konfliktům se nevyhýbejte, aktivně je řešte`,
+      `způsob řešení přizpůsobte povaze a zralosti konfliktu, čím více se konflikt vyhrocuje, je třeba zásahu neutrálního experta (facilitátor, mediátor)`,
+      `všechna řešení nestojí za zvážení a promyšlení, myšlenky by měly být vylučovány`,
+      `hledejte syntézu nebo koexistenci, snažte se vybírat pozitivní obsah`
+    ],
+    correct: [3, 4]
+  },
+  {
+    q: `Johariho okno`,
+    opts: [
+      `symbolické rozdělení vlastního já do čtyř oblastí`,
+      `jeden z hlavních nástrojů používaných pro analýzu aspektů své osobnosti v rámci sebeuvědomění`,
+      `alternativní název pro přenosový kanál sdělení`,
+      `je přehledem pouze našich neznámých vlastností`,
+      `název pro „slepé místo" v rámci procesu vnímání`
+    ],
+    correct: [0, 1]
+  },
+  {
+    q: `O komunikaci je možné říci, že je`,
+    opts: [
+      `nevratná`,
+      `neosobní`,
+      `nebezpečná`,
+      `neopakovatelná`,
+      `nevyhnutelná`
+    ],
+    correct: [0, 3, 4]
+  },
+  {
+    q: `Intimní zóna je v rámci proxemiky využívána zejména`,
+    opts: [
+      `ke komunikaci v obchodním jednání`,
+      `ke komunikaci s nejbližšími lidmi`,
+      `v rámci veřejných proslovů`,
+      `ke komunikaci s přáteli a známými`,
+      `ke komunikaci s naprosto neznámými lidmi`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Co všechno spadá pod tzv. mutilace`,
+    opts: [
+      `oblečení`,
+      `lidský pach`,
+      `oční kontakt`,
+      `ozdoby a doplňky`,
+      `změny přímo na těle`
+    ],
+    correct: [0, 3, 4]
+  },
+  {
+    q: `Mezi funkce neverbální komunikace patří`,
+    opts: [
+      `funkce ovlivňování a klamání`,
+      `funkce vytváření a řízení dojmů`,
+      `funkce kognitivní`,
+      `funkce exhibiční`,
+      `funkce sebe-potvrzující`
+    ],
+    correct: [0, 1]
+  },
+  {
+    q: `V rámci olfaktorické komunikace neplatí, že`,
+    opts: [
+      `člověk si dokáže zapamatovat a identifikovat až půl milionu vůní a pachů`,
+      `patří mezi prvky neverbální komunikace`,
+      `na vnímání vůní nemá vliv kultura, pohlaví ani momentální nálada jedince`,
+      `zabývá se tělesnými pachy`,
+      `různé vůně vyvolávají u různých lidí rozdílné reakce nebo asociace`
+    ],
+    correct: [0, 2]
+  },
+  {
+    q: `Asertivní technika vyjadřování souhlasu`,
+    opts: [
+      `spočívá v tom, že nemusíme dále stanovisko partnera, např. kritiku, rozvádět`,
+      `klade si za cíl zklidnění situace`,
+      `klade si za cíl nácvik přijetí kritiky za své chyby a omyly`,
+      `spočívá v natrénované, stále stejné, formulaci svého názoru`,
+      `spočívá v neustupování komunikačnímu partnerovi`
+    ],
+    correct: [0, 1, 2]
+  },
+  {
+    q: `O násilném řešení konfliktu platí, že`,
+    opts: [
+      `strany kontrolují jak proces, tak výsledek řešení`,
+      `v ČR se jedná o zcela legální a legitimní způsob řešení konfliktů`,
+      `je zcela nevhodné a nepatří mezi pozitivní řešení konfliktů`,
+      `dají se tak řešit pouze spory, nikoli problémy`,
+      `kontrolujeme proces, ale ne výsledek řešení`
+    ],
+    correct: [2, 4]
+  },
+  {
+    q: `Mezi šumy v komunikaci se řadí například`,
+    opts: [
+      `fyzický šum`,
+      `atribuční šum`,
+      `psychologický šum`,
+      `charakterový šum`,
+      `sémantický šum`
+    ],
+    correct: [0, 2, 4]
+  },
+  {
+    q: `Sociální/společenská zóna se v rámci proxemiky nachází ve vzdálenosti`,
+    opts: [
+      `45 – 120 cm`,
+      `do 45 cm`,
+      `1,2 – 3,6 metru`,
+      `nad 1 metr`,
+      `nad 4 metry`
+    ],
+    correct: [2]
+  },
+  {
+    q: `Mezi základní komunikační dovednosti nepatří`,
+    opts: [
+      `dovednost vést rozhovory a pohovory`,
+      `dovednost komunikovat v malé skupině`,
+      `dovednost prezentovat sebe sama`,
+      `mediální gramotnost`,
+      `time management`
+    ],
+    correct: [4]
+  },
+  {
+    q: `Jak rozlišujeme typy kontextu komunikace?`,
+    opts: [
+      `myšlenkový`,
+      `fyzický`,
+      `časový`,
+      `sociálně-psychologický`,
+      `kulturní`
+    ],
+    correct: [1, 2, 3, 4]
+  },
+  {
+    q: `Mezi základní funkce komunikace patří`,
+    opts: [
+      `funkce informační`,
+      `funkce persuazivní`,
+      `funkce zábavní`,
+      `funkce instruktážní`,
+      `funkce propojovací`
+    ],
+    correct: [0, 1, 2, 3]
+  },
+  {
+    q: `Mediální gramotnost je`,
+    opts: [
+      `schopnost prezentovat se v médiích`,
+      `schopnost získávat přístup k médiím a chápat a kriticky vyhodnocovat různé aspekty médií a mediálních obsahů`,
+      `nutná výbava člověka v 21. století`,
+      `atribut, který má jedinci pomoci stát se kompetentními při kontrole interpretace toho, co vidí a slyší`,
+      `vnitřně provázaný celek dovedností, znalostí a představ vztažených k médiím a komunikačním prostředkům`
+    ],
+    correct: [1, 2, 3, 4]
+  },
+  {
+    q: `O dekódování lze v rámci komunikace říci, že`,
+    opts: [
+      `jedná se o jeden z typů informačních šumů`,
+      `o proces přeměny sdělení z nějakého kódu`,
+      `je k němu potřebná vyspělá výpočetní technika`,
+      `je součástí modelu komunikačního procesu`,
+      `nachází se na straně odesílatele/zdroje sdělení`
+    ],
+    correct: [1, 3]
+  },
+  {
+    q: `Mezi styly řešení konfliktů nepatří`,
+    opts: [
+      `problematický styl`,
+      `únikový styl`,
+      `kooperační styl`,
+      `agresivní styl`,
+      `přizpůsobivý styl`
+    ],
+    correct: [0]
+  },
+  {
+    q: `Sebereflexe může být charakterizována jako`,
+    opts: [
+      `schopnost přijímání zpětných vazeb z našeho okolí`,
+      `přemýšlení o sobě, hledání porozumění sám sobě`,
+      `vnímání nás samých v celém kontextu`,
+      `určování naší vlastní hodnoty`,
+      `celkový rámec, ve kterém se uskutečňuje komunikace`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Uspokojování potřeb v rámci komunikace probíhá v rovině`,
+    opts: [
+      `individuální`,
+      `skupinové`,
+      `psychologické`,
+      `fyzické`,
+      `úkolové`
+    ],
+    correct: [0, 1, 4]
+  },
+  {
+    q: `Selektivní zkreslení`,
+    opts: [
+      `spočívá v tom, že informaci přikládáme vlastní význam`,
+      `spočívá v upravování informace podle toho, jak ji daný jedinec chce slyšet`,
+      `se dělí na principy, schémata a scénáře`,
+      `jeho prostřednictvím člověk na základě rozdílů usuzuje, že lidé nebo sdělení nepatří k sobě`,
+      `umožňuje třídění všech informací, kterým je člověk vystaven`
+    ],
+    correct: [0, 1]
+  },
+  {
+    q: `V rámci procesu vnímání lze třídit informace následujícími způsoby`,
+    opts: [
+      `podle scénářů`,
+      `podle principů`,
+      `podle seznamu`,
+      `podle pravidel`,
+      `podle schémat`
+    ],
+    correct: [0, 1, 4]
+  },
+  {
+    q: `Mezi nejobvyklejší bariéry komunikace lze řadit (osobnostní zdroje)`,
+    opts: [
+      `jazyková neznalost`,
+      `komunikační dovednosti`,
+      `skupinová příslušnost – k formálním i neformálním skupinám (např. pěstitelé bonsají)`,
+      `rodina`,
+      `dědičnost`,
+      `kultura`
+    ],
+    correct: [0, 1]
+  },
+  {
+    q: `Při komunikaci „face to face" je komunikátor vnímán jako celek. Nonverbálním sdělováním komunikátor může`,
+    opts: [
+      `regulovat, řídit snahu hovořit, sdělí mávnutím ruky`,
+      `sdělovat – své úvahy a nápady`,
+      `popírat – sdělení rozdílu, opaku ke slovnímu sdělení`,
+      `nahrazovat - místo slova kývne hlavou`,
+      `doplňovat – úsměv, kývání hlavou`
+    ],
+    correct: [0, 2, 3, 4]
+  },
+  {
+    q: `Manipulativní techniky lze charakterizovat takto`,
+    opts: [
+      `morálně akceptovatelné`,
+      `pokud nám jde o vytváření dlouhodobých pozitivních sociálních vztahů, je třeba využívání těchto technik ovládat`,
+      `snaží se využít slabých míst partnera`,
+      `snaží se přimět partnera k činu, který by dobrovolně udělal`,
+      `působí většinou jen krátkodobě`
+    ],
+    correct: [2, 4]
+  },
+  {
+    q: `Co nepatří mezi zásady verbálního sdělení?`,
+    opts: [
+      `sdělení jsou ovlivněna IQ jedince`,
+      `sdělení jsou denotační a konotační`,
+      `sdělení nevyjadřují různou míru abstrakce`,
+      `významy sdělení jsou v lidech`,
+      `sdělení mohou vyjadřovat různou míru přímočarosti`
+    ],
+    correct: [0, 2]
+  },
+  {
+    q: `Cílem prezentace může být`,
+    opts: [
+      `Přesvědčit`,
+      `Pobavit`,
+      `Informovat`,
+      `Motivovat`,
+      `Získat pozornost`
+    ],
+    correct: [0, 1, 2, 3, 4]
+  },
+  {
+    q: `Jak reagovat na oprávněnou kritiku? Jak ji přijímat, jste-li na kritiku extrémně citlivý`,
+    opts: [
+      `opřete se o své silné stránky – skutečně si to uvědomte`,
+      `předjímejte blížící se kritiku – vnímáme stresové reakce našeho organismu`,
+      `reagujte asertivně – pomůže vám to uchovat si důstojnost a udržet diskusi v běhu`,
+      `nedýchejte – podaří se vám zachovat lépe klid`,
+      `uvědomte si, v čem se musíte zlepšit. Takováto situace už se nesmí stát`
+    ],
+    correct: [0, 1, 2]
+  },
+  {
+    q: `Jedná se o metodu řešení mezilidských konfliktů, která je přínosem pro obě strany konfliktu a napomáhá ke smírnému řešení. Označte správně jednoslovným názvem.`,
+    opts: [
+      `facilitace`,
+      `afiliace`,
+      `meditace`,
+      `akceptace`,
+      `mediace`
+    ],
+    correct: [4]
+  },
+  {
+    q: `Jako klíčový aspekt při prezentování můžeme označit`,
+    opts: [
+      `oslovování jednotlivých posluchačů`,
+      `sdělení cíle prezentace`,
+      `podrobnosti prezentace`,
+      `podání ruky`,
+      `kontaktování posluchačů očima`
+    ],
+    correct: [1]
+  },
+  {
+    q: `Asertivita neznamená`,
+    opts: [
+      `ohleduplné jednání`,
+      `pasivní jednání`,
+      `manipulativní jednání`,
+      `prosazení cizího názoru`,
+      `prosazení vlastního názoru`
+    ],
+    correct: [1, 2, 3]
+  }
+];
+
+// ╔══════════════════════════════════════════════════════════════╗
+// ║  Práh úspěšnosti pro odznak Prošel/Neprošel (výchozí 60 %)  ║
+// ╚══════════════════════════════════════════════════════════════╝
+const PASS_THRESHOLD = 0.60;
+
+// ─────────────────────────────────────────────────────────────────
+// Konfigurace
+// ─────────────────────────────────────────────────────────────────
+const cfg = {
+  mode:      'all',      // 'all' | 'range'
+  count:     0,          // 0 = vše
+  fb:        'ihned',    // 'ihned' | 'after'
+  qorder:    'random',   // 'random' | 'seq'
+  oorder:    'random',   // 'random' | 'seq'
+  showCount: false,      // výchozí OFF
+};
+
+// Segmented controls
+function setSeg(key, val) {
+  cfg[key] = val;
+  const seg = document.getElementById('seg-' + key);
+  seg.querySelectorAll('.seg-btn').forEach((btn, i) => {
+    const vals = key === 'fb'     ? ['ihned','after']  :
+                 key === 'qorder' ? ['random','seq']   :
+                 key === 'oorder' ? ['random','seq']   : [];
+    const isActive = vals[i] === val;
+    btn.classList.toggle('active', isActive);
+    const labels = {
+      fb:     [['✓ Ihned','Po dokončení testu'], ['Ihned','✓ Po dokončení testu']],
+      qorder: [['✓ Náhodně','Postupně'], ['Náhodně','✓ Postupně']],
+      oorder: [['✓ Náhodně','Postupně'], ['Náhodně','✓ Postupně']],
+    };
+    if (labels[key]) {
+      const set = val === vals[0] ? labels[key][0] : labels[key][1];
+      btn.textContent = set[i];
+    }
+  });
+}
+
+// Toggle (pouze showCount)
+function togOpt(k) {
+  cfg[k] = !cfg[k];
+  document.getElementById('tog-' + k).classList.toggle('on', cfg[k]);
+}
+
+// Mode
+function setMode(m) {
+  cfg.mode = m;
+  document.getElementById('mode-all').classList.toggle('active',   m === 'all');
+  document.getElementById('mode-range').classList.toggle('active', m === 'range');
+  document.getElementById('count-section').style.display = m === 'all'   ? '' : 'none';
+  document.getElementById('range-section').style.display = m === 'range' ? '' : 'none';
+  updateRangeInfo();
+  updateStartBtn();
+}
+
+// Count
+function setCount(n) {
+  cfg.count = n;
+  ['0','10','25','50'].forEach(v => {
+    const el = document.getElementById('cp-' + v);
+    if (el) el.classList.toggle('active', String(n) === v);
+  });
+}
+
+// Range info
+function updateRangeInfo() {
+  if (cfg.mode !== 'range') return;
+  const total = QUESTIONS.length;
+  const from  = parseInt(document.getElementById('range-from').value) || 1;
+  const to    = parseInt(document.getElementById('range-to').value)   || total;
+  const info  = document.getElementById('range-info');
+  const count = Math.max(0, Math.min(to, total) - Math.max(1, from) + 1);
+  if (from < 1 || to > total || from > to) {
+    info.className   = 'range-info warn';
+    info.textContent = `Neplatný rozsah — zadejte hodnoty 1 až ${total}`;
+  } else {
+    info.className   = 'range-info';
+    info.innerHTML   = `→ <strong>${count}</strong> otázek (z celkem ${total})`;
+  }
+  updateStartBtn();
+}
+
+function updateStartBtn() {
+  const btn = document.getElementById('btn-start');
+  if (cfg.mode === 'range') {
+    const total = QUESTIONS.length;
+    const from  = parseInt(document.getElementById('range-from').value) || 0;
+    const to    = parseInt(document.getElementById('range-to').value)   || 0;
+    btn.disabled = !(from >= 1 && to <= total && from <= to);
+  } else {
+    btn.disabled = false;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Stav
+// ─────────────────────────────────────────────────────────────────
+let S = {};
+
+function show(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Start
+// ─────────────────────────────────────────────────────────────────
+function startQuiz() {
+  const total = QUESTIONS.length;
+  let pool;
+
+  if (cfg.mode === 'range') {
+    const from = parseInt(document.getElementById('range-from').value) - 1;
+    const to   = parseInt(document.getElementById('range-to').value);
+    pool = QUESTIONS.slice(from, to);
+    if (cfg.qorder === 'random') pool = shuffle(pool);
+  } else {
+    pool = [...QUESTIONS];
+    if (cfg.qorder === 'random') pool = shuffle(pool);
+    if (cfg.count > 0 && cfg.count < pool.length) pool = pool.slice(0, cfg.count);
+  }
+
+  const questions = pool.map(q => {
+    const correctSet = new Set(q.correct);
+    let opts = q.opts.map((t, i) => ({ t, i }));
+    if (cfg.oorder === 'random') opts = shuffle(opts);
+    const newCorrect = opts.reduce((acc, o, ni) => { if (correctSet.has(o.i)) acc.push(ni); return acc; }, []);
+    return { q: q.q, opts: opts.map(o => o.t), correct: newCorrect };
+  });
+
+  S = {
+    questions,
+    cur:        0,
+    answers:    questions.map(() => []),
+    scores:     questions.map(() => null),
+    confirmed:  questions.map(() => false),
+    prevScreen: null,
+  };
+
+  show('screen-quiz');
+  renderQ();
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Render otázky
+// ─────────────────────────────────────────────────────────────────
+function renderQ() {
+  const n    = S.cur;
+  const q    = S.questions[n];
+  const tot  = S.questions.length;
+  const done = S.confirmed[n];
+  const sel  = S.answers[n];
+  const correctSet = new Set(q.correct);
+  const LETTERS = ['A','B','C','D','E','F'];
+
+  document.getElementById('p-cur').textContent     = n + 1;
+  document.getElementById('p-tot').textContent     = tot;
+  document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
+  document.getElementById('q-num').textContent     = `Otázka ${n + 1} / ${tot}`;
+  document.getElementById('q-text').textContent    = q.q;
+
+  const hintEl = document.getElementById('q-hint');
+  if (cfg.showCount) {
+    const c = q.correct.length;
+    hintEl.textContent = c === 1 ? '1 správná odpověď' : `${c} správné odpovědi`;
+    hintEl.className   = 'q-hint' + (done ? ' done' : '');
+  } else {
+    hintEl.textContent = '';
+    hintEl.className   = 'q-hint';
+  }
+
+  // Možnosti
+  const showFb = done && cfg.fb === 'ihned';
+  const optsEl = document.getElementById('opts');
+  optsEl.innerHTML = '';
+  q.opts.forEach((txt, i) => {
+    const isSel     = sel.includes(i);
+    const isCorrect = correctSet.has(i);
+    let cls = 'opt'; let box = '';
+
+    if (showFb) {
+      if (isSel && isCorrect)  { cls += ' ok locked picked';   box = '✓'; }
+      else if (isSel)          { cls += ' bad locked picked';  box = '✗'; }
+      else if (isCorrect)      { cls += ' miss locked'; box = '→'; }
+      else                     { cls += ' locked'; }
+    } else if (done) {
+      cls += ' locked';
+      if (isSel) { cls += ' sel'; box = '✓'; }
+    } else {
+      if (isSel) { cls += ' sel'; box = '✓'; }
+    }
+
+    const d = document.createElement('div');
+    d.className = cls;
+    d.innerHTML = `<div class="opt-box">${box}</div>
+      <div class="opt-txt">${txt}</div>`;
+    if (!done) d.addEventListener('click', () => toggleOpt(i));
+    optsEl.appendChild(d);
+  });
+
+  // Zpětná vazba (jen v režimu "Ihned")
+  const fbEl = document.getElementById('fb');
+  if (done && cfg.fb === 'ihned') {
+    const score = S.scores[n];
+    fbEl.className = 'fb show';
+    if (score === 1) {
+      document.getElementById('fb-icon').textContent = '🎯';
+      document.getElementById('fb-txt').innerHTML    = '<strong>Správně!</strong>';
+      document.getElementById('fb-pts').textContent  = '+1,00';
+      document.getElementById('fb-pts').style.color  = 'var(--green)';
+    } else if (score > 0) {
+      const cSel = sel.filter(i => correctSet.has(i)).length;
+      document.getElementById('fb-icon').textContent = '◐';
+      document.getElementById('fb-txt').innerHTML    = `<strong>Částečně správně.</strong> ${cSel} ze ${q.correct.length} správných.`;
+      document.getElementById('fb-pts').textContent  = '+' + score.toFixed(2).replace('.', ',');
+      document.getElementById('fb-pts').style.color  = 'var(--amber)';
+    } else {
+      const hasWrong = sel.some(i => !correctSet.has(i));
+      document.getElementById('fb-icon').textContent = '✗';
+      document.getElementById('fb-txt').innerHTML    = hasWrong
+        ? '<strong>Špatná odpověď.</strong> Vybrána chybná možnost.'
+        : sel.length === 0 ? '<strong>Bez odpovědi.</strong>' : '<strong>0 bodů.</strong>';
+      document.getElementById('fb-pts').textContent = '+0,00';
+      document.getElementById('fb-pts').style.color = 'var(--red)';
+    }
+  } else {
+    fbEl.className = 'fb';
+  }
+
+  // Tlačítko
+  const btn = document.getElementById('btn-main');
+  if (!done) {
+    btn.textContent   = 'Potvrdit';
+    btn.style.opacity = sel.length === 0 ? '0.4' : '1';
+  } else if (n < tot - 1) {
+    btn.textContent   = 'Další otázka →';
+    btn.style.opacity = '1';
+  } else {
+    btn.textContent   = 'Zobrazit výsledky →';
+    btn.style.opacity = '1';
+  }
+}
+
+function toggleOpt(i) {
+  if (S.confirmed[S.cur]) return;
+  const a = S.answers[S.cur];
+  const p = a.indexOf(i);
+  if (p === -1) a.push(i); else a.splice(p, 1);
+  renderQ();
+}
+
+function mainBtn() {
+  const n = S.cur;
+  if (!S.confirmed[n]) {
+    if (S.answers[n].length === 0) return;
+    const q         = S.questions[n];
+    const sel       = S.answers[n];
+    const correctSet = new Set(q.correct);
+    const hasWrong  = sel.some(i => !correctSet.has(i));
+    let score = 0;
+    if (!hasWrong && sel.length > 0)
+      score = sel.filter(i => correctSet.has(i)).length / q.correct.length;
+    S.scores[n]    = score;
+    S.confirmed[n] = true;
+    renderQ();
+  } else {
+    if (n < S.questions.length - 1) { S.cur++; window.scrollTo(0, 0); renderQ(); }
+    else showResults();
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Výsledky
+// ─────────────────────────────────────────────────────────────────
+function showResults() {
+  const tot    = S.questions.length;
+  const raw    = S.scores.reduce((a, b) => a + (b ?? 0), 0);
+  const final_ = Math.floor(raw);
+  const pct    = raw / tot;
+  let full = 0, part = 0, zero = 0;
+  S.scores.forEach(s => { if (s === 1) full++; else if (s > 0) part++; else zero++; });
+
+  document.getElementById('r-score').textContent = '0';
+  document.getElementById('r-max').textContent   = ' / ' + tot;
+  document.getElementById('r-raw').textContent   = raw.toFixed(2).replace('.', ',');
+  document.getElementById('r-pct').textContent   = Math.round(pct * 100) + ' %';
+  document.getElementById('r-full').textContent  = full;
+  document.getElementById('r-part').textContent  = part;
+  document.getElementById('r-miss').textContent  = zero;
+  document.getElementById('r-badge').innerHTML   = pct >= PASS_THRESHOLD
+    ? '<div class="badge badge-pass">✓ Prošel/a</div>'
+    : '<div class="badge badge-fail">✗ Neprošel/a</div>';
+
+  S.prevScreen = 'screen-results';
+  show('screen-results');
+  animNum('r-score', 0, final_, 900);
+}
+
+function animNum(id, from, to, ms) {
+  const el = document.getElementById(id);
+  const t0 = performance.now();
+  const tick = t => {
+    const p = Math.min((t - t0) / ms, 1);
+    el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Review
+// ─────────────────────────────────────────────────────────────────
+function openReview() {
+  if (!S.questions) return;
+  const prev = document.querySelector('.screen.active');
+  S.prevScreen = prev ? prev.id : 'screen-results';
+
+  const LETTERS = ['A','B','C','D','E','F'];
+  const body    = document.getElementById('rev-body');
+  body.innerHTML = '';
+
+  S.questions.forEach((q, qi) => {
+    const sel        = S.answers[qi];
+    const score      = S.scores[qi];
+    const confirmed  = S.confirmed[qi];
+    const correctSet = new Set(q.correct);
+    const showFb     = confirmed && cfg.fb === 'ihned';
+
+    let bCls, bTxt;
+    if (!confirmed)     { bCls = 'rb-skip'; bTxt = '—'; }
+    else if (score===1) { bCls = 'rb-full'; bTxt = '+1,00'; }
+    else if (score > 0) { bCls = 'rb-part'; bTxt = '+' + score.toFixed(2).replace('.',','); }
+    else                { bCls = 'rb-zero'; bTxt = '+0,00'; }
+
+    const card = document.createElement('div');
+    card.className = 'rq-card';
+    card.innerHTML = `
+      <div class="rq-head">
+        <span class="rq-badge ${bCls}">${bTxt}</span>
+        <div class="rq-txt">${qi + 1}. ${q.q}</div>
+      </div>
+      <div class="rq-opts" id="rqo-${qi}"></div>`;
+    body.appendChild(card);
+
+    const optsEl = card.querySelector(`#rqo-${qi}`);
+    q.opts.forEach((opt, oi) => {
+      const isSel     = sel.includes(oi);
+      const isCorrect = correctSet.has(oi);
+      let cls = 'ro ro-dim';
+      let icon = ``;
+
+      if (showFb) {
+        if (isSel && isCorrect)  { cls = 'ro ro-ok';   icon = '✓'; }
+        else if (isSel)          { cls = 'ro ro-bad';  icon = '✗'; }
+        else if (isCorrect)      { cls = 'ro ro-miss'; icon = '○'; }
+      } else if (isSel) { cls = 'ro ro-ok'; icon = '✓'; }
+
+      const d = document.createElement('div');
+      d.className = cls;
+      d.innerHTML = `<span class="ro-icon">${icon}</span><span>${opt}</span>`;
+      optsEl.appendChild(d);
+    });
+  });
+
+  show('screen-review');
+}
+
+function reviewBack() { show(S.prevScreen || 'screen-results'); }
+
+// ─────────────────────────────────────────────────────────────────
+// Abort
+// ─────────────────────────────────────────────────────────────────
+function askAbort()   { document.getElementById('overlay-abort').classList.add('show'); }
+function closeAbort() { document.getElementById('overlay-abort').classList.remove('show'); }
+function doAbort()    { closeAbort(); show('screen-start'); }
+
+// ─────────────────────────────────────────────────────────────────
+// Helpers
+// ─────────────────────────────────────────────────────────────────
+function shuffle(a) {
+  const b = [...a];
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Init
+// ─────────────────────────────────────────────────────────────────
+(function init() {
+  const total = QUESTIONS.length;
+  document.getElementById('q-count-label').textContent = total;
+  document.getElementById('db-qcount').textContent = total;
+  document.getElementById('range-to').value = total;
+  updateRangeInfo();
+
+  document.getElementById('overlay-abort').addEventListener('click', function(e) {
+    if (e.target === this) closeAbort();
+  });
+})();
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body>
+</html>

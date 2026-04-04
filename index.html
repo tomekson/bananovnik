@@ -8,7 +8,7 @@
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.json?v=4.27">
-<meta name="theme-color" content="#f0d540">
+<meta name="theme-color" content="#F3EDC4">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Komunikace a komunikační dovednosti | Banánovník</title>
 <style>
@@ -785,9 +785,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   var meta=document.querySelector('meta[name="theme-color"]');
   // Animate theme-color to match splashRipen: green→yellow→cream over 1s
   if(meta){
-    var colors=[
-      [0,'#f0d540'],[500,'#f2e182'],[800,'#F3EDC4']
-    ];
+    var colors=[[0,'#F3EDC4']];
     colors.forEach(function(c){setTimeout(function(){meta.setAttribute('content',c[1]);},c[0]);});
   }
   s.addEventListener('animationend',function(e){if(e.animationName==='splashFadeOut'){s.remove();window.scrollTo(0,0);document.body.classList.remove('has-splash');}});
@@ -2472,7 +2470,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.32';
+const APP_VERSION = '4.33';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

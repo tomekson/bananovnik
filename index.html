@@ -376,9 +376,22 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
 .score-sub { font-size: 14px; color: var(--dim); margin-top: 8px; }
 .score-sub strong { color: var(--text); }
 .badge { display: inline-flex; align-items: center; gap: 6px; border-radius: 100px; padding: 6px 14px; font-size: 13px; font-weight: 600; margin-top: 12px; }
-.badge-pass { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,.2); }
+.badge-pass { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,.2); position: relative; }
 .badge-fail { background: var(--red-bg);   color: var(--red);   border: 1px solid rgba(220,38,38,.2); }
+
+/* banana confetti */
+.confetti-banana {
+  position: fixed; font-size: 28px; z-index: 100;
+  pointer-events: none; user-select: none;
+  animation: confettiFall var(--dur) cubic-bezier(.25,.46,.45,.94) forwards;
+}
+@keyframes confettiFall {
+  0%   { opacity: 1; transform: translateY(0) rotate(0) scale(1); }
+  20%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(var(--dy)) translateX(var(--dx)) rotate(var(--rot)) scale(.4); }
+}
 .stats-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; }
+.stats-grid.cols4 { grid-template-columns: repeat(4,1fr); }
 .scel { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 14px 8px; text-align: center; box-shadow: var(--shadow); }
 .scel-val { font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .scel-val.g { color: var(--green); }
@@ -529,7 +542,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
 @keyframes textDrizzle {
   0%   { color: #fff; transform: translate(0,0); }
   20%  { color: var(--yellow); transform: translate(-2px,1px); }
-  40%  { color: #6f0911; transform: translate(1px,-1px); }
+  40%  { color: rgba(111,9,17,.8); transform: translate(1px,-1px); }
   60%  { color: #fff; transform: translate(-1px,1px); }
   80%  { color: var(--blue); transform: translate(1px,0); }
   100% { color: var(--amber); transform: translate(-1px,1px); }
@@ -539,7 +552,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   20%  { color: #fff; opacity: .4; transform: translate(-1px,3px); }
   40%  { color: var(--amber); opacity: .5; transform: translate(2px,-1px); }
   60%  { color: var(--yellow); opacity: .6; transform: translate(-2px,2px); }
-  80%  { color: #6f0911; opacity: .4; transform: translate(1px,3px); }
+  80%  { color: #6f0911; opacity: .2; transform: translate(1px,3px); }
   100% { color: var(--yellow); opacity: .5; transform: translate(2px,1px); }
 }
 @keyframes textSettle {
@@ -728,6 +741,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
       <div class="scel"><div class="scel-val g" id="r-full">—</div><div class="scel-lbl">Plný bod</div></div>
       <div class="scel"><div class="scel-val a" id="r-part">—</div><div class="scel-lbl">Částečný</div></div>
       <div class="scel"><div class="scel-val r" id="r-miss">—</div><div class="scel-lbl">Špatně</div></div>
+      <div class="scel" id="r-retried-cell" style="display:none"><div class="scel-val" style="color:var(--dim)" id="r-retried">—</div><div class="scel-lbl">Opakováno</div></div>
     </div>
     <div class="r-actions">
       <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Zopakovat chybné</button>
@@ -2040,6 +2054,7 @@ function startQuiz() {
     cur:        0,
     answers:    questions.map(() => []),
     scores:     questions.map(() => null),
+    firstScores: questions.map(() => null),
     confirmed:  questions.map(() => false),
     retried:    questions.map(() => false),
     hintUsed:   questions.map(() => false),
@@ -2195,6 +2210,7 @@ function retryWrong() {
     cur:        0,
     answers:    wrong.map(() => []),
     scores:     wrong.map(() => null),
+    firstScores: wrong.map(() => null),
     confirmed:  wrong.map(() => false),
     retried:    wrong.map(() => false),
     hintUsed:   wrong.map(() => false),
@@ -2232,6 +2248,7 @@ function mainBtn() {
     if (!hasWrong && sel.length > 0)
       score = Math.floor(sel.filter(i => correctSet.has(i)).length / q.correct.length * 100) / 100;
     S.scores[n]    = score;
+    if (S.firstScores[n] === null) S.firstScores[n] = score;
     S.confirmed[n] = true;
     renderQ();
     setTimeout(() => {
@@ -2250,11 +2267,13 @@ function mainBtn() {
 // ─────────────────────────────────────────────────────────────────
 function showResults() {
   const tot    = S.questions.length;
-  const raw    = S.scores.reduce((a, b) => a + (b ?? 0), 0);
+  const src    = S.firstScores;
+  const raw    = src.reduce((a, b) => a + (b ?? 0), 0);
   const final_ = Math.floor(raw);
   const pct    = raw / tot;
-  let full = 0, part = 0, zero = 0;
-  S.scores.forEach(s => { if (s === 1) full++; else if (s > 0) part++; else zero++; });
+  let full = 0, part = 0, zero = 0, retried = 0;
+  src.forEach((s, i) => { if (s === 1) full++; else if (s > 0) part++; else zero++; });
+  S.retried.forEach(r => { if (r) retried++; });
 
   document.getElementById('r-score').textContent = '0';
   document.getElementById('r-max').textContent   = ' / ' + tot;
@@ -2267,8 +2286,19 @@ function showResults() {
     ? '<div class="badge badge-pass">✓ Test úspěšně složen</div>'
     : '<div class="badge badge-fail">✗ Test nesplněn</div>';
 
-  const hasWrong = S.scores.some(s => s < 1);
+  const hasWrong = src.some(s => s < 1);
   document.getElementById('btn-retry-wrong').style.display = hasWrong ? '' : 'none';
+
+  const grid = document.querySelector('.stats-grid');
+  const retriedCell = document.getElementById('r-retried-cell');
+  if (retried > 0) {
+    retriedCell.style.display = '';
+    grid.classList.add('cols4');
+    document.getElementById('r-retried').textContent = '0';
+  } else {
+    retriedCell.style.display = 'none';
+    grid.classList.remove('cols4');
+  }
 
   S.prevScreen = 'screen-results';
   show('screen-results');
@@ -2276,6 +2306,44 @@ function showResults() {
   animNum('r-full', 0, full, 700);
   animNum('r-part', 0, part, 700);
   animNum('r-miss', 0, zero, 700);
+  if (retried > 0) animNum('r-retried', 0, retried, 700);
+  if (pct >= PASS_THRESHOLD) setTimeout(bananaConfetti, 400);
+}
+
+function spawnBurst(cx, cy, count, extraDur) {
+  extraDur = extraDur || 0;
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement('div');
+    el.className = 'confetti-banana';
+    el.textContent = '🍌';
+    const angle = (Math.PI * 2 * i / count) + (Math.random() - .5) * .5;
+    const dist = 120 + Math.random() * 180;
+    const dx = Math.cos(angle) * dist;
+    const dy = Math.sin(angle) * dist - 60;
+    const rot = (Math.random() - .5) * 720;
+    const dur = 1 + Math.random() * .8 + extraDur;
+    el.style.cssText = `left:${cx}px;top:${cy}px;--dx:${dx}px;--dy:${dy}px;--rot:${rot}deg;--dur:${dur}s;font-size:${20 + Math.random()*16}px`;
+    document.body.appendChild(el);
+    el.addEventListener('animationend', () => el.remove());
+  }
+}
+
+function bananaConfetti() {
+  const badge = document.querySelector('.badge-pass');
+  if (!badge) return;
+  const rect = badge.getBoundingClientRect();
+  spawnBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 12);
+
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  var delays = [200, 420, 650, 880, 1120, 1350];
+  for (let d = 0; d < 6; d++) {
+    setTimeout((idx) => {
+      const rx = vw * (.35 + Math.random() * .3);
+      const ry = vh * (.35 + Math.random() * .3);
+      spawnBurst(rx, ry, 6 + Math.floor(Math.random() * 4), idx >= 3 ? 0.2 : 0);
+    }, delays[d], d);
+  }
 }
 
 function animNum(id, from, to, ms) {

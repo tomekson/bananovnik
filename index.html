@@ -293,7 +293,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   width: 22px; height: 22px; border-radius: 6px;
   border: 2px solid var(--line2); background: var(--card2);
   flex-shrink: 0; display: flex; align-items: center; justify-content: center;
-  font-size: 12px; font-weight: 700; transition: all .15s; margin-top: 1px;
+  font-size: 11px; font-weight: 700; transition: all .15s; margin-top: 1px; color: var(--muted);
 }
 .opt.sel  .opt-box { background: var(--yellow); border-color: var(--yellow); color: var(--text); }
 .opt.ok   .opt-box { background: var(--green); border-color: var(--green); color: white; }
@@ -719,7 +719,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
       </div>
       <button class="btn-start" id="btn-main" onclick="mainBtn()">Potvrdit</button>
       <div class="quiz-ftr-row" id="ftr-row" style="display:none">
-        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat</button>
+        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat (Z)</button>
         <button class="btn-start" onclick="mainBtn()">Další otázka →</button>
       </div>
     </div>
@@ -741,15 +741,15 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
     </div>
     <div class="stats-grid">
       <div class="scel"><div class="scel-val g" id="r-full">—</div><div class="scel-lbl">Plný bod</div></div>
-      <div class="scel"><div class="scel-val a" id="r-part">—</div><div class="scel-lbl">Částečný</div></div>
+      <div class="scel"><div class="scel-val a" id="r-part">—</div><div class="scel-lbl">Částečně</div></div>
       <div class="scel"><div class="scel-val r" id="r-miss">—</div><div class="scel-lbl">Špatně</div></div>
       <div class="scel" id="r-retried-cell" style="display:none"><div class="scel-val" style="color:var(--dim)" id="r-retried">—</div><div class="scel-lbl">Opakováno</div></div>
     </div>
     <div class="r-actions">
       <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Zopakovat chybné</button>
       <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
-      <button class="btn-sec"   onclick="startQuiz()">Opakovat stejné nastavení</button>
-      <button class="btn-sec"   onclick="show('screen-start')">Zpět na nastavení</button>
+      <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="startQuiz()">Zopakovat test</button>
+      <button class="btn-sec" style="flex:1" onclick="show('screen-start')">Zpět na nastavení</button></div>
     </div>
   </div>
 </div>
@@ -2068,7 +2068,7 @@ function startQuiz() {
     firstScores: questions.map(() => null),
     firstAnswers: questions.map(() => null),
     confirmed:  questions.map(() => false),
-    retried:    questions.map(() => false),
+    retried:    questions.map(() => 0),
     hintUsed:   questions.map(() => false),
     prevScreen: null,
   };
@@ -2122,16 +2122,18 @@ function renderQ() {
     const isCorrect = correctSet.has(i);
     let cls = 'opt'; let box = '';
 
+    const ltr = LETTERS[i] || '';
     if (showFb) {
       if (isSel && isCorrect)  { cls += ' ok locked picked' + (isFullScore ? ' full' : '');   box = '✓'; }
       else if (isSel)          { cls += ' bad locked picked';  box = '✗'; }
       else if (isCorrect)      { cls += ' miss locked'; box = '→'; }
-      else                     { cls += ' locked'; }
+      else                     { cls += ' locked'; box = ltr; }
     } else if (done) {
       cls += ' locked';
-      if (isSel) { cls += ' sel picked'; box = '•'; }
+      if (isSel) { cls += ' sel picked'; box = '•'; } else { box = ltr; }
     } else {
-      if (isSel) { cls += ' sel'; box = '✓'; }
+      box = ltr;
+      if (isSel) { cls += ' sel'; }
     }
 
     const d = document.createElement('div');
@@ -2146,26 +2148,27 @@ function renderQ() {
   const fbEl = document.getElementById('fb');
   if (done && cfg.fb === 'ihned') {
     const score = S.scores[n];
+    const isRetry = S.retried[n] > 0;
     fbEl.className = 'fb show';
     if (score === 1) {
       document.getElementById('fb-icon').textContent = '🎯';
-      document.getElementById('fb-txt').innerHTML    = '<strong>Správně!</strong>';
-      document.getElementById('fb-pts').textContent  = '+1,00';
-      document.getElementById('fb-pts').style.color  = 'var(--green)';
+      document.getElementById('fb-txt').innerHTML    = isRetry ? '<strong>Správně!</strong> (opakování)' : '<strong>Správně!</strong>';
+      document.getElementById('fb-pts').textContent  = isRetry ? '—' : '+1,00';
+      document.getElementById('fb-pts').style.color  = isRetry ? 'var(--muted)' : 'var(--green)';
     } else if (score > 0) {
       const cSel = sel.filter(i => correctSet.has(i)).length;
       document.getElementById('fb-icon').textContent = '◐';
-      document.getElementById('fb-txt').innerHTML    = `<strong>Částečně správně.</strong> ${cSel} ze ${q.correct.length} správných.`;
-      document.getElementById('fb-pts').textContent  = '+' + score.toFixed(2).replace('.', ',');
-      document.getElementById('fb-pts').style.color  = 'var(--amber)';
+      document.getElementById('fb-txt').innerHTML    = isRetry ? `<strong>Částečně správně.</strong> ${cSel} ze ${q.correct.length} správných. (opakování)` : `<strong>Částečně správně.</strong> ${cSel} ze ${q.correct.length} správných.`;
+      document.getElementById('fb-pts').textContent  = isRetry ? '—' : '+' + score.toFixed(2).replace('.', ',');
+      document.getElementById('fb-pts').style.color  = isRetry ? 'var(--muted)' : 'var(--amber)';
     } else {
       const hasWrong = sel.some(i => !correctSet.has(i));
       document.getElementById('fb-icon').textContent = '✗';
       document.getElementById('fb-txt').innerHTML    = hasWrong
         ? '<strong>Špatná odpověď.</strong> Vybrána chybná možnost.'
         : sel.length === 0 ? '<strong>Bez odpovědi.</strong>' : '<strong>0 bodů.</strong>';
-      document.getElementById('fb-pts').textContent = '+0,00';
-      document.getElementById('fb-pts').style.color = 'var(--red)';
+      document.getElementById('fb-pts').textContent = isRetry ? '—' : '+0,00';
+      document.getElementById('fb-pts').style.color = isRetry ? 'var(--muted)' : 'var(--red)';
     }
   } else {
     fbEl.className = 'fb';
@@ -2177,7 +2180,7 @@ function renderQ() {
   const score  = S.scores[n];
 
   if (!done) {
-    btn.textContent   = 'Potvrdit';
+    btn.textContent   = 'Potvrdit ↵';
     btn.style.opacity = sel.length === 0 ? '0.4' : '1';
     btn.style.display = '';
     ftrRow.style.display = 'none';
@@ -2186,11 +2189,11 @@ function renderQ() {
     btn.style.display = 'none';
     ftrRow.style.display = '';
     const ftrNext = ftrRow.querySelector('.btn-start');
-    ftrNext.textContent = n < tot - 1 ? 'Další otázka →' : 'Zobrazit výsledky →';
+    ftrNext.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Zobrazit výsledky ↵';
   } else {
     btn.style.display = '';
     ftrRow.style.display = 'none';
-    btn.textContent = n < tot - 1 ? 'Další otázka →' : 'Zobrazit výsledky →';
+    btn.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Zobrazit výsledky ↵';
     btn.style.opacity = '1';
   }
 
@@ -2205,8 +2208,14 @@ function retryQ() {
   S.answers[n]   = [];
   S.scores[n]    = null;
   S.confirmed[n] = false;
-  S.retried[n]   = true;
+  S.retried[n]   = (S.retried[n] || 0) + 1;
   S.hintUsed[n]  = false;
+  // Reshuffle options
+  const q = S.questions[n];
+  const opts = q.opts.map((t, i) => ({ t, ci: q.correct.includes(i) }));
+  const shuffled = shuffle(opts);
+  q.opts = shuffled.map(o => o.t);
+  q.correct = shuffled.reduce((acc, o, i) => { if (o.ci) acc.push(i); return acc; }, []);
   window.scrollTo(0, 0);
   renderQ();
 }
@@ -2225,7 +2234,7 @@ function retryWrong() {
     firstScores: wrong.map(() => null),
     firstAnswers: wrong.map(() => null),
     confirmed:  wrong.map(() => false),
-    retried:    wrong.map(() => false),
+    retried:    wrong.map(() => 0),
     hintUsed:   wrong.map(() => false),
     prevScreen: null,
   };
@@ -2286,7 +2295,7 @@ function showResults() {
   const pct    = raw / tot;
   let full = 0, part = 0, zero = 0, retried = 0;
   src.forEach((s, i) => { if (s === 1) full++; else if (s > 0) part++; else zero++; });
-  S.retried.forEach(r => { if (r) retried++; });
+  S.retried.forEach(r => { retried += (r || 0); });
 
   document.getElementById('r-score').textContent = '0';
   document.getElementById('r-max').textContent   = ' / ' + tot;
@@ -2319,7 +2328,7 @@ function showResults() {
   animNum('r-full', 0, full, 700);
   animNum('r-part', 0, part, 700);
   animNum('r-miss', 0, zero, 700);
-  if (retried > 0) animNum('r-retried', 0, retried, 700);
+  if (retried > 0) animNum('r-retried', 0, retried, 700, '×');
   if (pct >= PASS_THRESHOLD) setTimeout(bananaConfetti, 400);
 }
 
@@ -2359,12 +2368,13 @@ function bananaConfetti() {
   }
 }
 
-function animNum(id, from, to, ms) {
+function animNum(id, from, to, ms, suffix) {
   const el = document.getElementById(id);
+  const sfx = suffix || '';
   const t0 = performance.now();
   const tick = t => {
     const p = Math.min((t - t0) / ms, 1);
-    el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3)));
+    el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3))) + sfx;
     if (p < 1) requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
@@ -2450,6 +2460,21 @@ function shuffle(a) {
 }
 
 // ─────────────────────────────────────────────────────────────────
+// Keyboard shortcuts
+// ─────────────────────────────────────────────────────────────────
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('screen-quiz').classList.contains('active')) return;
+  if (!S.questions || S.cur == null) return;
+  var n = S.cur;
+  if (e.key === 'Enter') { e.preventDefault(); mainBtn(); return; }
+  if ((e.key === 'z' || e.key === 'Z') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
+  var idx = 'abcdef'.indexOf(e.key.toLowerCase());
+  if (idx === -1 || idx >= S.questions[n].opts.length) return;
+  if (S.confirmed[n]) return;
+  toggleOpt(idx);
+});
+
+// ─────────────────────────────────────────────────────────────────
 // Init
 // ─────────────────────────────────────────────────────────────────
 (function init() {
@@ -2470,7 +2495,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.34';
+const APP_VERSION = '4.44';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

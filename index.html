@@ -39,9 +39,14 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 html { height: 100%; background: var(--bg); }
+html:has(body.has-splash) { background: var(--blue); animation: splashRipen 1s ease both; }
 body {
   min-height: 100%;
   background: var(--bg);
+}
+body.has-splash {
+  background: var(--blue);
+  animation: splashRipen 1s ease both;
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
@@ -2459,7 +2464,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.28';
+const APP_VERSION = '4.29';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

@@ -43,14 +43,11 @@ html:has(body.has-splash) { background: var(--blue); animation: splashRipen 1s e
 body {
   min-height: 100%;
   background: var(--bg);
-}
-body.has-splash {
-  background: var(--blue);
-  animation: splashRipen 1s ease both;
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
 }
+body.has-splash { background: var(--blue); animation: splashRipen 1s ease both; }
 
 /* ── SCREENS ─────────────────────────────────────── */
 .screen { display: none; min-height: 100svh; flex-direction: column; animation: fadeUp .26s ease; }
@@ -2464,7 +2461,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.30';
+const APP_VERSION = '4.31';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

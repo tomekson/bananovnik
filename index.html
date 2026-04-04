@@ -13,9 +13,9 @@
 <title>Komunikace a komunikační dovednosti | Banánovník</title>
 <style>
 :root {
-  --bg: #f5f6f0;
-  --card: #ffffff;
-  --card2: #f7f8fb;
+  --bg: #F3EDC4;
+  --card: #F3EDC4;
+  --card2: #ede7b1;
   --line: rgba(0,0,0,0.05);
   --line2: rgba(0,0,0,0.09);
   --blue: #2d8a4e;
@@ -50,6 +50,7 @@ body {
 /* ── SCREENS ─────────────────────────────────────── */
 .screen { display: none; min-height: 100svh; flex-direction: column; animation: fadeUp .26s ease; }
 .screen.active { display: flex; }
+body.has-splash #screen-start { opacity: 0; animation: none; }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -306,6 +307,7 @@ body {
   font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
   color: var(--muted); opacity: .7;
 }
+.opt.ok.picked.full::after { display: none; }
 .opt.bad.picked::after {
   content: 'chybná'; color: var(--red); opacity: .6;
 }
@@ -447,9 +449,132 @@ body {
   transform: translate(3px, 3px); z-index: -1;
 }
 .btn-danger:active { opacity: .8; }
+
+/* ── SPLASH ─────────────────────────────────────── */
+#splash {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--blue);
+  display: flex; align-items: center; justify-content: center;
+  animation: splashRipen 1s ease both,
+             splashFadeOut .2s ease 1s forwards;
+}
+#splash.done { pointer-events: none; }
+.splash-inner {
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+}
+
+/* logo */
+.splash-logo {
+  width: 80px; height: 80px; border-radius: 20px;
+  background: rgba(255,255,255,.15); border: 2px solid rgba(255,255,255,.2);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; isolation: isolate;
+  animation: logoEntry .4s cubic-bezier(.34,1.56,.64,1) .03s both,
+             logoRipen 1s ease both,
+             logoSettle .2s ease .8s forwards;
+}
+.splash-logo::before {
+  content: ''; position: absolute; inset: 0; border-radius: 20px;
+  background: rgba(0,0,0,.12);
+  transform: translate(-4px,-4px); z-index: -1;
+  animation: shadowPop .3s ease .05s both,
+             logoShadowRipen 1s ease both,
+             logoShadowSettle .2s ease .8s forwards;
+}
+.splash-logo svg { width: 48px; height: 48px; }
+
+/* text drizzle */
+.splash-text {
+  font-size: 28px; font-weight: 800; letter-spacing: 1px;
+  position: relative; isolation: isolate;
+  animation: textDrizzle .5s steps(1) .1s both,
+             textSettle .2s ease .6s forwards;
+  color: #fff;
+}
+.splash-text::before {
+  content: attr(data-text);
+  position: absolute; top: 0; left: 0; z-index: -1;
+  animation: textShadowDrizzle .5s steps(1) .1s both,
+             textShadowSettle .2s ease .6s forwards;
+  color: var(--yellow); opacity: .6;
+}
+
+@keyframes logoEntry {
+  0%   { opacity: 0; transform: scale(.3) translateY(40px); }
+  60%  { opacity: 1; transform: scale(1.08) translateY(-6px); }
+  80%  { transform: scale(.97) translateY(2px); }
+  100% { transform: scale(1) translateY(0); }
+}
+@keyframes shadowPop {
+  from { opacity: 0; transform: translate(0,0); }
+  to   { opacity: 1; transform: translate(-4px,-4px); }
+}
+@keyframes logoRipen {
+  0%   { background: rgba(240,213,64,.25); border-color: rgba(240,213,64,.4); }
+  60%  { background: rgba(45,138,78,.15); border-color: rgba(45,138,78,.3); }
+  100% { background: rgba(45,138,78,.08); border-color: rgba(45,138,78,.15); }
+}
+@keyframes logoShadowRipen {
+  0%   { background: var(--blue); opacity: .2; }
+  60%  { background: var(--yellow); opacity: .3; }
+  100% { background: var(--yellow); opacity: .25; }
+}
+@keyframes logoSettle {
+  to { background: var(--blue-bg); border-color: var(--blue-mid); }
+}
+@keyframes logoShadowSettle {
+  to { background: var(--yellow); opacity: .25; }
+}
+
+@keyframes textDrizzle {
+  0%   { color: #fff; transform: translate(0,0); }
+  20%  { color: var(--yellow); transform: translate(-2px,1px); }
+  40%  { color: #6f0911; transform: translate(1px,-1px); }
+  60%  { color: #fff; transform: translate(-1px,1px); }
+  80%  { color: var(--blue); transform: translate(1px,0); }
+  100% { color: var(--amber); transform: translate(-1px,1px); }
+}
+@keyframes textShadowDrizzle {
+  0%   { color: var(--yellow); opacity: .6; transform: translate(3px,2px); }
+  20%  { color: #fff; opacity: .4; transform: translate(-1px,3px); }
+  40%  { color: var(--amber); opacity: .5; transform: translate(2px,-1px); }
+  60%  { color: var(--yellow); opacity: .6; transform: translate(-2px,2px); }
+  80%  { color: #6f0911; opacity: .4; transform: translate(1px,3px); }
+  100% { color: var(--yellow); opacity: .5; transform: translate(2px,1px); }
+}
+@keyframes textSettle {
+  from { transform: translate(-1px,1px); }
+  to   { color: var(--blue); transform: translate(0,0); }
+}
+@keyframes textShadowSettle {
+  to { color: #E8E8E8; opacity: 1; transform: translate(1.5px,1.5px); }
+}
+@keyframes splashRipen {
+  0%   { background: var(--blue); }
+  60%  { background: var(--yellow); }
+  100% { background: #F3EDC4; }
+}
+@keyframes splashFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; visibility: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #splash { animation: splashFadeOut .01s forwards; }
+  #splash * { animation: none !important; }
+}
 </style>
 </head>
-<body>
+<body class="has-splash">
+
+<div id="splash">
+  <div class="splash-inner">
+    <div class="splash-logo">
+      <svg viewBox="-3.84 0 50.112 50.112" xmlns="http://www.w3.org/2000/svg"><g transform="translate(3289.749 -2050.811)"><path d="M-3263.594,2063.28l-.775-9.926,6.724-1.56a.913.913,0,0,1,.89,1.454c-1.3,1.761-1.864,5.88-.3,9.432l-6.536.6" fill="#fff" fill-rule="evenodd"/><path d="M-3260.522,2066.352l-.775-9.928,6.724-1.558a.912.912,0,0,1,.89,1.454c-1.295,1.762-1.864,5.879-.3,9.431l-6.536.6" fill="#4aa86a" fill-rule="evenodd"/><path d="M-3263.348,2054.1l.635,8.134,4.316-.4c-1.085-3.477-.519-7.179.8-9.07Zm-.246,10.139a.954.954,0,0,1-.618-.226.952.952,0,0,1-.338-.659l-.776-9.927a.96.96,0,0,1,.74-1.01l6.725-1.559a1.81,1.81,0,0,1,1.935.783,1.888,1.888,0,0,1-.056,2.175c-1.029,1.4-1.669,5.124-.2,8.476a.964.964,0,0,1-.052.874.962.962,0,0,1-.74.468l-6.535.6a.879.879,0,0,1-.088,0" fill="#6f0911" fill-rule="evenodd"/><path d="M-3260.469,2082.662c7.028-6.449,4.68-17.882,2.085-19.627h-5.229c-1.987,8.82-8.471,16.4-23.633,13.812a1.268,1.268,0,0,0-1.52,1.469c1.208,6.421,15.627,15.97,28.3,4.346" fill="#fff" fill-rule="evenodd"/><path d="M-3257.4,2085.734c7.028-6.449,4.68-17.882,2.085-19.627h-5.23c-1.986,8.82-8.47,16.4-23.632,13.812a1.268,1.268,0,0,0-1.52,1.469c1.208,6.421,15.627,15.971,28.3,4.346" fill="#f0d540" fill-rule="evenodd"/><path d="M-3260.469,2082.662h0Zm-27.021-4.876a.371.371,0,0,0-.269.1.259.259,0,0,0-.063.249c.5,2.66,3.856,6.425,9.091,8.168,3.527,1.173,10.5,2.171,17.613-4.351,4.388-4.028,4.462-9.764,4.29-12.045-.233-3.1-1.19-5.207-1.9-5.915h-4.133c-1.521,5.931-5.925,14.331-18.641,14.333a35.1,35.1,0,0,1-5.909-.535A.484.484,0,0,0-3287.49,2077.786Zm14.062,11.305a18.815,18.815,0,0,1-5.91-.963c-5.291-1.761-9.652-5.813-10.371-9.635a2.172,2.172,0,0,1,.58-1.95,2.329,2.329,0,0,1,2.044-.643c15.595,2.665,20.861-5.641,22.535-13.077a.96.96,0,0,1,.936-.748h5.23a.965.965,0,0,1,.535.163c1.493,1,2.672,4.029,2.936,7.528.193,2.559.1,9.007-4.908,13.6h0c-4.864,4.463-9.7,5.721-13.607,5.721" fill="#6f0911" fill-rule="evenodd"/><path d="M-3251.446,2081.691c3.1-11.533-1.08-21.484-6.522-20.668l-3.542,2.112c.7,3.865,1.041,22.672-21.777,30.122a1.189,1.189,0,0,0-.71,1.733c3.28,5.589,27.928,3.9,32.551-13.3" fill="#fff" fill-rule="evenodd"/><path d="M-3248.374,2084.763c3.1-11.532-1.08-21.484-6.522-20.668l-3.542,2.112c.7,3.865,1.041,22.672-21.777,30.122a1.189,1.189,0,0,0-.71,1.733c3.28,5.59,27.928,3.9,32.551-13.3" fill="#f0d540" fill-rule="evenodd"/><path d="M-3260.462,2063.628c.9,6.783-1.491,23.673-22.528,30.542a.31.31,0,0,0-.2.173.174.174,0,0,0,.018.16c.964,1.643,5.223,2.953,11.215,2.144,7.772-1.047,17-5.592,19.581-15.206h0c2.229-8.294.519-15.125-2.012-17.963a3.967,3.967,0,0,0-3.265-1.527Zm-15.031,35.186c-4.534,0-8.087-1.217-9.332-3.338a2.1,2.1,0,0,1-.158-1.813,2.212,2.212,0,0,1,1.4-1.318c24.256-7.919,21.168-28.829,21.131-29.038a.958.958,0,0,1,.452-1l3.542-2.112a.95.95,0,0,1,.349-.124,5.733,5.733,0,0,1,5.158,2.125c2.962,3.319,4.861,10.709,2.434,19.741h0c-2.828,10.523-12.795,15.481-21.179,16.611a28.591,28.591,0,0,1-3.795.264" fill="#6f0911" fill-rule="evenodd"/><path d="M-3255.874,2079.325c-.033,0-.067,0-.1,0a.96.96,0,0,1-.857-1.054,9.756,9.756,0,0,0,.052-1.15.962.962,0,0,1,.949-.973.954.954,0,0,1,.971.948,11.464,11.464,0,0,1-.063,1.372.96.96,0,0,1-.953.862" fill="#6f0911" fill-rule="evenodd"/><path d="M-3267.492,2093.451a.959.959,0,0,1-.883-.583.96.96,0,0,1,.5-1.261,18.917,18.917,0,0,0,10.059-9.675.959.959,0,0,1,1.259-.508.96.96,0,0,1,.508,1.259,20.858,20.858,0,0,1-11.07,10.69.968.968,0,0,1-.377.078" fill="#6f0911" fill-rule="evenodd"/></g></svg>
+    </div>
+    <div class="splash-text" data-text="Banánovník">Banánovník</div>
+  </div>
+</div>
 
 <!-- ═══════════════════════════ START ═══════════════════════════ -->
 <div id="screen-start" class="screen active">
@@ -638,6 +763,9 @@ body {
 </div>
 
 <script>
+// ── Splash screen ──
+(function(){var s=document.getElementById('splash');if(!s)return;s.addEventListener('animationend',function(e){if(e.animationName==='splashFadeOut'){s.remove();window.scrollTo(0,0);document.body.classList.remove('has-splash');}});})();
+
 // ╔══════════════════════════════════════════════════════════════╗
 // ║  OTÁZKY — editujte tuto část                                 ║
 // ║                                                              ║
@@ -1773,9 +1901,9 @@ const QUESTIONS = [
 ];
 
 // ╔══════════════════════════════════════════════════════════════╗
-// ║  Práh úspěšnosti pro odznak Prošel/Neprošel (výchozí 60 %)  ║
+// ║  Práh úspěšnosti ║
 // ╚══════════════════════════════════════════════════════════════╝
-const PASS_THRESHOLD = 0.60;
+const PASS_THRESHOLD = 0.51;
 
 // ─────────────────────────────────────────────────────────────────
 // Konfigurace
@@ -1959,6 +2087,7 @@ function renderQ() {
 
   // Možnosti
   const showFb = done && cfg.fb === 'ihned';
+  const isFullScore = showFb && S.scores[n] === 1;
   const optsEl = document.getElementById('opts');
   optsEl.innerHTML = '';
   q.opts.forEach((txt, i) => {
@@ -1967,7 +2096,7 @@ function renderQ() {
     let cls = 'opt'; let box = '';
 
     if (showFb) {
-      if (isSel && isCorrect)  { cls += ' ok locked picked';   box = '✓'; }
+      if (isSel && isCorrect)  { cls += ' ok locked picked' + (isFullScore ? ' full' : '');   box = '✓'; }
       else if (isSel)          { cls += ' bad locked picked';  box = '✗'; }
       else if (isCorrect)      { cls += ' miss locked'; box = '→'; }
       else                     { cls += ' locked'; }
@@ -2131,12 +2260,12 @@ function showResults() {
   document.getElementById('r-max').textContent   = ' / ' + tot;
   document.getElementById('r-raw').textContent   = raw.toFixed(2).replace('.', ',');
   document.getElementById('r-pct').textContent   = Math.round(pct * 100) + ' %';
-  document.getElementById('r-full').textContent  = full;
-  document.getElementById('r-part').textContent  = part;
-  document.getElementById('r-miss').textContent  = zero;
+  document.getElementById('r-full').textContent  = '0';
+  document.getElementById('r-part').textContent  = '0';
+  document.getElementById('r-miss').textContent  = '0';
   document.getElementById('r-badge').innerHTML   = pct >= PASS_THRESHOLD
-    ? '<div class="badge badge-pass">✓ Prošel/a</div>'
-    : '<div class="badge badge-fail">✗ Neprošel/a</div>';
+    ? '<div class="badge badge-pass">✓ Test úspěšně složen</div>'
+    : '<div class="badge badge-fail">✗ Test nesplněn</div>';
 
   const hasWrong = S.scores.some(s => s < 1);
   document.getElementById('btn-retry-wrong').style.display = hasWrong ? '' : 'none';
@@ -2144,6 +2273,9 @@ function showResults() {
   S.prevScreen = 'screen-results';
   show('screen-results');
   animNum('r-score', 0, final_, 900);
+  animNum('r-full', 0, full, 700);
+  animNum('r-part', 0, part, 700);
+  animNum('r-miss', 0, zero, 700);
 }
 
 function animNum(id, from, to, ms) {

@@ -336,6 +336,11 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   box-shadow: 0 -1px 6px rgba(0,0,0,.04); display: flex; gap: 9px;
   justify-content: center;
 }
+.quiz-ftr::before {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 100%;
+  height: 40px; pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--bg));
+}
 .quiz-ftr-inner { max-width: 640px; width: 100%; display: flex; flex-direction: column; gap: 6px; }
 .quiz-ftr-inner .btn-start { width: 100%; padding: 14px; font-size: 16px; }
 .quiz-ftr-row { display: flex; gap: 9px; }
@@ -680,7 +685,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
 
     <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test →</button>
 
-    <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline — v prohlížeče zvol „Sdílet - Přidat na plochu" nebo „Menu - Instalovat aplikaci".</div>
+    <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu"<!-- nebo „Menu - Instalovat aplikaci" -->.</div>
 
 
   </div>
@@ -2495,7 +2500,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.44';
+const APP_VERSION = '4.45';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

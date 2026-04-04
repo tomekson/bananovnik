@@ -39,7 +39,7 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 html { height: 100%; background: var(--bg); }
-html:has(body.has-splash) { background: var(--blue); animation: splashRipen 1s ease both; }
+html:has(body.has-splash) { background: var(--bg); }
 body {
   min-height: 100%;
   background: var(--bg);
@@ -47,7 +47,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
 }
-body.has-splash { background: var(--blue); animation: splashRipen 1s ease both; }
+body.has-splash { background: var(--bg); }
 
 /* ── SCREENS ─────────────────────────────────────── */
 .screen { display: none; min-height: 100svh; flex-direction: column; animation: fadeUp .26s ease; }
@@ -2470,7 +2470,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.33';
+const APP_VERSION = '4.34';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

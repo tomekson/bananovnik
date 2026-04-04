@@ -2055,6 +2055,7 @@ function startQuiz() {
     answers:    questions.map(() => []),
     scores:     questions.map(() => null),
     firstScores: questions.map(() => null),
+    firstAnswers: questions.map(() => null),
     confirmed:  questions.map(() => false),
     retried:    questions.map(() => false),
     hintUsed:   questions.map(() => false),
@@ -2202,7 +2203,7 @@ function retryQ() {
 function retryWrong() {
   const wrong = [];
   S.questions.forEach((q, i) => {
-    if (S.scores[i] < 1) wrong.push(q);
+    if (S.firstScores[i] < 1) wrong.push(q);
   });
   if (wrong.length === 0) return;
   S = {
@@ -2211,6 +2212,7 @@ function retryWrong() {
     answers:    wrong.map(() => []),
     scores:     wrong.map(() => null),
     firstScores: wrong.map(() => null),
+    firstAnswers: wrong.map(() => null),
     confirmed:  wrong.map(() => false),
     retried:    wrong.map(() => false),
     hintUsed:   wrong.map(() => false),
@@ -2248,7 +2250,7 @@ function mainBtn() {
     if (!hasWrong && sel.length > 0)
       score = Math.floor(sel.filter(i => correctSet.has(i)).length / q.correct.length * 100) / 100;
     S.scores[n]    = score;
-    if (S.firstScores[n] === null) S.firstScores[n] = score;
+    if (S.firstScores[n] === null) { S.firstScores[n] = score; S.firstAnswers[n] = [...sel]; }
     S.confirmed[n] = true;
     renderQ();
     setTimeout(() => {
@@ -2370,8 +2372,8 @@ function openReview() {
   body.innerHTML = '';
 
   S.questions.forEach((q, qi) => {
-    const sel        = S.answers[qi];
-    const score      = S.scores[qi];
+    const sel        = S.firstAnswers[qi] || S.answers[qi];
+    const score      = S.firstScores[qi] !== null ? S.firstScores[qi] : S.scores[qi];
     const confirmed  = S.confirmed[qi];
     const correctSet = new Set(q.correct);
     const showFb     = confirmed && cfg.fb === 'ihned';
@@ -2457,7 +2459,7 @@ function shuffle(a) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.26';
+const APP_VERSION = '4.27';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

@@ -579,7 +579,8 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   to { color: #E8E8E8; opacity: 1; transform: translate(1.5px,1.5px); }
 }
 @keyframes splashRipen {
-  0%   { background: var(--yellow); }
+  0%   { background: #F3EDC4; }
+  50%  { background: var(--yellow); }
   100% { background: #F3EDC4; }
 }
 @keyframes splashFadeOut {
@@ -2564,7 +2565,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.61';
+const APP_VERSION = '4.62';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

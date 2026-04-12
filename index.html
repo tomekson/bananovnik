@@ -248,12 +248,14 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
 .btn-nav { width: 28px; height: 28px; font-size: 18px; font-weight: 700; border-radius: 7px; border-color: var(--yellow); background: var(--yellow-bg); }
 .btn-nav:disabled { opacity: .25; cursor: default; }
 
-.quiz-body { padding: 20px 18px; padding-bottom: 160px; flex: 1; max-width: 640px; margin: 0 auto; width: 100%; }
+.quiz-body { padding: 20px 18px; padding-bottom: 90px; flex: 1; max-width: 640px; margin: 0 auto; width: 100%; }
 .q-num {
   font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase;
   color: var(--blue); margin-bottom: 10px;
   font-family: 'SF Mono','Fira Code','Cascadia Code',monospace;
+  display: flex; justify-content: space-between; align-items: center;
 }
+.q-num-orig { color: var(--muted); font-weight: 500; }
 .q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); }
 .q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; min-height: 28px; display: flex; align-items: center; }
 .q-hint.done { color: var(--dim); }
@@ -341,6 +343,13 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   height: 40px; pointer-events: none;
   background: linear-gradient(to bottom, transparent, var(--bg));
 }
+.scroll-hint {
+  position: absolute; left: 0; right: 0; bottom: 100%; margin-bottom: 4px;
+  text-align: center; font-size: 11px; font-weight: 600; color: var(--dim);
+  pointer-events: none; z-index: 1;
+  opacity: 0; transition: opacity .3s ease;
+}
+.scroll-hint.visible { opacity: 1; }
 .quiz-ftr-inner { max-width: 640px; width: 100%; display: flex; flex-direction: column; gap: 6px; }
 .quiz-ftr-inner .btn-start { width: 100%; padding: 14px; font-size: 16px; }
 .quiz-ftr-row { display: flex; gap: 9px; }
@@ -683,7 +692,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
       </div>
     </div>
 
-    <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test →</button>
+    <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test ↵</button>
 
     <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu"<!-- nebo „Menu - Instalovat aplikaci" -->.</div>
 
@@ -716,6 +725,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   </div>
 
   <div class="quiz-ftr">
+    <div class="scroll-hint" id="scroll-hint">▼ zobrazit více ▼</div>
     <div class="quiz-ftr-inner">
       <div class="fb" id="fb">
         <span class="fb-icon" id="fb-icon"></span>
@@ -725,7 +735,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
       <button class="btn-start" id="btn-main" onclick="mainBtn()">Potvrdit</button>
       <div class="quiz-ftr-row" id="ftr-row" style="display:none">
         <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat (Z)</button>
-        <button class="btn-start" onclick="mainBtn()">Další otázka →</button>
+        <button class="btn-start" onclick="mainBtn()">Další otázka ↵</button>
       </div>
     </div>
   </div>
@@ -1114,7 +1124,7 @@ const QUESTIONS = [
     correct: [0, 1, 2, 3, 4]
   },
   {
-    q: `Uveďte, o jaký druh dialogu se jedná. Jistě poznáte úryvek z knihy \"Osudy dobrého vojáka Švejka za světové války\" J. Haška. \"To nevadí, pane feldkurát\", řekl Švejk, \"já tu taky mohu zastat.\" -- \"A umíte ministrovat?\" -- \"Nikdy jsem to nedělal,\" odpověděl Švejk, \"ale zkusit se může všechno... myslím, že to není nic těžkýho, chodit kolem vás jako kočka kolem horký kaše. A mejt vám ruce a nalejvat z konviček víno....\" -- \"Dobře\", řekl polní kurát, \"ale vodu mně nelejte. Raději si hned do té druhé konvičky nalejte také víno... Nemáte trému?\" -- \"Já se ničeho nebojím, pane feldkurát, ani ministrování.\"`,
+    q: `Uveďte, o jaký druh dialogu se jedná. Jistě poznáte úryvek z knihy \"Osudy dobrého vojáka Švejka za světové války\" J. Haška. \"To nevadí, pane feldkurát\", řekl Švejk, \"já to taky mohu zastat.\" -- \"A umíte ministrovat?\" -- \"Nikdy jsem to nedělal,\" odpověděl Švejk, \"ale zkusit se může všechno... myslím, že to není nic těžkýho, chodit kolem vás jako kočka kolem horký kaše. A mejt vám ruce a nalejvat z konviček víno....\" -- \"Dobře\", řekl polní kurát, \"ale vodu mně nelejte. Raději si hned do té druhé konvičky nalejte také víno... Nemáte trému?\" -- \"Já se ničeho nebojím, pane feldkurát, ani ministrování.\"`,
     opts: [
       `potvrzovací dialog`,
       `meditativní dialog`,
@@ -1178,6 +1188,17 @@ const QUESTIONS = [
       `tradování kulturou (zdvořilostní úsměv) často takto sdělujeme emoce (city, pocity, nálady, afekty)`
     ],
     correct: [2]
+  },
+  {
+    q: `Haptika znamená`,
+    opts: [
+      `Podání ruky`,
+      `Komunikaci dotekem`,
+      `Přiblížení a oddálení při komunikaci`,
+      `Oční kontakt`,
+      `Komunikaci pohybem`
+    ],
+    correct: [0, 1]
   },
   {
     q: `Správně označte název sdělení, které obsahuje denotační význam termínu, význam připisovaný slovu (např. ve slovníku)`,
@@ -1290,7 +1311,7 @@ const QUESTIONS = [
     correct: [3]
   },
   {
-    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: Př. Já tě naprosto chápu (empatie). Opravdu ti však v tom nemohu pomoci (asertivní ne)`,
+    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: Př. Já tě naprosto chápu (empatie). Opravdu ti však v tom nemohu pomoci.`,
     opts: [
       `asertivní obligace`,
       `asertivní ano`,
@@ -2049,10 +2070,10 @@ function startQuiz() {
   if (cfg.mode === 'range') {
     const from = parseInt(document.getElementById('range-from').value) - 1;
     const to   = parseInt(document.getElementById('range-to').value);
-    pool = QUESTIONS.slice(from, to);
+    pool = QUESTIONS.slice(from, to).map((q, i) => ({ ...q, _orig: from + i + 1 }));
     if (cfg.qorder === 'random') pool = shuffle(pool);
   } else {
-    pool = [...QUESTIONS];
+    pool = QUESTIONS.map((q, i) => ({ ...q, _orig: i + 1 }));
     if (cfg.qorder === 'random') pool = shuffle(pool);
     if (cfg.count > 0 && cfg.count < pool.length) pool = pool.slice(0, cfg.count);
   }
@@ -2062,7 +2083,7 @@ function startQuiz() {
     let opts = q.opts.map((t, i) => ({ t, i }));
     if (cfg.oorder === 'random') opts = shuffle(opts);
     const newCorrect = opts.reduce((acc, o, ni) => { if (correctSet.has(o.i)) acc.push(ni); return acc; }, []);
-    return { q: q.q, opts: opts.map(o => o.t), correct: newCorrect };
+    return { q: q.q, opts: opts.map(o => o.t), correct: newCorrect, _orig: q._orig };
   });
 
   S = {
@@ -2097,7 +2118,7 @@ function renderQ() {
   document.getElementById('p-cur').textContent     = n + 1;
   document.getElementById('p-tot').textContent     = tot;
   document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
-  document.getElementById('q-num').textContent     = `Otázka ${n + 1} / ${tot}`;
+  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${QUESTIONS.length}</span>`;
   document.getElementById('q-text').textContent    = q.q;
 
   const hintEl = document.getElementById('q-hint');
@@ -2206,6 +2227,24 @@ function renderQ() {
   document.getElementById('btn-prev').disabled = n === 0;
   document.getElementById('btn-next').disabled = n === tot - 1;
 
+  setTimeout(updateScrollHint, 50);
+  setTimeout(updateScrollHint, 300);
+  setTimeout(updateScrollHint, 600);
+}
+
+var _scrollHintTimer = null;
+function updateScrollHint() {
+  var hint = document.getElementById('scroll-hint');
+  if (hint) hint.classList.remove('visible');
+  clearTimeout(_scrollHintTimer);
+  _scrollHintTimer = setTimeout(function() {
+    var opts = document.getElementById('opts');
+    var ftr = document.querySelector('.quiz-ftr');
+    if (!hint || !opts || !ftr || !opts.lastElementChild) return;
+    var lastR = opts.lastElementChild.getBoundingClientRect();
+    var ftrTop = ftr.getBoundingClientRect().top;
+    if (lastR.bottom > ftrTop + 10) hint.classList.add('visible');
+  }, 150);
 }
 
 function retryQ() {
@@ -2261,6 +2300,19 @@ function toggleOpt(i) {
   const p = a.indexOf(i);
   if (p === -1) a.push(i); else a.splice(p, 1);
   renderQ();
+  var opt = document.getElementById('opts').children[i];
+  if (opt) setTimeout(function(){
+    var r = opt.getBoundingClientRect();
+    var hdr = document.querySelector('.quiz-hdr');
+    var hdrBottom = hdr ? hdr.getBoundingClientRect().bottom : 0;
+    var ftr = document.querySelector('.quiz-ftr');
+    var ftrTop = ftr ? ftr.getBoundingClientRect().top : window.innerHeight;
+    if (r.top < hdrBottom + 5) {
+      window.scrollBy({ top: r.top - hdrBottom - 15, behavior: 'smooth' });
+    } else if (r.bottom > ftrTop - 10) {
+      window.scrollBy({ top: r.bottom - ftrTop + 20, behavior: 'smooth' });
+    }
+  }, 50);
 }
 
 function mainBtn() {
@@ -2464,19 +2516,32 @@ function shuffle(a) {
   return b;
 }
 
+window.addEventListener('scroll', updateScrollHint);
+
 // ─────────────────────────────────────────────────────────────────
 // Keyboard shortcuts
 // ─────────────────────────────────────────────────────────────────
 document.addEventListener('keydown', function(e) {
   if (!document.getElementById('screen-quiz').classList.contains('active')) return;
+  if (document.getElementById('overlay-abort').classList.contains('show')) {
+    if (e.key === 'Escape' || e.key === 'x' || e.key === 'X') closeAbort();
+    return;
+  }
   if (!S.questions || S.cur == null) return;
   var n = S.cur;
   if (e.key === 'Enter') { e.preventDefault(); mainBtn(); return; }
+  if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
   if ((e.key === 'z' || e.key === 'Z') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
   var idx = 'abcdef'.indexOf(e.key.toLowerCase());
   if (idx === -1 || idx >= S.questions[n].opts.length) return;
   if (S.confirmed[n]) return;
   toggleOpt(idx);
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' && document.getElementById('screen-start').classList.contains('active')) {
+    e.preventDefault(); startQuiz();
+  }
 });
 
 // ─────────────────────────────────────────────────────────────────
@@ -2500,7 +2565,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.45';
+const APP_VERSION = '4.60';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

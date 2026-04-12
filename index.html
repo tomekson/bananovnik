@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=4.27">
+<link rel="manifest" href="manifest.json?v=4.60">
 <meta name="theme-color" content="#F3EDC4">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Komunikace a komunikační dovednosti | Banánovník</title>
@@ -482,7 +482,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
 /* ── SPLASH ─────────────────────────────────────── */
 #splash {
   position: fixed; inset: 0; z-index: 9999;
-  background: var(--blue);
+  background: var(--bg);
   display: flex; align-items: center; justify-content: center;
   animation: splashRipen 1s ease both,
              splashFadeOut .2s ease 1s forwards;
@@ -579,8 +579,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   to { color: #E8E8E8; opacity: 1; transform: translate(1.5px,1.5px); }
 }
 @keyframes splashRipen {
-  0%   { background: var(--blue); }
-  60%  { background: var(--yellow); }
+  0%   { background: var(--yellow); }
   100% { background: #F3EDC4; }
 }
 @keyframes splashFadeOut {
@@ -2565,7 +2564,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.60';
+const APP_VERSION = '4.61';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

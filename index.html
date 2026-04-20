@@ -248,7 +248,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
 .btn-nav { width: 28px; height: 28px; font-size: 18px; font-weight: 700; border-radius: 7px; border-color: var(--yellow); background: var(--yellow-bg); }
 .btn-nav:disabled { opacity: .25; cursor: default; }
 
-.quiz-body { padding: 20px 18px; padding-bottom: 90px; flex: 1; max-width: 640px; margin: 0 auto; width: 100%; }
+.quiz-body { padding: 20px 18px; padding-bottom: 140px; flex: 1; max-width: 640px; margin: 0 auto; width: 100%; }
 .q-num {
   font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase;
   color: var(--blue); margin-bottom: 10px;
@@ -2113,7 +2113,7 @@ function renderQ() {
   const done = S.confirmed[n];
   const sel  = S.answers[n];
   const correctSet = new Set(q.correct);
-  const LETTERS = ['A','B','C','D','E','F'];
+  const LETTERS = ['1','2','3','4','5','6'];
 
   document.getElementById('p-cur').textContent     = n + 1;
   document.getElementById('p-tot').textContent     = tot;
@@ -2123,7 +2123,7 @@ function renderQ() {
 
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
-  const hintTxt = c === 1 ? '1 správná odpověď' : `${c} správné odpovědi`;
+  const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
   if (done && cfg.fb === 'ihned') {
     hintEl.textContent = hintTxt;
     hintEl.className   = 'q-hint done';
@@ -2227,9 +2227,17 @@ function renderQ() {
   document.getElementById('btn-prev').disabled = n === 0;
   document.getElementById('btn-next').disabled = n === tot - 1;
 
+  setTimeout(syncBodyPadding, 50);
   setTimeout(updateScrollHint, 50);
   setTimeout(updateScrollHint, 300);
   setTimeout(updateScrollHint, 600);
+}
+
+function syncBodyPadding() {
+  var ftr  = document.querySelector('.quiz-ftr');
+  var body = document.querySelector('.quiz-body');
+  if (!ftr || !body) return;
+  body.style.paddingBottom = (ftr.offsetHeight + 16) + 'px';
 }
 
 var _scrollHintTimer = null;
@@ -2445,7 +2453,7 @@ function openReview() {
   const prev = document.querySelector('.screen.active');
   S.prevScreen = prev ? prev.id : 'screen-results';
 
-  const LETTERS = ['A','B','C','D','E','F'];
+  const LETTERS = ['1','2','3','4','5','6'];
   const body    = document.getElementById('rev-body');
   body.innerHTML = '';
 
@@ -2517,10 +2525,12 @@ function shuffle(a) {
 }
 
 window.addEventListener('scroll', updateScrollHint);
+window.addEventListener('resize', syncBodyPadding);
 
 // ─────────────────────────────────────────────────────────────────
 // Keyboard shortcuts
 // ─────────────────────────────────────────────────────────────────
+var _enterCooldown = false;
 document.addEventListener('keydown', function(e) {
   if (!document.getElementById('screen-quiz').classList.contains('active')) return;
   if (document.getElementById('overlay-abort').classList.contains('show')) {
@@ -2529,10 +2539,13 @@ document.addEventListener('keydown', function(e) {
   }
   if (!S.questions || S.cur == null) return;
   var n = S.cur;
-  if (e.key === 'Enter') { e.preventDefault(); mainBtn(); return; }
+  if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350); mainBtn(); return; }
   if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
   if ((e.key === 'z' || e.key === 'Z') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
-  var idx = 'abcdef'.indexOf(e.key.toLowerCase());
+  var digitCodes = ['Digit1','Digit2','Digit3','Digit4','Digit5','Digit6'];
+  var numpadCodes = ['Numpad1','Numpad2','Numpad3','Numpad4','Numpad5','Numpad6'];
+  var idx = digitCodes.indexOf(e.code);
+  if (idx === -1) idx = numpadCodes.indexOf(e.code);
   if (idx === -1 || idx >= S.questions[n].opts.length) return;
   if (S.confirmed[n]) return;
   toggleOpt(idx);

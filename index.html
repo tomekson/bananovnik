@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=4.62">
+<link rel="manifest" href="manifest.json?v=4.65">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Komunikace a komunikační dovednosti | Banánovník</title>
@@ -2541,6 +2541,7 @@ document.addEventListener('keydown', function(e) {
   var n = S.cur;
   if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350); mainBtn(); return; }
   if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
+  if ((e.key === 'n' || e.key === 'N') && !S.confirmed[n] && !S.hintUsed[n]) { S.hintUsed[n] = true; renderQ(); return; }
   if ((e.key === 'z' || e.key === 'Z') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
   var digitCodes = ['Digit1','Digit2','Digit3','Digit4','Digit5','Digit6'];
   var numpadCodes = ['Numpad1','Numpad2','Numpad3','Numpad4','Numpad5','Numpad6'];
@@ -2578,7 +2579,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.62';
+const APP_VERSION = '4.65';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

@@ -734,7 +734,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
       </div>
       <button class="btn-start" id="btn-main" onclick="mainBtn()">Potvrdit</button>
       <div class="quiz-ftr-row" id="ftr-row" style="display:none">
-        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat (Z)</button>
+        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat (0)</button>
         <button class="btn-start" onclick="mainBtn()">Další otázka ↵</button>
       </div>
     </div>
@@ -2542,7 +2542,7 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350); mainBtn(); return; }
   if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
   if ((e.key === 'n' || e.key === 'N') && !S.confirmed[n] && !S.hintUsed[n]) { S.hintUsed[n] = true; renderQ(); return; }
-  if ((e.key === 'z' || e.key === 'Z') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
+  if ((e.key === '0' || e.code === 'Digit0' || e.code === 'Numpad0') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
   var digitCodes = ['Digit1','Digit2','Digit3','Digit4','Digit5','Digit6'];
   var numpadCodes = ['Numpad1','Numpad2','Numpad3','Numpad4','Numpad5','Numpad6'];
   var idx = digitCodes.indexOf(e.code);

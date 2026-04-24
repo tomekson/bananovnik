@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "tests": [
+    {
+      "id": "komunikace",
+      "file": "komunikace.json",
+      "title": "Komunikace a komunikační dovednosti",
+      "updatedAt": "2026-04-03",
+      "questionCount": 103
+    }
+  ]
+}

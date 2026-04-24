@@ -7,10 +7,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=4.65">
+<link rel="manifest" href="manifest.json?v=5.0">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
-<title>Komunikace a komunikační dovednosti | Banánovník</title>
+<title>Banánovník</title>
 <style>
 :root {
   --bg: #F3EDC4;
@@ -52,7 +52,8 @@ body.has-splash { background: var(--bg); }
 /* ── SCREENS ─────────────────────────────────────── */
 .screen { display: none; min-height: 100svh; flex-direction: column; animation: fadeUp .26s ease; }
 .screen.active { display: flex; }
-body.has-splash #screen-start { opacity: 0; animation: none; }
+body.has-splash #screen-start,
+body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -375,6 +376,37 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
 }
 .btn-sec:active { background: var(--line); }
 
+/* ── DASHBOARD ───────────────────────────────────── */
+#screen-dashboard {
+  align-items: center;
+  padding: 36px 18px max(40px, env(safe-area-inset-bottom));
+}
+.dash-inner { width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 20px; }
+.dash-heading { font-size: 12px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); }
+.dash-tests { display: flex; flex-direction: column; gap: 12px; }
+.dash-card {
+  width: 100%; text-align: left;
+  background: var(--card2); border-radius: var(--r);
+  padding: 16px 18px; cursor: pointer;
+  border: 1.5px solid var(--line2);
+  position: relative; isolation: isolate;
+  transition: opacity .15s; -webkit-appearance: none;
+}
+.dash-card:active { opacity: .7; }
+.dash-card::before {
+  content: ''; position: absolute; inset: 0; border-radius: var(--r);
+  background: rgba(0,0,0,.03); border: 1.5px solid var(--line2);
+  transform: translate(3px, 3px); z-index: -1;
+}
+.dash-card-title { font-size: 16px; font-weight: 700; color: var(--text); }
+.dash-card-sub { font-size: 13px; color: var(--dim); margin-top: 4px; font-weight: 500; }
+.dash-empty { font-size: 14px; color: var(--muted); }
+.btn-back-dash {
+  background: none; border: none; padding: 0; margin: 0;
+  font-size: 13px; color: var(--muted); font-weight: 600;
+  cursor: pointer; text-align: left; -webkit-appearance: none;
+}
+
 /* ── RESULTS ─────────────────────────────────────── */
 #screen-results {
   align-items: center;
@@ -605,10 +637,29 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   </div>
 </div>
 
+<!-- ══════════════════════════ DASHBOARD ══════════════════════════ -->
+<div id="screen-dashboard" class="screen active">
+  <div class="dash-inner">
+    <div class="logo-row">
+      <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
+      <div>
+        <div class="logo-name" data-text="Banánovník">Banánovník</div>
+        <div style="font-size:10px;color:var(--muted);font-weight:500;letter-spacing:1px;">v<span id="app-version"></span></div>
+      </div>
+    </div>
+    <div class="dash-heading">Výběr testu</div>
+    <div id="dash-tests" class="dash-tests">
+      <div class="dash-empty">Načítám testy…</div>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════════════════ START ═══════════════════════════ -->
-<div id="screen-start" class="screen active">
+<div id="screen-start" class="screen">
   <div id="pull-hint" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;transition:opacity .2s;"></div>
   <div class="start-inner">
+
+    <button class="btn-back-dash" onclick="show('screen-dashboard')">← Výběr testů</button>
 
     <div class="logo-row">
       <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
@@ -619,10 +670,10 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
     </div>
 
     <div>
-      <div class="start-h" data-text="Komunikace a komunikační dovednosti"><em>Komunikace a komunikační dovednosti</em></div>
-      <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;"><span id="db-qcount"></span> otázek v databázi · otázky aktualizovány 3. dubna 2026</div>
+      <div class="start-h" id="start-test-title"></div>
+      <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;" id="start-meta"></div>
       <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</div>
-      <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">Zkouškový test: 60 min., 25 otázek po 4 bodech <br>Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.</div>
+      <div id="start-rubric" style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;white-space:pre-line;"></div>
     </div>
 
     <!-- Výběr otázek -->
@@ -734,7 +785,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
       </div>
       <button class="btn-start" id="btn-main" onclick="mainBtn()">Potvrdit</button>
       <div class="quiz-ftr-row" id="ftr-row" style="display:none">
-        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat (0)</button>
+        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat (<code style="font-family:monospace;font-size:1em;font-weight:700">0</code>)</button>
         <button class="btn-start" onclick="mainBtn()">Další otázka ↵</button>
       </div>
     </div>
@@ -764,7 +815,7 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
       <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Zopakovat chybné</button>
       <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
       <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="startQuiz()">Zopakovat test</button>
-      <button class="btn-sec" style="flex:1" onclick="show('screen-start')">Zpět na nastavení</button></div>
+      <button class="btn-sec" style="flex:1" onclick="show('screen-dashboard')">← Testy</button></div>
     </div>
   </div>
 </div>
@@ -806,1150 +857,6 @@ body.has-splash #screen-start { opacity: 0; animation: none; }
   s.addEventListener('animationend',function(e){if(e.animationName==='splashFadeOut'){s.remove();window.scrollTo(0,0);document.body.classList.remove('has-splash');}});
 })();
 
-// ╔══════════════════════════════════════════════════════════════╗
-// ║  OTÁZKY — editujte tuto část                                 ║
-// ║                                                              ║
-// ║  Formát každé otázky:                                        ║
-// ║    q:       "Text otázky"                                    ║
-// ║    opts:    ["Možnost A", "Možnost B", "C", "D", "E"]        ║
-// ║    correct: [0, 2]   ← indexy správných (0 = první)          ║
-// ╚══════════════════════════════════════════════════════════════╝
-const QUESTIONS = [
-  {
-    q: `Mezi paralingvistické prostředky komunikace nepatří`,
-    opts: [
-      `význam hlasového projevu`,
-      `délka projevu`,
-      `tempo řeči`,
-      `intenzita hlasového projevu`,
-      `parazitární slova`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Při vyjednávání se můžeme setkat se základními typy vyjednávačů. Označte správný název typu vyjednávače, který odpovídá uvedené charakteristice. Příklad: \"Člověk, který je pokládán za optimálního vyjednávače, který se snaží o nalezení kompromisu pro obě strany. K problému přistupuje racionálně a jde mu jako o materiální podmínky, tak i o vztah mezi ním a partnerem. Dokáže poskytovat prostor k vytvoření variant řešení a během vlastního vyjednávání je značně flexibilní. Hlavním nástrojem tohoto vyjednávače je vědomí reálnosti.\"`,
-    opts: [
-      `principiální vyjednávač`,
-      `vztahový vyjednávač`,
-      `flexibilní vyjednávač`,
-      `silový vyjednávač`,
-      `tvrdý vyjednávač`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Bariéry v komunikaci vznikají dvojím způsobem, a to spontánně nebo prostřednictvím použití manipulativních technik. Označte manipulativní techniky.`,
-    opts: [
-      `lhostejnost`,
-      `vynášení soudů`,
-      `zavádějící srovnání`,
-      `separace a ideová partenogeneze`,
-      `Tertium non datur`
-    ],
-    correct: [2, 4]
-  },
-  {
-    q: `Co patří mezi asertivní techniky?`,
-    opts: [
-      `asertivní ne`,
-      `asertivní ano`,
-      `asertivní aserce`,
-      `zaseknutá gramodeska`,
-      `asertivní obligace`
-    ],
-    correct: [0, 2, 3]
-  },
-  {
-    q: `Percepce je zkreslována následujícími vlivy`,
-    opts: [
-      `stereotyp – znamená zafixování vnímání a je typem schématu`,
-      `snižováním nejistoty – tento faktor způsobuje zvyšování uspokojení z komunikace`,
-      `kauzální atribuování – připisování významu určitému objektu nebo situaci, např. Přeceňování interních faktorů (osobnostní vlastnosti člověka) a podceňování faktorů externích (situace, kontext, v němž se člověk nachází)`,
-      `implicitními teoriemi osobnosti – jedná se o jakýsi systém pravidel, která určují, které vlastnosti osobnosti se společně vyskytují a které nikoli`,
-      `první dojem a aktuální dojem – první dojem je důležitý ve funkci určitého filtru, který propouští, případně blokuje další informace pro vnímání osoby`
-    ],
-    correct: [0, 2, 3, 4]
-  },
-  {
-    q: `Označte možné strategie řešení konfliktních situací`,
-    opts: [
-      `přizpůsobení`,
-      `kondenzace`,
-      `spolupráce`,
-      `soutěžení`,
-      `vyhýbání`
-    ],
-    correct: [0, 2, 3, 4]
-  },
-  {
-    q: `Uveďte, co může způsobovat komunikační bariéry (obtíže), které mohou působit jako sociální stigma`,
-    opts: [
-      `deficit porozumění sdělovanému`,
-      `absence jazykových kompetencí`,
-      `apetence`,
-      `nezvládnutí konotačního významu komunikace`,
-      `horší schopnost se vyjádřit`
-    ],
-    correct: [0, 1, 3, 4]
-  },
-  {
-    q: `Komunikace = znamená`,
-    opts: [
-      `výměnu informací`,
-      `„něco spojovat"`,
-      `spolupodílet se s někým na něčem, mít podíl na něčem společném`,
-      `práci s informacemi, jejich analýzu, sdílení`,
-      `učinit jednotlivým`
-    ],
-    correct: [0, 1, 2, 3]
-  },
-  {
-    q: `Uveďte jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: Př. „Máš pravdu, nemusel jsem to dělat právě takhle. Teď si to uvědomuju, že to šlo udělat i jinak a lépe. Jak to mohu napravit?"`,
-    opts: [
-      `asertivní ne`,
-      `zaseknutá gramodeska`,
-      `asertivní obligace`,
-      `asertivní ano`,
-      `asertivní aserce`
-    ],
-    correct: [4]
-  },
-  {
-    q: `O preferenčních postojích manažerů platí, že`,
-    opts: [
-      `mohou mít podobu podhodnocování pracovníků`,
-      `jsou vyjádřeny snahou šikanovat podřízené`,
-      `jsou vyjádřeny zesílenou zaměřeností manažera na určité pracovníky`,
-      `jsou vyjádřeny snahou o neutrální hodnocení`,
-      `mohou mít podobu nadhodnocování pracovníků (přeceňování pozitiv a přehlížení nedostatků)`
-    ],
-    correct: [0, 2, 4]
-  },
-  {
-    q: `Označte, co patří mezi externí bariéry v komunikaci`,
-    opts: [
-      `nerespektování komunikační úrovně partnera, rozdíly mohou být dány také odlišností kultury, objemem slovní zásoby, používání nářečí, slangu, odborného jazyka`,
-      `vyrušování`,
-      `stereotypizace`,
-      `obavy z neúspěchu, selhání`,
-      `fyzické nepohodlí, bolest`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Jaké předpoklady je třeba splnit, pokud usilujeme o porozumění, o důvěru?`,
-    opts: [
-      `pečlivá příprava`,
-      `percepčně postojové orientace manažera`,
-      `sebepřijetí`,
-      `opravdovost`,
-      `despekt`
-    ],
-    correct: [2, 3]
-  },
-  {
-    q: `Bariérou v komunikaci není:`,
-    opts: [
-      `hlučné prostředí`,
-      `asertivita`,
-      `manipulace`,
-      `komunikace online`,
-      `absence očního kontaktu`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace? Příklad: Namísto \"Ty nevidíš, že umývám okna, ležíš si na gauči a ještě čteš noviny!\" -- \"Prosím tě, pomoz mi dnes s úklidem.\"`,
-    opts: [
-      `separace a ideová partenogeneze`,
-      `tertium non datur`,
-      `technika otevření dveří`,
-      `negativní dotazování`,
-      `požádání o laskavost`
-    ],
-    correct: [4]
-  },
-  {
-    q: `Synonymem pro asertivní techniku „otevřených dveří" je`,
-    opts: [
-      `asertivní ano`,
-      `asertivní ne`,
-      `asertivní aserce`,
-      `asertivní obligace`,
-      `asertivní gramodeska`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: \"Já chápu, že chceš jít domů jako obvykle, ale trvám na tom, abys tu rozdělanou analýzu dokončil ještě dnes. Ten materiál nutně potřebuji.\"`,
-    opts: [
-      `zaseknutá gramodeska`,
-      `asertivní obligace`,
-      `asertivní ano`,
-      `asertivní aserce`,
-      `asertivní ne`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Posturologie znamená`,
-    opts: [
-      `sdělování vzájemným přiblížením či oddálením, fyzická vzdálenost zpravidla koreluje se vzdáleností psychickou. Vzdálenosti ovlivňují genderové, statusové a společenské odlišnosti`,
-      `sdělování fyzickými postoji, poloha rukou, nohou může sdělit přátelský či nepřátelský postoj, zda s nimi chce dál jednat či nikoli`,
-      `sdělování pohybem, rozsah pohybů souvisí s intenzitou emocionálního prožívání určité situace. Poznáme intenzitu prožitku, řadíme sem především pohyby hlavy a krku`,
-      `sdělování úpravou zevnějšku`,
-      `sdělování dotykem, hmatovým kontaktem`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti, které se předávají z generace na generaci. Tyto stereotypy jsou nám předávány v podobě pověr, které jsme si právě díky výchově osvojili. Reakce založené na těchto pověrách umožňují ostatním lidem, aby s námi manipulovali. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? Pověra: \"Měl bys znát odpovědi na všechny otázky týkající se možných důsledků tvého chování, protože když tyto odpovědi neznáš, nejsi si vědom následků a problémů, které působíš ostatním lidem, nejsi zodpovědný a měl bys být kontrolován.\"`,
-    opts: [
-      `8. asertivní právo. Člověk má právo dělat nelogická rozhodnutí`,
-      `2. asertivní právo. Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`,
-      `1. asertivní právo. Člověk má právo posuzovat své vlastní chování, myšlenky a emoce a být za ně zodpovědný`,
-      `10. asertivní právo. Člověk má právo říct „je mi to jedno"`,
-      `5. asertivní právo. Člověk má právo říci „já nevím"`
-    ],
-    correct: [4]
-  },
-  {
-    q: `Asertivita znamená`,
-    opts: [
-      `uvést do popředí své povinnosti`,
-      `zachovat klid v krizi`,
-      `zůstat chladný „v ohni" - vypořádat se s kritikou`,
-      `získat co nejméně z pozitivní zpětné vazby`,
-      `být odpovědný za sebe`
-    ],
-    correct: [1, 2, 4]
-  },
-  {
-    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace: Př. „Co přesně dělám špatně?" „V čem ještě chybuji?" „Jak se to konkrétně projevuje?" „Jaké mám ještě nedostatky?" „V čem ještě jsem tak hrozný"`,
-    opts: [
-      `negativní dotazování`,
-      `požádání o laskavost`,
-      `tertium non datur`,
-      `separace a ideová partenogeneze`,
-      `technika otevřených dveří`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Aspekty porozumění se řadí mezi vztahové aspekty dialogu. Označte odpověď, která mezi klíčové aspekty porozumění nepatří.`,
-    opts: [
-      `akceptace partnera`,
-      `kladení otázek`,
-      `očekávání odpovědi`,
-      `zpětná vazba`,
-      `aktivní naslouchání`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Za asertivní se považuje takové chování, kdy jednající člověk`,
-    opts: [
-      `ostatní lidi považuje za „dobré" a tak si umí říct o laskavost a sám ji také poskytnout`,
-      `dokáže přesně a jasně definovat, o co mu jde, co si myslí a jak prožívá`,
-      `má pozitivní postoj k druhým lidem`,
-      `je nejistý`,
-      `za neúspěch neviní ostatní lidi, ale vždy a pouze obviňuje sebe`
-    ],
-    correct: [0, 1, 2]
-  },
-  {
-    q: `Dělení kritiky`,
-    opts: [
-      `skrytá`,
-      `uzavřená`,
-      `oprávněná`,
-      `neoprávněná`,
-      `útočná (otevřená, agresivní)`
-    ],
-    correct: [0, 2, 3]
-  },
-  {
-    q: `Označte rozlišení druhů konfliktů`,
-    opts: [
-      `obsahový – vztahový`,
-      `pozitivní – negativní`,
-      `blízký – vzdálený`,
-      `lokalizovaný – difúzní`,
-      `velký – malý`
-    ],
-    correct: [0, 1]
-  },
-  {
-    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? Pověra: „Neměl bys hodnotit sám sebe a své akce, musíš být posuzován vnějšími pravidly a autoritou, která je moudřejší, než jsi ty sám."`,
-    opts: [
-      `10. asertivní právo. Člověk má právo říct „je mi to jedno"`,
-      `1. asertivní právo. Člověk má právo posuzovat své vlastní chování, myšlenky a emoce a být za ně odpovědný`,
-      `5. asertivní právo. Člověk má právo říci „já nevím"`,
-      `8. asertivní právo. Člověk má právo dělat nelogická rozhodnutí`,
-      `2. asertivní právo. Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Jak tedy posilovat sebeúctu?`,
-    opts: [
-      `pracujte na výjimečných a velmi náročných projektech`,
-      `bojujte proti sebezničujícím myšlenkám`,
-      `připomínejte si své úspěchy`,
-      `vyhledávejte náročné nadřízené`,
-      `používejte afirmaci – sebepotvrzení, chvalte se, komunikujte s pozitivními lidmi, identifikujte se s vámi nejbližší kulturní skupinou`
-    ],
-    correct: [1, 2, 4]
-  },
-  {
-    q: `Uveďte následky sociálního stigmatu`,
-    opts: [
-      `afirmace`,
-      `přisuzování nižší inteligence`,
-      `sociální izolace`,
-      `nejistota`,
-      `horší (sebe)hodnocení`
-    ],
-    correct: [0, 1, 2, 3, 4]
-  },
-  {
-    q: `Označte nevhodné strategie pro řešení konfliktních situací`,
-    opts: [
-      `posilování sebeobrazu druhého`,
-      `obranný postoj`,
-      `vyhýbání se konfliktu`,
-      `hromadění stížností`,
-      `verbální agresivita`
-    ],
-    correct: [0, 1, 2, 3, 4]
-  },
-  {
-    q: `Uveďte, o jaký druh dialogu se jedná. Jistě poznáte úryvek z knihy \"Osudy dobrého vojáka Švejka za světové války\" J. Haška. \"To nevadí, pane feldkurát\", řekl Švejk, \"já to taky mohu zastat.\" -- \"A umíte ministrovat?\" -- \"Nikdy jsem to nedělal,\" odpověděl Švejk, \"ale zkusit se může všechno... myslím, že to není nic těžkýho, chodit kolem vás jako kočka kolem horký kaše. A mejt vám ruce a nalejvat z konviček víno....\" -- \"Dobře\", řekl polní kurát, \"ale vodu mně nelejte. Raději si hned do té druhé konvičky nalejte také víno... Nemáte trému?\" -- \"Já se ničeho nebojím, pane feldkurát, ani ministrování.\"`,
-    opts: [
-      `potvrzovací dialog`,
-      `meditativní dialog`,
-      `ověřovací dialog`,
-      `facilitovaný dialog`,
-      `přímý dialog`
-    ],
-    correct: [4]
-  },
-  {
-    q: `Mezi bariéry ve vyjednávání lze zařadit`,
-    opts: [
-      `partnerova důvěra`,
-      `partnerův navyklý styl jednání`,
-      `vaše reakce`,
-      `partnerovy negativní emoce`,
-      `partnerovo vnímání své vlastní vyjednávací síly`
-    ],
-    correct: [1, 2, 3, 4]
-  },
-  {
-    q: `Uveďte, o jaký typ dialogu se jedná. Jistě poznáte úryvek z knihy „Osudy dobrého vojáka Švejka za světové války" J. Haška. Př. „A najdete pana nadporučíka" - „To nevím" - „Myslíte tedy, že pana nadporučíka nenajdete?" - „To nemyslím" - „A kde myslíte, že by mohl být?" - „To nevím..`,
-    opts: [
-      `mediační dialog`,
-      `facilitovaný dialog`,
-      `meditativní dialog`,
-      `ověřovací dialog`,
-      `potvrzovací dialog`
-    ],
-    correct: [3]
-  },
-  {
-    q: `Jde o nestranný způsob řešení problémů, usnadňování řešení problémů, kde problémy mají „věcnou povahu". Označte správně jednoslovným názvem.`,
-    opts: [
-      `afiliace`,
-      `mediace`,
-      `facilitace`,
-      `akceptace`,
-      `meditace`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Nonverbální komunikace rozlišuje způsoby sdělování`,
-    opts: [
-      `mimika`,
-      `haptologie`,
-      `řeč očí`,
-      `kinestetika`,
-      `posturologie`
-    ],
-    correct: [0, 1, 2, 4]
-  },
-  {
-    q: `Proxemika znamená`,
-    opts: [
-      `zaměření pohledu, délka pohledu, úhel pootevření víček, sdělování pohybem obočí, četností pohledu, frekvencí mrkacích pohybů aj.`,
-      `sdělování fyzickými postoji, poloha nohou, rukou může sdělit přátelský či nepřátelský postoj, zda s nimi chce dál jednat či nikoliv`,
-      `sdělování vzájemným přiblížením či oddálením, fyzická vzdálenost zpravidla koreluje se vzdáleností psychickou. Vzdálenosti ovlivňují genderové, statusové a společenské odlišnosti`,
-      `sdělování pohybem, rozsah pohybu souvisí s intenzitou emocionálního prožívání určité situace. Poznáme intenzitu prožitků, řadíme sem především pohyby hlavou a krku.`,
-      `tradování kulturou (zdvořilostní úsměv) často takto sdělujeme emoce (city, pocity, nálady, afekty)`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Haptika znamená`,
-    opts: [
-      `Podání ruky`,
-      `Komunikaci dotekem`,
-      `Přiblížení a oddálení při komunikaci`,
-      `Oční kontakt`,
-      `Komunikaci pohybem`
-    ],
-    correct: [0, 1]
-  },
-  {
-    q: `Správně označte název sdělení, které obsahuje denotační význam termínu, význam připisovaný slovu (např. ve slovníku)`,
-    opts: [
-      `objektivní`,
-      `subjektivní`,
-      `kritické`,
-      `suicidální`,
-      `paraverbální`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Co patří mezi komunikační přístupy?`,
-    opts: [
-      `agresivita`,
-      `aserce`,
-      `pasivita`,
-      `manipulace`,
-      `asertivita`
-    ],
-    correct: [0, 2, 3, 4]
-  },
-  {
-    q: `Vymezte charakteristiky problémových lidí`,
-    opts: [
-      `nezáleží na chování, na přístupu k těmto lidem`,
-      `ve společnosti existuje „společenský konsensus", který říká, jaké chování lidí je považováno za problémové, kteří lidé jsou problémoví`,
-      `nedělají to, co je žádoucí a naopak dělají, co žádoucí není, aby dělali, a je obtížné to změnit`,
-      `je obtížné změnit jejich chování, ale lze s nimi komunikovat tak, aby se změnili sami`,
-      `jsou empatičtí`
-    ],
-    correct: [1, 2, 3]
-  },
-  {
-    q: `Bariéry v komunikaci vznikají dvojím způsobem, a to spontánně nebo prostřednictvím použití manipulativních technik. Označte způsoby spontánně vznikajících potíží`,
-    opts: [
-      `separací a ideovou partenogenezí`,
-      `tertium non datur`,
-      `lhostejností`,
-      `vynášení soudu`,
-      `zavádějícím srovnáním`
-    ],
-    correct: [0, 2, 3]
-  },
-  {
-    q: `Strategie, jak zvýšit přesnost percepce`,
-    opts: [
-      `zvyšujte nejistotu`,
-      `dodržujte Pygmalion efekt`,
-      `analyzujte své vjemy`,
-      `kontrolujte svou percepci – cílem není dokázat, že prvotní vjem byl správný`,
-      `posilujte svou kulturní vnímavost`
-    ],
-    correct: [2, 3, 4]
-  },
-  {
-    q: `Z níže uvedených vyberte nejméně častý (nejnižší četnost výskytu) „zdroj konfliktů" (Kurdek, 1994)`,
-    opts: [
-      `mocenské problémy – nadměrné požadavky, panovačnost, žárlivost`,
-      `problémy týkající se (ne)důvěry – podvod, lež`,
-      `osobnosti vady – alkoholismus, nikotinismus, osobní hygiena, styl řízení vozidla`,
-      `intimní problémy – láska, sex`,
-      `společenské problémy – politika, sociální záležitosti, rodiče, osobní hodnoty`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Jak lze označit komunikaci, která zahrnuje nejen účastníky komunikace, ale i komunikační prostředky, probíhá v určitém kontextu, plní určité funkce a ve výsledku dosahuje či nedosahuje nějakých efektů. Lze ji specifikovat jako interakce prostřednictvím symbolů verbálních nebo neverbálních. Chápeme ji jako interakční proces mezilidského dorozumívání, kdy dochází ke sdělování významů pomocí konvenčních znaků.`,
-    opts: [
-      `agresivní`,
-      `neobjektivní`,
-      `sociální`,
-      `patologická`,
-      `paraverbální`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Přeceňování interních faktorů (osobnostní vlastnosti člověka) a podceňování faktorů externích (situace, kontext, v němž se člověk nachází) lze označit jako`,
-    opts: [
-      `facilitaci`,
-      `afiliaci`,
-      `atribuční chybu`,
-      `Johariho okno`,
-      `asertivní právo`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Mezi zdroje osobnostních rozdílů lze zařadit`,
-    opts: [
-      `dědičnost`,
-      `rodina`,
-      `skupinová příslušnost – k formální i neformálním skupinám`,
-      `kultura`,
-      `komunikační dovednosti`
-    ],
-    correct: [0, 1, 2, 3]
-  },
-  {
-    q: `Správně označte název sdělení, které obsahuje subjektivní nebo emocionální význam`,
-    opts: [
-      `suicidální`,
-      `denotační`,
-      `paraverbální`,
-      `konotační`,
-      `kritické`
-    ],
-    correct: [3]
-  },
-  {
-    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: Př. Já tě naprosto chápu (empatie). Opravdu ti však v tom nemohu pomoci.`,
-    opts: [
-      `asertivní obligace`,
-      `asertivní ano`,
-      `asertivní ne`,
-      `zaseknutá gramodeska`,
-      `asertivní aserce`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Atribuční teorie uspořádává do smysluplné taxonomie obecnější společné charakteristiky v pozadí stojících příčin. Klasifikace příčin a jejich zařazení do jednotlivých dimenzí umožňuje pochopit motivaci pracovníků ve výkonových situacích. Které dimenze to jsou?`,
-    opts: [
-      `dimenze místa - rozlišuje příčiny z hlediska jednající osoby na vnitřní (výsledek výkonového chování je vnímán jako výsledek schopnosti, úsilí, nálady a vědomosti) a vnější (výsledek je připisován náhodě, štěstí atp.)`,
-      `dimenze přijetí - pracovník cíl (úkol) vnitřně přijal (úkol pro něho má smysl) nebo pracovník úkol vnitřně nepřijal`,
-      `dimenze řízení (kontroly) – umožňuje rozlišení příčin jako je nálada a úsilí`,
-      `dimenze úrovně dosažení cíle - pracovníkova prožitku úspěchu či neúspěchu`,
-      `dimenze stability - rozlišuje příčiny z hlediska stálosti na příčiny dispoziční (např. schopnosti) a příčiny nestabilní (např. štěstí, smůla, náhoda..)`
-    ],
-    correct: [0, 2, 4]
-  },
-  {
-    q: `Při komunikaci s člověkem s poruchami řeči je třeba`,
-    opts: [
-      `vyvarovat se rozpaků`,
-      `dokončovat za komunikátory věty`,
-      `bedlivě udržovat oční kontakt`,
-      `taktnosti a trpělivosti`,
-      `dávat pokyny typu „zpomalte, uklidněte se" apod.`
-    ],
-    correct: [0, 2, 3]
-  },
-  {
-    q: `Označte správný příklad manipulativní techniky „zavádějící srovnání"`,
-    opts: [
-      `„vy darwinisté možná pocházíte z opice, ale já odmítám uznat nějakou gorilu za svoji babičku..."`,
-      `představuje, že existují pouze 2 možná řešení`,
-      `„všichni dokonalí muži nosí prádlo uragán..."`,
-      `kilo peří x kilo železa`,
-      `„nepřipustí zobecnění typu „všichni muži jsou stejní""`
-    ],
-    correct: [3]
-  },
-  {
-    q: `Postup, který může pomoci vyhnout se skutečným konfliktům. Musí být veden s ohledem na pozice a zájmy všech zainteresovaných stran. Situace "vítěz - vítěz", která je dosažená otevřenými způsoby, je vždy žádoucím výsledkem. Označte všechny správné názvy.`,
-    opts: [
-      `meditace`,
-      `afiliace`,
-      `vyjednávání`,
-      `proxemika`,
-      `atribuce`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Řešení konfliktů ve skupině v podnikatelské sféře má určitá specifika, proto využívá i specifických metod (technik). Označte správný název metody, techniky, která odpovídá níže uvedenému popisu. Příklad: Skupina odborníků, která je geograficky vzdálena. Sepíšou se návrhy řešení, seznam se rozešle, členové mají vybrat určitý počet možných řešení, to se několikrát opakuje, až je shoda ve "finálním řešení".`,
-    opts: [
-      `technika nominální skupiny`,
-      `brainwashing`,
-      `delfská metoda`,
-      `kroužky kvality`,
-      `brainstorming`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Označte obecné mechanismy, které se uplatňují při vytváření percepčně postojové orientace manažera`,
-    opts: [
-      `haló efekt`,
-      `první dojem`,
-      `negativismus`,
-      `favoritismus`,
-      `působení kontrastu`
-    ],
-    correct: [0, 1, 3, 4]
-  },
-  {
-    q: `Řešení konfliktů ve skupině v podnikatelské sféře má určitá specifika, proto využívá i specifických metod (technik). Označte správný název metody, techniky, který odpovídá níže uvedenému popisu. Příklad: "Řešení problému pomocí omezené diskuse a tajného hlasování. Návrhy řešení všech členů se zapíšou na tabuli, každý člen určí jejich pořadí, určí se celkové pořadí, diskutují se, vysvětlují se preferovaná řešení."`,
-    opts: [
-      `technika nominální skupiny`,
-      `delfská metoda`,
-      `brainwashing`,
-      `brainstorming`,
-      `kroužky kvality`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Komunikace znamená`,
-    opts: [
-      `vysílat signály`,
-      `interpretovat signály`,
-      `slyšet`,
-      `vidět`,
-      `přijímat signály`
-    ],
-    correct: [0, 1, 4]
-  },
-  {
-    q: `Označte, která ze zásad nepatří mezi pravidla pro efektivní komunikaci`,
-    opts: [
-      `pro kódování je třeba využít symbolů, které jsou zřejmé pro všechny zúčastněné`,
-      `komunikátor musí vědět, co chce sdělit`,
-      `diagnostikovat adekvátní míru poskytnutých informací komunikantovi`,
-      `rozdílnost mezi verbálním a neverbálním sdělením`,
-      `pečlivá příprava komunikace`
-    ],
-    correct: [3]
-  },
-  {
-    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti, které se předávají z generace na generaci. Tyto stereotypy jsou nám předávány v podobě pověr, které jsme si právě díky výchově osvojili. Reakce založené na těchto pověrách umožňují ostatním lidem, aby s námi manipulovali. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? POVĚRA: „Naši bližní často dokážou logicky racionalizovat nejrůznější požadavky, které na nás mají a důvody, pro které bychom neměli dělat to a ono a měli dělat to a nebo něco jiného"`,
-    opts: [
-      `2. asertivní právo: Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`,
-      `5. asertivní právo: Člověk má právo říci „Já nevím"`,
-      `8. asertivní právo: Člověk má právo dělat nelogická rozhodnutí`,
-      `10. asertivní právo: Člověk má právo říci „Je mi to jedno"`,
-      `1. asertivní právo: Člověk má právo posuzovat své chování, myšlenky a emoce a být za ně zodpovědný`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Při vyjednávání se můžeme setkat se základními typy vyjednávačů. Označte správný název typu vyjednávače, který odpovídá uvedené charakteristice. Příklad: „Člověk, který stojí razantně na svých pozicích a odmítá veškeré ústupky. Do jednání pak vstupuje s maximálním cílem, vlastní profit za jakoukoliv cenu. Typické je pro něho, že neuznává potřeby a nároky dalších zúčastněných stran. Jde mu pouze o vítězství, což současně znamená, že ignoruje vytvoření vztahu mezi ním a protistranou. Hlavním nástrojem tohoto vyjednávače je vyjednávací síla."`,
-    opts: [
-      `tvrdý vyjednávač`,
-      `principiální vyjednávač`,
-      `razantní vyjednávač`,
-      `silový vyjednávač`,
-      `vyjednávač ignorant`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Jak postupovat při obraně proti manipulaci`,
-    opts: [
-      `reagujte kauzálně – neférová situace!`,
-      `dejte najevo, že se vás to dotklo. „To si ke mně nesmí dovolovat!"`,
-      `zůstaňte věcní a féroví – projevujte se jako nesmlouvavě kooperativní partner, manipulátora znejistíte`,
-      `soustřeďte se na konkrétní chování, nikoli na své domněnky a předsudky`,
-      `sledujte svůj cíl, pokud cíl nelze sledovat, přerušte kontakt s manipulátorem`
-    ],
-    correct: [2, 3, 4]
-  },
-  {
-    q: `Co patří mezi zásady verbálního sdělení?`,
-    opts: [
-      `sdělení mohou vyjadřovat různou míru přímočarosti`,
-      `významy sdělení jsou v lidech`,
-      `sdělení jsou denotační a konotační`,
-      `sdělení jsou ovlivněna IQ jedince`,
-      `sdělení nevyjadřují různou míru abstrakce`
-    ],
-    correct: [0, 1, 2]
-  },
-  {
-    q: `Komunikace probíhá většinou`,
-    opts: [
-      `v diskrétní rovině`,
-      `v trojúhelníku`,
-      `v kruhu`,
-      `ve vztahové rovině`,
-      `ve věcné (obsahové) rovině`
-    ],
-    correct: [3, 4]
-  },
-  {
-    q: `Asertivní práva jsou popřením často se vyskytujících stereotypů v naší kulturní oblasti, které se předávají z generace na generaci. Tyto stereotypy jsou nám předávány v podobě pověr, které jsme si právě díky výchově osvojili. Reakce založené na těchto pověrách umožňují ostatním lidem, aby s námi manipulovali. Které právo nám pomůže snížit pocity úzkosti a viny, pokud si troufneme jednat proti stereotypům? Pověra: „Musíš se snažit být lepší, dokud nebudeš ve všech ohledech perfektní. Asi se ti to nepovede, ale musíš se o to snažit. Když to neuděláš, jsi líný, degenerovaný, bezcenný a nezasloužíš si respekt od nikoho, ani od sebe."`,
-    opts: [
-      `10. asertivní právo. Člověk má právo říct "je mi to jedno"`,
-      `8. asertivní právo. Člověk má právo dělat nelogická rozhodnutí`,
-      `5. asertivní právo. Člověk má právo říct "já nevím"`,
-      `2. asertivní právo. Člověk má právo se neomlouvat, vymlouvat, ospravedlňovat svoje chování`,
-      `1. asertivní právo. Člověk má právo posuzovat své vlastní chování, myšlenky a emoce a být za ně zodpovědný`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Mezi nejobvyklejší bariéry komunikace lze řadit`,
-    opts: [
-      `chybějící filtrování`,
-      `neselektivní vnímání`,
-      `odlišnost postojů, názorů, znalostí a zkušeností`,
-      `věrohodnost zdroje`,
-      `sémantické problémy`
-    ],
-    correct: [2, 3, 4]
-  },
-  {
-    q: `Uveďte typy dialogu z pohledu struktury dialogu`,
-    opts: [
-      `meditativní dialog`,
-      `facilitovaný dialog`,
-      `přímý dialog`,
-      `potvrzovací dialog`,
-      `ověřovací dialog`
-    ],
-    correct: [1, 2, 3, 4]
-  },
-  {
-    q: `K čemu slouží nebo by měla sloužit kritika v pracovním životě?`,
-    opts: [
-      `odhalování chyb a jejich příčin`,
-      `k získání větší autority`,
-      `hledání řešení`,
-      `zjišťování možností zlepšení`,
-      `předcházení chybám do budoucna`
-    ],
-    correct: [0, 2, 3, 4]
-  },
-  {
-    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace? Příklad: Namísto "Ty nevidíš, že umývám okna, ležíš si na gauči a ještě čteš noviny!" -- "Prosím tě, pomoz mi dnes s úklidem." (varianta B)`,
-    opts: [
-      `separace a ideová partenogeneze`,
-      `tertium non datur`,
-      `technika otevření dveří`,
-      `negativní dotazování`,
-      `požádání o laskavost`
-    ],
-    correct: [4]
-  },
-  {
-    q: `Uveďte, jakou asertivní technikou lze adekvátně reagovat na uvedený příklad: "Já tě naprosto chápu. Opravdu ti však v tom nemohu pomoci."`,
-    opts: [
-      `asertivní ano`,
-      `zaseknutá gramodeska`,
-      `asertivní aserce`,
-      `asertivní obligace`,
-      `asertivní ne`
-    ],
-    correct: [4]
-  },
-  {
-    q: `Sociální komunikace zahrnuje`,
-    opts: [
-      `výsledek, dosažení či nedosažení efektu`,
-      `komunikátora`,
-      `plnění určitých funkcí – předání informace, sdělení emoce`,
-      `komunikační formy`,
-      `komunikanta`
-    ],
-    correct: [0, 1, 2, 4]
-  },
-  {
-    q: `Jednou z užitečných analýz lidských motivů je stupňová hierarchie potřeb, která vychází z premisy, podle které se člověk snaží naplnit potřeby na té nejnižší úrovni, a teprve až jsou uspokojeny, začínají chování člověka ovlivňovat potřeby vyššího stupně. Jejím autorem je:`,
-    opts: [
-      `E.E. Lawler`,
-      `C.P. Alderfer`,
-      `A.H. Maslow`,
-      `L.W. Porte`,
-      `F. Herzberg`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Zdroje sebepojetí`,
-    opts: [
-      `stereotyp – znamená zafixování vnímání a je typem schématu`,
-      `sociální komparace – Jaký jsem ve srovnání se sobě rovnými? Jaké mají známky ve škole, odměny, výsledky ve sportu`,
-      `implicitní teorie osobnosti – jedná se o jakýsi systém pravidel, která určují, které vlastnosti osobnosti se společně vyskytují a které nikoli`,
-      `kulturní vlivy – Jak se řídím „pravidly kultury", ke které patřím? Pokud projevíme vlastnosti, které naše kultura oceňuje, pravděpodobně budeme chváleni a bude tak posilováno naše sebepojetí (a opačně)`,
-      `interpretace a hodnocení sebe sama – Jak hodnotím své vlastní názory a chování? Co považuji za správné, vyvolává kladné sebepojetí (anebo opačně)`
-    ],
-    correct: [1, 3, 4]
-  },
-  {
-    q: `Pro zvládnutí kritiky se doporučuje použít některou z následujících technik. Která technika byla použita pro zvládnutí následující situace? Příklad: "Jak to, že jsi ještě nepřipravil materiály na dnešní poradu?". - "Uznávám, že jsem to měl připravit, ale zapomněl jsem na to." - "Už zase? To se ti stává pokaždé!" - "Ano, máš pravdu, poslední dobou se mi to několikrát stalo."`,
-    opts: [
-      `požádání o laskavost`,
-      `tertium non datur`,
-      `separace a ideová partenogeneze`,
-      `technika otevřených dveří`,
-      `negativní dotazování`
-    ],
-    correct: [3]
-  },
-  {
-    q: `Jedná se o metodu řešení mezilidských konfliktů, při níž neutrální kvalifikovaná osoba pomáhá účastníkům konfliktu ve vzájemné komunikaci a dorozumění. Jejím cílem je dosažení spokojenosti i s výsledkem i průběhem řešení tohoto konfliktu. Je to metoda komunikace, která využívá poznatků z různých vědních oborů, nejobecněji z filozofie, sociální psychologie, sociologie a práva. Označte správně jednoslovným názvem.`,
-    opts: [
-      `meditace`,
-      `facilitace`,
-      `afiliace`,
-      `mediace`,
-      `akceptace`
-    ],
-    correct: [3]
-  },
-  {
-    q: `Označte správný příklad manipulativní techniky „Tertium non datur"`,
-    opts: [
-      `brilantní postřeh, nálepkování, vulgární zesměšňování`,
-      `představuje, že existují pouze 2 možná řešení, např.: „buď jste s námi nebo jste s teroristy"`,
-      `„vy darwinisté možná pocházíte z opice, ale já odmítám uznat nějakou gorilu za svoji babičku..."`,
-      `nepřípustné zobecnění typu „všichni muži jsou stejní..."`,
-      `„tak já to udělám sám..."`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Volba strategií, které pro zvládání a řešení konfliktů zvolíme, budou ovlivněny těmito faktory`,
-    opts: [
-      `emocionálním stavem`,
-      `kvalitou života`,
-      `cíli, kterých chceme dosáhnout`,
-      `kognitivním posouzením situace`,
-      `osobnostními a komunikačními schopnostmi`
-    ],
-    correct: [0, 2, 3, 4]
-  },
-  {
-    q: `Označte, které tvrzení nelze zařadit mezi pravidla ke zvládání konfliktů`,
-    opts: [
-      `zvažujte, co chcete a můžete mít pod kontrolou (řešení vyjednáváním, facilitací, mediací)`,
-      `konfliktům se nevyhýbejte, aktivně je řešte`,
-      `způsob řešení přizpůsobte povaze a zralosti konfliktu, čím více se konflikt vyhrocuje, je třeba zásahu neutrálního experta (facilitátor, mediátor)`,
-      `všechna řešení nestojí za zvážení a promyšlení, myšlenky by měly být vylučovány`,
-      `hledejte syntézu nebo koexistenci, snažte se vybírat pozitivní obsah`
-    ],
-    correct: [3, 4]
-  },
-  {
-    q: `Johariho okno`,
-    opts: [
-      `symbolické rozdělení vlastního já do čtyř oblastí`,
-      `jeden z hlavních nástrojů používaných pro analýzu aspektů své osobnosti v rámci sebeuvědomění`,
-      `alternativní název pro přenosový kanál sdělení`,
-      `je přehledem pouze našich neznámých vlastností`,
-      `název pro „slepé místo" v rámci procesu vnímání`
-    ],
-    correct: [0, 1]
-  },
-  {
-    q: `O komunikaci je možné říci, že je`,
-    opts: [
-      `nevratná`,
-      `neosobní`,
-      `nebezpečná`,
-      `neopakovatelná`,
-      `nevyhnutelná`
-    ],
-    correct: [0, 3, 4]
-  },
-  {
-    q: `Intimní zóna je v rámci proxemiky využívána zejména`,
-    opts: [
-      `ke komunikaci v obchodním jednání`,
-      `ke komunikaci s nejbližšími lidmi`,
-      `v rámci veřejných proslovů`,
-      `ke komunikaci s přáteli a známými`,
-      `ke komunikaci s naprosto neznámými lidmi`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Co všechno spadá pod tzv. mutilace`,
-    opts: [
-      `oblečení`,
-      `lidský pach`,
-      `oční kontakt`,
-      `ozdoby a doplňky`,
-      `změny přímo na těle`
-    ],
-    correct: [0, 3, 4]
-  },
-  {
-    q: `Mezi funkce neverbální komunikace patří`,
-    opts: [
-      `funkce ovlivňování a klamání`,
-      `funkce vytváření a řízení dojmů`,
-      `funkce kognitivní`,
-      `funkce exhibiční`,
-      `funkce sebe-potvrzující`
-    ],
-    correct: [0, 1]
-  },
-  {
-    q: `V rámci olfaktorické komunikace neplatí, že`,
-    opts: [
-      `člověk si dokáže zapamatovat a identifikovat až půl milionu vůní a pachů`,
-      `patří mezi prvky neverbální komunikace`,
-      `na vnímání vůní nemá vliv kultura, pohlaví ani momentální nálada jedince`,
-      `zabývá se tělesnými pachy`,
-      `různé vůně vyvolávají u různých lidí rozdílné reakce nebo asociace`
-    ],
-    correct: [0, 2]
-  },
-  {
-    q: `Asertivní technika vyjadřování souhlasu`,
-    opts: [
-      `spočívá v tom, že nemusíme dále stanovisko partnera, např. kritiku, rozvádět`,
-      `klade si za cíl zklidnění situace`,
-      `klade si za cíl nácvik přijetí kritiky za své chyby a omyly`,
-      `spočívá v natrénované, stále stejné, formulaci svého názoru`,
-      `spočívá v neustupování komunikačnímu partnerovi`
-    ],
-    correct: [0, 1, 2]
-  },
-  {
-    q: `O násilném řešení konfliktu platí, že`,
-    opts: [
-      `strany kontrolují jak proces, tak výsledek řešení`,
-      `v ČR se jedná o zcela legální a legitimní způsob řešení konfliktů`,
-      `je zcela nevhodné a nepatří mezi pozitivní řešení konfliktů`,
-      `dají se tak řešit pouze spory, nikoli problémy`,
-      `kontrolujeme proces, ale ne výsledek řešení`
-    ],
-    correct: [2, 4]
-  },
-  {
-    q: `Mezi šumy v komunikaci se řadí například`,
-    opts: [
-      `fyzický šum`,
-      `atribuční šum`,
-      `psychologický šum`,
-      `charakterový šum`,
-      `sémantický šum`
-    ],
-    correct: [0, 2, 4]
-  },
-  {
-    q: `Sociální/společenská zóna se v rámci proxemiky nachází ve vzdálenosti`,
-    opts: [
-      `45 – 120 cm`,
-      `do 45 cm`,
-      `1,2 – 3,6 metru`,
-      `nad 1 metr`,
-      `nad 4 metry`
-    ],
-    correct: [2]
-  },
-  {
-    q: `Mezi základní komunikační dovednosti nepatří`,
-    opts: [
-      `dovednost vést rozhovory a pohovory`,
-      `dovednost komunikovat v malé skupině`,
-      `dovednost prezentovat sebe sama`,
-      `mediální gramotnost`,
-      `time management`
-    ],
-    correct: [4]
-  },
-  {
-    q: `Jak rozlišujeme typy kontextu komunikace?`,
-    opts: [
-      `myšlenkový`,
-      `fyzický`,
-      `časový`,
-      `sociálně-psychologický`,
-      `kulturní`
-    ],
-    correct: [1, 2, 3, 4]
-  },
-  {
-    q: `Mezi základní funkce komunikace patří`,
-    opts: [
-      `funkce informační`,
-      `funkce persuazivní`,
-      `funkce zábavní`,
-      `funkce instruktážní`,
-      `funkce propojovací`
-    ],
-    correct: [0, 1, 2, 3]
-  },
-  {
-    q: `Mediální gramotnost je`,
-    opts: [
-      `schopnost prezentovat se v médiích`,
-      `schopnost získávat přístup k médiím a chápat a kriticky vyhodnocovat různé aspekty médií a mediálních obsahů`,
-      `nutná výbava člověka v 21. století`,
-      `atribut, který má jedinci pomoci stát se kompetentními při kontrole interpretace toho, co vidí a slyší`,
-      `vnitřně provázaný celek dovedností, znalostí a představ vztažených k médiím a komunikačním prostředkům`
-    ],
-    correct: [1, 2, 3, 4]
-  },
-  {
-    q: `O dekódování lze v rámci komunikace říci, že`,
-    opts: [
-      `jedná se o jeden z typů informačních šumů`,
-      `o proces přeměny sdělení z nějakého kódu`,
-      `je k němu potřebná vyspělá výpočetní technika`,
-      `je součástí modelu komunikačního procesu`,
-      `nachází se na straně odesílatele/zdroje sdělení`
-    ],
-    correct: [1, 3]
-  },
-  {
-    q: `Mezi styly řešení konfliktů nepatří`,
-    opts: [
-      `problematický styl`,
-      `únikový styl`,
-      `kooperační styl`,
-      `agresivní styl`,
-      `přizpůsobivý styl`
-    ],
-    correct: [0]
-  },
-  {
-    q: `Sebereflexe může být charakterizována jako`,
-    opts: [
-      `schopnost přijímání zpětných vazeb z našeho okolí`,
-      `přemýšlení o sobě, hledání porozumění sám sobě`,
-      `vnímání nás samých v celém kontextu`,
-      `určování naší vlastní hodnoty`,
-      `celkový rámec, ve kterém se uskutečňuje komunikace`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Uspokojování potřeb v rámci komunikace probíhá v rovině`,
-    opts: [
-      `individuální`,
-      `skupinové`,
-      `psychologické`,
-      `fyzické`,
-      `úkolové`
-    ],
-    correct: [0, 1, 4]
-  },
-  {
-    q: `Selektivní zkreslení`,
-    opts: [
-      `spočívá v tom, že informaci přikládáme vlastní význam`,
-      `spočívá v upravování informace podle toho, jak ji daný jedinec chce slyšet`,
-      `se dělí na principy, schémata a scénáře`,
-      `jeho prostřednictvím člověk na základě rozdílů usuzuje, že lidé nebo sdělení nepatří k sobě`,
-      `umožňuje třídění všech informací, kterým je člověk vystaven`
-    ],
-    correct: [0, 1]
-  },
-  {
-    q: `V rámci procesu vnímání lze třídit informace následujícími způsoby`,
-    opts: [
-      `podle scénářů`,
-      `podle principů`,
-      `podle seznamu`,
-      `podle pravidel`,
-      `podle schémat`
-    ],
-    correct: [0, 1, 4]
-  },
-  {
-    q: `Mezi nejobvyklejší bariéry komunikace lze řadit (osobnostní zdroje)`,
-    opts: [
-      `jazyková neznalost`,
-      `komunikační dovednosti`,
-      `skupinová příslušnost – k formálním i neformálním skupinám (např. pěstitelé bonsají)`,
-      `rodina`,
-      `dědičnost`,
-      `kultura`
-    ],
-    correct: [0, 1]
-  },
-  {
-    q: `Při komunikaci „face to face" je komunikátor vnímán jako celek. Nonverbálním sdělováním komunikátor může`,
-    opts: [
-      `regulovat, řídit snahu hovořit, sdělí mávnutím ruky`,
-      `sdělovat – své úvahy a nápady`,
-      `popírat – sdělení rozdílu, opaku ke slovnímu sdělení`,
-      `nahrazovat - místo slova kývne hlavou`,
-      `doplňovat – úsměv, kývání hlavou`
-    ],
-    correct: [0, 2, 3, 4]
-  },
-  {
-    q: `Manipulativní techniky lze charakterizovat takto`,
-    opts: [
-      `morálně akceptovatelné`,
-      `pokud nám jde o vytváření dlouhodobých pozitivních sociálních vztahů, je třeba využívání těchto technik ovládat`,
-      `snaží se využít slabých míst partnera`,
-      `snaží se přimět partnera k činu, který by dobrovolně udělal`,
-      `působí většinou jen krátkodobě`
-    ],
-    correct: [2, 4]
-  },
-  {
-    q: `Co nepatří mezi zásady verbálního sdělení?`,
-    opts: [
-      `sdělení jsou ovlivněna IQ jedince`,
-      `sdělení jsou denotační a konotační`,
-      `sdělení nevyjadřují různou míru abstrakce`,
-      `významy sdělení jsou v lidech`,
-      `sdělení mohou vyjadřovat různou míru přímočarosti`
-    ],
-    correct: [0, 2]
-  },
-  {
-    q: `Cílem prezentace může být`,
-    opts: [
-      `Přesvědčit`,
-      `Pobavit`,
-      `Informovat`,
-      `Motivovat`,
-      `Získat pozornost`
-    ],
-    correct: [0, 1, 2, 3, 4]
-  },
-  {
-    q: `Jak reagovat na oprávněnou kritiku? Jak ji přijímat, jste-li na kritiku extrémně citlivý`,
-    opts: [
-      `opřete se o své silné stránky – skutečně si to uvědomte`,
-      `předjímejte blížící se kritiku – vnímáme stresové reakce našeho organismu`,
-      `reagujte asertivně – pomůže vám to uchovat si důstojnost a udržet diskusi v běhu`,
-      `nedýchejte – podaří se vám zachovat lépe klid`,
-      `uvědomte si, v čem se musíte zlepšit. Takováto situace už se nesmí stát`
-    ],
-    correct: [0, 1, 2]
-  },
-  {
-    q: `Jedná se o metodu řešení mezilidských konfliktů, která je přínosem pro obě strany konfliktu a napomáhá ke smírnému řešení. Označte správně jednoslovným názvem.`,
-    opts: [
-      `facilitace`,
-      `afiliace`,
-      `meditace`,
-      `akceptace`,
-      `mediace`
-    ],
-    correct: [4]
-  },
-  {
-    q: `Jako klíčový aspekt při prezentování můžeme označit`,
-    opts: [
-      `oslovování jednotlivých posluchačů`,
-      `sdělení cíle prezentace`,
-      `podrobnosti prezentace`,
-      `podání ruky`,
-      `kontaktování posluchačů očima`
-    ],
-    correct: [1]
-  },
-  {
-    q: `Asertivita neznamená`,
-    opts: [
-      `ohleduplné jednání`,
-      `pasivní jednání`,
-      `manipulativní jednání`,
-      `prosazení cizího názoru`,
-      `prosazení vlastního názoru`
-    ],
-    correct: [1, 2, 3]
-  }
-];
 
 // ╔══════════════════════════════════════════════════════════════╗
 // ║  Práh úspěšnosti ║
@@ -2022,7 +929,8 @@ function setCustomCount() {
 // Range info
 function updateRangeInfo() {
   if (cfg.mode !== 'range') return;
-  const total = QUESTIONS.length;
+  if (!S.selectedTest) return;
+  const total = S.selectedTest.questions.length;
   const from  = parseInt(document.getElementById('range-from').value) || 1;
   const to    = parseInt(document.getElementById('range-to').value)   || total;
   const info  = document.getElementById('range-info');
@@ -2040,7 +948,7 @@ function updateRangeInfo() {
 function updateStartBtn() {
   const btn = document.getElementById('btn-start');
   if (cfg.mode === 'range') {
-    const total = QUESTIONS.length;
+    const total = S.selectedTest ? S.selectedTest.questions.length : 0;
     const from  = parseInt(document.getElementById('range-from').value) || 0;
     const to    = parseInt(document.getElementById('range-to').value)   || 0;
     btn.disabled = !(from >= 1 && to <= total && from <= to);
@@ -2052,7 +960,71 @@ function updateStartBtn() {
 // ─────────────────────────────────────────────────────────────────
 // Stav
 // ─────────────────────────────────────────────────────────────────
+let testsRegistry = null;
+let loadedTests = {};
 let S = {};
+
+// ─────────────────────────────────────────────────────────────────
+// Dashboard
+// ─────────────────────────────────────────────────────────────────
+async function loadRegistry() {
+  try {
+    const res = await fetch('tests/index.json');
+    testsRegistry = await res.json();
+    renderDashboard();
+  } catch(e) {
+    document.getElementById('dash-tests').innerHTML = '<div class="dash-empty">Nelze načíst seznam testů.</div>';
+  }
+}
+
+function renderDashboard() {
+  const container = document.getElementById('dash-tests');
+  container.innerHTML = '';
+  const tests = (testsRegistry && testsRegistry.tests) || [];
+  if (!tests.length) {
+    container.innerHTML = '<div class="dash-empty">Žádné testy k dispozici.</div>';
+    return;
+  }
+  tests.forEach(t => {
+    const card = document.createElement('button');
+    card.className = 'dash-card';
+    card.innerHTML = `<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} otázek · aktualizováno ${formatDate(t.updatedAt)}</div>`;
+    card.onclick = () => selectTest(t.id);
+    container.appendChild(card);
+  });
+}
+
+async function selectTest(id) {
+  try {
+    let test = loadedTests[id];
+    if (!test) {
+      const reg = (testsRegistry.tests || []).find(t => t.id === id);
+      const res = await fetch('tests/' + reg.file);
+      test = await res.json();
+      loadedTests[id] = test;
+    }
+    S.selectedTest = test;
+    const total = test.questions.length;
+    document.title = test.title + ' | Banánovník';
+    const titleEl = document.getElementById('start-test-title');
+    titleEl.setAttribute('data-text', test.title);
+    titleEl.innerHTML = `<em>${test.title}</em>`;
+    document.getElementById('start-meta').textContent = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt);
+    document.getElementById('start-rubric').textContent = test.rubric || '';
+    document.getElementById('db-qcount').textContent = total;
+    document.getElementById('q-count-label').textContent = total;
+    document.getElementById('range-to').value = total;
+    updateRangeInfo();
+    show('screen-start');
+  } catch(e) {
+    alert('Nepodařilo se načíst test.');
+  }
+}
+
+function formatDate(iso) {
+  const d = new Date(iso + 'T12:00:00');
+  return d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' });
+}
 
 function show(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -2064,16 +1036,16 @@ function show(id) {
 // Start
 // ─────────────────────────────────────────────────────────────────
 function startQuiz() {
-  const total = QUESTIONS.length;
+  const bank = S.selectedTest.questions;
   let pool;
 
   if (cfg.mode === 'range') {
     const from = parseInt(document.getElementById('range-from').value) - 1;
     const to   = parseInt(document.getElementById('range-to').value);
-    pool = QUESTIONS.slice(from, to).map((q, i) => ({ ...q, _orig: from + i + 1 }));
+    pool = bank.slice(from, to).map((q, i) => ({ ...q, _orig: from + i + 1 }));
     if (cfg.qorder === 'random') pool = shuffle(pool);
   } else {
-    pool = QUESTIONS.map((q, i) => ({ ...q, _orig: i + 1 }));
+    pool = bank.map((q, i) => ({ ...q, _orig: i + 1 }));
     if (cfg.qorder === 'random') pool = shuffle(pool);
     if (cfg.count > 0 && cfg.count < pool.length) pool = pool.slice(0, cfg.count);
   }
@@ -2118,7 +1090,7 @@ function renderQ() {
   document.getElementById('p-cur').textContent     = n + 1;
   document.getElementById('p-tot').textContent     = tot;
   document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
-  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${QUESTIONS.length}</span>`;
+  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span>`;
   document.getElementById('q-text').textContent    = q.q;
 
   const hintEl = document.getElementById('q-hint');
@@ -2510,7 +1482,7 @@ function reviewBack() { show(S.prevScreen || 'screen-results'); }
 // ─────────────────────────────────────────────────────────────────
 function askAbort()   { document.getElementById('overlay-abort').classList.add('show'); }
 function closeAbort() { document.getElementById('overlay-abort').classList.remove('show'); }
-function doAbort()    { closeAbort(); show('screen-start'); }
+function doAbort()    { closeAbort(); show('screen-dashboard'); }
 
 // ─────────────────────────────────────────────────────────────────
 // Helpers
@@ -2569,18 +1541,13 @@ document.addEventListener('keydown', function(e) {
     ph.style.color = 'var(--green)';
     setTimeout(() => { ph.textContent = ''; ph.style.color = ''; }, 2500);
   }
-  const total = QUESTIONS.length;
-  document.getElementById('q-count-label').textContent = total;
-  document.getElementById('db-qcount').textContent = total;
-  document.getElementById('range-to').value = total;
-  updateRangeInfo();
-
   document.getElementById('overlay-abort').addEventListener('click', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '4.65';
-document.getElementById('app-version').textContent = APP_VERSION;
+const APP_VERSION = '5.0';
+document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
+loadRegistry();
 
 if ('serviceWorker' in navigator) {
   const hasExisting = !!navigator.serviceWorker.controller;

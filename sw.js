@@ -1,6 +1,6 @@
-const CACHE = 'bananovnik-v5.1';
+const CACHE = 'bananovnik-v5.15';
 const CORE = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png'];
-const TEST_FILES = ['./tests/komunikace.json', './tests/management-ezk.json'];
+const TEST_FILES = ['./tests/komunikace.json', './tests/management.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(

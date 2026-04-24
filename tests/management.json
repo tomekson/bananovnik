@@ -1,0 +1,1456 @@
+{
+  "id": "management",
+  "title": "Management",
+  "updatedAt": "2026-04-22",
+  "rubric": "Zkouškový test: 45 min., 16 otázek po 5 bodech + 1 otevřená za 20 bodů, pomůcka: kalkulačka",
+  "questions": [
+    {
+      "q": "Moderní principy managementu jsou zaměřeny na:",
+      "opts": [
+        "rozvoj pracovníků",
+        "management mobility",
+        "hledání talentů",
+        "nákup nových technologií",
+        "retenci zaměstnanců"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Maticová organizační struktura je založena na principech:",
+      "opts": [
+        "časově omezeného charakteru existence týmů",
+        "vytvoření týmů složených z pracovníků různé odbornosti",
+        "dvojí podřízenosti pracovníků",
+        "pevné organizační struktury",
+        "strategických podnikatelských jednotek"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Delegováním se rozumí:",
+      "opts": [
+        "zvýšení platu zaměstnanci",
+        "přenesení potřebných pravomocí za plnění úkolu",
+        "přenesení odpovědnosti za plnění úkolu",
+        "vyslání pracovníka na návštěvu kooperujícího podniku",
+        "přenesení činností a úkolů ze strany manažera na podřízené"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Strategické podnikatelské jednotky (SBU) jsou charakteristické:",
+      "opts": [
+        "měnící se strukturou",
+        "rozsáhlejší samostatností v rozhodování",
+        "rychlejším rozhodováním přímým napojením na vedení společnosti",
+        "různou velikostí",
+        "uplatněním Taylorových myšlenek v praxi"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Mezi pružné organizační struktury patří:",
+      "opts": [
+        "projektová",
+        "maticová",
+        "divizionální",
+        "vertikální",
+        "funkcionální"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Koncepce omezené racionality:",
+      "opts": [
+        "je založena na neznalosti manažerských postupů",
+        "je založena na výsledcích výzkumu ve společnosti Western Electric",
+        "je založena na poznatcích Herberta A. Simona",
+        "je založena na poznatcích Ludwiga von Bertalanffyho",
+        "je založena na poznatku, že jednání manažerů je ovlivněno satisfakčním rozhodováním"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Organizační struktury se dělí do základních skupin na:",
+      "opts": [
+        "postupné",
+        "rotační",
+        "pevné",
+        "pružné",
+        "pracovní"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Štíhlé organizační struktury jsou charakteristické:",
+      "opts": [
+        "nižším počtem přímých podřízených pracovníků",
+        "nižším počtem stupňů řízení",
+        "nižším počtem manažerů",
+        "vyšším počtem přímých podřízených pracovníků",
+        "vyšším počtem stupňů řízení"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Pohybové studie v počátcích vědeckého managementu prováděli:",
+      "opts": [
+        "Weber",
+        "Fayol",
+        "Gilbreth",
+        "Follet",
+        "Mayo"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Štábní útvary v organizacích mohou být podle zaměření:",
+      "opts": [
+        "vertikální",
+        "odborné",
+        "podpůrné",
+        "osobní",
+        "organizační"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Mezi prognostické metody patří:",
+      "opts": [
+        "psaní scénářů",
+        "analogie",
+        "Delfská",
+        "heuristická",
+        "vizuální"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Na vývoj vědeckého managementu působily především faktory:",
+      "opts": [
+        "rozvoj vědních oborů a možnosti jejich uplatnění v managementu",
+        "zvětšování podniků a potřeba jejich odlišné řízení",
+        "výuka managementu na Harvardově univerzitě",
+        "globalizace",
+        "technický pokrok"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Podle počtu stupňů řízení se organizační struktury dělí na:",
+      "opts": [
+        "šikmé",
+        "široké",
+        "kombinované",
+        "strmé",
+        "ploché"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pro identifikování příčiny problému se použije:",
+      "opts": [
+        "kauzální analýza",
+        "audit",
+        "graf příčin a následků",
+        "myšlenková mapa",
+        "šestislovný graf"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Pevné organizační struktury jsou obvykle charakteristické:",
+      "opts": [
+        "relativně dlouhodobějšími pravidly řízení",
+        "nízkou fluktuací pracovníků a tím jejich stabilitou",
+        "přesně vymezenými vztahy nadřízenosti a podřízenosti",
+        "přesně vymezenými pravomocemi",
+        "použitím pouze v malých organizacích"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "K plánovacím metodám patří:",
+      "opts": [
+        "agilní metoda",
+        "síťový diagram",
+        "princip nejmenších odchylek",
+        "kanban",
+        "Ganttův diagram"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Americký proud v klasické škole managementu se zaměřoval především na:",
+      "opts": [
+        "řízení a plánování výroby",
+        "zvyšování efektivnosti práce dělníků",
+        "úkolovou mzdu",
+        "organizační struktury",
+        "manažerské funkce"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Škola kvantitativních přístupů vychází z:",
+      "opts": [
+        "koncepce omezené racionality v rozhodování",
+        "psychotechniky",
+        "makroekonomického modelování",
+        "klasické školy v oblasti měření výkonů a normování práce",
+        "rozvoje výpočetní techniky"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Metoda SMART:",
+      "opts": [
+        "se skládá z kritérií současnost, metody, adaptace, reálnost a technika postupu",
+        "je použitelná pro formulaci podnikových cílů",
+        "je použitelná pro řízení času",
+        "uvádí, že cíl musí být strategický, měřitelný, akceptovatelný, realistický a termínovaný",
+        "je použitelná pro odměňování pracovníků"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Vícekriteriální rozhodování:",
+      "opts": [
+        "je založeno na existenci více možností řešení problému",
+        "je založeno na výstupech z účetnictví",
+        "optimalizuje výběr varianty rozhodnutí z hlediska zisku",
+        "umožňuje nalezení relativně nejlepší varianty řešení problému",
+        "se používá při řešení špatně strukturovaných problémů"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Organizování je založeno na:",
+      "opts": [
+        "dělbě práce",
+        "procesu založení nové organizace",
+        "manažerském rozhodování",
+        "přidělení pravomocí a odpovědností manažerům",
+        "koordinování jednotlivých činností"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pod pojmem organizace se rozumí:",
+      "opts": [
+        "pořádání podnikových akcí pro zaměstnance",
+        "relativně trvalejší uspořádání prvků v systému a vazeb mezi nimi",
+        "přijímání nových pracovníků",
+        "efektivní využití času manažery",
+        "označení pro firmy, úřady, nemocnice, školy"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Liniová organizační struktura je charakteristická:",
+      "opts": [
+        "použitím v malých organizacích",
+        "velkou složitostí a proto se nepoužívá",
+        "vertikálním charakterem",
+        "několika nadřízenými u každého řadového pracovníka a jejím autorem je Taylor",
+        "použitím ve velkých organizacích"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Fázemi rozhodovacího procesu jsou:",
+      "opts": [
+        "kontrola výsledků realizace",
+        "identifikování viníka problému",
+        "stanovení odměn za řešení problému",
+        "definování (příčiny) problému",
+        "realizace rozhodnutí"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Kritéria pro spojování činností a pracovníků jsou:",
+      "opts": [
+        "zákazníci",
+        "neformální vztahy",
+        "technologické procesy",
+        "finanční toky",
+        "odbornost pracovníků"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Špatně strukturované problémy jsou charakteristické:",
+      "opts": [
+        "existencí většího počtu faktorů, které působí",
+        "operativními problémy",
+        "řešením převážně na úrovni nižšího a středního managementu",
+        "vícekriteriálním řešením",
+        "velkou složitostí"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "K častým bariérám kreativity patří:",
+      "opts": [
+        "optimismus",
+        "rutinní a jednotvárná práce",
+        "nízká kvalifikace pracovníka",
+        "stres",
+        "negativní postoje a pesimismus"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Vazby mezi činnostmi v organizaci mohou být:",
+      "opts": [
+        "souběžné",
+        "rotační",
+        "vzájemné",
+        "postupné",
+        "souměrné"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Rozpětím řízení se rozumí:",
+      "opts": [
+        "počet přímo podřízených pracovníků manažera",
+        "počet manažerů v organizaci",
+        "počet divizí v organizaci",
+        "počet stupňů řízení v organizaci",
+        "počet organizačních útvarů v organizaci"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Reidenbach-Robinův model vyjadřuje:",
+      "opts": [
+        "systém spravedlivého odměňování pracovníků",
+        "složitost manažerského rozhodování",
+        "vývojové typy organizací z hlediska míry zisku a etického jednání",
+        "kvalifikaci manažerů organizace",
+        "vývojové typy manažerského jednání od direktivního po participativní"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Funkcionální organizační struktura je založena na principu:",
+      "opts": [
+        "snižování počtu pracovníků",
+        "přidělování funkcí jednotlivým pracovníkům organizace",
+        "vedení útvarů manažery, kteří funkcionální oblast zastřešují",
+        "rozdělení pracovníků na funkcionální a nefunkcionální",
+        "spojování pracovníků, kteří vykonávají stejnou nebo obdobnou činnost"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Rozpětí řízení ovlivňuje:",
+      "opts": [
+        "jednoduchost nebo složitost vykonávaných činností",
+        "platové zařazení pracovníků",
+        "shodnost nebo odlišnost vykonávané činnosti pracovníků",
+        "neformální vztahy pracovníků",
+        "prostorové rozmístění pracovníků"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Pokud jsou rozhodovací pravomoce více soustředěny na vyšší manažery, tak se jedná o:",
+      "opts": [
+        "centralizaci rozhodování",
+        "vrcholové rozhodování",
+        "delegování",
+        "strategické rozhodování",
+        "manažerské rozhodování"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Co lze označit jako \"management\"?",
+      "opts": [
+        "řešení projektů",
+        "vědeckou disciplínu",
+        "manažery",
+        "činnosti realizované vedoucími pracovníky",
+        "vedoucí pracovníky"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi formy vnitřní kontroly patří:",
+      "opts": [
+        "daňová kontrola",
+        "technická (výstupní) kontrola",
+        "ISO normy",
+        "interní audit",
+        "controlling"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Manažerský etický kodex vyjadřuje zejména vztah k:",
+      "opts": [
+        "rodině",
+        "spolupracovníkům",
+        "vlastníkům",
+        "zákoníku práce",
+        "zákazníkům"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Funkce kontrolní činnosti jsou:",
+      "opts": [
+        "inspekční",
+        "průběžné",
+        "preventivní",
+        "strategické",
+        "eliminační"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Kontroly prováděné specializovanými pracovišti organizace jsou:",
+      "opts": [
+        "neplánované",
+        "mimořádné",
+        "řádné",
+        "plánované",
+        "statistické"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Současný management se zaměřuje především na:",
+      "opts": [
+        "orientaci na uspokojení potřeb zákazníků",
+        "normování práce a zvyšování výkonnosti pracovníků",
+        "využití lidského potenciálu především na dosahování úspěšnosti prostřednictvím znalostí",
+        "schopnost rychlé reakce na vnější změny",
+        "odměňování pracovníků"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Cílem vnitřního kontrolního systému je:",
+      "opts": [
+        "informovat manažery o zjištěném stavu v organizaci",
+        "průběžně zjišťovat dosavadní vývoj organizace",
+        "odvolávat manažery z jejich pozic",
+        "signalizovat nedostatečné odměňování manažerů organizace",
+        "signalizovat možné problémy, které by mohly ohrozit dosahování cílů organizace"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Pro dobře strukturované problémy platí:",
+      "opts": [
+        "rozhodování je převážně racionální",
+        "rozhodování má převážně dopad na delší časový horizont",
+        "odehrávají se v prostředí nejistoty",
+        "řeší je obvykle liniový management",
+        "jsou známy možné varianty řešení"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Systém je určen:",
+      "opts": [
+        "vazbami nadřízenosti a podřízenosti",
+        "množinou rozhodnutí",
+        "vazbami mezi prvky",
+        "množinou lidí",
+        "množinou prvků"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Podle jakých základních kritérií se vytvářejí divize v organizacích:",
+      "opts": [
+        "výrobků a služeb, které realizují",
+        "počtu pracovníků",
+        "druhu, oblasti zákazníků",
+        "fáze technologického procesu a obslužných pracovišť",
+        "teritoria obsluhy zákazníků (země, region)"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Metodami pro identifikování problému jsou:",
+      "opts": [
+        "kauzální analýza",
+        "graf příčin a následků",
+        "administrativní model",
+        "audit",
+        "šestislovný graf"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Organizační normy a řídící akty se dělí na:",
+      "opts": [
+        "povinné",
+        "opravňující",
+        "formální",
+        "zavazující",
+        "příkazující"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Odchylky od žádoucího stavu vznikají v organizaci ze základních příčin:",
+      "opts": [
+        "rozhodnutím manažera",
+        "vydáním nového zákonu",
+        "lidským faktorem",
+        "poruchou",
+        "rozhodnutím soudu"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Ideální byrokratická organizace řízení je založena na principech:",
+      "opts": [
+        "použití pohybových studií",
+        "jednoznačně specifikované hierarchie nadřízenosti a podřízenosti",
+        "formulovaných M. Weberem",
+        "systému psaných pravidel a jejich aplikace na konkrétní situace",
+        "aplikace participativního vedení lidí"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Efektem štíhlých organizačních struktur je:",
+      "opts": [
+        "zúžení rozpětí řízení",
+        "snížení celkového počtu manažerů",
+        "možnost uplatnění autoritativního stylu vedení",
+        "větší schopnost a rychlost reakce na změněné podmínky a požadavky zákazníků",
+        "zkrácení komunikačních kanálů"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Dobře strukturované problémy jsou charakteristické:",
+      "opts": [
+        "častou potřebou jejich rychlého řešení",
+        "obvyklou znalostí všech proměnných a informací pro jejich řešení",
+        "řešením převážně na úrovni vrcholového managementu",
+        "zaměřením a s dopadem na delší časový horizont",
+        "jejich opakováním"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Organizační normy se rozdělují na skupiny:",
+      "opts": [
+        "směrnice",
+        "rozhodnutí soudu",
+        "příkazy",
+        "řády",
+        "statutární"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Etické kodexy organizace jsou zaměřeny na:",
+      "opts": [
+        "konflikt zájmů",
+        "dosahování zisku pro organizaci",
+        "nezneužívání vnitřních informací",
+        "dodržování pracovní doby a pracovních povinností",
+        "jednání se zájmovými skupinami"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Trendem je hledání forem organizačních struktur, které umožňují:",
+      "opts": [
+        "posílit roli vrcholového managementu",
+        "decentralizovat rozhodování",
+        "centralizovat rozhodování",
+        "snížit dělbu práce a specializaci pracovníků",
+        "zvyšovat rozpětí řízení"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi metody na podporu individuálního rozhodování patří:",
+      "opts": [
+        "expertní systém",
+        "metoda typologií",
+        "Paretův princip",
+        "myšlenková mapa",
+        "transakční systém"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Počet přímo podřízených pracovníků ovlivňuje:",
+      "opts": [
+        "jednoduchost nebo složitost vykonávaných činností",
+        "typ organizace (podnikatelská, nepodnikatelská)",
+        "platové zařazení pracovníků",
+        "prostorové rozmístění pracovníků",
+        "shodnost nebo odlišnost vykonávané činnosti pracovníků"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Škola mezilidských vztahů se především zabývala:",
+      "opts": [
+        "vztahy mezi prvky systému a jejich vliv na jeho chování",
+        "pohybovými studiemi",
+        "pravomocemi, autoritou, vedením lidí",
+        "motivací pracovníků",
+        "psychologickým a sociologickým uspokojením zájmů"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Členění firemních plánů podle časového hlediska zahrnuje:",
+      "opts": [
+        "taktické plány",
+        "divizní plány",
+        "strategické plány",
+        "operační plány",
+        "střednědobé plány"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Důvodem delegování je zejména:",
+      "opts": [
+        "získání prostoru pro rozhodování",
+        "odstranění odchylek",
+        "dosažení efektu síla",
+        "odlehčení rozhodovacím místům",
+        "motivace zaměstnanců a jejich rozvoj"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Proces:",
+      "opts": [
+        "obsahuje činnosti, kterými dochází k transformaci vstupů na výstupy",
+        "je tvořen řadou na sebe navazujících činností",
+        "je podkladem pro vytvoření procesní organizační struktury",
+        "může být klíčovým nebo podpůrným",
+        "je založen na odměňování pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "K etickým nástrojům organizace patří:",
+      "opts": [
+        "etický audit",
+        "morální kodexy",
+        "etické kodexy",
+        "etický ombudsman",
+        "organizační normy"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Štíhlé organizační struktury jsou založeny na principu:",
+      "opts": [
+        "úzké (strmé) organizační struktury",
+        "snížení rozpětí řízení",
+        "vyššího počtu stupňů řízení",
+        "zvýšení rozpětí řízení",
+        "nižšího počtu stupňů řízení"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Etické kodexy se dělí na:",
+      "opts": [
+        "profesní",
+        "osobní",
+        "pracovní",
+        "organizace, korporátní",
+        "společenské"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Mezi metody na podporu skupinového rozhodování patří:",
+      "opts": [
+        "Think Tank",
+        "imaginární vizualizace",
+        "imaginární brainstorming",
+        "metody analogií",
+        "sekvenční hledání"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Pro úspěšné zvládnutí brainstormingu se musí dodržet pravidla:",
+      "opts": [
+        "účastí co největšího počtu lidí (více hlav je více rozumu)",
+        "počtu a struktuře účastníků",
+        "výběru prostředí pro jeho konání",
+        "zastoupení vrcholových manažerů",
+        "pro průběh"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "K základním stylům vedení patří:",
+      "opts": [
+        "kontrolní",
+        "sekvenční",
+        "demokratický",
+        "autoritativní",
+        "liberální"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Amébová struktura je charakteristická:",
+      "opts": [
+        "pružnou bezhierarchickou organizační strukturou",
+        "dvěma nadřízenými pracovníky",
+        "samořídícími týmy",
+        "pevnou organizační strukturou",
+        "autoritativním stylem vedení"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "K zásadám kontroly patří:",
+      "opts": [
+        "neprovádět duplicitní kontrolu, kde to není nutné",
+        "zaměření na nestabilní procesy",
+        "co nejvíce kontrolovat práci podřízených pracovníků",
+        "jmenovat pro každou prováděnou činnost kontrolora",
+        "zaměření na činnosti jejichž nedostatky by mohly vést k následkům"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Součástí komunikačního procesu je:",
+      "opts": [
+        "zakódování",
+        "šum",
+        "zapamatování",
+        "uplatnění informace",
+        "vertikální přenos"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Rozlišuje se rozhodování z hlediska informací o budoucnosti:",
+      "opts": [
+        "za pravděpodobnosti",
+        "pravděpodobnostní",
+        "za neurčitosti",
+        "neurčité",
+        "za rizika"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Mezi organizační normy a řídící akty patří:",
+      "opts": [
+        "obchodní smlouvy",
+        "zákony a vyhlášky",
+        "zápisy z porady vedení organizace",
+        "pracovní náplně",
+        "technologické postupy"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Vícekriteriální rozhodování se použije:",
+      "opts": [
+        "při rozhodování při jistotě",
+        "při zpracování kauzální analýzy",
+        "při řešení dobře strukturovaných problémů",
+        "při řešení špatně strukturovaných problémů",
+        "při výběru variant rozhodnutí"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi hlavní hygienické faktory patří:",
+      "opts": [
+        "možnost rozvoje",
+        "BOZP",
+        "pracovní nástroje",
+        "seberealizace",
+        "pracovní prostředí"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Mezi interpersonální role můžeme řadit:",
+      "opts": [
+        "podnikatel, reprezentant, styčný důstojník, vůdce",
+        "podnikatel, hasič, alokátor zdrojů, vyjednávač",
+        "podnikatel, hasič, šiřitel, vyjednávač",
+        "podnikatel, šiřitel, monitor, mluvčí",
+        "podnikatel, šiřitel, monitor, profesionál"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Subjektivní překážkou delegování je:",
+      "opts": [
+        "pocit neschopnosti",
+        "pocit nepostradatelnosti",
+        "potřeba rozhodovat o všem",
+        "pocit méněcennosti",
+        "nedůvěra ve schopnosti podřízených"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Co je to metoda 360 stupňů?",
+      "opts": [
+        "metoda předběžné kontroly",
+        "metoda hodnocení",
+        "metoda plánovací",
+        "rozbor časových možností",
+        "metoda likvidace"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Mezi metody řízení času lze řadit:",
+      "opts": [
+        "metody XYZ",
+        "Druckerovo MBO",
+        "metodu ABC",
+        "teorii X a Y",
+        "Peterovo pravidlo"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Vnitřní kontrolní systém může zahrnovat útvary:",
+      "opts": [
+        "vnitřního auditu",
+        "výstupní kontroly",
+        "vrcholového vedení",
+        "controllingu",
+        "manažerské"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Co charakterizuje metodu MBO:",
+      "opts": [
+        "je nejčastěji využívána",
+        "je orientována na budoucnost",
+        "zapojuje zaměstnance do určení cílů",
+        "je orientována na minulost",
+        "je nejméně využívána"
+      ],
+      "correct": [
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Mezi metody hodnocení pracovníků patří:",
+      "opts": [
+        "mystery calling",
+        "teambuilding",
+        "mystery shopping",
+        "outdoor training",
+        "assessment centrum"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Mise je:",
+      "opts": [
+        "totéž co vize podniku",
+        "žádná z výše uvedených odpovědí není správná",
+        "popis pozice podniku na trhu",
+        "smysl existence podniku",
+        "stanovení jednotlivých cílů v podniku"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Jaké manažerské styly lze najít v manažerské mřížce:",
+      "opts": [
+        "systematický",
+        "harmonický",
+        "podpůrný",
+        "konsensní",
+        "idylický"
+      ],
+      "correct": [
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Mezi hlavní kompetence, které je nutné rozvíjet pro inovativnost patří:",
+      "opts": [
+        "schopnost řešit problémy",
+        "schopnost prosazovat své názory",
+        "schopnost postupovat v manažerských pozicích",
+        "orientace na cíl a zákazníka",
+        "schopnost spolupráce"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Společenská odpovědnost firem (CSR) se zaměřuje na základní oblasti:",
+      "opts": [
+        "ziskovou",
+        "technologickou",
+        "ekonomickou",
+        "sociální",
+        "enviromentální"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi formy vnitřní kontroly patří:",
+      "opts": [
+        "osobní kontrola manažery pozorováním nebo návštěvami na pracovišti",
+        "controlling",
+        "interní audit",
+        "technická (výstupní) kontrola",
+        "sekvenční kontrola"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Při rozhodování se pro výběr varianty rozhodování použijí metody:",
+      "opts": [
+        "analogií",
+        "myšlenkové mapy",
+        "Kepner - Tregoe",
+        "expertních výpovědí (Delfská metoda)",
+        "párového srovnávání"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Systém je určen:",
+      "opts": [
+        "vazbami nadřízenosti a podřízenosti",
+        "množinou prvků",
+        "počtem manažerů",
+        "vazbami mezi prvky",
+        "množinou lidí"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Matematické modely pro podporu rozhodování jsou:",
+      "opts": [
+        "rozhodovací modely",
+        "lineární optimalizační modely",
+        "distribuční úlohy",
+        "kvadratické modely",
+        "empirické modely"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Nevýhodou maticové organizační struktury je:",
+      "opts": [
+        "dvojí nadřízenost pracovníků",
+        "pevná pravidla řízení",
+        "vertikální charakter struktury",
+        "omezená specializace pracovníků",
+        "nízká flexibilita"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "V čem se angažuje sociální oblast CSR (Corporate Social Responsibility):",
+      "opts": [
+        "vytváření rovných příležitostí",
+        "ochrana životního prostředí",
+        "dohled nad bezpečností práce",
+        "dosahování zisku pro podnik",
+        "snižování daňové zátěže"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Podmínkou manažerské práce je:",
+      "opts": [
+        "ovládání měkkých faktorů",
+        "osobní ambice",
+        "schopnost včasného rozhodnutí",
+        "technická znalost výroby",
+        "kreativita"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Jak lze definovat inovaci:",
+      "opts": [
+        "je výsledkem invence",
+        "je totéž co kreativita",
+        "je výsledkem imitace",
+        "je metodou kontroly",
+        "je součástí plánování"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Time management lze charakterizovat jako:",
+      "opts": [
+        "strategie prioritizace činností",
+        "metody a techniky řízení času",
+        "metoda hodnocení pracovníků",
+        "způsob delegování úkolů",
+        "systém odměňování za výkon"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Můžeme motivovat pomocí peněz?",
+      "opts": [
+        "ano, peníze jsou klíčovým motivátorem",
+        "ne, jde o stimulaci",
+        "ano, ale jen pro operativní řízení",
+        "peníze patří mezi motivátory i stimuly",
+        "ne, peníze nemají vliv na výkon"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Delegování lze charakterizovat jako:",
+      "opts": [
+        "předání pravomoci na podřízeného",
+        "přenos kompetence na podřízeného",
+        "přenesení celkové odpovědnosti za výsledek",
+        "předání úkolu podřízenému",
+        "přidělení úkolu nadřízenému"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "McClellandovu teorii tvoří:",
+      "opts": [
+        "moc",
+        "bezpečí",
+        "seberealizace",
+        "fyziologické potřeby",
+        "sociální vazby"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Top management je charakteristický:",
+      "opts": [
+        "určováním vize, mise a strategie",
+        "sestavováním plánů změn",
+        "odpovědností za celý podnik",
+        "přímým řízením výroby",
+        "operativním řízením liniových pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Na jaké oblasti se zaměřuje zpracování etických kodexů:",
+      "opts": [
+        "organizace",
+        "státní orgány",
+        "profesní organizace",
+        "právnické osoby",
+        "fyzické osoby"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Která manažerská funkce je nejdůležitější?",
+      "opts": [
+        "plánování",
+        "organizování",
+        "vedení",
+        "kontrola",
+        "ani jedna odpověď není správná"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Jaké problémy lze nalézt v komunikaci?",
+      "opts": [
+        "oscilace pozornosti",
+        "přesná zpětná vazba",
+        "selektivnost vjemů",
+        "příliš přímé sdělování",
+        "nadbytek formálních kanálů"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Informaci lze popsat jako:",
+      "opts": [
+        "zpracovávaná data",
+        "surová data",
+        "primární data z průzkumu",
+        "nestrukturovaná data",
+        "data z databází"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Dnešní byrokratická organizace řízení je založena na principech:",
+      "opts": [
+        "systému výběru a hodnocení pracovníků pouze na základě jejich výkonnosti",
+        "použití pohybových studií",
+        "jednoznačně specifikované hierarchie nadřízenosti a podřízenosti",
+        "aplikace participativního vedení lidí",
+        "systému psaných pravidel a jejich aplikace na konkrétní situace"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    }
+  ],
+  "scoringNote": "Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky."
+}

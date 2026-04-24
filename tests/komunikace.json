@@ -2,7 +2,7 @@
   "id": "komunikace",
   "title": "Komunikace a komunikační dovednosti",
   "updatedAt": "2026-04-03",
-  "rubric": "Zkouškový test: 60 min., 25 otázek po 4 bodech\nSprávná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.",
+  "rubric": "Zkouškový test: 60 min., 25 otázek po 4 bodech",
   "questions": [
     {
       "q": "Mezi paralingvistické prostředky komunikace nepatří",
@@ -1470,5 +1470,6 @@
         3
       ]
     }
-  ]
+  ],
+  "scoringNote": "Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky."
 }

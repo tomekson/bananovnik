@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=5.0">
+<link rel="manifest" href="manifest.json?v=5.1">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Banánovník</title>
@@ -973,6 +973,13 @@ const TESTS_REGISTRY = [
     title: 'Komunikace a komunikační dovednosti',
     updatedAt: '2026-04-03',
     questionCount: 103
+  },
+  {
+    id: 'management-ezk',
+    file: 'management-ezk.json',
+    title: 'Management EZK, Bc',
+    updatedAt: '2026-04-24',
+    questionCount: 81
   }
 ];
 
@@ -1553,7 +1560,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.0';
+const APP_VERSION = '5.1';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

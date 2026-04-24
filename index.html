@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=5.1">
+<link rel="manifest" href="manifest.json?v=5.15">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Banánovník</title>
@@ -275,7 +275,6 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   border-radius: var(--r); padding: 14px 15px;
   display: flex; align-items: flex-start; gap: 13px;
   cursor: pointer; transition: border-color .15s, background .15s;
-  -webkit-user-select: none;
   position: relative; isolation: isolate;
 }
 .opt::before {
@@ -662,7 +661,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   <div class="start-inner">
 
     <div class="logo-row">
-      <button class="btn-back-dash" onclick="show('screen-dashboard')">← Testy</button>
+      <button class="btn-back-dash" onclick="goToDashboard()">← Testy</button>
       <div style="display:flex;align-items:center;gap:11px;">
         <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
         <div>
@@ -746,7 +745,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       </div>
     </div>
 
-    <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test ↵</button>
+    <div id="start-scoring-note" style="display:none;font-size:11px;color:var(--muted);margin-bottom:4px;line-height:1.5;text-align:center;"></div><button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test ↵</button>
 
     <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu"<!-- nebo „Menu - Instalovat aplikaci" -->.</div>
 
@@ -788,7 +787,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       </div>
       <button class="btn-start" id="btn-main" onclick="mainBtn()">Potvrdit</button>
       <div class="quiz-ftr-row" id="ftr-row" style="display:none">
-        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Zopakovat (<code style="font-family:monospace;font-size:1em;font-weight:700">0</code>)</button>
+        <button class="btn-retry" id="btn-retry" onclick="retryQ()">Opakovat (0)</button>
         <button class="btn-start" onclick="mainBtn()">Další otázka ↵</button>
       </div>
     </div>
@@ -815,10 +814,10 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       <div class="scel" id="r-retried-cell" style="display:none"><div class="scel-val" style="color:var(--dim)" id="r-retried">—</div><div class="scel-lbl">Opakováno</div></div>
     </div>
     <div class="r-actions">
-      <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Zopakovat chybné</button>
+      <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Opakovat chybné</button>
       <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
-      <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="startQuiz()">Zopakovat test</button>
-      <button class="btn-sec" style="flex:1" onclick="show('screen-dashboard')">← Testy</button></div>
+      <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="startQuiz()">Opakovat test</button>
+      <button class="btn-sec" style="flex:1" onclick="goToDashboard()">← Testy</button></div>
     </div>
   </div>
 </div>
@@ -975,11 +974,11 @@ const TESTS_REGISTRY = [
     questionCount: 103
   },
   {
-    id: 'management-ezk',
-    file: 'management-ezk.json',
-    title: 'Management EZK, Bc',
-    updatedAt: '2026-04-24',
-    questionCount: 81
+    id: 'management',
+    file: 'management.json',
+    title: 'Management',
+    updatedAt: '2026-04-22',
+    questionCount: 100
   }
 ];
 
@@ -991,6 +990,10 @@ let S = {};
 // ─────────────────────────────────────────────────────────────────
 function loadRegistry() {
   renderDashboard();
+  const lastId = sessionStorage.getItem('bananovnik-last-test');
+  if (lastId && TESTS_REGISTRY.find(t => t.id === lastId)) {
+    selectTest(lastId);
+  }
 }
 
 function renderDashboard() {
@@ -1026,9 +1029,13 @@ async function selectTest(id) {
     titleEl.innerHTML = `<em>${test.title}</em>`;
     document.getElementById('start-meta').textContent = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt);
     document.getElementById('start-rubric').textContent = test.rubric || '';
+    const snEl = document.getElementById('start-scoring-note');
+    if (test.scoringNote) { snEl.textContent = test.scoringNote; snEl.style.display = ''; }
+    else { snEl.style.display = 'none'; }
     document.getElementById('q-count-label').textContent = total;
     document.getElementById('range-to').value = total;
     updateRangeInfo();
+    sessionStorage.setItem('bananovnik-last-test', id);
     show('screen-start');
   } catch(e) {
     console.error('selectTest error:', e);
@@ -1074,6 +1081,7 @@ function startQuiz() {
   });
 
   S = {
+    selectedTest: S.selectedTest,
     questions,
     cur:        0,
     answers:    questions.map(() => []),
@@ -1497,7 +1505,8 @@ function reviewBack() { show(S.prevScreen || 'screen-results'); }
 // ─────────────────────────────────────────────────────────────────
 function askAbort()   { document.getElementById('overlay-abort').classList.add('show'); }
 function closeAbort() { document.getElementById('overlay-abort').classList.remove('show'); }
-function doAbort()    { closeAbort(); show('screen-dashboard'); }
+function goToDashboard() { sessionStorage.removeItem('bananovnik-last-test'); show('screen-dashboard'); }
+function doAbort()    { closeAbort(); goToDashboard(); }
 
 // ─────────────────────────────────────────────────────────────────
 // Helpers
@@ -1529,7 +1538,7 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350); mainBtn(); return; }
   if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
   if ((e.key === 'n' || e.key === 'N') && !S.confirmed[n] && !S.hintUsed[n]) { S.hintUsed[n] = true; renderQ(); return; }
-  if ((e.key === '0' || e.code === 'Digit0' || e.code === 'Numpad0') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
+  if ((e.key === '0' || e.code === 'Digit0' || e.code === 'Numpad0' || e.key === 'o' || e.key === 'O' || e.code === 'KeyO') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
   var digitCodes = ['Digit1','Digit2','Digit3','Digit4','Digit5','Digit6'];
   var numpadCodes = ['Numpad1','Numpad2','Numpad3','Numpad4','Numpad5','Numpad6'];
   var idx = digitCodes.indexOf(e.code);
@@ -1560,7 +1569,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.1';
+const APP_VERSION = '5.15';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

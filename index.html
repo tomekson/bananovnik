@@ -66,7 +66,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .start-inner { width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 18px; }
 
-.logo-row { display: flex; align-items: center; gap: 11px; }
+.logo-row { display: flex; align-items: center; justify-content: space-between; gap: 11px; }
 .logo-mark {
   width: 44px; height: 44px; border-radius: 12px;
   background: var(--blue-bg); border: 1px solid var(--blue-mid);
@@ -659,13 +659,14 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   <div id="pull-hint" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;transition:opacity .2s;"></div>
   <div class="start-inner">
 
-    <button class="btn-back-dash" onclick="show('screen-dashboard')">← Výběr testů</button>
-
     <div class="logo-row">
-      <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
-      <div>
-        <div class="logo-name" data-text="Banánovník">Banánovník</div>
-        <div style="font-size:10px;color:var(--muted);font-weight:500;letter-spacing:1px;">v<span id="app-version"></span></div>
+      <button class="btn-back-dash" onclick="show('screen-dashboard')">← Testy</button>
+      <div style="display:flex;align-items:center;gap:11px;">
+        <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
+        <div>
+          <div class="logo-name" data-text="Banánovník">Banánovník</div>
+          <div style="font-size:10px;color:var(--muted);font-weight:500;letter-spacing:1px;">v<span id="app-version"></span></div>
+        </div>
       </div>
     </div>
 
@@ -1016,13 +1017,13 @@ async function selectTest(id) {
     titleEl.innerHTML = `<em>${test.title}</em>`;
     document.getElementById('start-meta').textContent = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt);
     document.getElementById('start-rubric').textContent = test.rubric || '';
-    document.getElementById('db-qcount').textContent = total;
     document.getElementById('q-count-label').textContent = total;
     document.getElementById('range-to').value = total;
     updateRangeInfo();
     show('screen-start');
   } catch(e) {
-    alert('Nepodařilo se načíst test.');
+    console.error('selectTest error:', e);
+    alert('Nepodařilo se načíst test.\n\n' + e.message);
   }
 }
 

@@ -1,15 +1,13 @@
 const CACHE = 'bananovnik-v5.0';
-const CORE = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png', './tests/index.json'];
+const CORE = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png'];
+const TEST_FILES = ['./tests/komunikace.json'];
 
 self.addEventListener('install', e => {
-  e.waitUntil((async () => {
-    const cache = await caches.open(CACHE);
-    await cache.addAll(CORE);
-    const reg = await fetch('./tests/index.json').then(r => r.json());
-    const testFiles = reg.tests.map(t => './tests/' + t.file);
-    await cache.addAll(testFiles);
-    self.skipWaiting();
-  })());
+  e.waitUntil(
+    caches.open(CACHE)
+      .then(c => c.addAll([...CORE, ...TEST_FILES]))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', e => {

@@ -960,32 +960,37 @@ function updateStartBtn() {
 // ─────────────────────────────────────────────────────────────────
 // Stav
 // ─────────────────────────────────────────────────────────────────
-let testsRegistry = null;
+// ─────────────────────────────────────────────────────────────────
+// Registr testů — přidej sem záznam při přidání nového testu
+// ─────────────────────────────────────────────────────────────────
+const TESTS_REGISTRY = [
+  {
+    id: 'komunikace',
+    file: 'komunikace.json',
+    title: 'Komunikace a komunikační dovednosti',
+    updatedAt: '2026-04-03',
+    questionCount: 103
+  }
+];
+
 let loadedTests = {};
 let S = {};
 
 // ─────────────────────────────────────────────────────────────────
 // Dashboard
 // ─────────────────────────────────────────────────────────────────
-async function loadRegistry() {
-  try {
-    const res = await fetch('tests/index.json');
-    testsRegistry = await res.json();
-    renderDashboard();
-  } catch(e) {
-    document.getElementById('dash-tests').innerHTML = '<div class="dash-empty">Nelze načíst seznam testů.</div>';
-  }
+function loadRegistry() {
+  renderDashboard();
 }
 
 function renderDashboard() {
   const container = document.getElementById('dash-tests');
   container.innerHTML = '';
-  const tests = (testsRegistry && testsRegistry.tests) || [];
-  if (!tests.length) {
+  if (!TESTS_REGISTRY.length) {
     container.innerHTML = '<div class="dash-empty">Žádné testy k dispozici.</div>';
     return;
   }
-  tests.forEach(t => {
+  TESTS_REGISTRY.forEach(t => {
     const card = document.createElement('button');
     card.className = 'dash-card';
     card.innerHTML = `<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} otázek · aktualizováno ${formatDate(t.updatedAt)}</div>`;
@@ -998,7 +1003,7 @@ async function selectTest(id) {
   try {
     let test = loadedTests[id];
     if (!test) {
-      const reg = (testsRegistry.tests || []).find(t => t.id === id);
+      const reg = TESTS_REGISTRY.find(t => t.id === id);
       const res = await fetch('tests/' + reg.file);
       test = await res.json();
       loadedTests[id] = test;

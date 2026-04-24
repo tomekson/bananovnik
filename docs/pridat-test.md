@@ -69,22 +69,26 @@ Příklady:
 ### 1. Vytvoř datový soubor
 Ulož soubor jako `tests/<id>.json` (např. `tests/marketing.json`). Validuj JSON — v JSON nejsou povoleny trailing commas ani komentáře.
 
-### 2. Zaregistruj test v `tests/index.json`
-Přidej záznam do pole `tests`:
+### 2. Zaregistruj test v `index.html`
+Najdi konstantu `TESTS_REGISTRY` a přidej záznam:
 
-```json
-{
-  "id": "marketing",
-  "file": "marketing.json",
-  "title": "Marketing a management",
-  "updatedAt": "2026-04-24",
-  "questionCount": 87
-}
+```js
+const TESTS_REGISTRY = [
+  { id: 'komunikace', file: 'komunikace.json', title: '...', updatedAt: '...', questionCount: 103 },
+  { id: 'marketing', file: 'marketing.json', title: 'Marketing a management', updatedAt: '2026-04-24', questionCount: 87 }
+];
 ```
 
 `questionCount` se zobrazuje v dashboardu; musí odpovídat skutečnému počtu otázek v souboru.
 
-### 3. Aktualizuj verzi (nutné pro invalidaci SW cache)
+### 3. Přidej soubor do SW precache
+V `sw.js` přidej soubor do `TEST_FILES`:
+
+```js
+const TEST_FILES = ['./tests/komunikace.json', './tests/marketing.json'];
+```
+
+### 4. Aktualizuj verzi (nutné pro invalidaci SW cache)
 
 V těchto čtyřech místech změň verzi (např. z `5.0` na `5.1`):
 

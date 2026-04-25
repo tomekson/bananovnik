@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=5.15">
+<link rel="manifest" href="manifest.json?v=5.20">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Banánovník</title>
@@ -283,6 +283,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   transition: all .15s;
 }
 .opt:active:not(.locked) { background: var(--card2); }
+.opt.locked { cursor: default; }
 .opt.sel   { background: var(--blue-bg);   border-color: var(--yellow); }
 .opt.sel::before { background: var(--blue-mid); border: 1.5px solid rgba(45,138,78,.25); inset: -2px; }
 .opt.ok    { background: var(--green-bg);  border-color: rgba(21,128,61,.3); }
@@ -472,6 +473,65 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .ro-miss { background: var(--amber-bg); color: var(--amber); }
 .ro-dim  { color: var(--muted); }
 .ro-icon { flex-shrink: 0; margin-top: 1px; width: 14px; text-align: center; }
+
+/* ── STUDY MODE ──────────────────────────────────── */
+.opt.study-correct {
+  background: var(--green-bg);
+  border-color: rgba(21,128,61,.3);
+}
+.opt.study-correct::before {
+  background: rgba(34,145,90,.15);
+  border: 1.5px solid rgba(34,145,90,.25);
+  inset: -2px;
+}
+.opt.study-correct .opt-box { background: var(--green); border-color: var(--green); color: white; }
+.opt.study-correct .opt-txt { color: var(--green); font-weight: 600; }
+.opt.study-correct::after {
+  content: 'správná'; position: absolute; top: 6px; right: 10px;
+  font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
+  color: var(--green); opacity: .75;
+}
+.opt.study-wrong {
+  background: #DDD6B0;
+  border-color: rgba(0,0,0,.06);
+  opacity: .6;
+  cursor: default;
+}
+.opt.study-wrong::before { display: none; }
+.opt.study-wrong .opt-box {
+  background: rgba(255,255,255,.4); border-color: rgba(0,0,0,.1); color: var(--muted);
+}
+.opt.study-wrong .opt-txt { color: var(--dim); font-weight: 500; }
+.opt.study-wrong::after {
+  content: 'chybná'; position: absolute; top: 6px; right: 10px;
+  font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
+  color: var(--muted); opacity: .6;
+}
+.study-recall-wrap {
+  padding: 28px 18px 36px;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+  border: 1.5px dashed var(--line2); border-radius: var(--r);
+  background: var(--card); margin-bottom: 18px;
+}
+.study-recall-hint {
+  font-size: 13px; color: var(--muted); text-align: center; line-height: 1.5;
+  max-width: 280px;
+}
+.btn-reveal {
+  background: var(--yellow-bg); color: var(--amber);
+  border: 2px solid var(--yellow);
+  border-radius: var(--r); padding: 12px 22px;
+  font-size: 14px; font-weight: 700; letter-spacing: .3px;
+  cursor: pointer; -webkit-appearance: none;
+  position: relative; isolation: isolate;
+  transition: opacity .15s, transform .1s;
+}
+.btn-reveal::before {
+  content: ''; position: absolute; inset: 0; border-radius: var(--r);
+  background: var(--yellow-mid); border: 2px solid var(--yellow);
+  transform: translate(3px, 3px); z-index: -1;
+}
+.btn-reveal:active { opacity: .85; transform: scale(.98); }
 
 /* ── DIALOG ──────────────────────────────────────── */
 .overlay {
@@ -678,9 +738,19 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       <div id="start-rubric" style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;white-space:pre-line;"></div>
     </div>
 
-    <!-- Výběr otázek -->
+    <!-- Procházení otázek (study mode) -->
     <div class="sec">
-      <div class="sec-label">Výběr otázek</div>
+      <div class="sec-label">Procházení otázek (bez bodování)</div>
+      <div class="seg" id="seg-study">
+        <button class="seg-btn active" onclick="setSeg('study','direct')">✓ Přímo s odpověďmi</button>
+        <button class="seg-btn"        onclick="setSeg('study','recall')">Active recall</button>
+      </div>
+      <button class="btn-sec" style="margin-top:8px;width:100%;" onclick="startStudy()">Projít otázky →</button>
+    </div>
+
+    <!-- Testování -->
+    <div class="sec" style="border-top:1px solid var(--line2);padding-top:18px;margin-top:4px;">
+      <div class="sec-label">Testování</div>
       <div class="mode-cards">
         <div class="mode-card active" id="mode-all" onclick="setMode('all')">
           <div class="mode-radio"></div>
@@ -794,6 +864,41 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   </div>
 </div>
 
+<!-- ════════════════════════ STUDY ══════════════════════════════ -->
+<div id="screen-study" class="screen">
+  <div class="quiz-hdr">
+    <div class="quiz-hdr-inner">
+      <div class="quiz-nav">
+        <button class="btn-ico" onclick="closeStudy()">✕</button>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <button class="btn-ico btn-nav" id="btn-study-prev" onclick="goStudy(-1)">‹</button>
+          <span class="prog-label"><b id="study-cur">1</b> / <span id="study-tot">—</span></span>
+          <button class="btn-ico btn-nav" id="btn-study-next" onclick="goStudy(1)">›</button>
+        </div>
+        <span style="font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);">Procházení</span>
+      </div>
+      <div class="pbar"><div class="pbar-fill" id="study-pbar"></div></div>
+    </div>
+  </div>
+
+  <div class="quiz-body">
+    <div class="q-num"  id="study-q-num"></div>
+    <div class="q-text" id="study-q-text"></div>
+    <div class="q-hint" id="study-q-hint"></div>
+    <div id="study-recall-box" class="study-recall-wrap" style="display:none;">
+      <div class="study-recall-hint">Zkus si nejprve odpověď připomenout sám, pak teprve odhal možnosti.</div>
+      <button class="btn-reveal" onclick="revealStudy()">Zobrazit možnosti</button>
+    </div>
+    <div class="opts" id="study-opts"></div>
+  </div>
+
+  <div class="quiz-ftr">
+    <div class="quiz-ftr-inner">
+      <button class="btn-start" id="btn-study-main" onclick="goStudy(1)">Další otázka ↵</button>
+    </div>
+  </div>
+</div>
+
 <!-- ════════════════════════ RESULTS ════════════════════════════ -->
 <div id="screen-results" class="screen">
   <div class="results-inner">
@@ -874,6 +979,7 @@ const cfg = {
   fb:        'ihned',    // 'ihned' | 'after'
   qorder:    'seq',      // 'random' | 'seq'
   oorder:    'random',   // 'random' | 'seq'
+  study:     'direct',   // 'direct' | 'recall'
 };
 
 // Segmented controls
@@ -881,15 +987,17 @@ function setSeg(key, val) {
   cfg[key] = val;
   const seg = document.getElementById('seg-' + key);
   seg.querySelectorAll('.seg-btn').forEach((btn, i) => {
-    const vals = key === 'fb'     ? ['ihned','after']  :
-                 key === 'qorder' ? ['random','seq']   :
-                 key === 'oorder' ? ['random','seq']   : [];
+    const vals = key === 'fb'     ? ['ihned','after']    :
+                 key === 'qorder' ? ['random','seq']     :
+                 key === 'oorder' ? ['random','seq']     :
+                 key === 'study'  ? ['direct','recall']  : [];
     const isActive = vals[i] === val;
     btn.classList.toggle('active', isActive);
     const labels = {
       fb:     [['✓ Po každé otázce','Po dokončení testu'], ['Po každé otázce','✓ Po dokončení testu']],
       qorder: [['✓ Náhodně','Postupně'], ['Náhodně','✓ Postupně']],
       oorder: [['✓ Náhodně','Postupně'], ['Náhodně','✓ Postupně']],
+      study:  [['✓ Přímo s odpověďmi','Active recall'], ['Přímo s odpověďmi','✓ Active recall']],
     };
     if (labels[key]) {
       const set = val === vals[0] ? labels[key][0] : labels[key][1];
@@ -978,7 +1086,14 @@ const TESTS_REGISTRY = [
     file: 'management.json',
     title: 'Management',
     updatedAt: '2026-04-24',
-    questionCount: 100
+    questionCount: 86
+  },
+  {
+    id: 'management-stare',
+    file: 'management-stare.json',
+    title: 'Management (starší verze testu)',
+    updatedAt: '2026-04-24',
+    questionCount: 14
   }
 ];
 
@@ -1501,6 +1616,114 @@ function openReview() {
 function reviewBack() { show(S.prevScreen || 'screen-results'); }
 
 // ─────────────────────────────────────────────────────────────────
+// Study mode (procházení otázek bez bodování)
+// ─────────────────────────────────────────────────────────────────
+function startStudy() {
+  if (!S.selectedTest) return;
+  const bank = S.selectedTest.questions;
+  const questions = bank.map((q, i) => {
+    const correctSet = new Set(q.correct);
+    const correctOpts = [];
+    const wrongOpts = [];
+    q.opts.forEach((t, oi) => {
+      if (correctSet.has(oi)) correctOpts.push(t);
+      else wrongOpts.push(t);
+    });
+    const reordered = [...correctOpts, ...wrongOpts];
+    const newCorrect = correctOpts.map((_, k) => k);
+    return { q: q.q, opts: reordered, correct: newCorrect, _orig: i + 1 };
+  });
+  S = {
+    selectedTest: S.selectedTest,
+    studyMode: true,
+    questions,
+    cur: 0,
+    revealed: questions.map(() => cfg.study !== 'recall'),
+    studyHintUsed: questions.map(() => false),
+    prevScreen: null,
+  };
+  show('screen-study');
+  renderStudy();
+}
+
+function renderStudy() {
+  const n = S.cur;
+  const q = S.questions[n];
+  const tot = S.questions.length;
+  const correctSet = new Set(q.correct);
+  const LETTERS = ['1','2','3','4','5','6'];
+
+  document.getElementById('study-cur').textContent = n + 1;
+  document.getElementById('study-tot').textContent = tot;
+  document.getElementById('study-pbar').style.width = ((n + 1) / tot * 100) + '%';
+  document.getElementById('study-q-num').innerHTML =
+    `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span>`;
+  document.getElementById('study-q-text').textContent = q.q;
+
+  const c = q.correct.length;
+  const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
+  const hintEl = document.getElementById('study-q-hint');
+  const isRevealed = S.revealed[n];
+  if (isRevealed || S.studyHintUsed[n]) {
+    hintEl.textContent = hintTxt;
+    hintEl.className = 'q-hint done';
+  } else {
+    hintEl.innerHTML = `<span class="hint-btn" onclick="S.studyHintUsed[${n}]=true;renderStudy()">Nápověda</span>`;
+    hintEl.className = 'q-hint';
+  }
+
+  const recallBox = document.getElementById('study-recall-box');
+  const optsEl = document.getElementById('study-opts');
+
+  if (!isRevealed) {
+    recallBox.style.display = '';
+    optsEl.innerHTML = '';
+    optsEl.style.display = 'none';
+  } else {
+    recallBox.style.display = 'none';
+    optsEl.style.display = '';
+    optsEl.innerHTML = '';
+    q.opts.forEach((txt, i) => {
+      const isCorrect = correctSet.has(i);
+      const ltr = LETTERS[i] || '';
+      const cls = 'opt locked ' + (isCorrect ? 'study-correct' : 'study-wrong');
+      const box = isCorrect ? '✓' : '✗';
+      const d = document.createElement('div');
+      d.className = cls;
+      d.innerHTML = `<div class="opt-box">${box}</div><div class="opt-txt">${txt}</div>`;
+      optsEl.appendChild(d);
+    });
+  }
+
+  const mainBtn = document.getElementById('btn-study-main');
+  mainBtn.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Dokončit ↵';
+
+  document.getElementById('btn-study-prev').disabled = n === 0;
+  document.getElementById('btn-study-next').disabled = n === tot - 1;
+
+  setTimeout(syncBodyPadding, 50);
+}
+
+function revealStudy() {
+  S.revealed[S.cur] = true;
+  renderStudy();
+}
+
+function goStudy(dir) {
+  const next = S.cur + dir;
+  if (next < 0) return;
+  if (next >= S.questions.length) { closeStudy(); return; }
+  S.cur = next;
+  window.scrollTo(0, 0);
+  renderStudy();
+}
+
+function closeStudy() {
+  S.studyMode = false;
+  show('screen-start');
+}
+
+// ─────────────────────────────────────────────────────────────────
 // Abort
 // ─────────────────────────────────────────────────────────────────
 function askAbort()   { document.getElementById('overlay-abort').classList.add('show'); }
@@ -1554,6 +1777,17 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('screen-study').classList.contains('active')) return;
+  if (!S.questions || S.cur == null) return;
+  if (e.key === 'Enter')      { e.preventDefault(); goStudy(1); return; }
+  if (e.key === 'ArrowRight') { e.preventDefault(); goStudy(1); return; }
+  if (e.key === 'ArrowLeft')  { e.preventDefault(); goStudy(-1); return; }
+  if (e.key === 'x' || e.key === 'X') { closeStudy(); return; }
+  if ((e.key === 'r' || e.key === 'R') && !S.revealed[S.cur]) { revealStudy(); return; }
+  if ((e.key === 'n' || e.key === 'N') && !S.revealed[S.cur] && !S.studyHintUsed[S.cur]) { S.studyHintUsed[S.cur] = true; renderStudy(); return; }
+});
+
 // ─────────────────────────────────────────────────────────────────
 // Init
 // ─────────────────────────────────────────────────────────────────
@@ -1569,7 +1803,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.15';
+const APP_VERSION = '5.20';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

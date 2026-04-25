@@ -1,4 +1,4 @@
-const CACHE = 'bananovnik-v5.20';
+const CACHE = 'bananovnik-v5.21';
 const CORE = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png'];
 const TEST_FILES = ['./tests/komunikace.json', './tests/management.json', './tests/management-stare.json'];
 

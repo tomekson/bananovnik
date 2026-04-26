@@ -893,6 +893,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
   <div class="quiz-ftr">
     <div class="quiz-ftr-inner">
+      <button class="btn-sec" id="btn-study-test" onclick="testStudyQ()" style="display:none;width:100%;padding:11px;">Otestovat</button>
       <button class="btn-start" id="btn-study-main" onclick="goStudy(1)">Další otázka ↵</button>
     </div>
   </div>
@@ -1098,6 +1099,7 @@ const TESTS_REGISTRY = [
 
 let loadedTests = {};
 let S = {};
+let _savedStudyState = null;
 
 // ─────────────────────────────────────────────────────────────────
 // Dashboard
@@ -1241,6 +1243,9 @@ function renderQ() {
     hintEl.className   = 'q-hint';
   } else if (S.hintUsed[n]) {
     hintEl.textContent = hintTxt;
+    hintEl.className   = 'q-hint';
+  } else if (S.noHint) {
+    hintEl.textContent = '';
     hintEl.className   = 'q-hint';
   } else {
     hintEl.innerHTML = `<span class="hint-btn" onclick="S.hintUsed[${n}]=true;renderQ()">Nápověda</span>`;
@@ -1388,16 +1393,17 @@ function retryWrong() {
   });
   if (wrong.length === 0) return;
   S = {
-    questions:  wrong,
-    cur:        0,
-    answers:    wrong.map(() => []),
-    scores:     wrong.map(() => null),
-    firstScores: wrong.map(() => null),
+    questions:    wrong,
+    cur:          0,
+    answers:      wrong.map(() => []),
+    scores:       wrong.map(() => null),
+    firstScores:  wrong.map(() => null),
     firstAnswers: wrong.map(() => null),
-    confirmed:  wrong.map(() => false),
-    retried:    wrong.map(() => 0),
-    hintUsed:   wrong.map(() => false),
-    prevScreen: null,
+    confirmed:    wrong.map(() => false),
+    retried:      wrong.map(() => 0),
+    hintUsed:     wrong.map(() => false),
+    prevScreen:   null,
+    selectedTest: S.selectedTest,
   };
   show('screen-quiz');
   renderQ();
@@ -1454,7 +1460,13 @@ function mainBtn() {
     }, 50);
   } else {
     if (n < S.questions.length - 1) { S.cur++; window.scrollTo(0, 0); renderQ(); }
-    else showResults();
+    else if (S.returnToStudy) {
+      S = _savedStudyState;
+      _savedStudyState = null;
+      show('screen-study');
+      window.scrollTo(0, 0);
+      renderStudy();
+    } else showResults();
   }
 }
 
@@ -1694,6 +1706,8 @@ function renderStudy() {
     });
   }
 
+  document.getElementById('btn-study-test').style.display = isRevealed ? '' : 'none';
+
   const mainBtn = document.getElementById('btn-study-main');
   mainBtn.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Dokončit ↵';
 
@@ -1722,13 +1736,45 @@ function closeStudy() {
   show('screen-start');
 }
 
+function testStudyQ() {
+  const n = S.cur;
+  const sq = S.questions[n];
+  const origQ = S.selectedTest.questions[sq._orig - 1];
+
+  const correctSet = new Set(origQ.correct);
+  let opts = origQ.opts.map((t, i) => ({ t, ci: correctSet.has(i) }));
+  opts = shuffle(opts);
+  const newCorrect = opts.reduce((acc, o, ni) => { if (o.ci) acc.push(ni); return acc; }, []);
+  const testQ = { q: origQ.q, opts: opts.map(o => o.t), correct: newCorrect, _orig: sq._orig };
+
+  _savedStudyState = S;
+  S = {
+    selectedTest:  _savedStudyState.selectedTest,
+    questions:     [testQ],
+    cur:           0,
+    answers:       [[]],
+    scores:        [null],
+    firstScores:   [null],
+    firstAnswers:  [null],
+    confirmed:     [false],
+    retried:       [0],
+    hintUsed:      [false],
+    prevScreen:    null,
+    returnToStudy: true,
+    noHint:        true,
+  };
+  show('screen-quiz');
+  window.scrollTo(0, 0);
+  renderQ();
+}
+
 // ─────────────────────────────────────────────────────────────────
 // Abort
 // ─────────────────────────────────────────────────────────────────
 function askAbort()   { document.getElementById('overlay-abort').classList.add('show'); }
 function closeAbort() { document.getElementById('overlay-abort').classList.remove('show'); }
 function goToDashboard() { sessionStorage.removeItem('bananovnik-last-test'); show('screen-dashboard'); }
-function doAbort()    { closeAbort(); goToDashboard(); }
+function doAbort()    { closeAbort(); _savedStudyState = null; goToDashboard(); }
 
 // ─────────────────────────────────────────────────────────────────
 // Helpers

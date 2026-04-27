@@ -1234,10 +1234,12 @@ function renderQ() {
   document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span>`;
   document.getElementById('q-text').textContent    = q.q;
 
+  const ihned = cfg.fb === 'ihned' || !!S.returnToStudy;
+
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
-  if (done && cfg.fb === 'ihned') {
+  if (done && ihned) {
     hintEl.textContent = hintTxt;
     hintEl.className   = 'q-hint done';
   } else if (cfg.fb === 'after') {
@@ -1255,7 +1257,7 @@ function renderQ() {
   }
 
   // Možnosti
-  const showFb = done && cfg.fb === 'ihned';
+  const showFb = done && ihned;
   const isFullScore = showFb && S.scores[n] === 1;
   const optsEl = document.getElementById('opts');
   optsEl.innerHTML = '';
@@ -1286,9 +1288,9 @@ function renderQ() {
     optsEl.appendChild(d);
   });
 
-  // Zpětná vazba (jen v režimu "Ihned")
+  // Zpětná vazba (jen v režimu "Ihned", nebo vždy při Otestovat)
   const fbEl = document.getElementById('fb');
-  if (done && cfg.fb === 'ihned') {
+  if (done && ihned) {
     const score = S.scores[n];
     const isRetry = S.retried[n] > 0;
     fbEl.className = 'fb show';
@@ -1326,7 +1328,7 @@ function renderQ() {
     btn.style.opacity = sel.length === 0 ? '0.4' : '1';
     btn.style.display = '';
     ftrRow.style.display = 'none';
-  } else if (done && score < 1 && cfg.fb === 'ihned') {
+  } else if (done && score < 1 && ihned) {
     // Skóre < 1 → zobrazit retry + další/výsledky
     btn.style.display = 'none';
     ftrRow.style.display = '';

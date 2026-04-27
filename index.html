@@ -1329,11 +1329,11 @@ function renderQ() {
     btn.style.display = 'none';
     ftrRow.style.display = '';
     const ftrNext = ftrRow.querySelector('.btn-start');
-    ftrNext.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Zobrazit výsledky ↵';
+    ftrNext.textContent = n < tot - 1 ? 'Další otázka ↵' : (S.returnToStudy ? 'Zpět na procházení ↵' : 'Zobrazit výsledky ↵');
   } else {
     btn.style.display = '';
     ftrRow.style.display = 'none';
-    btn.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Zobrazit výsledky ↵';
+    btn.textContent = n < tot - 1 ? 'Další otázka ↵' : (S.returnToStudy ? 'Zpět na procházení ↵' : 'Zobrazit výsledky ↵');
     btn.style.opacity = '1';
   }
 

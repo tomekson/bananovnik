@@ -893,8 +893,10 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
   <div class="quiz-ftr">
     <div class="quiz-ftr-inner">
-      <button class="btn-sec" id="btn-study-test" onclick="testStudyQ()" style="display:none;width:100%;padding:11px;">Otestovat</button>
-      <button class="btn-start" id="btn-study-main" onclick="goStudy(1)">Další otázka ↵</button>
+      <div class="quiz-ftr-row">
+        <button class="btn-retry" id="btn-study-test" onclick="testStudyQ()" style="display:none;">Otestovat</button>
+        <button class="btn-start" id="btn-study-main" onclick="goStudy(1)">Další otázka ↵</button>
+      </div>
     </div>
   </div>
 </div>

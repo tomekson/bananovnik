@@ -932,8 +932,9 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <div class="r-actions">
       <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Opakovat chybné</button>
       <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
-      <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="startQuiz()">Opakovat test</button>
-      <button class="btn-sec" style="flex:1" onclick="goToDashboard()">← Testy</button></div>
+      <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="startQuiz()" title="Zopakovat test se stejným nastavením">Opakovat stejný test</button>
+      <button class="btn-sec" style="flex:1" onclick="show('screen-start')" title="Změnit počet otázek, pořadí nebo jiné nastavení">Změnit nastavení</button></div>
+      <button class="btn-sec" style="width:100%;font-size:13px;padding:9px" onclick="goToDashboard()">Všechny testy</button>
     </div>
   </div>
 </div>

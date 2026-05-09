@@ -3,7 +3,7 @@
   "title": "Management (starší verze testu)",
   "updatedAt": "2026-04-24",
   "rubric": "Zkouškový test: 45 min., 16 otázek po 5 bodech + 1 otevřená za 20 bodů, pomůcka: kalkulačka",
-  "scoringNote": "Správná je vždy 1 nebo více odpovědí. Pokud nevybereš všechny správné, získáš poměrný počet bodů. Při výběru chybné odpovědi nula bodů z dané otázky.",
+  "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
   "questions": [
     {
       "q": "Nevýhodou maticové organizační struktury je:",

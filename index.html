@@ -1155,7 +1155,8 @@ async function selectTest(id) {
     document.getElementById('start-meta').textContent = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt);
     document.getElementById('start-rubric').textContent = test.rubric || '';
     const snEl = document.getElementById('start-scoring-note');
-    if (test.scoringNote) { snEl.textContent = test.scoringNote; snEl.style.display = ''; }
+    const snText = formatTestScoringNote(test.format);
+    if (snText) { snEl.textContent = snText; snEl.style.display = ''; }
     else { snEl.style.display = 'none'; }
     document.getElementById('q-count-label').textContent = total;
     document.getElementById('range-to').value = total;
@@ -1859,14 +1860,30 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ─────────────────────────────────────────────────────────────────
+// Test format helpers
+// ─────────────────────────────────────────────────────────────────
+function formatCorrectAnswersLabel(format) {
+  if (!format) return 'Správná může být jedna nebo více odpovědí.';
+  const ca = format.correctAnswers;
+  if (ca === 'one-or-more') return 'Správná je 1 nebo více odpovědí.';
+  if (ca === 'exactly-one') return 'Správná je právě 1 odpověď.';
+  if (typeof ca === 'number') return `Správné jsou právě ${ca} odpovědi.`;
+  return 'Správná může být jedna nebo více odpovědí.';
+}
+
+function formatTestScoringNote(format) {
+  if (!format) return null;
+  const typeLabel = format.type === 'multiple-choice' ? 'Multiple choice' : format.type;
+  return `${typeLabel} · ${formatCorrectAnswersLabel(format)}`;
+}
+
+// ─────────────────────────────────────────────────────────────────
 // Kopírování otázky do schránky
 // ─────────────────────────────────────────────────────────────────
 function copyQuestion(mode) {
   const q = S.questions[S.cur];
-  const test = S.selectedTest;
-  const scoringInfo = test.scoringNote
-    ? test.scoringNote.split('.')[0] + '.'
-    : 'Správná může být jedna nebo více odpovědí.';
+  const format = S.selectedTest.format;
+  const scoringInfo = formatCorrectAnswersLabel(format);
   const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
   const optsText = q.opts.map((txt, i) => `${LETTERS[i] || (i + 1)}) ${txt}`).join('\n');
   const text = `Jde o multiple choice otázku. ${scoringInfo} Identifikuj, které z níže uvedených možností jsou správné, a vysvětli proč.\n\n${q.q}\n\n${optsText}`;
@@ -1896,7 +1913,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.22';
+const APP_VERSION = '5.23';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

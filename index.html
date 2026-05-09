@@ -1239,7 +1239,7 @@ function renderQ() {
   document.getElementById('p-cur').textContent     = n + 1;
   document.getElementById('p-tot').textContent     = tot;
   document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
-  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span><button class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')" title="Kopírovat otázku">⧉</button>`;
+  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig">${q._orig}. z ${S.selectedTest.questions.length} otázek</span><button class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')" title="Kopírovat otázku">⧉</button>`;
   document.getElementById('q-text').textContent    = q.q;
 
   const ihned = cfg.fb === 'ihned' || !!S.returnToStudy;
@@ -1680,7 +1680,7 @@ function renderStudy() {
   document.getElementById('study-tot').textContent = tot;
   document.getElementById('study-pbar').style.width = ((n + 1) / tot * 100) + '%';
   document.getElementById('study-q-num').innerHTML =
-    `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span><button class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')" title="Kopírovat otázku">⧉</button>`;
+    `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig">${q._orig}. z ${S.selectedTest.questions.length} otázek</span><button class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')" title="Kopírovat otázku">⧉</button>`;
   document.getElementById('study-q-text').textContent = q.q;
 
   const c = q.correct.length;
@@ -1886,7 +1886,7 @@ function copyQuestion(mode) {
   const scoringInfo = formatCorrectAnswersLabel(format);
   const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
   const optsText = q.opts.map((txt, i) => `${LETTERS[i] || (i + 1)}) ${txt}`).join('\n');
-  const text = `Jde o multiple choice otázku. ${scoringInfo} Identifikuj, které z níže uvedených možností jsou správné, a vysvětli proč.\n\n${q.q}\n\n${optsText}`;
+  const text = `Multiple choice otázka. ${scoringInfo} Identifikuj správné a ty stručně zdůvodni.\n\n${q.q}\n\n${optsText}`;
   navigator.clipboard.writeText(text).then(() => {
     const btnId = mode === 'quiz' ? 'btn-copy-q' : 'btn-copy-study';
     const btn = document.getElementById(btnId);
@@ -1913,7 +1913,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.23';
+const APP_VERSION = '5.24';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

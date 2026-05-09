@@ -259,6 +259,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-num-orig { color: var(--muted); font-weight: 500; }
 .q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); }
 .q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; min-height: 28px; display: flex; align-items: center; }
+.btn-copy-q {
+  background: none; border: 1px solid transparent; border-radius: 5px;
+  padding: 1px 5px; cursor: pointer; color: var(--muted); font-size: 13px;
+  transition: all .15s; line-height: 1; flex-shrink: 0;
+}
+.btn-copy-q:hover { color: var(--blue); border-color: var(--blue-mid); background: var(--blue-bg); }
+.btn-copy-q.copied { color: var(--green); }
 .q-hint.done { color: var(--dim); }
 .hint-btn {
   display: inline-block; padding: 4px 10px; border-radius: 6px;
@@ -1231,7 +1238,7 @@ function renderQ() {
   document.getElementById('p-cur').textContent     = n + 1;
   document.getElementById('p-tot').textContent     = tot;
   document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
-  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span>`;
+  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span><button class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')" title="Kopírovat otázku">⧉</button>`;
   document.getElementById('q-text').textContent    = q.q;
 
   const ihned = cfg.fb === 'ihned' || !!S.returnToStudy;
@@ -1672,7 +1679,7 @@ function renderStudy() {
   document.getElementById('study-tot').textContent = tot;
   document.getElementById('study-pbar').style.width = ((n + 1) / tot * 100) + '%';
   document.getElementById('study-q-num').innerHTML =
-    `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span>`;
+    `<span>Otázka ${n + 1} / ${tot}</span><span class="q-num-orig">${q._orig} / ${S.selectedTest.questions.length}</span><button class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')" title="Kopírovat otázku">⧉</button>`;
   document.getElementById('study-q-text').textContent = q.q;
 
   const c = q.correct.length;
@@ -1852,6 +1859,29 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ─────────────────────────────────────────────────────────────────
+// Kopírování otázky do schránky
+// ─────────────────────────────────────────────────────────────────
+function copyQuestion(mode) {
+  const q = S.questions[S.cur];
+  const test = S.selectedTest;
+  const scoringInfo = test.scoringNote
+    ? test.scoringNote.split('.')[0] + '.'
+    : 'Správná může být jedna nebo více odpovědí.';
+  const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const optsText = q.opts.map((txt, i) => `${LETTERS[i] || (i + 1)}) ${txt}`).join('\n');
+  const text = `Jde o multiple choice otázku. ${scoringInfo} Identifikuj, které z níže uvedených možností jsou správné, a vysvětli proč.\n\n${q.q}\n\n${optsText}`;
+  navigator.clipboard.writeText(text).then(() => {
+    const btnId = mode === 'quiz' ? 'btn-copy-q' : 'btn-copy-study';
+    const btn = document.getElementById(btnId);
+    if (!btn) return;
+    const orig = btn.textContent;
+    btn.textContent = '✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────
 // Init
 // ─────────────────────────────────────────────────────────────────
 (function init() {
@@ -1866,7 +1896,7 @@ document.addEventListener('keydown', function(e) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.21';
+const APP_VERSION = '5.22';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

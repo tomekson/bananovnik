@@ -1,0 +1,2277 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Quiz Core Functions",
+      "x": 0,
+      "y": 0,
+      "width": 1100,
+      "height": 820,
+      "color": "1"
+    },
+    {
+      "id": "n_index_pass_threshold",
+      "type": "file",
+      "file": "graphify/obsidian/PASS_THRESHOLD = 0.51 \u2014 pr\u00e1h \u00fasp\u011b\u0161nosti testu.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_state_s",
+      "type": "file",
+      "file": "graphify/obsidian/S \u2014 stav b\u011b\u017e\u00edc\u00edho kv\u00edzu (questions, cur, answers, scores, confirmed, retried).md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_banana_confetti",
+      "type": "file",
+      "file": "graphify/obsidian/bananaConfetti()  spawnBurst() \u2014 animace ban\u00e1n\u016f p\u0159i \u00fasp\u011bchu.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_cfg",
+      "type": "file",
+      "file": "graphify/obsidian/cfg \u2014 konfigurace kv\u00edzu (mode, count, fb, qorder, oorder, study).md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_main_btn",
+      "type": "file",
+      "file": "graphify/obsidian/mainBtn() \u2014 potvrzen\u00ed odpov\u011bdi nebo p\u0159echod na dal\u0161\u00ed ot\u00e1zku.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_open_review",
+      "type": "file",
+      "file": "graphify/obsidian/openReview() \u2014 zobrazen\u00ed p\u0159ehledu odpov\u011bd\u00ed.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_render_q",
+      "type": "file",
+      "file": "graphify/obsidian/renderQ() \u2014 vykreslen\u00ed aktu\u00e1ln\u00ed ot\u00e1zky a mo\u017enost\u00ed.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_retry_q",
+      "type": "file",
+      "file": "graphify/obsidian/retryQ() \u2014 opakov\u00e1n\u00ed jednotliv\u00e9 ot\u00e1zky (p\u0159eskl\u00e1d\u00e1n\u00ed mo\u017enost\u00ed).md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_retry_wrong",
+      "type": "file",
+      "file": "graphify/obsidian/retryWrong() \u2014 opakov\u00e1n\u00ed chybn\u011b zodpov\u011bzen\u00fdch ot\u00e1zek.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_screen_quiz",
+      "type": "file",
+      "file": "graphify/obsidian/screen-quiz \u2014 obrazovka kv\u00edzu.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_screen_results",
+      "type": "file",
+      "file": "graphify/obsidian/screen-results \u2014 v\u00fdsledky testu.md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_screen_review",
+      "type": "file",
+      "file": "graphify/obsidian/screen-review \u2014 p\u0159ehled odpov\u011bd\u00ed.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_screen_study",
+      "type": "file",
+      "file": "graphify/obsidian/screen-study \u2014 proch\u00e1zen\u00ed ot\u00e1zek (study mode).md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_set_count",
+      "type": "file",
+      "file": "graphify/obsidian/setCount(n) \u2014 nastaven\u00ed po\u010dtu ot\u00e1zek.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_set_mode",
+      "type": "file",
+      "file": "graphify/obsidian/setMode(m) \u2014 p\u0159ep\u00edn\u00e1n\u00ed re\u017eimu v\u0161echnyrozsah.md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_set_seg",
+      "type": "file",
+      "file": "graphify/obsidian/setSeg(key, val) \u2014 p\u0159ep\u00edn\u00e1n\u00ed segmentovan\u00fdch ovl\u00e1dac\u00edch prvk\u016f.md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_show_results",
+      "type": "file",
+      "file": "graphify/obsidian/showResults() \u2014 v\u00fdpo\u010det a zobrazen\u00ed v\u00fdsledk\u016f.md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_start_quiz",
+      "type": "file",
+      "file": "graphify/obsidian/startQuiz() \u2014 sestaven\u00ed poolu ot\u00e1zek a spu\u0161t\u011bn\u00ed kv\u00edzu.md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_start_study",
+      "type": "file",
+      "file": "graphify/obsidian/startStudy() \u2014 spu\u0161t\u011bn\u00ed proch\u00e1zen\u00ed ot\u00e1zek.md",
+      "x": 20,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Management Knowledge Bank",
+      "x": 1180,
+      "y": 0,
+      "width": 1100,
+      "height": 720,
+      "color": "2"
+    },
+    {
+      "id": "n_pdf_mgmt_americky_proud",
+      "type": "file",
+      "file": "graphify/obsidian/Americk\u00fd proud klasick\u00e9 \u0161koly managementu \u2014 efektivita d\u011bln\u00edk\u016f, \u00fakolov\u00e1 mzda, \u0159\u00edzen\u00ed a pl\u00e1nov\u00e1n\u00ed v\u00fdroby.md",
+      "x": 1200,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_centralizace",
+      "type": "file",
+      "file": "graphify/obsidian/Centralizace rozhodov\u00e1n\u00ed \u2014 pravomoce soust\u0159ed\u011bny na vy\u0161\u0161\u00ed mana\u017eery.md",
+      "x": 1400,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_dobre_strukturovane",
+      "type": "file",
+      "file": "graphify/obsidian/Dob\u0159e strukturovan\u00e9 probl\u00e9my \u2014 \u010dast\u00e9, rychl\u00e9 \u0159e\u0161en\u00ed, obvykl\u00e1 znalost prom\u011bnn\u00fdch, opakov\u00e1n\u00ed.md",
+      "x": 1600,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_vnitrni_kontrola",
+      "type": "file",
+      "file": "graphify/obsidian/Formy vnit\u0159n\u00ed kontroly (controlling, technick\u00e1 v\u00fdstupn\u00ed kontrola, intern\u00ed audit).md",
+      "x": 1200,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_kontrolni_funkce",
+      "type": "file",
+      "file": "graphify/obsidian/Funkce kontroln\u00ed \u010dinnosti (inspek\u010dn\u00ed, elimina\u010dn\u00ed, preventivn\u00ed).md",
+      "x": 1400,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_management_ezk",
+      "type": "file",
+      "file": "graphify/obsidian/Management EZK, Bc \u2014 banka testov\u00fdch ot\u00e1zek (primat.cz).md",
+      "x": 1600,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_matematicke_modely",
+      "type": "file",
+      "file": "graphify/obsidian/Matematick\u00e9 modely pro podporu rozhodov\u00e1n\u00ed (line\u00e1rn\u00ed optimaliza\u010dn\u00ed modely, rozhodovac\u00ed modely, distribu\u010dn\u00ed \u00falohy).md",
+      "x": 1200,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_identifikace_problemu",
+      "type": "file",
+      "file": "graphify/obsidian/Metody identifikace probl\u00e9mu (kauz\u00e1ln\u00ed anal\u00fdza, \u0161estislovn\u00fd graf, graf p\u0159\u00ed\u010din a n\u00e1sledk\u016f).md",
+      "x": 1400,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_rozhodovani_metody",
+      "type": "file",
+      "file": "graphify/obsidian/Metody podpory individu\u00e1ln\u00edho rozhodov\u00e1n\u00ed (transak\u010dn\u00ed syst\u00e9m, my\u0161lenkov\u00e1 mapa, expertn\u00ed syst\u00e9m).md",
+      "x": 1600,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_organizovani",
+      "type": "file",
+      "file": "graphify/obsidian/Organizov\u00e1n\u00ed \u2014 p\u0159id\u011blen\u00ed pravomoc\u00ed, d\u011blba pr\u00e1ce, seskupen\u00ed \u010dinnost\u00ed, koordinace.md",
+      "x": 1200,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_organizacni_struktury",
+      "type": "file",
+      "file": "graphify/obsidian/Pevn\u00e9 organiza\u010dn\u00ed struktury \u2014 p\u0159esn\u011b vymezen\u00e9 vztahy nad\u0159\u00edzenosti, pravomoci, povinnosti, dlouhodob\u00e1 pravidla.md",
+      "x": 1400,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_organizace_pojmy",
+      "type": "file",
+      "file": "graphify/obsidian/Pojem organizace \u2014 ozna\u010den\u00ed pro firmy\u00fa\u0159ady + trval\u00e9 uspo\u0159\u00e1d\u00e1n\u00ed prvk\u016f a vazeb.md",
+      "x": 1600,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_soucasny_management",
+      "type": "file",
+      "file": "graphify/obsidian/Sou\u010dasn\u00fd management \u2014 rychl\u00e1 reakce, lidsk\u00fd potenci\u00e1l, orientace na z\u00e1kazn\u00edky.md",
+      "x": 1200,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_sbu",
+      "type": "file",
+      "file": "graphify/obsidian/Strategick\u00e9 podnikatelsk\u00e9 jednotky (SBU) \u2014 samostatnost, p\u0159\u00edm\u00e9 napojen\u00ed na veden\u00ed, r\u016fzn\u00e1 velikost.md",
+      "x": 1400,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_vedecky_management",
+      "type": "file",
+      "file": "graphify/obsidian/V\u011bdeck\u00fd management \u2014 faktory v\u00fdvoje (rozvoj v\u011bdn\u00edch obor\u016f, technick\u00fd pokrok).md",
+      "x": 1600,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_skola_kvantitativni",
+      "type": "file",
+      "file": "graphify/obsidian/\u0160kola kvantitativn\u00edch p\u0159\u00edstup\u016f \u2014 klasick\u00e1 \u0161kola, makroekonomick\u00e9 modelov\u00e1n\u00ed, normov\u00e1n\u00ed pr\u00e1ce.md",
+      "x": 1200,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pdf_mgmt_stihle_struktury",
+      "type": "file",
+      "file": "graphify/obsidian/\u0160t\u00edhl\u00e9 organiza\u010dn\u00ed struktury \u2014 zkr\u00e1cen\u00ed komunika\u010dn\u00edch kan\u00e1l\u016f, rychl\u00e1 reakce na zm\u011bny.md",
+      "x": 1400,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "App Icon Assets & Brand",
+      "x": 2360,
+      "y": 0,
+      "width": 880,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_app_icon_format",
+      "type": "file",
+      "file": "graphify/obsidian/512x512 App Icon.md",
+      "x": 2380,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_banana_icon",
+      "type": "file",
+      "file": "graphify/obsidian/Banana Icon.md",
+      "x": 2580,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_bananovnik_app",
+      "type": "file",
+      "file": "graphify/obsidian/Bananovnik App.md",
+      "x": 2780,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_cc_attribution_license",
+      "type": "file",
+      "file": "graphify/obsidian/CC Attribution License.md",
+      "x": 2380,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dark_outline",
+      "type": "file",
+      "file": "graphify/obsidian/Dark MaroonBrown Outline Style.md",
+      "x": 2580,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_dark_red",
+      "type": "file",
+      "file": "graphify/obsidian/Dark Red  Brown (6f0911).md",
+      "x": 2780,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_green",
+      "type": "file",
+      "file": "graphify/obsidian/Green (4aa86a).md",
+      "x": 2380,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_green_stem",
+      "type": "file",
+      "file": "graphify/obsidian/Green Banana Stem Detail.md",
+      "x": 2580,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rounded_square",
+      "type": "file",
+      "file": "graphify/obsidian/Rounded Square Shape.md",
+      "x": 2780,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_svgrepo_source",
+      "type": "file",
+      "file": "graphify/obsidian/SVG Repo.md",
+      "x": 2380,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_white",
+      "type": "file",
+      "file": "graphify/obsidian/White (ffffff).md",
+      "x": 2580,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_yellow",
+      "type": "file",
+      "file": "graphify/obsidian/Yellow (f0d540).md",
+      "x": 2780,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_yellow_color",
+      "type": "file",
+      "file": "graphify/obsidian/Yellow Background Color (F5C842 approx).md",
+      "x": 2380,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_svg",
+      "type": "file",
+      "file": "graphify/obsidian/favicon.svg.md",
+      "x": 2580,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon512_image",
+      "type": "file",
+      "file": "graphify/obsidian/icon-512.png.md",
+      "x": 2780,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Dazzle Icon Design",
+      "x": 3320,
+      "y": 0,
+      "width": 880,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "n_icon_4_yellow",
+      "type": "file",
+      "file": "graphify/obsidian/App Icon \u2014 Yellow Banana (Variant 4).md",
+      "x": 3340,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon_3_dazzle_clean",
+      "type": "file",
+      "file": "graphify/obsidian/App Icon Banana \u2014 Dazzle Clean style (variant 3).md",
+      "x": 3540,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_subject_banana",
+      "type": "file",
+      "file": "graphify/obsidian/Banana fruit illustration (bunch of two).md",
+      "x": 3740,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_project_bananovnik",
+      "type": "file",
+      "file": "graphify/obsidian/Bananovnik app project.md",
+      "x": 3340,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_style_outline_cartoon",
+      "type": "file",
+      "file": "graphify/obsidian/Cartoon Outline Illustration Style.md",
+      "x": 3540,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_cream_yellow",
+      "type": "file",
+      "file": "graphify/obsidian/Creampale yellow background color.md",
+      "x": 3740,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_dark_red_outline",
+      "type": "file",
+      "file": "graphify/obsidian/Dark red  maroon outline color.md",
+      "x": 3340,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_style_dazzle_clean",
+      "type": "file",
+      "file": "graphify/obsidian/Dazzle Clean icon style.md",
+      "x": 3540,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_label_kremova_dazzle_offset",
+      "type": "file",
+      "file": "graphify/obsidian/Design label Kr\u00e9mov\u00e1 + dazzle offset (variant 3).md",
+      "x": 3740,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_green_stem",
+      "type": "file",
+      "file": "graphify/obsidian/Green stem accent color.md",
+      "x": 3340,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_variant_series_icons",
+      "type": "file",
+      "file": "graphify/obsidian/Icon Variant Series.md",
+      "x": 3540,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_style_rounded_square",
+      "type": "file",
+      "file": "graphify/obsidian/Rounded Square App Icon Shape_1.md",
+      "x": 3740,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_shape_rounded_square",
+      "type": "file",
+      "file": "graphify/obsidian/Rounded square  squircle icon shape.md",
+      "x": 3340,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_white_highlight",
+      "type": "file",
+      "file": "graphify/obsidian/White highlight  gloss on banana.md",
+      "x": 3540,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_theme_yellow",
+      "type": "file",
+      "file": "graphify/obsidian/Yellow Color Theme.md",
+      "x": 3740,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Icon Shape & Color Variants",
+      "x": 0,
+      "y": 900,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_banana_illustration",
+      "type": "file",
+      "file": "graphify/obsidian/Banana Illustration (two bananas, yellow with dark red outline).md",
+      "x": 20,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_bananovnik_project",
+      "type": "file",
+      "file": "graphify/obsidian/Bananovnik Project.md",
+      "x": 220,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_beige",
+      "type": "file",
+      "file": "graphify/obsidian/Beige  Sand (background color).md",
+      "x": 420,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_cream_background",
+      "type": "file",
+      "file": "graphify/obsidian/Cream  light yellow background color.md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_cream_icon",
+      "type": "file",
+      "file": "graphify/obsidian/Cream App Icon \u2014 banana illustration on creamlight-yellow rounded square background.md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_color_darkred",
+      "type": "file",
+      "file": "graphify/obsidian/Dark Red  Maroon (outline color).md",
+      "x": 420,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dashboard_style",
+      "type": "file",
+      "file": "graphify/obsidian/Dashboard Style (design variant label).md",
+      "x": 20,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dashboard_icon",
+      "type": "file",
+      "file": "graphify/obsidian/Dashboard Style App Icon (logo-mark).md",
+      "x": 220,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon_style_flat_outline",
+      "type": "file",
+      "file": "graphify/obsidian/Flat design with bold dark outline illustration style.md",
+      "x": 420,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_logomark",
+      "type": "file",
+      "file": "graphify/obsidian/Logo-mark design role.md",
+      "x": 20,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_icon_shape",
+      "type": "file",
+      "file": "graphify/obsidian/Rounded Square App Icon Shape.md",
+      "x": 220,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rounded_square_shape",
+      "type": "file",
+      "file": "graphify/obsidian/Rounded square  squircle app icon shape.md",
+      "x": 420,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Test Data Pipeline",
+      "x": 1180,
+      "y": 900,
+      "width": 880,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "n_docs_question_schema",
+      "type": "file",
+      "file": "graphify/obsidian/Sch\u00e9ma ot\u00e1zky (q, opts, correct).md",
+      "x": 1200,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_test_json_schema",
+      "type": "file",
+      "file": "graphify/obsidian/Sch\u00e9ma souboru testu (id, title, updatedAt, rubric, questions).md",
+      "x": 1400,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_tests_registry",
+      "type": "file",
+      "file": "graphify/obsidian/TESTS_REGISTRY \u2014 registr test\u016f.md",
+      "x": 1600,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_test_komunikace",
+      "type": "file",
+      "file": "graphify/obsidian/Test Komunikace a komunika\u010dn\u00ed dovednosti (103 ot\u00e1zek).md",
+      "x": 1200,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_test_management",
+      "type": "file",
+      "file": "graphify/obsidian/Test Management (86 ot\u00e1zek).md",
+      "x": 1400,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_test_management_stare",
+      "type": "file",
+      "file": "graphify/obsidian/Test Management star\u0161\u00ed verze (14 ot\u00e1zek).md",
+      "x": 1600,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_pridat_test",
+      "type": "file",
+      "file": "graphify/obsidian/docspridat-test.md \u2014 n\u00e1vod na p\u0159id\u00e1n\u00ed nov\u00e9ho testu.md",
+      "x": 1200,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_load_registry",
+      "type": "file",
+      "file": "graphify/obsidian/loadRegistry() \u2014 inicializace dashboardu.md",
+      "x": 1400,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_render_dashboard",
+      "type": "file",
+      "file": "graphify/obsidian/renderDashboard() \u2014 vykreslen\u00ed karet test\u016f.md",
+      "x": 1600,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_screen_start",
+      "type": "file",
+      "file": "graphify/obsidian/screen-start \u2014 obrazovka nastaven\u00ed kv\u00edzu.md",
+      "x": 1200,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_fn_select_test",
+      "type": "file",
+      "file": "graphify/obsidian/selectTest(id) \u2014 na\u010dten\u00ed JSON testu p\u0159es fetch.md",
+      "x": 1400,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "App Infrastructure & Versioning",
+      "x": 2360,
+      "y": 900,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_index_bananovnik_app",
+      "type": "file",
+      "file": "graphify/obsidian/Ban\u00e1novn\u00edk \u2014 hlavn\u00ed aplikace (index.html).md",
+      "x": 2380,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon_banana_svg",
+      "type": "file",
+      "file": "graphify/obsidian/Ban\u00e1nov\u00e1 SVG (An Nguyen, CC Attribution, SVG Repo).md",
+      "x": 2580,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_version_bump",
+      "type": "file",
+      "file": "graphify/obsidian/Postup bumpu verze (sw.js, APP_VERSION, manifest.jsonv=, version.json).md",
+      "x": 2780,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_rationale_version_bump",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale SW cachuje seznam test\u016f \u2014 bez bumpu verze uvid\u00ed u\u017eivatel\u00e9 star\u00e1 data.md",
+      "x": 2380,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_favicon_svg",
+      "type": "file",
+      "file": "graphify/obsidian/favicon.svg \u2014 ban\u00e1nov\u00e1 ikona.md",
+      "x": 2580,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon_generator_variants",
+      "type": "file",
+      "file": "graphify/obsidian/icon-generator.html \u2014 5 variant ikon (kr\u00e9mov\u00e1, zelen\u00e1, dazzle, \u017elut\u00e1, mark).md",
+      "x": 2780,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon_single_yellow_icon",
+      "type": "file",
+      "file": "graphify/obsidian/icon-single.html \u2014 \u017elut\u00e1 verze ban\u00e1nov\u00e9 ikony (1024\u00d71024).md",
+      "x": 2380,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_manifest_json",
+      "type": "file",
+      "file": "graphify/obsidian/manifest.json \u2014 PWA manifest.md",
+      "x": 2580,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_sw_js",
+      "type": "file",
+      "file": "graphify/obsidian/sw.js \u2014 Service Worker (offline cache).md",
+      "x": 2780,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Green Icon Variant",
+      "x": 3320,
+      "y": 900,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_2green_icon",
+      "type": "file",
+      "file": "graphify/obsidian/App Icon Variant 2 \u2014 Green.md",
+      "x": 3340,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_banana",
+      "type": "file",
+      "file": "graphify/obsidian/Banana Illustration.md",
+      "x": 3540,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_style_cartoon",
+      "type": "file",
+      "file": "graphify/obsidian/Cartoon  Comic Style.md",
+      "x": 3740,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_color_darkred",
+      "type": "file",
+      "file": "graphify/obsidian/Dark Red Outline Color.md",
+      "x": 3340,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_color_green",
+      "type": "file",
+      "file": "graphify/obsidian/Green Background Color.md",
+      "x": 3540,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_label_zelena",
+      "type": "file",
+      "file": "graphify/obsidian/Label Zelen\u00e1 (Czech for Green).md",
+      "x": 3740,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_style_rounded",
+      "type": "file",
+      "file": "graphify/obsidian/Rounded Square Shape_1.md",
+      "x": 3340,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_variant_number",
+      "type": "file",
+      "file": "graphify/obsidian/Variant Number 2.md",
+      "x": 3540,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_2green_color_yellow",
+      "type": "file",
+      "file": "graphify/obsidian/Yellow Banana Color.md",
+      "x": 3740,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Dazzle Style Visual Language",
+      "x": 0,
+      "y": 1500,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_banana_motif",
+      "type": "file",
+      "file": "graphify/obsidian/Banana Motif.md",
+      "x": 20,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dark_red_outline",
+      "type": "file",
+      "file": "graphify/obsidian/Dark Red  Maroon Outline.md",
+      "x": 220,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dazzle_style",
+      "type": "file",
+      "file": "graphify/obsidian/Dazzle Design Style.md",
+      "x": 420,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dazzle_icon",
+      "type": "file",
+      "file": "graphify/obsidian/Dazzle Icon Variant \u2014 Banana App Icon.md",
+      "x": 20,
+      "y": 1660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_kremova_color",
+      "type": "file",
+      "file": "graphify/obsidian/Kremova (CreamYellow) Background Color.md",
+      "x": 220,
+      "y": 1660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rounded_rect_shape",
+      "type": "file",
+      "file": "graphify/obsidian/Rounded Rectangle App Icon Shape.md",
+      "x": 420,
+      "y": 1660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Large Icon (1024px)",
+      "x": 1180,
+      "y": 1500,
+      "width": 660,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_icon1024_app_icon",
+      "type": "file",
+      "file": "graphify/obsidian/App Icon (1024px) - Bananovnik.md",
+      "x": 1200,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon1024_banana_motif",
+      "type": "file",
+      "file": "graphify/obsidian/Banana bunch illustration.md",
+      "x": 1400,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon1024_brand_identity",
+      "type": "file",
+      "file": "graphify/obsidian/Bananovnik brand identity.md",
+      "x": 1600,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon1024_visual_style",
+      "type": "file",
+      "file": "graphify/obsidian/Flat icon style with dark outline and white highlight.md",
+      "x": 1200,
+      "y": 1660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon1024_yellow_background",
+      "type": "file",
+      "file": "graphify/obsidian/Yellow rounded-square background (F2CC4E).md",
+      "x": 1400,
+      "y": 1660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Project Setup & Docs",
+      "x": 2360,
+      "y": 1500,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_readme_local_server",
+      "type": "file",
+      "file": "graphify/obsidian/Lok\u00e1ln\u00ed HTTP server (python3 -m http.server 8080).md",
+      "x": 2380,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_online_url",
+      "type": "file",
+      "file": "graphify/obsidian/Online URL tomekson.github.iobananovnik.md",
+      "x": 2580,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_bananovnik",
+      "type": "file",
+      "file": "graphify/obsidian/README.md \u2014 popis aplikace a n\u00e1vod ke spu\u0161t\u011bn\u00ed.md",
+      "x": 2780,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_rationale_http_server",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale file protokol blokuje fetch \u2014 nutn\u00fd HTTP server.md",
+      "x": 2380,
+      "y": 1660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Apple Touch Icon (180px)",
+      "x": 3320,
+      "y": 1500,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_icon180_app_icon",
+      "type": "file",
+      "file": "graphify/obsidian/App Icon (180px) \u2014 Bananovnik.md",
+      "x": 3340,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon180_banana",
+      "type": "file",
+      "file": "graphify/obsidian/Banana \u2014 central graphic element.md",
+      "x": 3540,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon180_brand_bananovnik",
+      "type": "file",
+      "file": "graphify/obsidian/Bananovnik brand identity_1.md",
+      "x": 3740,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon180_yellow_bg",
+      "type": "file",
+      "file": "graphify/obsidian/Yellowgolden rounded-square background.md",
+      "x": 3340,
+      "y": 1660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Service Worker",
+      "x": 0,
+      "y": 1980,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_users_tomek_bananovnik_sw_js",
+      "type": "file",
+      "file": "graphify/obsidian/sw.js.md",
+      "x": 20,
+      "y": 2060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Dashboard Screen",
+      "x": 1180,
+      "y": 1980,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_index_screen_dashboard",
+      "type": "file",
+      "file": "graphify/obsidian/screen-dashboard \u2014 obrazovka v\u00fdb\u011bru testu.md",
+      "x": 1200,
+      "y": 2060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Splash Screen",
+      "x": 2360,
+      "y": 1980,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_index_splash",
+      "type": "file",
+      "file": "graphify/obsidian/Splash screen \u2014 animovan\u00fd \u00favodn\u00ed p\u0159echod.md",
+      "x": 2380,
+      "y": 2060,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_index_bananovnik_app_index_manifest_json",
+      "fromNode": "n_index_bananovnik_app",
+      "toNode": "n_index_manifest_json",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bananovnik_app_index_favicon_svg",
+      "fromNode": "n_index_bananovnik_app",
+      "toNode": "n_index_favicon_svg",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tests_registry_index_fn_render_dashboard",
+      "fromNode": "n_index_tests_registry",
+      "toNode": "n_index_fn_render_dashboard",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tests_registry_index_fn_select_test",
+      "fromNode": "n_index_tests_registry",
+      "toNode": "n_index_fn_select_test",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tests_registry_index_test_komunikace",
+      "fromNode": "n_index_tests_registry",
+      "toNode": "n_index_test_komunikace",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tests_registry_index_test_management",
+      "fromNode": "n_index_tests_registry",
+      "toNode": "n_index_test_management",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tests_registry_index_test_management_stare",
+      "fromNode": "n_index_tests_registry",
+      "toNode": "n_index_test_management_stare",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tests_registry_docs_pridat_test",
+      "fromNode": "n_index_tests_registry",
+      "toNode": "n_docs_pridat_test",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_cfg_index_fn_start_quiz",
+      "fromNode": "n_index_cfg",
+      "toNode": "n_index_fn_start_quiz",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_cfg_index_fn_render_q",
+      "fromNode": "n_index_cfg",
+      "toNode": "n_index_fn_render_q",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_cfg_index_fn_set_seg",
+      "fromNode": "n_index_cfg",
+      "toNode": "n_index_fn_set_seg",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_index_cfg_index_fn_set_mode",
+      "fromNode": "n_index_cfg",
+      "toNode": "n_index_fn_set_mode",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_index_cfg_index_fn_set_count",
+      "fromNode": "n_index_cfg",
+      "toNode": "n_index_fn_set_count",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_select_test",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_select_test",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_start_quiz",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_start_quiz",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_render_q",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_render_q",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_main_btn",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_main_btn",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_retry_wrong",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_retry_wrong",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_retry_q",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_retry_q",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_open_review",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_open_review",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_state_s_index_fn_show_results",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_fn_show_results",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_screen_start_index_fn_select_test",
+      "fromNode": "n_index_screen_start",
+      "toNode": "n_index_fn_select_test",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_screen_quiz_index_fn_start_quiz",
+      "fromNode": "n_index_screen_quiz",
+      "toNode": "n_index_fn_start_quiz",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_screen_results_index_fn_show_results",
+      "fromNode": "n_index_screen_results",
+      "toNode": "n_index_fn_show_results",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_screen_review_index_fn_open_review",
+      "fromNode": "n_index_screen_review",
+      "toNode": "n_index_fn_open_review",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_load_registry_index_fn_render_dashboard",
+      "fromNode": "n_index_fn_load_registry",
+      "toNode": "n_index_fn_render_dashboard",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_load_registry_index_fn_select_test",
+      "fromNode": "n_index_fn_load_registry",
+      "toNode": "n_index_fn_select_test",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_start_quiz_index_fn_render_q",
+      "fromNode": "n_index_fn_start_quiz",
+      "toNode": "n_index_fn_render_q",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_render_q_index_fn_main_btn",
+      "fromNode": "n_index_fn_render_q",
+      "toNode": "n_index_fn_main_btn",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_render_q_index_fn_retry_wrong",
+      "fromNode": "n_index_fn_render_q",
+      "toNode": "n_index_fn_retry_wrong",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_render_q_index_fn_retry_q",
+      "fromNode": "n_index_fn_render_q",
+      "toNode": "n_index_fn_retry_q",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_main_btn_index_fn_show_results",
+      "fromNode": "n_index_fn_main_btn",
+      "toNode": "n_index_fn_show_results",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_show_results_index_pass_threshold",
+      "fromNode": "n_index_fn_show_results",
+      "toNode": "n_index_pass_threshold",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_fn_show_results_index_banana_confetti",
+      "fromNode": "n_index_fn_show_results",
+      "toNode": "n_index_banana_confetti",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_manifest_json_docs_version_bump",
+      "fromNode": "n_index_manifest_json",
+      "toNode": "n_docs_version_bump",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_sw_js_docs_pridat_test",
+      "fromNode": "n_index_sw_js",
+      "toNode": "n_docs_pridat_test",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_sw_js_docs_version_bump",
+      "fromNode": "n_index_sw_js",
+      "toNode": "n_docs_version_bump",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_test_komunikace_docs_pridat_test",
+      "fromNode": "n_index_test_komunikace",
+      "toNode": "n_docs_pridat_test",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_single_yellow_icon_icon_banana_svg",
+      "fromNode": "n_icon_single_yellow_icon",
+      "toNode": "n_icon_banana_svg",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_generator_variants_icon_banana_svg",
+      "fromNode": "n_icon_generator_variants",
+      "toNode": "n_icon_banana_svg",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_bananovnik_readme_online_url",
+      "fromNode": "n_readme_bananovnik",
+      "toNode": "n_readme_online_url",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_bananovnik_readme_local_server",
+      "fromNode": "n_readme_bananovnik",
+      "toNode": "n_readme_local_server",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_local_server_docs_rationale_http_server",
+      "fromNode": "n_readme_local_server",
+      "toNode": "n_docs_rationale_http_server",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_pridat_test_docs_test_json_schema",
+      "fromNode": "n_docs_pridat_test",
+      "toNode": "n_docs_test_json_schema",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_pridat_test_docs_question_schema",
+      "fromNode": "n_docs_pridat_test",
+      "toNode": "n_docs_question_schema",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_pridat_test_docs_version_bump",
+      "fromNode": "n_docs_pridat_test",
+      "toNode": "n_docs_version_bump",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_test_json_schema_docs_question_schema",
+      "fromNode": "n_docs_test_json_schema",
+      "toNode": "n_docs_question_schema",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_version_bump_docs_rationale_version_bump",
+      "fromNode": "n_docs_version_bump",
+      "toNode": "n_docs_rationale_version_bump",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_identifikace_problemu",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_identifikace_problemu",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_rozhodovani_metody",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_rozhodovani_metody",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_matematicke_modely",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_matematicke_modely",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_vedecky_management",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_vedecky_management",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_centralizace",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_centralizace",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_organizovani",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_organizovani",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_sbu",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_sbu",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_vnitrni_kontrola",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_vnitrni_kontrola",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_kontrolni_funkce",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_kontrolni_funkce",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_organizacni_struktury",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_organizacni_struktury",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_stihle_struktury",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_stihle_struktury",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_soucasny_management",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_soucasny_management",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_americky_proud",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_americky_proud",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_skola_kvantitativni",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_skola_kvantitativni",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_dobre_strukturovane",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_dobre_strukturovane",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_pdf_management_ezk_pdf_mgmt_organizace_pojmy",
+      "fromNode": "n_pdf_management_ezk",
+      "toNode": "n_pdf_mgmt_organizace_pojmy",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_icon1024_app_icon_icon1024_banana_motif",
+      "fromNode": "n_icon1024_app_icon",
+      "toNode": "n_icon1024_banana_motif",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_icon1024_app_icon_icon1024_yellow_background",
+      "fromNode": "n_icon1024_app_icon",
+      "toNode": "n_icon1024_yellow_background",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_icon1024_app_icon_icon1024_visual_style",
+      "fromNode": "n_icon1024_app_icon",
+      "toNode": "n_icon1024_visual_style",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_icon1024_app_icon_icon1024_brand_identity",
+      "fromNode": "n_icon1024_app_icon",
+      "toNode": "n_icon1024_brand_identity",
+      "label": "rationale_for [INFERRED]"
+    },
+    {
+      "id": "e_icon1024_banana_motif_icon1024_brand_identity",
+      "fromNode": "n_icon1024_banana_motif",
+      "toNode": "n_icon1024_brand_identity",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_icon180_app_icon_icon180_banana",
+      "fromNode": "n_icon180_app_icon",
+      "toNode": "n_icon180_banana",
+      "label": "CONTAINS [EXTRACTED]"
+    },
+    {
+      "id": "e_icon180_app_icon_icon180_yellow_bg",
+      "fromNode": "n_icon180_app_icon",
+      "toNode": "n_icon180_yellow_bg",
+      "label": "HAS_BACKGROUND [EXTRACTED]"
+    },
+    {
+      "id": "e_icon180_app_icon_icon180_brand_bananovnik",
+      "fromNode": "n_icon180_app_icon",
+      "toNode": "n_icon180_brand_bananovnik",
+      "label": "REPRESENTS [INFERRED]"
+    },
+    {
+      "id": "e_icon180_banana_icon180_brand_bananovnik",
+      "fromNode": "n_icon180_banana",
+      "toNode": "n_icon180_brand_bananovnik",
+      "label": "SYMBOLIZES [INFERRED]"
+    },
+    {
+      "id": "e_icon180_yellow_bg_icon180_brand_bananovnik",
+      "fromNode": "n_icon180_yellow_bg",
+      "toNode": "n_icon180_brand_bananovnik",
+      "label": "PART_OF_VISUAL_IDENTITY [INFERRED]"
+    },
+    {
+      "id": "e_favicon_svg_banana_icon",
+      "fromNode": "n_favicon_svg",
+      "toNode": "n_banana_icon",
+      "label": "depicts [EXTRACTED]"
+    },
+    {
+      "id": "e_favicon_svg_bananovnik_app",
+      "fromNode": "n_favicon_svg",
+      "toNode": "n_bananovnik_app",
+      "label": "uses_as_favicon [INFERRED]"
+    },
+    {
+      "id": "e_banana_icon_svgrepo_source",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_svgrepo_source",
+      "label": "sourced_from [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_icon_cc_attribution_license",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_cc_attribution_license",
+      "label": "licensed_under [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_icon_color_yellow",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_color_yellow",
+      "label": "uses_color [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_icon_color_green",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_color_green",
+      "label": "uses_color [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_icon_color_dark_red",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_color_dark_red",
+      "label": "uses_color [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_icon_color_white",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_color_white",
+      "label": "uses_color [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_icon_bananovnik_app",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_bananovnik_app",
+      "label": "named_after [INFERRED]"
+    },
+    {
+      "id": "e_banana_icon_icon512_image",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_icon512_image",
+      "label": "depicts [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_icon_green_stem",
+      "fromNode": "n_banana_icon",
+      "toNode": "n_green_stem",
+      "label": "has_detail [EXTRACTED]"
+    },
+    {
+      "id": "e_color_yellow_banana_illustration",
+      "fromNode": "n_color_yellow",
+      "toNode": "n_banana_illustration",
+      "label": "PRIMARY_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_bananovnik_app_icon512_image",
+      "fromNode": "n_bananovnik_app",
+      "toNode": "n_icon512_image",
+      "label": "is_icon_of [EXTRACTED]"
+    },
+    {
+      "id": "e_bananovnik_app_dazzle_icon",
+      "fromNode": "n_bananovnik_app",
+      "toNode": "n_dazzle_icon",
+      "label": "is_icon_for [INFERRED]"
+    },
+    {
+      "id": "e_bananovnik_app_cream_icon",
+      "fromNode": "n_bananovnik_app",
+      "toNode": "n_cream_icon",
+      "label": "is_icon_for [INFERRED]"
+    },
+    {
+      "id": "e_icon512_image_yellow_color",
+      "fromNode": "n_icon512_image",
+      "toNode": "n_yellow_color",
+      "label": "has_background_color [EXTRACTED]"
+    },
+    {
+      "id": "e_icon512_image_rounded_square",
+      "fromNode": "n_icon512_image",
+      "toNode": "n_rounded_square",
+      "label": "has_shape [EXTRACTED]"
+    },
+    {
+      "id": "e_icon512_image_dark_outline",
+      "fromNode": "n_icon512_image",
+      "toNode": "n_dark_outline",
+      "label": "has_visual_style [EXTRACTED]"
+    },
+    {
+      "id": "e_icon512_image_app_icon_format",
+      "fromNode": "n_icon512_image",
+      "toNode": "n_app_icon_format",
+      "label": "is_format [INFERRED]"
+    },
+    {
+      "id": "e_2green_icon_2green_banana",
+      "fromNode": "n_2green_icon",
+      "toNode": "n_2green_banana",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_2green_icon_2green_color_green",
+      "fromNode": "n_2green_icon",
+      "toNode": "n_2green_color_green",
+      "label": "variant_named_after_color [INFERRED]"
+    },
+    {
+      "id": "e_2green_icon_2green_style_rounded",
+      "fromNode": "n_2green_icon",
+      "toNode": "n_2green_style_rounded",
+      "label": "has_shape [EXTRACTED]"
+    },
+    {
+      "id": "e_2green_icon_2green_style_cartoon",
+      "fromNode": "n_2green_icon",
+      "toNode": "n_2green_style_cartoon",
+      "label": "has_visual_style [EXTRACTED]"
+    },
+    {
+      "id": "e_2green_icon_2green_variant_number",
+      "fromNode": "n_2green_icon",
+      "toNode": "n_2green_variant_number",
+      "label": "is_variant [EXTRACTED]"
+    },
+    {
+      "id": "e_2green_icon_2green_label_zelena",
+      "fromNode": "n_2green_icon",
+      "toNode": "n_2green_label_zelena",
+      "label": "labeled_as [EXTRACTED]"
+    },
+    {
+      "id": "e_2green_banana_2green_color_yellow",
+      "fromNode": "n_2green_banana",
+      "toNode": "n_2green_color_yellow",
+      "label": "has_color [EXTRACTED]"
+    },
+    {
+      "id": "e_2green_banana_2green_color_darkred",
+      "fromNode": "n_2green_banana",
+      "toNode": "n_2green_color_darkred",
+      "label": "has_outline_color [EXTRACTED]"
+    },
+    {
+      "id": "e_2green_color_green_2green_label_zelena",
+      "fromNode": "n_2green_color_green",
+      "toNode": "n_2green_label_zelena",
+      "label": "corresponds_to [EXTRACTED]"
+    },
+    {
+      "id": "e_dazzle_icon_dazzle_style",
+      "fromNode": "n_dazzle_icon",
+      "toNode": "n_dazzle_style",
+      "label": "uses_style [EXTRACTED]"
+    },
+    {
+      "id": "e_dazzle_icon_banana_motif",
+      "fromNode": "n_dazzle_icon",
+      "toNode": "n_banana_motif",
+      "label": "depicts [EXTRACTED]"
+    },
+    {
+      "id": "e_dazzle_icon_kremova_color",
+      "fromNode": "n_dazzle_icon",
+      "toNode": "n_kremova_color",
+      "label": "has_background_color [EXTRACTED]"
+    },
+    {
+      "id": "e_dazzle_icon_dark_red_outline",
+      "fromNode": "n_dazzle_icon",
+      "toNode": "n_dark_red_outline",
+      "label": "has_outline_color [EXTRACTED]"
+    },
+    {
+      "id": "e_dazzle_icon_rounded_rect_shape",
+      "fromNode": "n_dazzle_icon",
+      "toNode": "n_rounded_rect_shape",
+      "label": "has_shape [EXTRACTED]"
+    },
+    {
+      "id": "e_dazzle_style_dark_red_outline",
+      "fromNode": "n_dazzle_style",
+      "toNode": "n_dark_red_outline",
+      "label": "characteristic_of [INFERRED]"
+    },
+    {
+      "id": "e_dazzle_style_banana_motif",
+      "fromNode": "n_dazzle_style",
+      "toNode": "n_banana_motif",
+      "label": "stylizes [INFERRED]"
+    },
+    {
+      "id": "e_banana_motif_kremova_color",
+      "fromNode": "n_banana_motif",
+      "toNode": "n_kremova_color",
+      "label": "has_color [INFERRED]"
+    },
+    {
+      "id": "e_dashboard_icon_banana_illustration",
+      "fromNode": "n_dashboard_icon",
+      "toNode": "n_banana_illustration",
+      "label": "CONTAINS [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_icon_app_icon_shape",
+      "fromNode": "n_dashboard_icon",
+      "toNode": "n_app_icon_shape",
+      "label": "HAS_SHAPE [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_icon_dashboard_style",
+      "fromNode": "n_dashboard_icon",
+      "toNode": "n_dashboard_style",
+      "label": "LABELED_AS [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_icon_design_logomark",
+      "fromNode": "n_dashboard_icon",
+      "toNode": "n_design_logomark",
+      "label": "SERVES_AS [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_icon_bananovnik_project",
+      "fromNode": "n_dashboard_icon",
+      "toNode": "n_bananovnik_project",
+      "label": "BELONGS_TO [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_icon_color_beige",
+      "fromNode": "n_dashboard_icon",
+      "toNode": "n_color_beige",
+      "label": "BACKGROUND_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_illustration_color_darkred",
+      "fromNode": "n_banana_illustration",
+      "toNode": "n_color_darkred",
+      "label": "OUTLINE_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_illustration_bananovnik_project",
+      "fromNode": "n_banana_illustration",
+      "toNode": "n_bananovnik_project",
+      "label": "REPRESENTS [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_illustration_cream_icon",
+      "fromNode": "n_banana_illustration",
+      "toNode": "n_cream_icon",
+      "label": "contains_graphic [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_illustration_cream_background",
+      "fromNode": "n_banana_illustration",
+      "toNode": "n_cream_background",
+      "label": "displayed_on [EXTRACTED]"
+    },
+    {
+      "id": "e_banana_illustration_icon_style_flat_outline",
+      "fromNode": "n_banana_illustration",
+      "toNode": "n_icon_style_flat_outline",
+      "label": "rendered_in_style [EXTRACTED]"
+    },
+    {
+      "id": "e_app_icon_shape_color_beige",
+      "fromNode": "n_app_icon_shape",
+      "toNode": "n_color_beige",
+      "label": "BACKGROUND_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_style_design_logomark",
+      "fromNode": "n_dashboard_style",
+      "toNode": "n_design_logomark",
+      "label": "IS_VARIANT_OF [EXTRACTED]"
+    },
+    {
+      "id": "e_cream_icon_cream_background",
+      "fromNode": "n_cream_icon",
+      "toNode": "n_cream_background",
+      "label": "variant_named [EXTRACTED]"
+    },
+    {
+      "id": "e_cream_icon_rounded_square_shape",
+      "fromNode": "n_cream_icon",
+      "toNode": "n_rounded_square_shape",
+      "label": "has_shape [EXTRACTED]"
+    },
+    {
+      "id": "e_cream_icon_icon_style_flat_outline",
+      "fromNode": "n_cream_icon",
+      "toNode": "n_icon_style_flat_outline",
+      "label": "uses_visual_style [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_style_dazzle_clean",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_style_dazzle_clean",
+      "label": "HAS_STYLE [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_subject_banana",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_subject_banana",
+      "label": "DEPICTS [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_shape_rounded_square",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_shape_rounded_square",
+      "label": "HAS_SHAPE [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_color_cream_yellow",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_color_cream_yellow",
+      "label": "HAS_BACKGROUND_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_color_dark_red_outline",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_color_dark_red_outline",
+      "label": "HAS_OUTLINE_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_color_white_highlight",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_color_white_highlight",
+      "label": "HAS_HIGHLIGHT_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_color_green_stem",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_color_green_stem",
+      "label": "HAS_ACCENT_COLOR [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_design_label_kremova_dazzle_offset",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_design_label_kremova_dazzle_offset",
+      "label": "LABELED_AS [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_3_dazzle_clean_project_bananovnik",
+      "fromNode": "n_icon_3_dazzle_clean",
+      "toNode": "n_project_bananovnik",
+      "label": "BELONGS_TO_PROJECT [INFERRED]"
+    },
+    {
+      "id": "e_style_dazzle_clean_color_dark_red_outline",
+      "fromNode": "n_style_dazzle_clean",
+      "toNode": "n_color_dark_red_outline",
+      "label": "CHARACTERIZED_BY [INFERRED]"
+    },
+    {
+      "id": "e_style_dazzle_clean_color_white_highlight",
+      "fromNode": "n_style_dazzle_clean",
+      "toNode": "n_color_white_highlight",
+      "label": "CHARACTERIZED_BY [INFERRED]"
+    },
+    {
+      "id": "e_color_cream_yellow_design_label_kremova_dazzle_offset",
+      "fromNode": "n_color_cream_yellow",
+      "toNode": "n_design_label_kremova_dazzle_offset",
+      "label": "REFERENCES_COLOR [INFERRED]"
+    },
+    {
+      "id": "e_color_dark_red_outline_icon_4_yellow",
+      "fromNode": "n_color_dark_red_outline",
+      "toNode": "n_icon_4_yellow",
+      "label": "uses_outline_color [EXTRACTED]"
+    },
+    {
+      "id": "e_subject_banana_icon_4_yellow",
+      "fromNode": "n_subject_banana",
+      "toNode": "n_icon_4_yellow",
+      "label": "depicts [EXTRACTED]"
+    },
+    {
+      "id": "e_subject_banana_theme_yellow",
+      "fromNode": "n_subject_banana",
+      "toNode": "n_theme_yellow",
+      "label": "matches_subject_color [INFERRED]"
+    },
+    {
+      "id": "e_project_bananovnik_icon_4_yellow",
+      "fromNode": "n_project_bananovnik",
+      "toNode": "n_icon_4_yellow",
+      "label": "belongs_to [INFERRED]"
+    },
+    {
+      "id": "e_project_bananovnik_variant_series_icons",
+      "fromNode": "n_project_bananovnik",
+      "toNode": "n_variant_series_icons",
+      "label": "part_of [INFERRED]"
+    },
+    {
+      "id": "e_icon_4_yellow_variant_series_icons",
+      "fromNode": "n_icon_4_yellow",
+      "toNode": "n_variant_series_icons",
+      "label": "member_of [INFERRED]"
+    },
+    {
+      "id": "e_icon_4_yellow_theme_yellow",
+      "fromNode": "n_icon_4_yellow",
+      "toNode": "n_theme_yellow",
+      "label": "uses_color_theme [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_4_yellow_style_rounded_square",
+      "fromNode": "n_icon_4_yellow",
+      "toNode": "n_style_rounded_square",
+      "label": "uses_shape [EXTRACTED]"
+    },
+    {
+      "id": "e_icon_4_yellow_style_outline_cartoon",
+      "fromNode": "n_icon_4_yellow",
+      "toNode": "n_style_outline_cartoon",
+      "label": "uses_style [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bananovnik_app_index_sw_js",
+      "fromNode": "n_index_bananovnik_app",
+      "toNode": "n_index_sw_js",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_index_screen_study_index_fn_start_study",
+      "fromNode": "n_index_screen_study",
+      "toNode": "n_index_fn_start_study",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_index_favicon_svg_icon_generator_variants",
+      "fromNode": "n_index_favicon_svg",
+      "toNode": "n_icon_generator_variants",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_icon_single_yellow_icon_icon_generator_variants",
+      "fromNode": "n_icon_single_yellow_icon",
+      "toNode": "n_icon_generator_variants",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_index_test_management_pdf_management_ezk",
+      "fromNode": "n_index_test_management",
+      "toNode": "n_pdf_management_ezk",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_index_state_s_index_screen_study",
+      "fromNode": "n_index_state_s",
+      "toNode": "n_index_screen_study",
+      "label": "shares_data_with [INFERRED]"
+    },
+    {
+      "id": "e_index_favicon_svg_icon_banana_svg",
+      "fromNode": "n_index_favicon_svg",
+      "toNode": "n_icon_banana_svg",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_icon1024_banana_motif_icon1024_yellow_background",
+      "fromNode": "n_icon1024_banana_motif",
+      "toNode": "n_icon1024_yellow_background",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_icon1024_visual_style_icon1024_brand_identity",
+      "fromNode": "n_icon1024_visual_style",
+      "toNode": "n_icon1024_brand_identity",
+      "label": "rationale_for [INFERRED]"
+    },
+    {
+      "id": "e_pdf_mgmt_vnitrni_kontrola_pdf_mgmt_kontrolni_funkce",
+      "fromNode": "n_pdf_mgmt_vnitrni_kontrola",
+      "toNode": "n_pdf_mgmt_kontrolni_funkce",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_pdf_mgmt_organizacni_struktury_pdf_mgmt_stihle_struktury",
+      "fromNode": "n_pdf_mgmt_organizacni_struktury",
+      "toNode": "n_pdf_mgmt_stihle_struktury",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_pdf_mgmt_rozhodovani_metody_pdf_mgmt_matematicke_modely",
+      "fromNode": "n_pdf_mgmt_rozhodovani_metody",
+      "toNode": "n_pdf_mgmt_matematicke_modely",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_pdf_mgmt_americky_proud_pdf_mgmt_skola_kvantitativni",
+      "fromNode": "n_pdf_mgmt_americky_proud",
+      "toNode": "n_pdf_mgmt_skola_kvantitativni",
+      "label": "semantically_similar_to [INFERRED]"
+    }
+  ]
+}

@@ -20,8 +20,5 @@ graphify-out/.graphify_*
 graphify-out/obsidian/*.md
 # Zachovat přehledy community (vyjímky z ignoru)
 !graphify-out/obsidian/_COMMUNITY_*.md
-# (volitelně) Ignorovat velké cache/lokální obsidian data - automaticky je generuje skill: /graphify export obsidian
-graphify-out/obsidian/.obsidian/workspace.json
-graphify-out/obsidian/.obsidian/workspaces.json
-graphify-out/obsidian/.obsidian/git-workspace
-graphify-out/obsidian/.obsidian/search-index
+# Obsidian personal settings (plugins, theme, workspace layout)
+graphify-out/obsidian/.obsidian/

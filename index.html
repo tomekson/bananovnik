@@ -1292,7 +1292,7 @@ function renderQ() {
   const fbEl = document.getElementById('fb');
   if (done && ihned) {
     const score = S.scores[n];
-    const isRetry = S.retried[n] > 0;
+    const isRetry = S.retried[n] > 0 && !S.returnToStudy;
     fbEl.className = 'fb show';
     if (score === 1) {
       document.getElementById('fb-icon').textContent = '🎯';
@@ -1775,7 +1775,10 @@ function testStudyQ() {
 // ─────────────────────────────────────────────────────────────────
 // Abort
 // ─────────────────────────────────────────────────────────────────
-function askAbort()   { document.getElementById('overlay-abort').classList.add('show'); }
+function askAbort() {
+  if (S.returnToStudy) { S = _savedStudyState; _savedStudyState = null; show('screen-study'); window.scrollTo(0, 0); renderStudy(); return; }
+  document.getElementById('overlay-abort').classList.add('show');
+}
 function closeAbort() { document.getElementById('overlay-abort').classList.remove('show'); }
 function goToDashboard() { sessionStorage.removeItem('bananovnik-last-test'); show('screen-dashboard'); }
 function doAbort()    { closeAbort(); _savedStudyState = null; goToDashboard(); }
@@ -1808,6 +1811,7 @@ document.addEventListener('keydown', function(e) {
   if (!S.questions || S.cur == null) return;
   var n = S.cur;
   if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350); mainBtn(); return; }
+  if (e.key === ' ') { e.preventDefault(); return; }
   if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
   if ((e.key === 'n' || e.key === 'N') && !S.confirmed[n] && !S.hintUsed[n]) { S.hintUsed[n] = true; renderQ(); return; }
   if ((e.key === '0' || e.code === 'Digit0' || e.code === 'Numpad0' || e.key === 'o' || e.key === 'O' || e.code === 'KeyO') && S.confirmed[n] && S.scores[n] < 1) { retryQ(); return; }
@@ -1818,6 +1822,16 @@ document.addEventListener('keydown', function(e) {
   if (idx === -1 || idx >= S.questions[n].opts.length) return;
   if (S.confirmed[n]) return;
   toggleOpt(idx);
+});
+
+document.addEventListener('keyup', function(e) {
+  if (e.key === ' ' && document.getElementById('screen-quiz').classList.contains('active')) {
+    if (document.getElementById('overlay-abort').classList.contains('show')) return;
+    if (!S.questions || S.cur == null) return;
+    if (_enterCooldown) return;
+    _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350);
+    mainBtn();
+  }
 });
 
 document.addEventListener('keydown', function(e) {

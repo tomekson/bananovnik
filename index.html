@@ -1606,12 +1606,17 @@ function showResults() {
 
   const exam = S.selectedTest.exam;
   const examEl = document.getElementById('r-exam');
-  if (exam && exam.openPoints > 0) {
+  if (exam && tot >= exam.questionCount) {
     const examFromTest = Math.floor(pct * exam.testPoints);
     const passes = examFromTest >= exam.passPoints;
-    const msg = passes
-      ? `✓ ${examFromTest} / ${exam.testPoints} b. z uzavřených otázek — zkoušku složíte i bez otevřené otázky`
-      : `~${examFromTest} / ${exam.testPoints} b. z uzavřených otázek — ke složení zkoušky ještě chybí ${exam.passPoints - examFromTest} b. z otevřené otázky`;
+    const openLabel = exam.openCount > 1 ? 'otevřených otázek' : 'otevřené otázky';
+    const msg = exam.openCount > 0
+      ? (passes
+          ? `✓ zkoušku složíte i bez ${openLabel}`
+          : `ke složení zkoušky by bylo potřeba získat další alespoň ${exam.passPoints - examFromTest} body u ${openLabel}`)
+      : (passes
+          ? `✓ zkoušku složíte`
+          : `~${examFromTest} / ${exam.testPoints} b. — ke složení zkoušky je potřeba ${exam.passPoints} bodů`);
     examEl.innerHTML = `<div class="exam-note ${passes ? 'exam-note-pass' : 'exam-note-warn'}">${msg}</div>`;
   } else {
     examEl.innerHTML = '';

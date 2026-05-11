@@ -4,7 +4,7 @@
   "updatedAt": "2026-04-03",
   "rubric": "Zkouškový test: 60 min., 25 otázek po 4 bodech",
   "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
-  "exam": { "testPoints": 100, "openPoints": 0, "passPoints": 51, "questionCount": 25 },
+  "exam": { "testPoints": 100, "openPoints": 0, "passPoints": 51, "questionCount": 25, "openCount": 0 },
   "questions": [
     {
       "q": "Mezi paralingvistické prostředky komunikace nepatří",

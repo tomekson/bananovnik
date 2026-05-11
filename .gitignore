@@ -15,10 +15,11 @@ icons/5-dashboard.png
 graphify-out/manifest.json
 graphify-out/cost.json
 graphify-out/cache/
-graphify-out/.graphify_*                                                                     
+graphify-out/.graphify_*
 # Ignorovat všechna .md v obsidian/ - automaticky je generuje skill: /graphify export obsidian
 graphify-out/obsidian/*.md
 # Zachovat přehledy community (vyjímky z ignoru)
 !graphify-out/obsidian/_COMMUNITY_*.md
 # Obsidian personal settings (plugins, theme, workspace layout)
 graphify-out/obsidian/.obsidian/
+graphify-out/obsidian/graph.canvas

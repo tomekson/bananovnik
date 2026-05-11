@@ -4,6 +4,7 @@
   "updatedAt": "2026-04-24",
   "rubric": "Zkouškový test: 45 min., 16 otázek po 5 bodech + 1 otevřená za 20 bodů, pomůcka: kalkulačka",
   "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
+  "exam": { "testPoints": 80, "openPoints": 20, "passPoints": 51, "questionCount": 16 },
   "questions": [
     {
       "q": "Nevýhodou maticové organizační struktury je:",

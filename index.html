@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=5.35">
+<link rel="manifest" href="manifest.json?v=5.37">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Banánovník</title>
@@ -18,9 +18,9 @@
   --card2: #ede7b1;
   --line: rgba(0,0,0,0.05);
   --line2: rgba(0,0,0,0.09);
-  --blue: #2d8a4e;
-  --blue-bg: rgba(45,138,78,0.06);
-  --blue-mid: rgba(45,138,78,0.11);
+  --primary: #2d8a4e;
+  --primary-bg: rgba(45,138,78,0.06);
+  --primary-mid: rgba(45,138,78,0.11);
   --text: #1e293b;
   --muted: #a0aec0;
   --dim: #718096;
@@ -69,7 +69,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .logo-row { display: flex; align-items: center; justify-content: space-between; gap: 11px; }
 .logo-mark {
   width: 44px; height: 44px; border-radius: 12px;
-  background: var(--blue-bg); border: 1px solid var(--blue-mid);
+  background: var(--primary-bg); border: 1px solid var(--primary-mid);
   display: flex; align-items: center; justify-content: center; font-size: 20px;
   position: relative; isolation: isolate;
 }
@@ -77,13 +77,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   content: ''; position: absolute; inset: 0; border-radius: 12px;
   background: var(--yellow); opacity: .25; transform: translate(-3px, -3px); z-index: -1;
 }
-.logo-name { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); position: relative; isolation: isolate; }
+.logo-name { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); position: relative; isolation: isolate; }
 .logo-name::before {
   content: attr(data-text); position: absolute; top: 1.5px; left: 1.5px;
   color: var(--yellow); opacity: .5; z-index: -1;
 }
 .start-h { font-size: 30px; font-weight: 800; letter-spacing: -.6px; line-height: 1.15; position: relative; isolation: isolate; }
-.start-h em { font-style: normal; color: var(--blue); }
+.start-h em { font-style: normal; color: var(--primary); }
 .start-h::before {
   content: attr(data-text); position: absolute; top: 1.5px; left: 1.5px;
   color: var(--yellow); opacity: .5; z-index: -1; font-style: normal;
@@ -108,7 +108,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: var(--line2); transform: translate(6px, 6px); z-index: -1;
   transition: background .15s;
 }
-.mode-card.active { border-color: var(--blue); background: var(--blue-bg); }
+.mode-card.active { border-color: var(--primary); background: var(--primary-bg); }
 .mode-card.active::before { background: var(--yellow-mid); inset: -3px; border: 2px solid var(--yellow); }
 .mode-card:active:not(.active) { background: var(--card2); }
 .mode-radio {
@@ -118,10 +118,10 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   display: flex; align-items: center; justify-content: center;
   transition: border-color .15s;
 }
-.mode-card.active .mode-radio { border-color: var(--blue); }
+.mode-card.active .mode-radio { border-color: var(--primary); }
 .mode-radio::after {
   content: ''; width: 10px; height: 10px; border-radius: 50%;
-  background: var(--blue); opacity: 0; transition: opacity .15s;
+  background: var(--primary); opacity: 0; transition: opacity .15s;
 }
 .mode-card.active .mode-radio::after { opacity: 1; }
 .mode-card-text {}
@@ -142,7 +142,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: var(--line2); transform: translate(3px, 3px); z-index: -1;
   transition: background .15s;
 }
-.cpill.active { background: var(--blue-bg); border-color: var(--blue); color: var(--blue); }
+.cpill.active { background: var(--primary-bg); border-color: var(--primary); color: var(--primary); }
 .cpill.active::before { background: var(--yellow-mid); inset: -3px; border: 2px solid var(--yellow); }
 .cpill:active:not(.active) { background: var(--card2); }
 
@@ -157,7 +157,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   transition: border-color .15s;
   position: relative; isolation: isolate;
 }
-.range-input:focus { border-color: var(--blue); background: var(--yellow-bg); box-shadow: 6px 6px 0 0 var(--yellow-mid); color: var(--blue); }
+.range-input:focus { border-color: var(--primary); background: var(--yellow-bg); box-shadow: 6px 6px 0 0 var(--yellow-mid); color: var(--primary); }
 .range-info { font-size: 13px; color: var(--dim); margin-top: 4px; }
 .range-info strong { color: var(--text); }
 .range-info.warn { color: var(--red); }
@@ -174,7 +174,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   transition: all .15s; -webkit-user-select: none; -webkit-appearance: none;
 }
 .seg-btn.active {
-  background: var(--blue-mid); color: var(--blue); font-weight: 700;
+  background: var(--primary-mid); color: var(--primary); font-weight: 700;
 
   border-radius: 100px; position: relative;
 }
@@ -199,7 +199,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: #d1d5db; border: none;
   position: relative; flex-shrink: 0; transition: background .2s;
 }
-.tog.on { background: var(--blue); }
+.tog.on { background: var(--primary); }
 .tog::after {
   content: ''; position: absolute; top: 3px; left: 3px;
   width: 21px; height: 21px; background: white; border-radius: 50%;
@@ -209,7 +209,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
 /* Start button */
 .btn-start {
-  background: var(--blue); color: white; border: none;
+  background: var(--primary); color: white; border: none;
   border-radius: var(--r); padding: 16px 24px;
   font-size: 17px; font-weight: 700; letter-spacing: -.2px;
   cursor: pointer; width: 100%;
@@ -245,20 +245,20 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .prog-label { font-size: 13px; color: var(--dim); font-weight: 500; }
 .prog-label b { color: var(--text); }
 .pbar { height: 4px; background: var(--card2); border-radius: 100px; overflow: hidden; }
-.pbar-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--yellow)); border-radius: 100px; transition: width .4s cubic-bezier(.4,0,.2,1); }
+.pbar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--yellow)); border-radius: 100px; transition: width .4s cubic-bezier(.4,0,.2,1); }
 .btn-nav { width: 28px; height: 28px; font-size: 18px; font-weight: 700; border-radius: 7px; border-color: var(--yellow); background: var(--yellow-bg); }
 .btn-nav:disabled { opacity: .25; cursor: default; }
 
 .quiz-body { padding: 20px 18px; padding-bottom: 140px; flex: 1; max-width: 640px; margin: 0 auto; width: 100%; }
 .q-num {
   font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase;
-  color: var(--blue); margin-bottom: 10px;
+  color: var(--primary); margin-bottom: 10px;
   font-family: 'SF Mono','Fira Code','Cascadia Code',monospace;
   display: flex; justify-content: space-between; align-items: center;
 }
 .q-num-orig { color: var(--muted); font-weight: 500; }
 .q-num-title { cursor: pointer; color: var(--muted); transition: color .15s; }
-.q-num-title:hover { color: var(--blue); }
+.q-num-title:hover { color: var(--primary); }
 .q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); }
 .q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; min-height: 28px; display: flex; align-items: center; gap: 8px; }
 .btn-copy-q {
@@ -267,7 +267,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   font-size: 11px; font-weight: 600; cursor: pointer; letter-spacing: .3px;
   opacity: .6; transition: all .15s;
 }
-.btn-copy-q:hover { opacity: 1; box-shadow: 3px 3px 0 0 var(--blue-mid); }
+.btn-copy-q:hover { opacity: 1; box-shadow: 3px 3px 0 0 var(--primary-mid); }
 .btn-copy-q:active { background: var(--line); }
 .btn-copy-q.copied { opacity: 1; color: var(--green); border-color: var(--green); background: var(--green-bg); }
 .q-hint.done { color: var(--dim); }
@@ -277,7 +277,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   font-size: 11px; font-weight: 600; cursor: pointer; letter-spacing: .3px;
   opacity: .6; transition: all .15s;
 }
-.hint-btn:hover { opacity: 1; box-shadow: 3px 3px 0 0 var(--blue-mid); }
+.hint-btn:hover { opacity: 1; box-shadow: 3px 3px 0 0 var(--primary-mid); }
 .hint-btn:active { background: var(--line); }
 
 .opts { display: flex; flex-direction: column; gap: 9px; margin-bottom: 18px; padding-right: 6px; padding-bottom: 6px; }
@@ -295,8 +295,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .opt:active:not(.locked) { background: var(--card2); }
 .opt.locked { cursor: default; }
-.opt.sel   { background: var(--blue-bg);   border-color: var(--yellow); }
-.opt.sel::before { background: var(--blue-mid); border: 1.5px solid rgba(45,138,78,.25); inset: -2px; }
+.opt.sel   { background: var(--primary-bg);   border-color: var(--yellow); }
+.opt.sel::before { background: var(--primary-mid); border: 1.5px solid rgba(45,138,78,.25); inset: -2px; }
 .opt.ok    { background: var(--green-bg);  border-color: rgba(21,128,61,.3); }
 .opt.ok::before { background: rgba(34,145,90,.15); border: 1.5px solid rgba(34,145,90,.25); inset: -2px; }
 .opt.bad   { background: var(--red-bg);    border-color: rgba(220,38,38,.3); }
@@ -430,13 +430,17 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   border-radius: 20px; padding: 28px 22px; text-align: center;
   box-shadow: var(--shadow);
 }
-.score-big { font-size: 80px; font-weight: 800; color: var(--blue); line-height: 1; letter-spacing: -5px; font-variant-numeric: tabular-nums; }
+.score-big { font-size: 80px; font-weight: 800; color: var(--primary); line-height: 1; letter-spacing: -5px; font-variant-numeric: tabular-nums; }
 .score-denom { font-size: 30px; font-weight: 400; color: var(--muted); letter-spacing: -1px; }
 .score-sub { font-size: 14px; color: var(--dim); margin-top: 8px; }
 .score-sub strong { color: var(--text); }
 .badge { display: inline-flex; align-items: center; gap: 6px; border-radius: 100px; padding: 6px 14px; font-size: 13px; font-weight: 600; margin-top: 12px; }
 .badge-pass { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,.2); position: relative; }
 .badge-fail { background: var(--red-bg);   color: var(--red);   border: 1px solid rgba(220,38,38,.2); }
+#r-exam:not(:empty) { margin-top: 10px; }
+.exam-note { font-size: 12px; line-height: 1.5; padding: 8px 12px; border-radius: 8px; text-align: left; }
+.exam-note-pass { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,.15); }
+.exam-note-warn { background: var(--amber-bg); color: var(--amber); border: 1px solid rgba(198,123,26,.2); }
 
 /* banana confetti */
 .confetti-banana {
@@ -517,6 +521,21 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   content: 'chybná'; position: absolute; top: 6px; right: 10px;
   font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
   color: var(--muted); opacity: .6;
+}
+.opt.study-neutral {
+  opacity: 1;
+}
+.opt.study-neutral .opt-box {
+  background: var(--card2); border-color: var(--line2); color: var(--muted);
+  font-weight: 600; font-size: 13px;
+}
+.opt.study-neutral .opt-txt { color: var(--text); font-weight: 500; }
+#study-reveal-answers-box {
+  padding: 0 0 18px; display: flex; justify-content: center;
+}
+.btn-reveal-answers {
+  background: var(--card2); color: var(--text);
+  border-color: var(--line2);
 }
 .study-recall-wrap {
   padding: 28px 18px 36px;
@@ -646,12 +665,12 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   100% { background: rgba(45,138,78,.08); border-color: rgba(45,138,78,.15); }
 }
 @keyframes logoShadowRipen {
-  0%   { background: var(--blue); opacity: .2; }
+  0%   { background: var(--primary); opacity: .2; }
   60%  { background: var(--yellow); opacity: .3; }
   100% { background: var(--yellow); opacity: .25; }
 }
 @keyframes logoSettle {
-  to { background: var(--blue-bg); border-color: var(--blue-mid); }
+  to { background: var(--primary-bg); border-color: var(--primary-mid); }
 }
 @keyframes logoShadowSettle {
   to { background: var(--yellow); opacity: .25; }
@@ -662,7 +681,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   20%  { color: var(--yellow); transform: translate(-2px,1px); }
   40%  { color: rgba(111,9,17,.8); transform: translate(1px,-1px); }
   60%  { color: #fff; transform: translate(-1px,1px); }
-  80%  { color: var(--blue); transform: translate(1px,0); }
+  80%  { color: var(--primary); transform: translate(1px,0); }
   100% { color: var(--amber); transform: translate(-1px,1px); }
 }
 @keyframes textShadowDrizzle {
@@ -675,7 +694,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 @keyframes textSettle {
   from { transform: translate(-1px,1px); }
-  to   { color: var(--blue); transform: translate(0,0); }
+  to   { color: var(--primary); transform: translate(0,0); }
 }
 @keyframes textShadowSettle {
   to { color: #E8E8E8; opacity: 1; transform: translate(1.5px,1.5px); }
@@ -745,7 +764,9 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       <div class="start-h" id="start-test-title"></div>
       <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;" id="start-meta"></div>
       <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</div>
-      <div id="start-rubric" style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;white-space:pre-line;"></div>
+      <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">
+        <span id="start-rubric"></span><span id="start-scoring-note-sep" style="display:none;"> · </span><span id="start-scoring-note" style="display:none;"></span>
+      </div>
     </div>
 
     <!-- Procházení otázek (study mode) -->
@@ -755,25 +776,32 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
         <button class="seg-btn active" onclick="setSeg('study','direct')">✓ Přímo s odpověďmi</button>
         <button class="seg-btn"        onclick="setSeg('study','recall')">Active recall</button>
       </div>
-      <button class="btn-sec" style="margin-top:8px;width:100%;" onclick="startStudy()">Projít otázky →</button>
+      <button class="btn-sec" style="margin-top:8px;width:100%;text-align:center;position:relative;padding-right:40px;" onclick="startStudy()">Projít otázky<span style="position:absolute;right:20px;top:50%;transform:translateY(-50%);">→</span></button>
     </div>
 
     <!-- Testování -->
     <div class="sec" style="border-top:1px solid var(--line2);padding-top:18px;margin-top:4px;">
-      <div class="sec-label">Testování</div>
+      <div class="sec-label">Testovací sada</div>
       <div class="mode-cards">
-        <div class="mode-card active" id="mode-all" onclick="setMode('all')">
-          <div class="mode-radio"></div>
-          <div class="mode-card-text">
-            <div class="mode-card-title">Všechny otázky (<span id="q-count-label">—</span>)</div>
-            <div class="mode-card-sub">Výběr náhodných otázek. Doporučujeme tímto začít.</div>
+        <button id="mode-exam" class="btn-sec" style="display:none;width:100%;text-align:left;padding:13px 40px 13px 16px;position:relative;" onclick="startExamSimulation()">
+          <div style="font-size:15px;font-weight:700;">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
+          <div style="font-size:13px;color:var(--dim);font-weight:400;margin-top:2px;">Náhodný výběr jako v reálné zkoušce.</div>
+          <span style="position:absolute;right:20px;top:50%;transform:translateY(-50%);">→</span>
+        </button>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div class="mode-card active" id="mode-all" onclick="setMode('all')">
+            <div class="mode-radio"></div>
+            <div class="mode-card-text">
+              <div class="mode-card-title">Komplet (<span id="q-count-label">—</span>)</div>
+              <div class="mode-card-sub">Náhodný výběr</div>
+            </div>
           </div>
-        </div>
-        <div class="mode-card" id="mode-range" onclick="setMode('range')">
-          <div class="mode-radio"></div>
-          <div class="mode-card-text">
-            <div class="mode-card-title">Rozsah otázek</div>
-            <div class="mode-card-sub">Rozděl si test podle svého.</div>
+          <div class="mode-card" id="mode-range" onclick="setMode('range')">
+            <div class="mode-radio"></div>
+            <div class="mode-card-text">
+              <div class="mode-card-title">Rozsah</div>
+              <div class="mode-card-sub">Vlastní výběr</div>
+            </div>
           </div>
         </div>
       </div>
@@ -789,7 +817,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
         <div class="cpill active" id="cp-0" onclick="setCount(0)">Vše</div>
       </div>
       <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
-        <input class="range-input" id="custom-count" type="number" min="1" placeholder="Vlastní počet" oninput="this.value=this.value.replace(/[^0-9]/g,'');setCustomCount()" onfocus="setCustomCount()" inputmode="numeric" style="flex:1;text-align:left;font-size:15px;font-weight:700;padding:10px 12px;" pattern="[0-9]*">
+        <input class="range-input" id="custom-count" type="text" placeholder="Vlastní počet" onkeydown="rangeKeydown(event)" oninput="this.value=this.value.replace(/[^0-9]/g,'');setCustomCount()" onfocus="setCustomCount()" inputmode="numeric" style="flex:1;text-align:left;font-size:15px;font-weight:700;padding:10px 12px;" pattern="[0-9]*">
       </div>
     </div>
 
@@ -798,11 +826,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       <div class="sec-label">Rozsah otázek</div>
       <div class="range-row">
         <label>Od</label>
-        <input class="range-input" id="range-from" type="number" min="1" value="1"
-               oninput="updateRangeInfo()" inputmode="numeric">
+        <input class="range-input" id="range-from" type="text" value="1"
+               onkeydown="rangeKeydown(event)"
+               oninput="this.value=this.value.replace(/[^0-9]/g,'');updateRangeInfo()" inputmode="numeric" pattern="[0-9]*">
         <label>do</label>
-        <input class="range-input" id="range-to"   type="number" min="1"
-               oninput="updateRangeInfo()" inputmode="numeric">
+        <input class="range-input" id="range-to" type="text"
+               onkeydown="rangeKeydown(event)"
+               oninput="this.value=this.value.replace(/[^0-9]/g,'');updateRangeInfo()" inputmode="numeric" pattern="[0-9]*">
       </div>
       <div class="range-info" id="range-info"></div>
     </div>
@@ -825,7 +855,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       </div>
     </div>
 
-    <div id="start-scoring-note" style="display:none;font-size:11px;color:var(--muted);margin-bottom:4px;line-height:1.5;text-align:center;"></div><button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test ↵</button>
+    <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test ↵</button>
 
     <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu"<!-- nebo „Menu - Instalovat aplikaci" -->.</div>
 
@@ -897,7 +927,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <div class="q-hint" id="study-q-hint"></div>
     <div id="study-recall-box" class="study-recall-wrap" style="display:none;">
       <div class="study-recall-hint">Zkus si nejprve odpověď připomenout sám, pak teprve odhal možnosti.</div>
-      <button class="btn-reveal" onclick="revealStudy()">Zobrazit možnosti</button>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+        <button class="btn-reveal" onclick="showStudyOptions()">Zobrazit jen možnosti</button>
+        <button class="btn-reveal btn-reveal-answers" onclick="revealStudy()">Zobrazit správné odpovědi</button>
+      </div>
+    </div>
+    <div id="study-reveal-answers-box" style="display:none;">
+      <button class="btn-reveal btn-reveal-answers" onclick="revealStudy()">Zobrazit správné odpovědi</button>
     </div>
     <div class="opts" id="study-opts"></div>
   </div>
@@ -924,6 +960,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
       </div>
       <div class="score-sub">Nezaokrouhleno: <strong id="r-raw">—</strong> b &nbsp;·&nbsp; Úspěšnost: <strong id="r-pct">—</strong></div>
       <div id="r-badge"></div>
+      <div id="r-exam"></div>
     </div>
     <div class="stats-grid">
       <div class="scel"><div class="scel-val g" id="r-full">—</div><div class="scel-lbl">Plný bod</div></div>
@@ -1062,6 +1099,26 @@ function setCustomCount() {
   cfg.count = val > 0 ? val : 0;
 }
 
+// Keyboard handler for numeric-only inputs — uses e.code to accept both
+// number row (Digit0-9) and numpad (Numpad0-9) regardless of Shift state
+function rangeKeydown(e) {
+  var nav = ['Backspace','Delete','ArrowLeft','ArrowRight','Tab','Home','End'];
+  if (nav.indexOf(e.key) !== -1) return;
+  var digit = null;
+  if (e.code && /^Digit[0-9]$/.test(e.code))  digit = e.code[5];
+  if (e.code && /^Numpad[0-9]$/.test(e.code)) digit = e.code[6];
+  if (digit !== null) {
+    e.preventDefault();
+    var el = e.target;
+    var s = el.selectionStart, end = el.selectionEnd;
+    el.value = el.value.slice(0, s) + digit + el.value.slice(end);
+    el.selectionStart = el.selectionEnd = s + 1;
+    el.dispatchEvent(new Event('input'));
+  } else {
+    e.preventDefault();
+  }
+}
+
 // Range info
 function updateRangeInfo() {
   if (cfg.mode !== 'range') return;
@@ -1075,8 +1132,9 @@ function updateRangeInfo() {
     info.className   = 'range-info warn';
     info.textContent = `Neplatný rozsah — zadejte hodnoty 1 až ${total}`;
   } else {
+    const label = count === 1 ? 'náhodnou otázku' : count >= 2 && count <= 4 ? 'náhodné otázky' : 'náhodných otázek';
     info.className   = 'range-info';
-    info.innerHTML   = `→ <strong>${count}</strong> otázek (z celkem ${total})`;
+    info.innerHTML   = `Test bude mít <strong>${count}</strong> ${label} (z celkem ${total})`;
   }
   updateStartBtn();
 }
@@ -1156,10 +1214,10 @@ function renderDashboard() {
 
 async function selectTest(id) {
   try {
+    const reg = TESTS_REGISTRY.find(t => t.id === id);
     let test = loadedTests[id];
     if (!test) {
-      const reg = TESTS_REGISTRY.find(t => t.id === id);
-      const res = await fetch('tests/' + reg.file);
+      const res = await fetch('tests/' + reg.file + '?v=' + APP_VERSION);
       test = await res.json();
       loadedTests[id] = test;
     }
@@ -1171,10 +1229,24 @@ async function selectTest(id) {
     titleEl.innerHTML = `<em>${test.title}</em>`;
     document.getElementById('start-meta').textContent = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt);
     document.getElementById('start-rubric').textContent = test.rubric || '';
+    const examCard = document.getElementById('mode-exam');
+    if (test.exam && test.exam.questionCount) {
+      document.getElementById('exam-q-count').textContent = test.exam.questionCount;
+      examCard.style.display = 'block';
+      document.getElementById('mode-all').classList.remove('active');
+      document.getElementById('mode-range').classList.remove('active');
+      document.getElementById('count-section').style.display = 'none';
+      document.getElementById('range-section').style.display = 'none';
+    } else {
+      examCard.style.display = 'none';
+      setMode('all');
+    }
     const snEl = document.getElementById('start-scoring-note');
     const snText = formatTestScoringNote(test.format);
-    if (snText) { snEl.textContent = snText; snEl.style.display = ''; }
-    else { snEl.style.display = 'none'; }
+    const snSep = document.getElementById('start-scoring-note-sep');
+    const hasRubric = !!(test.rubric);
+    if (snText) { snEl.textContent = snText; snEl.style.display = ''; snSep.style.display = hasRubric ? '' : 'none'; }
+    else { snEl.style.display = 'none'; snSep.style.display = 'none'; }
     document.getElementById('q-count-label').textContent = total;
     document.getElementById('range-to').value = total;
     updateRangeInfo();
@@ -1239,6 +1311,14 @@ function startQuiz() {
 
   show('screen-quiz');
   renderQ();
+}
+
+function startExamSimulation() {
+  const exam = S.selectedTest.exam;
+  cfg.mode = 'all';
+  cfg.count = exam.questionCount;
+  cfg.qorder = 'random';
+  startQuiz();
 }
 
 // ─────────────────────────────────────────────────────────────────
@@ -1524,6 +1604,19 @@ function showResults() {
     ? '<div class="badge badge-pass">✓ Test úspěšně složen</div>'
     : '<div class="badge badge-fail">✗ Test nesplněn</div>';
 
+  const exam = S.selectedTest.exam;
+  const examEl = document.getElementById('r-exam');
+  if (exam && exam.openPoints > 0) {
+    const examFromTest = Math.floor(pct * exam.testPoints);
+    const passes = examFromTest >= exam.passPoints;
+    const msg = passes
+      ? `✓ ${examFromTest} / ${exam.testPoints} b. z uzavřených otázek — zkoušku složíte i bez otevřené otázky`
+      : `~${examFromTest} / ${exam.testPoints} b. z uzavřených otázek — ke složení zkoušky ještě chybí ${exam.passPoints - examFromTest} b. z otevřené otázky`;
+    examEl.innerHTML = `<div class="exam-note ${passes ? 'exam-note-pass' : 'exam-note-warn'}">${msg}</div>`;
+  } else {
+    examEl.innerHTML = '';
+  }
+
   const hasWrong = src.some(s => s < 1);
   document.getElementById('btn-retry-wrong').style.display = hasWrong ? '' : 'none';
 
@@ -1680,6 +1773,7 @@ function startStudy() {
     questions,
     cur: 0,
     revealed: questions.map(() => cfg.study !== 'recall'),
+    optionsShown: questions.map(() => cfg.study !== 'recall'),
     studyHintUsed: questions.map(() => false),
     prevScreen: null,
   };
@@ -1715,21 +1809,31 @@ function renderStudy() {
   }
 
   const recallBox = document.getElementById('study-recall-box');
+  const revealAnswersBox = document.getElementById('study-reveal-answers-box');
   const optsEl = document.getElementById('study-opts');
+  const isOptionsShown = S.optionsShown[n];
 
-  if (!isRevealed) {
+  if (!isOptionsShown) {
     recallBox.style.display = '';
+    revealAnswersBox.style.display = 'none';
     optsEl.innerHTML = '';
     optsEl.style.display = 'none';
   } else {
     recallBox.style.display = 'none';
+    revealAnswersBox.style.display = isRevealed ? 'none' : '';
     optsEl.style.display = '';
     optsEl.innerHTML = '';
     q.opts.forEach((txt, i) => {
       const isCorrect = correctSet.has(i);
       const ltr = LETTERS[i] || '';
-      const cls = 'opt locked ' + (isCorrect ? 'study-correct' : 'study-wrong');
-      const box = isCorrect ? '✓' : '✗';
+      let cls, box;
+      if (isRevealed) {
+        cls = 'opt locked ' + (isCorrect ? 'study-correct' : 'study-wrong');
+        box = isCorrect ? '✓' : '✗';
+      } else {
+        cls = 'opt locked study-neutral';
+        box = ltr || String(i + 1);
+      }
       const d = document.createElement('div');
       d.className = cls;
       d.innerHTML = `<div class="opt-box">${box}</div><div class="opt-txt">${txt}</div>`;
@@ -1748,7 +1852,13 @@ function renderStudy() {
   setTimeout(syncBodyPadding, 50);
 }
 
+function showStudyOptions() {
+  S.optionsShown[S.cur] = true;
+  renderStudy();
+}
+
 function revealStudy() {
+  S.optionsShown[S.cur] = true;
   S.revealed[S.cur] = true;
   renderStudy();
 }
@@ -1877,7 +1987,7 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'ArrowRight') { e.preventDefault(); goStudy(1); return; }
   if (e.key === 'ArrowLeft')  { e.preventDefault(); goStudy(-1); return; }
   if (e.key === 'x' || e.key === 'X') { closeStudy(); return; }
-  if ((e.key === 'r' || e.key === 'R') && !S.revealed[S.cur]) { revealStudy(); return; }
+  if ((e.key === 'r' || e.key === 'R') && !S.revealed[S.cur]) { if (!S.optionsShown[S.cur]) { showStudyOptions(); } else { revealStudy(); } return; }
   if ((e.key === 'n' || e.key === 'N') && !S.revealed[S.cur] && !S.studyHintUsed[S.cur]) { S.studyHintUsed[S.cur] = true; renderStudy(); return; }
 });
 
@@ -1895,8 +2005,7 @@ function formatCorrectAnswersLabel(format) {
 
 function formatTestScoringNote(format) {
   if (!format) return null;
-  const typeLabel = format.type === 'multiple-choice' ? 'Multiple choice' : format.type;
-  return `${typeLabel} · ${formatCorrectAnswersLabel(format)}`;
+  return formatCorrectAnswersLabel(format);
 }
 
 // ─────────────────────────────────────────────────────────────────
@@ -1935,7 +2044,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.35';
+const APP_VERSION = '5.38';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 
@@ -2003,7 +2112,7 @@ if ('serviceWorker' in navigator) {
     pulling = false;
     if (ready) {
       ph.textContent = 'Aktualizuji...';
-      ph.style.color = 'var(--blue)';
+      ph.style.color = 'var(--primary)';
       sessionStorage.setItem('bananovnik-refreshed', '1');
       setTimeout(() => location.reload(), 400);
     } else {

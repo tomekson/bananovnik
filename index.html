@@ -124,7 +124,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: var(--primary); opacity: 0; transition: opacity .15s;
 }
 .mode-card.active .mode-radio::after { opacity: 1; }
-.mode-card-text {}
+.mode-card-text { flex: 1; min-width: 0; }
 .mode-card-title { font-size: 15px; font-weight: 600; }
 .mode-card-sub   { font-size: 13px; color: var(--dim); margin-top: 1px; }
 
@@ -783,11 +783,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <div class="sec" style="border-top:1px solid var(--line2);padding-top:18px;margin-top:4px;">
       <div class="sec-label">Testovací sada</div>
       <div class="mode-cards">
-        <button id="mode-exam" class="btn-sec" style="display:none;width:100%;text-align:left;padding:13px 40px 13px 16px;position:relative;" onclick="startExamSimulation()">
-          <div style="font-size:15px;font-weight:700;">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
-          <div style="font-size:13px;color:var(--dim);font-weight:400;margin-top:2px;">Náhodný výběr jako v reálné zkoušce.</div>
-          <span style="position:absolute;right:20px;top:50%;transform:translateY(-50%);">→</span>
-        </button>
+        <div id="mode-exam" class="mode-card" style="display:none;margin-bottom:8px;" onclick="selectExamMode()">
+          <div class="mode-radio"></div>
+          <div class="mode-card-text">
+            <div class="mode-card-title">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
+            <div class="mode-card-sub">Náhodný výběr jako v reálné zkoušce.</div>
+          </div>
+        </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
           <div class="mode-card active" id="mode-all" onclick="setMode('all')">
             <div class="mode-radio"></div>
@@ -847,7 +849,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     </div>
 
     <!-- Pořadí otázek -->
-    <div class="sec">
+    <div class="sec" id="qorder-section">
       <div class="sec-label">Pořadí otázek</div>
       <div class="seg" id="seg-qorder">
         <button class="seg-btn"        onclick="setSeg('qorder','random')">Náhodně</button>
@@ -1074,9 +1076,30 @@ function setMode(m) {
   cfg.mode = m;
   document.getElementById('mode-all').classList.toggle('active',   m === 'all');
   document.getElementById('mode-range').classList.toggle('active', m === 'range');
+  document.getElementById('mode-exam').classList.remove('active');
   document.getElementById('count-section').style.display = m === 'all'   ? '' : 'none';
   document.getElementById('range-section').style.display = m === 'range' ? '' : 'none';
+  const btnSeq = document.querySelector('#seg-qorder .seg-btn:last-child');
+  btnSeq.disabled = false;
+  btnSeq.style.opacity = '';
+  btnSeq.style.cursor = '';
   updateRangeInfo();
+  updateStartBtn();
+}
+
+function selectExamMode() {
+  cfg.mode = 'exam';
+  document.getElementById('mode-all').classList.remove('active');
+  document.getElementById('mode-range').classList.remove('active');
+  document.getElementById('mode-exam').classList.add('active');
+  document.getElementById('count-section').style.display = 'none';
+  document.getElementById('range-section').style.display = 'none';
+  setSeg('fb', 'after');
+  setSeg('qorder', 'random');
+  const btnSeq = document.querySelector('#seg-qorder .seg-btn:last-child');
+  btnSeq.disabled = true;
+  btnSeq.style.opacity = '0.35';
+  btnSeq.style.cursor = 'default';
   updateStartBtn();
 }
 
@@ -1229,16 +1252,13 @@ async function selectTest(id) {
     titleEl.innerHTML = `<em>${test.title}</em>`;
     document.getElementById('start-meta').textContent = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt);
     document.getElementById('start-rubric').textContent = test.rubric || '';
-    const examCard = document.getElementById('mode-exam');
+    const examBtn = document.getElementById('mode-exam');
     if (test.exam && test.exam.questionCount) {
       document.getElementById('exam-q-count').textContent = test.exam.questionCount;
-      examCard.style.display = 'block';
-      document.getElementById('mode-all').classList.remove('active');
-      document.getElementById('mode-range').classList.remove('active');
-      document.getElementById('count-section').style.display = 'none';
-      document.getElementById('range-section').style.display = 'none';
+      examBtn.style.display = '';
+      selectExamMode();
     } else {
-      examCard.style.display = 'none';
+      examBtn.style.display = 'none';
       setMode('all');
     }
     const snEl = document.getElementById('start-scoring-note');
@@ -1276,7 +1296,10 @@ function startQuiz() {
   const bank = S.selectedTest.questions;
   let pool;
 
-  if (cfg.mode === 'range') {
+  if (cfg.mode === 'exam') {
+    pool = shuffle(bank.map((q, i) => ({ ...q, _orig: i + 1 })));
+    pool = pool.slice(0, S.selectedTest.exam.questionCount);
+  } else if (cfg.mode === 'range') {
     const from = parseInt(document.getElementById('range-from').value) - 1;
     const to   = parseInt(document.getElementById('range-to').value);
     pool = bank.slice(from, to).map((q, i) => ({ ...q, _orig: from + i + 1 }));
@@ -1311,14 +1334,6 @@ function startQuiz() {
 
   show('screen-quiz');
   renderQ();
-}
-
-function startExamSimulation() {
-  const exam = S.selectedTest.exam;
-  cfg.mode = 'all';
-  cfg.count = exam.questionCount;
-  cfg.qorder = 'random';
-  startQuiz();
 }
 
 // ─────────────────────────────────────────────────────────────────
@@ -1612,7 +1627,7 @@ function showResults() {
     const openLabel = exam.openCount > 1 ? 'otevřených otázek' : 'otevřené otázky';
     const msg = exam.openCount > 0
       ? (passes
-          ? `✓ zkoušku složíte i bez ${openLabel}`
+          ? `Info: zkoušku složíte i bez ${openLabel}`
           : `ke složení zkoušky by bylo potřeba získat další alespoň ${exam.passPoints - examFromTest} body u ${openLabel}`)
       : (passes
           ? `✓ zkoušku složíte`

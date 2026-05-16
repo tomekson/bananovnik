@@ -1001,10 +1001,10 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 <!-- ════════════════════════ ABORT-TO-START DIALOG ══════════════ -->
 <div class="overlay" id="overlay-abort-start">
   <div class="dialog">
-    <div class="dialog-title">Ukončit test a přejít na nastavení?</div>
+    <div class="dialog-title">Ukončit test a přejít na procházení všech otázek?</div>
     <div class="dialog-body">Váš postup a skóre nebudou uloženy.</div>
     <div class="dialog-btns">
-      <button class="btn-danger" onclick="doAbortToStart()">Ukončit a přejít na nastavení</button>
+      <button class="btn-danger" onclick="doAbortToStart()">Ukončit a přejít na procházení otázek</button>
       <button class="btn-start"  onclick="closeAbortToStart()">Pokračovat v testu</button>
     </div>
   </div>
@@ -1981,7 +1981,7 @@ function goToDashboard() { sessionStorage.removeItem('bananovnik-last-test'); sh
 function doAbort()    { closeAbort(); _savedStudyState = null; show('screen-start'); }
 function askAbortToStart()  { document.getElementById('overlay-abort-start').classList.add('show'); }
 function closeAbortToStart(){ document.getElementById('overlay-abort-start').classList.remove('show'); }
-function doAbortToStart()   { closeAbortToStart(); _savedStudyState = null; show('screen-start'); }
+function doAbortToStart()   { const origIdx = S.questions[S.cur]._orig - 1; closeAbortToStart(); startStudy(); S.cur = origIdx; renderStudy(); }
 
 // ─────────────────────────────────────────────────────────────────
 // Helpers

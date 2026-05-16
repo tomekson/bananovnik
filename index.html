@@ -411,6 +411,14 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .dash-card-title { font-size: 16px; font-weight: 700; color: var(--text); }
 .dash-card-sub { font-size: 13px; color: var(--dim); margin-top: 4px; font-weight: 500; }
+.dash-card--retired { opacity: .45; }
+.dash-card--retired .dash-card-title { color: var(--dim); }
+.dash-card-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+  color: var(--dim); background: rgba(0,0,0,.06); border-radius: 5px;
+  padding: 2px 7px; margin-bottom: 6px;
+}
 .dash-empty { font-size: 14px; color: var(--muted); }
 .btn-back-dash {
   background: none; border: none; padding: 0; margin: 0;
@@ -783,7 +791,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <div class="sec" style="border-top:1px solid var(--line2);padding-top:18px;margin-top:4px;">
       <div class="sec-label">Testovací sada</div>
       <div class="mode-cards">
-        <div id="mode-exam" class="mode-card" style="display:none;margin-bottom:8px;" onclick="selectExamMode()">
+        <div id="mode-exam" class="mode-card" style="display:none;margin-bottom:8px;" onclick="selectExamMode()" ondblclick="selectExamMode();startQuiz()">
           <div class="mode-radio"></div>
           <div class="mode-card-text">
             <div class="mode-card-title">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
@@ -794,15 +802,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
           <div class="mode-card active" id="mode-all" onclick="setMode('all')">
             <div class="mode-radio"></div>
             <div class="mode-card-text">
-              <div class="mode-card-title">Komplet (<span id="q-count-label">—</span>)</div>
-              <div class="mode-card-sub">Náhodný výběr</div>
+              <div class="mode-card-title">Všechny otázky</div>
             </div>
           </div>
           <div class="mode-card" id="mode-range" onclick="setMode('range')">
             <div class="mode-radio"></div>
             <div class="mode-card-text">
-              <div class="mode-card-title">Rozsah</div>
-              <div class="mode-card-sub">Vlastní výběr</div>
+              <div class="mode-card-title">Vlastní rozsah</div>
             </div>
           </div>
         </div>
@@ -1094,7 +1100,6 @@ function selectExamMode() {
   document.getElementById('mode-exam').classList.add('active');
   document.getElementById('count-section').style.display = 'none';
   document.getElementById('range-section').style.display = 'none';
-  setSeg('fb', 'after');
   setSeg('qorder', 'random');
   const btnSeq = document.querySelector('#seg-qorder .seg-btn:last-child');
   btnSeq.disabled = true;
@@ -1182,25 +1187,35 @@ function updateStartBtn() {
 // ─────────────────────────────────────────────────────────────────
 const TESTS_REGISTRY = [
   {
+    id: 'pravo',
+    file: 'pravo.json',
+    title: 'Právo a právní prostředí',
+    updatedAt: '2026-05-16',
+    questionCount: 68
+  },
+  {
     id: 'komunikace',
     file: 'komunikace.json',
     title: 'Komunikace a komunikační dovednosti',
     updatedAt: '2026-04-03',
-    questionCount: 103
+    questionCount: 103,
+    retired: true
   },
   {
     id: 'management',
     file: 'management.json',
     title: 'Management',
     updatedAt: '2026-04-24',
-    questionCount: 86
+    questionCount: 86,
+    retired: true
   },
   {
     id: 'management-stare',
     file: 'management-stare.json',
     title: 'Management (starší verze testu)',
     updatedAt: '2026-04-24',
-    questionCount: 14
+    questionCount: 14,
+    retired: true
   }
 ];
 
@@ -1228,8 +1243,9 @@ function renderDashboard() {
   }
   TESTS_REGISTRY.forEach(t => {
     const card = document.createElement('button');
-    card.className = 'dash-card';
-    card.innerHTML = `<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} otázek · aktualizováno ${formatDate(t.updatedAt)}</div>`;
+    card.className = 'dash-card' + (t.retired ? ' dash-card--retired' : '');
+    const badge = t.retired ? `<div class="dash-card-badge">✓ Splněno</div>` : '';
+    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} otázek · aktualizováno ${formatDate(t.updatedAt)}</div>`;
     card.onclick = () => selectTest(t.id);
     container.appendChild(card);
   });
@@ -1267,8 +1283,7 @@ async function selectTest(id) {
     const hasRubric = !!(test.rubric);
     if (snText) { snEl.textContent = snText; snEl.style.display = ''; snSep.style.display = hasRubric ? '' : 'none'; }
     else { snEl.style.display = 'none'; snSep.style.display = 'none'; }
-    document.getElementById('q-count-label').textContent = total;
-    document.getElementById('range-to').value = total;
+document.getElementById('range-to').value = total;
     updateRangeInfo();
     sessionStorage.setItem('bananovnik-last-test', id);
     show('screen-start');
@@ -1340,11 +1355,12 @@ function startQuiz() {
 // Render otázky
 // ─────────────────────────────────────────────────────────────────
 function renderQ() {
-  const n    = S.cur;
-  const q    = S.questions[n];
-  const tot  = S.questions.length;
-  const done = S.confirmed[n];
-  const sel  = S.answers[n];
+  const n      = S.cur;
+  const q      = S.questions[n];
+  const tot    = S.questions.length;
+  const isExam = cfg.mode === 'exam';
+  const done   = isExam ? false : S.confirmed[n];
+  const sel    = S.answers[n];
   const correctSet = new Set(q.correct);
   const LETTERS = ['1','2','3','4','5','6'];
 
@@ -1354,7 +1370,7 @@ function renderQ() {
   document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig"><span class="q-num-title" onclick="askAbortToStart()" title="Přejít na nastavení testu ${S.selectedTest.title}">č.${q._orig} v ${S.selectedTest.title}</span></span>`;
   document.getElementById('q-text').textContent    = q.q;
 
-  const ihned = cfg.fb === 'ihned' || !!S.returnToStudy;
+  const ihned = !isExam && (cfg.fb === 'ihned' || !!S.returnToStudy);
 
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
@@ -1444,7 +1460,12 @@ function renderQ() {
   const ftrRow = document.getElementById('ftr-row');
   const score  = S.scores[n];
 
-  if (!done) {
+  if (isExam) {
+    btn.textContent   = n < tot - 1 ? 'Další otázka ↵' : 'Dokončit zkoušku ↵';
+    btn.style.opacity = '1';
+    btn.style.display = '';
+    ftrRow.style.display = 'none';
+  } else if (!done) {
     btn.textContent   = 'Potvrdit ↵';
     btn.style.opacity = sel.length === 0 ? '0.4' : '1';
     btn.style.display = '';
@@ -1565,6 +1586,25 @@ function toggleOpt(i) {
 
 function mainBtn() {
   const n = S.cur;
+  if (cfg.mode === 'exam') {
+    if (n < S.questions.length - 1) { S.cur++; window.scrollTo(0, 0); renderQ(); }
+    else {
+      S.questions.forEach((q, i) => {
+        const sel = S.answers[i];
+        const correctSet = new Set(q.correct);
+        const hasWrong = sel.some(x => !correctSet.has(x));
+        const score = (!hasWrong && sel.length > 0)
+          ? Math.floor(sel.filter(x => correctSet.has(x)).length / q.correct.length * 100) / 100
+          : 0;
+        S.scores[i] = score;
+        S.firstScores[i] = score;
+        S.firstAnswers[i] = [...sel];
+        S.confirmed[i] = true;
+      });
+      showResults();
+    }
+    return;
+  }
   if (!S.confirmed[n]) {
     if (S.answers[n].length === 0) return;
     const q         = S.questions[n];
@@ -1938,7 +1978,7 @@ function askAbort() {
 }
 function closeAbort() { document.getElementById('overlay-abort').classList.remove('show'); }
 function goToDashboard() { sessionStorage.removeItem('bananovnik-last-test'); show('screen-dashboard'); }
-function doAbort()    { closeAbort(); _savedStudyState = null; goToDashboard(); }
+function doAbort()    { closeAbort(); _savedStudyState = null; show('screen-start'); }
 function askAbortToStart()  { document.getElementById('overlay-abort-start').classList.add('show'); }
 function closeAbortToStart(){ document.getElementById('overlay-abort-start').classList.remove('show'); }
 function doAbortToStart()   { closeAbortToStart(); _savedStudyState = null; show('screen-start'); }
@@ -2064,7 +2104,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.38';
+const APP_VERSION = '5.50';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -7,6 +7,13 @@
       "title": "Komunikace a komunikační dovednosti",
       "updatedAt": "2026-04-03",
       "questionCount": 103
+    },
+    {
+      "id": "pravo",
+      "file": "pravo.json",
+      "title": "Právo a právní prostředí",
+      "updatedAt": "2026-05-16",
+      "questionCount": 68
     }
   ]
 }

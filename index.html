@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=5.37">
+<link rel="manifest" href="manifest.json?v=5.60">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Banánovník</title>
@@ -784,7 +784,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
         <button class="seg-btn active" onclick="setSeg('study','direct')">✓ Přímo s odpověďmi</button>
         <button class="seg-btn"        onclick="setSeg('study','recall')">Active recall</button>
       </div>
-      <button class="btn-sec" style="margin-top:8px;width:100%;text-align:center;position:relative;padding-right:40px;" onclick="startStudy()">Projít otázky<span style="position:absolute;right:20px;top:50%;transform:translateY(-50%);">→</span></button>
+      <button class="btn-sec" style="margin-top:8px;width:100%;text-align:center;position:relative;padding-right:40px;" onclick="startStudy()">Procházení otázek a tisk testu<span style="position:absolute;right:20px;top:50%;transform:translateY(-50%);">→</span></button>
     </div>
 
     <!-- Testování -->
@@ -923,7 +923,10 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
           <span class="prog-label"><b id="study-cur">1</b> / <span id="study-tot">—</span></span>
           <button class="btn-ico btn-nav" id="btn-study-next" onclick="goStudy(1)">›</button>
         </div>
-        <span style="font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);">Procházení</span>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);">Procházení</span>
+          <button class="btn-ico" onclick="printStudy()" title="Tisknout všechny otázky se správnými odpověďmi" style="font-size:11px;padding:0 7px;width:auto;">Tisk</button>
+        </div>
       </div>
       <div class="pbar"><div class="pbar-fill" id="study-pbar"></div></div>
     </div>
@@ -1101,10 +1104,6 @@ function selectExamMode() {
   document.getElementById('count-section').style.display = 'none';
   document.getElementById('range-section').style.display = 'none';
   setSeg('qorder', 'random');
-  const btnSeq = document.querySelector('#seg-qorder .seg-btn:last-child');
-  btnSeq.disabled = true;
-  btnSeq.style.opacity = '0.35';
-  btnSeq.style.cursor = 'default';
   updateStartBtn();
 }
 
@@ -1187,8 +1186,22 @@ function updateStartBtn() {
 // ─────────────────────────────────────────────────────────────────
 const TESTS_REGISTRY = [
   {
+    id: 'etika-spolecenska-odpovednost',
+    file: 'etika-spolecenska-odpovednost.json',
+    title: 'Etika a společenská odpovědnost (rozpracováno)',
+    updatedAt: '2026-05-17',
+    questionCount: 51
+  },
+  {
+    id: 'manazerska-ekonomie',
+    file: 'manazerska-ekonomie.json',
+    title: 'Manažerská ekonomie (rozpracováno)',
+    updatedAt: '2026-05-16',
+    questionCount: 125
+  },
+  {
     id: 'pravo',
-    file: 'pravo.json',
+    file: 'pravo-prostredi.json',
     title: 'Právo a právní prostředí',
     updatedAt: '2026-05-16',
     questionCount: 68
@@ -1245,7 +1258,8 @@ function renderDashboard() {
     const card = document.createElement('button');
     card.className = 'dash-card' + (t.retired ? ' dash-card--retired' : '');
     const badge = t.retired ? `<div class="dash-card-badge">✓ Splněno</div>` : '';
-    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} otázek · aktualizováno ${formatDate(t.updatedAt)}</div>`;
+    const qLabel = t.questionCount === 1 ? 'otázka' : t.questionCount >= 2 && t.questionCount <= 4 ? 'otázky' : 'otázek';
+    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} ${qLabel} · aktualizováno ${formatDate(t.updatedAt)}</div>`;
     card.onclick = () => selectTest(t.id);
     container.appendChild(card);
   });
@@ -1314,6 +1328,7 @@ function startQuiz() {
   if (cfg.mode === 'exam') {
     pool = shuffle(bank.map((q, i) => ({ ...q, _orig: i + 1 })));
     pool = pool.slice(0, S.selectedTest.exam.questionCount);
+    if (cfg.qorder === 'seq') pool.sort((a, b) => a._orig - b._orig);
   } else if (cfg.mode === 'range') {
     const from = parseInt(document.getElementById('range-from').value) - 1;
     const to   = parseInt(document.getElementById('range-to').value);
@@ -1359,7 +1374,7 @@ function renderQ() {
   const q      = S.questions[n];
   const tot    = S.questions.length;
   const isExam = cfg.mode === 'exam';
-  const done   = isExam ? false : S.confirmed[n];
+  const done   = S.confirmed[n];
   const sel    = S.answers[n];
   const correctSet = new Set(q.correct);
   const LETTERS = ['1','2','3','4','5','6'];
@@ -1370,7 +1385,7 @@ function renderQ() {
   document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig"><span class="q-num-title" onclick="askAbortToStart()" title="Přejít na nastavení testu ${S.selectedTest.title}">č.${q._orig} v ${S.selectedTest.title}</span></span>`;
   document.getElementById('q-text').textContent    = q.q;
 
-  const ihned = !isExam && (cfg.fb === 'ihned' || !!S.returnToStudy);
+  const ihned = cfg.fb === 'ihned' || !!S.returnToStudy;
 
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
@@ -1460,7 +1475,7 @@ function renderQ() {
   const ftrRow = document.getElementById('ftr-row');
   const score  = S.scores[n];
 
-  if (isExam) {
+  if (isExam && cfg.fb === 'after') {
     btn.textContent   = n < tot - 1 ? 'Další otázka ↵' : 'Dokončit zkoušku ↵';
     btn.style.opacity = '1';
     btn.style.display = '';
@@ -1479,7 +1494,7 @@ function renderQ() {
   } else {
     btn.style.display = '';
     ftrRow.style.display = 'none';
-    btn.textContent = n < tot - 1 ? 'Další otázka ↵' : (S.returnToStudy ? 'Zpět na procházení ↵' : 'Zobrazit výsledky ↵');
+    btn.textContent = n < tot - 1 ? 'Další otázka ↵' : (S.returnToStudy ? 'Zpět na procházení ↵' : (isExam ? 'Dokončit zkoušku ↵' : 'Zobrazit výsledky ↵'));
     btn.style.opacity = '1';
   }
 
@@ -1586,7 +1601,7 @@ function toggleOpt(i) {
 
 function mainBtn() {
   const n = S.cur;
-  if (cfg.mode === 'exam') {
+  if (cfg.mode === 'exam' && cfg.fb === 'after') {
     if (n < S.questions.length - 1) { S.cur++; window.scrollTo(0, 0); renderQ(); }
     else {
       S.questions.forEach((q, i) => {
@@ -1912,6 +1927,73 @@ function renderStudy() {
   setTimeout(syncBodyPadding, 50);
 }
 
+function printStudy() {
+  const questions = S.questions;
+  const title = S.selectedTest.title;
+
+  let body = '';
+  questions.forEach((q, qi) => {
+    const correctSet = new Set(q.correct);
+    const sorted = q.opts
+      .map((txt, i) => ({ txt, isCorrect: correctSet.has(i) }))
+      .sort((a, b) => (b.isCorrect ? 1 : 0) - (a.isCorrect ? 1 : 0));
+
+    const optsHtml = sorted.map(o => {
+      if (o.isCorrect) {
+        return `<div class="opt correct"><span class="box">✓</span><span class="txt">${o.txt}</span></div>`;
+      } else {
+        return `<div class="opt wrong"><span class="box">✗</span><span class="txt">${o.txt}</span></div>`;
+      }
+    }).join('');
+
+    body += `<div class="question">
+      <div class="q-header">
+        <span class="q-num">Otázka ${qi + 1}</span>
+      </div>
+      <div class="q-text">${q.q}</div>
+      <div class="opts">${optsHtml}</div>
+    </div>`;
+  });
+
+  const html = `<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>Tisk — ${title}</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 10.5pt; color: #000; background: #fff; padding: 14mm 16mm; }
+  h1 { font-size: 13pt; font-weight: 700; margin-bottom: 2mm; }
+  .meta { font-size: 9pt; color: #555; margin-bottom: 8mm; padding-bottom: 4mm; border-bottom: 2px solid #000; }
+  .question { page-break-inside: avoid; margin-bottom: 7mm; padding-bottom: 6mm; border-bottom: 1px solid #bbb; }
+  .q-header { margin-bottom: 1.5mm; }
+  .q-num { font-size: 8pt; font-weight: 700; letter-spacing: 0.8pt; text-transform: uppercase; color: #555; }
+  .q-text { font-size: 10.5pt; font-weight: 600; margin-bottom: 3mm; line-height: 1.4; }
+  .opts { display: flex; flex-direction: column; gap: 1.5mm; }
+  .opt { display: flex; align-items: flex-start; gap: 3mm; padding: 1.5mm 2.5mm; }
+  .box { flex-shrink: 0; width: 13pt; font-size: 10pt; font-weight: 700; line-height: 1.5; text-align: center; }
+  .txt { line-height: 1.4; }
+  .opt.correct { border-left: 3pt solid #000; background: #f4f4f4; }
+  .opt.correct .box { }
+  .opt.correct .txt { font-weight: 700; }
+  .opt.wrong .box { color: #888; font-weight: 400; }
+  .opt.wrong .txt { color: #666; }
+  @media print { body { padding: 10mm 12mm; } }
+</style>
+</head>
+<body>
+<h1>${title}</h1>
+<div class="meta">Přehled otázek se správnými odpověďmi — ${questions.length} otázek</div>
+${body}
+</body>
+</html>`;
+
+  const w = window.open('', '_blank');
+  if (!w) { alert('Povolte vyskakovací okna pro tisk.'); return; }
+  w.document.write(html);
+  w.document.close();
+}
+
 function showStudyOptions() {
   S.optionsShown[S.cur] = true;
   renderStudy();
@@ -2104,7 +2186,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.50';
+const APP_VERSION = '5.60';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

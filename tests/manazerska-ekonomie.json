@@ -1,10 +1,10 @@
 {
   "id": "manazerska-ekonomie",
-  "title": "Manažerská ekonomie (rozpracováno)",
+  "title": "Manažerská ekonomie",
   "updatedAt": "2026-05-16",
-  "rubric": "Test z manažerské ekonomie (Bc.) — Primát.cz",
+  "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech",
   "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
-  "exam": { "testPoints": 80, "openPoints": 20, "passPoints": 51, "questionCount": 16, "openCount": 1 },
+  "exam": { "testPoints": 100, "openPoints": 0, "passPoints": 51, "questionCount": 20, "openCount": 0 },
   "questions": [
     {
       "q": "Nejvyšší rozdíl mezi TR a TC nastává tehdy, když:",

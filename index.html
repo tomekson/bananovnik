@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="manifest.json?v=5.60">
+<link rel="manifest" href="manifest.json?v=5.80">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Banánovník</title>
@@ -795,7 +795,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
           <div class="mode-radio"></div>
           <div class="mode-card-text">
             <div class="mode-card-title">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
-            <div class="mode-card-sub">Náhodný výběr jako v reálné zkoušce.</div>
+            <div class="mode-card-sub">Náhodný výběr + vyhodnocení odpovědí hned.</div>
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
@@ -1333,9 +1333,12 @@ function startQuiz() {
   let pool;
 
   if (cfg.mode === 'exam') {
-    pool = shuffle(bank.map((q, i) => ({ ...q, _orig: i + 1 })));
-    pool = pool.slice(0, S.selectedTest.exam.questionCount);
-    if (cfg.qorder === 'seq') pool.sort((a, b) => a._orig - b._orig);
+    const mapped = bank.map((q, i) => ({ ...q, _orig: i + 1 }));
+    if (cfg.qorder === 'seq') {
+      pool = mapped.slice(0, S.selectedTest.exam.questionCount);
+    } else {
+      pool = shuffle(mapped).slice(0, S.selectedTest.exam.questionCount);
+    }
   } else if (cfg.mode === 'range') {
     const from = parseInt(document.getElementById('range-from').value) - 1;
     const to   = parseInt(document.getElementById('range-to').value);
@@ -2193,7 +2196,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.75';
+const APP_VERSION = '5.80';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

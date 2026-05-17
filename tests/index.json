@@ -2,6 +2,13 @@
   "version": 1,
   "tests": [
     {
+      "id": "manazerska-ekonomie",
+      "file": "manazerska-ekonomie.json",
+      "title": "Manažerská ekonomie (rozpracováno)",
+      "updatedAt": "2026-05-16",
+      "questionCount": 3
+    },
+    {
       "id": "komunikace",
       "file": "komunikace.json",
       "title": "Komunikace a komunikační dovednosti",
@@ -10,10 +17,17 @@
     },
     {
       "id": "pravo",
-      "file": "pravo.json",
+      "file": "pravo-prostredi.json",
       "title": "Právo a právní prostředí",
       "updatedAt": "2026-05-16",
       "questionCount": 68
+    },
+    {
+      "id": "etika-spolecenska-odpovednost",
+      "file": "etika-spolecenska-odpovednost.json",
+      "title": "Etika a společenská odpovědnost (rozpracováno)",
+      "updatedAt": "2026-05-17",
+      "questionCount": 40
     }
   ]
 }

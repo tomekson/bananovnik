@@ -2,6 +2,13 @@
   "version": 1,
   "tests": [
     {
+      "id": "politologie-mezinarodni-vztahy",
+      "file": "politologie-mezinarodni-vztahy.json",
+      "title": "Politologie a mezinárodní vztahy",
+      "updatedAt": "2026-05-17",
+      "questionCount": 77
+    },
+    {
       "id": "manazerska-ekonomie",
       "file": "manazerska-ekonomie.json",
       "title": "Manažerská ekonomie",

@@ -1186,6 +1186,13 @@ function updateStartBtn() {
 // ─────────────────────────────────────────────────────────────────
 const TESTS_REGISTRY = [
   {
+    id: 'politologie-mezinarodni-vztahy',
+    file: 'politologie-mezinarodni-vztahy.json',
+    title: 'Politologie a mezinárodní vztahy',
+    updatedAt: '2026-05-17',
+    questionCount: 77
+  },
+  {
     id: 'etika-spolecenska-odpovednost',
     file: 'etika-spolecenska-odpovednost.json',
     title: 'Etika a společenská odpovědnost',
@@ -2186,7 +2193,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.60';
+const APP_VERSION = '5.75';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

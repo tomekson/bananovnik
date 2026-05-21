@@ -3,8 +3,17 @@
   "title": "Právo a právní prostředí",
   "updatedAt": "2026-05-16",
   "rubric": "Zkouškový test: 30 min., 20 otázek po 5 bodech",
-  "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
-  "exam": { "testPoints": 100, "openPoints": 0, "passPoints": 51, "questionCount": 20, "openCount": 0 },
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 20,
+    "openCount": 0
+  },
   "questions": [
     {
       "q": "Majitel domu nezajistil úklid a údržbu schodu před domem. Subjektivní promlčecí doba pro případné uplatnění nároku chodce, který se před domem zranil (a domnívá se, že za jeho zranění nese odpovědnost právě majitel domu) počíná běžet:",
@@ -15,7 +24,9 @@
         "od okamžiku, kdy chodec fakticky zjistí, kdo je tímto majitelem",
         "od okamžiku, kdy došlo k úrazu"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Věcí v právním smyslu:",
@@ -26,7 +37,11 @@
         "jsou také živá zvířata",
         "je také lidské tělo a jeho oddělitelné části"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "q": "Jaké právo vznikne kupujícímu po podpisu smlouvy o koupi nemovitosti, která se zapisuje do katastru?",
@@ -37,7 +52,9 @@
         "právo předkupní",
         "právo na zaplacení kupní ceny"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Narovnání je po právní stránce:",
@@ -48,7 +65,10 @@
         "jednostranným právním úkonem",
         "dvoustranným právním úkonem"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Při uzavírání smlouvy platí, že",
@@ -59,7 +79,11 @@
         "k přijetí nabídky (akceptaci) stačí projevit souhlas s ofertou",
         "není-li v nabídce (ofertě) stanoveno jinak, je lhůta pro přijetí ústně učiněné nabídky \"ihned\""
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Který z následujících subjektů má zákonodárnou iniciativu?",
@@ -70,7 +94,13 @@
         "poslanec",
         "skupina poslanců"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Promlčení znamená:",
@@ -81,7 +111,9 @@
         "je-li vznesena u soudu námitka promlčení, právo nemůže být soudem přisouzeno (přiznáno)",
         "zánik práva"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Způsobilost fyzické osoby mít práva a povinnosti:",
@@ -92,7 +124,10 @@
         "má i počaté dítě, narodí-li se živé",
         "zaniká zbavením způsobilosti k právním úkonům"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Správní právo:",
@@ -103,7 +138,10 @@
         "upravuje vztahy vůči spotřebitelům",
         "je soustředěno v jediném kodexu"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ]
     },
     {
       "q": "Jestliže je nárok žalobce promlčen:",
@@ -114,7 +152,9 @@
         "musí na to žalovaného upozornit soud",
         "může žalovaný vznést námitku prekluze"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Vlastnické právo je právem:",
@@ -125,7 +165,10 @@
         "věcným",
         "absolutním"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ]
     },
     {
       "q": "Smrtí dlužníka:",
@@ -136,7 +179,9 @@
         "zanikají jen ty závazky a dluhy, které jsou vázány na osobu zemřelého nebo u nichž to stanoví zákon",
         "zanikají jen ty závazky a dluhy, o nichž to dlužník v závěti výslovně prohlásí"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Smlouva o převodu nemovitostí:",
@@ -147,7 +192,9 @@
         "nemusí být v písemné formě",
         "může být uzavřena konkludentně"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Vlastnické právo k nemovitostem působí (resp. je možné se ho dovolat):",
@@ -158,7 +205,9 @@
         "absolutně (vůči všem)",
         "jen vůči oprávněným z věcných břemen"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Soustavu obecných soudů tvoří:",
@@ -169,7 +218,9 @@
         "okresní soudy, krajské soudy, vrchní soudy, Nejvyšší soud, Stálý rozhodčí soud",
         "okresní soudy, krajské soudy, vrchní soudy, Nejvyšší správní soud, Nejvyšší soud, Ústavní soud"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "O hospodaření společnou věcí rozhodují podíloví spoluvlastníci:",
@@ -180,7 +231,9 @@
         "losem",
         "pouze 1x ročně na výročné schůzi"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Způsobilost fyzické osoby vlastními právními úkony nabývat práv a brát na sebe povinnosti (svéprávnost) vzniká v plném rozsahu:",
@@ -191,7 +244,10 @@
         "dosažením 15. roku věku",
         "uzavřením manželství"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Ústava:",
@@ -202,7 +258,12 @@
         "je zákon nejvyšší právní síly",
         "je zákon upravující mimo jiné vztahy soukromého práva"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Výpověď smlouvy:",
@@ -213,7 +274,9 @@
         "je jednostranné právní jednání, které ruší od počátku právní poměr v okamžiku, kdy dojde druhé straně",
         "je jednostranné právní jednání, které ruší právní poměr od okamžiku, kdy dojde druhé straně"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Kupní smlouva se od smlouvy o dílo liší tím, že:",
@@ -224,7 +287,11 @@
         "za kupní smlouvu se vždy považuje, smlouva o dodání spotřebního zboží, které je nutné sestavit nebo vytvořit",
         "za smlouvu o dílo se nepovažuje smlouva, podle níž převážná část plnění dodavatele spočívá ve výkonu činnosti"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ]
     },
     {
       "q": "Bezdůvodné obohacení:",
@@ -235,7 +302,9 @@
         "Kdo se na úkor jiného bezdůvodně obohatí, musí obohacení vydat",
         "Kdo se na úkor jiného bezdůvodně obohatí, musí obohacení vrátit v dvojnásobné výši"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Zadržovacím právem je:",
@@ -246,7 +315,9 @@
         "právo věřitele, který je povinen vydat cizí movitou věc, kterou má u sebe, ji zadržet k zajištění své splatné pohledávky, kterou má proti dlužníkovi, kterému by jinak byl povinen věc vydat",
         "právo věřitele dát do zástavy věc dlužníka, kterou má věřitel u sebe"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Hypotéza právní normy:",
@@ -257,7 +328,9 @@
         "stanoví teoretická východiska pro tvorbu zákonů",
         "stanoví důsledky porušení zákona"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Postoupení dluhu znamená, že:",
@@ -268,7 +341,9 @@
         "jiná osoba ujedná s dlužníkem, že přejímá jeho dluh, a že nastoupí jako dlužník na jeho místo, dá-li k tomu věřitel souhlas původnímu dlužníku nebo přejímateli dluhu",
         "stejná osoba ujedná s dlužníkem, že přejímá jeho dluh, a že nastoupí jako dlužník na jeho místo, dá-li k tomu věřitel souhlas původnímu dlužníku nebo přejímateli dluhu"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Ručení znamená, že:",
@@ -279,7 +354,9 @@
         "jiná osoba věřiteli prohlásí, že ho neuspokojí, jestliže dlužník věřiteli svůj dluh nesplní",
         "jiná osoba věřiteli prohlásí, že ho uspokojí, jestliže dlužník věřiteli svůj dluh nesplní"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Bezdůvodným obohacením je:",
@@ -290,7 +367,12 @@
         "získání peněžní částky v důsledku soudního rozhodnutí, které bylo následně zrušeno",
         "jestliže někdo omylem přijme částku, která mu nepatří"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Občanské soudní řízení je zahájeno:",
@@ -301,7 +383,10 @@
         "odesláním žaloby na soud",
         "odesláním žaloby protistraně poštou"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ]
     },
     {
       "q": "V případě nájemné smlouvy dle OZ:",
@@ -312,7 +397,10 @@
         "může pronajímatel rušit nájemce v užívání věci, je-li starší 60 let",
         "je nájemce povinen užívat věc ke sjednanému účelu"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "V případě tzv. solidárního závazku (\"společně a nerozdílně\"):",
@@ -323,7 +411,9 @@
         "může za dlužníka ze solidarity plnit kdokoli jiný",
         "může dlužník splnit závazek také odevzdáním věci charitativní organizaci (diecézní charity, Člověk v tísni, apod.)"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Zástavní právo:",
@@ -334,7 +424,12 @@
         "je založeno na zákonu tzv. propadlé zástavy – nesplní-li dlužník svůj dluh, zástava nepropadá do majetku věřitele, ale musí být zpeněžena a věřitel se uspokojí z výtěžku tohoto zpeněžení (a zbytek odevzdá dlužníkovi)",
         "je spojeno s hlavním závazkem – zanikne-li dluh, zaniká i příslušné zástavní právo"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Příslušenství věci:",
@@ -345,7 +440,10 @@
         "je závazkové právo",
         "je věc, která má stejného vlastníka jako věc hlavní, je určena k tomu, aby se s věcí hlavní trvale užívala, nicméně lze ji od hlavní věci bez újmy oddělit"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "V případě počítání času dle OZ platí, že:",
@@ -356,7 +454,11 @@
         "lhůta nebo doba určená podle dnů počíná přesně od okamžiku skutečnosti rozhodné pro její počátek",
         "lhůta nebo doba určená v kratších jednotkách než dnech počíná přesně od okamžiku skutečnosti rozhodné pro její počátek"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "Právní norma kogentní:",
@@ -367,7 +469,9 @@
         "platí pouze pro orgány státu",
         "umožňuje účastníkům právních vztahů, aby se dohodli o vzájemných oprávněních a povinnostech"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Strom rostoucí na pozemku je po právní stránce:",
@@ -378,7 +482,9 @@
         "průmyslovým právem",
         "součástí pozemku"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Vlastnické právo k věci:",
@@ -389,7 +495,10 @@
         "může vzniknout pronájmem",
         "může zaniknout zničením věci"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "Precedens:",
@@ -400,7 +509,10 @@
         "je pramen práva typický pro angloamerický typ právní kultury",
         "je projevem zásady „iura novit curia\" (soud zná právo)"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Občanské soudní řízení:",
@@ -411,7 +523,9 @@
         "je vždy veřejné a veřejnost nemůže být nikdy vyloučena",
         "je neveřejné, jestliže se na tom účastníci dohodnou"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Započtení:",
@@ -422,7 +536,10 @@
         "je formou konsolidace rozvahy",
         "může být provedeno dohodou nebo jednostranným právním úkonem"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "Odstoupení od smlouvy:",
@@ -433,7 +550,9 @@
         "je jednostranný projev vůle smluvní strany, na základě některého dochází k ukončení právního poměru v tzv. ochranné lhůtě (max. 2 měsíce zpětně)",
         "je jednostranné právní jednání, které ruší právní poměr od okamžiku, kdy dojde druhé straně"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Soukromé právo spočívá zejména na zásadách, že:",
@@ -444,7 +563,12 @@
         "smlouvy mají být splněny",
         "vlastnické právo je chráněno zákonem"
       ],
-      "correct": [0, 1, 3, 4]
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Trestní právo je založeno na:",
@@ -455,7 +579,10 @@
         "principu presumpce viny",
         "principu objektivní odpovědnosti (tj. bez ohledu na zavinění)"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Právem absolutním (uplatňováním vůči všem, \"erga omnes\") je:",
@@ -466,7 +593,11 @@
         "vlastnické právo",
         "právo na plnění dluhu z dlužního úpisu"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "q": "Právní skutečností je:",
@@ -477,7 +608,12 @@
         "právní událost, jako například narození a smrt člověka, uplynutí časové lhůty",
         "okolnost, s níž právní norma spojuje vznik, změnu a zánik právního vztahu"
       ],
-      "correct": [0, 1, 3, 4]
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Pravomocné správní rozhodnutí:",
@@ -488,7 +624,9 @@
         "je přezkoumatelné soudem",
         "je přezkoumatelné příslušným ministrem"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Protiprávním úkonem je:",
@@ -499,7 +637,10 @@
         "jednání, které je porušením určité právní povinnosti",
         "opomenutí, které je porušením určité právní povinnosti"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ]
     },
     {
       "q": "Ručitel prohlásil před dvěma svědky, že peněžitou pohledávku věřitele za dlužníka uhradí, jestliže ji dlužník přes výzvu nezaplatí...",
@@ -510,7 +651,9 @@
         "ručitel není povinen pohledávku za dlužníka uhradit, jestliže dlužník má dost prostředků k úhradě, ale placení se vyhýbá",
         "ručitel není povinen pohledávku za dlužníka uhradit, jestliže věřitel před tím dlužníka nevyzval k úhradě dluhu"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Smlouva je uzavřena:",
@@ -521,7 +664,9 @@
         "jakmile začne na jejím základě jedna strana plnit",
         "jakmile si strany ujednaly její obsah souhlasným projevem vůle obou stran"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Právní osobnosti a svéprávnosti:",
@@ -532,7 +677,9 @@
         "je možné se vzdát rozhodnutím soudu",
         "je možné se vzdát jen z části podle duševní způsobilosti jedince"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Právo stavby:",
@@ -543,7 +690,10 @@
         "je právem stavebníka mít na cizím pozemku stavbu",
         "poskytuje stavebníkovi stejná práva jako nájemci"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Nemovitými věcmi jsou:",
@@ -554,7 +704,11 @@
         "všechny podzemní stavby",
         "pozemky"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Právní normy: (1)",
@@ -565,7 +719,10 @@
         "mohou obsahovat demonstrativní výčet prvků",
         "členíme na relevantní a absolutní"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Právní normy: (2)",
@@ -576,7 +733,10 @@
         "jsou závazné, konkrétní, vynutitelné",
         "jsou závazné, formální, obecné, vynutitelné"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Předpisy evropského práva:",
@@ -587,7 +747,9 @@
         "žádná z ostatních uvedených odpovědí není správná",
         "směrnice musí být implementovány (transponovány) jednotlivými zákony Parlamentu ČR"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Příčinná souvislost vyjadřuje vztah mezi:",
@@ -598,7 +760,9 @@
         "škůdcem a obětí",
         "protiprávním úkonem škůdce a zaviněním škůdce"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Výpověď smlouvy jednou ze smluvních stran:",
@@ -609,7 +773,9 @@
         "je totéž jako odstoupení od smlouvy",
         "je jednostranný právní úkon"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Pojem dobré mravy je definován:",
@@ -620,7 +786,9 @@
         "v občanském zákoníku",
         "v judikatuře soudů"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "V právním řádu ČR platí, že zákony: (1)",
@@ -631,7 +799,10 @@
         "členíme zákoníky a řády, které mají vyšší právní sílu a \"běžné\" zákony, které mají nižší právní sílu",
         "přijímá vždy Parlament ČR"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "Soudní moc v České republice vykonává:",
@@ -642,7 +813,9 @@
         "senát",
         "advokáti"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Udělení pokuty dopravním policistou:",
@@ -653,7 +826,10 @@
         "je rozhodnutím v trestním řízení",
         "je rozhodnutím ve správním řízení"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Vlastnické právo k nemovitosti, která se zapisuje do katastru, se nabývá okamžikem:",
@@ -664,7 +840,9 @@
         "vůči všem vyjma orgánů státního zastupitelství",
         "vůči všem vyjma dědiců majitele"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Ustanovení mezinárodní smlouvy uveřejněné ve Sbírce mezinárodních smluv, k jejíž ratifikaci dal souhlas Parlament ČR a kterou...",
@@ -675,7 +853,9 @@
         "je na stejné úrovni jako občanský zákoník a závisí na okolnostech případu",
         "má přednost před ustanovením občanského zákoníku, jestliže to potvrdí ministerstvo zahraničních věcí"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Součást věci:",
@@ -686,7 +866,10 @@
         "je vše, co k věci náleží a co od ní nemůže být odděleno, aniž by se tím věc znehodnotila",
         "tvoří s hlavní věcí jednu věc"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ]
     },
     {
       "q": "Manželé mají společné jmění manželů v zákonném režimu. Jeden z manželů až po uzavření manželství nabyl darem nemovitosti:",
@@ -697,7 +880,10 @@
         "výnos z pronájmu této nemovitosti patří do společného jmění manželů",
         "výnos z prodeje této nemovitosti patří do společného jmění manželů"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Při postoupení pohledávky:",
@@ -708,7 +894,10 @@
         "je nutné předem oznámit záměr postoupit pohledávku na příslušném státním zastupitelství",
         "není potřeba, aby s tímto postupem vyjádřil souhlas také dlužník"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Při uzavření smlouvy platí, že:",
@@ -719,7 +908,11 @@
         "k přijetí nabídky (akceptaci) stačí mlčet, je-li to tak vymíněno v ofertě",
         "nabídka (oferta) má obsahovat podstatné náležitosti smlouvy"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "Narození dítěte je z hlediska práva:",
@@ -730,18 +923,23 @@
         "právní skutečností",
         "jednostranným právním úkonem"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Promlčení: (bez záruky)",
       "opts": [
-        "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. Nedovolá-li se dlužník promlčení, lze promlčené právo věřiteli přiznat.",
-        "Právo zaniká, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka.",
-        "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne, je-li to v zájmu dlužníka.",
-        "Nastává prekluze, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka. Dovolá-li se dlužník promlčení, nelze promlčené právo věřiteli přiznat.",
-        "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka. Dovolá-li se dlužník promlčení, nelze promlčené právo věřiteli přiznat."
+        "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. Nedovolá-li se dlužník promlčení, lze promlčené právo věřiteli přiznat",
+        "Právo zaniká, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka",
+        "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne, je-li to v zájmu dlužníka",
+        "Nastává prekluze, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka. Dovolá-li se dlužník promlčení, nelze promlčené právo věřiteli přiznat",
+        "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka. Dovolá-li se dlužník promlčení, nelze promlčené právo věřiteli přiznat"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "V právním řádu ČR platí, že zákony: (2)",
@@ -752,7 +950,11 @@
         "jsou nejdůležitějším pramenem práva",
         "mají vyšší právní sílu než zákonná opatření Senátu"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     }
   ]
 }

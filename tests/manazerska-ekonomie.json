@@ -3,8 +3,17 @@
   "title": "Manažerská ekonomie",
   "updatedAt": "2026-05-16",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech",
-  "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
-  "exam": { "testPoints": 100, "openPoints": 0, "passPoints": 51, "questionCount": 20, "openCount": 0 },
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 20,
+    "openCount": 0
+  },
   "questions": [
     {
       "q": "Nejvyšší rozdíl mezi TR a TC nastává tehdy, když:",
@@ -15,7 +24,9 @@
         "AFC = AVC",
         "AR = AC"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Pokud z monopolisticky konkurenčního odvětví firmy v dlouhém období odcházejí, poptávková křivka po produkci jedné firmy se:",
@@ -26,7 +37,9 @@
         "stane se více elastickou",
         "posune doleva dolů"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Individuální nabídka statku. Pokud vzrostou ceny výrobních vstupů, platí následující tvrzení:",
@@ -37,7 +50,10 @@
         "vzroste nabídka",
         "klesne nabídka"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Ekonomický statek je ten, který:",
@@ -48,7 +64,9 @@
         "je užitečný",
         "byl vyroben vzácnými zdroji, jeho množství je omezené"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Firma maximalizující obrat, oproti firmě maximalizující zisk zpravidla:",
@@ -59,7 +77,10 @@
         "prodává větší objem produkce, ale za vyšší cenu",
         "prodává nižší objem produkce"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ]
     },
     {
       "q": "Pokud výnos z výrobních produktů roste proporcionálně s růstem rozsahu jejich zapojení do výroby, hovoříme o",
@@ -70,7 +91,9 @@
         "mezních výnosech z rozsahu",
         "konstantních výnosech z rozsahu"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Teorie spotřebitele. Pro bod nasycení vždy platí:",
@@ -81,7 +104,10 @@
         "mezní užitek je maximální",
         "mezní užitek je nulový"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "V případě monopolistické konkurence je v odvětví",
@@ -92,7 +118,10 @@
         "jeden velký výrobce a mnoho malých výrobců",
         "velký počet malých výrobců"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
@@ -103,7 +132,11 @@
         "cenu na trhu stanoví firmy v konkurenčním lemu",
         "poptávka po produkci dominantní firmy je méně elastická než poptávka tržní"
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ]
     },
     {
       "q": "Vztah mezi monopolem a monopsonem na trhu práce se v ekonomii nazývá:",
@@ -114,7 +147,9 @@
         "oligopson",
         "bilaterální monopol"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -125,7 +160,11 @@
         "spotřebitel je schopen sestavit preferenční stupnici",
         "užitek zboží je měřitelný"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Indiferenční křivka. Platí následující tvrzení:",
@@ -136,7 +175,10 @@
         "její sklon je dán podílem mezních užitků statků",
         "zachycuje veškeré kombinace množství dvou statků, které si spotřebitel může koupit za svůj důchod"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Pokud se jedná o cenově elastickou poptávku platí, že",
@@ -147,7 +189,11 @@
         "při poklesu ceny poptávané množství vzroste",
         "při poklesu ceny vzrostou výdaje spotřebitelů"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Náklady obětované příležitosti představují hodnotu:",
@@ -158,7 +204,10 @@
         "druhé nejlepší nerealizované alternativy",
         "nejhorší realizovatelné příležitosti"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Pro méněcenné statky bude hodnota koeficientu důchodové elasticity pravděpodobně:",
@@ -169,7 +218,9 @@
         "nulová",
         "kladná"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Odpisy (amortizace) kapitálových statků představují:",
@@ -180,7 +231,12 @@
         "část investic zvyšujících zásobu kapitálu",
         "součást výrobních nákladů firmy"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Firma maximalizující obrat vyrábí ve srovnání s firmou maximalizující zisk:",
@@ -191,7 +247,9 @@
         "nižší objem produkce za vyšší cenu",
         "vyšší objem produkce za vyšší cenu"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Mezní míra substituce statku A za statek B vyjadřuje:",
@@ -202,7 +260,10 @@
         "ochotu spotřebitele nahradit statek A statkem B při stejném celkovém užitku",
         "sklon indiferenční křivky"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ]
     },
     {
       "q": "Celkový užitek je",
@@ -213,7 +274,9 @@
         "vždy nižší než mezní užitek",
         "nulový při nulové spotřebě"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Posun křivky poptávky po určité komoditě doleva může být způsoben tím, že:",
@@ -224,7 +287,9 @@
         "poklesla nabídka",
         "zlevnilo komplementární zboží"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Jestliže se ceny všech nakupovaných statků a služeb v dané ekonomice ztrojnásobí a důchod spotřebitelů také, funkce poptávky po statku Y:",
@@ -235,7 +300,9 @@
         "z dostupných informací nelze říci",
         "výrazně klesne"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Funkci tržní ceny na trhu kapitálu plní:",
@@ -246,7 +313,9 @@
         "nájemné",
         "nominální úroková míra"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Firma v monopolistické konkurenci se od firmy v dokonalé konkurenci (obě maximalizují svůj zisk) v dlouhém období odlišuje tím, že:",
@@ -257,7 +326,10 @@
         "v optimu vyrábí při nižších průměrných celkových nákladech",
         "v optimu vyrábí při vyšších průměrných celkových nákladech"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Posun křivky poptávky vlevo znamená:",
@@ -268,7 +340,9 @@
         "zlevnilo komplementární zboží",
         "spotřebiteli vzrostl důchod"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Firma v dokonalé konkurenci. Platí následující tvrzení:",
@@ -279,7 +353,9 @@
         "v dlouhém období vždy dosahuje kladného ekonomického zisku",
         "v krátkém období vždy dosahuje nulového ekonomického zisku"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Nejvyšší rozdíl mezi TR a TC nastává tehdy, když:",
@@ -290,7 +366,9 @@
         "MC = MR",
         "P = AR"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Jestliže je poptávka po určitém zboží cenově neelastická uvnitř určitého cenového rámce, pak celkový příjem z prodeje tohoto zboží při růstu jeho ceny:",
@@ -301,7 +379,9 @@
         "vzroste",
         "nezmění se"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Pokud jahody a maliny jsou dokonalými substituty, platí, že:",
@@ -312,7 +392,11 @@
         "pokud jsou maliny dražší než jahody, spotřebitelé budou kupovat výhradně jahody",
         "při růstu důchodu se za jinak stejných podmínek zvýší poptávka po malinách i po jahodách"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "V případě běžného tvaru křivek poptávky a nabídky, platí, že:",
@@ -323,7 +407,9 @@
         "pokud roste nabídka a poptávka se nemění, klesá cena a klesá množství",
         "pokud roste nabídka a poptávka se nemění, klesá cena a roste množství"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Firmy na trhu výrobních faktorů",
@@ -334,7 +420,9 @@
         "získávají rentu",
         "poptávají"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Izokvanta vyjadřuje:",
@@ -345,7 +433,9 @@
         "náklady vynaložené na fixní vstup",
         "kombinaci výrobních faktorů, jejichž pomocí je možno vyrobit stejný objem produkce"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Mezní míra technické substituce:",
@@ -356,7 +446,9 @@
         "je vždy kladná",
         "žádná odpověď není správná"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "V případě poptávky:",
@@ -367,7 +459,11 @@
         "v případě normálních statků je rostoucí",
         "v případě normálních statků je klesající"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "V případě monopolu křivka poptávky odvětví:",
@@ -378,7 +474,10 @@
         "splývá s křivkou MR",
         "nelze určit"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ]
     },
     {
       "q": "Mezi základní charakteristiky dokonalé konkurence patří:",
@@ -389,7 +488,12 @@
         "velký počet prodávajících",
         "volný vstup do odvětví a volný výstup z odvětví"
       ],
-      "correct": [0, 1, 3, 4]
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Funkce poptávky má rovnici: P = 700 - 2Q. Funkce nabídky má rovnici P = 200 + 2Q. Vláda zavede minimální cenu ve výši 300 Kč za kus. Jaká je díky tomu nerovnováha na trhu:",
@@ -400,7 +504,9 @@
         "přebytek 200 ks",
         "nedostatek 50 ks"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",
@@ -411,7 +517,9 @@
         "roste poptávka po méněcenných statcích",
         "roste poptávka po normálních statcích"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Maximalizace zisku na základě rovnosti MR a MC je pravidlem:",
@@ -422,7 +530,11 @@
         "firem v centrálně plánovaných ekonomikách",
         "firem v jakékoliv tržní struktuře"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -433,7 +545,10 @@
         "krátkodobě nemůže být ztrátový",
         "volný vstup do odvětví"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Pokud spotřebitel bude utrácet fixní množství peněz za nákup určitého statku, potom poptávka po tomto statku bude v daném cenovém intervalu:",
@@ -444,7 +559,9 @@
         "dokonale neelastická",
         "elastičtější v dlouhém období"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Primárními výrobními faktory jsou:",
@@ -455,7 +572,9 @@
         "práce, půda, kapitál a technologický pokrok",
         "práce, půda a kapitál"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Optimum spotřebitele vyjadřuje situace, kdy:",
@@ -466,7 +585,12 @@
         "MRSC = MRSE",
         "sklon indiferenční křivky a sklon linie rozpočtu je stejný"
       ],
-      "correct": [0, 1, 3, 4]
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Mezní produkt",
@@ -477,7 +601,11 @@
         "vyjadřuje změnu celkové produkce při zapojení dodatečné jednotky výrobního faktoru",
         "může být rostoucí, konstantní i klesající"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Podle ordinalistického pojetí teorie užitku se optimum spotřebitele nachází tam, kde:",
@@ -488,7 +616,13 @@
         "mezní míra substituce ve směně = mezní míře substituce ve spotřebě",
         "sklon indiferenční křivky je rovný sklonu linie příjmu"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Normální zisk je kvantitativně roven",
@@ -499,7 +633,9 @@
         "celkovým nákladům",
         "celkovým příjmům"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Pokud jahody a maliny jsou dokonalými substituty, platí, že:",
@@ -510,7 +646,11 @@
         "pokud jsou maliny dražší než jahody, spotřebitelé budou kupovat výhradně jahody",
         "při poklesu ceny jahod bude klesat poptávka po malinách"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Má-li být celkový příjem TR firmy maximální, musí být mezní příjem MR:",
@@ -521,7 +661,9 @@
         "v intervalu (0,1)",
         "kladný"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Firma v monopolistické konkurenci. Platí následující tvrzení:",
@@ -532,7 +674,10 @@
         "v krátkém období nikdy nedosahuje ztráty",
         "v dlouhém období může dosahovat zisku, ztráty i nulového zisku"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ]
     },
     {
       "q": "V případě poptávky:",
@@ -543,7 +688,11 @@
         "poptávka roste, pokud klesá cena substitučního statku",
         "substituční efekt znamená, že pokud klesá cena jednoho statku, stává se tento statek ve srovnání s ostatními relativně levnější a spotřebitel zvyšuje jeho nákup"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "Mezi základní charakteristiky dokonalé konkurence patří:",
@@ -554,7 +703,12 @@
         "stejná informovanost všech ekonomických subjektů",
         "velký počet prodávajících"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Individuální poptávka. Klesne-li důchod spotřebitele, platí následující tvrzení:",
@@ -565,7 +719,9 @@
         "poptávka může vzrůst nebo klesnout",
         "vzroste poptávané množství"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
@@ -576,7 +732,11 @@
         "cenu na trhu dominantní firma odvodí od tržní poptávky",
         "dominantní firma může dlouhodobě dosahovat kladného ekonomického zisku"
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ]
     },
     {
       "q": "V případě monopolu křivka nabídky odvětví:",
@@ -587,7 +747,9 @@
         "má vždy pozitivní směrnici",
         "má vždy negativní směrnici"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Dominantní firma realizuje vůči ostatním firmám na oligopolním trhu:",
@@ -598,7 +760,9 @@
         "cenovou válku",
         "cenové vůdcovství"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Implicitní náklady firmy vyjadřují její:",
@@ -609,7 +773,9 @@
         "ekonomickou ztrátu",
         "čistý (kladný) ekonomický zisk"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Při rostoucí ceně daného statku",
@@ -620,7 +786,10 @@
         "se posuneme po křivce poptávky doleva nahoru",
         "se poptávka po daném statku posune doprava"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -631,7 +800,12 @@
         "spotřebitel je schopen sestavit preferenční stupnici",
         "užitek zboží je měřitelný"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Pokud je mezní fyzický produkt MPP záporný, potom celkový fyzický produkt TPP:",
@@ -642,7 +816,9 @@
         "klesá",
         "je ve svém maximu"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Pokud je mezní fyzický produkt MPP kladný, potom celkový fyzický produkt TPP:",
@@ -653,7 +829,9 @@
         "klesá",
         "je nulový"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Která z následujících vlastností je vlastností linie rozpočtu (BL):",
@@ -664,7 +842,10 @@
         "pozitivní směrnice",
         "lineární tvar při konstantních cenách"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "V dokonalé konkurenci je Lernerův index:",
@@ -675,7 +856,9 @@
         "roven nule",
         "roven mínus jedné"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "V případě kardinalistické teorie užitku (užitek je přímo měřitelný):",
@@ -686,7 +869,11 @@
         "celkový užitek se spotřebou roste až do bodu nasycení",
         "racionálně chovající se spotřebitel se bude snažit maximalizovat svůj užitek"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Z hlediska dopadu změny ceny jiného statku na poptávku po určitém statku, rozlišujeme statky:",
@@ -697,7 +884,9 @@
         "normální, nezbytné",
         "normální, méněcenné"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Pokud od hodnoty celkových nákladů TC odečteme hodnotu variabilních nákladů VC, získáme hodnotu:",
@@ -708,7 +897,9 @@
         "průměrných fixních nákladů AFC",
         "průměrných nákladů AC"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Mezní užitek. Platí následující tvrzení:",
@@ -719,7 +910,9 @@
         "je s rostoucím množstvím spotřebovaného statku zpravidla konstatní",
         "je s rostoucím množstvím spotřebovaného statku zpravidla rostoucí"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Normální zisk je kvantitativně roven",
@@ -730,7 +923,9 @@
         "nule",
         "žádná z výše uvedených odpovědí není správná"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Zákon klesajícího mezního užitku znamená, že:",
@@ -741,7 +936,9 @@
         "s růstem spotřeby mezní užitek klesá",
         "s poklesem příjmů dochází k poklesu spotřeby"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Uvažujeme-li dva komplementární statky, potom:",
@@ -752,7 +949,9 @@
         "růst ceny jednoho z nich vyvolá snížení poptávaného množství tohoto statku a růst poptávky po statku druhém",
         "růst ceny jednoho z nich vyvolá snížení jeho poptávaného množství a snížení poptávky po jeho komplementu"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Které z následujících tvrzení je pravdivé:",
@@ -763,7 +962,13 @@
         "celkové náklady jsou vůči variabilním nákladům horizontálně posunuty o úroveň fixních nákladů",
         "mezní náklady jsou určující pro křivku firemní nabídky"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Pro mezní náklady platí následující tvrzení:",
@@ -774,7 +979,10 @@
         "jsou vždy totožné s průměrnými náklady",
         "udávají jak se změní celkové náklady, pokud se zvýší produkce o jednu jednotku"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -785,7 +993,11 @@
         "volný vstup do odvětví",
         "krátkodobě nemůže být ztrátový"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "q": "Při konstrukci hranice výrobních možností zůstávají neměnné:",
@@ -796,7 +1008,9 @@
         "technologický pokrok",
         "alokace zdrojů mezi alternativní použití"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Celkový užitek určitého množství zboží měřený v peněžních jednotkách je dán:",
@@ -807,7 +1021,9 @@
         "maximální peněžní částkou, kterou je za ně spotřebitel ochoten zaplatit až do bodu nasycení",
         "minimální peněžní částkou, kterou je za ně spotřebitel ochoten zaplatit"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Mezní užitek:",
@@ -818,7 +1034,9 @@
         "je dle kardinalistů neměřitelný",
         "je dle ordinalistů měřitelný"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Produkční funkce v krátkém období (nejdříve rostoucí a pak klesající výnosy ze vstupu). Platí vždy následující tvrzení:",
@@ -829,7 +1047,9 @@
         "křivka mezního produktu protíná křivku celkového produktu v jejím minimu",
         "křivka mezního produktu nikdy neprotíná křivku průměrného produktu"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Jedním ze základních znaků dokonalé konkurence je:",
@@ -840,7 +1060,11 @@
         "cena produkce stanovená trhem",
         "individuální poptávka po produkci firmy je totožná s mezními náklady produkce firmy"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "V prostředí monopolisticky konkurenčního trhu jsou vyráběné výrobky:",
@@ -851,7 +1075,10 @@
         "dokonalými komplementy",
         "nezávislé statky"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ]
     },
     {
       "q": "Ve srovnání s monopolem, produkuje monopolně konkurenční odvětví:",
@@ -862,7 +1089,9 @@
         "menší objem produkce za vyšší ceny",
         "stejný objem produkce za nižší ceny"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Krátké období je období, ve kterém:",
@@ -873,7 +1102,10 @@
         "neexistují fixní náklady",
         "firma může zvyšovat pouze variabilní vstup"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "V případě kardinalistické teorie užitku (užitek je přímo měřitelný):",
@@ -884,7 +1116,10 @@
         "optimum spotřebitele je dosaženo v momentě, kdy cena statku se rovná celkovému užitku",
         "mezní užitek s každou další spotřebovávanou jednotkou statku roste"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ]
     },
     {
       "q": "Označte správnou odpověď:",
@@ -895,7 +1130,10 @@
         "Izokvanta vyjadřuje kombinace výrobních faktorů, pomocí nichž je možné vyrobit různý objem produkce",
         "Izokvanta vyjadřuje kombinace různých objemů produkce, které je možné vyrobit s minimálními náklady"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ]
     },
     {
       "q": "Cílem výrobce na dokonale konkurenčním trhu je:",
@@ -906,7 +1144,9 @@
         "zaměstnat dokonalé výrobní faktory",
         "stanovit dokonale konkurenční cenu výrobku"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -917,7 +1157,11 @@
         "existence několika firem v odvětví",
         "možnost ovlivnit cenu produkce"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Každá firma v nedokonalé konkurenci je:",
@@ -928,7 +1172,10 @@
         "cenovým regulátorem",
         "cenovým příjemcem"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele platí, že:",
@@ -939,7 +1186,10 @@
         "roste poptávka po normálních statcích",
         "roste poptávka po méněcenných statcích"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Zákon klesajícího mezního užitku znamená, že:",
@@ -950,7 +1200,9 @@
         "s růstem spotřeby mezní užitek vždy roste",
         "s poklesem příjmů dochází k poklesu spotřeby"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "O křivce poptávky po produkci dominantní firmy a křivce tržní poptávky platí, že:",
@@ -961,7 +1213,10 @@
         "jsou rovnoběžné",
         "jsou rovnoběžné do ceny stanovené dominantní firmou, při nižší ceně jsou identické"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ]
     },
     {
       "q": "Dlouhé období je období, ve kterém:",
@@ -972,7 +1227,10 @@
         "existují fixní náklady",
         "všechny vstupy jsou variabilní"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Pokud jsou zmrzlina a čokoládová poleva dokonalými komplementy, platí, že:",
@@ -983,7 +1241,10 @@
         "při poklesu ceny zmrzliny poroste poptávané množství čokoládové polevy",
         "při růstu ceny zmrzliny bude klesat poptávka po čokoládové polevě"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Pokud v důsledku vyjednávání odborů budou zaměstnavatelé vyplácet vyšší mzdy, než je mzda rovnovážná, potom:",
@@ -994,7 +1255,10 @@
         "bude nedostatek pracovníků pro dané pracovní příležitosti",
         "zaměstnavatelé přijmou všechny žadatele o práci"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ]
     },
     {
       "q": "Optimum spotřebitele vyjadřuje situace, kdy",
@@ -1005,7 +1269,11 @@
         "MRSC = 0",
         "linie příjmů je tečnou nejvyšší indiferenční křivky"
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ]
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
@@ -1016,7 +1284,10 @@
         "firmy v konkurenčním lemu nabízejí svou produkci za nižší cenu než dominantní firma",
         "cenu na trhu stanoví firmy v konkurenčním lemu"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Z hlediska dopadu změny ceny jiného statku na poptávku po určitém statku, rozlišujeme statky:",
@@ -1027,7 +1298,9 @@
         "cenově elastické a neelastické",
         "substituty, komplementy"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Alokační efektivnost firmy znamená:",
@@ -1038,7 +1311,11 @@
         "výrobu dlouhodobě odpovídající minimu AC",
         "strukturu vstupů a jejich transformaci, pomocí které lze dosáhnout efektivní a poptávaný výstup"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "V případě kardinalistické teorie užitku (užitek je přímo měřitelný):",
@@ -1049,7 +1326,11 @@
         "racionálně chovající se spotřebitel se bude snažit o co nejnižší útratu",
         "přebytek spotřebitele představuje užitek, který spotřebitel získává, aniž by za něj zaplatil"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Mezní užitek. Platí následující tvrzení:",
@@ -1060,7 +1341,11 @@
         "v nasčítané podobě za jednotlivé spotřebované jednotky je celkovým užitkem",
         "je s rostoucím množstvím spotřebovaného statku zpravidla rostoucí"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "q": "Pokud se jedná o cenově elastickou poptávku, platí, že",
@@ -1071,7 +1356,10 @@
         "při poklesu ceny poptávané množství vzroste",
         "žádná změna ceny neovlivní velikost tržeb prodejců"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
@@ -1082,7 +1370,10 @@
         "dominantní firma může dlouhodobě dosahovat kladného ekonomického zisku",
         "firmy v konkurenčním lemu nabízejí svou produkci za nižší cenu než dominantní firma"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "O křivce poptávky po produkci dominantní firmy a křivce tržní poptávky platí, že:",
@@ -1093,7 +1384,10 @@
         "tržní poptávka je méně elastická",
         "tržní poptávka je více elastická"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",
@@ -1104,7 +1398,11 @@
         "roste poptávka po normálních statcích",
         "klesá poptávka po méněcenných statcích"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "q": "Monopol. Platí následující tvrzení:",
@@ -1115,7 +1413,9 @@
         "křivka nabídky monopolu je totožná s křivkou průměrných celkových nákladů",
         "křivka nabídky monopolu je totožná s rostoucí částí křivky mezních nákladů"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Mezní produkt",
@@ -1126,7 +1426,10 @@
         "může být kladný, nulový i záporný",
         "žádná odpověď není správná"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "V případě monopolu křivka poptávky odvětví:",
@@ -1137,7 +1440,10 @@
         "splývá s křivkou AR",
         "má vždy negativní směrnici"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -1148,7 +1454,12 @@
         "spotřebitel zná ceny nakupovaných statků",
         "spotřebitelé se snaží maximalizovat užitek"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Pokud jsou zmrzlina a čokoládová poleva dokonalými komplementy, platí, že:",
@@ -1159,7 +1470,11 @@
         "žádná z výše uvedených odpovědí není správná",
         "při poklesu ceny zmrzliny poroste poptávané množství čokoládové polevy"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "q": "Monopol je jediná firma, která:",
@@ -1170,7 +1485,12 @@
         "může v krátkém období realizovat ztrátu",
         "může pokrýt poptávku po produkci celého odvětví"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Mezní užitek. Platí následující tvrzení:",
@@ -1181,7 +1501,9 @@
         "se nemůže stát záporný",
         "udává, jak se změní celkový užitek, pokud spotřebitel spotřebuje dodatečnou jednotku výrobu"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Při rostoucí ceně daného statku",
@@ -1192,7 +1514,9 @@
         "se posuneme po křivce poptávky doprava dolů",
         "poptávané množství vzroste"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Posun křivky poptávky po určité komoditě doleva může být způsoben tím, že:",
@@ -1203,7 +1527,10 @@
         "daný statek přišel do módy",
         "poklesla nabídka"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Ekonomická renta je:",
@@ -1214,7 +1541,9 @@
         "důchod placený za službu výrobního faktoru půda",
         "pozemková renta po zdanění"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Jsou-li mezní náklady na výrobní faktor < mezní příjem z výrobního faktoru, firma bude:",
@@ -1225,7 +1554,9 @@
         "zvyšovat poptávku po daném výrobním faktoru",
         "nabízet nižší cenu za služby výrobního faktoru"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "V případě monopolu křivka poptávky odvětví:",
@@ -1236,18 +1567,22 @@
         "splývá s křivkou MR",
         "má vždy negativní směrnici"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Označte správnou odpověď:",
       "opts": [
-        "Při nulovém objemu výroby budou fixní náklady FC kladné.",
-        "Při nulovém objemu výroby budou fixní náklady FC záporné.",
-        "Při nulovém objemu výroby budou fixní náklady FC nulové.",
-        "Při nulovém objemu výroby budou fixní náklady FC nejdříve rostoucí, poté klesající.",
-        "Při nulovém objemu výroby budou fixní náklady FC klesající."
+        "Při nulovém objemu výroby budou fixní náklady FC kladné",
+        "Při nulovém objemu výroby budou fixní náklady FC záporné",
+        "Při nulovém objemu výroby budou fixní náklady FC nulové",
+        "Při nulovém objemu výroby budou fixní náklady FC nejdříve rostoucí, poté klesající",
+        "Při nulovém objemu výroby budou fixní náklady FC klesající"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -1258,7 +1593,10 @@
         "možnost ovlivnit množství produkce",
         "krátkodobě nemůže být ztrátový"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",
@@ -1269,7 +1607,10 @@
         "klesá poptávka po méněcenných statcích",
         "roste poptávka po méněcenných statcích"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -1280,7 +1621,13 @@
         "spotřebitel je schopen sestavit preferenční stupnici",
         "spotřebitel zná ceny nakupovaných statků"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Mezní náklady na výrobní faktor práce v prostředí nedokonalé konkurence na trhu výrobních faktorů: (5 b)",
@@ -1291,7 +1638,10 @@
         "klesají s objemem nakoupené pracovní síly",
         "mají stejný průběh jako při dokonalé konkurenci na trhu výrobních faktorů"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ]
     },
     {
       "q": "Optimální kombinace výrobních faktorů je přímo determinována: (bez záruky)",
@@ -1302,7 +1652,9 @@
         "celkovým produktem, který jsou výrobní faktory schopny vyprodukovat",
         "poptávkou na trhu finálních statků a služeb"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Je-li cílem firmy maximalizace obratu, poté: (bez záruky)",
@@ -1313,7 +1665,9 @@
         "nabízená cena bude nižší než při maximalizaci zisku, nabízené množství bude naopak vyšší",
         "optimální objem produkce bude odpovídat situaci, kdy mezní příjem je roven nulový (MR=0)"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ]
     },
     {
       "q": "Příjem z mezního fyzického produktu při nedokonalé konkurenci na trhu finálních statků a služeb: (3,33/5 b)",
@@ -1324,7 +1678,10 @@
         "klesá stejným tempem jako v situaci dokonalé konkurence na trhu statků a služeb",
         "klesá dvakrát rychleji než v situaci dokonalé konkurence na trhu statků a služeb"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Ekonomický zisk je: (5 b)",
@@ -1335,7 +1692,11 @@
         "ovlivňuje alokaci výrobních faktorů",
         "vždy kladný"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "q": "Oligopol se zalomenou křivkou:",
@@ -1346,7 +1707,11 @@
         "křivka mezních nákladů má své dvě na sebe nenavazující části",
         "křivka mezních nákladů má standardní průběh"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Morální hazard označuje situaci: (5 b)",
@@ -1357,7 +1722,13 @@
         "původce jednání nenese plná rizika a náklady svých akcí",
         "která je považována za jeden z příkladů tržního selhání v rámci tzv. asymetrických informací"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Pokud se jedná o cenově elastickou poptávku, platí, že",
@@ -1368,7 +1739,10 @@
         "při poklesu ceny se zvýší tržby prodejců",
         "při poklesu ceny klesnou tržby prodejců"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "V případě poptávky:",
@@ -1379,7 +1753,12 @@
         "v případě normálních statků je klesající",
         "poptávka roste, pokud klesá cena substitučního statku"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
     }
   ]
 }

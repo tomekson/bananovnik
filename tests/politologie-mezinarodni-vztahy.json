@@ -3,847 +3,1113 @@
   "title": "Politologie a mezinárodní vztahy",
   "updatedAt": "2026-05-17",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech",
-  "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
-  "exam": { "testPoints": 100, "openPoints": 0, "passPoints": 51, "questionCount": 20, "openCount": 0 },
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 20,
+    "openCount": 0
+  },
   "questions": [
     {
       "q": "Volební právo (oprávnění volit a být volen):",
       "opts": [
-        "Není v ČR chráněno na ústavně právní úrovni.",
-        "Je v případě všech voleb v daném politickém společenství v zásadě stejné.",
-        "Lze v demokratické společnosti omezit pouze několika málo podmínkami (věk, občanství, příčetnost).",
-        "Zahrnuje pasivní volební právo, jakožto právo volit.",
-        "Zahrnuje aktivní volební právo, jakožto právo volit."
+        "Není v ČR chráněno na ústavně právní úrovni",
+        "Je v případě všech voleb v daném politickém společenství v zásadě stejné",
+        "Lze v demokratické společnosti omezit pouze několika málo podmínkami (věk, občanství, příčetnost)",
+        "Zahrnuje pasivní volební právo, jakožto právo volit",
+        "Zahrnuje aktivní volební právo, jakožto právo volit"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Evropská komise:",
       "opts": [
-        "Má pravomoc přijímat odvozené akty a jiná rozhodnutí.",
-        "Je volena Evropským parlamentem podle zásady degresivní proporcionality.",
-        "Má za úkol chránit zájmy jednotlivých členských zemí před zájmy EU jako celku.",
-        "Má (až na drobné výjimky) monopolní pravomoc předkládat návrhy legislativních aktů EU.",
-        "Je orgánem Rady Evropy."
+        "Má pravomoc přijímat odvozené akty a jiná rozhodnutí",
+        "Je volena Evropským parlamentem podle zásady degresivní proporcionality",
+        "Má za úkol chránit zájmy jednotlivých členských zemí před zájmy EU jako celku",
+        "Má (až na drobné výjimky) monopolní pravomoc předkládat návrhy legislativních aktů EU",
+        "Je orgánem Rady Evropy"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Mezi funkce zájmových skupin patří:",
       "opts": [
-        "Artikulace zájmu.",
-        "Reprezentace voličů.",
-        "Legitimizace veřejné moci.",
-        "Politická integrace.",
-        "Organizace vlády."
+        "Artikulace zájmu",
+        "Reprezentace voličů",
+        "Legitimizace veřejné moci",
+        "Politická integrace",
+        "Organizace vlády"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ]
     },
     {
       "q": "Mezi orgány EU patří:",
       "opts": [
-        "Rada EU.",
-        "Rada Evropy.",
-        "Evropská rada.",
-        "Účetní dvůr.",
-        "Výbor regionů."
+        "Rada EU",
+        "Rada Evropy",
+        "Evropská rada",
+        "Účetní dvůr",
+        "Výbor regionů"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Nepřímá demokracie znamená, že:",
       "opts": [
-        "Lid vykonává svou moc prostřednictvím moci soudní.",
-        "Lid volí své zástupce nepřímo.",
-        "Lid vykonává svou moc prostřednictvím moci výkonné.",
-        "Lid volí své zástupce přímo.",
-        "Lid vykonává svou moc prostřednictvím moci zákonodárné."
+        "Lid vykonává svou moc prostřednictvím moci soudní",
+        "Lid volí své zástupce nepřímo",
+        "Lid vykonává svou moc prostřednictvím moci výkonné",
+        "Lid volí své zástupce přímo",
+        "Lid vykonává svou moc prostřednictvím moci zákonodárné"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Metody volebního dělitele:",
       "opts": [
-        "Přidělují mandáty přímo.",
-        "Rozdělují mandáty ve vícero kolech (skrutiniích).",
-        "Rozlišujeme jednokolové a dvou či více kolové.",
-        "Používají k přidělení mandátů volební číslo (volební kvótu).",
-        "Mohou zvýhodňovat malé strany na úkor velkých stran."
+        "Přidělují mandáty přímo",
+        "Rozdělují mandáty ve vícero kolech (skrutiniích)",
+        "Rozlišujeme jednokolové a dvou či více kolové",
+        "Používají k přidělení mandátů volební číslo (volební kvótu)",
+        "Mohou zvýhodňovat malé strany na úkor velkých stran"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "Rada bezpečnosti OSN:",
       "opts": [
-        "Jmenuje Generálního tajemníka OSN.",
-        "Má 5 stálých a 10 nestálých členů.",
-        "Má pravomoc ukládat závažné sankce, a to i s použitím síly.",
-        "Přijímá rozhodnutí, která jsou pro členské státy závazná.",
-        "Rozhoduje prostou většinou hlasů přítomných členů."
+        "Jmenuje Generálního tajemníka OSN",
+        "Má 5 stálých a 10 nestálých členů",
+        "Má pravomoc ukládat závažné sankce, a to i s použitím síly",
+        "Přijímá rozhodnutí, která jsou pro členské státy závazná",
+        "Rozhoduje prostou většinou hlasů přítomných členů"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "V případě totalitních režimů platí, že:",
       "opts": [
-        "Jsou extrémní podobou autoritářských režimů.",
-        "Charakterizuje je striktní oddělení politické a soukromé sféry.",
-        "Společnost je zcela podřízena ideologii vládnoucí strany.",
-        "Středobodem moci je jediná politická strana v čele s vůdcem.",
-        "Vládne v nich omezený politický pluralismus."
+        "Jsou extrémní podobou autoritářských režimů",
+        "Charakterizuje je striktní oddělení politické a soukromé sféry",
+        "Společnost je zcela podřízena ideologii vládnoucí strany",
+        "Středobodem moci je jediná politická strana v čele s vůdcem",
+        "Vládne v nich omezený politický pluralismus"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Konzervatismus:",
       "opts": [
-        "Je spolu s liberalismem základem moderní politické pravice.",
-        "Obvykle v ekonomické oblasti prosazuje výrazné přerozdělování bohatství.",
-        "Usiluje o jednotu politické a národní identity, tedy o etnicky jednolitý národní stát.",
-        "Prosazuje stejná témata od svého vzniku počátkem 19. století až do dnes.",
-        "Lze charakterizovat důrazem na tradici a ostražitostí vůči změnám."
+        "Je spolu s liberalismem základem moderní politické pravice",
+        "Obvykle v ekonomické oblasti prosazuje výrazné přerozdělování bohatství",
+        "Usiluje o jednotu politické a národní identity, tedy o etnicky jednolitý národní stát",
+        "Prosazuje stejná témata od svého vzniku počátkem 19. století až do dnes",
+        "Lze charakterizovat důrazem na tradici a ostražitostí vůči změnám"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "V oblasti typologie státních útvarů:",
       "opts": [
-        "Rozlišujeme federaci jakožto spolkový stát a konfederaci jakožto spolek států.",
-        "Jsou pro konfederaci charakteristické robustní ústřední orgány a nedělená suverenita náležící konfederaci.",
-        "Je v unitárním státě přípustná i rozsáhlá autonomie některých částí jeho území.",
-        "Je pro federaci charakteristické ústavně ukotvené rozdělení kompetencí mezi federaci a její dílčí jednotky (země).",
-        "Je nejběžnější podobou státu unitární stát."
+        "Rozlišujeme federaci jakožto spolkový stát a konfederaci jakožto spolek států",
+        "Jsou pro konfederaci charakteristické robustní ústřední orgány a nedělená suverenita náležící konfederaci",
+        "Je v unitárním státě přípustná i rozsáhlá autonomie některých částí jeho území",
+        "Je pro federaci charakteristické ústavně ukotvené rozdělení kompetencí mezi federaci a její dílčí jednotky (země)",
+        "Je nejběžnější podobou státu unitární stát"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Stát:",
       "opts": [
-        "Lze vymezit jako normativní a strukturální aspekty politického řádu a podmínky, v nichž se uskutečňuje politická činnost.",
-        "Je historickým přežitkem a v dnešním politickém uspořádání nemá vedle místních, regionálních a nadnárodních struktur, subjektů a institucí významnější roli.",
-        "Je politicky institucionalizovaná forma společenského života na určitém území, která prostřednictvím právního řádu působí na společenské vztahy.",
-        "Je mj. vymezen státním územím, což je geograficky vymezený prostor, v němž stát vykonává svou svrchovanou moc.",
-        "Je útvar, jehož pojmovými znaky jsou státní území, státní národ, státní moc a státní symbolika."
+        "Lze vymezit jako normativní a strukturální aspekty politického řádu a podmínky, v nichž se uskutečňuje politická činnost",
+        "Je historickým přežitkem a v dnešním politickém uspořádání nemá vedle místních, regionálních a nadnárodních struktur, subjektů a institucí významnější roli",
+        "Je politicky institucionalizovaná forma společenského života na určitém území, která prostřednictvím právního řádu působí na společenské vztahy",
+        "Je mj. vymezen státním územím, což je geograficky vymezený prostor, v němž stát vykonává svou svrchovanou moc",
+        "Je útvar, jehož pojmovými znaky jsou státní území, státní národ, státní moc a státní symbolika"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Základní instituce OSN jsou:",
       "opts": [
-        "Rada guvernérů.",
-        "Rada bezpečnosti.",
-        "Valné shromáždění.",
-        "Rada moudrých.",
-        "Generální tajemník a sekretariát."
+        "Rada guvernérů",
+        "Rada bezpečnosti",
+        "Valné shromáždění",
+        "Rada moudrých",
+        "Generální tajemník a sekretariát"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Demokracie:",
       "opts": [
-        "Je vláda, na níž se významným způsobem podílí lid.",
-        "Je v Aristotelově členění dobrá forma vlády.",
-        "Je protikladem monarchie.",
-        "Se může uskutečňovat přímou nebo nepřímou formou.",
-        "Je v moderní společnosti založena výhradně na principu většinového rozhodování."
+        "Je vláda, na níž se významným způsobem podílí lid",
+        "Je v Aristotelově členění dobrá forma vlády",
+        "Je protikladem monarchie",
+        "Se může uskutečňovat přímou nebo nepřímou formou",
+        "Je v moderní společnosti založena výhradně na principu většinového rozhodování"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Rada Evropy:",
       "opts": [
-        "Její nejvýznamnější činností je přijímání regionálních mezinárodních smluv (například Úmluva o ochraně lidských práv a základních svobod).",
-        "Je jedním z hlavních orgánů Evropské unie.",
-        "Sdružuje vlády jednotlivých členských zemí EU.",
-        "Jejími hlavními orgány jsou výbor ministrů a parlamentní shromáždění.",
-        "Má stejně jako Evropský soud pro lidská práva sídlo ve Štrasburku."
+        "Její nejvýznamnější činností je přijímání regionálních mezinárodních smluv (například Úmluva o ochraně lidských práv a základních svobod)",
+        "Je jedním z hlavních orgánů Evropské unie",
+        "Sdružuje vlády jednotlivých členských zemí EU",
+        "Jejími hlavními orgány jsou výbor ministrů a parlamentní shromáždění",
+        "Má stejně jako Evropský soud pro lidská práva sídlo ve Štrasburku"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Strana kádrů:",
       "opts": [
-        "Je existenčně závislá na členských příspěvcích a tedy rozsáhlé členské základně.",
-        "Obvykle klade velký důraz na individuální charakteristiky svých členů, které si pečlivě vybírá.",
-        "Je extrémním důsledkem tzv. železného zákona oligarchizace politických stran.",
-        "Má typicky mnoho členů a centralizovanou strukturu.",
-        "Je synonymní označení pro stranu kartelu."
+        "Je existenčně závislá na členských příspěvcích a tedy rozsáhlé členské základně",
+        "Obvykle klade velký důraz na individuální charakteristiky svých členů, které si pečlivě vybírá",
+        "Je extrémním důsledkem tzv. železného zákona oligarchizace politických stran",
+        "Má typicky mnoho členů a centralizovanou strukturu",
+        "Je synonymní označení pro stranu kartelu"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Ústava ČR:",
       "opts": [
-        "Obsahuje v jednom dokumentu základní úpravu jednotlivých větví moci i katalog základních práv.",
-        "Neupravuje způsob voleb do Parlamentu ČR.",
-        "Stojí spolu s ostatními součástmi ústavního pořádku na vrcholu hierarchie pramenů práva ČR.",
-        "Je ve všech svých záležitostech změnitelná ústavním zákonem.",
-        "Upravuje pravomoci prezidenta republiky jakožto součástí výkonné moci."
+        "Obsahuje v jednom dokumentu základní úpravu jednotlivých větví moci i katalog základních práv",
+        "Neupravuje způsob voleb do Parlamentu ČR",
+        "Stojí spolu s ostatními součástmi ústavního pořádku na vrcholu hierarchie pramenů práva ČR",
+        "Je ve všech svých záležitostech změnitelná ústavním zákonem",
+        "Upravuje pravomoci prezidenta republiky jakožto součástí výkonné moci"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Evropský parlament:",
       "opts": [
-        "Je orgánem Rady Evropy.",
-        "Je tzv. spolu zákonodárcem – legislativní akty schvaluje Parlament i Rada.",
-        "Je volen smíšeným systémem.",
-        "Volí předsedu Evropské komise.",
-        "Je přímo volený sbor poslanců z jednotlivých členských zemí EU."
+        "Je orgánem Rady Evropy",
+        "Je tzv. spolu zákonodárcem – legislativní akty schvaluje Parlament i Rada",
+        "Je volen smíšeným systémem",
+        "Volí předsedu Evropské komise",
+        "Je přímo volený sbor poslanců z jednotlivých členských zemí EU"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Politika:",
       "opts": [
-        "Se pojí s úsilím o získání moci a kontroly nad společnými zdroji.",
-        "Je v totalitních státech přísně oddělena od soukromého života, do něhož nijak nezasahuje.",
-        "Se v demokratické společnosti odehrává pouze v zákonodárném sboru.",
-        "Je předmětem filozofického myšlení již od starověku.",
-        "Je uskutečňováním politiky (policy) prostřednictvím politiky (politics) v rámci politiky (polity)."
+        "Se pojí s úsilím o získání moci a kontroly nad společnými zdroji",
+        "Je v totalitních státech přísně oddělena od soukromého života, do něhož nijak nezasahuje",
+        "Se v demokratické společnosti odehrává pouze v zákonodárném sboru",
+        "Je předmětem filozofického myšlení již od starověku",
+        "Je uskutečňováním politiky (policy) prostřednictvím politiky (politics) v rámci politiky (polity)"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Parlament ČR:",
       "opts": [
-        "Může prezident republiky za stanovených podmínek rozpustit.",
-        "Má pravomoc přijímat zákony a podzákonné předpisy (nařízení, vyhlášky atd.).",
-        "Je volen v pravidelných přímých volbách.",
-        "Tvoří dvě rovnoprávné komory.",
-        "Je v ČR držitelem zákonodárné moci."
+        "Může prezident republiky za stanovených podmínek rozpustit",
+        "Má pravomoc přijímat zákony a podzákonné předpisy (nařízení, vyhlášky atd.)",
+        "Je volen v pravidelných přímých volbách",
+        "Tvoří dvě rovnoprávné komory",
+        "Je v ČR držitelem zákonodárné moci"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Mezi orgány EU nepatří:",
       "opts": [
-        "Evropský soud pro lidská práva.",
-        "Evropská centrální banka.",
-        "Evropská komise.",
-        "Rada bezpečnosti.",
-        "Mezinárodní soudní dvůr."
+        "Evropský soud pro lidská práva",
+        "Evropská centrální banka",
+        "Evropská komise",
+        "Rada bezpečnosti",
+        "Mezinárodní soudní dvůr"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Demokratický politický systém je založen mimo jiné na:",
       "opts": [
-        "Svobodném vzniku politických stran.",
-        "Registraci vzniku politických stran.",
-        "Činnosti státem povolených politických stran.",
-        "Na svobodné soutěži politických stran.",
-        "Nezávislosti na politických stranách."
+        "Svobodném vzniku politických stran",
+        "Registraci vzniku politických stran",
+        "Činnosti státem povolených politických stran",
+        "Na svobodné soutěži politických stran",
+        "Nezávislosti na politických stranách"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Socialismus:",
       "opts": [
-        "Jeho ústředním tématem je ochrana společenských tradic.",
-        "Prosazuje minimální stát.",
-        "Usiluje o jednotu politické a národní identity, tedy o etnicky jednotlivý národní stát.",
-        "Byl v očích komunistických režimů 20. století vývojovým stádiem na cestě ke komunismu.",
-        "Se v podobě tzv. sociální demokracie usiluje o dosažení spravedlivější společnosti pomocí běžných nástrojů státní moci (zejm. daně a přerozdělování bohatství)."
+        "Jeho ústředním tématem je ochrana společenských tradic",
+        "Prosazuje minimální stát",
+        "Usiluje o jednotu politické a národní identity, tedy o etnicky jednotlivý národní stát",
+        "Byl v očích komunistických režimů 20. století vývojovým stádiem na cestě ke komunismu",
+        "Se v podobě tzv. sociální demokracie usiluje o dosažení spravedlivější společnosti pomocí běžných nástrojů státní moci (zejm. daně a přerozdělování bohatství)"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ]
     },
     {
       "q": "Svobodné volby musí být:",
       "opts": [
-        "Rovné.",
-        "Tajné.",
-        "Veřejné.",
-        "Povinné.",
-        "Všeobecné."
+        "Rovné",
+        "Tajné",
+        "Veřejné",
+        "Povinné",
+        "Všeobecné"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "Českou republiku zastupuje navenek:",
       "opts": [
-        "Předseda vlády.",
-        "Prezident republiky.",
-        "Předseda Senátu.",
-        "Ministr zahraničních věcí.",
-        "Předseda Poslanecké sněmovny."
+        "Předseda vlády",
+        "Prezident republiky",
+        "Předseda Senátu",
+        "Ministr zahraničních věcí",
+        "Předseda Poslanecké sněmovny"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Které z těchto pojmů se pojí s ideologií socialismu?",
       "opts": [
-        "Rovnost lidí.",
-        "Sociální stát.",
-        "Neviditelná ruka trhu.",
-        "Utopie.",
-        "Národ."
+        "Rovnost lidí",
+        "Sociální stát",
+        "Neviditelná ruka trhu",
+        "Utopie",
+        "Národ"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "q": "Subjektem mezinárodního práva veřejného je:",
       "opts": [
-        "Skupina suverénních států.",
-        "Globální uskupení států.",
-        "Mezinárodní organizace.",
-        "Suverénní stát.",
-        "Regionální uskupení států."
+        "Skupina suverénních států",
+        "Globální uskupení států",
+        "Mezinárodní organizace",
+        "Suverénní stát",
+        "Regionální uskupení států"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Organizace spojených národů:",
       "opts": [
-        "Přijímá všeobecně závazná rozhodnutí ve svém Valném shromáždění.",
-        "Zahrnuje Evropský soud pro lidská práva se sídlem ve Štrasburku.",
-        "Má hlavní sídlo v New Yorku.",
-        "Zahrnuje Mezinárodní soudní dvůr, jehož jurisdikci podléhají všechny členské státy OSN.",
-        "Je první univerzální mezinárodní organizací na světě."
+        "Přijímá všeobecně závazná rozhodnutí ve svém Valném shromáždění",
+        "Zahrnuje Evropský soud pro lidská práva se sídlem ve Štrasburku",
+        "Má hlavní sídlo v New Yorku",
+        "Zahrnuje Mezinárodní soudní dvůr, jehož jurisdikci podléhají všechny členské státy OSN",
+        "Je první univerzální mezinárodní organizací na světě"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Politické strany:",
       "opts": [
-        "Se od zájmových skupin liší zejména jednoznačným ideologickým ukotvením.",
-        "Jsou v ČR základem politického systému.",
-        "Jsou podle některých teorií výrazem konfliktních linií ve společnosti.",
-        "Plní v demokratické společnosti mimo jiné také funkci artikulace a integrace zájmů.",
-        "Členíme podle volebních výsledků na malé, středně velké a velké."
+        "Se od zájmových skupin liší zejména jednoznačným ideologickým ukotvením",
+        "Jsou v ČR základem politického systému",
+        "Jsou podle některých teorií výrazem konfliktních linií ve společnosti",
+        "Plní v demokratické společnosti mimo jiné také funkci artikulace a integrace zájmů",
+        "Členíme podle volebních výsledků na malé, středně velké a velké"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Kvalifikovaná většina v Radě EU představuje:",
       "opts": [
-        "Nejméně 55 % členských států.",
-        "Nejméně 65 % členských států.",
-        "Absolutní většinu všech členských států včetně většiny malých zemí.",
-        "Nejméně 55 % z nich představujících 65 % obyvatelstva EU.",
-        "Absolutní většinu členských států včetně většiny velkých zemí."
+        "Nejméně 55 % členských států",
+        "Nejméně 65 % členských států",
+        "Absolutní většinu všech členských států včetně většiny malých zemí",
+        "Nejméně 55 % z nich představujících 65 % obyvatelstva EU",
+        "Absolutní většinu členských států včetně většiny velkých zemí"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Politické strany (struktura):",
       "opts": [
-        "Mohou mít jen horizontální strukturu.",
-        "Mohou mít jen povolenou strukturu.",
-        "Mohou mít jen teritoriální strukturu.",
-        "Mohou mít jakoukoliv strukturu.",
-        "Mohou mít jen vertikální strukturu."
+        "Mohou mít jen horizontální strukturu",
+        "Mohou mít jen povolenou strukturu",
+        "Mohou mít jen teritoriální strukturu",
+        "Mohou mít jakoukoliv strukturu",
+        "Mohou mít jen vertikální strukturu"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Pokud jde o volby:",
       "opts": [
-        "Rozlišujeme aktivní volební právo (právo volit) a pasivní volební právo (právo být volen).",
-        "Musí být všeobecné, rovné a veřejné, máme-li je považovat za svobodné.",
-        "Jsou nástrojem nepřímé (reprezentativní) demokracie.",
-        "Jejich naprostá absence je typickým znakem nedemokratických režimů.",
-        "V demokratických režimech zásadně nepodléhají jakémukoli soudnímu přezkumu."
+        "Rozlišujeme aktivní volební právo (právo volit) a pasivní volební právo (právo být volen)",
+        "Musí být všeobecné, rovné a veřejné, máme-li je považovat za svobodné",
+        "Jsou nástrojem nepřímé (reprezentativní) demokracie",
+        "Jejich naprostá absence je typickým znakem nedemokratických režimů",
+        "V demokratických režimech zásadně nepodléhají jakémukoli soudnímu přezkumu"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ]
     },
     {
       "q": "Pro liberalismus je typický:",
       "opts": [
-        "Důraz na svobodu jedince.",
-        "Důraz na toleranci.",
-        "Důraz na společné vlastnictví.",
-        "Důraz na tradici.",
-        "Důraz na silný stát."
+        "Důraz na svobodu jedince",
+        "Důraz na toleranci",
+        "Důraz na společné vlastnictví",
+        "Důraz na tradici",
+        "Důraz na silný stát"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Evropské radě EU předsedá:",
       "opts": [
-        "Stálý předseda Rady Evropy.",
-        "Předseda Evropské komise.",
-        "Určený předseda vlády členského státu.",
-        "Stálý předseda Evropské rady.",
-        "Členský stát podle rotačního principu."
+        "Stálý předseda Rady Evropy",
+        "Předseda Evropské komise",
+        "Určený předseda vlády členského státu",
+        "Stálý předseda Evropské rady",
+        "Členský stát podle rotačního principu"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Politické ideologie:",
       "opts": [
-        "Jejich účelem je legitimizace politických rozhodnutí.",
-        "Označují programové východisko politických aktérů.",
-        "Zahrnují např. demokracii, teokracii a tyranii.",
-        "Zahrnují např. liberalismus, konzervatismus a socialismus.",
-        "Jejich funkcí je spoluutváření politických rozhodnutí a získávání politické podpory pro ně."
+        "Jejich účelem je legitimizace politických rozhodnutí",
+        "Označují programové východisko politických aktérů",
+        "Zahrnují např. demokracii, teokracii a tyranii",
+        "Zahrnují např. liberalismus, konzervatismus a socialismus",
+        "Jejich funkcí je spoluutváření politických rozhodnutí a získávání politické podpory pro ně"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Volby do Poslanecké sněmovny Parlamentu ČR:",
       "opts": [
-        "Využívají pro přidělení mandátu jednotlivým volebním stranám metodu Imperialiho dělitele zvýhodňující velké strany.",
-        "Využívají uzavírací klauzuli ve výši 5 % v každém jednotlivém kraji.",
-        "Využívají pro přidělení mandátu jednotlivým krajům metodu volební kvóty (Hareova formule).",
-        "Se konají každých 5 let.",
-        "Se uskutečňují na půdorysu 14 volebních krajů, v nichž přidělují i jednotlivé mandáty."
+        "Využívají pro přidělení mandátu jednotlivým volebním stranám metodu Imperialiho dělitele zvýhodňující velké strany",
+        "Využívají uzavírací klauzuli ve výši 5 % v každém jednotlivém kraji",
+        "Využívají pro přidělení mandátu jednotlivým krajům metodu volební kvóty (Hareova formule)",
+        "Se konají každých 5 let",
+        "Se uskutečňují na půdorysu 14 volebních krajů, v nichž přidělují i jednotlivé mandáty"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Charismatická autorita:",
       "opts": [
-        "Se opírá o jedinečné osobní vlastnosti nositele autority.",
-        "Se opírá o tradice.",
-        "Je neslučitelná s demokratickou formou vlády a vede nutně k diktatuře.",
-        "Se objevuje v návaznosti na zhroucení dosavadního řádu způsobené průmyslovou revolucí.",
-        "Je součástí Weberovy typologie různých forem panství jakožto legitimní podoby moci."
+        "Se opírá o jedinečné osobní vlastnosti nositele autority",
+        "Se opírá o tradice",
+        "Je neslučitelná s demokratickou formou vlády a vede nutně k diktatuře",
+        "Se objevuje v návaznosti na zhroucení dosavadního řádu způsobené průmyslovou revolucí",
+        "Je součástí Weberovy typologie různých forem panství jakožto legitimní podoby moci"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "Liberalismus:",
       "opts": [
-        "Je v podobě tzv. neoliberalismu spjat s vládou M. Thatcherové a R. Reagana.",
-        "Jeho ústředním tématem je svoboda jednotlivce.",
-        "Má mnoho společného se socialismem v ekonomické oblasti, s konzervatismem zase v oblasti individuálních svobod.",
-        "Je považován za základní ideologii průmyslově vyspělého světa.",
-        "Je protikladem libertarianismu prosazujícího vizi minimálního státu jako pouze tzv. nočního hlídače."
+        "Je v podobě tzv. neoliberalismu spjat s vládou M. Thatcherové a R. Reagana",
+        "Jeho ústředním tématem je svoboda jednotlivce",
+        "Má mnoho společného se socialismem v ekonomické oblasti, s konzervatismem zase v oblasti individuálních svobod",
+        "Je považován za základní ideologii průmyslově vyspělého světa",
+        "Je protikladem libertarianismu prosazujícího vizi minimálního státu jako pouze tzv. nočního hlídače"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "q": "Politologie jako věda:",
       "opts": [
-        "Vzniká nejpozději ve vrcholném středověku.",
-        "Se od sesterské vědy sociologie liší především okruhem zkoumaných témat.",
-        "Nemá spekulativní ambice a zabývá se pouze empirickým popisem pozorovaných jevů a jejich analýzou.",
-        "Zahrnuje zkoumání mezinárodních vztahů jakožto politiky v mezinárodním kontextu.",
-        "Se primárně zabývá normativními předpoklady fungování politických aktérů a politických procesů."
+        "Vzniká nejpozději ve vrcholném středověku",
+        "Se od sesterské vědy sociologie liší především okruhem zkoumaných témat",
+        "Nemá spekulativní ambice a zabývá se pouze empirickým popisem pozorovaných jevů a jejich analýzou",
+        "Zahrnuje zkoumání mezinárodních vztahů jakožto politiky v mezinárodním kontextu",
+        "Se primárně zabývá normativními předpoklady fungování politických aktérů a politických procesů"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "V prezidentském režimu:",
       "opts": [
-        "Se ve všeobecných volbách volí pouze prezident, který pak jmenuje parlament jako sbor svých poradců.",
-        "Existuje celá řada možností řešení nemožnosti spolupráce parlamentu a exekutivy (rozpuštění parlamentu vládou, vyslovení nedůvěry vládě parlamentem, atd.).",
-        "Se obvykle dělba moci uplatňuje důsledně (jde-li o režim demokratický).",
-        "Parlament nemůže vyslovit vládě nedůvěru.",
-        "Funguje systém tzv. brzd a protivah, který nutí jednotlivé větve moci ke vzájemné spolupráci."
+        "Se ve všeobecných volbách volí pouze prezident, který pak jmenuje parlament jako sbor svých poradců",
+        "Existuje celá řada možností řešení nemožnosti spolupráce parlamentu a exekutivy (rozpuštění parlamentu vládou, vyslovení nedůvěry vládě parlamentem, atd.)",
+        "Se obvykle dělba moci uplatňuje důsledně (jde-li o režim demokratický)",
+        "Parlament nemůže vyslovit vládě nedůvěru",
+        "Funguje systém tzv. brzd a protivah, který nutí jednotlivé větve moci ke vzájemné spolupráci"
       ],
-      "correct": [2, 3, 4]
+      "correct": [
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Proporční volební systémy:",
       "opts": [
-        "Rozlišujeme jednokolové a dvou či více kolové.",
-        "Využívají k omezení počtu stran tzv. uzavírací klauzule.",
-        "Vždy rozdělují mandáty ve vícero kolech.",
-        "Využívají k rozdělení mandátů matematické operace známé jako volební kvóty a metody volebního dělitele.",
-        "Rozdělují mandáty v poměru k počtu získaných hlasů."
+        "Rozlišujeme jednokolové a dvou či více kolové",
+        "Využívají k omezení počtu stran tzv. uzavírací klauzule",
+        "Vždy rozdělují mandáty ve vícero kolech",
+        "Využívají k rozdělení mandátů matematické operace známé jako volební kvóty a metody volebního dělitele",
+        "Rozdělují mandáty v poměru k počtu získaných hlasů"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Sociálně demokratické strany:",
       "opts": [
-        "Tvoří jednu z významných programově ideových rodin.",
-        "Prosazují umírněnou formu liberalismu.",
-        "Ideově vycházejí z obrany tradičních hodnot a hierarchie.",
-        "Historicky vznikaly jako strany mas.",
-        "Jsou základem moderní levice."
+        "Tvoří jednu z významných programově ideových rodin",
+        "Prosazují umírněnou formu liberalismu",
+        "Ideově vycházejí z obrany tradičních hodnot a hierarchie",
+        "Historicky vznikaly jako strany mas",
+        "Jsou základem moderní levice"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Právní řád ČR:",
       "opts": [
-        "Obsahuje také nezměnitelné jádro, označované jako podstatné náležitosti demokratického právního státu.",
-        "Neobsahuje autonomní úpravu základních práv a svobod – přímo se aplikují příslušné mezinárodní smlouvy.",
-        "Obsahuje úpravu činnosti politických stran, a to v základních rysech již na ústavně právní úrovni.",
-        "Tvoří souhrn právních norem, rozhodnutí vrcholných orgánů výkonné moci a nejvýznamnějších soudních rozhodnutí.",
-        "Vychází ze silného postavení prezidenta s rozsáhlými pravomocemi."
+        "Obsahuje také nezměnitelné jádro, označované jako podstatné náležitosti demokratického právního státu",
+        "Neobsahuje autonomní úpravu základních práv a svobod – přímo se aplikují příslušné mezinárodní smlouvy",
+        "Obsahuje úpravu činnosti politických stran, a to v základních rysech již na ústavně právní úrovni",
+        "Tvoří souhrn právních norem, rozhodnutí vrcholných orgánů výkonné moci a nejvýznamnějších soudních rozhodnutí",
+        "Vychází ze silného postavení prezidenta s rozsáhlými pravomocemi"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ]
     },
     {
       "q": "Které z těchto pojmů se pojí s ideologií liberalismu?",
       "opts": [
-        "Tradiční hodnoty.",
-        "Neviditelná ruka trhu.",
-        "Sociální stát.",
-        "Individuální práva a svobody.",
-        "Laissez-faire."
+        "Tradiční hodnoty",
+        "Neviditelná ruka trhu",
+        "Sociální stát",
+        "Individuální práva a svobody",
+        "Laissez-faire"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "V případě politických stran platí, že:",
       "opts": [
-        "Neexistuje přímá úměra mezi jejich velikostí a politickým vlivem.",
-        "Se výrazně liší od politických hnutí.",
-        "Jde o trvalé organizace, které se ve jménu určitého ideologického projektu snaží dobýt a vykonávat moc.",
-        "Strany s většinovým posláním mají realističtější program než jiné strany.",
-        "Malé strany se mohou podílet na vládě pouze za mimořádných okolností."
+        "Neexistuje přímá úměra mezi jejich velikostí a politickým vlivem",
+        "Se výrazně liší od politických hnutí",
+        "Jde o trvalé organizace, které se ve jménu určitého ideologického projektu snaží dobýt a vykonávat moc",
+        "Strany s většinovým posláním mají realističtější program než jiné strany",
+        "Malé strany se mohou podílet na vládě pouze za mimořádných okolností"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ]
     },
     {
       "q": "Mezinárodní organizace:",
       "opts": [
-        "Členíme podle podoby vrcholných orgánů na monistické a dualistické.",
-        "Obvykle nemají stálé orgány a fungují na základě tzv. summitů (schůzí vrcholných představitelů členských států).",
-        "Zahrnují zejména tzv. systém OSN.",
-        "Vznikají zásadně pouze na celosvětové úrovni.",
-        "Je sdružení dvou nebo více států vzniklé na základě mezinárodní smlouvy a vybavené pravomocemi pro plnění svých úkolů."
+        "Členíme podle podoby vrcholných orgánů na monistické a dualistické",
+        "Obvykle nemají stálé orgány a fungují na základě tzv. summitů (schůzí vrcholných představitelů členských států)",
+        "Zahrnují zejména tzv. systém OSN",
+        "Vznikají zásadně pouze na celosvětové úrovni",
+        "Je sdružení dvou nebo více států vzniklé na základě mezinárodní smlouvy a vybavené pravomocemi pro plnění svých úkolů"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Pramenem mezinárodního práva je:",
       "opts": [
-        "Mezinárodní precedens.",
-        "Učení odborníků na mezinárodní právo.",
-        "Zvykové právo.",
-        "Mezinárodní smlouva.",
-        "Mezinárodní obyčej."
+        "Mezinárodní precedens",
+        "Učení odborníků na mezinárodní právo",
+        "Zvykové právo",
+        "Mezinárodní smlouva",
+        "Mezinárodní obyčej"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Stát je vymezen:",
       "opts": [
-        "Státními občany.",
-        "Mezinárodní smlouvou.",
-        "Suverénní státní mocí.",
-        "Státním územím.",
-        "Mezinárodním obyčejem."
+        "Státními občany",
+        "Mezinárodní smlouvou",
+        "Suverénní státní mocí",
+        "Státním územím",
+        "Mezinárodním obyčejem"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ]
     },
     {
       "q": "Evropský parlament (opakování):",
       "opts": [
-        "Je přímo volený sbor poslanců z jednotlivých členských zemí EU.",
-        "Volí předsedu Evropské komise.",
-        "Je orgánem Rady Evropy.",
-        "Je volen smíšeným systémem.",
-        "Je tzv. spolu zákonodárcem – legislativní akty schvaluje Parlament i Rada."
+        "Je přímo volený sbor poslanců z jednotlivých členských zemí EU",
+        "Volí předsedu Evropské komise",
+        "Je orgánem Rady Evropy",
+        "Je volen smíšeným systémem",
+        "Je tzv. spolu zákonodárcem – legislativní akty schvaluje Parlament i Rada"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "Nepřímá demokracie:",
       "opts": [
-        "Vychází z principu většinového rozhodování korigovaného principem ochrany menšin a zárukami základních práv.",
-        "Pro svou funkčnost vyžaduje mocenský monopol autorizovaných politických subjektů – politických stran.",
-        "Je taková forma vlády, v níž lid svou moc uskutečňuje tím, že volí své zástupce, kteří teprve se přímo podílejí na výkonu moci.",
-        "Je ohrožena zkorumpovatelností úzkého okruhu volených zástupců a odtažitostí rozhodování od občanů.",
-        "Si vyžaduje všeobecně rovné, tajné a pravidelné volby."
+        "Vychází z principu většinového rozhodování korigovaného principem ochrany menšin a zárukami základních práv",
+        "Pro svou funkčnost vyžaduje mocenský monopol autorizovaných politických subjektů – politických stran",
+        "Je taková forma vlády, v níž lid svou moc uskutečňuje tím, že volí své zástupce, kteří teprve se přímo podílejí na výkonu moci",
+        "Je ohrožena zkorumpovatelností úzkého okruhu volených zástupců a odtažitostí rozhodování od občanů",
+        "Si vyžaduje všeobecně rovné, tajné a pravidelné volby"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Strana kartelu:",
       "opts": [
-        "Je typ politické strany, jejíž vznik je spojován s prolínáním politických stran a státní správy.",
-        "Je strana, jejímž charakteristickým rysem je názorová vyhraněnost až extremismus.",
-        "Je synonymní označení pro stranu kádrů.",
-        "Je extrémním důsledkem tzv. železného zákona oligarchizace politických stran.",
-        "Používá ideové spory pouze jako prostředek boje o moc."
+        "Je typ politické strany, jejíž vznik je spojován s prolínáním politických stran a státní správy",
+        "Je strana, jejímž charakteristickým rysem je názorová vyhraněnost až extremismus",
+        "Je synonymní označení pro stranu kádrů",
+        "Je extrémním důsledkem tzv. železného zákona oligarchizace politických stran",
+        "Používá ideové spory pouze jako prostředek boje o moc"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Tzv. strana pro všechny (catch-all party):",
       "opts": [
-        "Je strana, jejímž charakteristickým rysem je názorová vyhraněnost až extremismus.",
-        "Je strana, jejímž primárním cílem není reprezentace idejí nebo zájmů, ale dosažení největšího možného volebního zisku.",
-        "Se na pravo–levém politickém spektru obvykle nachází blíže středu než jeho okrajům.",
-        "Je synonymní označení pro masovou stranu (stranu mas).",
-        "Je existenčně závislá na členských příspěvcích a tedy rozsáhlé členské základně."
+        "Je strana, jejímž charakteristickým rysem je názorová vyhraněnost až extremismus",
+        "Je strana, jejímž primárním cílem není reprezentace idejí nebo zájmů, ale dosažení největšího možného volebního zisku",
+        "Se na pravo–levém politickém spektru obvykle nachází blíže středu než jeho okrajům",
+        "Je synonymní označení pro masovou stranu (stranu mas)",
+        "Je existenčně závislá na členských příspěvcích a tedy rozsáhlé členské základně"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ]
     },
     {
       "q": "Strana mas:",
       "opts": [
-        "Je extrémním důsledkem tzv. železného zákona oligarchizace politických stran.",
-        "Má typicky mnoho členů a centralizovanou strukturu.",
-        "Obvykle klade velký důraz na individuální charakteristiky svých členů, které si pečlivě vybírá.",
-        "Je synonymní označení pro tzv. stranu pro všechny (catch-all party).",
-        "Je existenčně závislá na členských příspěvcích a tedy rozsáhlé členské základně."
+        "Je extrémním důsledkem tzv. železného zákona oligarchizace politických stran",
+        "Má typicky mnoho členů a centralizovanou strukturu",
+        "Obvykle klade velký důraz na individuální charakteristiky svých členů, které si pečlivě vybírá",
+        "Je synonymní označení pro tzv. stranu pro všechny (catch-all party)",
+        "Je existenčně závislá na členských příspěvcích a tedy rozsáhlé členské základně"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Podle realistické teorie mezinárodních vztahů:",
       "opts": [
-        "Má v mezinárodní politice nezastupitelnou roli spolupráce mezi státy a jinými subjekty.",
-        "Mají v mezinárodní politice ústřední roli státy usilující o moc.",
-        "Jsou základním rysem mezinárodních vztahů vzájemné ekonomické vztahy.",
-        "Je základním politickým prostředkem státu svépomoc.",
-        "Není cílem státu jenom přežít, ale spíše prosperita."
+        "Má v mezinárodní politice nezastupitelnou roli spolupráce mezi státy a jinými subjekty",
+        "Mají v mezinárodní politice ústřední roli státy usilující o moc",
+        "Jsou základním rysem mezinárodních vztahů vzájemné ekonomické vztahy",
+        "Je základním politickým prostředkem státu svépomoc",
+        "Není cílem státu jenom přežít, ale spíše prosperita"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "NATO:",
       "opts": [
-        "Rozhoduje obvykle kvalifikovanou většinou členů Severoatlantické rady.",
-        "Funguje na principu kolektivní sebeobrany – vojenská agrese vůči kterémukoliv ze členů aliance se považuje za agresi vůči všem členům.",
-        "Má pouze vojenské orgány (vojenský výbor, generál, náčelník, ...).",
-        "Jejím hlavním orgánem je Severoatlantická rada, která zasedá alespoň jednou týdně.",
-        "Je univerzální mezinárodní organizace."
+        "Rozhoduje obvykle kvalifikovanou většinou členů Severoatlantické rady",
+        "Funguje na principu kolektivní sebeobrany – vojenská agrese vůči kterémukoliv ze členů aliance se považuje za agresi vůči všem členům",
+        "Má pouze vojenské orgány (vojenský výbor, generál, náčelník, ...)",
+        "Jejím hlavním orgánem je Severoatlantická rada, která zasedá alespoň jednou týdně",
+        "Je univerzální mezinárodní organizace"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Malé politické strany:",
       "opts": [
-        "Mají obvykle pouze desítky až stovky členů.",
-        "Mohou ve volbách získat i výrazný podíl hlasů (viz. hnutí ANO 2011 v roce 2013).",
-        "Mohou mít vliv neúměrný své velikosti.",
-        "Mívají, na rozdíl od velkých stran, realistický program.",
-        "Se na vládě obvykle nepodílejí, jde-li o tzv. strany stálých menšin."
+        "Mají obvykle pouze desítky až stovky členů",
+        "Mohou ve volbách získat i výrazný podíl hlasů (viz. hnutí ANO 2011 v roce 2013)",
+        "Mohou mít vliv neúměrný své velikosti",
+        "Mívají, na rozdíl od velkých stran, realistický program",
+        "Se na vládě obvykle nepodílejí, jde-li o tzv. strany stálých menšin"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ]
     },
     {
       "q": "Které z těchto pojmů se pojí s ideologií konzervatismu?",
       "opts": [
-        "Tradiční hodnoty.",
-        "Ekologie.",
-        "Sociální stát.",
-        "Majetek.",
-        "Pokrok."
+        "Tradiční hodnoty",
+        "Ekologie",
+        "Sociální stát",
+        "Majetek",
+        "Pokrok"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Přímá demokracie:",
       "opts": [
-        "Je neslučitelná s prezidentskou a poloprezidentskou formou vlády.",
-        "Zahrnuje právně závazná i právně nezávazná referenda.",
-        "Má několik různých forem: referendum, volby, petice, atd.",
-        "Téměř vždy doplňuje nepřímou demokracii o některé své prvky.",
-        "Si vyžaduje informovanost a politickou angažovanost občanů."
+        "Je neslučitelná s prezidentskou a poloprezidentskou formou vlády",
+        "Zahrnuje právně závazná i právně nezávazná referenda",
+        "Má několik různých forem: referendum, volby, petice, atd",
+        "Téměř vždy doplňuje nepřímou demokracii o některé své prvky",
+        "Si vyžaduje informovanost a politickou angažovanost občanů"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Stranický systém:",
       "opts": [
-        "Může mít podobu tzv. kohabitace, tedy vládnutí prezidenta z jednoho ideologického proudu a vlády z ideologického proudu jiného.",
-        "Může mít dlouhodobě podobu bipartismu, tedy dvou (bloků) stran, které se střídají u moci.",
-        "Je souhrn stran v daném politickém systému, jejich konfigurace a vzájemné vztahy mezi nimi.",
-        "Je charakterizován zejména počtem stran, jejich poměrnou velikostí a jejich ideologickou vzdáleností.",
-        "Je normativní subsystém politického systému vyjadřující způsob dělení moci ve státě."
+        "Může mít podobu tzv. kohabitace, tedy vládnutí prezidenta z jednoho ideologického proudu a vlády z ideologického proudu jiného",
+        "Může mít dlouhodobě podobu bipartismu, tedy dvou (bloků) stran, které se střídají u moci",
+        "Je souhrn stran v daném politickém systému, jejich konfigurace a vzájemné vztahy mezi nimi",
+        "Je charakterizován zejména počtem stran, jejich poměrnou velikostí a jejich ideologickou vzdáleností",
+        "Je normativní subsystém politického systému vyjadřující způsob dělení moci ve státě"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Rada EU:",
       "opts": [
-        "Sdružuje vlády jednotlivých členských zemí EU.",
-        "Rozhoduje obvykle kvalifikovanou většinou.",
-        "Má stejně jako Evropský soud pro lidská práva sídlo ve Štrasburku.",
-        "Je jedním z hlavních orgánů Evropské unie.",
-        "Její nejvýznamnější činností je přijímání regionálních mezinárodních smluv, např. Úmluva o ochraně lidských práv a základních svobod."
+        "Sdružuje vlády jednotlivých členských zemí EU",
+        "Rozhoduje obvykle kvalifikovanou většinou",
+        "Má stejně jako Evropský soud pro lidská práva sídlo ve Štrasburku",
+        "Je jedním z hlavních orgánů Evropské unie",
+        "Její nejvýznamnější činností je přijímání regionálních mezinárodních smluv, např. Úmluva o ochraně lidských práv a základních svobod"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Které z těchto pojmů se pojí s ideologií environmentalismu?",
       "opts": [
-        "Národ.",
-        "Trvale udržitelný rozvoj.",
-        "Majetek.",
-        "Minimální stát.",
-        "Ekologie."
+        "Národ",
+        "Trvale udržitelný rozvoj",
+        "Majetek",
+        "Minimální stát",
+        "Ekologie"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Většinové volební systémy:",
       "opts": [
-        "Rozlišujeme jednokolové a dvou či více kolové.",
-        "Využívají k omezení počtu stran tzv. uzavírací klauzule.",
-        "Rozdělují mandáty v poměru k počtu získaných hlasů.",
-        "Využívají k rozdělení mandátu matematické operace známé jako volební kvóty a metody volebního dělitele.",
-        "Zahrnují systém tzv. prosté většiny, kdy mandát získá kandidát s nejvyšším počtem hlasů."
+        "Rozlišujeme jednokolové a dvou či více kolové",
+        "Využívají k omezení počtu stran tzv. uzavírací klauzule",
+        "Rozdělují mandáty v poměru k počtu získaných hlasů",
+        "Využívají k rozdělení mandátu matematické operace známé jako volební kvóty a metody volebního dělitele",
+        "Zahrnují systém tzv. prosté většiny, kdy mandát získá kandidát s nejvyšším počtem hlasů"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "V mezinárodním právu (veřejném):",
       "opts": [
-        "Má právní věda zcela okrajovou roli.",
-        "Regulují většinu mezinárodněprávních vztahů mezinárodní smlouvy.",
-        "Působí monopolní zákonodárce, kterým je Valné shromáždění OSN.",
-        "Jsou nejvýznamnějšími subjekty suverénní státy a mezinárodní organizace.",
-        "Platí stejná hierarchie pramenů práva jako v právu vnitrostátním."
+        "Má právní věda zcela okrajovou roli",
+        "Regulují většinu mezinárodněprávních vztahů mezinárodní smlouvy",
+        "Působí monopolní zákonodárce, kterým je Valné shromáždění OSN",
+        "Jsou nejvýznamnějšími subjekty suverénní státy a mezinárodní organizace",
+        "Platí stejná hierarchie pramenů práva jako v právu vnitrostátním"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Pro marxismus je typické:",
       "opts": [
-        "Oslabování státu v závislosti na rozvoji společnosti.",
-        "Zdůraznění třídního boje.",
-        "Materialistické pojetí dějin.",
-        "Ochrana práv a svobod.",
-        "Odpovědnost jedince."
+        "Oslabování státu v závislosti na rozvoji společnosti",
+        "Zdůraznění třídního boje",
+        "Materialistické pojetí dějin",
+        "Ochrana práv a svobod",
+        "Odpovědnost jedince"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "q": "Pro socialismus je typický:",
       "opts": [
-        "Důraz na osobní iniciativu jedince.",
-        "Důraz na společné vlastnictví.",
-        "Důraz na tradiční hodnoty.",
-        "Důraz na pospolitost.",
-        "Důraz na slabý stát."
+        "Důraz na osobní iniciativu jedince",
+        "Důraz na společné vlastnictví",
+        "Důraz na tradiční hodnoty",
+        "Důraz na pospolitost",
+        "Důraz na slabý stát"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Mezinárodní smlouvy za Českou republiku sjednává:",
       "opts": [
-        "Ministr zahraničních věcí.",
-        "Prezident republiky.",
-        "Člen rady.",
-        "Vláda.",
-        "Předseda vlády."
+        "Ministr zahraničních věcí",
+        "Prezident republiky",
+        "Člen rady",
+        "Vláda",
+        "Předseda vlády"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Legitimní moc je vykonávána:",
       "opts": [
-        "V souladu se zákonem.",
-        "V souladu s rozhodnutím Ústavního soudu.",
-        "V souladu s vůlí ovládajících.",
-        "V souladu s vůlí ovládaných.",
-        "V souladu s ústavou."
+        "V souladu se zákonem",
+        "V souladu s rozhodnutím Ústavního soudu",
+        "V souladu s vůlí ovládajících",
+        "V souladu s vůlí ovládaných",
+        "V souladu s ústavou"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Aktivní volební právo do parlamentu v České republice:",
       "opts": [
-        "Náleží státnímu občanovi staršímu 18 let.",
-        "Náleží občanovi EU staršímu 18 let, pokud je nejméně 40 dní před volbami na území našeho státu.",
-        "Náleží státnímu občanovi staršímu 40 let.",
-        "Náleží osobě starší 18 let.",
-        "Náleží státnímu občanovi staršímu 21 let."
+        "Náleží státnímu občanovi staršímu 18 let",
+        "Náleží občanovi EU staršímu 18 let, pokud je nejméně 40 dní před volbami na území našeho státu",
+        "Náleží státnímu občanovi staršímu 40 let",
+        "Náleží osobě starší 18 let",
+        "Náleží státnímu občanovi staršímu 21 let"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Volební systémy dělíme na:",
       "opts": [
-        "Systém relativní většiny.",
-        "Systém proporcionálního zastoupení.",
-        "Systém smíšený.",
-        "Systém absolutní většiny."
+        "Systém relativní většiny",
+        "Systém proporcionálního zastoupení",
+        "Systém smíšený",
+        "Systém absolutní většiny"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Referendum může být:",
       "opts": [
-        "Závazné.",
-        "Doporučující.",
-        "Fakultativní.",
-        "Obligatorní.",
-        "Zákonné."
+        "Závazné",
+        "Doporučující",
+        "Fakultativní",
+        "Obligatorní",
+        "Zákonné"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Pokleslá forma vlády podle Aristotela je:",
       "opts": [
-        "Demokracie.",
-        "Politeia.",
-        "Monarchie.",
-        "Oligarchie.",
-        "Aristokracie."
+        "Demokracie",
+        "Politeia",
+        "Monarchie",
+        "Oligarchie",
+        "Aristokracie"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Tzv. ideologický trojúhelník:",
       "opts": [
-        "Klade do protikladu environmentalismus a průmyslovou revoluci.",
-        "Schematicky popisuje základní vztahy mezi politickými ideologiemi.",
-        "Tvoří polovinu anarchického ideologického kosočtverce.",
-        "Je vhodným nástrojem k identifikaci všech i nejnovějších ideologií."
+        "Klade do protikladu environmentalismus a průmyslovou revoluci",
+        "Schematicky popisuje základní vztahy mezi politickými ideologiemi",
+        "Tvoří polovinu anarchického ideologického kosočtverce",
+        "Je vhodným nástrojem k identifikaci všech i nejnovějších ideologií"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Konzervatismus a liberalismus:",
       "opts": [
-        "Jsou dva protikladné póly liberálního spektra politických ideologií.",
-        "Patří mezi nejnovější politické ideologie stojící mimo klasický ideologický trojúhelník.",
-        "Tvoří základ politické pravice.",
-        "Se v zásadě shodují v základních ekonomických tématech a rozcházejí se v pohledu na individuální svobody."
+        "Jsou dva protikladné póly liberálního spektra politických ideologií",
+        "Patří mezi nejnovější politické ideologie stojící mimo klasický ideologický trojúhelník",
+        "Tvoří základ politické pravice",
+        "Se v zásadě shodují v základních ekonomických tématech a rozcházejí se v pohledu na individuální svobody"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "V případě politických stran platí, že (vliv):",
       "opts": [
-        "Na malých stranách může záviset to, jaká vláda vznikne.",
-        "Programy stran s většinovým posláním jsou realističtější než programy jiných velkých stran.",
-        "Jejich vliv je přímo úměrný počtu členů.",
-        "Jejich vliv je přímo úměrný volebnímu zisku."
+        "Na malých stranách může záviset to, jaká vláda vznikne",
+        "Programy stran s většinovým posláním jsou realističtější než programy jiných velkých stran",
+        "Jejich vliv je přímo úměrný počtu členů",
+        "Jejich vliv je přímo úměrný volebnímu zisku"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Totalitní režimy:",
       "opts": [
-        "Mají typicky zcela apatické, politicky neangažované obyvatelstvo.",
-        "Vykořeňují jednotlivce z tradičních vazeb.",
-        "Mají vícero navzájem si konkurujících ohnisek moci, mezi kterými zuří boj.",
-        "Jsou přechodovou formou mezi demokratickými a autoritářskými režimy."
+        "Mají typicky zcela apatické, politicky neangažované obyvatelstvo",
+        "Vykořeňují jednotlivce z tradičních vazeb",
+        "Mají vícero navzájem si konkurujících ohnisek moci, mezi kterými zuří boj",
+        "Jsou přechodovou formou mezi demokratickými a autoritářskými režimy"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Organizace spojených národů (opakování):",
       "opts": [
-        "Je administrativně řízena 5 stálými členy Rady bezpečnosti.",
-        "Může státům světa ukládat povinnosti rezolucemi svého Valného shromáždění.",
-        "Vznikla v návaznosti na druhou světovou válku.",
-        "Je ústřední mezinárodní organizací."
+        "Je administrativně řízena 5 stálými členy Rady bezpečnosti",
+        "Může státům světa ukládat povinnosti rezolucemi svého Valného shromáždění",
+        "Vznikla v návaznosti na druhou světovou válku",
+        "Je ústřední mezinárodní organizací"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Evropská komise (opakování):",
       "opts": [
-        "Má (až na drobné výjimky) monopolní legislativní iniciativu v EU.",
-        "Se řídí pokyny představitelů jednotlivých členských zemí sdružených v Radě.",
-        "Pracuje ve složení: předseda, místopředseda a 8 členů volených na 5 let Evropským parlamentem.",
-        "Je tzv. strážkyní smluv."
+        "Má (až na drobné výjimky) monopolní legislativní iniciativu v EU",
+        "Se řídí pokyny představitelů jednotlivých členských zemí sdružených v Radě",
+        "Pracuje ve složení: předseda, místopředseda a 8 členů volených na 5 let Evropským parlamentem",
+        "Je tzv. strážkyní smluv"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ]
     },
     {
       "q": "Pro stranické systémy platí, že:",
       "opts": [
-        "Jsou metodou popisu vnitřní struktury stran.",
-        "Je pro ně irelevantní ideová homogenita stran tvořících daný systém.",
-        "Mají podstatný vliv na podobu a složení vládních koalic v daném politickém systému.",
-        "Členíme je podle počtu stran a jejich vzájemných poměrů na bipartismus, systém dvou-a-půl stran, multipartismus atd."
+        "Jsou metodou popisu vnitřní struktury stran",
+        "Je pro ně irelevantní ideová homogenita stran tvořících daný systém",
+        "Mají podstatný vliv na podobu a složení vládních koalic v daném politickém systému",
+        "Členíme je podle počtu stran a jejich vzájemných poměrů na bipartismus, systém dvou-a-půl stran, multipartismus atd"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     }
   ]
 }

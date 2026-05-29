@@ -942,8 +942,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
           <button class="btn-ico btn-nav" id="btn-study-next" onclick="goStudy(1)">›</button>
         </div>
         <div style="display:flex;align-items:center;gap:6px;">
-          <button class="btn-ico" onclick="askAbortToStart()" title="Přejít na nastavení testu" style="font-size:11px;padding:0 7px;width:auto;">Nastavení testu</button>
-          <button class="btn-ico" onclick="printStudy()" title="Tisknout všechny otázky se správnými odpověďmi" style="font-size:11px;padding:0 7px;width:auto;">Tisk</button>
+          <button class="btn-ico" onclick="askAbortToStart()" title="Přejít na nastavení testu">🔧</button>
+          <button class="btn-ico" onclick="printStudy()" title="Tisknout všechny otázky se správnými odpověďmi">🖨️</button>
         </div>
       </div>
       <div class="pbar"><div class="pbar-fill" id="study-pbar"></div></div>
@@ -1744,10 +1744,10 @@ function retryQ() {
   S.confirmed[n] = false;
   S.retried[n]   = (S.retried[n] || 0) + 1;
   S.hintUsed[n]  = false;
-  // Reshuffle options
+  // Reshuffle options — derangement: každá odpověď musí změnit pozici
   const q = S.questions[n];
   const opts = q.opts.map((t, i) => ({ t, ci: q.correct.includes(i) }));
-  const shuffled = shuffle(opts);
+  const shuffled = derange(opts);
   q.opts = shuffled.map(o => o.t);
   q.correct = shuffled.reduce((acc, o, i) => { if (o.ci) acc.push(i); return acc; }, []);
   window.scrollTo(0, 0);
@@ -2279,6 +2279,18 @@ function shuffle(a) {
   const b = [...a];
   for (let i = b.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+}
+
+// Derangement (Sattolo's algorithm) — random permutation where NO element
+// stays on its original position. Needs ≥2 prvky, jinak vrací beze změny.
+function derange(a) {
+  const b = [...a];
+  if (b.length < 2) return b;
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * i); // [0, i-1] — i sám se nikdy nevybere
     [b[i], b[j]] = [b[j], b[i]];
   }
   return b;

@@ -1,7 +1,7 @@
 {
   "id": "politologie-mezinarodni-vztahy",
   "title": "Politologie a mezinárodní vztahy",
-  "updatedAt": "2026-05-17",
+  "updatedAt": "2026-05-30",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech",
   "format": {
     "type": "multiple-choice",
@@ -696,21 +696,6 @@
       ]
     },
     {
-      "q": "Evropský parlament (opakování):",
-      "opts": [
-        "Je přímo volený sbor poslanců z jednotlivých členských zemí EU",
-        "Volí předsedu Evropské komise",
-        "Je orgánem Rady Evropy",
-        "Je volen smíšeným systémem",
-        "Je tzv. spolu zákonodárcem – legislativní akty schvaluje Parlament i Rada"
-      ],
-      "correct": [
-        0,
-        1,
-        4
-      ]
-    },
-    {
       "q": "Nepřímá demokracie:",
       "opts": [
         "Vychází z principu většinového rozhodování korigovaného principem ochrany menšin a zárukami základních práv",
@@ -1108,6 +1093,263 @@
       ],
       "correct": [
         2,
+        3
+      ]
+    },
+    {
+      "q": "Konzervatismus je založen mimo jiné na:",
+      "opts": [
+        "Korporativnímu státu",
+        "Vládě rozumu",
+        "Nedotknutelnosti majetku",
+        "Tradici",
+        "Materiálnímu pojetí dějin"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "V poloprezidentském systému:",
+      "opts": [
+        "Prezident může iniciovat referendum bez ohledu na vůli vlády",
+        "Vláda je jmenována prezidentem, ale odpovídá parlamentu",
+        "Prezident jmenuje vládu na návrh předsedy vlády"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Pro prezidentský systém je typické?",
+      "opts": [
+        "Prezident je odpovědný ze své funkce parlamentu",
+        "Prezident může rozpustit parlament",
+        "Předseda vlády odpovídá za činnost vlády",
+        "Prezident vydává dekrety.",
+        "Výkonná moc je v rukou prezidenta"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Liberalismus je založen mimo jiné na:",
+      "opts": [
+        "Vládě rozumu",
+        "Materiálním pojetí dějin",
+        "Korporativním státu",
+        "Nerovnosti mezi lidmi",
+        "Tradici"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Pro parlamentní republiku je typické:",
+      "opts": [
+        "Vláda odpovídá za své funkce prezidentu republiky.",
+        "Vláda odpovídá ze své funkce občanům.",
+        "Vláda odpovídá ze své funkce parlamentu.",
+        "Vláda odpovídá ze své funkce parlamentu prostřednictvím prezidenta.",
+        "Vládu jmenuje předseda vlády na základě výsledků voleb."
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Jaké jsou přijatelné formy vlády podle Aristotela?",
+      "opts": [
+        "Demokracie, Politea, Aristokracie",
+        "Monarchie, Demokracie, Aristokracie",
+        "Monarchie, Aristokracie, Demokracie.",
+        "Monarchie, Aristokracie, Politea",
+        "Oligarchie, Politea, Demokracie, Monarchie",
+        "Hierarchie, panství"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Socialismus je založen mimo jiné na:",
+      "opts": [
+        "Autoritě",
+        "Materiálním pojetí dějin",
+        "Řešení antagonistických rozporů ve společnosti",
+        "Potřebě sociální rovnosti",
+        "Korporativnímu státu"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Demokratický politický systém:",
+      "opts": [
+        "Je založen na existenci politických stran",
+        "Je založen na vůli lidu",
+        "Je založen na ústavě",
+        "Je založen na svobodném vzniku a soutěži politických stran",
+        "Je založen na politických stranách nezávislých na státu"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jak je vymezena státní moc:",
+      "opts": [
+        "Je veřejná moc, suverénní, apriorně legitimní k ovládání občanů na státním území.",
+        "Státní moc nemá jasnou definici.",
+        "Jde o moc výkonnou, zákonodárnou a soudní",
+        "Jde o moc suverénní nad občany státu, vymezená právní úpravou.",
+        "Státní moc je neomezená, plně suverénní."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Slabé stránky vůdcovství:",
+      "opts": [
+        "Mobilizace",
+        "Inspirace",
+        "Koncentrace moci",
+        "Omezená diskuse",
+        "Servilita"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Lid vykonává státní moc:",
+      "opts": [
+        "Prostřednictvím politických stran",
+        "Prostřednictvím moci výkonné, zákonodárné a soudní",
+        "Přímo referendem",
+        "Podle zvyklosti",
+        "Výkonem volebního práva v pravidelných volebních obdobích"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Legální je moc, která:",
+      "opts": [
+        "není protizákonná.",
+        "respektuje dohodnutá pravidla",
+        "se opírá o zákon",
+        "respektuje vůli občanů"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Jaká je vazba mezi rozvojem jedince a společnosti:",
+      "opts": [
+        "Společnost nemá právo zasahovat do rozvoje jedince",
+        "Rozvoj osoby a společnosti na sobě nezávisí",
+        "Jedinec určuje rozvoj společnosti",
+        "Rozvoj jedince a společnosti na sobě závisejí",
+        "Společnost určuje rozvoj jedince"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Mezi zavedené typy stran patří strany:",
+      "opts": [
+        "Revoluční",
+        "Reprezentativní",
+        "Kontrarevoluční",
+        "Výběrové"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "V právním státu soudní moc musí být:",
+      "opts": [
+        "Nezávislá na moci zákonodárné a výkonné",
+        "Vymezena v ústavě",
+        "Nejméně dvojinstanční",
+        "Profesionální",
+        "Vícestupňová"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Mezi znaky právního státu patří:",
+      "opts": [
+        "pluralitní politický systém",
+        "psané zákony",
+        "existence soudní moci",
+        "psaná ústava",
+        "přiměřenost trestu"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Jak je upraveno svobodné rozhodování jedince:",
+      "opts": [
+        "Občan může činit vše, co zákon nezakazuje a musí činit to, co mu zákon ukládá.",
+        "Takové vymezení neexistuje",
+        "Každý se musí chovat zodpovědně vůči společnosti",
+        "Každý může činit vše, co zákon nezakazuje a musí činit to, co mu zákon ukládá.",
+        "Každý může činit, co je v souladu s dobrými mravy"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "V demokratickém právním státu:",
+      "opts": [
+        "Jsou lidé si rovni před zákonem",
+        "Jsou lidé si rovni obecně",
+        "Lidé jsou si nerovní z principu",
+        "Mají lidé přiznaná práva ústavou",
+        "Jsou lidé si rovni v důstojnosti a právech"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "V právním státu jsou povinnosti:",
+      "opts": [
+        "podle obecně závazných norem celého právního řádu.",
+        "vymáhány celým systémem vládní moci",
+        "opakem lidských práv a svobod",
+        "ukládány jen podle zákona a v jeho mezích",
+        "obecně závazné"
+      ],
+      "correct": [
         3
       ]
     }

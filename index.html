@@ -413,11 +413,25 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .dash-card {
   width: 100%; text-align: left;
   background: var(--card2); border-radius: var(--r);
-  padding: 16px 18px; cursor: pointer;
   border: 1.5px solid var(--line2);
   position: relative; isolation: isolate;
-  transition: opacity .15s; -webkit-appearance: none;
+  display: flex; align-items: stretch; overflow: hidden;
 }
+.dash-card-main {
+  flex: 1; text-align: left; background: none; border: none;
+  padding: 16px 18px; cursor: pointer; -webkit-appearance: none;
+  transition: opacity .15s;
+}
+.dash-card-main:active { opacity: .7; }
+.dash-card-print {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 14px; background: none; border: none;
+  border-left: 1.5px solid var(--line2); cursor: pointer;
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  -webkit-appearance: none; transition: background .15s, color .15s;
+  white-space: nowrap; gap: 4px; flex-shrink: 0;
+}
+.dash-card-print:active { background: var(--line); color: var(--dim); }
 .dash-card:active { opacity: .7; }
 .dash-card::before {
   content: ''; position: absolute; inset: 0; border-radius: var(--r);
@@ -1510,14 +1524,35 @@ function renderDashboard() {
     return;
   }
   TESTS_REGISTRY.forEach(t => {
-    const card = document.createElement('button');
+    const card = document.createElement('div');
     card.className = 'dash-card' + (t.retired ? ' dash-card--retired' : '');
     const badge = t.retired ? `<div class="dash-card-badge">✓ Splněno</div>` : '';
     const qLabel = t.questionCount === 1 ? 'otázka' : t.questionCount >= 2 && t.questionCount <= 4 ? 'otázky' : 'otázek';
-    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} ${qLabel} · aktualizováno ${formatDate(t.updatedAt)}</div>`;
-    card.onclick = () => selectTest(t.id);
+    card.innerHTML = `
+      <button class="dash-card-main" onclick="selectTest('${t.id}')">
+        ${badge}<div class="dash-card-title">${t.title}</div>
+        <div class="dash-card-sub">${t.questionCount} ${qLabel} · aktualizováno ${formatDate(t.updatedAt)}</div>
+      </button>
+      <button class="dash-card-print" onclick="quickStudy('${t.id}')" title="Procházení a tisk">Tisk →</button>`;
     container.appendChild(card);
   });
+}
+
+async function quickStudy(id) {
+  try {
+    const reg = TESTS_REGISTRY.find(t => t.id === id);
+    let test = loadedTests[id];
+    if (!test) {
+      const res = await fetch('tests/' + reg.file + '?v=' + APP_VERSION);
+      test = await res.json();
+      loadedTests[id] = test;
+    }
+    S.selectedTest = test;
+    cfg.study = 'direct';
+    startStudy();
+  } catch (e) {
+    alert('Nepodařilo se načíst test.');
+  }
 }
 
 async function selectTest(id) {

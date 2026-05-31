@@ -388,6 +388,20 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .btn-sec:active { background: var(--line); }
 
+/* ── SCREEN-START ZONES ──────────────────────────── */
+.zone-primary { background:var(--card); border:2px solid var(--primary-mid); border-radius:var(--r); padding:16px; display:flex; flex-direction:column; gap:10px; position:relative; isolation:isolate; }
+.zone-primary::before { content:''; position:absolute; inset:0; border-radius:var(--r); background:var(--yellow-mid); border:2px solid var(--yellow); transform:translate(4px,4px); z-index:-1; }
+.zone-primary-label { font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--primary); }
+.custom-settings-section { background:var(--card2); border:1.5px solid var(--line2); border-radius:var(--r); overflow:hidden; }
+.custom-settings-toggle { display:flex; align-items:center; justify-content:space-between; padding:13px 16px; cursor:pointer; -webkit-user-select:none; font-size:14px; font-weight:600; color:var(--dim); background:none; border:none; width:100%; text-align:left; -webkit-appearance:none; transition:background .15s; }
+.custom-settings-toggle:active { background:var(--line2); }
+.custom-settings-icon { font-size:12px; color:var(--muted); transition:transform .2s; }
+.custom-settings-icon.open { transform:rotate(180deg); }
+.custom-settings-body { display:flex; flex-direction:column; gap:14px; padding:0 16px 16px; }
+.custom-settings-body.collapsed { display:none; }
+.sec-study { display:flex; flex-direction:column; gap:8px; opacity:0.7; }
+.sec-study-label { font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); }
+
 /* ── DASHBOARD ───────────────────────────────────── */
 #screen-dashboard {
   align-items: center;
@@ -771,117 +785,143 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
     <div>
       <div class="start-h" id="start-test-title"></div>
-      <div style="font-size:13px;color:var(--dim);margin-top:6px;font-weight:500;" id="start-meta"></div>
-      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</div>
-      <div style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5;">
+      <div style="font-size:12px;color:var(--dim);margin-top:4px;font-weight:500;" id="start-meta"></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:6px;line-height:1.5;">
         <span id="start-rubric"></span><span id="start-scoring-note-sep" style="display:none;"> · </span><span id="start-scoring-note" style="display:none;"></span>
       </div>
+      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</div>
     </div>
 
-    <!-- Procházení otázek (study mode) -->
-    <div class="sec">
-      <div class="sec-label">Procházení otázek (bez bodování)</div>
-      <div class="seg" id="seg-study">
-        <button class="seg-btn active" onclick="setSeg('study','direct')">✓ Přímo s odpověďmi</button>
-        <button class="seg-btn"        onclick="setSeg('study','recall')">Active recall</button>
-      </div>
-      <button class="btn-sec" style="margin-top:8px;width:100%;text-align:center;position:relative;padding-right:40px;" onclick="startStudy()">Procházení otázek a tisk testu<span style="position:absolute;right:20px;top:50%;transform:translateY(-50%);">→</span></button>
-    </div>
+    <!-- ZONE A: Procvičování -->
+    <div class="zone-primary">
+      <div class="zone-primary-label">Procvičování</div>
 
-    <!-- Rychlé volby -->
-    <div class="sec" style="border-top:1px solid var(--line2);padding-top:18px;margin-top:4px;">
-      <div class="sec-label">Rychlé volby</div>
-      <div class="mode-card" id="preset-exam" style="display:none;" onclick="applyPreset('exam')" ondblclick="applyPreset('exam');startQuiz()">
-        <div class="mode-radio"></div>
-        <div class="mode-card-text">
-          <div class="mode-card-title">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
-          <div class="mode-card-sub">Náhodný výběr + vyhodnocení po dokončení.</div>
-        </div>
+      <!-- Sady otázek (chunk pills) — skryté pokud test nemá sady -->
+      <div id="zone-a-chunks-section" style="display:none">
+        <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-bottom:6px;">Sady otázek</div>
+        <div id="range-chunks" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:8px;"></div>
       </div>
-      <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+
+      <!-- Separator — skrytý pokud nejsou sady -->
+      <div id="zone-a-quick-sep" style="display:none;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dim);">nebo rychle</div>
+
+      <!-- Quick count presets -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
         <div class="cpill" id="preset-10rand" onclick="applyPreset('10rand')" ondblclick="applyPreset('10rand');startQuiz()" style="flex:none;font-size:14px;">10 náhodně</div>
         <div class="cpill" id="preset-25rand" onclick="applyPreset('25rand')" ondblclick="applyPreset('25rand');startQuiz()" style="flex:none;font-size:14px;">25 náhodně</div>
         <div class="cpill" id="preset-50rand" onclick="applyPreset('50rand')" ondblclick="applyPreset('50rand');startQuiz()" style="flex:none;font-size:14px;">50 náhodně</div>
         <div class="cpill" id="preset-allseq" onclick="applyPreset('allseq')" ondblclick="applyPreset('allseq');startQuiz()" style="flex:none;font-size:14px;">Vše postupně</div>
       </div>
-      <div style="font-size:11px;color:var(--muted);margin-top:6px;line-height:1.4;">Dvojklik na volbu = okamžitý start testu.</div>
+
+      <div style="font-size:11px;color:var(--muted);line-height:1.4;">Dvojklik na volbu = okamžitý start.</div>
+      <button class="btn-start" id="btn-start-quick" onclick="startQuiz()">Spustit test ↵</button>
     </div>
 
-    <!-- Rozsah otázek -->
-    <div class="sec">
-      <div class="sec-label">Rozsah otázek</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-        <div class="mode-card active" id="mode-all" onclick="setMode('all')">
-          <div class="mode-radio"></div>
-          <div class="mode-card-text">
-            <div class="mode-card-title">Všechny otázky <span id="all-range-label" style="font-weight:500;color:var(--dim);font-size:12px;"></span></div>
+    <!-- Simulace zkoušky (podmíněně) -->
+    <div id="preset-exam-block" style="display:none">
+      <div class="mode-card" id="preset-exam" onclick="applyPreset('exam')" ondblclick="applyPreset('exam');startQuiz()">
+        <div class="mode-radio"></div>
+        <div class="mode-card-text">
+          <div class="mode-card-title">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
+          <div class="mode-card-sub">Náhodný výběr · vyhodnocení po dokončení · dvojklik = start.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ZONE B: Vlastní nastavení (collapsible) -->
+    <div class="custom-settings-section">
+      <button class="custom-settings-toggle" onclick="toggleCustomSettings()" aria-expanded="false" id="custom-settings-toggle-btn">
+        <span>Vlastní nastavení</span>
+        <span class="custom-settings-icon" id="custom-settings-icon">▼</span>
+      </button>
+      <div class="custom-settings-body collapsed" id="custom-settings-body">
+
+        <!-- Rozsah otázek -->
+        <div class="sec">
+          <div class="sec-label">Rozsah otázek</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div class="mode-card active" id="mode-all" onclick="setMode('all')">
+              <div class="mode-radio"></div>
+              <div class="mode-card-text">
+                <div class="mode-card-title">Všechny otázky <span id="all-range-label" style="font-weight:500;color:var(--dim);font-size:12px;"></span></div>
+              </div>
+            </div>
+            <div class="mode-card" id="mode-range" onclick="setMode('range')">
+              <div class="mode-radio"></div>
+              <div class="mode-card-text">
+                <div class="mode-card-title">Pouze od–do</div>
+              </div>
+            </div>
+          </div>
+          <div id="range-section" style="display:none">
+            <div class="range-row" style="margin-top:8px;">
+              <label>Od</label>
+              <input class="range-input" id="range-from" type="text" value="1"
+                     onkeydown="rangeKeydown(event)"
+                     oninput="this.value=this.value.replace(/[^0-9]/g,'');updateRangeInfo()" inputmode="numeric" pattern="[0-9]*">
+              <label>do</label>
+              <input class="range-input" id="range-to" type="text"
+                     onkeydown="rangeKeydown(event)"
+                     oninput="this.value=this.value.replace(/[^0-9]/g,'');updateRangeInfo()" inputmode="numeric" pattern="[0-9]*">
+            </div>
+            <div class="range-info" id="range-info"></div>
           </div>
         </div>
-        <div class="mode-card" id="mode-range" onclick="setMode('range')">
-          <div class="mode-radio"></div>
-          <div class="mode-card-text">
-            <div class="mode-card-title">Pouze od–do</div>
+
+        <!-- Počet otázek -->
+        <div class="sec" id="count-section">
+          <div class="sec-label" id="count-section-header" style="display:flex;align-items:center;gap:8px;">
+            <span id="count-section-title">Počet otázek</span>
+            <span id="count-toggle-icon" style="display:none;margin-left:auto;color:var(--muted);font-size:11px;">▼</span>
+          </div>
+          <div id="count-section-body">
+            <div class="count-pills">
+              <div class="cpill" id="cp-10"  onclick="setCount(10)">10</div>
+              <div class="cpill" id="cp-25"  onclick="setCount(25)">25</div>
+              <div class="cpill" id="cp-50"  onclick="setCount(50)">50</div>
+              <div class="cpill active" id="cp-0" onclick="setCount(0)">Vše</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+              <input class="range-input" id="custom-count" type="text" placeholder="Vlastní počet" onkeydown="rangeKeydown(event)" oninput="this.value=this.value.replace(/[^0-9]/g,'');setCustomCount()" onfocus="setCustomCount()" inputmode="numeric" style="flex:1;text-align:left;font-size:15px;font-weight:700;padding:10px 12px;" pattern="[0-9]*">
+            </div>
+            <div class="range-info" id="count-info"></div>
           </div>
         </div>
-      </div>
-      <div id="range-section" style="display:none">
-        <div id="range-chunks" style="margin-top:8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:8px;"></div>
-        <div class="range-row" style="margin-top:8px;">
-          <label>Od</label>
-          <input class="range-input" id="range-from" type="text" value="1"
-                 onkeydown="rangeKeydown(event)"
-                 oninput="this.value=this.value.replace(/[^0-9]/g,'');updateRangeInfo()" inputmode="numeric" pattern="[0-9]*">
-          <label>do</label>
-          <input class="range-input" id="range-to" type="text"
-                 onkeydown="rangeKeydown(event)"
-                 oninput="this.value=this.value.replace(/[^0-9]/g,'');updateRangeInfo()" inputmode="numeric" pattern="[0-9]*">
+
+        <!-- Pořadí otázek -->
+        <div class="sec" id="qorder-section">
+          <div class="sec-label">Pořadí otázek</div>
+          <div class="seg" id="seg-qorder">
+            <button class="seg-btn"        onclick="setSeg('qorder','random')">Náhodně</button>
+            <button class="seg-btn active" onclick="setSeg('qorder','seq')">✓ Postupně</button>
+          </div>
         </div>
-        <div class="range-info" id="range-info"></div>
-      </div>
-    </div>
 
-    <!-- Počet otázek -->
-    <div class="sec" id="count-section">
-      <div class="sec-label" id="count-section-header" style="display:flex;align-items:center;gap:8px;">
-        <span id="count-section-title">Počet otázek</span>
-        <span id="count-toggle-icon" style="display:none;margin-left:auto;color:var(--muted);font-size:11px;">▼</span>
-      </div>
-      <div id="count-section-body">
-        <div class="count-pills">
-          <div class="cpill" id="cp-10"  onclick="setCount(10)">10</div>
-          <div class="cpill" id="cp-25"  onclick="setCount(25)">25</div>
-          <div class="cpill" id="cp-50"  onclick="setCount(50)">50</div>
-          <div class="cpill active" id="cp-0" onclick="setCount(0)">Vše</div>
+        <!-- Vyhodnocení odpovědí -->
+        <div class="sec">
+          <div class="sec-label">Vyhodnocení odpovědí</div>
+          <div class="seg" id="seg-fb">
+            <button class="seg-btn active" onclick="setSeg('fb','ihned')">✓ Po každé otázce</button>
+            <button class="seg-btn"       onclick="setSeg('fb','after')">Po dokončení testu</button>
+          </div>
         </div>
-        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
-          <input class="range-input" id="custom-count" type="text" placeholder="Vlastní počet" onkeydown="rangeKeydown(event)" oninput="this.value=this.value.replace(/[^0-9]/g,'');setCustomCount()" onfocus="setCustomCount()" inputmode="numeric" style="flex:1;text-align:left;font-size:15px;font-weight:700;padding:10px 12px;" pattern="[0-9]*">
-        </div>
-        <div class="range-info" id="count-info"></div>
+
+        <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test ↵</button>
+
       </div>
     </div>
 
-    <!-- Pořadí otázek -->
-    <div class="sec" id="qorder-section">
-      <div class="sec-label">Pořadí otázek</div>
-      <div class="seg" id="seg-qorder">
-        <button class="seg-btn"        onclick="setSeg('qorder','random')">Náhodně</button>
-        <button class="seg-btn active" onclick="setSeg('qorder','seq')">✓ Postupně</button>
+    <!-- ZONE C: Procházení a tisk -->
+    <div class="sec-study">
+      <div class="sec-study-label">Procházení a tisk</div>
+      <div class="seg" id="seg-study">
+        <button class="seg-btn active" onclick="setSeg('study','direct')">✓ Přímo s odpověďmi</button>
+        <button class="seg-btn"        onclick="setSeg('study','recall')">Active recall</button>
       </div>
+      <button class="btn-sec" style="width:100%;text-align:center;position:relative;padding:11px 40px 11px 16px;font-size:14px;" onclick="startStudy()">Procházení otázek a tisk testu<span style="position:absolute;right:16px;top:50%;transform:translateY(-50%);">→</span></button>
     </div>
 
-    <!-- Vyhodnocení odpovědí -->
-    <div class="sec">
-      <div class="sec-label">Vyhodnocení odpovědí</div>
-      <div class="seg" id="seg-fb">
-        <button class="seg-btn active" onclick="setSeg('fb','ihned')">✓ Po každé otázce</button>
-        <button class="seg-btn"       onclick="setSeg('fb','after')">Po dokončení testu</button>
-      </div>
-    </div>
-
-    <button class="btn-start" id="btn-start" onclick="startQuiz()">Spustit test ↵</button>
-
-    <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu"<!-- nebo „Menu - Instalovat aplikaci" -->.</div>
-
+    <div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu".</div>
 
   </div>
 </div>
@@ -1166,13 +1206,17 @@ function buildRangeChunks(total, chunkSize) {
 
 function renderRangeChunks() {
   const container = document.getElementById('range-chunks');
+  const chunkSection = document.getElementById('zone-a-chunks-section');
+  const quickSep = document.getElementById('zone-a-quick-sep');
   if (!container || !S.selectedTest) return;
   const total = S.selectedTest.questions.length;
   const chunkSize = (S.selectedTest.exam && S.selectedTest.exam.questionCount) || 20;
   const chunks = buildRangeChunks(total, chunkSize);
   container.innerHTML = '';
-  if (chunks.length < 2) { container.style.display = 'none'; return; }
-  container.style.display = '';
+  const hasChunks = chunks.length >= 2;
+  if (chunkSection) chunkSection.style.display = hasChunks ? '' : 'none';
+  if (quickSep)    quickSep.style.display    = hasChunks ? '' : 'none';
+  if (!hasChunks) return;
   chunks.forEach((c, i) => {
     const el = document.createElement('div');
     el.className = 'cpill';
@@ -1214,6 +1258,16 @@ function toggleCountSection() {
   const isCollapsed = body.style.display === 'none';
   body.style.display = isCollapsed ? '' : 'none';
   icon.textContent = isCollapsed ? '▲' : '▼';
+}
+
+function toggleCustomSettings() {
+  const body = document.getElementById('custom-settings-body');
+  const icon = document.getElementById('custom-settings-icon');
+  const toggleBtn = document.getElementById('custom-settings-toggle-btn');
+  const isCollapsed = body.classList.contains('collapsed');
+  body.classList.toggle('collapsed', !isCollapsed);
+  if (icon) icon.classList.toggle('open', isCollapsed);
+  if (toggleBtn) toggleBtn.setAttribute('aria-expanded', isCollapsed ? 'true' : 'false');
 }
 
 // Count
@@ -1485,13 +1539,13 @@ async function selectTest(id) {
     document.getElementById('start-rubric').textContent = test.rubric || '';
     document.getElementById('all-range-label').textContent = '1–' + total;
     renderRangeChunks();
-    const presetExam = document.getElementById('preset-exam');
+    const presetExamBlock = document.getElementById('preset-exam-block');
     if (test.exam && test.exam.questionCount) {
       document.getElementById('exam-q-count').textContent = test.exam.questionCount;
-      presetExam.style.display = '';
+      presetExamBlock.style.display = '';
       applyPreset('exam');
     } else {
-      presetExam.style.display = 'none';
+      presetExamBlock.style.display = 'none';
       setMode('all');
     }
     const snEl = document.getElementById('start-scoring-note');
@@ -2405,7 +2459,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '5.86';
+const APP_VERSION = '6.0';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

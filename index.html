@@ -819,12 +819,12 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
     <!-- Simulace zkoušky (podmíněně) -->
     <div id="preset-exam-block" style="display:none">
-      <div class="mode-card" id="preset-exam" onclick="applyPreset('exam')" ondblclick="applyPreset('exam');startQuiz()">
-        <div class="mode-radio"></div>
-        <div class="mode-card-text">
-          <div class="mode-card-title">Simulace zkoušky — <span id="exam-q-count">—</span> otázek</div>
-          <div class="mode-card-sub">Náhodný výběr · vyhodnocení po dokončení · dvojklik = start.</div>
+      <div id="preset-exam" style="background:var(--card);border:1.5px solid var(--line2);border-radius:var(--r);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div>
+          <div style="font-size:15px;font-weight:700;">Simulace zkoušky</div>
+          <div style="font-size:13px;color:var(--dim);margin-top:2px;"><span id="exam-q-count">—</span> otázek · náhodný výběr · výsledek na konci</div>
         </div>
+        <button class="btn-sec" style="flex-shrink:0;padding:9px 14px;font-size:14px;border-radius:9px;" onclick="applyPreset('exam');startQuiz()">Spustit →</button>
       </div>
     </div>
 

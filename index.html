@@ -1546,7 +1546,6 @@ async function selectTest(id) {
     if (test.exam && test.exam.questionCount) {
       document.getElementById('exam-q-count').textContent = test.exam.questionCount;
       presetExamBlock.style.display = '';
-      applyPreset('exam');
     } else {
       presetExamBlock.style.display = 'none';
       setMode('all');

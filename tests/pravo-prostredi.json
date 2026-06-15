@@ -1,7 +1,7 @@
 {
   "id": "pravo",
   "title": "Právo a právní prostředí",
-  "updatedAt": "2026-05-16",
+  "updatedAt": "2026-06-15",
   "rubric": "Zkouškový test: 30 min., 20 otázek po 5 bodech",
   "format": {
     "type": "multiple-choice",
@@ -954,6 +954,19 @@
         1,
         2,
         3
+      ]
+    },
+    {
+      "q": "Člen statutárního orgánu právnické osoby může za tuto právnickou osobu jednat:",
+      "opts": [
+        "jen když má plnou moc od valné hromady nebo členské schůze",
+        "jen když se jedná o nejdůležitější právní úkony",
+        "jen tehdy, jestliže to stanoví zákon",
+        "vždy",
+        "vždy, kromě případů, kdy právnická osoba vede řízení proti tomuto členovi statutárního orgánu"
+      ],
+      "correct": [
+        4
       ]
     }
   ]

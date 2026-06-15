@@ -235,7 +235,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .quiz-hdr-inner { max-width: 640px; margin: 0 auto; }
 .quiz-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; position: relative; }
-.quiz-nav-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.quiz-nav-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1; }
 .btn-ico {
   width: 34px; height: 34px; border-radius: 9px;
   background: var(--card2); border: 1px solid var(--line2); color: var(--dim);
@@ -975,9 +975,9 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   <div class="quiz-hdr">
     <div class="quiz-hdr-inner">
       <div class="quiz-nav">
-        <div style="display:flex;align-items:center;gap:10px;">
+        <div style="display:flex;align-items:center;gap:10px;max-width:calc(50% - 60px);overflow:hidden;">
           <button class="btn-ico" onclick="closeStudy()">✕</button>
-          <span style="font-size:17px;font-weight:600;">Procházení</span>
+          <span style="font-size:17px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Procházení</span>
         </div>
         <div class="quiz-nav-center" style="display:flex;align-items:center;gap:6px;">
           <button class="btn-ico btn-nav" id="btn-study-prev" onclick="goStudy(-1)">‹</button>
@@ -1438,18 +1438,18 @@ function updateStartBtn() {
 // ─────────────────────────────────────────────────────────────────
 const TESTS_REGISTRY = [
   {
-    id: 'politologie-mezinarodni-vztahy',
-    file: 'politologie-mezinarodni-vztahy.json',
-    title: 'Politologie a mezinárodní vztahy',
-    updatedAt: '2026-05-30',
-    questionCount: 95
-  },
-  {
     id: 'etika-spolecenska-odpovednost',
     file: 'etika-spolecenska-odpovednost.json',
     title: 'Etika a společenská odpovědnost',
     updatedAt: '2026-05-17',
     questionCount: 51
+  },
+  {
+    id: 'pravo',
+    file: 'pravo-prostredi.json',
+    title: 'Právo a právní prostředí',
+    updatedAt: '2026-05-16',
+    questionCount: 68
   },
   {
     id: 'manazerska-ekonomie',
@@ -1459,11 +1459,12 @@ const TESTS_REGISTRY = [
     questionCount: 125
   },
   {
-    id: 'pravo',
-    file: 'pravo-prostredi.json',
-    title: 'Právo a právní prostředí',
-    updatedAt: '2026-05-16',
-    questionCount: 68
+    id: 'politologie-mezinarodni-vztahy',
+    file: 'politologie-mezinarodni-vztahy.json',
+    title: 'Politologie a mezinárodní vztahy',
+    updatedAt: '2026-05-30',
+    questionCount: 95,
+    retired: true
   },
   {
     id: 'komunikace',

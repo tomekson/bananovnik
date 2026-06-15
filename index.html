@@ -1239,6 +1239,7 @@ function applyRangeChunk(from, to) {
   document.getElementById('range-from').value = from;
   document.getElementById('range-to').value = to;
   if (cfg.mode !== 'range') setMode('range');
+  setCount(0, true);
   updateRangeInfo();
 }
 

@@ -1239,6 +1239,7 @@ function applyRangeChunk(from, to) {
   document.getElementById('range-from').value = from;
   document.getElementById('range-to').value = to;
   if (cfg.mode !== 'range') setMode('range');
+  setSeg('qorder', 'random', true);
   setCount(0, true);
   updateRangeInfo();
 }
@@ -2390,7 +2391,7 @@ document.addEventListener('keydown', function(e) {
   }
   if (!S.questions || S.cur == null) return;
   var n = S.cur;
-  if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350); mainBtn(); return; }
+  if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 200); mainBtn(); return; }
   if (e.key === ' ') { e.preventDefault(); return; }
   if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
   if ((e.key === 'n' || e.key === 'N') && !S.confirmed[n] && !S.hintUsed[n]) { S.hintUsed[n] = true; renderQ(); return; }
@@ -2409,7 +2410,7 @@ document.addEventListener('keyup', function(e) {
     if (document.getElementById('overlay-abort').classList.contains('show')) return;
     if (!S.questions || S.cur == null) return;
     if (_enterCooldown) return;
-    _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 350);
+    _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 200);
     mainBtn();
   }
 });

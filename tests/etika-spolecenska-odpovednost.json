@@ -150,7 +150,7 @@
       "correct": [2, 3]
     },
     {
-      "q": "Úloha vlády v podpoře CSR: (5 b)",
+      "q": "Úloha vlády v podpoře CSR:",
       "opts": [
         "oceňuje firmy angažující se v CSR",
         "vytváří národní akční plán",
@@ -227,7 +227,7 @@
       "correct": [2]
     },
     {
-      "q": "Co je charakteristické pro etický audit? (5 b)",
+      "q": "Co je charakteristické pro etický audit?",
       "opts": [
         "Neexistence závazných pravidel",
         "Existence závazných pravidel",
@@ -326,7 +326,7 @@
       "correct": [0, 1, 2, 3, 4]
     },
     {
-      "q": "Charakterizujte teorie spravedlnosti: (5 b)",
+      "q": "Charakterizujte teorie spravedlnosti:",
       "opts": [
         "Teorie komunitární zdůrazňují společenskou a ekonomickou svobodu",
         "Egalitářské teorie propagují stejný přístup k základním statkům",
@@ -370,7 +370,7 @@
       "correct": [0, 4]
     },
     {
-      "q": "Jaký model corporate governance byl zaveden v ČR? (5 b)",
+      "q": "Jaký model corporate governance byl zaveden v ČR?",
       "opts": [
         "Kontinentální evropský model",
         "Model kombinující prvky tržního a kontinentálního evropského modelu",
@@ -557,7 +557,7 @@
       "correct": [0]
     },
     {
-      "q": "Kantova morální teorie: (5 b)",
+      "q": "Kantova morální teorie:",
       "opts": [
         "je založena na respektu lidské důstojnosti",
         "zaujímá kritický postoj vůči \"zlatému pravidlu\"",

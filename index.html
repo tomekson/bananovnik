@@ -2392,6 +2392,8 @@ document.addEventListener('keydown', function(e) {
   if (!S.questions || S.cur == null) return;
   var n = S.cur;
   if (e.key === 'Enter') { e.preventDefault(); if (_enterCooldown) return; _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 200); mainBtn(); return; }
+  if (e.key === 'ArrowRight') { e.preventDefault(); goQ(1); return; }
+  if (e.key === 'ArrowLeft')  { e.preventDefault(); goQ(-1); return; }
   if (e.key === ' ') { e.preventDefault(); return; }
   if (e.key === 'x' || e.key === 'X') { askAbort(); return; }
   if ((e.key === 'n' || e.key === 'N') && !S.confirmed[n] && !S.hintUsed[n]) { S.hintUsed[n] = true; renderQ(); return; }

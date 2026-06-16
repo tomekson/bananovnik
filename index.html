@@ -1521,11 +1521,26 @@ let _savedStudyState = null;
 // ─────────────────────────────────────────────────────────────────
 // Dashboard
 // ─────────────────────────────────────────────────────────────────
+const BASE = '/bananovnik/';
+
 function loadRegistry() {
   renderDashboard();
+  // 404.html redirect — obnovit správnou URL
+  const redir = sessionStorage.getItem('spa-redirect');
+  if (redir) {
+    sessionStorage.removeItem('spa-redirect');
+    history.replaceState({}, '', redir);
+  }
+  // URL routing — test podle cesty
+  const pathId = location.pathname.replace(BASE, '').replace(/\/$/, '');
+  if (pathId && TESTS_REGISTRY.find(t => t.id === pathId)) {
+    selectTest(pathId, true);
+    return;
+  }
+  // Fallback — poslední test ze session
   const lastId = sessionStorage.getItem('bananovnik-last-test');
   if (lastId && TESTS_REGISTRY.find(t => t.id === lastId)) {
-    selectTest(lastId);
+    selectTest(lastId, true);
   }
 }
 
@@ -1547,7 +1562,7 @@ function renderDashboard() {
   });
 }
 
-async function selectTest(id) {
+async function selectTest(id, skipPush) {
   try {
     const reg = TESTS_REGISTRY.find(t => t.id === id);
     let test = loadedTests[id];
@@ -1583,6 +1598,7 @@ async function selectTest(id) {
 document.getElementById('range-to').value = total;
     updateRangeInfo();
     sessionStorage.setItem('bananovnik-last-test', id);
+    if (!skipPush) history.pushState({ test: id }, '', BASE + id + '/');
     show('screen-start');
   } catch(e) {
     console.error('selectTest error:', e);
@@ -2412,7 +2428,22 @@ function askAbort() {
   document.getElementById('overlay-abort').classList.add('show');
 }
 function closeAbort() { document.getElementById('overlay-abort').classList.remove('show'); }
-function goToDashboard() { sessionStorage.removeItem('bananovnik-last-test'); show('screen-dashboard'); }
+function goToDashboard() {
+  sessionStorage.removeItem('bananovnik-last-test');
+  history.pushState({}, '', BASE);
+  show('screen-dashboard');
+}
+
+window.addEventListener('popstate', e => {
+  const testId = e.state && e.state.test;
+  if (testId && TESTS_REGISTRY.find(t => t.id === testId)) {
+    selectTest(testId, true);
+  } else {
+    sessionStorage.removeItem('bananovnik-last-test');
+    show('screen-dashboard');
+  }
+});
+
 function doAbort()    { closeAbort(); _savedStudyState = null; show('screen-start'); }
 function askAbortToStart()  { document.getElementById('overlay-abort-start').classList.add('show'); }
 function closeAbortToStart(){ document.getElementById('overlay-abort-start').classList.remove('show'); }

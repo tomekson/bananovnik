@@ -2564,6 +2564,27 @@ if ('serviceWorker' in navigator) {
     }
   });
 })();
+
+// Swipe ←/→ pro listování otázkami na dotykovém zařízení
+(function() {
+  let swipeStartX = null;
+  let swipeStartY = null;
+  document.addEventListener('touchstart', e => {
+    if (!document.getElementById('screen-quiz').classList.contains('active')) return;
+    swipeStartX = e.touches[0].clientX;
+    swipeStartY = e.touches[0].clientY;
+  }, { passive: true });
+  document.addEventListener('touchend', e => {
+    if (!document.getElementById('screen-quiz').classList.contains('active')) return;
+    if (swipeStartX === null) return;
+    const dx = e.changedTouches[0].clientX - swipeStartX;
+    const dy = e.changedTouches[0].clientY - swipeStartY;
+    swipeStartX = null;
+    swipeStartY = null;
+    if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    if (dx < 0) goQ(1); else goQ(-1);
+  }, { passive: true });
+})();
 </script>
 </body>
 </html>

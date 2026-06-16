@@ -58,16 +58,14 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-@keyframes slideInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-40px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-.quiz-slide-right { animation: slideInRight .2s cubic-bezier(.25,.46,.45,.94); }
-.quiz-slide-left  { animation: slideInLeft  .2s cubic-bezier(.25,.46,.45,.94); }
+@keyframes slideOutLeft  { from { opacity:1; transform:translateX(0);     } to { opacity:0; transform:translateX(-60px); } }
+@keyframes slideOutRight { from { opacity:1; transform:translateX(0);     } to { opacity:0; transform:translateX(60px);  } }
+@keyframes slideInRight  { from { opacity:0; transform:translateX(60px);  } to { opacity:1; transform:translateX(0);    } }
+@keyframes slideInLeft   { from { opacity:0; transform:translateX(-60px); } to { opacity:1; transform:translateX(0);    } }
+.quiz-out-left  { animation: slideOutLeft  .13s ease-in  forwards; }
+.quiz-out-right { animation: slideOutRight .13s ease-in  forwards; }
+.quiz-in-right  { animation: slideInRight  .18s ease-out; }
+.quiz-in-left   { animation: slideInLeft   .18s ease-out; }
 
 /* ── START ───────────────────────────────────────── */
 #screen-start {
@@ -1862,17 +1860,23 @@ function retryWrong() {
 function goQ(dir) {
   const next = S.cur + dir;
   if (next < 0 || next >= S.questions.length) return;
-  S.cur = next;
-  window.scrollTo(0, 0);
-  renderQ();
   const body = document.querySelector('#screen-quiz .quiz-body');
-  if (body) {
-    const cls = dir > 0 ? 'quiz-slide-right' : 'quiz-slide-left';
-    body.classList.remove('quiz-slide-right', 'quiz-slide-left');
+  const outCls = dir > 0 ? 'quiz-out-left'  : 'quiz-out-right';
+  const inCls  = dir > 0 ? 'quiz-in-right'  : 'quiz-in-left';
+  const ALL = ['quiz-out-left','quiz-out-right','quiz-in-right','quiz-in-left'];
+  if (!body) { S.cur = next; window.scrollTo(0, 0); renderQ(); return; }
+  body.classList.remove(...ALL);
+  void body.offsetWidth;
+  body.classList.add(outCls);
+  body.addEventListener('animationend', () => {
+    body.classList.remove(outCls);
+    S.cur = next;
+    window.scrollTo(0, 0);
+    renderQ();
     void body.offsetWidth;
-    body.classList.add(cls);
-    body.addEventListener('animationend', () => body.classList.remove(cls), { once: true });
-  }
+    body.classList.add(inCls);
+    body.addEventListener('animationend', () => body.classList.remove(inCls), { once: true });
+  }, { once: true });
 }
 
 function toggleOpt(i) {

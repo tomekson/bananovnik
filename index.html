@@ -619,6 +619,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 .dialog-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
 .dialog-body  { font-size: 15px; color: var(--dim); margin-bottom: 20px; line-height: 1.5; }
+.unanswered-chip { display:inline-flex; align-items:center; justify-content:center; min-width:36px; height:36px; padding:0 10px; border-radius:8px; background:var(--primary-bg); border:1.5px solid var(--primary-mid); color:var(--primary); font-size:14px; font-weight:700; cursor:pointer; -webkit-appearance:none; }
 .dialog-btns  { display: flex; flex-direction: column; gap: 9px; }
 .btn-danger {
   background: var(--red-bg); color: var(--red); border: 2px solid rgba(220,38,38,.35);
@@ -1093,6 +1094,18 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <div class="dialog-btns">
       <button class="btn-danger" onclick="doAbort()">Ukončit test</button>
       <button class="btn-start"  onclick="closeAbort()">Pokračovat v testu</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════ UNANSWERED DIALOG ══════════════════════ -->
+<div class="overlay" id="overlay-unanswered">
+  <div class="dialog">
+    <div class="dialog-title">Nezodpovězené otázky</div>
+    <div class="dialog-body">Některé otázky nemají vybranou žádnou odpověď:<br><span id="unanswered-links" style="display:inline-flex;flex-wrap:wrap;gap:6px;margin-top:10px;"></span></div>
+    <div class="dialog-btns">
+      <button class="btn-danger" onclick="doFinishAnyway()">Vyhodnotit přesto</button>
+      <button class="btn-start"  onclick="closeUnanswered()">Zpět na test</button>
     </div>
   </div>
 </div>
@@ -1900,7 +1913,7 @@ function mainBtn() {
         S.firstAnswers[i] = [...sel];
         S.confirmed[i] = true;
       });
-      showResults();
+      maybeShowResults();
     }
     return;
   }
@@ -1930,8 +1943,39 @@ function mainBtn() {
       show('screen-study');
       window.scrollTo(0, 0);
       renderStudy();
-    } else showResults();
+    } else maybeShowResults();
   }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Kontrola nezodpovězených otázek
+// ─────────────────────────────────────────────────────────────────
+function unansweredIndices() {
+  return S.questions.map((_, i) => i).filter(i => S.answers[i].length === 0);
+}
+
+function maybeShowResults() {
+  const missing = unansweredIndices();
+  if (missing.length === 0) { showResults(); return; }
+  const container = document.getElementById('unanswered-links');
+  container.innerHTML = '';
+  missing.forEach(i => {
+    const btn = document.createElement('button');
+    btn.className = 'unanswered-chip';
+    btn.textContent = i + 1;
+    btn.onclick = () => { closeUnanswered(); S.cur = i; window.scrollTo(0, 0); renderQ(); };
+    container.appendChild(btn);
+  });
+  document.getElementById('overlay-unanswered').classList.add('show');
+}
+
+function closeUnanswered() {
+  document.getElementById('overlay-unanswered').classList.remove('show');
+}
+
+function doFinishAnyway() {
+  closeUnanswered();
+  showResults();
 }
 
 // ─────────────────────────────────────────────────────────────────

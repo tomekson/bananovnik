@@ -58,6 +58,16 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.quiz-slide-right { animation: slideInRight .2s cubic-bezier(.25,.46,.45,.94); }
+.quiz-slide-left  { animation: slideInLeft  .2s cubic-bezier(.25,.46,.45,.94); }
 
 /* ── START ───────────────────────────────────────── */
 #screen-start {
@@ -1842,6 +1852,14 @@ function goQ(dir) {
   S.cur = next;
   window.scrollTo(0, 0);
   renderQ();
+  const body = document.querySelector('#screen-quiz .quiz-body');
+  if (body) {
+    const cls = dir > 0 ? 'quiz-slide-right' : 'quiz-slide-left';
+    body.classList.remove('quiz-slide-right', 'quiz-slide-left');
+    void body.offsetWidth;
+    body.classList.add(cls);
+    body.addEventListener('animationend', () => body.classList.remove(cls), { once: true });
+  }
 }
 
 function toggleOpt(i) {

@@ -1567,7 +1567,7 @@ async function selectTest(id, skipPush) {
     const reg = TESTS_REGISTRY.find(t => t.id === id);
     let test = loadedTests[id];
     if (!test) {
-      const res = await fetch('tests/' + reg.file + '?v=' + APP_VERSION);
+      const res = await fetch(BASE + 'tests/' + reg.file + '?v=' + APP_VERSION);
       test = await res.json();
       loadedTests[id] = test;
     }

@@ -1,10 +1,19 @@
 {
   "id": "etika-spolecenska-odpovednost",
   "title": "Etika a společenská odpovědnost",
-  "updatedAt": "2026-05-17",
+  "updatedAt": "2026-06-16",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech",
-  "format": { "type": "multiple-choice", "correctAnswers": "one-or-more" },
-  "exam": { "testPoints": 100, "openPoints": 0, "passPoints": 51, "questionCount": 20, "openCount": 0 },
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 20,
+    "openCount": 0
+  },
   "questions": [
     {
       "q": "Kdo se podílí na realizaci Cílů udržitelného rozvoje do roku 2030?",
@@ -15,7 +24,9 @@
         "Podnikatelský sektor a veřejná správa",
         "Pouze vlády"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Charakterizujte vztah mezi etikou a právem:",
@@ -26,7 +37,11 @@
         "Mají společný zájem o záležitost zásadního společ. zájmu a často sdílejí určité principy",
         "Právo a etika se překrývají, ale jsou odlišné"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "q": "Princip užitku:",
@@ -37,7 +52,9 @@
         "odvíjí se od povinností",
         "představuje univerzální etický princip"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Podnikatelská etika:",
@@ -48,7 +65,11 @@
         "představuje odpovědné podnikání v souladu s představami dané společnosti o morálce",
         "je poměrně mladá akademická disciplína"
       ],
-      "correct": [2, 3, 4]
+      "correct": [
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Carrollova pyramida:",
@@ -59,7 +80,9 @@
         "porovnává CSR firmy a organizace státní správy",
         "představuje jinou formu vyjádření konceptu \"Triple Bottom Line\""
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Hlavní problémy corporate governance jsou:",
@@ -70,7 +93,12 @@
         "neexistence potřebných standardů",
         "transparentnost a zveřejňování relevantních informací"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Prevence proti korupci zahrnuje:",
@@ -81,7 +109,13 @@
         "e-government",
         "legislativu"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Charakterizujte systém compliance:",
@@ -92,7 +126,11 @@
         "Funkce compliance musí mít v organizaci nezávislé postavení a musí mít možnost přímé komunikace s vrcholovým vedením",
         "Compliance představuje pouze shodu s technickými normami výrobků"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Princip \"Zlatého pravidla\":",
@@ -103,7 +141,10 @@
         "znamená chovat se k ostatním tak, jak si přeji, aby se oni chovali ke mně",
         "znamená minimalizaci negativních dopadů pro všechny zúčastněné"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Existuje souvislost mezi společenskou odpovědností firmy (CSR) a udržitelným rozvojem?",
@@ -114,7 +155,11 @@
         "Ano, oba koncepty se překrývají",
         "Jedná se o totožné koncepty"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "q": "Charakterizujte teorii participujících skupin - stakeholders theory:",
@@ -125,7 +170,11 @@
         "Stakehodlers theory se soustředí především na dodržování práv etnických menšin v podniku",
         "Stakeholders theory se soustředí především na působení podniku na životní prostředí"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "q": "Který nástroj etického řízení je nejvíce rozšířený?",
@@ -136,7 +185,9 @@
         "Etický trénink",
         "Whistleblowing"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ]
     },
     {
       "q": "Kohlbergova teorie morálního vývoje:",
@@ -147,7 +198,10 @@
         "charakterizuje stádia morálního vývoje",
         "dává návod jak rozhodovat etická dilemata"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ]
     },
     {
       "q": "Úloha vlády v podpoře CSR:",
@@ -158,7 +212,10 @@
         "naplňuje nařízení EU",
         "přesouvá svou odpovědnost v sociální oblasti na firmy"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Hlavní nedostatky corporate governance v ČR jsou:",
@@ -169,7 +226,12 @@
         "nízký počet společností s programy proti podvodům, korupci a praní špinavých peněz",
         "chybí legislativa"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Utilitarismus je teorie etiky, která posuzuje činy podle očekávaných následků. Jaké jsou jeho základní charakteristiky?",
@@ -180,7 +242,11 @@
         "Utilitarismus znamená dosahování většího dobra než zla",
         "Utilitarismus znamená řídit se povinnostmi bez ohledu na důsledky takového jednání"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "q": "Řízení a správa společnosti (corporate governance):",
@@ -191,7 +257,11 @@
         "získala významný impuls v podobě Principů vypracovaných OECD v r. 1999",
         "je výsledkem legislativního rámce a finančních trhů"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Kantova morální teorie:",
@@ -202,7 +272,12 @@
         "vyžaduje takové jednání, jaké by se mohlo stát obecnou normou",
         "je založena na racionalitě"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Charakteristika CSR z hlediska sociálního zahrnuje:",
@@ -213,7 +288,11 @@
         "zákaz dětské práce",
         "definování vztahu k zákazníkům investorům a dodavatelům"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ]
     },
     {
       "q": "Firma má odpovědnost:",
@@ -224,7 +303,9 @@
         "nemá žádnou odpovědnost, protože ta přísluší pouze jednotlivci",
         "pouze danou zákonem"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Co je charakteristické pro etický audit?",
@@ -235,7 +316,9 @@
         "Provádění v pravidelných intervalech",
         "Povinnost zveřejňovat výsledek"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Spravedlnost:",
@@ -246,7 +329,12 @@
         "může být posuzována řadou kritérií",
         "je absolutní stav"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Podle H.R.Bowena (1953) mají firmy a podnikatelé zodpovědnost za:",
@@ -257,7 +345,11 @@
         "společenské dopady řízení",
         "enviromentální dopady průmyslové činnosti"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ]
     },
     {
       "q": "Co je podstatou udržitelného rozvoje?",
@@ -268,7 +360,9 @@
         "Rozvoj, který je ekonomicky životaschopný, sociálně žádoucí a ekologicky udržitelný",
         "Neustálý růst, který nezvětšuje ekonomické nerovnosti"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ]
     },
     {
       "q": "Směrnice OECD pro nadnárodní společnosti:",
@@ -279,7 +373,11 @@
         "je nejstarší směrnicí upravující standardy v podnikání",
         "nastavuje standardy pro nadnárodní společnosti, které jsou přísnější než standardy pro společnosti národní"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Směrnice OECD pro nadnárodní společnosti:",
@@ -290,7 +388,12 @@
         "obsahuje pravidla pro dozor nad kapitálovými trhy",
         "obsahuje protikorupční opatření"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Která organizace přijala Cíle udržitelného rozvoje do roku 2030?",
@@ -301,7 +404,9 @@
         "Mezinárodní organizace práce",
         "Evropská unie"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ]
     },
     {
       "q": "Etické řízení:",
@@ -312,7 +417,13 @@
         "Etické řízení je součástí systému řízení",
         "V etickém řízení se využívají nástroje, jako jsou např. etické kodexy, etický audit, řízení rizik, vzdělávání a trénink"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Z pohledu vlád je společenská odpovědnost byznysu vnímána jako:",
@@ -323,7 +434,13 @@
         "legitimizace vládních politik",
         "substituce vládních snah"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Charakterizujte teorie spravedlnosti:",
@@ -334,7 +451,12 @@
         "Pracují s jedním nebo více kritérii spravedlnosti",
         "Využívají různá kritéria spravedlnosti"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Charakterizujte teorii participujících skupin - stakeholders theory:",
@@ -345,7 +467,12 @@
         "Stakeholders theory je i svými kritiky uznávána, protože upozorňuje na subjekty, které musí byznys brát v úvahu",
         "Primární stakeholdeři jsou např. zaměstnanci, vlastníci, zákazníci, dodavatelé, konkurenti a věřitelé"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Jaké problémy jsou spojeny s delegováním moci?",
@@ -356,7 +483,11 @@
         "Kontrola principála stakeholdery",
         "Kontrola agenta principálem"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "Společenská odpovědnost firmy představuje:",
@@ -367,7 +498,10 @@
         "filantropickou činnost",
         "koncept, který mění tradiční vztahy mezi byznysem, vládou a neziskovým sektorem"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ]
     },
     {
       "q": "Jaký model corporate governance byl zaveden v ČR?",
@@ -378,7 +512,10 @@
         "Německý model",
         "Model kombinující prvky anglosaského a německého modelu"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ]
     },
     {
       "q": "Moderní nástroje etického řízení představují:",
@@ -389,7 +526,13 @@
         "compliance",
         "whistleblowing"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Vysvětlete pojem ctnost:",
@@ -400,7 +543,13 @@
         "Ctnosti nejsou vrozené, člověk si je osvojuje během života",
         "Ctnost je získaná lidská vlastnost, která dává člověku schopnost chovat se a jednat mravně"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Etika se zabývá situacemi, v nichž:",
@@ -411,7 +560,9 @@
         "dochází výhradně k fyzické újmě jednotlivce nebo skupiny",
         "dochází výhradně k ekonomické újmě jednotlivce nebo skupiny"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Charakterizujte důvody pro etické chování podniku:",
@@ -422,7 +573,13 @@
         "Etické chování vede k dlouhodobému úspěchu",
         "Dochází k úspoře nákladů"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Koncept triple bottom line Johna Elkingtona (1997) vysvětluje, že firmy musí vedle dosahování zisku sledovat také:",
@@ -433,7 +590,11 @@
         "finanční náklady a výnosy",
         "dopady na ekologické a sociální působení firmy v komunitě"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ]
     },
     {
       "q": "Firemní kultura:",
@@ -444,7 +605,12 @@
         "je zaváděna směrnicemi EU",
         "je nejvíce ovlivňována osobním příkladem vedení"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Argumenty pro studium etiky jsou:",
@@ -455,7 +621,12 @@
         "ekonomizace takových oblastí, jako jsou sport či kultura",
         "řešení konfliktních zájmů stakeholderů"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Motivace firem k CSR může být:",
@@ -466,7 +637,13 @@
         "specificky firemní",
         "zlepšení vztahů se stakeholdery"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Komu jsou určeny Cíle udržitelného rozvoje do roku 2030?",
@@ -477,7 +654,9 @@
         "Členským státům OECD",
         "Rozvojovým zemím"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ]
     },
     {
       "q": "Ekonomické důvody pro uplatňování podnikatelské etiky jsou:",
@@ -488,7 +667,12 @@
         "snižování transakčních nákladů",
         "zvyšování důvěry zákazníků"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Whistleblowing znamená:",
@@ -499,7 +683,10 @@
         "označení pro nějaké nekalé jednání",
         "označení pro udavače"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ]
     },
     {
       "q": "Typologie nástrojů etického řízení:",
@@ -510,7 +697,11 @@
         "Nástroje etického řízení tvoří základ etické infrastruktury podniku",
         "Etický kodex se používá výhradně v nadnárodních společnostech"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "q": "Mezi faktory stimulující společenskou odpovědnost firem patří:",
@@ -521,7 +712,12 @@
         "snižování administrativní zátěže firem",
         "vznik organizací podporujících společenskou odpovědnost firem"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
     },
     {
       "q": "Jaká témata jsou řešena v Principech OECD pro corporate governance?",
@@ -532,7 +728,11 @@
         "Odpovědnost členů správních orgánů",
         "Vztahy ke stakeholderům"
       ],
-      "correct": [2, 3, 4]
+      "correct": [
+        2,
+        3,
+        4
+      ]
     },
     {
       "q": "Jaký je vztah mezi etikou a morálkou?",
@@ -543,7 +743,10 @@
         "Etika je totožná s morální filozofií",
         "Morálka je společenskou institucí transformující etiku do vymahatelných norem"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ]
     },
     {
       "q": "Koncept CSR pochází:",
@@ -554,18 +757,9 @@
         "z veřejného sektoru",
         "ze sektoru služeb"
       ],
-      "correct": [0]
-    },
-    {
-      "q": "Kantova morální teorie:",
-      "opts": [
-        "je založena na respektu lidské důstojnosti",
-        "zaujímá kritický postoj vůči \"zlatému pravidlu\"",
-        "je založena na racionalitě",
-        "vyžaduje takové jednání, jaké by se mohlo stát obecnou normou",
-        "vyžaduje, aby člověk maximalizací svého prospěchu nepoškozoval úmyslně druhé"
-      ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0
+      ]
     }
   ]
 }

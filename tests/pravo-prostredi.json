@@ -283,8 +283,8 @@
       "opts": [
         "za kupní smlouvu se nepovažuje smlouva, podle níž převážná část plnění dodavatele spočívá ve výkonu činnosti",
         "smlouva o dodání věci, která má být teprve vyrobena, se posoudí jako smlouva o dílo, ledaže se ten, komu má být věc dodána, zavázal předat druhé straně podstatnou část toho, čeho je k vyrobení věci zapotřebí",
-        "smlouva o dodání věci, která má být teprve vyrobena, se posoudí jako kupní smlouva, ledaže se ten komu má být věc dodána, zavázal předat druhé straně podstatnou část toho, čeho je k vyrobení věci zapotřebí",
-        "za kupní smlouvu se vždy považuje, smlouva o dodání spotřebního zboží, které je nutné sestavit nebo vytvořit",
+        "smlouva o dodání věci, která má být teprve vyrobena, se posoudí jako kupní smlouva, ledaže se ten, komu má být věc dodána, zavázal předat druhé straně podstatnou část toho, čeho je k vyrobení věci zapotřebí",
+        "za kupní smlouvu se vždy považuje smlouva o dodání spotřebního zboží, které je nutné sestavit nebo vytvořit",
         "za smlouvu o dílo se nepovažuje smlouva, podle níž převážná část plnění dodavatele spočívá ve výkonu činnosti"
       ],
       "correct": [

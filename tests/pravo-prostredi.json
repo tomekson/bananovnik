@@ -1,5 +1,5 @@
 {
-  "id": "pravo",
+  "id": "pravo-prostredi",
   "title": "Právo a právní prostředí",
   "updatedAt": "2026-06-15",
   "rubric": "Zkouškový test: 30 min., 20 otázek po 5 bodech",
@@ -711,7 +711,7 @@
       ]
     },
     {
-      "q": "Právní normy: (1)",
+      "q": "Právní normy:",
       "opts": [
         "členíme na konstitutivní (s vyšší právní silou) a deklarativní (s nižší právní silou)",
         "členíme na prohozené a pozitivní",
@@ -725,7 +725,7 @@
       ]
     },
     {
-      "q": "Právní normy: (2)",
+      "q": "Právní normy:",
       "opts": [
         "členíme na přirozené a pozitivní",
         "nacházíme je v právních předpisech",
@@ -791,7 +791,7 @@
       ]
     },
     {
-      "q": "V právním řádu ČR platí, že zákony: (1)",
+      "q": "V právním řádu ČR platí, že zákony:",
       "opts": [
         "členíme na ústavní zákony, které mají vyšší právní sílu a \"běžné zákony\", které mají nižší právní sílu",
         "mají vyšší právní sílu než zákonná opatření Senátu",
@@ -929,7 +929,7 @@
       ]
     },
     {
-      "q": "Promlčení: (bez záruky)",
+      "q": "Promlčení:",
       "opts": [
         "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. Nedovolá-li se dlužník promlčení, lze promlčené právo věřiteli přiznat",
         "Právo zaniká, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka",
@@ -942,7 +942,7 @@
       ]
     },
     {
-      "q": "V právním řádu ČR platí, že zákony: (2)",
+      "q": "V právním řádu ČR platí, že zákony:",
       "opts": [
         "členíme na zákoníky a řády, které mají vyšší právní sílu, a \"běžné\" zákony, které mají nižší právní sílu",
         "přijímá vždy Parlament ČR",

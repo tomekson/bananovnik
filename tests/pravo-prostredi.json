@@ -900,21 +900,6 @@
       ]
     },
     {
-      "q": "Při uzavření smlouvy platí, že:",
-      "opts": [
-        "není-li v nabídce (ofertě) stanoveno jinak, je lhůta pro přijetí ústně učiněné nabídky „ihned\"",
-        "k přijetí nabídky (akceptaci) stačí projevit souhlas s ofertou",
-        "není-li v nabídce (ofertě) stanoveno jinak, je lhůta pro přijetí ústně učiněné nabídky 15 dnů",
-        "k přijetí nabídky (akceptaci) stačí mlčet, je-li to tak vymíněno v ofertě",
-        "nabídka (oferta) má obsahovat podstatné náležitosti smlouvy"
-      ],
-      "correct": [
-        0,
-        1,
-        4
-      ]
-    },
-    {
       "q": "Narození dítěte je z hlediska práva:",
       "opts": [
         "právní událostí",

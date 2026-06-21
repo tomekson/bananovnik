@@ -1553,7 +1553,7 @@ function renderDashboard() {
     container.innerHTML = '<div class="dash-empty">Žádné testy k dispozici.</div>';
     return;
   }
-  TESTS_REGISTRY.forEach(t => {
+  [...TESTS_REGISTRY].sort((a, b) => (a.retired ? 1 : 0) - (b.retired ? 1 : 0)).forEach(t => {
     const card = document.createElement('button');
     card.className = 'dash-card' + (t.retired ? ' dash-card--retired' : '');
     const badge = t.retired ? `<div class="dash-card-badge">✓ Splněno</div>` : '';

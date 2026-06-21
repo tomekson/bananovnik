@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=6.20">
+<link rel="manifest" href="/bananovnik/manifest.json?v=7.0">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="/bananovnik/icon-180.png">
 <title>Banánovník</title>
@@ -443,6 +443,34 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   padding: 2px 7px; margin-bottom: 6px;
 }
 .dash-empty { font-size: 14px; color: var(--muted); }
+.dash-search-wrap { position: relative; }
+.dash-search {
+  width: 100%; box-sizing: border-box;
+  padding: 10px 14px 10px 36px;
+  font-size: 15px; font-family: inherit; color: var(--text);
+  background: var(--card2); border: 1.5px solid var(--line2);
+  border-radius: var(--r); outline: none; -webkit-appearance: none;
+  transition: border-color .15s;
+}
+.dash-search:focus { border-color: var(--primary); }
+.dash-search::placeholder { color: var(--muted); }
+.dash-search-icon {
+  position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+  font-size: 15px; color: var(--muted); pointer-events: none;
+}
+.dash-search-clear {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; padding: 4px; cursor: pointer;
+  font-size: 14px; color: var(--muted); display: none; line-height: 1;
+}
+.dash-search-clear.visible { display: block; }
+.dash-search-deep {
+  display: none; align-items: center; gap: 7px; justify-content: flex-end;
+  font-size: 13px; color: var(--dim); cursor: pointer; user-select: none;
+}
+.dash-search-deep.visible { display: flex; }
+.dash-search-deep input[type=checkbox] { accent-color: var(--primary); width: 15px; height: 15px; cursor: pointer; }
+.dash-search-deep-status { font-size: 12px; color: var(--muted); margin-left: 2px; display: none; }
 .btn-back-dash {
   background: none; border: none; padding: 0; margin: 0;
   font-size: 13px; color: var(--muted); font-weight: 600;
@@ -763,15 +791,25 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   <div id="pull-hint-dash" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;transition:opacity .2s;"></div>
   <div class="dash-inner">
     <div class="logo-row" style="justify-content:flex-start;">
-      <div style="display:flex;align-items:center;gap:11px;">
-        <div class="logo-mark"><img src="/bananovnik/favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
+      <button onclick="clearDashboardSearch()" style="display:flex;align-items:center;gap:11px;background:none;border:none;padding:0;cursor:pointer;-webkit-appearance:none;">
+        <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
         <div>
           <div class="logo-name" data-text="Banánovník">Banánovník</div>
           <div style="font-size:10px;color:var(--muted);font-weight:500;letter-spacing:1px;">v<span id="app-version"></span></div>
         </div>
-      </div>
+      </button>
     </div>
     <div class="dash-heading">Výběr testu</div>
+    <div class="dash-search-wrap">
+      <span class="dash-search-icon">🔍</span>
+      <input id="dash-search" class="dash-search" type="search" placeholder="Hledat předmět" autocomplete="off" autocorrect="off" spellcheck="false">
+      <button class="dash-search-clear" id="dash-search-clear" aria-label="Vymazat">✕</button>
+    </div>
+    <label class="dash-search-deep" id="dash-search-deep-label">
+      <span class="dash-search-deep-text">Prohledávat také otázky a odpovědi</span>
+      <input type="checkbox" id="dash-search-deep">
+      <span class="dash-search-deep-status" id="dash-search-deep-status"></span>
+    </label>
     <div id="dash-tests" class="dash-tests">
       <div class="dash-empty">Načítám testy…</div>
     </div>
@@ -785,7 +823,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
     <div class="logo-row" style="justify-content:flex-start;">
       <button onclick="goToDashboard()" style="display:flex;align-items:center;gap:11px;background:none;border:none;padding:0;cursor:pointer;-webkit-appearance:none;">
-        <div class="logo-mark"><img src="/bananovnik/favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
+        <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
         <div style="text-align:left;">
           <div class="logo-name" data-text="Banánovník">Banánovník</div>
         </div>
@@ -1052,7 +1090,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <div class="r-actions">
       <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Opakovat chybné</button>
       <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
-      <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="startQuiz()" title="Zopakovat test se stejným nastavením">Opakovat tyto otázky</button>
+      <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="repeatQuiz()" title="Zopakovat test se stejnými otázkami v tom samém pořadí">Opakovat tyto otázky</button>
       <button class="btn-sec" style="flex:1" onclick="show('screen-start')" title="Změnit počet otázek, pořadí nebo jiné nastavení">Změnit nastavení testu</button></div>
       <button class="btn-sec" style="width:100%;font-size:13px;padding:9px" onclick="goToDashboard()">Vybrat jiný test</button>
     </div>
@@ -1102,7 +1140,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <div class="dialog-title">Nezodpovězené otázky</div>
     <div class="dialog-body">Některé otázky nemají vybranou žádnou odpověď:<br><span id="unanswered-links" style="display:inline-flex;flex-wrap:wrap;gap:6px;margin-top:10px;"></span></div>
     <div class="dialog-btns">
-      <button class="btn-danger" onclick="doFinishAnyway()">Vyhodnotit přesto</button>
+      <button class="btn-danger" onclick="doFinishAnyway()">Přeesto vyhodnotit</button>
       <button class="btn-start"  onclick="closeUnanswered()">Zpět na test</button>
     </div>
   </div>
@@ -1519,13 +1557,65 @@ const TESTS_REGISTRY = [
 let loadedTests = {};
 let S = {};
 let _savedStudyState = null;
+let deepSearchEnabled = false;
 
 // ─────────────────────────────────────────────────────────────────
 // Dashboard
 // ─────────────────────────────────────────────────────────────────
 const BASE = '/bananovnik/';
 
+function initSearch() {
+  const input = document.getElementById('dash-search');
+  const clear = document.getElementById('dash-search-clear');
+  const deepLabel = document.getElementById('dash-search-deep-label');
+  const deepCb = document.getElementById('dash-search-deep');
+  const deepStatus = document.getElementById('dash-search-deep-status');
+
+  const rerender = () => renderDashboard(input.value);
+
+  input.addEventListener('input', () => {
+    const q = input.value;
+    clear.classList.toggle('visible', q.length > 0);
+    deepLabel.classList.toggle('visible', q.length > 0);
+    rerender();
+  });
+
+  clear.addEventListener('click', () => {
+    input.value = '';
+    clear.classList.remove('visible');
+    deepLabel.classList.remove('visible');
+    renderDashboard('');
+    input.focus();
+  });
+
+  deepCb.addEventListener('change', () => {
+    if (!deepCb.checked) {
+      deepSearchEnabled = false;
+      deepStatus.textContent = '';
+      rerender();
+      return;
+    }
+    deepSearchEnabled = true;
+    const total = TESTS_REGISTRY.length;
+    let settled = TESTS_REGISTRY.filter(t => loadedTests[t.id]).length;
+    if (settled === total) { deepStatus.textContent = '✓'; rerender(); return; }
+    deepStatus.textContent = 'načítám…';
+    TESTS_REGISTRY.forEach(async t => {
+      if (loadedTests[t.id]) { settled++; return; }
+      try {
+        const res = await fetch('tests/' + t.file + '?v=' + APP_VERSION);
+        loadedTests[t.id] = await res.json();
+      } catch (e) {}
+      settled++;
+      const allDone = settled >= total;
+      deepStatus.textContent = allDone ? '✓' : 'načítám… ' + settled + ' / ' + total;
+      rerender();
+    });
+  });
+}
+
 function loadRegistry() {
+  initSearch();
   renderDashboard();
   // 404.html redirect — obnovit správnou URL
   const redir = sessionStorage.getItem('spa-redirect');
@@ -1546,19 +1636,67 @@ function loadRegistry() {
   }
 }
 
-function renderDashboard() {
+function norm(s) {
+  return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+}
+
+function testMatchesQuery(t, q) {
+  if (!q) return true;
+  if (norm(t.title).includes(q)) return true;
+  if (!deepSearchEnabled) return false;
+  const data = loadedTests[t.id];
+  if (data && data.questions) {
+    for (const item of data.questions) {
+      if (norm(item.q).includes(q)) return true;
+      if (item.opts && item.opts.some(o => norm(o).includes(q))) return true;
+    }
+  }
+  return false;
+}
+
+function countMatchingQuestions(t, q) {
+  if (!q) return t.questionCount;
+  let count = 0;
+  const data = loadedTests[t.id];
+  if (data && data.questions) {
+    for (const item of data.questions) {
+      if (norm(item.q).includes(q) || (item.opts && item.opts.some(o => norm(o).includes(q)))) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+function renderDashboard(query) {
+  const q = norm(query || '');
   const container = document.getElementById('dash-tests');
   container.innerHTML = '';
   if (!TESTS_REGISTRY.length) {
     container.innerHTML = '<div class="dash-empty">Žádné testy k dispozici.</div>';
     return;
   }
-  [...TESTS_REGISTRY].sort((a, b) => (a.retired ? 1 : 0) - (b.retired ? 1 : 0)).forEach(t => {
+  const sorted = [...TESTS_REGISTRY].sort((a, b) => (a.retired ? 1 : 0) - (b.retired ? 1 : 0));
+  const filtered = sorted.filter(t => testMatchesQuery(t, q));
+  if (!filtered.length) {
+    container.innerHTML = '<div class="dash-empty">Žádný test neodpovídá hledání.</div>';
+    return;
+  }
+  filtered.forEach(t => {
     const card = document.createElement('button');
-    card.className = 'dash-card' + (t.retired ? ' dash-card--retired' : '');
-    const badge = t.retired ? `<div class="dash-card-badge">✓ Splněno</div>` : '';
+    const isSearching = q.length > 0;
+    card.className = 'dash-card' + (!isSearching && t.retired ? ' dash-card--retired' : '');
+    const badge = (!isSearching && t.retired) ? `<div class="dash-card-badge">✓ Splněno</div>` : '';
     const qLabel = t.questionCount === 1 ? 'otázka' : t.questionCount >= 2 && t.questionCount <= 4 ? 'otázky' : 'otázek';
-    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${t.questionCount} ${qLabel} · aktualizováno ${formatDate(t.updatedAt)}</div>`;
+    let subText;
+    if (isSearching) {
+      const matchingCount = countMatchingQuestions(t, q);
+      const matchLabel = matchingCount === 1 ? 'otázka' : matchingCount >= 2 && matchingCount <= 4 ? 'otázky' : 'otázek';
+      subText = `Vyhledávání vyhovuje ${matchingCount} ${matchLabel} v testu`;
+    } else {
+      subText = `${t.questionCount} ${qLabel} v databázi · aktualizováno ${formatDate(t.updatedAt)}`;
+    }
+    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}</div><div class="dash-card-sub">${subText}</div>`;
     card.onclick = () => selectTest(t.id);
     container.appendChild(card);
   });
@@ -1852,6 +1990,29 @@ function retryQ() {
   renderQ();
 }
 
+function repeatQuiz() {
+  if (!S.savedQuestions || S.savedQuestions.length === 0) {
+    startQuiz();
+    return;
+  }
+  const questions = S.savedQuestions;
+  S = {
+    selectedTest: S.selectedTest,
+    questions,
+    cur:        0,
+    answers:    questions.map(() => []),
+    scores:     questions.map(() => null),
+    firstScores: questions.map(() => null),
+    firstAnswers: questions.map(() => null),
+    confirmed:  questions.map(() => false),
+    retried:    questions.map(() => 0),
+    hintUsed:   questions.map(() => false),
+    prevScreen: null,
+  };
+  show('screen-quiz');
+  renderQ();
+}
+
 function retryWrong() {
   const wrong = [];
   S.questions.forEach((q, i) => {
@@ -2012,6 +2173,7 @@ function showResults() {
   let full = 0, part = 0, zero = 0, retried = 0;
   src.forEach((s, i) => { if (s === 1) full++; else if (s > 0) part++; else zero++; });
   S.retried.forEach(r => { retried += (r || 0); });
+  S.savedQuestions = [...S.questions];
 
   document.getElementById('r-score').textContent = '0';
   document.getElementById('r-max').textContent   = ' / ' + tot;
@@ -2436,6 +2598,20 @@ function goToDashboard() {
   show('screen-dashboard');
 }
 
+function clearDashboardSearch() {
+  const input = document.getElementById('dash-search');
+  const deepCb = document.getElementById('dash-search-deep');
+  const clear = document.getElementById('dash-search-clear');
+  const deepLabel = document.getElementById('dash-search-deep-label');
+  if (input) input.value = '';
+  if (deepCb) deepCb.checked = false;
+  if (clear) clear.classList.remove('visible');
+  if (deepLabel) deepLabel.classList.remove('visible');
+  deepSearchEnabled = false;
+  renderDashboard('');
+  if (input) input.focus();
+}
+
 window.addEventListener('popstate', e => {
   const testId = e.state && e.state.test;
   if (testId && TESTS_REGISTRY.find(t => t.id === testId)) {
@@ -2586,7 +2762,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '6.20';
+const APP_VERSION = '7.0';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

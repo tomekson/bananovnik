@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=7.0">
+<link rel="manifest" href="/bananovnik/manifest.json?v=7.1">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="/bananovnik/icon-180.png">
 <title>Banánovník</title>
@@ -407,8 +407,34 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .custom-settings-icon.open { transform:rotate(180deg); }
 .custom-settings-body { display:flex; flex-direction:column; gap:14px; padding:0 16px 16px; }
 .custom-settings-body.collapsed { display:none; }
-.sec-study { display:flex; flex-direction:column; gap:8px; opacity:0.7; }
+.sec-study { display:flex; flex-direction:column; gap:8px; }
 .sec-study-label { font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); }
+
+/* Active recall — zvýrazněný studijní vstup */
+.btn-recall {
+  display:flex; align-items:center; gap:13px;
+  width:100%; text-align:left; cursor:pointer; -webkit-appearance:none;
+  background:var(--green-bg); border:2px solid var(--primary);
+  border-radius:var(--r); padding:13px 15px;
+  position:relative; isolation:isolate;
+  transition:opacity .15s, transform .1s;
+}
+.btn-recall::before {
+  content:''; position:absolute; inset:0; border-radius:var(--r);
+  background:var(--yellow-mid); border:2px solid var(--yellow);
+  transform:translate(4px,4px); z-index:-1;
+}
+.btn-recall:active { opacity:.88; transform:scale(.99); }
+.btn-recall-ico {
+  font-size:22px; flex-shrink:0; line-height:1;
+  width:38px; height:38px; border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--primary-bg); border:1px solid var(--primary-mid);
+}
+.btn-recall-text { flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; }
+.btn-recall-title { font-size:15px; font-weight:700; color:var(--primary); letter-spacing:-.2px; }
+.btn-recall-sub { font-size:11.5px; font-weight:500; color:var(--dim); line-height:1.35; }
+.btn-recall-arrow { flex-shrink:0; font-size:18px; font-weight:700; color:var(--primary); }
 
 /* ── DASHBOARD ───────────────────────────────────── */
 #screen-dashboard {
@@ -961,13 +987,21 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
     <!-- ZONE C: Procházení a tisk -->
     <div class="sec-study">
       <div class="sec-study-label">Procházení a tisk</div>
-      <div class="seg" id="seg-study">
-        <button class="seg-btn active" onclick="setSeg('study','direct')">✓ Přímo s odpověďmi</button>
-        <button class="seg-btn"        onclick="setSeg('study','recall')">Active recall</button>
-      </div>
+
+      <!-- Active recall — zvýrazněný studijní vstup -->
+      <button class="btn-recall" onclick="startStudy('recall')">
+        <span class="btn-recall-ico">🧠</span>
+        <span class="btn-recall-text">
+          <span class="btn-recall-title">Active recall</span>
+          <span class="btn-recall-sub">Zkus odpovědět z paměti, pak si odhal řešení</span>
+        </span>
+        <span class="btn-recall-arrow">→</span>
+      </button>
+
+      <!-- Procházení s odpověďmi + Tisk -->
       <div style="display:flex;gap:8px;">
+        <button class="btn-sec" style="flex:1;text-align:center;position:relative;padding:11px 40px 11px 16px;font-size:14px;" onclick="startStudy('direct')">Procházení s odpověďmi<span style="position:absolute;right:16px;top:50%;transform:translateY(-50%);">→</span></button>
         <button class="btn-sec" style="padding:7px 13px;font-size:13px;border-radius:9px;flex-shrink:0;" onclick="printTestDirect()">Tisk testu</button>
-        <button class="btn-sec" style="flex:1;text-align:center;position:relative;padding:11px 40px 11px 16px;font-size:14px;" onclick="startStudy()">Procházení otázek<span style="position:absolute;right:16px;top:50%;transform:translateY(-50%);">→</span></button>
       </div>
     </div>
 
@@ -1562,7 +1596,9 @@ let deepSearchEnabled = false;
 // ─────────────────────────────────────────────────────────────────
 // Dashboard
 // ─────────────────────────────────────────────────────────────────
-const BASE = '/bananovnik/';
+// Na produkci (GitHub Pages) běží appka pod /bananovnik/ — všechny cesty ji obsahují.
+// Na localhostu v rootu ne, takže BASE = '/' a relativní fetch testů funguje.
+const BASE = location.pathname.includes('/bananovnik/') ? '/bananovnik/' : '/';
 
 function initSearch() {
   const input = document.getElementById('dash-search');
@@ -2355,16 +2391,17 @@ function buildStudyQuestions() {
   });
 }
 
-function startStudy() {
+function startStudy(mode) {
   if (!S.selectedTest) return;
+  const study = mode || cfg.study;          // 'direct' | 'recall'
   const questions = buildStudyQuestions();
   S = {
     selectedTest: S.selectedTest,
     studyMode: true,
     questions,
     cur: 0,
-    revealed: questions.map(() => cfg.study !== 'recall'),
-    optionsShown: questions.map(() => cfg.study !== 'recall'),
+    revealed: questions.map(() => study !== 'recall'),
+    optionsShown: questions.map(() => study !== 'recall'),
     studyHintUsed: questions.map(() => false),
     prevScreen: null,
   };
@@ -2762,7 +2799,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '7.0';
+const APP_VERSION = '7.1';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=7.1">
+<link rel="manifest" href="/bananovnik/manifest.json?v=7.15">
 <meta name="theme-color" content="#DDD7B2">
 <link rel="apple-touch-icon" href="/bananovnik/icon-180.png">
 <title>Banánovník</title>
@@ -1551,8 +1551,8 @@ const TESTS_REGISTRY = [
     id: 'manazerska-ekonomie',
     file: 'manazerska-ekonomie.json',
     title: 'Manažerská ekonomie',
-    updatedAt: '2026-05-16',
-    questionCount: 125
+    updatedAt: '2026-06-26',
+    questionCount: 126
   },
   {
     id: 'politologie-mezinarodni-vztahy',
@@ -2799,7 +2799,7 @@ function copyQuestion(mode) {
     if (e.target === this) closeAbort();
   });
 })();
-const APP_VERSION = '7.1';
+const APP_VERSION = '7.15';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

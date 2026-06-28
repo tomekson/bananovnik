@@ -108,7 +108,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: var(--card); border: 2px solid var(--line2);
   border-radius: var(--r); padding: 14px 16px;
   cursor: pointer; transition: border-color .15s, background .15s;
-  -webkit-user-select: none;
+  -webkit-user-select: none; user-select: none;
   position: relative; isolation: isolate;
 }
 .mode-card::before {
@@ -144,7 +144,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   flex: 1; padding: 10px 6px; border-radius: 10px;
   font-size: 15px; font-weight: 700; text-align: center; cursor: pointer;
   background: var(--card); border: 2px solid var(--line2); color: var(--dim);
-  transition: all .15s; -webkit-user-select: none;
+  transition: all .15s; -webkit-user-select: none; user-select: none;
   position: relative; isolation: isolate;
 }
 .cpill::before {
@@ -219,7 +219,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   flex: 1; background: var(--card); border: 2px solid var(--line2);
   border-radius: 10px; padding: 10px 12px; font-size: 16px; font-weight: 600;
   color: var(--text); text-align: center; min-width: 0;
-  -webkit-appearance: none; outline: none;
+  -webkit-appearance: none; appearance: none; outline: none;
   transition: border-color .15s;
   position: relative; isolation: isolate;
 }
@@ -237,7 +237,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .seg-btn {
   flex: 1; padding: 10px 8px; font-size: 14px; font-weight: 500; text-align: center;
   cursor: pointer; background: transparent; color: var(--dim); border: none;
-  transition: all .15s; -webkit-user-select: none; -webkit-appearance: none;
+  transition: all .15s; -webkit-user-select: none; user-select: none; -webkit-appearance: none; appearance: none;
 }
 .seg-btn:hover:not(.active):not(:disabled) { color: var(--primary); background: var(--yellow-bg); border-radius: 100px; }
 .seg-btn.active {
@@ -280,7 +280,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   border-radius: var(--r); padding: 16px 24px;
   font-size: 17px; font-weight: 700; letter-spacing: -.2px;
   cursor: pointer; width: 100%;
-  transition: opacity .15s, transform .1s; -webkit-appearance: none;
+  transition: opacity .15s, transform .1s; -webkit-appearance: none; appearance: none;
   position: relative; isolation: isolate;
 }
 .btn-start::before {
@@ -309,7 +309,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   width: 34px; height: 34px; border-radius: 9px;
   background: var(--card2); border: 1px solid var(--line2); color: var(--dim);
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer; font-size: 15px; transition: background .15s; -webkit-appearance: none;
+  cursor: pointer; font-size: 15px; transition: background .15s; -webkit-appearance: none; appearance: none;
 }
 .btn-ico:active { background: var(--line); }
 .prog-label { font-size: 13px; color: var(--dim); font-weight: 500; }
@@ -440,7 +440,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   flex: 0 0 auto; padding: 14px 18px; border-radius: var(--r);
   font-size: 14px; font-weight: 600; cursor: pointer; border: none;
   background: var(--amber-bg); color: var(--amber); border: 1.5px solid rgba(180,83,9,.25);
-  transition: opacity .15s; -webkit-appearance: none;
+  transition: opacity .15s; -webkit-appearance: none; appearance: none;
   position: relative; isolation: isolate;
 }
 .btn-retry::before {
@@ -453,7 +453,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: var(--card2); color: var(--text);
   border: 1.5px solid var(--line2); border-radius: var(--r);
   padding: 14px 18px; font-size: 15px; font-weight: 600;
-  cursor: pointer; transition: background .15s, border-color .15s ease; -webkit-appearance: none;
+  cursor: pointer; transition: background .15s, border-color .15s ease; -webkit-appearance: none; appearance: none;
   position: relative; isolation: isolate;
 }
 .btn-sec::before {
@@ -471,7 +471,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .zone-primary::before { content:''; position:absolute; inset:0; border-radius:var(--r); background:var(--yellow-mid); border:2px solid var(--yellow); transform:translate(4px,4px); z-index:-1; }
 .zone-primary-label { font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--primary); }
 .custom-settings-section { background:var(--card2); border:1.5px solid var(--line2); border-radius:var(--r); overflow:hidden; }
-.custom-settings-toggle { display:flex; align-items:center; justify-content:space-between; padding:13px 16px; cursor:pointer; -webkit-user-select:none; font-size:14px; font-weight:600; color:var(--dim); background:none; border:none; width:100%; text-align:left; -webkit-appearance:none; transition:background .15s; }
+.custom-settings-toggle { display:flex; align-items:center; justify-content:space-between; padding:13px 16px; cursor:pointer; -webkit-user-select:none;user-select:none; font-size:14px; font-weight:600; color:var(--dim); background:none; border:none; width:100%; text-align:left; -webkit-appearance:none;appearance:none; transition:background .15s; }
 .custom-settings-toggle:active { background:var(--line2); }
 .custom-settings-icon { font-size:12px; color:var(--muted); transition:transform .2s; }
 .custom-settings-icon.open { transform:rotate(180deg); }
@@ -496,7 +496,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 /* Active recall — zvýrazněný studijní vstup */
 .btn-recall {
   display:flex; align-items:center; gap:13px;
-  width:100%; text-align:left; cursor:pointer; -webkit-appearance:none;
+  width:100%; text-align:left; cursor:pointer; -webkit-appearance:none;appearance:none;
   background:var(--green-bg); border:2px solid var(--primary);
   border-radius:var(--r); padding:13px 15px;
   position:relative; isolation:isolate;
@@ -535,7 +535,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   padding: 16px 18px; cursor: pointer;
   border: 1.5px solid var(--line2);
   position: relative; isolation: isolate;
-  transition: opacity .15s, border-color .15s ease; -webkit-appearance: none;
+  transition: opacity .15s, border-color .15s ease; -webkit-appearance: none; appearance: none;
 }
 .dash-card:hover { border-color: var(--yellow); }
 .dash-card:hover::before { background: var(--yellow-mid); transform: translate(4px, 4px); }
@@ -566,7 +566,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   padding: 10px 14px 10px 36px;
   font-size: 15px; font-family: inherit; color: var(--text);
   background: var(--card2); border: 1.5px solid var(--line2);
-  border-radius: var(--r); outline: none; -webkit-appearance: none;
+  border-radius: var(--r); outline: none; -webkit-appearance: none; appearance: none;
   transition: border-color .15s;
 }
 .dash-search:focus { border-color: var(--primary); }
@@ -591,7 +591,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .btn-back-dash {
   background: none; border: none; padding: 0; margin: 0;
   font-size: 13px; color: var(--muted); font-weight: 600;
-  cursor: pointer; text-align: left; -webkit-appearance: none;
+  cursor: pointer; text-align: left; -webkit-appearance: none; appearance: none;
 }
 
 /* ── RESULTS ─────────────────────────────────────── */
@@ -728,7 +728,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   border: 2px solid var(--yellow);
   border-radius: var(--r); padding: 12px 22px;
   font-size: 14px; font-weight: 700; letter-spacing: .3px;
-  cursor: pointer; -webkit-appearance: none;
+  cursor: pointer; -webkit-appearance: none; appearance: none;
   position: relative; isolation: isolate;
   transition: opacity .15s, transform .1s;
 }
@@ -762,12 +762,12 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 .dialog-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
 .dialog-body  { font-size: 15px; color: var(--dim); margin-bottom: 20px; line-height: 1.5; }
-.unanswered-chip { display:inline-flex; align-items:center; justify-content:center; min-width:36px; height:36px; padding:0 10px; border-radius:8px; background:var(--primary-bg); border:1.5px solid var(--primary-mid); color:var(--primary); font-size:14px; font-weight:700; cursor:pointer; -webkit-appearance:none; }
+.unanswered-chip { display:inline-flex; align-items:center; justify-content:center; min-width:36px; height:36px; padding:0 10px; border-radius:8px; background:var(--primary-bg); border:1.5px solid var(--primary-mid); color:var(--primary); font-size:14px; font-weight:700; cursor:pointer; -webkit-appearance:none;appearance:none; }
 .dialog-btns  { display: flex; flex-direction: column; gap: 9px; }
 .btn-danger {
   background: var(--red-bg); color: var(--red); border: 2px solid rgba(220,38,38,.35);
   border-radius: var(--r); padding: 15px; font-size: 16px; font-weight: 600;
-  cursor: pointer; -webkit-appearance: none; transition: opacity .15s;
+  cursor: pointer; -webkit-appearance: none; appearance: none; transition: opacity .15s;
   position: relative; isolation: isolate;
 }
 .btn-danger::before {
@@ -908,7 +908,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   <div id="pull-hint-dash" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;transition:opacity .2s;"></div>
   <div class="dash-inner">
     <div class="logo-row" style="justify-content:flex-start;">
-      <button onclick="clearDashboardSearch()" style="display:flex;align-items:center;gap:11px;background:none;border:none;padding:0;cursor:pointer;-webkit-appearance:none;">
+      <button onclick="clearDashboardSearch()" style="display:flex;align-items:center;gap:11px;background:none;border:none;padding:0;cursor:pointer;-webkit-appearance:none;appearance:none;">
         <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
         <div>
           <div class="logo-name" data-text="Banánovník">Banánovník</div>
@@ -939,7 +939,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   <div class="start-inner">
 
     <div class="logo-row" style="justify-content:flex-start;">
-      <button onclick="goToDashboard()" style="display:flex;align-items:center;gap:11px;background:none;border:none;padding:0;cursor:pointer;-webkit-appearance:none;">
+      <button onclick="goToDashboard()" style="display:flex;align-items:center;gap:11px;background:none;border:none;padding:0;cursor:pointer;-webkit-appearance:none;appearance:none;">
         <div class="logo-mark"><img src="favicon.svg" alt="🍌" style="width:28px;height:28px;"></div>
         <div style="text-align:left;">
           <div class="logo-name" data-text="Banánovník">Banánovník</div>

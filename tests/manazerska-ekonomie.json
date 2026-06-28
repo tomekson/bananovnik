@@ -1773,5 +1773,22 @@
         0
       ]
     }
+  ],
+  "sets": [
+    { "name": "Užitek a spotřebitel", "q": [7, 19, 62, 65, 67, 73, 74, 80, 86, 95, 96, 107] },
+    { "name": "Indiferenční analýza a optimum", "q": [11, 12, 18, 42, 44, 57, 60, 91, 104, 116] },
+    { "name": "Poptávka — posuny a důchod", "q": [20, 21, 24, 33, 37, 49, 51, 56, 85, 100, 108, 109, 115, 125] },
+    { "name": "Elasticita poptávky", "q": [13, 15, 27, 40, 97, 124] },
+    { "name": "Substituty a komplementy", "q": [28, 46, 63, 68, 89, 93, 105] },
+    { "name": "Trh, nabídka a rovnováha", "q": [3, 4, 29, 36, 72] },
+    { "name": "Náklady a zisk (pojmy)", "q": [14, 16, 45, 55, 64, 66, 69, 70, 113, 121, 126] },
+    { "name": "Produkce a výroba", "q": [6, 31, 32, 43, 58, 59, 75, 79, 81, 88, 102] },
+    { "name": "Dokonalá konkurence", "q": [25, 35, 50, 76, 82] },
+    { "name": "Monopolistická konkurence", "q": [2, 8, 23, 48, 77] },
+    { "name": "Monopol", "q": [34, 39, 53, 71, 83, 101, 103, 106, 112, 114] },
+    { "name": "Oligopol", "q": [9, 52, 54, 87, 92, 98, 99, 122] },
+    { "name": "Trh výrobních faktorů", "q": [10, 22, 30, 41, 90, 110, 111, 117, 118, 120] },
+    { "name": "Cíle firmy a maximalizace", "q": [1, 5, 17, 26, 38, 47, 119] },
+    { "name": "Tržní síla, efektivnost, selhání", "q": [61, 78, 84, 94, 123] }
   ]
 }

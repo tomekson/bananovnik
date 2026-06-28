@@ -160,6 +160,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
 /* ── Tematické sady (themed practice decks) ───────── */
 .set-eyebrow-total { color: var(--muted); font-weight: 700; letter-spacing: .04em; }
+.set-eyebrow-icon { display: inline-flex; align-items: center; color: var(--primary); flex: none; }
+.set-eyebrow-icon svg { display: block; }
 .set-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 9px; }
 .set-pill {
   position: relative; isolation: isolate;
@@ -968,9 +970,12 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 
       <!-- Tematické sady (topic clusters) — skryté pokud test nemá sady -->
       <div id="zone-a-topicsets-section" style="display:none">
-        <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin:10px 0 2px;display:flex;align-items:baseline;justify-content:space-between;gap:8px;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin:10px 0 2px;display:flex;align-items:center;justify-content:space-between;gap:8px;">
           <span>Tematické sady</span>
-          <span class="set-eyebrow-total" id="topic-sets-total"></span>
+          <span style="display:inline-flex;align-items:center;gap:6px;">
+            <span class="set-eyebrow-total" id="topic-sets-total"></span>
+            <span class="set-eyebrow-icon" role="img" aria-label="Tematické sady" title="Tematické sady"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
+          </span>
         </div>
         <div id="topic-sets" class="set-grid"></div>
         <button type="button" id="topic-sets-toggle" class="set-toggle" style="display:none" onclick="toggleTopicSets()"></button>
@@ -1953,7 +1958,6 @@ async function selectTest(id, skipPush) {
     }
     S.selectedTest = test;
     const total = test.questions.length;
-    document.title = test.title + ' | Banánovník';
     const titleEl = document.getElementById('start-test-title');
     titleEl.setAttribute('data-text', test.title);
     titleEl.innerHTML = `<em>${test.title}</em>`;
@@ -1996,6 +2000,12 @@ function show(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
+  updateDocTitle(id);
+}
+
+function updateDocTitle(id) {
+  const inTest = id !== 'screen-dashboard' && S.selectedTest && S.selectedTest.title;
+  document.title = inTest ? `${S.selectedTest.title} | Banánovník` : 'Banánovník';
 }
 
 // ─────────────────────────────────────────────────────────────────

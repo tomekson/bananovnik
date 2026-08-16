@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.20">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.30">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -18,24 +18,28 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dar
 <link rel="apple-touch-icon" href="/bananovnik/icon-180.png">
 <title>Banánovník</title>
 <style>
+/* Den v háji: banánová krémová zůstává podkladem, ale inkoust i akcenty jsou
+   z listové rodiny (odstín ~150°) — ne studená slate šeď z cizí palety.
+   Světlý motiv je tak převrácená noc: list jako písmo, krém jako světlo.
+   Akcenty ztmaveny tak, aby na velmi světlém podkladu unesly text (AA). */
 :root {
   --bg: #F3EDC4;
   --card: #F3EDC4;
   --card2: #ede7b1;
   --line: rgba(0,0,0,0.05);
   --line2: rgba(0,0,0,0.09);
-  --primary: #2d8a4e;
-  --primary-bg: rgba(45,138,78,0.06);
-  --primary-mid: rgba(45,138,78,0.11);
-  --text: #1e293b;
-  --muted: #a0aec0;
-  --dim: #718096;
-  --green: #22915a;
-  --green-bg: rgba(34,145,90,0.07);
-  --red: #e05252;
-  --red-bg: rgba(224,82,82,0.07);
-  --amber: #c67b1a;
-  --amber-bg: rgba(198,123,26,0.07);
+  --primary: #007136;
+  --primary-bg: rgba(0,113,54,0.06);
+  --primary-mid: rgba(0,113,54,0.11);
+  --text: #1F2E23;
+  --muted: #5C685D;
+  --dim: #47554A;
+  --green: #00733E;
+  --green-bg: rgba(0,115,62,0.07);
+  --red: #B92A2D;
+  --red-bg: rgba(185,42,45,0.07);
+  --amber: #955200;
+  --amber-bg: rgba(149,82,0,0.07);
   --yellow: #f0d540;
   --yellow-bg: rgba(240,213,64,0.12);
   --yellow-mid: rgba(240,213,64,0.25);
@@ -43,7 +47,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dar
   --r-sm: 9px;
   --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 3px 12px rgba(0,0,0,0.03);
   --opt-bg: #FDFAE8;
-  --splash-shadow-settle: #E8E8E8;
+  --splash-shadow-settle: #E2EAE3;
 }
 /* Noc v háji: plochy jsou listová zelenočerná (odstín 152°), ne ztmavená krémová —
    tmavá žlutá je z podstaty hnědá, proto noc bere odstín z listu, ne ze slupky.
@@ -3235,7 +3239,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.20';
+const APP_VERSION = '9.30';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

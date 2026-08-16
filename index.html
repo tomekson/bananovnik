@@ -7,13 +7,13 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.10">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.20">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
 var d=(s==='light'||s==='dark')?s:(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
 document.documentElement.dataset.theme=d;
-var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dark'?'#201D10':'#DDD7B2';})();
+var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dark'?'#131C15':'#DDD7B2';})();
 </script>
 <link rel="apple-touch-icon" href="/bananovnik/icon-180.png">
 <title>Banánovník</title>
@@ -45,20 +45,22 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dar
   --opt-bg: #FDFAE8;
   --splash-shadow-settle: #E8E8E8;
 }
-/* Noc v háji: teplá tmavá oliva odvozená z odstínu krémové, banánová žlutá zůstává —
-   na tmavém podkladu vynikne nejvíc. Offsetované stíny (podpis stylu) zůstávají. */
+/* Noc v háji: plochy jsou listová zelenočerná (odstín 152°), ne ztmavená krémová —
+   tmavá žlutá je z podstaty hnědá, proto noc bere odstín z listu, ne ze slupky.
+   Banánová žlutá tak zůstává jedinou teplou barvou a chová se jako světlo.
+   Offsetované stíny (podpis stylu) zůstávají. */
 [data-theme=dark] {
-  --bg: #201D10;
-  --card: #201D10;
-  --card2: #2B2716;
+  --bg: #131C15;
+  --card: #131C15;
+  --card2: #1C281F;
   --line: rgba(255,255,255,0.06);
   --line2: rgba(255,255,255,0.13);
-  --primary: #4FAE72;
-  --primary-bg: rgba(79,174,114,0.10);
-  --primary-mid: rgba(79,174,114,0.20);
-  --text: #EDE8D0;
-  --muted: #837D63;
-  --dim: #ABA485;
+  --primary: #63CA84;
+  --primary-bg: rgba(99,202,132,0.10);
+  --primary-mid: rgba(99,202,132,0.20);
+  --text: #E6EADA;
+  --muted: #889385;
+  --dim: #9BA898;
   --green: #55C287;
   --green-bg: rgba(85,194,135,0.12);
   --red: #F0796E;
@@ -69,8 +71,8 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dar
   --yellow-bg: rgba(240,213,64,0.09);
   --yellow-mid: rgba(240,213,64,0.20);
   --shadow: 0 1px 3px rgba(0,0,0,0.35), 0 3px 12px rgba(0,0,0,0.28);
-  --opt-bg: #2C2817;
-  --splash-shadow-settle: #4A4534;
+  --opt-bg: #1E2921;
+  --splash-shadow-settle: #37473B;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 html { height: 100%; background: var(--bg); color-scheme: light; }
@@ -977,20 +979,20 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
 
 /* ── NOC: cílené opravy míst s pevnými barvami ───── */
 [data-theme=dark] .mode-radio { background: var(--card2); }
-[data-theme=dark] .tog { background: #4A4534; }
-[data-theme=dark] .opt.sel .opt-box { color: #201D10; }
+[data-theme=dark] .tog { background: #394A3D; }
+[data-theme=dark] .opt.sel .opt-box { color: #0A2312; }
 [data-theme=dark] .opt.ok .opt-box,
 [data-theme=dark] .opt.bad .opt-box,
 [data-theme=dark] .opt.miss .opt-box,
-[data-theme=dark] .opt.study-correct .opt-box { color: #201D10; }
-[data-theme=dark] .btn-start { color: #142A1C; }
-[data-theme=dark] .set-pill.active .set-count { color: #142A1C; }
+[data-theme=dark] .opt.study-correct .opt-box { color: #0A2312; }
+[data-theme=dark] .btn-start { color: #0A2312; }
+[data-theme=dark] .set-pill.active .set-count { color: #0A2312; }
 [data-theme=dark] .opt.ok,
 [data-theme=dark] .opt.study-correct { border-color: rgba(85,194,135,.4); }
 [data-theme=dark] .opt.bad { border-color: rgba(240,121,110,.4); }
 [data-theme=dark] .opt.miss { border-color: rgba(227,166,79,.4); }
-[data-theme=dark] .opt.study-wrong { background: #2A2718; border-color: rgba(255,255,255,.05); }
-[data-theme=dark] .opt.study-wrong .opt-box { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); }
+[data-theme=dark] .opt.study-wrong { background: #232B25; border-color: rgba(255,255,255,.05); }
+[data-theme=dark] .opt.study-wrong .opt-box { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); color: var(--dim); }
 [data-theme=dark] .btn-sec::before,
 [data-theme=dark] .dash-card::before,
 [data-theme=dark] #preset-exam::before { background: rgba(255,255,255,.04); }
@@ -1413,7 +1415,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
   // Animate theme-color to match splashRipen: green→yellow→cream over 1s
   if(meta){
     var dk=document.documentElement.dataset.theme==='dark';
-    var colors=[[0,dk?'#201D10':'#F3EDC4']];
+    var colors=[[0,dk?'#131C15':'#F3EDC4']];
     colors.forEach(function(c){setTimeout(function(){meta.setAttribute('content',c[1]);},c[0]);});
   }
   s.addEventListener('animationend',function(e){if(e.animationName==='splashFadeOut'){s.remove();window.scrollTo(0,0);document.body.classList.remove('has-splash');}});
@@ -3213,7 +3215,7 @@ function copyQuestion(mode) {
 function applyTheme(t) {
   document.documentElement.dataset.theme = t;
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.content = t === 'dark' ? '#201D10' : '#DDD7B2';
+  if (meta) meta.content = t === 'dark' ? '#131C15' : '#DDD7B2';
   document.querySelectorAll('.theme-toggle').forEach(b => {
     const lbl = t === 'dark' ? 'Přepnout na světlý režim' : 'Přepnout na tmavý režim';
     b.setAttribute('aria-label', lbl);
@@ -3233,7 +3235,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.10';
+const APP_VERSION = '9.20';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

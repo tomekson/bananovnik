@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.00">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.10">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -230,6 +230,21 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .set-pill.active .set-name { color: var(--primary); }
 .set-pill.active .set-count { background: var(--primary); color: #fff; }
 .set-hidden { display: none !important; }
+.set-summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+  margin-top: 9px; font-size: 12.5px; color: var(--dim); line-height: 1.35;
+}
+.set-summary strong { color: var(--primary); font-weight: 800; }
+.set-summary-hint { color: var(--muted); }
+.set-clear {
+  flex: none; padding: 5px 10px; border-radius: 999px;
+  background: transparent; border: 1.5px solid var(--line2);
+  color: var(--dim); font-size: 12px; font-weight: 700; font-family: inherit;
+  cursor: pointer; -webkit-user-select: none; user-select: none;
+  transition: border-color .15s ease, color .15s ease, background .15s ease;
+}
+.set-clear:hover { border-color: var(--yellow); color: var(--text); background: var(--yellow-bg); }
+.set-clear:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
 .set-toggle {
   margin-top: 9px; width: 100%;
   padding: 9px 12px; border-radius: 10px;
@@ -1081,6 +1096,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
           </span>
         </div>
         <div id="topic-sets" class="set-grid"></div>
+        <div id="topic-sets-summary" class="set-summary"></div>
         <button type="button" id="topic-sets-toggle" class="set-toggle" style="display:none" onclick="toggleTopicSets()"></button>
       </div>
 
@@ -1414,7 +1430,8 @@ const PASS_THRESHOLD = 0.51;
 // ─────────────────────────────────────────────────────────────────
 const cfg = {
   mode:      'all',      // 'all' | 'range' | 'set' | 'exam'
-  setIdx:    [],         // 0-based indexy otázek pro mode 'set'
+  setSel:    [],         // indexy vybraných tematických sad (lze víc naráz)
+  setIdx:    [],         // 0-based indexy otázek pro mode 'set' (sjednocení vybraných sad)
   count:     0,          // 0 = vše
   fb:        'ihned',    // 'ihned' | 'after'
   qorder:    'seq',      // 'random' | 'seq'
@@ -1570,6 +1587,9 @@ function renderTopicSets() {
   if (!container || !S.selectedTest) return;
   const sets = S.selectedTest.sets || [];
   container.innerHTML = '';
+  cfg.setSel = [];
+  cfg.setIdx = [];
+  if (cfg.mode === 'set') setMode('all');  // výběr témat nepřenášet mezi testy
   const has = sets.length > 0;
   if (section) section.style.display = has ? '' : 'none';
   if (has && quickSep) quickSep.style.display = '';
@@ -1582,15 +1602,17 @@ function renderTopicSets() {
     el.id = 'topic-set-' + i;
     el.setAttribute('role', 'button');
     el.tabIndex = 0;
+    el.setAttribute('aria-pressed', 'false');
     el.setAttribute('aria-label', `${s.name} — ${s.q.length} otázek`);
     el.innerHTML = `<span class="set-name">${s.name}</span><span class="set-count" aria-hidden="true">${s.q.length}</span>`;
     el.onclick = () => applyTopicSet(i);
-    el.ondblclick = () => { applyTopicSet(i); startQuiz(); };
+    el.ondblclick = () => { applyTopicSet(i, true); startQuiz(); };
     el.onkeydown = (ev) => {
       if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); applyTopicSet(i); }
     };
     container.appendChild(el);
   });
+  updateTopicSetsSummary();
   applyTopicSetsVisibility();
 }
 
@@ -1634,28 +1656,86 @@ function applyTopicSetsVisibility() {
   }
 }
 
-function applyTopicSet(idx) {
+// Klik přepíná téma ve výběru — vybraná témata se slijí do jednoho testu.
+// force = true (dvojklik) téma vždy ponechá vybrané, ať už klik dopadl jakkoli.
+function applyTopicSet(idx, force) {
   const sets = (S.selectedTest && S.selectedTest.sets) || [];
-  const set = sets[idx];
-  if (!set) return;
-  const total = S.selectedTest.questions.length;
-  cfg.mode = 'set';
-  cfg.setIdx = set.q.map(n => n - 1).filter(i => i >= 0 && i < total);
-  cfg.count = 0;
-  document.getElementById('mode-all').classList.remove('active');
-  document.getElementById('mode-range').classList.remove('active');
-  document.getElementById('range-section').style.display = 'none';
-  clearPresetHighlight();
-  document.querySelectorAll('#range-chunks .cpill').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll('#topic-sets .set-pill').forEach((el, i) => el.classList.toggle('active', i === idx));
-  setSeg('qorder', 'random', true);
-  applyCountSectionMode('all');
+  if (!sets[idx]) return;
+  const pos = cfg.setSel.indexOf(idx);
+  if (pos < 0)     cfg.setSel.push(idx);
+  else if (!force) cfg.setSel.splice(pos, 1);
+  syncTopicSetSelection();
+}
+
+function syncTopicSetSelection() {
+  const sets  = (S.selectedTest && S.selectedTest.sets) || [];
+  const total = S.selectedTest ? S.selectedTest.questions.length : 0;
+  cfg.setSel = cfg.setSel.filter(i => !!sets[i]);
+
+  // Sjednocení otázek napříč vybranými tématy — bez duplicit, v pořadí databáze
+  const seen = new Set();
+  cfg.setSel.forEach(i => sets[i].q.forEach(n => {
+    const qi = n - 1;
+    if (qi >= 0 && qi < total) seen.add(qi);
+  }));
+  cfg.setIdx = [...seen].sort((a, b) => a - b);
+
+  document.querySelectorAll('#topic-sets .set-pill').forEach((el, i) => {
+    const on = cfg.setSel.indexOf(i) >= 0;
+    el.classList.toggle('active', on);
+    el.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+
+  if (cfg.setSel.length) {
+    cfg.mode = 'set';
+    cfg.count = 0;
+    document.getElementById('mode-all').classList.remove('active');
+    document.getElementById('mode-range').classList.remove('active');
+    document.getElementById('range-section').style.display = 'none';
+    clearPresetHighlight();
+    document.querySelectorAll('#range-chunks .cpill').forEach(el => el.classList.remove('active'));
+    setSeg('qorder', 'random', true);
+    applyCountSectionMode('all');
+  } else if (cfg.mode === 'set') {
+    setMode('all');
+  }
+
+  updateTopicSetsSummary();
+  applyTopicSetsVisibility();
+  updateCountInfo();
+  updateStartBtn();
+}
+
+function updateTopicSetsSummary() {
+  const el = document.getElementById('topic-sets-summary');
+  if (!el) return;
+  const n  = cfg.setSel.length;
+  const qn = cfg.setIdx.length;
+  if (!n) {
+    el.innerHTML = `<span class="set-summary-hint">Klepni i na víc témat — spojí se do jednoho testu.</span>`;
+    return;
+  }
+  const tLabel = n === 1 ? 'téma' : n <= 4 ? 'témata' : 'témat';
+  const qLabel = qn === 1 ? 'otázka' : qn >= 2 && qn <= 4 ? 'otázky' : 'otázek';
+  el.innerHTML = `<span>Vybráno <strong>${n}</strong> ${tLabel} · <strong>${qn}</strong> ${qLabel}</span>`
+               + `<button type="button" class="set-clear" onclick="clearTopicSetSelection()">Zrušit výběr</button>`;
+}
+
+function clearTopicSetSelection() {
+  setMode('all');
   updateCountInfo();
   updateStartBtn();
 }
 
 function clearTopicSetHighlight() {
-  document.querySelectorAll('#topic-sets .set-pill').forEach(el => el.classList.remove('active'));
+  cfg.setSel = [];
+  cfg.setIdx = [];
+  document.querySelectorAll('#topic-sets .set-pill').forEach(el => {
+    el.classList.remove('active');
+    el.setAttribute('aria-pressed', 'false');
+  });
+  updateTopicSetsSummary();
+  applyTopicSetsVisibility();
 }
 
 function toggleCountSection() {
@@ -1779,7 +1859,9 @@ function updateCountInfo() {
   }
   const will = cfg.count === 0 ? scopeSize : Math.min(cfg.count, scopeSize);
   const qLabel = will === 1 ? 'otázku' : will >= 2 && will <= 4 ? 'otázky' : 'otázek';
-  const scopeNote = cfg.mode === 'range' ? ` ve vybraném rozsahu` : cfg.mode === 'set' ? ` ve vybrané sadě` : '';
+  const scopeNote = cfg.mode === 'range' ? ` ve vybraném rozsahu`
+                  : cfg.mode === 'set'   ? (cfg.setSel.length > 1 ? ` ve vybraných tématech` : ` ve vybrané sadě`)
+                  : '';
   el.innerHTML = `Test bude mít <strong>${will}</strong> ${qLabel} (z ${scopeSize}${scopeNote}).`;
 }
 
@@ -1830,6 +1912,8 @@ function updateStartBtn() {
     const from  = parseInt(document.getElementById('range-from').value) || 0;
     const to    = parseInt(document.getElementById('range-to').value)   || 0;
     btn.disabled = !(from >= 1 && to <= total && from <= to);
+  } else if (cfg.mode === 'set') {
+    btn.disabled = cfg.setIdx.length === 0;
   } else {
     btn.disabled = false;
   }
@@ -2142,6 +2226,8 @@ function startQuiz() {
     if (cfg.qorder === 'random') pool = shuffle(pool);
     if (cfg.count > 0 && cfg.count < pool.length) pool = pool.slice(0, cfg.count);
   }
+
+  if (!pool.length) return;
 
   const questions = pool.map(q => {
     const correctSet = new Set(q.correct);
@@ -3147,7 +3233,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.00';
+const APP_VERSION = '9.10';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

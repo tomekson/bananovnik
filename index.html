@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.31">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.32">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -665,8 +665,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   border-radius: 20px; padding: 28px 22px; text-align: center;
   box-shadow: var(--shadow);
 }
-.score-big { font-size: 80px; font-weight: 800; color: var(--primary); line-height: 1; letter-spacing: -5px; font-variant-numeric: tabular-nums; }
-.score-dec { font-size: 34px; font-weight: 700; color: var(--primary); letter-spacing: -1px; font-variant-numeric: tabular-nums; }
+.score-big { font-size: 80px; font-weight: 800; color: var(--primary); line-height: 1; letter-spacing: -5px; }
+.score-dec { font-size: 26px; font-weight: 700; color: var(--primary); letter-spacing: -.5px; margin-left: 2px; font-variant-numeric: tabular-nums; }
 .score-denom { font-size: 30px; font-weight: 400; color: var(--muted); letter-spacing: -1px; }
 .score-sub { font-size: 14px; color: var(--dim); margin-top: 8px; }
 .score-sub strong { color: var(--text); }
@@ -2629,10 +2629,9 @@ function showResults() {
   S.savedQuestions = [...S.questions];
 
   document.getElementById('r-score').textContent = '0';
+  document.getElementById('r-dec').textContent   = '';
   document.getElementById('r-max').textContent   = ' / ' + tot;
-  const dec = raw.toFixed(2).split('.')[1];
-  document.getElementById('r-dec').textContent   = dec === '00' ? '' : ',' + dec;
-  document.getElementById('r-pct').textContent   = Math.round(pct * 100) + ' %';
+  document.getElementById('r-pct').textContent   = (Math.round(pct * 1000) / 10).toString().replace('.', ',') + ' %';
   document.getElementById('r-full').textContent  = '0';
   document.getElementById('r-part').textContent  = '0';
   document.getElementById('r-miss').textContent  = '0';
@@ -2674,7 +2673,7 @@ function showResults() {
 
   S.prevScreen = 'screen-results';
   show('screen-results');
-  animNum('r-score', 0, final_, 900);
+  animScore(raw, 900);
   animNum('r-full', 0, full, 700);
   animNum('r-part', 0, part, 700);
   animNum('r-miss', 0, zero, 700);
@@ -2716,6 +2715,21 @@ function bananaConfetti() {
       spawnBurst(rx, ry, 6 + Math.floor(Math.random() * 4), idx >= 3 ? 0.2 : 0);
     }, delays[d], d);
   }
+}
+
+function animScore(raw, ms) {
+  const intEl = document.getElementById('r-score');
+  const decEl = document.getElementById('r-dec');
+  const hasDec = raw.toFixed(2).split('.')[1] !== '00';
+  const t0 = performance.now();
+  const tick = t => {
+    const p = Math.min((t - t0) / ms, 1);
+    const v = raw * (1 - Math.pow(1 - p, 3));
+    intEl.textContent = Math.floor(v);
+    decEl.textContent = hasDec ? ',' + v.toFixed(2).split('.')[1] : '';
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
 }
 
 function animNum(id, from, to, ms, suffix) {
@@ -3241,7 +3255,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.31';
+const APP_VERSION = '9.32';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

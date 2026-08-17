@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.30">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.31">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -666,6 +666,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   box-shadow: var(--shadow);
 }
 .score-big { font-size: 80px; font-weight: 800; color: var(--primary); line-height: 1; letter-spacing: -5px; font-variant-numeric: tabular-nums; }
+.score-dec { font-size: 34px; font-weight: 700; color: var(--primary); letter-spacing: -1px; font-variant-numeric: tabular-nums; }
 .score-denom { font-size: 30px; font-weight: 400; color: var(--muted); letter-spacing: -1px; }
 .score-sub { font-size: 14px; color: var(--dim); margin-top: 8px; }
 .score-sub strong { color: var(--text); }
@@ -1339,10 +1340,10 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="score-card">
       <div style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Celkový počet bodů</div>
       <div>
-        <span class="score-big" id="r-score">0</span>
+        <span class="score-big" id="r-score">0</span><span class="score-dec" id="r-dec"></span>
         <span class="score-denom" id="r-max"></span>
       </div>
-      <div class="score-sub">Nezaokrouhleno: <strong id="r-raw">—</strong> b &nbsp;·&nbsp; Úspěšnost: <strong id="r-pct">—</strong></div>
+      <div class="score-sub">Úspěšnost: <strong id="r-pct">—</strong></div>
       <div id="r-badge"></div>
       <div id="r-exam"></div>
     </div>
@@ -1952,7 +1953,7 @@ const TESTS_REGISTRY = [
     id: 'manazerska-ekonomie',
     file: 'manazerska-ekonomie.json',
     title: 'Manažerská ekonomie',
-    updatedAt: '2026-06-26',
+    updatedAt: '2026-08-17',
     questionCount: 126,
     hasSets: true
   },
@@ -2629,7 +2630,8 @@ function showResults() {
 
   document.getElementById('r-score').textContent = '0';
   document.getElementById('r-max').textContent   = ' / ' + tot;
-  document.getElementById('r-raw').textContent   = raw.toFixed(2).replace('.', ',');
+  const dec = raw.toFixed(2).split('.')[1];
+  document.getElementById('r-dec').textContent   = dec === '00' ? '' : ',' + dec;
   document.getElementById('r-pct').textContent   = Math.round(pct * 100) + ' %';
   document.getElementById('r-full').textContent  = '0';
   document.getElementById('r-part').textContent  = '0';
@@ -3239,7 +3241,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.30';
+const APP_VERSION = '9.31';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

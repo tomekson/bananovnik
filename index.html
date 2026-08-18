@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.32">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.33">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2720,14 +2720,20 @@ function bananaConfetti() {
 function animScore(raw, ms) {
   const intEl = document.getElementById('r-score');
   const decEl = document.getElementById('r-dec');
-  const hasDec = raw.toFixed(2).split('.')[1] !== '00';
+  const finalHasDec = raw.toFixed(2).split('.')[1] !== '00';
   const t0 = performance.now();
   const tick = t => {
     const p = Math.min((t - t0) / ms, 1);
+    if (p >= 1) {
+      intEl.textContent = Math.floor(raw);
+      decEl.textContent = finalHasDec ? ',' + raw.toFixed(2).split('.')[1] : '';
+      return;
+    }
     const v = raw * (1 - Math.pow(1 - p, 3));
-    intEl.textContent = Math.floor(v);
-    decEl.textContent = hasDec ? ',' + v.toFixed(2).split('.')[1] : '';
-    if (p < 1) requestAnimationFrame(tick);
+    const [ip, dp] = v.toFixed(2).split('.');
+    intEl.textContent = ip;
+    decEl.textContent = dp !== '00' ? ',' + dp : '';
+    requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
 }
@@ -3255,7 +3261,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.32';
+const APP_VERSION = '9.33';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

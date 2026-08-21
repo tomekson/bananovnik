@@ -110,7 +110,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .quiz-in-left   { animation: slideInLeft   .18s ease-out; }
 
 /* ── START ───────────────────────────────────────── */
-#screen-start {
+#screen-start,
+#screen-study-sets {
   align-items: center;
   padding: 32px 18px max(32px, env(safe-area-inset-bottom));
 }
@@ -1232,12 +1233,41 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
 
       <!-- Procházení s odpověďmi + Tisk -->
       <div style="display:flex;gap:8px;">
-        <button class="btn-sec" style="flex:1;text-align:center;position:relative;padding:11px 40px 11px 16px;font-size:14px;" onclick="startStudy('direct')">Procházení s odpověďmi<span style="position:absolute;right:16px;top:50%;transform:translateY(-50%);">→</span></button>
+        <button class="btn-sec" style="flex:1;text-align:center;position:relative;padding:11px 40px 11px 16px;font-size:14px;" onclick="openStudyBrowse()">Procházení s odpověďmi<span style="position:absolute;right:16px;top:50%;transform:translateY(-50%);">→</span></button>
         <button class="btn-sec" style="padding:7px 13px;font-size:13px;border-radius:9px;flex-shrink:0;" onclick="printTestDirect()">Tisk testu</button>
       </div>
     </div>
 
     <div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu".</div>
+
+  </div>
+</div>
+
+<!-- ══════════════ STUDY SETS (výběr sad pro procházení) ════════ -->
+<div id="screen-study-sets" class="screen">
+  <div class="start-inner">
+
+    <div style="display:flex;align-items:center;gap:11px;">
+      <button class="btn-ico" onclick="show('screen-start')" title="Zpět na nastavení testu">←</button>
+      <div style="min-width:0;">
+        <div style="font-size:19px;font-weight:800;letter-spacing:-.3px;">Procházení s odpověďmi</div>
+        <div style="font-size:12px;color:var(--dim);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" id="study-sets-test-title"></div>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+        <span>Tematické sady</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;">
+          <span class="set-eyebrow-total" id="study-sets-total"></span>
+          <span class="set-eyebrow-icon" role="img" aria-label="Tematické sady" title="Tematické sady"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
+        </span>
+      </div>
+      <div id="study-sets" class="set-grid"></div>
+      <div id="study-sets-summary" class="set-summary"></div>
+    </div>
+
+    <button class="btn-start" id="btn-study-sets-start" onclick="startStudyFromSets()">Procházet ↵</button>
 
   </div>
 </div>
@@ -1596,6 +1626,7 @@ function renderTopicSets() {
   container.innerHTML = '';
   cfg.setSel = [];
   cfg.setIdx = [];
+  studySetsSel = [];   // výběr pro procházení nepřenášet mezi testy
   if (cfg.mode === 'set') setMode('all');  // výběr témat nepřenášet mezi testy
   const has = sets.length > 0;
   if (section) section.style.display = has ? '' : 'none';
@@ -1953,7 +1984,7 @@ const TESTS_REGISTRY = [
     id: 'manazerska-ekonomie',
     file: 'manazerska-ekonomie.json',
     title: 'Manažerská ekonomie',
-    updatedAt: '2026-08-17',
+    updatedAt: '2026-08-19',
     questionCount: 126,
     hasSets: true
   },
@@ -2813,9 +2844,11 @@ function reviewBack() { show(S.prevScreen || 'screen-results'); }
 // ─────────────────────────────────────────────────────────────────
 // Study mode (procházení otázek bez bodování)
 // ─────────────────────────────────────────────────────────────────
-function buildStudyQuestions() {
+function buildStudyQuestions(qIdx) {
   const bank = S.selectedTest.questions;
-  return bank.map((q, i) => {
+  const idxList = (qIdx && qIdx.length) ? qIdx : bank.map((_, i) => i);
+  return idxList.map(i => {
+    const q = bank[i];
     const correctSet = new Set(q.correct);
     const correctOpts = [];
     const wrongOpts = [];
@@ -2829,10 +2862,11 @@ function buildStudyQuestions() {
   });
 }
 
-function startStudy(mode) {
+function startStudy(mode, qIdx, fromSets) {
   if (!S.selectedTest) return;
   const study = mode || cfg.study;          // 'direct' | 'recall'
-  const questions = buildStudyQuestions();
+  const questions = buildStudyQuestions(qIdx);
+  if (!questions.length) return;
   S = {
     selectedTest: S.selectedTest,
     studyMode: true,
@@ -2842,9 +2876,108 @@ function startStudy(mode) {
     optionsShown: questions.map(() => study !== 'recall'),
     studyHintUsed: questions.map(() => false),
     prevScreen: null,
+    fromStudySets: !!fromSets,
+    studyLabel: (fromSets && qIdx && qIdx.length) ? studySetsLabel() : null,
   };
   show('screen-study');
   renderStudy();
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Výběr tematických sad pro procházení s odpověďmi
+// ─────────────────────────────────────────────────────────────────
+let studySetsSel = [];   // indexy vybraných sad (nezávislé na cfg.setSel z procvičování)
+
+function openStudyBrowse() {
+  if (!S.selectedTest) return;
+  const sets = S.selectedTest.sets || [];
+  if (!sets.length) { startStudy('direct'); return; }
+  renderStudySets();
+  show('screen-study-sets');
+}
+
+function renderStudySets() {
+  const sets = S.selectedTest.sets || [];
+  const container = document.getElementById('study-sets');
+  container.innerHTML = '';
+  document.getElementById('study-sets-test-title').textContent = S.selectedTest.title;
+  document.getElementById('study-sets-total').textContent = sets.length + ' témat';
+  sets.forEach((s, i) => {
+    const el = document.createElement('div');
+    el.className = 'set-pill';
+    el.setAttribute('role', 'button');
+    el.tabIndex = 0;
+    el.setAttribute('aria-pressed', 'false');
+    el.setAttribute('aria-label', `${s.name} — ${s.q.length} otázek`);
+    el.innerHTML = `<span class="set-name">${s.name}</span><span class="set-count" aria-hidden="true">${s.q.length}</span>`;
+    el.onclick = () => toggleStudySet(i);
+    el.ondblclick = () => { toggleStudySet(i, true); startStudyFromSets(); };
+    el.onkeydown = (ev) => {
+      if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); toggleStudySet(i); }
+    };
+    container.appendChild(el);
+  });
+  syncStudySetsUI();
+}
+
+// Klik přepíná téma ve výběru; force (dvojklik) ho vždy ponechá vybrané.
+function toggleStudySet(idx, force) {
+  const sets = (S.selectedTest && S.selectedTest.sets) || [];
+  if (!sets[idx]) return;
+  const pos = studySetsSel.indexOf(idx);
+  if (pos < 0)     studySetsSel.push(idx);
+  else if (!force) studySetsSel.splice(pos, 1);
+  syncStudySetsUI();
+}
+
+// Sjednocení otázek vybraných sad — bez duplicit, v pořadí databáze
+function studySetsIdx() {
+  const sets  = (S.selectedTest && S.selectedTest.sets) || [];
+  const total = S.selectedTest ? S.selectedTest.questions.length : 0;
+  const seen = new Set();
+  studySetsSel.forEach(i => sets[i] && sets[i].q.forEach(n => {
+    const qi = n - 1;
+    if (qi >= 0 && qi < total) seen.add(qi);
+  }));
+  return [...seen].sort((a, b) => a - b);
+}
+
+function studySetsLabel() {
+  const sets = (S.selectedTest && S.selectedTest.sets) || [];
+  if (studySetsSel.length === 1 && sets[studySetsSel[0]]) return sets[studySetsSel[0]].name;
+  const n = studySetsSel.length;
+  return n + ' ' + (n <= 4 ? 'témata' : 'témat');
+}
+
+function syncStudySetsUI() {
+  document.querySelectorAll('#study-sets .set-pill').forEach((el, i) => {
+    const on = studySetsSel.indexOf(i) >= 0;
+    el.classList.toggle('active', on);
+    el.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+  const n  = studySetsSel.length;
+  const qn = studySetsIdx().length;
+  const qLabel = qn === 1 ? 'otázka' : qn >= 2 && qn <= 4 ? 'otázky' : 'otázek';
+  const sum = document.getElementById('study-sets-summary');
+  if (!n) {
+    sum.innerHTML = `<span class="set-summary-hint">Klepni i na víc témat — projdeš je v jednom procházení.</span>`;
+  } else {
+    const tLabel = n === 1 ? 'téma' : n <= 4 ? 'témata' : 'témat';
+    sum.innerHTML = `<span>Vybráno <strong>${n}</strong> ${tLabel} · <strong>${qn}</strong> ${qLabel}</span>`
+                  + `<button type="button" class="set-clear" onclick="clearStudySets()">Zrušit výběr</button>`;
+  }
+  const total = S.selectedTest ? S.selectedTest.questions.length : 0;
+  document.getElementById('btn-study-sets-start').textContent =
+    n ? `Procházet výběr (${qn} ${qLabel}) ↵` : `Procházet všech ${total} otázek ↵`;
+}
+
+function clearStudySets() {
+  studySetsSel = [];
+  syncStudySetsUI();
+}
+
+function startStudyFromSets() {
+  startStudy('direct', studySetsSel.length ? studySetsIdx() : null, true);
 }
 
 function printTestDirect() {
@@ -2874,7 +3007,7 @@ function renderStudy() {
   document.getElementById('study-tot').textContent = tot;
   document.getElementById('study-pbar').style.width = ((n + 1) / tot * 100) + '%';
   document.getElementById('study-q-num').innerHTML =
-    `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig">${S.selectedTest.title}</span>`;
+    `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig">${S.studyLabel || S.selectedTest.title}</span>`;
   document.getElementById('study-q-text').textContent = q.q;
 
   const c = q.correct.length;
@@ -2936,7 +3069,7 @@ function renderStudy() {
 
 function printStudy() {
   const questions = S.questions;
-  const title = S.selectedTest.title;
+  const title = S.selectedTest.title + (S.studyLabel ? ' — ' + S.studyLabel : '');
 
   let body = '';
   questions.forEach((q, qi) => {
@@ -3023,8 +3156,9 @@ function goStudy(dir) {
 }
 
 function closeStudy() {
+  const backToSets = !!S.fromStudySets;
   S.studyMode = false;
-  show('screen-start');
+  show(backToSets ? 'screen-study-sets' : 'screen-start');
 }
 
 function testStudyQ() {
@@ -3168,8 +3302,13 @@ document.addEventListener('keyup', function(e) {
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Enter' && document.getElementById('screen-start').classList.contains('active')) {
-    e.preventDefault(); startQuiz();
+  if (e.key !== 'Enter') return;
+  if (document.getElementById('screen-start').classList.contains('active')) {
+    e.preventDefault(); startQuiz(); return;
+  }
+  if (document.getElementById('screen-study-sets').classList.contains('active')) {
+    if (e.target && e.target.closest && e.target.closest('.set-pill')) return;
+    e.preventDefault(); startStudyFromSets();
   }
 });
 
@@ -3261,7 +3400,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.33';
+const APP_VERSION = '9.34';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

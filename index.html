@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.33">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.35">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -29,20 +29,20 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dar
   --line: rgba(0,0,0,0.05);
   --line2: rgba(0,0,0,0.09);
   --primary: #007136;
-  --primary-bg: rgba(0,113,54,0.06);
-  --primary-mid: rgba(0,113,54,0.11);
+  --primary-bg: color-mix(in oklab, var(--primary) 6%, transparent);
+  --primary-mid: color-mix(in oklab, var(--primary) 11%, transparent);
   --text: #1F2E23;
   --muted: #5C685D;
   --dim: #47554A;
   --green: #00733E;
-  --green-bg: rgba(0,115,62,0.07);
+  --green-bg: color-mix(in oklab, var(--green) 7%, transparent);
   --red: #B92A2D;
-  --red-bg: rgba(185,42,45,0.07);
+  --red-bg: color-mix(in oklab, var(--red) 7%, transparent);
   --amber: #955200;
-  --amber-bg: rgba(149,82,0,0.07);
+  --amber-bg: color-mix(in oklab, var(--amber) 7%, transparent);
   --yellow: #f0d540;
-  --yellow-bg: rgba(240,213,64,0.12);
-  --yellow-mid: rgba(240,213,64,0.25);
+  --yellow-bg: color-mix(in oklab, var(--yellow) 12%, transparent);
+  --yellow-mid: color-mix(in oklab, var(--yellow) 25%, transparent);
   --r: 14px;
   --r-sm: 9px;
   --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 3px 12px rgba(0,0,0,0.03);
@@ -60,20 +60,20 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dar
   --line: rgba(255,255,255,0.06);
   --line2: rgba(255,255,255,0.13);
   --primary: #63CA84;
-  --primary-bg: rgba(99,202,132,0.10);
-  --primary-mid: rgba(99,202,132,0.20);
+  --primary-bg: color-mix(in oklab, var(--primary) 10%, transparent);
+  --primary-mid: color-mix(in oklab, var(--primary) 20%, transparent);
   --text: #E6EADA;
   --muted: #889385;
   --dim: #9BA898;
   --green: #55C287;
-  --green-bg: rgba(85,194,135,0.12);
+  --green-bg: color-mix(in oklab, var(--green) 12%, transparent);
   --red: #F0796E;
-  --red-bg: rgba(240,121,110,0.12);
+  --red-bg: color-mix(in oklab, var(--red) 12%, transparent);
   --amber: #E3A64F;
-  --amber-bg: rgba(227,166,79,0.12);
+  --amber-bg: color-mix(in oklab, var(--amber) 12%, transparent);
   --yellow: #f0d540;
-  --yellow-bg: rgba(240,213,64,0.09);
-  --yellow-mid: rgba(240,213,64,0.20);
+  --yellow-bg: color-mix(in oklab, var(--yellow) 9%, transparent);
+  --yellow-mid: color-mix(in oklab, var(--yellow) 20%, transparent);
   --shadow: 0 1px 3px rgba(0,0,0,0.35), 0 3px 12px rgba(0,0,0,0.28);
   --opt-bg: #1E2921;
   --splash-shadow-settle: #37473B;
@@ -420,19 +420,19 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .opt::before {
   content: ''; position: absolute; inset: 0; border-radius: var(--r);
-  background: rgba(240,213,64,0.1); transform: translate(4px, 4px); z-index: -1;
+  background: color-mix(in oklab, var(--yellow) 10%, transparent); transform: translate(4px, 4px); z-index: -1;
   transition: all .15s;
 }
 .opt:active:not(.locked) { background: var(--card2); }
 .opt.locked { cursor: default; }
 .opt.sel   { background: var(--primary-bg);   border-color: var(--yellow); }
-.opt.sel::before { background: var(--primary-mid); border: 1.5px solid rgba(45,138,78,.25); inset: -2px; }
-.opt.ok    { background: var(--green-bg);  border-color: rgba(21,128,61,.3); }
-.opt.ok::before { background: rgba(34,145,90,.15); border: 1.5px solid rgba(34,145,90,.25); inset: -2px; }
+.opt.sel::before { background: var(--primary-mid); border: 1.5px solid color-mix(in oklab, var(--primary) 25%, transparent); inset: -2px; }
+.opt.ok    { background: var(--green-bg);  border-color: color-mix(in oklab, var(--green) 30%, transparent); }
+.opt.ok::before { background: color-mix(in oklab, var(--green) 15%, transparent); border: 1.5px solid color-mix(in oklab, var(--green) 25%, transparent); inset: -2px; }
 .opt.bad   { background: var(--red-bg);    border-color: rgba(220,38,38,.3); }
-.opt.bad::before { background: rgba(224,82,82,.12); border: 1.5px solid rgba(224,82,82,.25); inset: -2px; }
+.opt.bad::before { background: color-mix(in oklab, var(--red) 12%, transparent); border: 1.5px solid color-mix(in oklab, var(--red) 25%, transparent); inset: -2px; }
 .opt.miss  { background: var(--amber-bg);  border-color: rgba(180,83,9,.3); }
-.opt.miss::before { background: rgba(198,123,26,.12); border: 1.5px solid rgba(198,123,26,.25); inset: -2px; }
+.opt.miss::before { background: color-mix(in oklab, var(--amber) 12%, transparent); border: 1.5px solid color-mix(in oklab, var(--amber) 25%, transparent); inset: -2px; }
 .opt-box {
   width: 22px; height: 22px; border-radius: 6px;
   border: 2px solid var(--line2); background: var(--card2);
@@ -505,7 +505,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .btn-retry::before {
   content: ''; position: absolute; inset: 0; border-radius: var(--r);
-  background: rgba(198,123,26,.1); border: 1.5px solid rgba(198,123,26,.2);
+  background: color-mix(in oklab, var(--amber) 10%, transparent); border: 1.5px solid color-mix(in oklab, var(--amber) 20%, transparent);
   transform: translate(3px, 3px); z-index: -1;
 }
 .btn-retry:active { opacity: .7; }
@@ -672,12 +672,12 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .score-sub { font-size: 14px; color: var(--dim); margin-top: 8px; }
 .score-sub strong { color: var(--text); }
 .badge { display: inline-flex; align-items: center; gap: 6px; border-radius: 100px; padding: 6px 14px; font-size: 13px; font-weight: 600; margin-top: 12px; }
-.badge-pass { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,.2); position: relative; }
+.badge-pass { background: var(--green-bg); color: var(--green); border: 1px solid color-mix(in oklab, var(--green) 20%, transparent); position: relative; }
 .badge-fail { background: var(--red-bg);   color: var(--red);   border: 1px solid rgba(220,38,38,.2); }
 #r-exam:not(:empty) { margin-top: 10px; }
 .exam-note { font-size: 12px; line-height: 1.5; padding: 8px 12px; border-radius: 8px; text-align: left; }
-.exam-note-pass { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,.15); }
-.exam-note-warn { background: var(--amber-bg); color: var(--amber); border: 1px solid rgba(198,123,26,.2); }
+.exam-note-pass { background: var(--green-bg); color: var(--green); border: 1px solid color-mix(in oklab, var(--green) 15%, transparent); }
+.exam-note-warn { background: var(--amber-bg); color: var(--amber); border: 1px solid color-mix(in oklab, var(--amber) 20%, transparent); }
 
 /* banana confetti */
 .confetti-banana {
@@ -729,11 +729,11 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 /* ── STUDY MODE ──────────────────────────────────── */
 .opt.study-correct {
   background: var(--green-bg);
-  border-color: rgba(21,128,61,.3);
+  border-color: color-mix(in oklab, var(--green) 30%, transparent);
 }
 .opt.study-correct::before {
-  background: rgba(34,145,90,.15);
-  border: 1.5px solid rgba(34,145,90,.25);
+  background: color-mix(in oklab, var(--green) 15%, transparent);
+  border: 1.5px solid color-mix(in oklab, var(--green) 25%, transparent);
   inset: -2px;
 }
 .opt.study-correct .opt-box { background: var(--green); border-color: var(--green); color: white; }
@@ -833,7 +833,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .btn-danger::before {
   content: ''; position: absolute; inset: -2px; border-radius: var(--r);
-  background: rgba(224,82,82,.12); border: 2px solid rgba(224,82,82,.3);
+  background: color-mix(in oklab, var(--red) 12%, transparent); border: 2px solid color-mix(in oklab, var(--red) 30%, transparent);
   transform: translate(3px, 3px); z-index: -1;
 }
 .btn-danger:active { opacity: .8; }
@@ -898,9 +898,9 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   to   { opacity: 1; transform: translate(-4px,-4px); }
 }
 @keyframes logoRipen {
-  0%   { background: rgba(240,213,64,.25); border-color: rgba(240,213,64,.4); }
-  60%  { background: rgba(45,138,78,.15); border-color: rgba(45,138,78,.3); }
-  100% { background: rgba(45,138,78,.08); border-color: rgba(45,138,78,.15); }
+  0%   { background: color-mix(in oklab, var(--yellow) 25%, transparent); border-color: color-mix(in oklab, var(--yellow) 40%, transparent); }
+  60%  { background: color-mix(in oklab, var(--green) 15%, transparent); border-color: color-mix(in oklab, var(--green) 30%, transparent); }
+  100% { background: color-mix(in oklab, var(--green) 8%, transparent); border-color: color-mix(in oklab, var(--green) 15%, transparent); }
 }
 @keyframes logoShadowRipen {
   0%   { background: var(--primary); opacity: .2; }
@@ -994,9 +994,9 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
 [data-theme=dark] .btn-start { color: #0A2312; }
 [data-theme=dark] .set-pill.active .set-count { color: #0A2312; }
 [data-theme=dark] .opt.ok,
-[data-theme=dark] .opt.study-correct { border-color: rgba(85,194,135,.4); }
-[data-theme=dark] .opt.bad { border-color: rgba(240,121,110,.4); }
-[data-theme=dark] .opt.miss { border-color: rgba(227,166,79,.4); }
+[data-theme=dark] .opt.study-correct { border-color: color-mix(in oklab, var(--green) 40%, transparent); }
+[data-theme=dark] .opt.bad { border-color: color-mix(in oklab, var(--red) 40%, transparent); }
+[data-theme=dark] .opt.miss { border-color: color-mix(in oklab, var(--amber) 40%, transparent); }
 [data-theme=dark] .opt.study-wrong { background: #232B25; border-color: rgba(255,255,255,.05); }
 [data-theme=dark] .opt.study-wrong .opt-box { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); color: var(--dim); }
 [data-theme=dark] .btn-sec::before,
@@ -1004,12 +1004,12 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
 [data-theme=dark] #preset-exam::before { background: rgba(255,255,255,.04); }
 [data-theme=dark] .dash-card-badge { background: rgba(255,255,255,.08); }
 [data-theme=dark] .overlay { background: rgba(0,0,0,.6); }
-[data-theme=dark] .badge-pass { border-color: rgba(85,194,135,.3); }
-[data-theme=dark] .badge-fail { border-color: rgba(240,121,110,.3); }
-[data-theme=dark] .exam-note-pass { border-color: rgba(85,194,135,.25); }
-[data-theme=dark] .exam-note-warn { border-color: rgba(227,166,79,.3); }
-[data-theme=dark] .btn-retry { border-color: rgba(227,166,79,.35); }
-[data-theme=dark] .btn-danger { border-color: rgba(240,121,110,.4); }
+[data-theme=dark] .badge-pass { border-color: color-mix(in oklab, var(--green) 30%, transparent); }
+[data-theme=dark] .badge-fail { border-color: color-mix(in oklab, var(--red) 30%, transparent); }
+[data-theme=dark] .exam-note-pass { border-color: color-mix(in oklab, var(--green) 25%, transparent); }
+[data-theme=dark] .exam-note-warn { border-color: color-mix(in oklab, var(--amber) 30%, transparent); }
+[data-theme=dark] .btn-retry { border-color: color-mix(in oklab, var(--amber) 35%, transparent); }
+[data-theme=dark] .btn-danger { border-color: color-mix(in oklab, var(--red) 40%, transparent); }
 </style>
 </head>
 <body class="has-splash">
@@ -3400,7 +3400,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.34';
+const APP_VERSION = '9.35';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

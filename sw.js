@@ -1,6 +1,6 @@
-const CACHE = 'bananovnik-v9.38';
+const CACHE = 'bananovnik-v9.39';
 const CORE = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png'];
-const TEST_FILES = ['./tests/komunikace.json', './tests/management.json', './tests/management-stare.json', './tests/manazerske-dovednosti.json'];
+const TEST_FILES = ['./tests/komunikace.json', './tests/management.json', './tests/management-stare.json', './tests/manazerske-dovednosti.json', './tests/anglicky-jazyk.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.39">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.40">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -389,6 +389,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-num-orig { color: var(--muted); font-weight: 500; }
 .q-num-title { cursor: pointer; color: var(--muted); transition: color .15s; }
 .q-num-title:hover { color: var(--primary); }
+.q-img { margin: 2px 0 12px; }
+.q-img img { display: block; max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
 .q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); text-wrap: pretty; }
 .q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; min-height: 28px; display: flex; align-items: center; gap: 8px; }
 .btn-copy-q {
@@ -619,6 +621,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   color: var(--dim); background: rgba(0,0,0,.06); border-radius: 5px;
   padding: 2px 7px; margin-bottom: 6px;
 }
+.dash-card-badge--draft { color: var(--amber); background: var(--amber-bg); }
+.draft-note { color: var(--amber); font-weight: 700; }
 .dash-empty { font-size: 14px; color: var(--muted); }
 .dash-search-wrap { position: relative; }
 .dash-search {
@@ -719,6 +723,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .rb-skip { background: var(--card2);    color: var(--muted); }
 .rq-txt { font-size: 14px; font-weight: 600; line-height: 1.4; flex: 1; }
 .rq-opts { padding: 8px; display: flex; flex-direction: column; gap: 5px; }
+.rq-card > .q-img { padding: 10px 14px 0; margin: 0; }
 .ro { display: flex; align-items: flex-start; gap: 9px; padding: 9px 10px; border-radius: 8px; font-size: 13px; line-height: 1.4; }
 .ro-ok   { background: var(--green-bg); color: var(--green); }
 .ro-bad  { background: var(--red-bg);   color: var(--red); }
@@ -1294,6 +1299,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
   <div class="quiz-body">
     <div class="q-num"  id="q-num"></div>
     <div class="q-text" id="q-text"></div>
+    <div class="q-img"  id="q-img"></div>
     <div class="q-hint" id="q-hint"></div>
     <div class="opts"   id="opts"></div>
   </div>
@@ -1341,6 +1347,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
   <div class="quiz-body">
     <div class="q-num"  id="study-q-num"></div>
     <div class="q-text" id="study-q-text"></div>
+    <div class="q-img"  id="study-q-img"></div>
     <div class="q-hint" id="study-q-hint"></div>
     <div id="study-recall-box" class="study-recall-wrap" style="display:none;">
       <div class="study-recall-hint">Zkus si nejprve odpověď připomenout sám, pak teprve odhal možnosti.</div>
@@ -1986,6 +1993,15 @@ const TESTS_REGISTRY = [
     retired: true
   },
   {
+    id: 'projektove-rizeni',
+    file: 'projektove-rizeni.json',
+    title: 'Projektové řízení',
+    updatedAt: '2026-09-19',
+    questionCount: 105,
+    hasSets: true,
+    draft: true
+  },
+  {
     id: 'manazerske-dovednosti',
     file: 'manazerske-dovednosti.json',
     title: 'Manažerské dovednosti',
@@ -2046,6 +2062,14 @@ let deepSearchEnabled = false;
 // Na produkci (GitHub Pages) běží appka pod /bananovnik/ — všechny cesty ji obsahují.
 // Na localhostu v rootu ne, takže BASE = '/' a relativní fetch testů funguje.
 const BASE = location.pathname.includes('/bananovnik/') ? '/bananovnik/' : '/';
+
+// Obrázek k otázce (tabulka, graf zadání). Cesta v JSON je relativní ke složce tests/,
+// absolutní URL kvůli tisku, který běží v novém okně.
+function qImgHtml(q) {
+  if (!q.img) return '';
+  const src = location.origin + BASE + 'tests/' + q.img;
+  return `<a href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="Zadání k otázce" loading="lazy"></a>`;
+}
 
 function initSearch() {
   const input = document.getElementById('dash-search');
@@ -2169,7 +2193,10 @@ function renderDashboard(query) {
     const card = document.createElement('button');
     const isSearching = q.length > 0;
     card.className = 'dash-card' + (!isSearching && t.retired ? ' dash-card--retired' : '');
-    const badge = (!isSearching && t.retired) ? `<div class="dash-card-badge">✓ Splněno</div>` : '';
+    const badge = isSearching ? ''
+      : t.retired ? `<div class="dash-card-badge">✓ Splněno</div>`
+      : t.draft   ? `<div class="dash-card-badge dash-card-badge--draft">Pracovní verze</div>`
+      : '';
     const qLabel = t.questionCount === 1 ? 'otázka' : t.questionCount >= 2 && t.questionCount <= 4 ? 'otázky' : 'otázek';
     let subText;
     if (isSearching) {
@@ -2200,7 +2227,8 @@ async function selectTest(id, skipPush) {
     const titleEl = document.getElementById('start-test-title');
     titleEl.setAttribute('data-text', test.title);
     titleEl.innerHTML = `<em>${test.title}</em>`;
-    document.getElementById('start-meta').textContent = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt);
+    document.getElementById('start-meta').innerHTML = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt)
+      + (reg.draft ? ' · <span class="draft-note">Pracovní verze</span>' : '');
     document.getElementById('start-rubric').textContent = test.rubric || '';
     document.getElementById('all-range-label').textContent = '1–' + total;
     renderRangeChunks();
@@ -2285,7 +2313,7 @@ function startQuiz() {
     let opts = q.opts.map((t, i) => ({ t, i }));
     if (cfg.oorder === 'random') opts = shuffle(opts);
     const newCorrect = opts.reduce((acc, o, ni) => { if (correctSet.has(o.i)) acc.push(ni); return acc; }, []);
-    return { q: q.q, opts: opts.map(o => o.t), correct: newCorrect, _orig: q._orig };
+    return { q: q.q, img: q.img, opts: opts.map(o => o.t), correct: newCorrect, _orig: q._orig };
   });
 
   S = {
@@ -2324,6 +2352,7 @@ function renderQ() {
   document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
   document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span>`;
   document.getElementById('q-text').textContent    = q.q;
+  document.getElementById('q-img').innerHTML       = qImgHtml(q);
 
   const ihned = cfg.fb === 'ihned' || !!S.returnToStudy;
 
@@ -2824,6 +2853,7 @@ function openReview() {
         <span class="rq-badge ${bCls}">${bTxt}</span>
         <div class="rq-txt">${qi + 1}. ${q.q}</div>
       </div>
+      ${q.img ? `<div class="q-img">${qImgHtml(q)}</div>` : ''}
       <div class="rq-opts" id="rqo-${qi}"></div>`;
     body.appendChild(card);
 
@@ -2869,7 +2899,7 @@ function buildStudyQuestions(qIdx) {
     });
     const reordered = [...correctOpts, ...wrongOpts];
     const newCorrect = correctOpts.map((_, k) => k);
-    return { q: q.q, opts: reordered, correct: newCorrect, _orig: i + 1 };
+    return { q: q.q, img: q.img, opts: reordered, correct: newCorrect, _orig: i + 1 };
   });
 }
 
@@ -3020,6 +3050,7 @@ function renderStudy() {
   document.getElementById('study-q-num').innerHTML =
     `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig">${S.studyLabel || S.selectedTest.title}</span>`;
   document.getElementById('study-q-text').textContent = q.q;
+  document.getElementById('study-q-img').innerHTML = qImgHtml(q);
 
   const c = q.correct.length;
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
@@ -3102,6 +3133,7 @@ function printStudy() {
         <span class="q-num">Otázka ${qi + 1}</span>
       </div>
       <div class="q-text">${q.q}</div>
+      ${q.img ? `<div class="q-img">${qImgHtml(q)}</div>` : ''}
       <div class="opts">${optsHtml}</div>
     </div>`;
   });
@@ -3120,6 +3152,7 @@ function printStudy() {
   .q-header { margin-bottom: 1.5mm; }
   .q-num { font-size: 8pt; font-weight: 700; letter-spacing: 0.8pt; text-transform: uppercase; color: #555; }
   .q-text { font-size: 10.5pt; font-weight: 600; margin-bottom: 3mm; line-height: 1.4; }
+  .q-img img { display: block; max-width: 100%; max-height: 90mm; margin-bottom: 3mm; }
   .opts { display: flex; flex-direction: column; gap: 1.5mm; }
   .opt { display: flex; align-items: flex-start; gap: 3mm; padding: 1.5mm 2.5mm; }
   .box { flex-shrink: 0; width: 13pt; font-size: 10pt; font-weight: 700; line-height: 1.5; text-align: center; }
@@ -3181,7 +3214,7 @@ function testStudyQ() {
   let opts = origQ.opts.map((t, i) => ({ t, ci: correctSet.has(i) }));
   opts = shuffle(opts);
   const newCorrect = opts.reduce((acc, o, ni) => { if (o.ci) acc.push(ni); return acc; }, []);
-  const testQ = { q: origQ.q, opts: opts.map(o => o.t), correct: newCorrect, _orig: sq._orig };
+  const testQ = { q: origQ.q, img: origQ.img, opts: opts.map(o => o.t), correct: newCorrect, _orig: sq._orig };
 
   _savedStudyState = S;
   S = {
@@ -3425,7 +3458,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.39';
+const APP_VERSION = '9.40';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

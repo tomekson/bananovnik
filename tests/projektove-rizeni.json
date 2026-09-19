@@ -1,0 +1,1237 @@
+{
+  "id": "projektove-rizeni",
+  "title": "Projektové řízení",
+  "updatedAt": "2026-09-19",
+  "rubric": "Zkouškový test: 45 min., 14 otázek (z toho 4 příklady po 10 až 25 bodech), celkem 100 bodů, pomůcka: kalkulačka. K úspěchu je potřeba 51 bodů.",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 14,
+    "openCount": 0
+  },
+  "questions": [
+    {
+      "q": "Projektový tým je:",
+      "opts": [
+        "skupina pracovníků zpracovávající projektovou dokumentaci",
+        "volné sdružení osob se společným cílem",
+        "skupina pracovníků různých profesí vyčleněná k řešení projektu",
+        "skupina pracovníků provádějící činnosti dle své pracovní náplně",
+        "skupina pracovníků realizujících stavbu"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Mezi kritéria úspěšnosti projektu nepatří:",
+      "opts": [
+        "nedosažení kvality",
+        "uspokojení očekávání všech zainteresovaných stran",
+        "splnění požadavků zákazníka",
+        "motivace projektového týmu",
+        "překročení plánovaných nákladů a termínů"
+      ],
+      "correct": [0, 4]
+    },
+    {
+      "q": "Metoda logického rámce (LFM):",
+      "opts": [
+        "slouží jako pomůcka při stanovování cílů projektu a jako podpora k jejich dosahování",
+        "je základem pro vytvoření plánu projektu",
+        "je využívána hlavně v poprojektové fázi",
+        "obsahuje metriky pro hodnocení kvality projektu",
+        "popisuje strategii projektu a obsahuje popis projektu v souvislosti s vnějšími předpoklady"
+      ],
+      "correct": [0, 1, 3, 4]
+    },
+    {
+      "q": "Mezi metody sledování realizace projektu nepatří:",
+      "opts": [
+        "metoda proporcionální na základě času",
+        "struktura EVM (Earned Value Management)",
+        "rozhodovací strom",
+        "metoda přírůstkových milníků",
+        "logický rámec"
+      ],
+      "correct": [2, 4]
+    },
+    {
+      "q": "Matice odpovědnosti:",
+      "opts": [
+        "přiřazuje odpovědnosti jednotlivým úrovním managementu v podniku",
+        "popisuje vztahy členů projektového týmu interních a externích spolupracovníků k činnostem řešených v rámci projektu",
+        "zajišťuje přiřazení každého prvku WBS k odpovědné osobě",
+        "zahrnuje úkoly všech zainteresovaných stran",
+        "popisuje pouze vztahy interních členů v týmu vztahující se k činnostem řešených v rámci plánování"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Rezervu volnou určíme jako:",
+      "opts": [
+        "součet nejpozději přípustného začátku a nejdříve možného začátku",
+        "rozdíl nejdříve možného začátku a nejpozději přípustného začátku",
+        "součet rezerv celkových na kritické cestě",
+        "rozdíl začátku možného následníka a konce možného předchůdce",
+        "rozdíl nejpozději přípustného konce a nejdříve možného konce"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Kritická cesta představuje:",
+      "opts": [
+        "nejkratší cestu v síti",
+        "návaznost činností používajících vzácný zdroj",
+        "nejkratší možnou dobu trvání projektu",
+        "nejdelší možnou dobu trvání projektu",
+        "nejdelší cestu v síti"
+      ],
+      "correct": [2, 4]
+    },
+    {
+      "q": "Mezi zainteresované strany projektu (Stakeholders) patří:",
+      "opts": [
+        "vlastník projektu",
+        "sponzor projektu",
+        "uživatel projektu",
+        "vládní instituce a samosprávní orgány",
+        "dodavatelé projektu"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Který z následujících vzorců slouží k určení nákladového indexu (CPI) v metodě EVM?",
+      "opts": [
+        "AC/EV",
+        "EV-AC",
+        "EV/AC",
+        "AC/PV",
+        "AC-EV"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Metoda EVM (Earned Value Management):",
+      "opts": [
+        "hodnotí kvalitu projektu",
+        "hodnotí komplexní rizika projektu",
+        "posuzuje časový postup projektu ve vazbě na vynaložené náklady",
+        "vyjadřuje užitnou hodnotu projektu",
+        "je využívána v realizační práci projektu"
+      ],
+      "correct": [2, 4]
+    },
+    {
+      "q": "Který z procesů řízení projektu vyžaduje nejvyšší množství času a nákladů?",
+      "opts": [
+        "inicializace",
+        "uzavírání",
+        "implementace",
+        "realizace",
+        "plánování"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Projekt z pohledu projektového managementu lze definovat jako:",
+      "opts": [
+        "rutinní aktivity produkující jednoduchý produkt",
+        "řízení změny od jednoho stavu k druhému",
+        "úkoly řešené opakovaně v rámci firmy",
+        "soubor konkrétních aktivit směřujících k naplnění jedinečného cíle",
+        "dokumentace stavby"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Součástí plánování potřeb zdrojů je:",
+      "opts": [
+        "zpracování logického rámce",
+        "zpracování matice zodpovědnosti",
+        "popis prací na nejvyšší hierarchické úrovni",
+        "určení potřebných zdrojů a nároků na ně",
+        "analýza vyváženosti zdrojů"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Účelem Zakládací listiny projektu je:",
+      "opts": [
+        "umožnit projektovému manažerovi využít při realizaci projektu zdroje organizace",
+        "udělit pravomoc projektovému manažerovi k zahájení projektu",
+        "formálně schválit existenci projektu",
+        "identifikovat odpovědnosti zainteresovaných osob",
+        "specifikovat cíle projektu"
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Cílem postimplementačního hodnocení (případně auditu) projektu je:",
+      "opts": [
+        "vysvětlit skutečnosti, které se nedařily",
+        "ukázat, jak by se měly upravit postupy, aby se budoucí projekty realizovaly efektivněji",
+        "najít viníka problémů a zkritizovat postup řešení",
+        "zkontrolovat výkony týmu a koncové položky projektu",
+        "objektivně posoudit využité techniky a postupy řízení projektu a poučit se z nich"
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Fáze projektu jsou:",
+      "opts": [
+        "Koncepční, realizační, plánovací",
+        "Předprojektová, projektová, poprojektová",
+        "Iniciační, přípravná, vyhodnocovací",
+        "Koncepční, Vývojová, ukončovací",
+        "Přípravná, prováděcí, hodnotící"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Po dokončení realizace technických výstupů projektu je nutné:",
+      "opts": [
+        "sestavit plán protirizikových opatření",
+        "ověřit rozsah projektu",
+        "aktualizovat plán komunikace",
+        "vypracovat ponaučení z projektu",
+        "provést kontrolu nákladů"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Plán řízení projektu (Project Management Plan) neobsahuje:",
+      "opts": [
+        "plán řízení lidských zdrojů",
+        "plán komunikace",
+        "časový plán",
+        "plán řízení rizik",
+        "plán ovlivňování zainteresovaných stran"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Mezi hlavní světové standardy patří:",
+      "opts": [
+        "ISO 10 006, PMC, NCB",
+        "PMI, CAPM, IPMA",
+        "PRINCE 2, OGC, ANSI",
+        "IPMA, PRINCE 2, PMI",
+        "SSADM, IPMA, ISO 10 006"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "V uzlově definovaném síťovém grafu:",
+      "opts": [
+        "neurčujeme rezervy",
+        "rozeznáváme činnosti pouze reálné",
+        "se činnosti nacházejí v uzlu",
+        "rozeznáváme činnosti fiktivní, distanční a reálné",
+        "rozeznáváme vazby konec-začátek, začátek-začátek, konec-konec a začátek-konec"
+      ],
+      "correct": [1, 2, 4]
+    },
+    {
+      "q": "Náklady životního cyklu projektu jsou součtem veškerých nákladů vynaložených na:",
+      "opts": [
+        "vývoj, výrobu, provoz, údržbu",
+        "výrobu, provoz a údržbu",
+        "vývoj, výrobu, provoz, údržbu a likvidaci",
+        "vývoj, výrobu, provoz a likvidaci",
+        "výrobu, provoz a likvidaci"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Při časovém plánování se obvykle určují:",
+      "opts": [
+        "termíny, náklady a odpovědnosti",
+        "termíny, rezervy a kritická cesta",
+        "termíny a kritická cesta",
+        "termíny, náklady, rezervy",
+        "termíny a náklady"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "ICB společnosti IPMA představuje:",
+      "opts": [
+        "soubor kompetencí pokrývající schopnosti a dovednosti projektových manažerů",
+        "standard zaměřený na procesní problematiku projektového managementu",
+        "soubor měkkých dovedností, které využívá manažer projektu",
+        "standard zaměřený na kompetence projektového manažera",
+        "soubor metod a technik, které musí umět každý člen realizačního týmu projektu"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "V rámci, které fáze životního cyklu projektu je nejvyšší úroveň rizika?",
+      "opts": [
+        "monitorování a kontrola",
+        "plánování",
+        "inicializace",
+        "realizace",
+        "uzavírání"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Kontrola časového plánu, kontrolní zprávy a správa smluv patří do skupiny procesů řízení projektu:",
+      "opts": [
+        "plánování",
+        "realizace",
+        "inicializace",
+        "kontrola a řízení",
+        "ukončování"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Odhad nákladů při dokončení projektu je podle metody EVM určen jako:",
+      "opts": [
+        "poměr nákladového indexu (CPI) a plánovaných nákladů (BAC)",
+        "poměr plánovaných nákladů (BAC) a prováděcího indexu (SPI)",
+        "součin plánovaných nákladů (BAC) a nákladového indexu (CPI)",
+        "poměr plánovaných nákladů (BAC) a nákladového indexu (CPI)",
+        "rozdíl plánovaných nákladů (BAC) a prováděcího indexu (SPI)"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Mezi kvantitativní metody analýzy rizik lze zahrnout:",
+      "opts": [
+        "struktura RBS (Risk Breakdown Structure)",
+        "analýza SWOT",
+        "analýza monte carlo",
+        "analýza citlivosti",
+        "matice rizik"
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Mezi kvalitativní metody analýzy rizik nepatří:",
+      "opts": [
+        "struktura RBS (Risk Breakdown Structure)",
+        "modelování a simulace",
+        "analýza SWOT",
+        "analýza citlivosti",
+        "RIPRAN"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Mezi procesy podle standardu PMI patří:",
+      "opts": [
+        "plánování",
+        "realizace",
+        "inicializace",
+        "monitoring a controlling",
+        "uzavírání"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Mezi metody časového plánování nepatří:",
+      "opts": [
+        "harmonogram (Ganttův diagram)",
+        "analýza trendů plnění milníků",
+        "metoda CPM",
+        "síťová analýza",
+        "struktura WBS (Work Breakdown Structure)"
+      ],
+      "correct": [1, 4]
+    },
+    {
+      "q": "Kvantitativní metody rizikové analýzy se vyznačují:",
+      "opts": [
+        "subjektivním pohledem hodnotitele",
+        "číselným ohodnocením rizik",
+        "slovní charakteristikou rizik",
+        "využitím simulačních technik",
+        "možnosti vyjádření dopadu rizika ve finančních jednotkách"
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "K základním vlastnostem projektu patří:",
+      "opts": [
+        "složitost a komplexnost",
+        "vymezenost (čas, rozpočet, zdroje atp.)",
+        "nízká až zanedbatelná úroveň rizika",
+        "jedinečnost cíle, podmínek a postupu",
+        "realizace s projektovým týmem"
+      ],
+      "correct": [0, 1, 3, 4]
+    },
+    {
+      "q": "Behaviorální kompetence: (bez záruky)",
+      "opts": [
+        "obsahují 13 elementů kompetencí",
+        "obsahují 15 elementů kompetencí",
+        "představují základní elementy, které se označují jako „hard skills“",
+        "představují základní elementy kompetencí z interpersonální oblasti",
+        "představují elementy kompetencí nutné při řízení trvalých organizací s nejasně stanoveným modelem řízení"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Kontextové kompetence:",
+      "opts": [
+        "obsahují 13 elementů",
+        "obsahují 11 elementů",
+        "představují základní elementy kompetencí z oblasti technik a metod využívaných při komplexním přístupu k řízení projektu",
+        "představují základní elementy kompetencí pokrývající integrační a systémové znalosti a dovednosti projektového managera",
+        "představují základní elementy pokrývající měkké dovednosti projektového managera"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Řízení rizik zahrnuje procesy:",
+      "opts": [
+        "plán řízení rizik",
+        "identifikace rizik",
+        "ohodnocování rizik",
+        "plánování protirizikových opatření",
+        "monitorování a kontrola"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Hlavním obsahem „zadávací listiny projektu“ (projekt charter):",
+      "opts": [
+        "dokument, kterým se formálně schvaluje existence projektu",
+        "identifikační údaje vlastníka projektu",
+        "popis projektu a rozpočet projektu",
+        "vymezení rozsahu (rámce) projektu, jeho cíle a jeho výstupy (dodávky), rozpočet, časový rámec, kontrolní body a členství v týmu projekt",
+        "logický rámec a časový plán projektu"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "Řízení rizik projektu:",
+      "opts": [
+        "je potřeba provádět pouze při ukončování projektu, abychom zjistili nepříznivé okolnosti, které způsobily problémy projektu",
+        "je potřeba provádět ve všech fázích životního cyklu projektu",
+        "je potřeba provádět pouze při samostatné realizaci projektu",
+        "není součástí projektového managementu",
+        "je potřeba provádět pouze ve fázi inicializace"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Princip managementu řízení rizika využívající principu predikační vazby se nazývá:",
+      "opts": [
+        "akční",
+        "reakční",
+        "reaktivní",
+        "proaktivní",
+        "funkční"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Objektivně ověřitelné ukazatele:",
+      "opts": [
+        "mohou být vyjádřeny pouze ve fyzických jednotkách",
+        "jsou součástí horizontálních vazeb logického rámce",
+        "mohou být vyjádřeny pouze v peněžních jednotkách",
+        "vytvářejí základ pro měření efektivity a účelnosti projektu",
+        "jsou uvedeny v logickém rámci a prokazují, že záměru, cíle, a konkrétních výstupů bylo dosaženo"
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Využívání softwarových nástrojů při řízení projektu:",
+      "opts": [
+        "slouží jako podpora při řízení projektu",
+        "není vhodné, sledování dat o projektu je úkolem projektového managera",
+        "nahrazuje řízení projektu",
+        "nárokuje čas na proškolení a trénink personálu",
+        "pomáhá projektovému manažerovi při řešení konfliktů"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "Která z uvedených kompetencí nepatří do technických kompetencí:",
+      "opts": [
+        "komunikace",
+        "týmová práce",
+        "trvalá organizace",
+        "orientace na výsledky",
+        "zdroje"
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Mezi metody využívané ke kontrole:",
+      "opts": [
+        "analýza vlastních sil",
+        "MTA",
+        "metoda procentuálního plnění",
+        "SSD",
+        "NPV"
+      ],
+      "correct": [1, 2, 3]
+    },
+    {
+      "q": "Metoda RIPRAN se používá k:",
+      "opts": [
+        "rozhodování o obstarávání v projektu",
+        "dekompozici projektu do pracovních balíků",
+        "tvorbě organizační struktury",
+        "analýze projektových rizik",
+        "vyhodnocení projektu"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Principy projektového managementu (PM):",
+      "opts": [
+        "princip strukturování problému",
+        "princip časových skoků",
+        "princip přiměřených prostředků",
+        "princip týmové práce",
+        "princip systémového přístupu"
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Work Breakdown Structure (WBS) představuje:",
+      "opts": [
+        "zjednodušenou liniově—štábní strukturu sestavenou podle organizačního řádu",
+        "strukturovaný rozklad projektu na komponenty",
+        "organizační schéma",
+        "struktura rozdělení prací, odpovídající technickým požadavkům zákazníka na produkt a smlouvě",
+        "neformální strukturu, kterou si jednorázově vytvoří pro organizaci projektu jeho tým"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Organisation Breakdown Structure - OBS projektu představuje:",
+      "opts": [
+        "struktura rozdělení prací, odpovídající technickým požadavkům",
+        "funkční organizační strukturu",
+        "popis a obsah prací na nejnižší hierarchické úrovni, odpovědné osoby, lhůty, zdroje, náklady požadavkům zákazníka na produkt a smlouvy",
+        "schéma postupu prací na projektu",
+        "schéma neformální struktury, kterou si jednorázově vytvoří pro řízení projektu jeho tým"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Metoda PERT (Program Evaluation and Review Technique):",
+      "opts": [
+        "je využívána při kontrole průběhu projektu",
+        "je deterministickou metodou",
+        "slouží k určení nejpravděpodobnější doby trvání činnosti",
+        "patří mezi metody časového plánování",
+        "patří mezi metody využívané pro určení kvalitativních požadavků na výstupy"
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Mezi nástroje řízení nákupu lze zahrnout:",
+      "opts": [
+        "analýza vlastní síly (make or buy)",
+        "paterova analýza (ABC analýza)",
+        "stanovení priorit nakupujícího (SPN)",
+        "matici dodavatel-kupující",
+        "kategorizaci dodavatelů"
+      ],
+      "correct": [0, 1, 4]
+    },
+    {
+      "q": "V metodě EVM rozdíl EV–AC představuje:",
+      "opts": [
+        "prováděcí odchylku SV",
+        "náklady při dokončení",
+        "prováděcí index SPI",
+        "nákladovou odchylku CV",
+        "nákladový index CPI"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Podklady pro plánování struktury WBS jsou:",
+      "opts": [
+        "zakládací listina projektu (tzv. Project Charter)",
+        "projektový manuál společnosti",
+        "matice zodpovědnosti (RAM)",
+        "soupis produktu, výsledku a výstupu, kterých má být realizací projektu dosaženo (tzv. Project Scope Statement)",
+        "analýza požadavků zainteresovaných stran"
+      ],
+      "correct": [0, 2, 3]
+    },
+    {
+      "q": "Program představuje:",
+      "opts": [
+        "skupinu věcně souvisejících, společně řízených projektů směřujících k dosažení cíle",
+        "proces rozhodování, jak přistupovat, plánovat a řídit projekty",
+        "metodika postupu realizace projektu",
+        "sled vzájemně propojených akcí, které společně dosahují řadu cílů v rámci jedné celkové strategie",
+        "skupinu projektů seskupených do jednoho celku za účelem efektivnějšího řízení. Projekty se ovlivňují pouze sdílenými zdroji a časovým rámcem"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "Pojem záměr projektu:",
+      "opts": [
+        "je cíl projektu, za který zodpovídá projektový manager",
+        "je práce, která musí být provedena, aby bylo možné dosáhnout plánovaného produktu nebo k dodání služby se specifikovanými vlastnostmi a funkcemi",
+        "je popis stavu, do kterého se chceme realizací projektu dostat",
+        "je dlouhodobý, strategický cíl, k jehož dosažení napomáhá realizace několika projektů nebo programů",
+        "je ovlivněn vnějšími předpoklady a za jeho dosažení nemůže být projektový manager a jeho tým plně zodpovědný"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "(Příklad za 15 b.) - Vypočtěte pomocí metody PERT očekávanou dobu trvání aktivit A, B, C a současně celkovou očekávanou dobu trvání aktivit v případě, že aktivity A, B, C na sebe navazují vazbu konce začátek.",
+      "opts": [
+        "Odhad doby trvání činnosti A = 6; B = 13; C = 8. Celková doba trvání je 27.",
+        "Odhad doby trvání činnosti A = 10; B = 17; C = 13. Celková doba trvání je 40.",
+        "Odhad doby trvání činnosti A = 7,33; B = 14,33; C = 10,83. Celková doba trvání je 32,5.",
+        "Odhad doby trvání činnosti A = 10; B = 14,5; C = 12. Celková doba trvání je 36,5.",
+        "Odhad doby trvání činnosti A = 7,5; B = 16; C = 11. Celková doba trvání je 34,5."
+      ],
+      "correct": [2],
+      "img": "img/projektove-rizeni/q053.jpg"
+    },
+    {
+      "q": "(Příklad za 15 b.) - Vypočtěte pomocí metody PERT očekávanou dobu trvání aktivit A, B, C a současně celkovou očekávanou dobu trvání aktivit v případě, že aktivity A, B, C na sebe navazují vazbou konce začátek.",
+      "opts": [
+        "Odhad doby trvání činnosti A = 27; B = 60; C = 37. Celková doba trvání je 124.",
+        "Odhad doby trvání činnosti A = 27; B = 65; C = 37. Celková doba trvání je 129.",
+        "Odhad doby trvání činnosti A = 30,5; B = 60; C = 43,5. Celková doba trvání je 134.",
+        "Odhad doby trvání činnosti A = 28,17; B = 61,67; C = 36,5. Celková doba trvání je 126,34.",
+        "Odhad doby trvání činnosti A = 30,5; B = 65; C = 43,5. Celková doba trvání je 139."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q054.jpg"
+    },
+    {
+      "q": "(Příklad za 15 b.) - Z následující tabulky dopočtěte nejdříve možný konec a určete celkovou rezervu u činnosti 1 až 4.",
+      "opts": [
+        "Nejdříve možné konce činností 1 až 4: 40, 16, 40, 21. Celkové rezervy činností 1 až 4: 25, 0, 52, 75.",
+        "Nejdříve možné konce činností 1 až 4: 25, 9, 52, 75. Celkové rezervy činností 1 až 4: 20, 1, 0, 8.",
+        "Nejdříve možné konce činností 1 až 4: 25, 9, 52, 75. Celkové rezervy činností 1 až 4: 30, 16, 40, 21.",
+        "Nejdříve možné konce činností 1 až 4: 30, 16, 40, 21. Celkové rezervy činností 1 až 4: 25, 9, 52, 75.",
+        "Nejdříve možné konce činností 1 až 4: 35, 16, 40, 88. Celkové rezervy činností 1 až 4: 35, 9, 52, 96."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q055.jpg"
+    },
+    {
+      "q": "(Příklad za 15 b.) - Z následující tabulky dopočtěte nejdříve možný konec činností, určete celkové rezervy a kritickou cestu.",
+      "opts": [
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 2, 4, 0, 0. Na kritické cestě leží činnosti C,D.",
+        "Nejdříve možné konce činností A až D: 15, 12, 19, 10. Celkové rezervy činností A až D: 0, 4, 4, 4. Na kritické cestě leží činnosti A,D.",
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 0, 0, 4, 4. Na kritické cestě leží činnosti C,D.",
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 0, 0, 4, 4. Na kritické cestě leží činnosti A, B.",
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 0, 0, 1, 1. Na kritické cestě leží činnosti A,B."
+      ],
+      "correct": [0],
+      "img": "img/projektove-rizeni/q056.jpg"
+    },
+    {
+      "q": "(Příklad za 10 b.) - Sestavte síťový graf a určete celkovou dobu trvání projektu a určete rezervy jednotlivých činností. K dispozici máte tyto informace: / Činnost A může začít ihned a trvá 4 týdny. Činnost B může začít v okamžiku dokončení činnosti A a trvá 2 týdny. Činnost C může začít v okamžiku dokončení činnosti A a trvá 8 týdnů. Činnost D může začít v okamžiku dokončení činnosti B a trvá 7 týdnů. Činnost E může začít v okamžiku dokončení činnosti D a C a trvá 3 týdny.",
+      "opts": [
+        "Celková doba trvání projektu je 15 týdnů a rezervy činností jsou A = 0, B = 0, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 13 týdnů a rezervy činností jsou A = 0, B = 0, C = 1, D = 0, E = 0.",
+        "Celková doba trvání projektu je 16 týdnů a rezervy činností jsou A = 0, B = 2, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 16 týdnů a rezervy činností jsou A = 0, B = 0, C = 1, D = 0, E = 0.",
+        "Celková doba trvání projektu je 12 týdnů a rezervy činností jsou A = 0, B = 1, C = 1, D = 0, E = 0."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q057.jpg"
+    },
+    {
+      "q": "(Příklad za 10 b.) - Sestavte síťový graf, určete celkovou dobu trvání projektu a určete rezervy jednotlivých činností. K dispozici máte tyto informace: / Činnost A může začít ihned a trvá 3 týdny. Činnost B může začít v okamžiku dokončení činnosti A a trvá 3 týdny. Činnost C může začít v okamžiku dokončení činnosti A a trvá 6 týdnů. Činnost D může začít v okamžiku dokončení činnosti B a trvá 8 týdnů. Činnost E může začít v okamžiku dokončení činnosti D a trvá 4 týdny.",
+      "opts": [
+        "Celková doba trvání projektu je 13 týdnů a rezervy činností jsou A = 0, B = 0, C = 5, D = 0, E = 0.",
+        "Celková doba trvání projektu je 13 týdnů a rezervy činností jsou A = 0, B = 0, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 18 týdnů a rezervy činností jsou A = 0, B = 0, C = 9, D = 0, E = 0.",
+        "Celková doba trvání projektu je 18 týdnů a rezervy činností jsou A = 0, B = 5, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 18 týdnů a rezervy činností jsou A = 0, B = 0, C = 1, D = 0, E = 0."
+      ],
+      "correct": [2],
+      "img": "img/projektove-rizeni/q058.jpg"
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 2 měsících metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn v harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za druhý měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 50% AC 540 tis. Kč / činnost B - hotovo 100% 1.000 tis. Kč / činnost C - hotovo 80% 1.800 tis. Kč / Uvedený projekt určete vyhodnoťte z hlediska času a nákladů a odhad nákladů při dokončení (EAC).",
+      "opts": [
+        "Projekt je ve zpoždění, náklady jsou podle plánu. Odhad nákladů při dokončení činí 4200 Kč.",
+        "Projekt je v předstihu, náklady jsou překračovány. Odhad nákladů při dokončení činí 4290 Kč.",
+        "Projekt je ve zpoždění, náklady jsou podle plánu. Odhad nákladů při dokončení činí 4100 Kč.",
+        "Projekt je v předstihu, náklady jsou podle plánu. Odhad nákladů při dokončení činí 4200 Kč.",
+        "Projekt je ve zpoždění, náklady jsou překračovány. Odhad nákladů při dokončení činí 4330 Kč."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q059.jpg"
+    },
+    {
+      "q": "(Příklad za 10 b.) - Sestavte uzlově definovaný graf, pomocí metody CPM určete celkovou dobu trvání, kriticku cestu a celkovou rezervu činnosti D.",
+      "opts": [
+        "Celková doba trvání projektu je 14, na kritické cestě leží činnosti A-B-D, celková rezerva činnosti D je 0.",
+        "Celková doba trvání projektu je 10, na kritické cestě leží činnosti A-C-D, celková rezerva činnosti D je 3.",
+        "Celková doba trvání projektu je 11, na kritické cestě leží činnosti A-B-C-E, celková rezerva činnosti D je 0.",
+        "Celková doba trvání projektu je 16, na kritické cestě leží činnosti A-B-C-E, celková rezerva činnosti D je 1.",
+        "Celková doba trvání projektu je 9, na kritické cestě leží činnosti A-B-D, celková rezerva činnosti D je 3."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q060.jpg"
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 2 měsících metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn v harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za druhý měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 90% AC 650 tis. Kč / činnost B - hotovo 80% AC 1.500 tis. Kč / činnost C - hotovo 70% AC 1.550 tis. Kč / Pro uvedený projekt určete nákladovou (CV) a prováděcí (SV) odchylku a vyhodnoťte stav realizace projektu z hlediska času a nákladů.",
+      "opts": [
+        "Prováděcí odchylka SV = -70; nákladová odchylka CV = -370. Projekt je v předstihu a nákladnější.",
+        "Prováděcí odchylka SV = -70; nákladová odchylka CV = -370. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí odchylka SV = -370; nákladová odchylka CV = -70. Projekt je v předstihu a levnější.",
+        "Prováděcí odchylka SV = -70; nákladová odchylka CV = -370. Projekt je ve zpoždění a levnější.",
+        "Prováděcí odchylka SV = -370; nákladová odchylka CV = -70. Projekt je ve zpoždění a nákladnější."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q061.jpg"
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 1 měsíci metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn na harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za první měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 45% AC 500 tis. Kč / činnost B - hotovo 80% AC 480 tis. Kč / činnost C - hotovo 50% AC 1.000 tis. Kč / Pro uvedený projekt určete nákladový (CPI) a prováděcí (SPI) index a vyhodnoťte stav realizace projektu z hlediska času a nákladů.",
+      "opts": [
+        "Prováděcí index SPI = 0,97; nákladový index CPI = 0,86. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí index SPI = 1,07; nákladový index CPI = 0,5. Projekt je v předstihu a nákladnější.",
+        "Prováděcí index SPI = 0,752; nákladový index CPI = 1,053. Projekt je v předstihu a nákladnější.",
+        "Prováděcí index SPI = 0,97; nákladový index CPI = 0,85. Projekt je v předstihu a levnější.",
+        "Prováděcí index SPI = 0,95; nákladový index CPI = 1,45. Projekt je ve zpoždění a levnější."
+      ],
+      "correct": [0],
+      "img": "img/projektove-rizeni/q062.jpg"
+    },
+    {
+      "q": "(Příklad za 25 b.) - Pro uvedený projekt máte k dispozici celkem 4 pracovníky. Určete celkovou dobu trvání a kritickou cestu a navrhněte opatření, aby po celou dobu realizace projektu byli zapojeni maximálně 4 pracovníci. O kolik se změní doba trvání projektu?",
+      "opts": [
+        "Celková doba trvání projektu je 15. Na kritické cestě leží činnosti A-C-E-F. Posunutí začátku u činnosti E o 2. č.j. Doba trvání projektu se změní na 17.",
+        "Celková doba trvání projektu je 17. Na kritické cestě leží činnosti A-B-D-F. Posunutí začátku u činnosti E o 2. č.j. Doba trvání projektu se nezmění.",
+        "Celková doba trvání projektu je 17. Na kritické cestě leží činnosti A-C-E-F. Posunutí začátku u činnosti E o 2. č.j. Doba trvání projektu se prodlouží o 2 č.j.",
+        "Celková doba trvání projektu je 15. Na kritické cestě leží činnosti A-B-D-F. Posunutí začátku u činnosti G o 5. č.j. Doba trvání projektu se nezmění.",
+        "Celková doba trvání projektu je 17. Na kritické cestě leží činnosti A-B-D-F. Na projektu nikdy nepracují více jak 4 pracovníci. Opatření nejsou nutná. Doba trvání projektu se nezmění."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q063.jpg"
+    },
+    {
+      "q": "Typy komunikace existující v projektovém řízení jsou:",
+      "opts": [
+        "pouze neformální ústní a písemná",
+        "formální a neformální, ústní i písemná",
+        "pouze ústní",
+        "pouze neformální ústní",
+        "pouze formální písemná"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Fáze přijetí změny:",
+      "opts": [
+        "jsou zkoumání a přijetí",
+        "jsou odmítání, odpor, zkoumání a přijetí",
+        "jsou odmítání a přijetí",
+        "neexistují",
+        "je pouze přijetí"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Jakou roli v týmu má Inovátor?",
+      "opts": [
+        "zabraňuje konfliktům v týmu, umožňuje efektivní jednání",
+        "tvoří nové návrhy, řeší složité problémy, důležití pro základní fáze projektu",
+        "usiluje o dokončení projektu v daných termínech",
+        "navazuje vnější kontakty, zabezpečuje jednání, získávají informace",
+        "okamžitě realizuje nové nápady"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Směrnice ČSN/ISO 10006 pro management jakosti projektů:",
+      "opts": [
+        "je využitelný pouze pro rozsáhlé projekty",
+        "obsahuje obecné zásady a postupy řízení jakosti projektů",
+        "je závazný standard, který nastavuje management kvality v projektech",
+        "má pouze doporučující charakter",
+        "je standard použitelný pro všechny typy projektů"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Nepřímé náklady projektu jsou tvořeny:",
+      "opts": [
+        "jízdné, stravné realizačního týmu",
+        "náklady na vytápění budov",
+        "nákup licencí a patentů",
+        "část osobních nákladů managementu organizace",
+        "úklid a opravy budov užívané organizací"
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Mezi skupiny procesů dle ISO 10006 nepatří:",
+      "opts": [
+        "měření, analýza, zlepšování",
+        "strategie",
+        "uzavírání",
+        "realizace produktu",
+        "zdroje"
+      ],
+      "correct": [0, 1, 3, 4]
+    },
+    {
+      "q": "Za dosažení přínosu projektu odpovídá:",
+      "opts": [
+        "určený stakeholder",
+        "vlastník projektu",
+        "projektový manager",
+        "tiskový mluvčí projektu",
+        "osoba určená na základě analýzy zpracované pomocí metody RIPRAN"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Posuzování dopadu a pravděpodobnosti výskytu identifikovaných rizik je nazýváno jako: (bez záruky)",
+      "opts": [
+        "kvalitativní výsledková analýza",
+        "rizikový management",
+        "kvantitativní výsledková analýza",
+        "řízení kvality",
+        "ohodnocování rizik"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Procesy ukončování je nutné provést: (bez záruky)",
+      "opts": [
+        "k získání formálního odsouhlasení od zákazníka",
+        "u všech projektových fází",
+        "v okamžiku vystavení konečné faktury",
+        "pouze při ukončení projektu z důvodu dosažení cílů",
+        "při ukončení projektu z jakéhokoliv důvodu"
+      ],
+      "correct": [0, 1, 4]
+    },
+    {
+      "q": "Které z následujících kroků nejsou prováděny v průběhu ukončování projektové fáze nebo ukončování projektu?",
+      "opts": [
+        "sestavení konečné faktury",
+        "zpracování analýzy CBA (Cost Benefits)",
+        "zpracování poučení z průběhu projektu",
+        "získání formálního souhlasu od zákazníka",
+        "revize rozsahu projektu se zákazníkem"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Trojimperativ projektu je:",
+      "opts": [
+        "cíl projektu vyjádřený v dimenzích cíl, kvalita, náklady",
+        "cíl projektu vyjádřený v dimenzích cíl, čas, náklady",
+        "cíl projektu vyjádřený v dimenzích kvalita, čas a náklady",
+        "cíl projektu vyjádřený v dimenzích produkt, proces, prostor",
+        "cíl projektu vyjádřený v dimenzích kvalita, náklady, prostor"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Atributy projektu jsou:",
+      "opts": [
+        "jedinečnost, jednoduchost, jistota",
+        "vysoká míra nejistoty, vysoké náklady, časová neomezenost",
+        "jedinečnost, komplexnost, vymezenost, vysoká míra nejistoty, tým",
+        "pouze komplexnost",
+        "nejistota, jedinečnost a nákladovost"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Milník:",
+      "opts": [
+        "má v časovém plánu nulovou délku trvání",
+        "je událost v projektu, která vyžaduje, aby odběratel schválil další etapu prací",
+        "má v časovém plánu projektu nárok na čas a zdroje",
+        "je okamžik dokončení probíhající činnosti",
+        "je rozhodovací okamžik v životním cyklu projektu"
+      ],
+      "correct": [0, 1, 4]
+    },
+    {
+      "q": "SMART cíl projektu:",
+      "opts": [
+        "stanovíme v projektové fázi",
+        "je technika využívaná pro správné stanovení cíle projektu",
+        "představuje vlastnosti, které nemá cíl projektu splňovat",
+        "představuje vlastnosti, které by měl cíl projektu splňovat - specifický, měřitelný, akceptovatelný, realistický a termínovaný",
+        "nemusí být pro úspěšné dosažení výstupů projektu stanoven"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Který z následujících vzorců slouží k určení prováděcí odchylky (SV) v metodě EVM:",
+      "opts": [
+        "AC/EV",
+        "EV-PV",
+        "AC/PV",
+        "AC-EV",
+        "EV/AC"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "(Příklad za 15 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 40% pravděpodobnost zpoždění převzetí dílčích částí produktu s náklady 100 000 Kč. Existuje 10% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 125 000 Kč. S 20% pravděpodobností bude montáž rychlejší, což přinese úsporu 25 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 15%.",
+      "opts": [
+        "Není nutné vytvářet rezervu.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 65 750 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 10 000 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 69 250 Kč."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 2 měsících metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn v harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za druhý měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 80% AC 750 tis. Kč / činnost B - hotovo 100% AC 1.500 tis. Kč / činnost C - hotovo 70% AC 2.000 tis. Kč / Pro uvedený projekt určete nákladovou (CV) a prováděcí (SV) odchylku a vyhodnoťte stav realizace projektu z hlediska času a nákladů.",
+      "opts": [
+        "Prováděcí odchylka SV = -20; nákladová odchylka CV = -170. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí odchylka SV = -20; nákladová odchylka CV = -170. Projekt je v předstihu a nákladnější.",
+        "Prováděcí odchylka SV = -170; nákladová odchylka CV = -20. Projekt je v předstihu a levnější.",
+        "Prováděcí odchylka SV = -170; nákladová odchylka CV = -20. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí odchylka SV = -20; nákladová odchylka CV = -170. Projekt je ve zpoždění a levnější."
+      ],
+      "correct": [0],
+      "img": "img/projektove-rizeni/q080.jpg"
+    },
+    {
+      "q": "Rezervu celkovou určíme jako:",
+      "opts": [
+        "součet nejpozději přípustného konce a nejdříve možného konce",
+        "rozdíl nejpozději přípustného konce a nejdříve možného konce",
+        "rozdíl nejdříve možného začátku a nejpozději přípustného začátku",
+        "součet nejpozději přípustného začátku a nejdříve možného začátku",
+        "rozdíl nejpozději přípustného začátku a nejdříve možného začátku"
+      ],
+      "correct": [1, 4]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku náklady 80 000 Kč. Existuje 5% pravděpodobnost, že dodávka dílčích částí bude o 25 500 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 27 300 Kč. 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 12%.",
+      "opts": [
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 13 820 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Není třeba rezervy vytvářet.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 22 370 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 19 370 Kč."
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku náklady 100 000 Kč. Existuje 3% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 15 000 Kč. 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 10%.",
+      "opts": [
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 20 750 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 23 750 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 14 750 Kč.",
+        "Není třeba rezervy vytvářet."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace výrobku. Máte k dispozici tyto závěry analýzy: Je 20% pravděpodobnost zpoždění převzetí dílčích částí výrobku náklady 125 000 Kč. Existuje 4% pravděpodobnost, že dodávka dílčích částí bude o 40 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 45 100 Kč. 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 8%.",
+      "opts": [
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 37 365 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 40 365 Kč.",
+        "Není třeba rezervy vytvářet.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 31 165 Kč."
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "S jakými rolemi se můžete setkat v projektovém týmu?",
+      "opts": [
+        "Vyzyvatel - zkoumá efektivitu a dožaduje se zlepšení výsledků, vyvolává tvůrčí \"konflikty\".",
+        "Realizátor - tvrdě pracuje, zná postupy, procedury.",
+        "Týmový pracovník - stmeluje tým, uvolňuje napětí, udržuje harmonické pracovní vztahy.",
+        "Výživový specialista - dohlíží na dodržování zdravého stravování v týmu.",
+        "Myslitel - vyhledává nová řešení, zkoumá předložené myšlenky a jejich efektivitu a přínos pro cíle projektu."
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "V projektovém řízení se uplatňují základní manažerské činnosti, k nimž patří:",
+      "opts": [
+        "Realizace pravidelně se opakujících činností v podniku (zadávání objednávek, tvorba mzdových výkazů).",
+        "Plánování (co, kde, kým a v jakém časovém horizontu má být realizováno).",
+        "Vedení lidí (motivace, vytváření společných hodnot).",
+        "Kontrolování (komunikace, zpětné vazby, vyhodnocení).",
+        "Organizování postupů (přidělování rolí v týmu, hospodaření se zdroji - lidé, čas, finance a materiální zdroje)."
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Které standardy projektového řízení pocházejí původně z Anglie?",
+      "opts": [
+        "PMI a Prince 2",
+        "IPMA — International Project Management Association",
+        "Prince 2 — PRoject IN Controlled Environment",
+        "IPMA a PMI",
+        "PMI — Project Management Institute"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Kolik elementů mají behaviorální kompetence?",
+      "opts": [
+        "5",
+        "10",
+        "12",
+        "8",
+        "15"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Projekty můžeme dělit na: (bez záruky)",
+      "opts": [
+        "Klasické, agilní, prediktivní",
+        "Výstavbové, vědecké, technické",
+        "Komplexní, speciální, jednoduché",
+        "Pevné, polopevné, poloflexibilní a flexibilní",
+        "Vlastní, cizí, kombinované"
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Kdy je vhodné použít principy projektového řízení? (bez záruky)",
+      "opts": [
+        "Když řešíme specifické, neopakující se úkoly (vývoj nových výrobků, inovace výroby, zavádění nových technologií atd.)",
+        "Když používáme dynamické systémy",
+        "Když řešíme periodicky opakované činnosti a jednoduché bezrizikové akce",
+        "Když řešíme náhlé mimořádné, nebo krizové situace",
+        "Když řešíme složité, komplexní problémy s využitím inovativních přístupů"
+      ],
+      "correct": [0, 4]
+    },
+    {
+      "q": "Fáze projektu zahájení končí schválením zakládací listiny projektu:",
+      "opts": [
+        "Pouze u vědeckých projektů.",
+        "ANO",
+        "Pouze u stavebních projektů.",
+        "NE",
+        "Pouze u skupiny projektů."
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Které elementy zařazujeme do kontextových elementů?",
+      "opts": [
+        "K5 Kultura a hodnoty.",
+        "K4 Moc a zájem.",
+        "K2 Systém řízení, struktura a procesy.",
+        "K6 Suroviny a zdroje.",
+        "K3 Shoda se standardy a předpisy."
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "Projektová koordinace znamená, že: (bez záruky)",
+      "opts": [
+        "Kompetence jsou převedeny na jednotlivé členy projektu, příslušní spolupracovníci jsou vyčleněni z kmenové organizace.",
+        "Manager projektu zastává štábní poradní funkci, oprávnění rozhodovat, vydávat příkazy a celkovou odpovědnost nese jeho nadřízený.",
+        "Je využit kombinovaný systém svisle probíhající funkční odpovědnosti a horizontálně orientované odpovědnosti za projekt.",
+        "Kompetence jsou převedeny na managera projektu, příslušní spolupracovníci jsou vyčleněni z kmenové organizace a přímo podřízeni managerovi projektu.",
+        "Je využit systém svisle probíhající funkční odpovědnosti za projekt."
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Problémy, které projektového řízení dokáže řešit:",
+      "opts": [
+        "Zkreslování při vnitrofiremní komunikaci.",
+        "Výskyt ping-pongového efektu.",
+        "Časové ztráty při složité komunikaci.",
+        "Nárůst mzdových prostředků.",
+        "Dlouhé komunikační řetězce."
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "Mezi základní pojmy síťové analýzy patří:",
+      "opts": [
+        "Střed - oblast grafu, kde se potkávají dvě a více činností.",
+        "Hrana grafu - činnost kladoucí nároky na čas či zdroje, má dynamický charakter.",
+        "Vazby - oblasti spojující podobné prvky.",
+        "Graf - grafické znázornění modelovaného projektu (průběh akcí prováděných v rámci daného projektu).",
+        "Uzel - časová událost, kterou je počátek nebo konec činnosti."
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Čím se zabývá znalostní oblast projektových standardů PMI \"Rozsah\":",
+      "opts": [
+        "Definuje a popisuje procesy, které se týkají zejména integrace informací a jejich efektivního šíření a zajištění kvalitního reportování (podávání zpráv o stavu projektu).",
+        "Zabývá především plánováním časových aspektů projektu (harmonogramů) ve vztahu k ostatním atributům, jako jsou lidské zdroje, rozpočet, náklady a jiné.",
+        "Analyzuje rozsah projektu. Rozsah projektu je zde chápán jako definice a následný rozklad projektu na menší jednotky činností",
+        "Zajišťuje především integraci a návaznosti na jiné projekty a koordinování změn v celém průběhu projektu.",
+        "Definuje a popisuje procesy, které se týkají zejména zajišťování zdrojů."
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Které standardy se dělí na kompetence, behaviorální, technické a kontextové?",
+      "opts": [
+        "PMI a Prince 2",
+        "Prince 2 - PRoject IN Controlled Environment",
+        "IPMA - International Project Management Association",
+        "PMI - Project management Institute",
+        "IPMA a PMI"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Jaké efekty má projektové řízení?",
+      "opts": [
+        "Zvýšení počtu kontrol.",
+        "Zlepšení koordinace aktivit a tím snížení časové náročnosti.",
+        "Zvýšení pracovní morálky.",
+        "Zvýšení efektivity a rentability.",
+        "Účinnější řízení zdrojů."
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Projektové řízení definujeme jako:",
+      "opts": [
+        "Způsob řízení, pomocí kterého je možné zabezpečit realizaci požadovaných cílů.",
+        "Aplikace znalostí, dovedností, nástrojů a technik na projektové aktivity za účelem splnění cíle projektu.",
+        "Řízení cesty od jednoho stavu k druhému.",
+        "Souhrn aktivit spočívající v plánování, organizování, řízení a kontrole zdrojů společnosti s relativně krátkodobým cílem, který byl stanoven pro realizaci specifických cílů a záměrů.",
+        "Realizace činností základního marketingového mixu 4P."
+      ],
+      "correct": [0, 1, 2, 3]
+    },
+    {
+      "q": "Pomocí metody CPM určete: délku trvání projektu, činnosti ležící na kritické cestě a celkovou časovou rezervu činnosti E. (Pozn. Doba trvání je v levém dolním poli:",
+      "opts": [
+        "Délka trvání 16 časových jednotek, činnosti na kritické cestě A-B-D-G, celková rezerva činnosti E je 1.",
+        "Délka trvání 17 časových jednotek, činnosti na kritické cestě A-B-D-F, celková rezerva činnosti E je 3.",
+        "Délka trvání 15 časových jednotek, činnosti na kritické cestě A-B-D-F-G, celková rezerva činnosti E je 0.",
+        "Délka trvání 17 časových jednotek, činnosti na kritické cestě A-C-E-G, celková rezerva činnosti E je 2.",
+        "Délka trvání 16 časových jednotek, činnosti na kritické cestě C-E-G, celková rezerva činnosti E je 0."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q101.jpg"
+    },
+    {
+      "q": "Které standardy projektového řízení se zaměřuji na kompetence projektového manažera a členů týmu?",
+      "opts": [
+        "IPMA a PMI",
+        "Prince 2 – PRoject IN Controlled Environment",
+        "PMI – Project management Institute",
+        "IPMA – International Project Management Association",
+        "IPMA a Prince 2"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Jaké výhody má projektové řízení?",
+      "opts": [
+        "Na základě specifikace požadavků je možno přesně definovat cíle projektu.",
+        "Každá aktivita projektu má přiřazenu odpovědnou osobu.",
+        "Jeho principy lze použít při každé činnosti v podniku.",
+        "Efektivita vynaložených prostředků je vyšší.",
+        "Jsou přesně vymezené časové a finanční podmínky realizace projektu."
+      ],
+      "correct": [0, 1, 3, 4]
+    },
+    {
+      "q": "Čím se zabývá znalostní oblast projektových standardů PMI \"Human Resource\":",
+      "opts": [
+        "Tato znalostní oblast se týká produktu, který je v rámci projektu vytvářen.",
+        "Zahrnuje procesy jako jsou: identifikace rizik, kvalifikace rizik, zodpovědnosti za rizika a kontrola (sledování) rizik.",
+        "Jedná se o řízení času projektu.",
+        "Jedná se o řízení subjektů, které jsou buď do projektu aktivně zapojeny, nebo jejichž zájmy jsou ovlivněny realizací projektu.",
+        "V této znalostní oblasti jsou popisovány způsoby a procesy vyhledávání nových lidí, vývoje organizační struktury, definování rolí - zodpovědností, zlepšování výkonností týmů a techniky jejich sestavování."
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Metoda kritické cesty (CPM):",
+      "opts": [
+        "slouží k určeni činnosti, které mají maximální možnou rezervu",
+        "slouží k určení nejdelší možné doby trvání projektu",
+        "je deterministická metoda",
+        "slouží k určení nejkratší doby trvání projektu",
+        "slouží k určení činností, které mají nulovou rezervu celkovou"
+      ],
+      "correct": [2, 3, 4]
+    },
+    {
+      "q": "Manažer projemtu je odpovědný za:",
+      "opts": [
+        "Za zajištění finančních prostředků pro projekt.",
+        "Za dosažení cíle projektu.",
+        "Za komunikaci se zainteresovanými skupinami.",
+        "Za plánování a podávání zpráv o stavu projektu.",
+        "Za průběžnou kontrolu podávaných zpráv"
+      ],
+      "correct": [1, 2, 3, 4]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Projekt a jeho vlastnosti",
+      "q": [8, 12, 16, 32, 51, 52, 74, 75, 89, 90, 99]
+    },
+    {
+      "name": "Přínosy a principy projektového řízení",
+      "q": [44, 64, 65, 86, 94, 98, 102]
+    },
+    {
+      "name": "Projektový tým, organizace a role",
+      "q": [1, 5, 66, 70, 85, 93, 105]
+    },
+    {
+      "name": "Fáze projektu, zahájení a ukončení",
+      "q": [11, 14, 15, 17, 24, 25, 36, 72, 73, 91]
+    },
+    {
+      "name": "Plánování: cíle, logický rámec, WBS a náklady",
+      "q": [3, 13, 18, 21, 39, 45, 46, 48, 50, 68, 76, 77]
+    },
+    {
+      "name": "Řízení rizik",
+      "q": [27, 28, 31, 35, 37, 38, 43, 71]
+    },
+    {
+      "name": "Standardy a kompetence (IPMA, PMI, PRINCE2, ISO)",
+      "q": [19, 23, 29, 33, 34, 41, 67, 69, 87, 88, 92, 96, 97, 101, 103]
+    },
+    {
+      "name": "Časové plánování a síťová analýza",
+      "q": [6, 7, 20, 22, 30, 47, 81, 95, 104]
+    },
+    {
+      "name": "Sledování projektu a EVM",
+      "q": [2, 4, 9, 10, 26, 40, 42, 49, 78]
+    },
+    {
+      "name": "Příklady: rezerva pro náhlé případy",
+      "q": [79, 82, 83, 84]
+    },
+    {
+      "name": "Příklady: PERT, CPM a síťové grafy",
+      "q": [53, 54, 55, 56, 57, 58, 60, 63, 100]
+    },
+    {
+      "name": "Příklady: EVM",
+      "q": [59, 61, 62, 80]
+    }
+  ]
+}

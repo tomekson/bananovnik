@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.35">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.36">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1557,7 +1557,7 @@ function buildRangeChunks(total, chunkSize) {
   }
   if (chunks.length > 5) {
     chunks.splice(4);
-    chunks[chunks.length - 1] = { from: 4 * chunkSize + 1, to: total };
+    chunks.push({ from: 4 * chunkSize + 1, to: total });
   }
   return chunks;
 }
@@ -1975,6 +1975,14 @@ const TESTS_REGISTRY = [
     updatedAt: '2026-06-19',
     questionCount: 68,
     retired: true
+  },
+  {
+    id: 'manazerske-dovednosti',
+    file: 'manazerske-dovednosti.json',
+    title: 'Manažerské dovednosti',
+    updatedAt: '2026-09-19',
+    questionCount: 190,
+    hasSets: true
   },
   {
     id: 'manazerska-ekonomie',
@@ -3408,7 +3416,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.35';
+const APP_VERSION = '9.36';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

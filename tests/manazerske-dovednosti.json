@@ -1,0 +1,2202 @@
+{
+  "id": "manazerske-dovednosti",
+  "title": "Manažerské dovednosti",
+  "updatedAt": "2026-09-19",
+  "rubric": "Zkouškový test: 45 min., 16 otázek po 5 bodech + 1 otevřená za 20 bodů, bez pomůcek",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 80,
+    "openPoints": 20,
+    "passPoints": 51,
+    "questionCount": 16,
+    "openCount": 1
+  },
+  "questions": [
+    {
+      "q": "K základním tzv. \"manažerským dovednostem\" patří:",
+      "opts": [
+        "používání psychodiagnostických metod",
+        "reálné poznání a náhled na sebe sama",
+        "schopnost odhadnout/poznat \"druhou stranu\"/partnery",
+        "umění zdravě riskovat",
+        "proaktivita a tzv. \"dlouhé myšlení\""
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Těžiště manažerských dovedností spočívá v:",
+      "opts": [
+        "kontrole úkolů",
+        "plánování úkolů",
+        "organizování práce",
+        "jednání s úřady",
+        "dennodenním rozhodování"
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "Manažer musí využívat tyto druhy energie a pečovat o ně:",
+      "opts": [
+        "mentální energie (rozumová)",
+        "elektrická energie",
+        "emoční energie",
+        "spirituální energie",
+        "fyzická energie"
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Sugestivní otázka:",
+      "opts": [
+        "Zpochybňuje druhou stranu.",
+        "Manipuluje.",
+        "Přináší informace.",
+        "Vede ke shrnutí informací a k rozhodnutí.",
+        "Je vhodná k ujasnění a pochopení."
+      ],
+      "correct": [0, 1]
+    },
+    {
+      "q": "Písemná komunikace v rámci vnitřní komunikace v organizaci:",
+      "opts": [
+        "má nezastupitelné místo",
+        "spočívá převážně ve sdělování neformálních informací",
+        "je často v podnicích uchovávána (archivována)",
+        "je obvyklá pouze v malých podnicích",
+        "má marginální roli"
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "Komunikace:",
+      "opts": [
+        "elektronická komunikace je důležitější než fyzická komunikace",
+        "v digitální společnosti ztrácí neverbální komunikace na významu",
+        "posiluje sdílení informací a znalostí ve společnosti",
+        "bývá příčinou špatných vztahů ve firmě, když je nefunkční",
+        "není důležitá pro implementaci strategie firmy"
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Systémové myšlení:",
+      "opts": [
+        "znamená vidět svět v souvislostech, v detailech i nadhledu (les a stromy) a v nalezení míst, kde lze systém měnit s relativně malým úsilím",
+        "začíná uměním pozorovat svět kolem nás a porozuměním opakujícím se vzorcům chování systémů",
+        "je synonymem k analytickému systematizovanému myšlení",
+        "je jednou z pěti disciplín modelu učící se organizace",
+        "není jednou z pěti disciplín modelu učící se organizace"
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Při vytváření pracovních skupin by se mělo zohlednit:",
+      "opts": [
+        "kdo je určen jako vedoucí skupiny",
+        "jaké jsou požadavky členů",
+        "zda někdo z členů nemá příbuzné ve vedení firmy",
+        "zda jsou předpokládaní členové vzájemně pracovně kompatibilní",
+        "zda má firma dostatek zdrojů pro jejich alespoň tříletou existenci"
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Rodičovské JÁ v Transakční analýze se dělí na:",
+      "opts": [
+        "Kritické rodičovské JÁ.",
+        "Ochranitelské rodičovské JÁ.",
+        "Přirozené rodičovské JÁ.",
+        "Dospělé JÁ.",
+        "Přísné rodičovské JÁ."
+      ],
+      "correct": [0, 1]
+    },
+    {
+      "q": "Nové formy motivačních cílů, které se užívají pro zmenšení stereotypnosti práce zahrnují:",
+      "opts": [
+        "Rotace pracovníků.",
+        "Mentoring.",
+        "Koučing.",
+        "Horizontální rozšíření činnosti.",
+        "Obohacení práce."
+      ],
+      "correct": [0, 3, 4]
+    },
+    {
+      "q": "Osobní mistrovství (personal mastery):",
+      "opts": [
+        "je o prohlubování a vyjasňování osobní vize, soustředění energie, vytrvalosti i objektivního pohledu na věc",
+        "je jednou z pěti disciplín modelu učící se organizace",
+        "přesahuje kompetence a dovednosti",
+        "spočívá v dokonalém zvládnutí toho, co děláme",
+        "znamená to přiblížit se k životu jako k tvůrčímu dílu"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Mezi základní principy delfské metody patří:",
+      "opts": [
+        "Využívání pouze kvalitativních metod.",
+        "Využívání statistických postupů k identifikaci většinového názoru panelu a k úpravám míry jeho názorové shody.",
+        "Řízená zpětná informační vazba mezi panelem a výzkumným týmem.",
+        "Tým expertů je složen na základě zkušeností v předchozích projektech. Mezi členy týmu jsou blízké vzájemné vztahy.",
+        "Vzájemná anonymita uvnitř panelu expertů, či minimálně anonymita jejich názorů."
+      ],
+      "correct": [1, 2, 4]
+    },
+    {
+      "q": "Úspěšná komunikace obsahuje následující formu:",
+      "opts": [
+        "aktivní naslouchání",
+        "odstraňování komunikačního šumu",
+        "sledování „řeči těla\"",
+        "sdělování myšlenek bez emocí",
+        "prosazování vlastních názorů"
+      ],
+      "correct": [0, 1, 2]
+    },
+    {
+      "q": "Co je to asertivita?",
+      "opts": [
+        "Způsob dosažení cíle za každou cenu.",
+        "Způsob chování založený na reálném sebehodnocení.",
+        "Reakce na jednání lidí v neobvyklých situacích.",
+        "Způsob chování založený na hodnocení protivníků.",
+        "Technika vyjednávání."
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Asertivita je:",
+      "opts": [
+        "agresivní chování",
+        "prosazení vlastních názorů nebo zájmů, aniž bychom narušili práva ostatních",
+        "submisivní chování",
+        "manipulativní chování",
+        "způsob chování, který staví nejlepší řešení problému nad osobní vítězství"
+      ],
+      "correct": [1, 4]
+    },
+    {
+      "q": "Škodlivé návyky manažera:",
+      "opts": [
+        "nelze měnit, jsou to zakořeněné vzorce chování",
+        "lze měnit osobní disciplínou a dodržováním manažerské morálky",
+        "zahrnují tvrdou práci přes čas",
+        "které se odhalí, vedou k sebepoznání a následné motivaci něco změnit",
+        "dostávají manažery do „spirály smrti\" zvané smyčka zvyku"
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Konflikty mezi lidmi se řeší technikou:",
+      "opts": [
+        "úniku",
+        "kooperace",
+        "kompromisu",
+        "konfrontace",
+        "přizpůsobení"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Johariho okénko lze použít také:",
+      "opts": [
+        "rozhodování v podmínkách nejistoty",
+        "rozhodování v podmínkách jistoty",
+        "sledování, jak subjekty reagují, jsou-li o samotě (poloprůhledné zrcadlo)",
+        "skupinovému rozhodování",
+        "ilustraci neúplnosti představy, jak naše chování působí na jiné lidi"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Pro efektivní komunikaci:",
+      "opts": [
+        "postačuje, když řečník podá maximálně kvalitní výkon",
+        "je nezbytné používat analogie a příklady ze života",
+        "je vhodné sledovat řeč těla posluchačů",
+        "je potřebné rovněž aktivní zapojení posluchačů",
+        "je nezbytné používání pomůcek, jako např. projektor, tabule apod."
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Externí koučink:",
+      "opts": [
+        "pomáhá k rozvoji koučovaných zaměstnanců",
+        "provádí kouč, jenž nemusí být odborníkem v oblasti, které se věnuje koučovaný pracovník",
+        "vykonává obvykle specialista z oblasti managementu nebo psychologie",
+        "se používá zejména pro koučování manažerů (a ne běžných zaměstnanců)",
+        "je situace, kdy koučem není zaměstnanec podniku"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Projektové řízení:",
+      "opts": [
+        "je nezbytná součást manažerských dovedností",
+        "znamená, že manažer vždy deleguje na svoje podřízené",
+        "není manažerská disciplína",
+        "je manažerská disciplína zaměřená na výsledky a na řízení kvality, lidí a zdrojů",
+        "není nezbytná součást manažerských dovedností"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "Swapping je:",
+      "opts": [
+        "technika zvyšující spokojenost s odměnou za práci",
+        "technika pro odstranění trémy před prezentací",
+        "technika pro řešení bipolárních konfliktů v týmu",
+        "technika pro lepší řízení času manažera",
+        "technika pro lepší podporu rozhodování manažera"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "K čemu se užívá delfská metoda?",
+      "opts": [
+        "Používá se k vyhodnocení statistických dat vztahujících k výsledkům organizace za stanovené uplynulé období.",
+        "Používá se k vyhodnocení dosavadního vývoje v určité oblasti k následnému stanovení dalších postupů.",
+        "Používá se při anticipování (předvídání) dalšího vývoje v určité oblasti a k perspektivním odhadům (např. odhady množství a kvalifikační struktury pracovníků).",
+        "Používá se k vyvážení názorů mezi řádnou a kontrolní skupinou.",
+        "Používá se k posuzování stanovených postupů, k posuzování je určena tzv. kontrolní skupina."
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "V rámci komunikačního procesu je nutné:",
+      "opts": [
+        "Přenos sdělení mezi odesílatelem a adresátem.",
+        "Interpretovat sdělení ostatních.",
+        "Dekódovat.",
+        "Kódovat.",
+        "Začlenit komunikační šumy."
+      ],
+      "correct": [0, 2, 3]
+    },
+    {
+      "q": "V pracovní skupině existují:",
+      "opts": [
+        "pouze neformální vztahy",
+        "formální i neformální vztahy, přičemž neformální obvykle převládají",
+        "formální i neformální vztahy, není nutné, aby jedny z nich převládaly",
+        "pouze formální vztahy",
+        "formální i neformální vztahy, přičemž formální obvykle předvládají"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Tzv. efekt přihlížejících:",
+      "opts": [
+        "popisuje, proč se lidé chodí dívat na živelné katastrofy",
+        "vychází taky z předpokladu, že přítomnost jiných lidí vede k rozptýlení odpovědnosti",
+        "je vždy spojen s efektem jednajících",
+        "vychází taky z předpokladu, že přítomnost jiných lidí vede k pociťování naléhavé situace jako nenaléhavé",
+        "částečně vysvětluje, proč jedinec často nereaguje v situaci, kdy by měl udělat nějaký zásah, pokud je poblíž skupina dalších lidí"
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Při výběru členů týmu posuzujeme tyto základní oblasti:",
+      "opts": [
+        "Profesní zdatnost.",
+        "Předpoklad pro týmovou práci.",
+        "Osobní vlastnosti.",
+        "Jazykové schopnosti.",
+        "Technické dovednosti."
+      ],
+      "correct": [0, 1, 2]
+    },
+    {
+      "q": "Velikost skupiny:",
+      "opts": [
+        "Je zcela nepodstatná.",
+        "Neovlivňuje soudržnost skupiny.",
+        "Nepůsobí na výkon skupiny.",
+        "Působí na výkon i soudržnost skupiny.",
+        "Ovlivňuje i nároky kladené na manažera."
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Z následujících položek do okruhu tzv. \"manažerských dovedností\" patří:",
+      "opts": [
+        "brainstorming/brainwriting",
+        "temperamentové typologie",
+        "\"stress - management\"",
+        "teorie osobnosti",
+        "firemní kultura"
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "Správná zpětná vazba v přímé komunikaci je:",
+      "opts": [
+        "Hodnocení.",
+        "Popisuje člověka.",
+        "Mluvčí v ní mluví sám za sebe, neschovává se za mínění druhých.",
+        "Popisuje chování, nikoliv člověka.",
+        "Je složitě formulovaná, aby vyjádřila problém."
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Zásady efektivní porady jsou, k.j.:",
+      "opts": [
+        "otevřené závěry porady na dořešení později",
+        "určení konkrétních účastníků porady",
+        "dodržování harmonogramu porady",
+        "čím důležitější osoba v hierarchii, tím více dostane prostoru",
+        "udržování výstižné, stručné a otevřené komunikace"
+      ],
+      "correct": [1, 2, 4]
+    },
+    {
+      "q": "Mezi nesnáze spojené s chováním lidí na poradě patří:",
+      "opts": [
+        "Účastníci jsou příliš aktivní.",
+        "Nepřipravenost účastníků.",
+        "Účastníci jsou pasivní.",
+        "Účastníci jsou neukáznění, rozpovídaní.",
+        "Účastníci se přišli hádat."
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Mezi fáze rozhodovacího procesu patří:",
+      "opts": [
+        "Monitorování, kontrola, vyhodnocení.",
+        "Výběr varianty.",
+        "Implementace.",
+        "Hodnocení důsledků variant.",
+        "Situační analýza."
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Mezi časté rozhodovací chyby patří:",
+      "opts": [
+        "používání vždy stejného jednotného „mustru\"",
+        "zvažování všech alternativních variant",
+        "pozdní zahájení řešení problému",
+        "zaměření na symptomy místo na příčiny problému",
+        "rozhodování ve spěchu"
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Ke znakům \"efektivních pracovních skupin\" /EPS/ patří, k.j.:",
+      "opts": [
+        "antagonistické vztahy",
+        "společný cíl",
+        "rovnoprávnost postavení",
+        "jasně vymezené povinnosti a odpovědnosti",
+        "ochota ke vzájemné podpoře a spolupráci"
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Manažer v týmu může zaujímat roli:",
+      "opts": [
+        "Sociální",
+        "Informační",
+        "Intrapersonální",
+        "Rozhodovací",
+        "Interpersonální"
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Autorem nejznámějšího dělení rolí v týmu je:",
+      "opts": [
+        "Berne",
+        "Belbin",
+        "Maslow",
+        "Skinner",
+        "Kurnický"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Mezi pět základních typů motivačních konfliktů podle Lewina patří:",
+      "opts": [
+        "konflikt fyziologických a rozvojových potřeb",
+        "konflikt mezi pozitivním a negativním podnětem v jediné situaci",
+        "konflikt mezi dvěma negativními podněty",
+        "konflikt zájmů",
+        "konflikt nadřízeného a podřízeného"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Umění prezentovat je především založené na:",
+      "opts": [
+        "přesvědčení publika o vlastních schopnostech",
+        "důkladné přípravě",
+        "strukturovaném sdělování myšlenek",
+        "na řízené diskusi a věcné argumentaci",
+        "vytváření powerpointových prezentací"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Manažerská prezentace je:",
+      "opts": [
+        "rétorické cvičení",
+        "jasné a jednoznačné sdělení myšlenky a ověření, že posluchači obsah sdělení pochopili stejně",
+        "ohromení posluchačů zajímavou formou prezentace",
+        "přesvědčení posluchače, jaká já jsem nádherná osoba",
+        "powerpoint"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Naslouchání (v rámci komunikace):",
+      "opts": [
+        "je vhodné doprovodit neverbálními signály sdělujícími postoji k slyšenému (gesta, souhlasné hm, apod.)",
+        "je spíše doménou introvertů než extrovertů",
+        "by mělo být u pracovního pohovoru více zastoupené u uchazeče o přijetí než u manažera, který přijímací rozhovor vede",
+        "je nežádoucí",
+        "je velmi důležitou součástí komunikace"
+      ],
+      "correct": [0, 1, 4]
+    },
+    {
+      "q": "Čím se vyznačuje neúspěšný tým?",
+      "opts": [
+        "Když se má začít s plněním úkolu, jsou přijata jasná pravidla a opatření k jeho splnění.",
+        "Nadřízený nevládne skupinou.",
+        "Každý člen vyjadřuje své názory, neexistují žádné tajnosti.",
+        "Komunikace je zablokovaná.",
+        "Kritik je beze strachu vyslyšen."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Adaptační gesta:",
+      "opts": [
+        "signalizují přizpůsobení se argumentaci partnera v komunikaci",
+        "přizpůsobují okolí podmínkách komunikace (odstranění překážejících předmětů)",
+        "slouží k usměrnění hovoru žádoucím směrem",
+        "slouží k uspokojování našich potřeb (poškrábání si svědícího místa, narovnání bolavých ramen)",
+        "doplňují informaci podanou verbálně"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Projekce, jako omyl při vnímání jiných spočívá:",
+      "opts": [
+        "v tom, že si do nich promítáme naše vlastní rysy",
+        "v podvědomém přehlížení některých (nechtěných) osobnostních rysů",
+        "v předpokladu, že se všichni lidé chovají ve stejné situaci stejně",
+        "v tom, že necháváme ovlivnit jejich vlastnostmi",
+        "v předpokladu, že se lidé chovají podobně, jako bych se v dané situaci choval já"
+      ],
+      "correct": [0, 4]
+    },
+    {
+      "q": "Předpokladem efektivního rozhodování v týmu je:",
+      "opts": [
+        "Uzavřenost manažera.",
+        "Vhodná kombinace členů týmu.",
+        "Volné vedení.",
+        "Vhodný cíl.",
+        "Individuální jednání členů týmu."
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Prostředky neverbální komunikace:",
+      "opts": [
+        "jsou takřka vždy v komunikaci přítomny",
+        "obvykle sdělují pocity, emoce a postoje komunikujících",
+        "jsou téměř vždy v souladu s verbálním sdělením",
+        "jsou obvykle vědomě kontrolované",
+        "jsou obvykle v komunikaci samostatné (tj. obejdou se bez verbálního sdělení)"
+      ],
+      "correct": [0, 1]
+    },
+    {
+      "q": "V procesu sociální percepce se uplatňují:",
+      "opts": [
+        "tři komponenty (vnímající osoba; vnímaná osoba; situační kontext)",
+        "čtyři komponenty (vnímající osoba, vnímaná osoba, situační kontext; komunikační prostředí)",
+        "čtyři komponenty (vnímající osoba, vnímaná osoba, situační kontext, zkušenost s komunikací)",
+        "tři komponenty (vnímající osoba, vnímaná osoba, zkušenost s komunikací)",
+        "dva komponenty (vnímající osoba; vnímaná osoba)"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "V průběhu hodnotícího pohovoru se hodnotí:",
+      "opts": [
+        "Objektivní kvantitativní údaje plnění úkolu pracovníkem.",
+        "Plnění cílů a úkolů.",
+        "Kompetence.",
+        "Subjektivní kvantitativní údaje plnění úkolu pracovníkem.",
+        "Subjektivní kvalitativní údaje plnění úkolu pracovníkem."
+      ],
+      "correct": [0, 1, 2]
+    },
+    {
+      "q": "Nefunkčnost týmu mívá následující příčinu:",
+      "opts": [
+        "neochota k závazku",
+        "nedostatek důvěry",
+        "obava z konfliktu",
+        "vyhýbání se zodpovědnosti",
+        "nezájem o výsledek"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Doporučenou technikou pro poskytování zpětné vazby je:",
+      "opts": [
+        "kritika před \"nastoupenou jednotkou\"",
+        "hra na psychologa",
+        "metoda \"Start, Stop, Continue\"",
+        "metoda sendviče",
+        "konfrontace"
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Manažeři neradi delegují, protože, k.j.:",
+      "opts": [
+        "mají strach z chyb podřízených",
+        "mají obavy z nárůstu kvalit podřízených",
+        "je jim líto času někomu něco vysvětlovat",
+        "chtějí mít za všechno osobní zásluhu",
+        "trpí syndromem „nejlépe si to udělám sám\""
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Delegování:",
+      "opts": [
+        "je známkou nekompetentnosti manažera",
+        "je proces pověřování řízených pracovníků odpovědností za pracovní aktivity",
+        "je nezbytnou manažerskou činností",
+        "je jedním ze stimulačních prostředků pro zvýšení pracovní motivace",
+        "je efektivní, když jsou úkoly jednoznačně rozdělené a zadané konkrétním pracovníkům"
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Transakční analýza pracuje s:",
+      "opts": [
+        "Rodičovským JÁ.",
+        "Generálním JÁ.",
+        "Speciálním JÁ.",
+        "Dětským JÁ.",
+        "Technickým JÁ."
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "Mezi zásady skupinového rozhodování patří mimo jiné:",
+      "opts": [
+        "omezit počet členů, kteří budou rozhodovat",
+        "skupinový úkol má mít nárok na různé znalosti",
+        "skupina má mít konkrétní (neabstraktní) úkol",
+        "úkoly pro skupinu mají mít jasný začátek a konec",
+        "lepší výsledek bude dosažen, pokud spolu členové nesoutěží"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Kompetitivní strategie (výhra-prohra):",
+      "opts": [
+        "patří mezi méně obvyklé vyjednávací strategie",
+        "je jednou z možných vyjednávacích strategií",
+        "je jedinou strategii vyjednávání, která může reálně existovat",
+        "maximalizuje zisk všech zúčastněných stran",
+        "se používá zejména v situacích, kdy chtějí strany dlouhodobě spolupracovat"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Doporučovanou technikou asertivity je:",
+      "opts": [
+        "nadřazenost v jednání",
+        "pasivní rezistence",
+        "mlčení",
+        "přijatelný kompromis na základě empatie",
+        "tzv. poškrábaná gramofonová deska"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Jaké mohou být důvody slabší výkonnosti?",
+      "opts": [
+        "Aktivita.",
+        "Nemoc.",
+        "Odborný nedostatek.",
+        "Nadměrná pečlivost.",
+        "Angažovanost."
+      ],
+      "correct": [1, 2, 3]
+    },
+    {
+      "q": "Mezi zásady, kterých by se měl manažer držet při vedení hodnotícího pohovoru patří:",
+      "opts": [
+        "Výsledky práce pracovníka srovnává manažer s ostatními.",
+        "Hodnotící pohovor by měl být veden v duchu ironie, aby byl odlehčen.",
+        "Hodnotí se, jak pracovník pracoval v posledních dnech.",
+        "Je nutno hodnotit člověka komplexně.",
+        "Hodnotící pohovor má motivovat."
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Ideální tým je:",
+      "opts": [
+        "skupina lidí se stejnými vlastnostmi",
+        "skupina lidí s ideálními manažerskými dovednostmi",
+        "skupina lidí se společným cílem, kde každý člen týmu má určenou svoji roli a zodpovědnost",
+        "velká skupina lidí, kteří neustále diskutují o cílech",
+        "malá skupina lidí, jejichž vlastnosti a dovednosti se navzájem doplňují a posilují"
+      ],
+      "correct": [2, 4]
+    },
+    {
+      "q": "Charakteristikami efektivních týmů jsou:",
+      "opts": [
+        "jasně vymezené odpovědnosti a role",
+        "působení členů týmů na sebe navazuje a doplňuje se",
+        "tým spojuje společný cíl",
+        "vytvoření vnitřní normy",
+        "vedoucí s osobností flegmatiků"
+      ],
+      "correct": [0, 1, 2, 3]
+    },
+    {
+      "q": "Delfská metoda je:",
+      "opts": [
+        "expertní technika předvídání budoucích jevů",
+        "expertní technika sloužící k vyhodnocování dosavadních postupů",
+        "metoda individuálního hledání řešení zjišťováním názorů členů týmů",
+        "metoda skupinového hledání řešení zjišťování názorů spolupracovníků",
+        "metoda skupinového hledání řešení zjišťování názorů skupiny expertů"
+      ],
+      "correct": [0, 4]
+    },
+    {
+      "q": "Mezi bariéry v osobnosti manažera patří:",
+      "opts": [
+        "strukturovaný přístup",
+        "konkrétní vymezení problémů",
+        "myšlenkové a jednací stereotypy",
+        "angažovanost",
+        "aktivita"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Řízení změny je:",
+      "opts": [
+        "odmítání změny jako překážky v zaběhané práci",
+        "přesvědčení ostatních i sebe sama o smyslu navrhované změny",
+        "změnové řízení",
+        "projektové řízení",
+        "procesní řízení"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Moderátor porady by:",
+      "opts": [
+        "měl být nestranný",
+        "měl ovlivňovat délku příspěvků",
+        "měl rozhodnout o pořadí příspěvku",
+        "měl určovat termíny pro splnění úkolů",
+        "měl usnadňovat vzájemné porozumění"
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "Mezi příčiny konfliktu patří:",
+      "opts": [
+        "Vztahy.",
+        "Emoce.",
+        "Nadbytek informací.",
+        "Aktuální situace.",
+        "Nedostatek informací."
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Konkurenční strategie (výhra — prohra):",
+      "opts": [
+        "Nepatří mezi obvyklé vyjednávací strategie.",
+        "Je často používaná dominantními typy lidí.",
+        "Je jednou z možných vyjednávacích strategií.",
+        "Pomáhá udržovat dobré mezilidské vztahy.",
+        "Umožňuje oboustrannou spokojenost s dosažením řešením."
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Léčka odhadů a předpovědí:",
+      "opts": [
+        "Říká, že máme sklon přeceňovat přesnost svých odhadů.",
+        "Se týká výhradně meteorologie a srážek.",
+        "Patří mezi základní rozhodovací \"léčky\"",
+        "Nepatří mezi rozhodovací \"léčky\".",
+        "Souvisí také s přílišnou opatrností v rozhodování."
+      ],
+      "correct": [0, 2, 4]
+    },
+    {
+      "q": "Postojem těla se zabývá:",
+      "opts": [
+        "Haptika.",
+        "Paralingvistika.",
+        "Proxemika.",
+        "Gestika.",
+        "Posturologie."
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Kompromisní styl řešení konfliktů:",
+      "opts": [
+        "je založen na principu dej — ber, na postupných ústupcích všech stran",
+        "je vhodný tam, kde je jakákoliv dohoda lepší než nedohoda",
+        "může být charakterizován jako řešení výhra — výhra",
+        "je vhodné používat tehdy, kdy existuje příliš málo informací o konfliktu",
+        "spočívá v nalezení nejvhodnějšího řešení pro jednu ze stran konfliktu, kterému se druhá strana přizpůsobí"
+      ],
+      "correct": [0, 1]
+    },
+    {
+      "q": "Pro kompromisní styl řešení konfliktů platí, že:",
+      "opts": [
+        "Je založen na oboustranných ústupcích.",
+        "Je charakterizován jako styl výhra — výhra.",
+        "Je vhodný tam, kde by nedohoda měla fatální následky.",
+        "Jednou dosáhne veškerých svých cílů jedna strana, podruhé druhá strana konfliktu.",
+        "Je vhodné použít v situaci, kdy nemůžeme konflikt ovlivnit."
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "Cílem manipulace je:",
+      "opts": [
+        "Dosáhnout toho, aby někdo dělal, co chcete.",
+        "Oslabení výkonu konkurenta.",
+        "Zjistit vlastní hranice a možnosti.",
+        "Dostat někoho pod tlak.",
+        "Pomoci druhému v nouzi."
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Výkonnost a fungování týmu obvykle závisí na:",
+      "opts": [
+        "Výši očekávané finanční odměny.",
+        "Velikosti skupiny.",
+        "Výběru členů.",
+        "Eisenhowerově principu.",
+        "Provázanosti týmových rolí."
+      ],
+      "correct": [1, 2, 4]
+    },
+    {
+      "q": "Součástí rozhodovacího procesu jsou:",
+      "opts": [
+        "Hodnocení důsledků.",
+        "Určení odměny za úspěšnou realizaci rozhodnutí.",
+        "Situační analýza.",
+        "Výběr rozhodovatelů.",
+        "Monitorování a kontrola."
+      ],
+      "correct": [0, 2, 4]
+    },
+    {
+      "q": "Příčinou konfliktních situací nejčastěji bývá:",
+      "opts": [
+        "Týmový brainstorming.",
+        "Konsensus, jak vyřešit problém.",
+        "Racionální rozdíl v názorech na předmět jednání.",
+        "Osobní emocionální reakce.",
+        "Mocenský útok na autoritu či pozici."
+      ],
+      "correct": [2, 3, 4]
+    },
+    {
+      "q": "Asertivní technika \"otevřených dveří\":",
+      "opts": [
+        "Spočívá v tom, že přijímáme všechny námitky oponenta a akceptujeme je.",
+        "Je opakem k technice \"zavřených dveří\".",
+        "Se často používá v reakci na neoprávněnou kritiku.",
+        "Spočívá v tom, že nereagujeme na protivníkovy argumenty.",
+        "Se obvykle používá pro prosazení svého požadavku."
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Léčka ukotvení:",
+      "opts": [
+        "Informuje o tom, že jsme často fixování zachováním stávajícího stavu.",
+        "Spočívá ve fixaci na současný stav.",
+        "Spočívá v mínění, že činíme logická, racionální rozhodnutí.",
+        "Spočívá v přílišném zafixování se na provedený odhad.",
+        "Informuje o podvědomém fixování se na první získanou informaci."
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "V průběhu prezentace je vhodné:",
+      "opts": [
+        "používat řečnické otázky",
+        "průběžně věnovat pozornost všem posluchačům",
+        "nevšímat si poznámky a připomínky z publika",
+        "zaměřit se výhradně na nejméně sympatickou osobu v publiku",
+        "zaměřit se výhradně na nejsympatičtější osobu v publiku"
+      ],
+      "correct": [0, 1]
+    },
+    {
+      "q": "Delegovat by se mělo:",
+      "opts": [
+        "Co nejméně.",
+        "Na nejnižší možnou úroveň, na které může být práce provedena.",
+        "S poskytnutím odpovídající podpory pro splnění úkolu.",
+        "Nejlépe v souladu s pracovními předpoklady a osobními zájmy pracovníka, na kterého je úkol delegován.",
+        "Jasně a úplně."
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Ústní komunikace v organizaci:",
+      "opts": [
+        "Se odehrává ve formálně přesně vymezené podobě.",
+        "Neexistuje.",
+        "Obvykle neslouží k zadávání dlouhodobých úkolů.",
+        "Spočívá často v předávání neformálních informací.",
+        "Je důležitou složkou při předávání formálních sdělení."
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Efektivní produktivita je definována jako:",
+      "opts": [
+        "Minimalizace plýtvání.",
+        "Vztah mezi výsledkem a energií potřebnou k dosažení tohoto výsledku.",
+        "Objem práce udělané za jednotku času, která má přidanou hodnotu pro zákazníka.",
+        "Objem práce udělané za jednotku času.",
+        "Schopnost vykonávat práci."
+      ],
+      "correct": [0, 1, 2]
+    },
+    {
+      "q": "Typickými znaky dobrého time managementu jsou:",
+      "opts": [
+        "Používání minimálně tří záznamových médií.",
+        "Delegování úkolů.",
+        "Přetíženost.",
+        "Perfekcionalismus a stres.",
+        "Dlouhý seznam lidí čekajících na schůzku."
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Mezi složky kondice patří:",
+      "opts": [
+        "Duchovní složka.",
+        "Společenská složka.",
+        "Duševní složka.",
+        "Fyziologická složka.",
+        "Fyzická složka."
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "Jakých zásad by se měl manažer držet při skupinovém rozhodování?",
+      "opts": [
+        "Dávat skupině abstraktní úkoly.",
+        "Podporovat soutěžení ve skupině, protože lepší výsledek lze očekávat od skupiny, kde spolu členové soutěží.",
+        "Chválit jednotlivce.",
+        "Dávat skupině konkrétní úkoly.",
+        "Úkol musí mít počátek a konec."
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Mezi styly ovlivňování patří:",
+      "opts": [
+        "Styl individuálního cíle.",
+        "Styl nedůvěry.",
+        "Styl spolupráce a důvěry.",
+        "Styl společné vize.",
+        "Styl asertivního přesvědčování."
+      ],
+      "correct": [2, 3, 4]
+    },
+    {
+      "q": "Mezi problémové týmové role patří:",
+      "opts": [
+        "Samotář, který nejraději pracuje o samotě.",
+        "Dominující osoba — ráda mluví a ráda se poslouchá.",
+        "Snílek, který se nedokáže koncentrovat.",
+        "Naslouchající osoba.",
+        "Nenaslouchající osoba."
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "Efektivní pracovní skupina:",
+      "opts": [
+        "Sestává buď pouze z mužů, nebo pouze z žen.",
+        "Obvykle nepotřebuje formální vnitřní strukturu.",
+        "By měla obsahovat co nejvíce týmových rolí.",
+        "Obvykle obsahuje maximálně tři týmové role.",
+        "Je obvykle vytvořená pro vyřešení konkrétního projektu."
+      ],
+      "correct": [1, 2, 4]
+    },
+    {
+      "q": "Proč manažeři neradi delegují?",
+      "opts": [
+        "trpí syndromem \"nejlépe si to udělám sám\"",
+        "protože nejsou líní",
+        "nemají dostatečnou důvěru ve své podřízené",
+        "mají strach ze ztráty kontroly",
+        "zastávají názor \"nikdy se to u nás nedělalo\""
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Společnými znaky, kterými se vyznačuje tým jsou:",
+      "opts": [
+        "Soudržnost.",
+        "Skupinové normy.",
+        "Komunikace.",
+        "Atmosféra.",
+        "Struktura a organizace."
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Soudržnost sociální (pracovní) skupiny:",
+      "opts": [
+        "Je přímo úměrná skupinové konformitě.",
+        "Je tím menší, čím méně lidí skupinu tvoří.",
+        "Je tím větší, čím méně lidí skupinu tvoří.",
+        "Vyjadřuje ochotu angažovat se ve prospěch společných cílů.",
+        "Je nepřímo úměrná skupinové konformitě."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Mezi pět stylů zvládání konfliktů patří:",
+      "opts": [
+        "únikový styl",
+        "přizpůsobivý styl",
+        "kooperativní styl",
+        "kompromisní styl",
+        "konfrontační styl"
+      ],
+      "correct": [0, 1, 2, 3]
+    },
+    {
+      "q": "Zkreslení předávané informace v rámci komunikace:",
+      "opts": [
+        "Může být zapříčiněno vnějšími vlivy (hluk, oslnění, ...).",
+        "Lze minimalizovat aktivním nasloucháním a podáváním zpětné vazby.",
+        "Je zřídkavé, je-li informace předávaná písemně.",
+        "Je často důsledkem špatného dekódování.",
+        "Je téměř nemožné, je-li komunikace formální."
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Týmová dynamika prochází následujícími fázemi v průběhu práce na projektu v tomto pořadí:",
+      "opts": [
+        "Spaní na vavřínech, Normování, Formování, Výkonnost, Bouření.",
+        "Formování, Bouření, Normování, Výkonnost, Spaní na vavřínech.",
+        "Výkonnost, Spaní na Vavřínech, Formování, Bouření, Normování",
+        "Formování, Normování, Spaní na Vavřínech, Výkonnost, Bouření.",
+        "Výkonnost, Normování, Spaní na vavřínech, Bouření, Formování."
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Propojování lidí:",
+      "opts": [
+        "Je označení pro vytváření vztahů mezi lidi, vzájemnou výměnu informací a udržování osobních kontaktů, vedoucí k vytvoření sítě konexí.",
+        "Snižuje význam manažerů.",
+        "Je součástí strategie sociálních sítí.",
+        "Ovlivňuje postavení a výkonnost firem.",
+        "Posiluje týmovou spolupráci a vede k nízkým organizačním hierarchiím."
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Participativní rozhodování:",
+      "opts": [
+        "je rozhodování těžko uplatnitelné v malých, autokraticky řízených společnostech",
+        "je možné pouze v malých společnostech",
+        "je rozhodování kolektivní",
+        "je rozhodování individuální",
+        "je rozhodnutí, při kterém každý zainteresovaný jedinec rozhoduje pouze v intencích své odbornosti"
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "Mezi základní doporučení stylu věcné manažerské prezentace nepatří:",
+      "opts": [
+        "Důkladná příprava.",
+        "Udržení hlavní myšlenky po celou dobu prezentace.",
+        "Přesvědčování o její důležitosti.",
+        "Emotivní fabulování.",
+        "Interpretace faktů, dat a grafů."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Mezi časté chyby porad patří:",
+      "opts": [
+        "že se účastníkům nezasílají předem poklady",
+        "že se nerozhodne tak, jak chtěl vedoucí pracovník",
+        "že nemají oficiálního nezávislého moderátora",
+        "že nezačínají včas",
+        "že se rigidně dodržuje určený čas"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "Mezi časté chyby porad patří:",
+      "opts": [
+        "Nejasné ukončení probíraných bodů",
+        "Vypnutí mobilních telefonů",
+        "Nedodržování časového harmonogramu",
+        "Nezasílání programu porady",
+        "Nefunkčnost technických prostředků"
+      ],
+      "correct": [0, 2, 3]
+    },
+    {
+      "q": "Metoda 6.3.5:",
+      "opts": [
+        "Metoda asertivní komunikace.",
+        "Je jednou z podob Brainwritingu.",
+        "Je jednou z podob synektiky.",
+        "Jednou z podob Delfské metody.",
+        "Metoda tvůrčího myšlení."
+      ],
+      "correct": [1, 4]
+    },
+    {
+      "q": "Mentální modely:",
+      "opts": [
+        "Jsou obrazy okolního světa přetransformované do naší mysli.",
+        "Jsou jednou z pěti disciplín modelu učící se organizace.",
+        "Jsou příčinou konfliktů mezi lidmi.",
+        "Zkreslují skutečnost.",
+        "Určují emoce a pocity člověka."
+      ],
+      "correct": [0, 1, 2, 3]
+    },
+    {
+      "q": "Léčka statu quo:",
+      "opts": [
+        "Spočívá v tendenci vyhledávat zejména informace, které potvrzují naše očekávání.",
+        "Spočívá ve fixaci na současný stav.",
+        "Spočívá v přílišném zafixování se na provedený odhad.",
+        "Vysvětluje, proč nejsme ochotni vzdát se věcí, do které jsme již mnoho investovali.",
+        "Spočívá v mínění, že činíme logická, racionální rozhodnutí."
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Laterární (horizontální) komunikační kanál:",
+      "opts": [
+        "Může být vzestupný, nebo sestupný.",
+        "Slouží ke sdělování informací mezi pracovníky na stejné hierarchické úrovni.",
+        "Je často používán ke sdělování neformálních informací.",
+        "Je vždy formálně podporován pracovníky vedení organizace.",
+        "Je sdělování informací mezi pracovníky na různých hierarchických úrovních v organizaci."
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Jaké jsou důvody manažerů nedelegovat?",
+      "opts": [
+        "Obávají se konkurence.",
+        "Jsou pracovití.",
+        "Trpí syndromem nepostradatelnosti.",
+        "Jsou kreativní.",
+        "Chtějí zlepšit svůj time-management."
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "Informaci, že z 20% nejvýznamnějších příčin lze odvodit 80% následků, nazýváme:",
+      "opts": [
+        "Pravidlo 20%.",
+        "Pravidlo 80%.",
+        "Kolbeho pravidlo.",
+        "Paretovo pravidlo.",
+        "Johariho pravdilo."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Brainstorming:",
+      "opts": [
+        "je obvykle minimálně dvoufázový proces",
+        "používá zákaz kritiky při vytváření nápadů",
+        "je dobře použitelný zejména u skupin s dominantním, autoritativním vedoucím",
+        "je technika používaná pro kreativní řešení problémů",
+        "upřednostňuje kvalitu nápadů před jejich množstvím"
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Efekt skupinové polarizace:",
+      "opts": [
+        "znamená, že při rozhodování se ve skupině preferují extrémnější varianty řešení problémů",
+        "způsobuje, že ve skupině jsou nakonec vždy dva hlavní rivalové",
+        "může vycházet ze skupinové konformity",
+        "znamená, že skupina používá stejný \"slang\"",
+        "způsobuje \"ztrátu\" běžných/nevyhraněných argumenty"
+      ],
+      "correct": [0, 2, 4]
+    },
+    {
+      "q": "Jak lze charakterizovat Brainstorming?",
+      "opts": [
+        "Jako techniku kreativního řešení problémů.",
+        "Jako techniku upřednostňující kvantitu odpovědí.",
+        "Jako asertivní techniku.",
+        "Jako techniku upřednostňující kvalitu odpovědí.",
+        "Jako techniku sloužící k prosazení zájmů."
+      ],
+      "correct": [0, 1]
+    },
+    {
+      "q": "Jaká jsou základní pravidla Brainstormingu?",
+      "opts": [
+        "Korekce odpovědí",
+        "Kvantita má přednost před kvalitou",
+        "Rovnost účastníků",
+        "Kvalita má přednost před kvantitou",
+        "Diferenciace"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Podle jakých kritérií by měl být nastaven cíl?",
+      "opts": [
+        "Měl by být specifický.",
+        "Měl by být akceptovaný.",
+        "Měl by být reálný.",
+        "Měl by být termínovaný.",
+        "Měl by být měřitelný."
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Brainwriting:",
+      "opts": [
+        "je vhodnější než brainstorming v případě submisivnějších účastníků",
+        "vyžaduje velmi sebevědomé, dominantní jedince",
+        "spočívá ve vylepšování předem připraveného řešení",
+        "je společně s brainstormingem nástrojem pro kreativní řešení problémů",
+        "je použitelný i u místně dislokovaných skupin řešitelů"
+      ],
+      "correct": [0, 3, 4]
+    },
+    {
+      "q": "O negativním konfliktu hovoříme, když:",
+      "opts": [
+        "Projevuje se snaha zvítězit za každou cenu.",
+        "Lidé si nedůvěřují.",
+        "Výrok jsou podávány formou osobního útoku.",
+        "Jedinci vidí druhé jako konkurenty.",
+        "Více se soustředí na prosazení sebe sama než na práva druhých."
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Proxemika:",
+      "opts": [
+        "obvykle pracuje s pěti zónami podle míry neformálnosti komunikace",
+        "sleduje tzv. zóny, ve kterých se komunikující nacházejí",
+        "je prostředek neverbální komunikace",
+        "sleduje postoje a gesta komunikujících stran",
+        "je vyjádřena vzdálenostmi komunikujících stran"
+      ],
+      "correct": [1, 2, 4]
+    },
+    {
+      "q": "Změnový proces podle J.Kottera má následujících 8 kroků:",
+      "opts": [
+        "Vedoucí tým, Sdílení prvních úspěchů, Delegování, Nová kultura, Pocit naléhavosti, Sdílení vize, Vize a strategie změny, Vytrvání v úsilí,",
+        "Pocit naléhavosti, Nová kultura, Sdílení vize, Vize a strategie změny, Sdílení prvních úspěchů, Vytrvání v úsilí, Vedoucí tým, Delegování",
+        "Nová kultura, Pocit naléhavosti, Sdílení vize, Vize a strategie změny, Sdílení prvních úspěchů, Vytrvání v úsilí, Vedoucí tým, Delegování",
+        "Vedoucí tým, Vize a strategie změny, Nová kultura, Delegování, Pocit naléhavosti, Sdílení vize, Sdílení prvních úspěchů, Vytrvání v úsilí",
+        "Pocit naléhavosti, Vedoucí tým, Vize a strategie změny, Sdílení vize, Delegování, Sdílení prvních úspěchů, Vytrvání v úsilí, Nová kultura"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Jaké jsou typy intrapersonálních konfliktů?",
+      "opts": [
+        "Konflikt tří kladných sil.",
+        "Konflikt mezi kladnou a zápornou silou.",
+        "Konflikt mezi skupinami.",
+        "Konflikt dvou kladných sil.",
+        "Konflikt dvou záporných sil."
+      ],
+      "correct": [1, 3, 4]
+    },
+    {
+      "q": "Co znamená heuristika?",
+      "opts": [
+        "Diverzní přístup k řešení problémů.",
+        "Algoritmický přístup k řešení problémů.",
+        "Jiný název pro personifikaci.",
+        "Výběr variant.",
+        "Technika přímé komunikace."
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Rozhodnost je:",
+      "opts": [
+        "osobnostní rys, který lze relativně snadno změnit výchovou",
+        "proces výběru nejlepšího rozhodnutí",
+        "schopnost ztotožnit se se skupinou vybraným řešením",
+        "je u manažerů vnímána jako profesionální schopnost",
+        "schopnost samostatně vybrat řešení a nést za něj zodpovědnost"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Alternativní otázka:",
+      "opts": [
+        "Vede ke shrnutí informací a k rozhodnutí",
+        "Přináší informace, pomáhá rozmluvit posluchače",
+        "Směřuje, vytváří výjimečnost",
+        "Je vhodná k ujasnění a pochopení",
+        "Vytváří možnost určitého výběru"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Prokrastinace je: (bez záruky)",
+      "opts": [
+        "ztráta času",
+        "synonymum pro označení \"studentův syndrom\"",
+        "chorobné odkládání pracovních úkolů a povinností",
+        "vědomé snižování osobní výkonnostní laťky",
+        "nechuť zvyšovat úsilí a pracovní morálku"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Zpětná vazba musí:",
+      "opts": [
+        "předjímat reakce druhé strany",
+        "být orientovaná na budoucnost",
+        "být věcná a konkrétní",
+        "být vztažená k chování a postojům",
+        "být poskytnuta s časovým odstupem"
+      ],
+      "correct": [1, 2, 3]
+    },
+    {
+      "q": "„Sociální facilitace\" znamená, že:",
+      "opts": [
+        "pouhá přítomnost dalších členů skupiny vede ke snížení pracovního výkonu jedince",
+        "je výhodné, pokud členové skupiny pracují společně",
+        "pouhá přítomnost dalších členů skupiny vede ke zvýšení pracovního výkonu jedince",
+        "jde o jev opačný k sociální inhibici",
+        "dochází k rozptýlení odpovědnosti členů pracovní skupiny"
+      ],
+      "correct": [1, 2, 3]
+    },
+    {
+      "q": "Mezi zásady efektivní porady patří, k.j.:",
+      "opts": [
+        "přijetí nejednoznačných závěrů",
+        "udržování výstižné, stručné a otevřené komunikace",
+        "jasně formulovaný cíl",
+        "rovné příležitosti k vyjádření",
+        "dodržování programu a harmonogramu"
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Šumy v komunikaci:",
+      "opts": [
+        "Nemusí představovat závažný problém.",
+        "Je vždy možné zcela eliminovat.",
+        "Činí porozumění obtížnějším.",
+        "Mohou vznikat z vnějších příčin.",
+        "Mohou být dané osobní zkušeností a rozdíly ve vzdělání."
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Manažer by měl pro zajištění motivovanosti členů týmu:",
+      "opts": [
+        "Vytvářet pozitivní motivační klima.",
+        "Poskytnout pomoc zaostávajícím.",
+        "Řešit ihned nízký výkon a odstranit jeho příčiny.",
+        "Měřit a hodnotit výkony — individuální i skupinové.",
+        "Hodnotit výkon pravidelně."
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Skupinové rozhodování je výhodné, protože:",
+      "opts": [
+        "ve skupině se shromáždí více informací",
+        "pomocí např. brainstormingu lze nalézat nekonvenční řešení",
+        "práce v týmu je sama o sobě motivující",
+        "členové týmu si mohou navzájem korigovat názory",
+        "v týmu existují koalice"
+      ],
+      "correct": [0, 1, 2, 3]
+    },
+    {
+      "q": "Mezi pět stylů zvládání konfliktů patří:",
+      "opts": [
+        "Únikový styl.",
+        "Kompromisní styl.",
+        "Kosmetický styl.",
+        "Kooperativní styl."
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Mezi fáze efektivního vedení hovoru patří: (bez záruky)",
+      "opts": [
+        "Bilanční fáze",
+        "Vstupní fáze",
+        "Objektivistická fáze",
+        "Analytická fáze",
+        "Syntetická fáze"
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Gemba je:",
+      "opts": [
+        "technika řízení „Managing by Objectives\"",
+        "návštěva manažera zaměstnanců na místě výkonu práce",
+        "technika řízení „Managing by walking around\"",
+        "technika řízení „Managing by Remote Control\"",
+        "porada s přímými podřízenými"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Konfrontace v rámci vývoje týmu: (bez záruky)",
+      "opts": [
+        "pomáhá k tvorbě neformálního vůdce a rozdělení dalších rolí",
+        "není nezbytnou součástí vývoje týmu",
+        "znamená, že je tým konfrontován s požadavky, které jsou na něj kladené",
+        "je nezbytnou součástí tvorby, resp. rozvoje týmu",
+        "by měla proběhnout co nejdříve po sestavení týmu"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "Měkké vyjednávání spočívá v: (bez záruky)",
+      "opts": [
+        "Dosažení kompromisu",
+        "Spontánní reakci bez přípravy",
+        "Stanovení cílů a strategie vyjednávání",
+        "Získání výhody na úkor druhé strany za každou cenu",
+        "Neústupnosti od předem stanoveného minimálního zisku"
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "Delegování je charakterizováno následovně:",
+      "opts": [
+        "manažer musí delegovat nepříjemné administrativní věci, protože ho zdržují od koncepční práce",
+        "delegování je pouhým zadáním úkolů a předáním odpovědností za jejich vykonání",
+        "delegováním manažer snižuje svoji pravomoc a autoritu",
+        "přináší prospěch manažerům i zaměstnancům",
+        "je založené na důvěře, ale i na kontrole"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Rozhodovací proces začíná:",
+      "opts": [
+        "zhodnocením rozhodovací situace",
+        "posouzení variant",
+        "realizací předpokládané varianty",
+        "výběrem kritérií",
+        "výběrem variant"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Neverbální komunikace:",
+      "opts": [
+        "je použitelná pouze při komunikaci \"tváří v tvář\"",
+        "se uplatňuje zejména při nutnosti domluvit se cizí řečí, kterou dostatečně neovládáme",
+        "tvoří marginální část informací, které z komunikace získáváme",
+        "tvoří podstatnou část informací, které z komunikace získáváme",
+        "slouží obvykle k prezentování pocitů, emocí a postojů"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Hlavní rozdíl manažera od lídra je v tom, že manažer:",
+      "opts": [
+        "vede pravidelné porady",
+        "vymýšlí strategickou vizi společnosti a motivuje lidi, aby ho následovali",
+        "zajímá se jen o koncepční práci",
+        "realizuje změnové programy",
+        "dává lidem pravidelnou zpětnou vazbu"
+      ],
+      "correct": [0, 3, 4]
+    },
+    {
+      "q": "Menší rozhodnost manažera:",
+      "opts": [
+        "Je vnímána spíše negativně.",
+        "Je vnímána spíše jako projev solidarity s podřízenými.",
+        "Je vhodná zejména u autokraticky řízených organizací.",
+        "Může být někdy kompenzována rozhodností jeho pracovního týmu.",
+        "Může někdy být kompenzována delegováním úkolu."
+      ],
+      "correct": [0, 3, 4]
+    },
+    {
+      "q": "Mezi opatření proti manipulaci patří:",
+      "opts": [
+        "Vyprávět manipulátory podrobně o svých záležitostech.",
+        "Žádat zprostředkovávání mezi různými subjekty.",
+        "Nereagovat na nejasně formulovanou žádost.",
+        "Dělat si poznámky.",
+        "Vítat lichotky."
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Součástmi rozhodovacího procesu jsou:",
+      "opts": [
+        "situační analýza",
+        "hodnocení důsledků",
+        "výběr rozhodovatelů",
+        "monitorování a kontrola",
+        "určení odměny za úspěšnou realizaci rozhodnutí"
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Únikový styl zvládání konfliktů:",
+      "opts": [
+        "je žádoucí využít např., když je jedinec v situaci, kdy nemá moc dosáhnout změny",
+        "zahrnuje nesebeprosazovací a nekooperativní přístupy",
+        "používají obvykle lidi, kteří se snaží konfliktům vyhnout",
+        "vede k řešení formou kompromisu",
+        "je vysoce efektivní, pokud jde o zásadní konflikty"
+      ],
+      "correct": [0, 1, 2]
+    },
+    {
+      "q": "Čím je ovlivňováno rozhodování?",
+      "opts": [
+        "Je ovlivňováno jen osobou rozhodovatele.",
+        "Je ovlivňováno jen vnějšími faktory rozhodovací situace.",
+        "Je ovlivňováno pouze stylem přesvědčování manažera.",
+        "Je ovlivňováno nejen osobou rozhodovatele (jeho vůlí a hodnotovým systémem), ale i vnějšími faktory rozhodovací situace (okolnostmi).",
+        "Je ovlivňováno pouze situací v týmu."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Rozhodování na poradách může mít následující podoby:",
+      "opts": [
+        "delegativní (pravomoci se přesunou na experta)",
+        "jednomyslné",
+        "většinové",
+        "autoritativní (rozhodne ten, kdo zodpovídá)",
+        "konzultativní (po vyjádření skupiny rozhodne autorita)"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Agilní přístup k managementu je charakterizován následujícími tvrzeními:",
+      "opts": [
+        "Agilní týmy pracují vždy rychleji",
+        "Agilní přístup maximalizuje hodnotu. dodávky, né množství dodávek",
+        "Agilita nemá pravidla, záleží na sebeorganizujících se týmech",
+        "V agilním přístupu převládá důvěra nad kontrolou",
+        "Agilita je běh na dlouhou trať - nepřináší rychlá řešení ani výsledky"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Autorem motivačně-hygienické teorie je:",
+      "opts": [
+        "Maslow",
+        "Vroom",
+        "Herzberg",
+        "Taylor",
+        "Addams"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Liberální styl vedení znamená:",
+      "opts": [
+        "Pracovníci se plně podílejí na rozhodování, manažer členy tým podrobně informuje a své názory logicky zdůvodňuje",
+        "Manažer nechává jít své pracovníky svou vlastní cestou, neovlivňuje chod skupiny",
+        "Manažer neakceptuje znalosti svých pracovníků",
+        "Manažer akceptuje znalosti svých pracovníků a před rozhodnutím se ptá na jejich názor",
+        "Manažer striktně zadává úkoly a pravidelně je kontroluje"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Kooperativní strategie (výhra - výhra):",
+      "opts": [
+        "se používá zejména tam, kde chtějí zúčastněné strany dlouhodobě spolupracovat",
+        "je v reálných podmínkách nepoužitelná",
+        "patří mezi nejčastější typy vyjednávacích strategií",
+        "spočívá v hledání kompromisního řešení",
+        "je jednou z možných vyjednávacích strategií"
+      ],
+      "correct": [0, 4]
+    },
+    {
+      "q": "Osobní zóna je:",
+      "opts": [
+        "Do 50 cm.",
+        "Více než 4 m.",
+        "1m-3m.",
+        "Nad 30 cm.",
+        "50cm-1,5m."
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Klíčová kompetence manažera obsahuje následující komponenty:",
+      "opts": [
+        "znalosti a vědomosti",
+        "měkké a tvrdé dovednosti",
+        "postoje a hodnoty",
+        "dril, askeze a odříkání",
+        "čistý trestní rejstřík"
+      ],
+      "correct": [0, 1, 2]
+    },
+    {
+      "q": "V rámci rozvoje týmu lze identifikovat:",
+      "opts": [
+        "různý počet etap dle typu zastávaných rolí jeho členů",
+        "5 etap (orientace, konfrontace, utváření pravidel, výkonnost, udržení)",
+        "3 etapy (zahájení, rozvoj, udržení)",
+        "různý počet etap v závislosti na počtu členů týmu",
+        "4 etapy (výběr členů, konfrontace, tvorba norem, výběr cílů)"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Efektivní porada má následující pravidlo:",
+      "opts": [
+        "začínáme a končíme včas",
+        "diskutující nepřerušujeme při zabíhání do podrobností",
+        "agendu připravujeme předem",
+        "shrnujeme závěry a úkoly",
+        "nezdržujeme se kontrolou úkolů"
+      ],
+      "correct": [0, 2, 3]
+    },
+    {
+      "q": "Mezi komunikační zlozvyky nepatří:",
+      "opts": [
+        "Tón odpovídající obsahu.",
+        "Značkování, nálepkování.",
+        "Zevšeobecňování, generalizování.",
+        "Skákání do řeči.",
+        "Mlžení a únik od tématu."
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "V komunikaci může být sdělení:",
+      "opts": [
+        "reakcí na předchozí sdělení druhé strany",
+        "ovlivněno šumy",
+        "vyjádřeno jak verbálně tak i neverbálně",
+        "vyjádřeno neverbálně",
+        "vyjádřeno verbálně"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Mezi výhody skupinového rozhodování patří:",
+      "opts": [
+        "Když je problém příliš odborně náročný je přístupný pouze některým členům týmu a ne celé skupině.",
+        "Složení skupiny je příliš heterogenní, členové mají komunikační problémy.",
+        "Ve skupině jsou soustředěny rozdílné zkušenosti zkušenosti a schopnosti, jednotlivec vychází pouze ze svých osobních znalostí.",
+        "Manažer při skupinovém řešení musí brát v úvahu i sociální vazby a vztahy v týmu.",
+        "Členové jsou si podobní a nedochází k interakci."
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Mezi techniky přímé komunikace nepatří:",
+      "opts": [
+        "otevřené dveře",
+        "reakce zpětnou vazbou",
+        "synektika",
+        "protiotázky",
+        "pokažená gramofonová deska"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Jestliže účastníci porady nejsou připraveni, je možné: (bez záruky)",
+      "opts": [
+        "Přerušit poradu na jasně vymezený čas se žádostí, aby si účastníci doplnili informace.",
+        "Sankcionovat viníky a poradu přerušit.",
+        "Mít sdílená a akceptovaná jednací pravidla, která nedovolí osobní spory.",
+        "Odkázat se na pravidla a zesílit důraz v hlase i v jednání.",
+        "Oznámit rizika vzniklá nepřipraveností účastníků, zadat úkoly, vyjasnit sankce a pokračovat."
+      ],
+      "correct": [0, 4]
+    },
+    {
+      "q": "Integrita manažera je definována jako:",
+      "opts": [
+        "dělání věcí v souladu s firemními hodnotami i proti jeho vlastnímu svědomí",
+        "dělání věcí podle jeho svědomí i proti firemním hodnotám",
+        "dilema věrnosti firemním hodnotám nebo sobě sama",
+        "„fair play\"",
+        "celistvost a jednota jeho osobnosti, dovednosti, slib, skutků, etiky a morálky"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Doteky v rámci pracovní komunikace: (bez záruky)",
+      "opts": [
+        "jsou obvykle tím četnější, čím je komunikace neformálnější",
+        "jsou běžnější mezi muži, než mezi ženami",
+        "jsou naprosto nepřípustné",
+        "jsou až na podání ruky při pozdravu, většinou ne zcela vědomé",
+        "se často omezují na podání roky při pozdravu"
+      ],
+      "correct": [0, 4]
+    },
+    {
+      "q": "Nejvyšší míra zastoupení rozhodovacích schopností by měla být:",
+      "opts": [
+        "u pracovníků v oblasti léčiv",
+        "u středního managementu, který často řeší stereotypní úkoly",
+        "u top managementu",
+        "u jakéhokoliv typu manažerů, pokud obvykle řeší stereotypní úkoly",
+        "u manažerů první linie"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Mezi základní chyby na poradách patří:",
+      "opts": [
+        "striktní dodržování harmonogramu",
+        "nejasný program a cíle",
+        "příliš mnoho účastníků",
+        "odbíhání od tématu",
+        "nepřítomnost klíčových účastníků"
+      ],
+      "correct": [1, 2, 3, 4]
+    },
+    {
+      "q": "Kooperativní styl řešení konfliktů:",
+      "opts": [
+        "je mimořádně vhodný pro řešení konfliktů s dlouhodobými obchodními partnery",
+        "může být charakterizován jako řešení výhra - prohra",
+        "může být charakterizován jako řešení výhra - výhra",
+        "často spočívá v hledání příčin konfliktu a tvorbě alternativních řešení",
+        "je vždy spojen s nutností udělat ústupky od optimálního řešení u všech zúčastněných stran konfliktu"
+      ],
+      "correct": [0, 2, 3]
+    },
+    {
+      "q": "Na schůzku je vhodné přijít:",
+      "opts": [
+        "Přesně.",
+        "S předstihem 20 minut.",
+        "S předstihem alespoň 15 minut.",
+        "Kdykoliv kolem stanoveného času.",
+        "Se zpožděním 5 minut."
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Pro efektivní delegování je vhodné zvážit, zda:",
+      "opts": [
+        "má pracovník dostatek času, aby úkol zvládl",
+        "pracovník nemá fyzicky náročné koníčky či záliby",
+        "pracovník má dostatečné kompetence pro plnění úkolu",
+        "pracovník není příbuzný někoho důležitého",
+        "pracovník pochopil, co je jeho úkolem"
+      ],
+      "correct": [0, 2, 4]
+    },
+    {
+      "q": "Písemná komunikace v rámci vnitřní komunikace v organizaci:",
+      "opts": [
+        "má význam pouze u velkých podniků",
+        "nemůže využívat prostředky neverbální komunikace",
+        "spočívá převážně ve sdělování neformálních informací",
+        "probíhá většinou formou oběžníků, e-mailů nebo oznámení na vývěskách",
+        "je obvykle snadno skladovatelná"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Při využití nátlakové techniky partnera \"Nemám jinou možnost\": (bez záruky)",
+      "opts": [
+        "Partner zatajuje informace.",
+        "Se partner snaží spolupracovat.",
+        "Se partner snaží druhého obměkčit.",
+        "Se partner snaží dostat druhou stranu do časového presu.",
+        "Se partner snaží partnera zastrašit svou převahou."
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Dobře vedený rozhovor:",
+      "opts": [
+        "Obsahuje zpětné a dopředné vazby.",
+        "Hodnotí.",
+        "Má jasný výstup.",
+        "Je konkrétní.",
+        "Neobsahuje dopředné vazby."
+      ],
+      "correct": [0, 2, 3]
+    },
+    {
+      "q": "Sociální lenost: (bez záruky)",
+      "opts": [
+        "je protikladem sociální inhibice",
+        "je přesným protikladem sociální facilitace",
+        "vysvětluje, proč je výkon skupiny někdy nižší, než by byl součet individuálních výkonů jejich členů",
+        "je často zodpovědná za výhodnost skupinové práce oproti práci jednotlivců",
+        "je termín, kterým se popisuje neochota navazovat skupinové vztahy"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Skupinové myšlení je:",
+      "opts": [
+        "Pozitivní jev, který je potvrzením dobrého fungování týmu.",
+        "Nutnost potlačit své názory ve prospěch skupinového konsensu.",
+        "Negativní jev, který by se neměl v týmu vyskytovat.",
+        "Pozitivní jev, který je potvrzením dobrého manažera.",
+        "Skupinová polarizace."
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Vyberte správné (á) tvrzení:",
+      "opts": [
+        "v rámci rozvoje týmu lze pozorovat několik etap",
+        "v pracovní skupině je obvykle více neformálních vazeb než v týmu",
+        "pracovní tým je obvykle vnitřně provázanější než pracovní skupina",
+        "tým lze vytvořit jmenováním jeho členů a další rozvoj je zbytečný",
+        "pracovní tým má formálně lépe propracovanou strukturu než pracovní skupina"
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "V rámci vývoje konfliktu:",
+      "opts": [
+        "lze obvykle identifikovat etapu racionalizace",
+        "je vždy nevhodné řešit konflikt jeho ignorováním, neřešením",
+        "lze obvykle pozorovat několik na sebe navazujících etap",
+        "lze obvykle pozorovat etapu polarity",
+        "obvykle není možné pozorovat žádné definovatelné etapy"
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Úkolem facilitátora je:",
+      "opts": [
+        "spíše rozhodovat, než vyjednávat",
+        "vyřešit problém na základě zkušenosti facilitátora",
+        "pomoci týmu identifikovat postup k dosažení cíle",
+        "spíše sdělovat, než se vyptávat",
+        "hlídat čas schůzky"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Rysy úspěšné týmové práce jsou např.:",
+      "opts": [
+        "synergický efekt činnosti členů týmu",
+        "dělba práce uvnitř týmu",
+        "neformální vztahy mezi členy týmu",
+        "specifický systém odměn a trestů uvnitř týmu",
+        "společný cíl, resp. cíle všech členů týmu"
+      ],
+      "correct": [0, 1, 2, 4]
+    },
+    {
+      "q": "Kvalitní manažer:",
+      "opts": [
+        "může \"nerozumět\" okrajovým aspektům řešené problematiky",
+        "může nerozumět i zásadním aspektům svého oboru, pokud je obklopen profesionály",
+        "nesmí nikdy připustit, že nezná vše o probíraném problému",
+        "nesmí nic rozhodovat bez předchozí důkladné analýzy",
+        "musí mít minimálně středoškolské vzdělání"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Týmová spolupráce je důležitá, protože:",
+      "opts": [
+        "realizuje společnou pozitivní synergii členů týmu",
+        "je zaměstnáno více lidí na jednom úkolu",
+        "schopnost spolupráce je nám vrozená",
+        "motivace se zvyšuje - jeden motivuje druhého",
+        "tým je jako rodina, ve které se všichni mají rádi a sdílejí společné hodnoty"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Manažer se zaměřuje spíše na:",
+      "opts": [
+        "charisma, než autoritu",
+        "stabilitu, než změnu",
+        "logiku, než intuici",
+        "koučink a facilitaci, než na kontrolu úkolů",
+        "budoucnost, než současnost"
+      ],
+      "correct": [1, 2]
+    },
+    {
+      "q": "Technikou vyjednávání je:",
+      "opts": [
+        "sarkasmus",
+        "zahlcování nepodstatnými informacemi",
+        "nejlepší a minimální alternativa",
+        "tzv. distributivní vyjednávání",
+        "tzv. integrativní vyjednávání"
+      ],
+      "correct": [0, 1, 2, 3, 4]
+    },
+    {
+      "q": "Týmová spolupráce:",
+      "opts": [
+        "bývá pro firmu výhodnější než společná práce izolovaných jedinců",
+        "je založená na existenci společného cíle skupiny",
+        "je dostačující benefit, takže tým již není nutné stimulovat např. odměnami",
+        "není možná, pokud mají spolupracovat lidé různých charakterů či odborností",
+        "se vyznačuje zcela bezkonfliktní komunikací"
+      ],
+      "correct": [0, 1]
+    },
+    {
+      "q": "Jednotlivé role v týmu:",
+      "opts": [
+        "nebývají předem formálně definovány",
+        "musí být předem formálně definovány",
+        "nesmí být předem formálně definovány",
+        "mohou být předem formálně definovány",
+        "bývají předem formálně definovány"
+      ],
+      "correct": [3, 4]
+    },
+    {
+      "q": "Mezi druhy porad nepatří:",
+      "opts": [
+        "Formální porada.",
+        "Řešitelská porada.",
+        "Motivační porada.",
+        "Operativní porada.",
+        "Informativní porada."
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Mezi formy komunikace patří:",
+      "opts": [
+        "komunikace pasivitou",
+        "skrytá komunikace",
+        "verbální komunikace",
+        "neverbální komunikace",
+        "komunikace činem"
+      ],
+      "correct": [2, 3, 4]
+    },
+    {
+      "q": "Ishikavův diagram (graf) se objevuje v literatuře i pod názvy:",
+      "opts": [
+        "rozhodovací diagram",
+        "diagram rybí kosti",
+        "diagram důsledků a problémů",
+        "diagram příčin a následků",
+        "diagram předpokladů"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Mezi nevýhody skupinového rozhodování patří:",
+      "opts": [
+        "skupinové rozhodování je časově náročné",
+        "potlačování cizích názorů v případě homogenní skupiny",
+        "není vždy možné identifikovat autora finálního nápadu",
+        "v rámci skupiny existují sociální vazby",
+        "neobjektivnost, pokud je skupina příliš homogenní"
+      ],
+      "correct": [0, 1, 4]
+    },
+    {
+      "q": "Asertivní komunikace:",
+      "opts": [
+        "využívá např. techniku \"pokaženého výtahu\"",
+        "je otevřená komunikace zaměřená proti manipulaci",
+        "by se měla používat k prosazení všech svých požadavků",
+        "je obvykle součástí běžné komunikace",
+        "je použitelná pro zdravé sebeprosazování"
+      ],
+      "correct": [1, 4]
+    },
+    {
+      "q": "Interní koučink:",
+      "opts": [
+        "aplikuje manažer v rámci každodenní praxe",
+        "je náročnější, než řízení pomocí příkazů a delegování úkolů",
+        "je situace, kdy manažer přijíždí za koučem",
+        "pomáhá k rozvoji koučovaných zaměstnanců",
+        "je situace, kdy kouč přijede přímo do podniku"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "Mezi chyby v aktivním naslouchání patří:",
+      "opts": [
+        "Netečnost.",
+        "Přílišné soustředění se.",
+        "Nadřazenost posluchače.",
+        "Koncentrace na více informací.",
+        "Angažovanost."
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "Vertikální komunikační kanál:",
+      "opts": [
+        "obvykle nemívá formální podporu vedení",
+        "může být v organizacích vzestupný i sestupný",
+        "je sdělováním informací mezi pracovníky na stejné hierarchické úrovni v organizaci",
+        "bývá používán převážně pro neformální sdělení",
+        "je v organizaci vždy pouze sestupný (od nadřízených k podřízeným)"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Mezi jednotlivé fáze vyjednávacího procesu patří:",
+      "opts": [
+        "diskuze",
+        "ukončení",
+        "dohoda",
+        "příprava",
+        "návrh"
+      ],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "q": "Pokud je jako styl vedení užíván styl participativní:",
+      "opts": [
+        "Manažer odmítá kritiku svého vlastního postupu.",
+        "Manažer vítá kritiku svého vlastního postupu.",
+        "Členové skupiny se podílejí na rozhodování.",
+        "Manažer svolává členy týmu, aby jim oznámil své rozhodnutí.",
+        "Manažer vysvětluje skupině své záměry a situaci."
+      ],
+      "correct": [1, 2, 4]
+    },
+    {
+      "q": "Optimální velikost týmu:",
+      "opts": [
+        "je obvykle 5-15 členů",
+        "je obvykle 12 členů",
+        "souvisí s charakterem osobnosti členů",
+        "je 15 - 30 členů",
+        "je minimálně osm členů, aby bylo možné „obsadit\" všechny týmové role"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "V rámci proxemiky rozlišujeme následující typy zón:",
+      "opts": [
+        "Intimní zóna.",
+        "Sociální zóna.",
+        "Speciální zóna.",
+        "Veřejná zóna.",
+        "Obecná zóna."
+      ],
+      "correct": [0, 1, 3]
+    },
+    {
+      "q": "Pro kvalitní prezentaci je vhodné:",
+      "opts": [
+        "snažit se dodržovat bonton",
+        "naslouchat publiku",
+        "používat ironii",
+        "používat sarkasmus",
+        "poskytovat komplexní řešení"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Úkolem kouče je: (bez záruky)",
+      "opts": [
+        "přispívat vlastní zkušeností v procesu koučování",
+        "určit, co má koučovaný udělat",
+        "ptát se proč?",
+        "pomoci realizovat potenciál a cíle koučovaného",
+        "vést přátelský rozhovor s koučovaným"
+      ],
+      "correct": [0, 3, 4]
+    },
+    {
+      "q": "Mezi podvědomé tendence v hodnocení patři:",
+      "opts": [
+        "znaky společenského postavení",
+        "sympatie",
+        "první dojem",
+        "vhodná komunikace",
+        "porovnávání se standardy"
+      ],
+      "correct": [0, 1, 2]
+    },
+    {
+      "q": "Delegovat úkoly by manažer měl za předpokladu:",
+      "opts": [
+        "jasně stanovených pravidel včas - s dodatkem času na řešení",
+        "s odpovídající podporou",
+        "v souladu s pracovními předpoklady zúčastněných",
+        "na nejnižší možnou míru (princip subsidiarity)",
+        "že chce prověřit schopnosti podřízených"
+      ],
+      "correct": [0, 1, 2, 3]
+    },
+    {
+      "q": "Jaké jsou role v týmu? (otázka z komentářů, bez záruky)",
+      "opts": [
+        "Inovátor",
+        "Syntetik",
+        "Analytik",
+        "Rozdělovač",
+        "Všudybyl"
+      ],
+      "correct": [0, 2, 4]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Prezentace",
+      "q": [39, 40, 77, 95, 186]
+    },
+    {
+      "name": "Porady a facilitace",
+      "q": [31, 32, 64, 96, 97, 120, 146, 151, 155, 157, 166, 174]
+    },
+    {
+      "name": "Motivace, hodnocení a koučink",
+      "q": [10, 20, 48, 57, 58, 108, 122, 140, 179, 187]
+    },
+    {
+      "name": "Efektivní tým a spolupráce",
+      "q": [25, 35, 42, 49, 59, 60, 72, 86, 88, 89, 167, 169, 172]
+    },
+    {
+      "name": "Asertivita a manipulace",
+      "q": [14, 15, 56, 71, 75, 134, 178]
+    },
+    {
+      "name": "Neverbální komunikace",
+      "q": [43, 46, 68, 111, 131, 143, 153, 185]
+    },
+    {
+      "name": "Delegování",
+      "q": [51, 52, 78, 87, 102, 129, 158, 189]
+    },
+    {
+      "name": "Rozhovor, naslouchání, zpětná vazba",
+      "q": [4, 30, 41, 50, 116, 118, 125, 150, 161, 180]
+    },
+    {
+      "name": "Tým: sestavení, vývoj a role",
+      "q": [8, 27, 28, 36, 37, 85, 92, 127, 145, 164, 173, 184, 190]
+    },
+    {
+      "name": "Styly vedení, změna a čas",
+      "q": [21, 63, 80, 81, 84, 112, 117, 126, 139, 141, 183]
+    },
+    {
+      "name": "Manažer, jeho role a osobnost",
+      "q": [1, 2, 3, 7, 11, 16, 29, 62, 82, 99, 132, 144, 152, 168, 170]
+    },
+    {
+      "name": "Komunikace v organizaci",
+      "q": [5, 6, 13, 19, 24, 79, 91, 93, 101, 121, 147, 148, 159, 175, 181]
+    },
+    {
+      "name": "Vyjednávání",
+      "q": [55, 66, 128, 142, 160, 171, 182]
+    },
+    {
+      "name": "Skupinové rozhodování",
+      "q": [45, 54, 83, 94, 105, 123, 138, 149, 163, 177]
+    },
+    {
+      "name": "Rozhodování a rozhodovací léčky",
+      "q": [33, 34, 67, 73, 76, 100, 114, 115, 130, 133, 135, 137, 154]
+    },
+    {
+      "name": "Konflikty a jejich řešení",
+      "q": [17, 22, 38, 65, 69, 70, 74, 90, 110, 113, 124, 136, 156, 165]
+    },
+    {
+      "name": "Kreativní techniky a delfská metoda",
+      "q": [12, 23, 61, 98, 103, 104, 106, 107, 109, 176]
+    },
+    {
+      "name": "Vnímání, skupinové jevy a transakční analýza",
+      "q": [9, 18, 26, 44, 47, 53, 119, 162, 188]
+    }
+  ],
+  "openQuestions": [
+    "Vysvětlete termín mediace, průběh mediace a charakterizujte roli mediátora.",
+    "Jaké znáte manažerské techniky? Vysvětlete brainstorming a delfskou metodu, charakterizuje delegování.",
+    "Popište, co je to vyjednávání, uveďte, jaký je proces vyjednávání a charakterizujte roli vyjednavače.",
+    "Popište manažerské rozhodování a pyramidu rozhodování.",
+    "Jaké personální činnosti zajišťuje manažer při řízení lidských zdrojů v týmu, popište tyto činnosti.",
+    "Vedení porad - popište přípravu, úvod a závěr porady",
+    "Popište proces řízení pracovních týmů.",
+    "Jaké faktory ovlivňují proces komunikace?",
+    "Styly vedení pracovníků a jejich charakteristika",
+    "Definujte konflikt, popište proces konfliktu a charakterizujte, jaká je role manažera při řešení konfliktů.",
+    "Charakterizujte prezentační dovednosti a vysvětlete, jak by mela vypadat příprava, průběh a závěr prezentace.",
+    "Vysvětlete, co je to situační management a charakterizuje situační styly vedení",
+    "Popište prvky rozhodování a charakterizujte je.",
+    "Definujte komunikaci a vysvětlete a charakterizujte komunikační dovednosti manažera",
+    "Jaké jsou modely managementu změn. Charakterizujte.",
+    "Vysvětlete, co je to leadership a vymezte rozdíl mezi manažerem a lídrem.",
+    "Definujte kompetence. Jaké kompetence by měl mít manažer?",
+    "Charakterizujte úkoly manažera při vedení týmů, jeho roli a činnosti."
+  ]
+}

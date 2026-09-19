@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.36">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.37">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2335,7 +2335,7 @@ function renderQ() {
     hintEl.innerHTML = `<span></span>${copyBtn}`;
     hintEl.className   = 'q-hint';
   } else {
-    hintEl.innerHTML = `<span class="hint-btn" onclick="S.hintUsed[${n}]=true;renderQ()">Nápověda</span>${copyBtn}`;
+    hintEl.innerHTML = `<span class="hint-btn" onclick="S.hintUsed[${n}]=true;renderQ()">Kolik je správných?</span>${copyBtn}`;
     hintEl.className = 'q-hint';
   }
 
@@ -3021,7 +3021,7 @@ function renderStudy() {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtnStudy}`;
     hintEl.className = 'q-hint done';
   } else {
-    hintEl.innerHTML = `<span class="hint-btn" onclick="S.studyHintUsed[${n}]=true;renderStudy()">Nápověda</span>${copyBtnStudy}`;
+    hintEl.innerHTML = `<span class="hint-btn" onclick="S.studyHintUsed[${n}]=true;renderStudy()">Kolik je správných?</span>${copyBtnStudy}`;
     hintEl.className = 'q-hint';
   }
 
@@ -3416,7 +3416,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.36';
+const APP_VERSION = '9.37';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -1,0 +1,834 @@
+{
+  "id": "inovace",
+  "title": "Inovace",
+  "updatedAt": "2026-09-20",
+  "rubric": "Zkouškový test: 60 min., 12 otázek po 5 bodech + 2 otevřené po 20 bodech, bez pomůcek. K úspěchu je potřeba 51 bodů.",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 60,
+    "openPoints": 40,
+    "passPoints": 51,
+    "questionCount": 12,
+    "openCount": 2
+  },
+  "questions": [
+    {
+      "q": "Tradiční pojetí společenské odpovědnosti firem:",
+      "opts": [
+        "odděluje tvorbu sociální a ekonomické hodnoty",
+        "podmiňuje tvorbu sociální hodnoty tvorbou ekonomické hodnoty",
+        "za prvořadou považuje tvorbu sociální hodnoty",
+        "propojuje tvorbu ekonomické a sociální hodnoty",
+        "podmiňuje tvorbu ekonomické hodnoty tvorbou sociální hodnoty"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Které tvrzení o inovacích je pravdivé:",
+      "opts": [
+        "proces inovace je jedinečný a není možné ho opakovat",
+        "úspěšná inovace je patentována",
+        "úspěšná inovace vyžaduje velké výdaje na výzkum a vývoj",
+        "úspěšná inovace vytváří hodnotu",
+        "inovace se odehrávají pouze v podnikatelském sektoru"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Co obvykle NENÍ charakteristikou inovační organizace?",
+      "opts": [
+        "postupy pro strategický výběr inovačních možností",
+        "husté vnější vazby a sítě",
+        "podpůrné podnikové klima s inovačními pobídkami",
+        "věk firmy – čím starší, tím lepší",
+        "zaujetí managementu pro změnu"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Které z následujících tvrzení je správné?",
+      "opts": [
+        "sociální inovace zahrnují odlišné kroky oproti komerčním inovacím",
+        "empatie je nezbytná a dostačující podmínka úspěšné sociální inovace",
+        "pro úspěch sociální inovace postačuje vytvoření sociální hodnoty",
+        "sociální podnikatel se nezajímá o komerční stránku podnikání",
+        "konflikty mezi komerčními a sociálními cíli podnikání jsou řešitelné"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Investice do impaktu zahrnují:",
+      "opts": [
+        "vytvoření sociálního impaktu a finančního výnosu",
+        "soustředění na finanční výnos",
+        "vytvoření pouze environmentálního impaktu",
+        "vytvoření pouze sociálního impaktu",
+        "soustředění na filantropii"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Pivoting a učení experimentem jsou charakteristické pro:",
+      "opts": [
+        "fázi poklesu",
+        "fázi zralosti",
+        "fázi růstu",
+        "fázi krize",
+        "fázi start-upu"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Mezi výhody skupinové tvořivosti nepatří:",
+      "opts": [
+        "rozmanitost zkušeností",
+        "větší počet nápadů",
+        "více zdrojů pro zkoumání",
+        "groupthink",
+        "různorodost"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Prostředí pro tvořivost SUN zahrnuje:",
+      "opts": [
+        "rychlou reakci",
+        "negativismus",
+        "vyloučení možných cest",
+        "rychlé závěry",
+        "podporu a pochopení"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Která z charakteristik frugálních inovací není pravdivá:",
+      "opts": [
+        "jejich vývoj je nízkonákladový",
+        "jsou převážně zaměřené na inkrementální zlepšení",
+        "nevyžadují nákladný výzkum a vývoj",
+        "cílí na střed nebo základnu pyramidy",
+        "představují zásadní technologické průlomy"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Čtyři faktory mají zásadní vliv na schopnost firmy vyvinout a vytvořit hodnotu díky inovaci. Který z uvedených faktorů mezi ně nepatří?",
+      "opts": [
+        "vládní dotace",
+        "schopnost identifikovat a využít vnější zdroje inovací, zejména mezinárodní sítě",
+        "schopnost investovat do základní vědy a výzkumu",
+        "národní inovační systém, ve kterém firma působí a který zčásti definuje možnosti, jak nakládat s příležitostmi a hrozbami",
+        "síla a tržní pozice firmy v mezinárodním hodnotovém řetězci, který zčásti definuje inovačně založené příležitosti a hrozby"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Která metoda je nejméně používaná firmami při zjišťování informací o inovacích konkurentů?",
+      "opts": [
+        "obrácený inženýring",
+        "analýza patentů",
+        "napodobování",
+        "publikace",
+        "licencování"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Které typy subjektů dosahují vysoký sociální impakt a vytvářejí vysokou business hodnotu:",
+      "opts": [
+        "státní sociální služby",
+        "business s tradiční CSR",
+        "tradiční neziskové organizace",
+        "sociální podnikatelé",
+        "sociální intrapodnikatelé"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Jaké kognitivní dovednosti zahrnuje DNA inovátora?",
+      "opts": [
+        "pozorování",
+        "síťování",
+        "asociace",
+        "kladení otázek",
+        "experimentování"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Co je národní inovační systém?",
+      "opts": [
+        "systém vládních dotací pro inovátory",
+        "síla tržní pozice země díky inovačnosti",
+        "zapojení ekonomiky do mezinárodních sítí",
+        "propojení inovační aktéři v dané zemi",
+        "ekonomická výkonnost země díky inovačnosti"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Kirtonova škála srovnává:",
+      "opts": [
+        "modifikátory a experimentátory",
+        "inovátory a adaptory",
+        "modifikátory a adaptory",
+        "vizionáře a adaptory",
+        "inovátory a vizionáře"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Co NENÍ radikální inovace?",
+      "opts": [
+        "Facebook",
+        "letadlový motor",
+        "integrované obvody",
+        "větší nabídka barev pro VW Brouk",
+        "antibiotika"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Třetí fáze technologického dohánění zahrnuje:",
+      "opts": [
+        "zralé produkty",
+        "radikální inovace",
+        "obrácený inženýring",
+        "hraniční výzkum a vývoj",
+        "kompletní produkční dovednosti/kvalifikace"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Principy průlomového kapitalismu zahrnují:",
+      "opts": [
+        "kreativní účetnictví",
+        "blahobyt vlastníků",
+        "krátkodobý horizont",
+        "blahobyt stakeholderů",
+        "osvědčené business struktury"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Které z následujících pobídek nepatří mezi významné vlivy národního inovačního systému na firemní inovační aktivity?",
+      "opts": [
+        "daňové úlevy pro výzkum a vývoj",
+        "ceny lokálních výrobních vstupů",
+        "patentová ochrana",
+        "lokální investiční aktivity",
+        "lokální přírodní zdroje"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Nejvýznamnější globální investoři do výzkumu a vývoje jsou:",
+      "opts": [
+        "firmy",
+        "nadace",
+        "země",
+        "vlády",
+        "banky"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Minimálně životaschopný produkt je spojen s:",
+      "opts": [
+        "fází osvícení",
+        "fází validace/potvrzení",
+        "brainstormingem",
+        "nástrojem šesti klobouků",
+        "rozvojem osobních dovedností/kompetencí"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Co není součástí tvořivého procesu?",
+      "opts": [
+        "inkubace",
+        "validace",
+        "osvícení/vhled",
+        "vývoj softwaru",
+        "rekognice/příprava"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Firemní společenská odpovědnost znamená, že firma:",
+      "opts": [
+        "se chová odpovědně ke svým akcionářům a dalším stakeholderům",
+        "zlepšuje svoji ekonomickou výkonnost díky filantropii",
+        "se chová odpovědně vůči vnějším stakeholderům",
+        "zvyšuje výdaje na dobročinné aktivity, aby snížila škody na životním prostředí",
+        "zlepšuje společnost díky službám a produktům, které vyrábí a distribuuje"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Cause promotion znamená:",
+      "opts": [
+        "poskytnutí zdrojů pro reklamní kampaně na podporu sociálního tématu",
+        "nabídka darů spojených s prodejem pro specifickou charitu",
+        "vývoj nebo realizaci kampaně na změnu chování pro sociální cíl",
+        "spojení firemních darů s prodejem produktů",
+        "realizaci kampaně na změnu individuálního chování"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Pro zkoumání různých možností, ze kterých mohu volit, je charakteristické:",
+      "opts": [
+        "realismus",
+        "divergentní myšlení",
+        "lineární myšlení",
+        "plánování",
+        "logické myšlení"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Rozhodnutí firmy o lokalizaci a realizaci výzkumu a vývoje závisí na mnoha významných faktorech, který mezi ně nepatří?",
+      "opts": [
+        "význam vnějších zdrojů technických a tržních znalostí, např. technologie, dodavatelé, zákazníci",
+        "dostupnost kvalifikovaných lidských zdrojů",
+        "význam a náklady vnitřních transakcí",
+        "náklady na přesun personálu do nových lokací",
+        "kvalita místní vědy a technologie"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Který předpoklad o trzích v základně pyramidy je správný?",
+      "opts": [
+        "lidé v chudých zemích nezajímají technologie",
+        "trhy v základně pyramidy nemají kupní sílu",
+        "lidé v chudých zemích jsou dostupní zákazníci",
+        "chudé lidi nezajímají značky",
+        "chudé lidi nezajímá kvalita"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Které tvrzení o inovacích je pravdivé?",
+      "opts": [
+        "úspěch inovace závisí nejvíce na skvělém nápadu",
+        "sdílení souborů na internetu je radikální inovace",
+        "úspěch inovace závisí na velikosti výdajů na výzkum a vývoj",
+        "úspěšná inovace vyžaduje patentovanou ochranu",
+        "inovace vyžaduje záblesk geniality"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Pro rozhodnutí, co udělám (jakou možnost zvolím) je charakteristické:",
+      "opts": [
+        "divergentní myšlení",
+        "intuice",
+        "lineární myšlení",
+        "konvergentní myšlení",
+        "imaginace"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Principy managementu soustavné inovace zahrnují:",
+      "opts": [
+        "stabilní kapacity",
+        "dynamické kapacity",
+        "ad hoc přístup",
+        "důraz na vedení organizace",
+        "uzavřenou organizaci"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Mezi důvody neúspěchu modelu CSR 1.0 patří:",
+      "opts": [
+        "významný ekonomický efekt",
+        "součást jádrového businessu",
+        "významný efekt změn",
+        "inkrementalita efektů",
+        "zásadní role CSR"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Jaký typ inovace je zavedení objednávacího systému pro pacienty, který snižuje čekací dobu?",
+      "opts": [
+        "produktu",
+        "procesu",
+        "pozice",
+        "paradigmatu",
+        "nic z uvedeného"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Mezi nástroje podpory tvořivosti nepatří:",
+      "opts": [
+        "rozvoj technik tvořivého myšlení",
+        "rozvoj skupinové tvořivosti",
+        "rozvoj prodejních dovedností",
+        "rozvoj prostředí pro tvořivost",
+        "rozvoj osobních dovedností"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Porterova-Kramerova sdílená hodnota znamená:",
+      "opts": [
+        "vytvoření sociální a tím i ekonomické hodnoty",
+        "vytvoření ekonomické a tím i sociální hodnoty",
+        "solidaritu při rozdělování bohatství",
+        "podřízení ekonomické hodnoty sociální hodnotě",
+        "podřízení sociální hodnoty ekonomické hodnotě"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Mezi principy radikálního managementu nepatří: (bez záruky)",
+      "opts": [
+        "překážky jsou komunikovány otevřeně a vícesměrně",
+        "iterace představuje mechanické opakování stanovených postupů",
+        "soustředění na zákazníka vede k sebeorganizujícím se týmům",
+        "prvořadým úkolem je splnění předepsaných výrobních postupů",
+        "zlepšování práce týmů je řízeno managementem"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Které tvrzení o globalizaci inovací není pravdivé: (bez záruky)",
+      "opts": [
+        "technologie a inovace jsou obtížně přenositelné mezi regiony nebo firmami",
+        "inovace realizují pouze vyspělé země",
+        "pozice firem v národním hodnotovém řetězci mohou omezit jejich schopnosti využití inovací",
+        "technologie a inovace jsou globálně rovnoměrně rozděleny",
+        "různá národní prostředí ovlivňují schopnost firem přejímat technologie a inovace"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Druhá fáze technologického dohánění zahrnuje:",
+      "opts": [
+        "kompletní produkční kvalifikace/kompetence",
+        "postupnou procesní změnu",
+        "montážní dovednosti",
+        "vývoj a výzkum",
+        "produktovou inovaci"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Které tvrzení o faktorech globalizace inovací je pravdivé?",
+      "opts": [
+        "zahraniční produkce je v průměru inovačnější než domácí produkce",
+        "čím větší podíl zahraniční produkce ve firmě, tím větší podíl zahraničních inovačních aktivit",
+        "firmy z menších zemí mají nižší podíl zahraničních inovačních aktivit",
+        "čím větší podíl vládních dotací, tím větší globalizace inovací",
+        "čím větší podíl zahraniční produkce ve firmě, tím slabší podíl zahraničních inovačních aktivit"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Které tvrzení o tvořivosti je správné?",
+      "opts": [
+        "tvořivost je vyžadována pouze na počátku inovačního procesu",
+        "tvořivost je nevýznamnější faktor úspěchu inovace",
+        "pouze malý počet lidí je schopen tvořivosti",
+        "tvořivost je jiná forma divergentního myšlení",
+        "všichni lidé jsou tvořiví, ale různým způsobem"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Co NENÍ formou inovace?",
+      "opts": [
+        "nový způsob výroby",
+        "nový produkt",
+        "nový byznys model",
+        "množství spotřebovaného benzínu ve firmě",
+        "nový kontext zavedení produktu"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Co není příkladem produktové inovace?",
+      "opts": [
+        "nová verze iPodu",
+        "snížení energetické spotřeby ve výrobě aut",
+        "nová zubní pasta",
+        "počítačově řízené výrobní operace",
+        "nový design auta"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Sociální marketing znamená:",
+      "opts": [
+        "získání významných zdrojů pro sociální téma",
+        "podporu společensky prospěšné změny chování",
+        "důraz na přilákání nových, sociálně orientovaných zákazníků",
+        "věnování stanovené částky z prodeje na charitu",
+        "zvýšení sociálně orientovaných zákaznických transakcí"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Cause related marketing znamená:",
+      "opts": [
+        "zaměření na propagaci a přesvědčovací komunikaci",
+        "spojení darů/příspěvků pro specifickou charitu s prodejem produktů",
+        "podporu fundraisingu a dobrovolníků pro sociální téma",
+        "zvýšení zájmu o sociální témata u zákazníků prostřednictvím reklamy",
+        "přesvědčování zákazníků o podpoře sociálního tématu"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Tradiční management ztrácí výkonnost z důvodu:",
+      "opts": [
+        "poklesu významu angažovaného pracovníka",
+        "vyčerpání zdrojů produktivity",
+        "globalizace hodnotových řetězců",
+        "poklesu významu znalostně založené práce",
+        "oslabení role zákazníka"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Které země patří do skupiny BRIC?",
+      "opts": [
+        "Brazílie, Rusko, Izrael, Čína",
+        "Bolivie, Rusko, Indie, Čína",
+        "Belgie, Rumunsko, Indie, Čína",
+        "Brazílie, Rusko, Indie, Čína",
+        "Belgie, Rakousko, Itálie, Česko"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Jaké je správné pořadí strategií technologického dohánění?",
+      "opts": [
+        "OEM, ODM, OBM",
+        "OBM, ODM, OEM",
+        "OEM, OBM, ODM",
+        "OBM, OEM, ODM",
+        "ODM, OEM, OBM"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Co není inkrementální inovace?",
+      "opts": [
+        "rychlejší cesta vlakem díky lepší signalizaci",
+        "nový střih kabátu",
+        "brambůrky s kuřecí a cibulovou příchutí",
+        "elektrický automobil",
+        "nízkotučný hamburger"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Co není zdrojem strategické výhody díky inovaci?",
+      "opts": [
+        "nové nabídky služeb",
+        "nové nabídky produktů",
+        "růst investic do výzkumu a vývoje",
+        "komplexnost nabídky",
+        "právní ochrana duševního vlastnictví"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Jaká charakteristika vyznačuje anglo-saský systém firemní správy?",
+      "opts": [
+        "technické vzdělání managementu",
+        "investice do problémových firem",
+        "přímá kontrola",
+        "rychlá reakce na radikální inovace",
+        "přímá kontrola"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Která z uvedených cest přejímání zahraničních inovací je nejsnazší?",
+      "opts": [
+        "napodobení produktových a procesních inovací",
+        "získání informací o inovacích konkurence",
+        "obrácený inženýring",
+        "využití znalostí o inovacích z veřejných zdrojů",
+        "replikace produktových a procesních inovací"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Kaizen znamená:",
+      "opts": [
+        "důraz na kvalitu",
+        "respekt k ostatním",
+        "totéž co genchi genbutsu",
+        "soustavné zlepšování",
+        "týmovou práci"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Co NENÍ radikální inovace?",
+      "opts": [
+        "elektrická žárovka",
+        "laser",
+        "knihtisk",
+        "kopírka",
+        "čtyřdvéřové auto"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Firmy mají řadu významných důvodů, proč sledovat vývoj inovačních systémů v jiných zemích, zejména v silných ekonomikách. Který z důvodů mezi ně nepatří? (bez záruky)",
+      "opts": [
+        "úspora nákladů na vlastní výzkum a vývoj",
+        "pochopení a napodobení zahraničních inovačních systémů",
+        "snaha o konkurenci prostřednictvím inovací",
+        "potenciální zdroje zlepšení ve firemním řízení inovací",
+        "využití technologií vytvořených v zahraničních inovačních systémech"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Jaké země jsou označovány za asijské tygry?",
+      "opts": [
+        "Čína, Jižní Korea, Singapur, Tchajwan",
+        "Hongkong, Jižní Korea, Singapur, Malajsie",
+        "Malajsie, Jižní Korea, Singapur, Tchajwan",
+        "Hongkong, Jižní Korea, Singapur, Tchajwan",
+        "Čína, Malajsie, Singapur, Tchajwan"
+      ],
+      "correct": [
+        3
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Typy a formy inovací",
+      "q": [
+        2,
+        16,
+        28,
+        32,
+        40,
+        41,
+        47,
+        51,
+        52
+      ]
+    },
+    {
+      "name": "Tvořivost a inovátor",
+      "q": [
+        7,
+        8,
+        13,
+        15,
+        22,
+        25,
+        29,
+        33,
+        39
+      ]
+    },
+    {
+      "name": "Inovační organizace a management inovací",
+      "q": [
+        3,
+        10,
+        30,
+        35,
+        44,
+        48
+      ]
+    },
+    {
+      "name": "Lean startup, frugální inovace a trhy BOP",
+      "q": [
+        6,
+        9,
+        21,
+        27
+      ]
+    },
+    {
+      "name": "Společenská odpovědnost firem (CSR)",
+      "q": [
+        1,
+        23,
+        24,
+        31,
+        34,
+        42,
+        43
+      ]
+    },
+    {
+      "name": "Sociální inovace a impakt",
+      "q": [
+        4,
+        5,
+        12,
+        18
+      ]
+    },
+    {
+      "name": "Národní inovační systémy a globalizace",
+      "q": [
+        14,
+        19,
+        20,
+        26,
+        36,
+        38,
+        49,
+        53
+      ]
+    },
+    {
+      "name": "Přejímání inovací a technologické dohánění",
+      "q": [
+        11,
+        17,
+        37,
+        45,
+        46,
+        50,
+        54
+      ]
+    }
+  ],
+  "openQuestions": [
+    "V čem spočívá fáze adopce inovačního procesu a uveďte příklad jejího vyhodnocení.",
+    "Popište základní rozdíl \"tradiční\" a \"nové\" role Businessu.",
+    "Vysvětlete význam regionálních inovačních systémů.",
+    "Strategie modrých oceánů (Blue Ocean Strategy), jaké je její zaměření a pro co se používá?",
+    "V čem spočívá Disruptivní inovace?",
+    "Co je a kdy vzniká trh sociálního kapitálu?",
+    "Čím může být vyvolána potřeba inovace (alespoň 4 různé prvky)?",
+    "Co znamená a jak se aplikuje „Právo na ochranu průmyslového vlastnictví“?",
+    "Charakterizujte stručně Metodu 6 klobouků – užití, princip.",
+    "Charakterizujte Sociální inovaci.",
+    "Charakterizujte optimalizaci, její nedílné součásti z hlediska procesu a uveďte příklady.",
+    "Charakterizujte jednotlivé části partnerského modelu „Triple Helix“.",
+    "Popište konkurenční inovační výhodu (CIA).",
+    "Popište alespoň čtyři zdroje Inovací z vnitřního prostředí"
+  ]
+}

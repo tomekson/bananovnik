@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.46">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.47">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1358,7 +1358,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       <div class="quiz-nav">
         <div style="display:flex;align-items:center;gap:10px;max-width:calc(50% - 60px);overflow:hidden;">
           <button class="btn-ico" onclick="closeStudy()">✕</button>
-          <span style="font-size:17px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Procházení</span>
+          <span id="study-hdr-title" style="font-size:17px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Procházení</span>
         </div>
         <div class="quiz-nav-center" style="display:flex;align-items:center;gap:6px;">
           <button class="btn-ico btn-nav" id="btn-study-prev" onclick="goStudy(-1)">‹</button>
@@ -2967,7 +2967,7 @@ function buildStudyQuestions(qIdx) {
   });
 }
 
-function startStudy(mode, qIdx, fromSets) {
+function startStudy(mode, qIdx, fromSets, label) {
   if (!S.selectedTest) return;
   const study = mode || cfg.study;          // 'direct' | 'recall'
   const questions = buildStudyQuestions(qIdx);
@@ -2982,8 +2982,10 @@ function startStudy(mode, qIdx, fromSets) {
     studyHintUsed: questions.map(() => false),
     prevScreen: null,
     fromStudySets: !!fromSets,
-    studyLabel: (fromSets && qIdx && qIdx.length) ? studySetsLabel() : null,
+    studyKind: study,
+    studyLabel: label || ((fromSets && qIdx && qIdx.length) ? studySetsLabel() : null),
   };
+  document.getElementById('study-hdr-title').textContent = study === 'recall' ? 'Active recall' : 'Procházení';
   show('screen-study');
   renderStudy();
 }
@@ -3010,8 +3012,10 @@ function openStudyBrowse(mode) {
 function startRecall() {
   if (!S.selectedTest) return;
   if (cfg.setSel.length && cfg.setIdx.length) {
-    studySetsSel = [...cfg.setSel];
-    startStudy('recall', cfg.setIdx, true);
+    const sets = S.selectedTest.sets || [];
+    const names = cfg.setSel.map(i => sets[i] && sets[i].name).filter(Boolean);
+    const label = names.length === 1 ? names[0] : `${names.length} ${names.length <= 4 ? 'témata' : 'témat'}`;
+    startStudy('recall', cfg.setIdx, false, label);
     return;
   }
   openStudyBrowse('recall');
@@ -3184,7 +3188,13 @@ function renderStudy() {
   document.getElementById('btn-study-test').style.display = isRevealed ? '' : 'none';
 
   const mainBtn = document.getElementById('btn-study-main');
-  mainBtn.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Dokončit ↵';
+  if (S.studyKind === 'recall' && !isRevealed) {
+    mainBtn.textContent = 'Odhalit odpovědi ↵';
+    mainBtn.onclick = revealStudy;
+  } else {
+    mainBtn.textContent = n < tot - 1 ? 'Další otázka ↵' : 'Dokončit ↵';
+    mainBtn.onclick = () => goStudy(1);
+  }
 
   document.getElementById('btn-study-prev').disabled = n === 0;
   document.getElementById('btn-study-next').disabled = n === tot - 1;
@@ -3285,6 +3295,11 @@ function goStudy(dir) {
 function closeStudy() {
   const backToSets = !!S.fromStudySets;
   S.studyMode = false;
+  if (backToSets) {
+    document.getElementById('study-sets-heading').textContent =
+      studySetsMode === 'recall' ? 'Active recall' : 'Procházení s odpověďmi';
+    renderStudySets();
+  }
   show(backToSets ? 'screen-study-sets' : 'screen-start');
 }
 
@@ -3459,7 +3474,7 @@ document.addEventListener('keydown', function(e) {
   if (!document.getElementById('screen-study').classList.contains('active')) return;
   if (openDialogEl()) return;
   if (!S.questions || S.cur == null) return;
-  if (e.key === 'Enter')      { e.preventDefault(); goStudy(1); return; }
+  if (e.key === 'Enter')      { e.preventDefault(); document.getElementById('btn-study-main').click(); return; }
   if (e.key === 'ArrowRight') { e.preventDefault(); goStudy(1); return; }
   if (e.key === 'ArrowLeft')  { e.preventDefault(); goStudy(-1); return; }
   if (e.key === 'x' || e.key === 'X') { closeStudy(); return; }
@@ -3584,7 +3599,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.46';
+const APP_VERSION = '9.47';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

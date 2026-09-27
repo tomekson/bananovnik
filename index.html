@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.44">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.45">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -415,7 +415,11 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: var(--card); border-radius: 8px; font-size: 13.5px; line-height: 1.5; color: var(--text); text-wrap: pretty;
 }
 .q-info-box sub { font-size: .72em; }
-.q-info-label { font-weight: 700; color: var(--primary); margin-right: 4px; }
+.q-info-line { margin: 0 0 6px; }
+.q-info-line:last-child { margin-bottom: 0; }
+.q-info-line strong { color: var(--primary); font-weight: 700; }
+.q-info-line-warn { border-top: 1px dashed var(--line2); padding-top: 6px; }
+.q-info-line-warn strong { color: var(--amber); }
 .rq-card > .q-info-box { margin: 0 8px 10px; }
 .btn-copy-q {
   display: inline-block; padding: 4px 10px; border-radius: 6px;
@@ -3514,7 +3518,17 @@ function infoHtml(q) {
   const info = orig && orig.info;
   if (!info) return '';
   const safe = String(info).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  return `<div class="q-info-box"><span class="q-info-label">Info:</span>${glossLabel(safe)}</div>`;
+  const lines = safe.split(/\n+/).map(l => l.trim()).filter(Boolean);
+  const LABELS = ['Pojem', 'Proč', 'Chyták', 'Rozpor'];
+  const rows = lines.map(l => {
+    const m = l.match(/^([^:]{2,12}):\s*(.*)$/);
+    if (m && LABELS.includes(m[1])) {
+      const cls = m[1] === 'Rozpor' ? ' q-info-line-warn' : '';
+      return `<div class="q-info-line${cls}"><strong>${m[1]}:</strong> ${glossLabel(m[2])}</div>`;
+    }
+    return `<div class="q-info-line">${glossLabel(l)}</div>`;
+  });
+  return `<div class="q-info-box">${rows.join('')}</div>`;
 }
 
 function copyQuestion(mode) {
@@ -3570,7 +3584,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.44';
+const APP_VERSION = '9.45';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

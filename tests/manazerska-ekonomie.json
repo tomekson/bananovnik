@@ -202,7 +202,7 @@
       "correct": [
         1
       ],
-      "info": "Zisk (TR-TC) je maximální tam, kde se mezní příjem rovná meznímu nákladu (MR=MC) - do tohoto bodu každá další jednotka přidá k příjmům víc, než stojí na nákladech, za ním už méně."
+      "info": "Pojem: Zisk firmy je rozdíl mezi celkovými příjmy (TR) a celkovými náklady (TC) - firma se snaží tento rozdíl maximalizovat.\nProč: Dokud mezní příjem (MR) převyšuje mezní náklad (MC), vyrobení další jednotky zisk zvyšuje, jakmile MC převýší MR, další jednotka zisk už snižuje - proto je zisk největší přesně tam, kde se MC a MR rovnají.\nChyták: Rovnost ceny a průměrného příjmu (P=AR) nebo příjmu a nákladů (AR=AC) maximum zisku neurčuje, jen popisuje jiné vztahy - AR=AC třeba znamená nulový zisk, ne jeho maximum."
     },
     {
       "q": "Pokud z monopolisticky konkurenčního odvětví firmy v dlouhém období odcházejí, poptávková křivka po produkci jedné firmy se:",
@@ -216,7 +216,7 @@
       "correct": [
         0
       ],
-      "info": "Když firmy odcházejí, zůstává méně substitutů, takže poptávka zbývající firmy roste (posun doprava) a je méně citlivá na cenu, tedy méně elastická. Odchod firem tak zvyšuje tržní sílu těch, co zůstávají."
+      "info": "Pojem: Poptávková křivka po produkci jedné firmy v monopolistické konkurenci ukazuje, kolik té firmě spotřebitelé koupí při různých cenách jejího diferencovaného produktu.\nProč: Odcházejí-li firmy z odvětví, zbývajícím firmám připadá víc zákazníků - jejich poptávka se posune doprava nahoru. Zároveň mají méně blízkých konkurentů, takže zákazníci hůř najdou náhradu a poptávka je méně citlivá na cenu, tedy méně elastická.\nChyták: Vyšší elasticita by platila při vstupu nových firem (víc substitutů, snazší přechod ke konkurenci), ne při odchodu."
     },
     {
       "q": "Individuální nabídka statku. Pokud vzrostou ceny výrobních vstupů, platí následující tvrzení:",
@@ -231,7 +231,7 @@
         2,
         4
       ],
-      "info": "Vyšší ceny výrobních vstupů zvyšují náklady výroby, takže výrobce je ochoten nabízet dané množství jen za vyšší cenu - křivka nabídky se posouvá nahoru (doleva) a nabídka klesá. Posun nahoru a pokles nabídky jsou tu jeden a týž jev, ne dvě různá tvrzení."
+      "info": "Pojem: Nabídka statku ukazuje, kolik firma při dané ceně nabídne. Vstupy jsou suroviny, práce a další zdroje, které firma na výrobu potřebuje.\nProč: Když vstupy zdraží, výroba stejného množství statku firmu stojí víc, takže při každé ceně nabídne méně - křivka nabídky se posune nahoru (doleva) a nabídka klesne.\nChyták: Nejde o pohyb po křivce kvůli změně ceny statku samotného, ale o posun celé křivky, protože se mění náklady výroby, ne cena výstupu."
     },
     {
       "q": "Ekonomický statek je ten, který:",
@@ -245,7 +245,7 @@
       "correct": [
         1
       ],
-      "info": "Ekonomický statek musí být vzácný (omezené množství), užitečný a navíc mít nenulovou cenu - jen tak vzniká na trhu směna za peníze. Statek jen vzácný a užitečný, ale bez ceny, ekonomickým statkem není."
+      "info": "Pojem: Ekonomický statek je věc nebo služba, kterou lidé chtějí, ale je jí méně, než by chtěli spotřebovat - proto má cenu. Opakem je volný statek, třeba vzduch, kterého je dost pro všechny zdarma.\nProč: Aby byl statek ekonomický, musí být užitečný, vzácný (omezené množství) a vyrobený z omezených zdrojů - z toho plyne, že má i nenulovou cenu, protože si ho někdo musí za náklady vyrobit a prodat.\nChyták: Odpovědi bez podmínky nenulové ceny vynechávají znak, který ekonomický statek odlišuje od volného - vzácnost a užitečnost samy o sobě cenu nezaručí."
     },
     {
       "q": "Firma maximalizující obrat, oproti firmě maximalizující zisk zpravidla:",
@@ -260,7 +260,7 @@
         1,
         2
       ],
-      "info": "Firma maximalizující obrat vyrábí a prodává víc než firma maximalizující zisk, a aby to odbyt unesl, musí jít s cenou dolů. Firma maximalizující zisk zastaví produkci dřív, tam kde MR=MC."
+      "info": "Pojem: Maximalizace obratu (příjmů) znamená, že firma necílí na co nejvyšší zisk, ale na co nejvyšší celkové tržby (TR) z prodeje.\nProč: Aby firma na nedokonale konkurenčním trhu prodala víc kusů, musí snížit cenu - proto oproti maximalizaci zisku prodává větší objem produkce za nižší cenu.\nChyták: Nejde o to, že by prodávala za vyšší cenu nebo menší objem - to by naopak odpovídalo spíš maximalizaci zisku, ne obratu."
     },
     {
       "q": "Pokud výnos z výrobních produktů roste proporcionálně s růstem rozsahu jejich zapojení do výroby, hovoříme o",
@@ -274,7 +274,7 @@
       "correct": [
         4
       ],
-      "info": "Když produkce roste stejným tempem jako vstupy, jde o konstantní výnosy z rozsahu - dvojnásobek vstupů dá přesně dvojnásobek produkce. Rostoucí výnosy by znamenaly rychlejší růst produkce, klesající pomalejší."
+      "info": "Pojem: Výnosy z rozsahu popisují, jak se mění produkce, když firma zvýší množství všech výrobních faktorů najednou, třeba zdvojnásobí práci i kapitál - řeší se v dlouhém období.\nProč: Pokud produkce roste stejným tempem jako vstupy, třeba dvojnásobek vstupů dá dvojnásobek výstupu, jde o konstantní výnosy z rozsahu.\nChyták: Rostoucí výnosy by znamenaly, že produkce roste rychleji než vstupy, klesající naopak pomaleji - zde ale platí přesná proporcionalita."
     },
     {
       "q": "Teorie spotřebitele. Pro bod nasycení vždy platí:",
@@ -289,7 +289,7 @@
         1,
         4
       ],
-      "info": "V bodě nasycení je mezní užitek nulový, takže celkový užitek dál neroste a dosahuje maxima. Záporný MU nastává až za tímto bodem, kdy by TU naopak klesal."
+      "info": "Pojem: Bod nasycení je množství statku, po jehož spotřebě už další jednotka nepřidá žádné uspokojení.\nProč: V bodě nasycení je celkový užitek (TU) na svém maximu, protože do té chvíle s každou snědenou jednotkou rostl. Mezní užitek (MU), tedy přírůstek užitku z poslední jednotky, je v tomto bodě nulový - dál už TU neroste.\nChyták: Nulový je mezní užitek, ne celkový - celkový užitek je naopak nejvyšší, jakého spotřebitel vůbec dosáhne."
     },
     {
       "q": "V případě monopolistické konkurence je v odvětví",
@@ -304,7 +304,7 @@
         2,
         4
       ],
-      "info": "Bariéry vstupu jsou v monopolistické konkurenci nízké a snadno překonatelné, proto do odvětví přichází mnoho malých firem - to vede v dlouhém období k nulovému zisku jako u dokonalé konkurence."
+      "info": "Pojem: Monopolistická konkurence je trh s velkým počtem malých firem nabízejících podobný, ale ne identický (diferencovaný) produkt.\nProč: Stejně jako v dokonalé konkurenci je vstup do odvětví volný - nízké bariéry umožňují novým firmám přicházet, dokud zisk v odvětví neklesne na nulu.\nChyták: Nejde o jednu velkou a mnoho malých firem ani o pár velkých - to popisuje spíš oligopol nebo monopol; tady je typicky mnoho firem podobné malé velikosti."
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení: (bez záruky)",
@@ -320,7 +320,7 @@
         2,
         4
       ],
-      "info": "Firmy v konkurenčním lemu jen přebírají cenu vůdce a dominantní firma může mít díky své pozici trvalý zisk. Pozor: klíč tu tvrdí, že poptávka dominantní firmy je méně elastická než tržní - podle učebnice i klíče otázek 86 a 98 je to naopak, elastičtější."
+      "info": "Pojem: Dominantní firma je velká firma s podílem na trhu tak silným, že si sama určuje cenu; konkurenční lem je skupina malých firem na stejném trhu, které tuto cenu jen přebírají, protože samy na cenu nemají vliv.\nProč: Dominantní firma si na své části trhu počíná jako monopol a díky bariérám vstupu si zisk udrží i dlouhodobě; protože firmy lemu prodávají za stejnou cenu, jakou stanoví dominantní firma, žádná z nich nemá důvod nabízet jinak.\nChyták: Cenu nestanovují firmy lemu - naopak ji přebírají.\nRozpor: Škola uznává, že poptávka dominantní firmy je méně elastická než tržní. Podle učebnice je to naopak: vzniká jako tržní poptávka minus nabídka lemu, proto je elastičtější."
     },
     {
       "q": "Vztah mezi monopolem a monopsonem na trhu práce se v ekonomii nazývá:",
@@ -334,7 +334,7 @@
       "correct": [
         4
       ],
-      "info": "Bilaterální monopol nastává, když na straně poptávky stojí jediný zaměstnavatel (monopson) a na straně nabídky jediný subjekt s monopolní silou, například odborový svaz (monopol). Ostatní možnosti kombinují jiné tržní struktury, které pro trh práce s odbory neplatí."
+      "info": "Pojem: Monopol je jediný prodávající, monopson jediný kupující - tady jediný odborový svaz nabízí práci a jediný zaměstnavatel ji poptává.\nProč: Když na obou stranách trhu práce stojí jen jeden subjekt, jde o bilaterální monopol; výsledná mzda pak závisí na tom, čí vyjednávací síla nakonec převládne.\nChyták: Duopol a oligopson popisují víc subjektů na jedné straně trhu, ne situaci jeden proti jednomu na obou stranách zároveň."
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -350,7 +350,7 @@
         2,
         3
       ],
-      "info": "Indiferenční analýza předpokládá klesající MU, možnost výběru mezi statky a schopnost spotřebitele seřadit preference. Měřitelnost užitku mezi předpoklady není - tu ordinalisté odmítají."
+      "info": "Pojem: Indiferenční analýza je způsob popisu spotřebitelských preferencí bez nutnosti měřit užitek v číslech.\nProč: Stačí, že spotřebitel dokáže kombinace statků seřadit podle toho, co preferuje (sestaví preferenční stupnici), že si může vybírat mezi statky a že platí zákon klesajícího mezního užitku, který dává indiferenčním křivkám jejich typický tvar.\nChyták: Měřitelnost užitku je naopak předpokladem opačného, kardinalistického pojetí - ordinalistická indiferenční analýza měřitelnost užitku výslovně nevyžaduje."
     },
     {
       "q": "Indiferenční křivka. Platí následující tvrzení:",
@@ -365,7 +365,7 @@
         1,
         3
       ],
-      "info": "Indiferenční křivka spojuje kombinace statků se stejným TU a její sklon (MRS) je dán poměrem mezních, ne celkových užitků. Kombinace koupitelné za daný důchod znázorňuje rozpočtová přímka, ne indiferenční křivka."
+      "info": "Pojem: Indiferenční křivka spojuje všechny kombinace množství dvou statků, které dávají spotřebiteli stejný celkový užitek.\nProč: Její sklon v každém bodě je dán poměrem mezních užitků obou statků (MU_x/MU_y) - to je totéž jako mezní míra substituce ve spotřebě.\nChyták: Sklon není dán poměrem celkových užitků, ale mezních - a křivka nezachycuje, co si spotřebitel může koupit za svůj důchod (to je linie rozpočtu), ale co mu dává stejné uspokojení."
     },
     {
       "q": "Pokud se jedná o cenově elastickou poptávku platí, že",
@@ -381,7 +381,7 @@
         3,
         4
       ],
-      "info": "U cenově elastické poptávky procentní růst poptávaného množství při poklesu ceny převáží procentní pokles ceny, takže tržby (P×Q) i výdaje spotřebitelů rostou. Růst ceny naopak tržby sníží, ne zvýší."
+      "info": "Pojem: Cenově elastická poptávka znamená, že poptávané množství reaguje na změnu ceny víc než poměrně (elasticita v absolutní hodnotě nad 1).\nProč: Při poklesu ceny elastického statku poptávané množství vzroste natolik, že celkové tržby prodejců (cena krát množství), tedy zároveň výdaje spotřebitelů, vzrostou.\nChyták: U neelastické poptávky by to bylo naopak - pokles ceny by tržby snížil, protože množství neroste dost na kompenzaci nižší ceny."
     },
     {
       "q": "Náklady obětované příležitosti představují hodnotu:",
@@ -396,7 +396,7 @@
         1,
         3
       ],
-      "info": "Obětovaná příležitost je hodnota nejlepší alternativy, kterou firma nezrealizovala, protože zvolila jinou. Protože zvolená možnost byla nejlepší, obětovaná je automaticky druhá nejlepší v pořadí - obě odpovědi popisují totéž."
+      "info": "Pojem: Náklady obětované příležitosti (alternativní náklady) jsou hodnota toho, o co přijdeš, když si vybereš jednu možnost místo jiné - třeba když jdeš do práce místo na brigádu, obětuješ výdělek z brigády.\nProč: Škola uznává, že jde o hodnotu nejlepší reálně dostupné, ale nakonec nevyužité příležitosti, tedy druhé nejlepší alternativy hned za tou, kterou sis vybral.\nChyták: Nejde o nerealizovatelnou příležitost, tu si stejně vybrat nemůžeš, ani o něco, co bylo realizováno - vždy jde o promarněnou, ale reálně dosažitelnou možnost."
     },
     {
       "q": "Pro méněcenné statky bude hodnota koeficientu důchodové elasticity pravděpodobně:",
@@ -410,7 +410,7 @@
       "correct": [
         0
       ],
-      "info": "Méněcenné (inferiorní) statky mají zápornou důchodovou elasticitu - s růstem důchodu jejich poptávané množství klesá, protože spotřebitel přechází na kvalitnější náhrady."
+      "info": "Pojem: Důchodová elasticita poptávky udává, o kolik procent se změní poptávané množství, změní-li se důchod spotřebitele o jedno procento.\nProč: U méněcenných statků poptávka klesá, když důchod roste, a naopak - procentní změny množství a důchodu mají opačné znaménko, takže elasticita vychází záporná.\nChyták: U normálních statků je elasticita kladná, protože množství a důchod rostou nebo klesají společně."
     },
     {
       "q": "Odpisy (amortizace) kapitálových statků představují:",
@@ -427,7 +427,7 @@
         2,
         4
       ],
-      "info": "Odpisy nahrazují opotřebený kapitál, proto je řadíme mezi restituční investice a součást výrobních nákladů, ne mezi investice rozšiřující zásobu kapitálu. Zároveň jsou zdrojem peněz na obnovu vybavení."
+      "info": "Pojem: Odpisy (amortizace) jsou peněžní vyjádření toho, o kolik se opotřebí kapitálové statky firmy, například stroje nebo budovy, za dané období.\nProč: Odpisy nahrazují opotřebený kapitál, proto se jim říká restituční (obnovovací) investice - firma z nich získává zdroje na nákup nových strojů místo dosluhujících a protože souvisí s výrobou, počítají se do nákladů firmy.\nChyták: Odpisy nezvyšují zásobu kapitálu, jen ji udržují na stejné úrovni - růst zásoby kapitálu zajišťují až investice nad rámec odpisů."
     },
     {
       "q": "Firma maximalizující obrat vyrábí ve srovnání s firmou maximalizující zisk:",
@@ -441,7 +441,7 @@
       "correct": [
         2
       ],
-      "info": "Firma maximalizující obrat prodává za nižší cenu vyšší objem produkce, protože vyrábí až do bodu MR=0, zatímco firma maximalizující zisk zastaví dřív, v bodě MR=MC."
+      "info": "Pojem: Firma maximalizující obrat cílí na co nejvyšší celkové příjmy (TR), ne na co nejvyšší zisk jako firma maximalizující zisk.\nProč: Ke zvýšení tržeb musí firma nabídnout víc kusů, a aby je prodala, sníží cenu - proto ve srovnání s firmou maximalizující zisk vyrábí vyšší objem za nižší cenu.\nChyták: Stejný objem, nižší objem nebo vyšší cena neodpovídají mechanismu maximalizace obratu - ten vždy vyžaduje kombinaci vyššího množství a nižší ceny."
     },
     {
       "q": "Mezní míra substituce statku A za statek B vyjadřuje:",
@@ -456,7 +456,7 @@
         3,
         4
       ],
-      "info": "MRS vyjadřuje, kolika jednotkami B je spotřebitel ochoten nahradit jednotku A při zachování stejného TU, a odpovídá sklonu indiferenční křivky. Není to součin mezních užitků ani poloha křivky."
+      "info": "Pojem: Mezní míra substituce ve spotřebě (MRS_C) vyjadřuje, kolika jednotkami jednoho statku je spotřebitel ochoten nahradit jednotku druhého statku, aniž by se změnil jeho celkový užitek.\nProč: Je to zároveň sklon indiferenční křivky v daném bodě - ukazuje směr a míru, ve které je spotřebitel ochoten měnit jeden statek za druhý.\nChyták: Nejde o součin mezních užitků ani o polohu křivky - MRS je poměr (sklon), ne součin ani umístění."
     },
     {
       "q": "Celkový užitek je",
@@ -470,7 +470,7 @@
       "correct": [
         4
       ],
-      "info": "Bez jakékoli spotřeby je uspokojení nulové, TU tedy začíná od nuly. Maximum TU je naopak v bodě nasycení, ne při maximální spotřebě - za ním už MU klesá do záporu."
+      "info": "Pojem: Celkový užitek (TU) je součet uspokojení ze všech dosud spotřebovaných jednotek statku.\nProč: Při nulové spotřebě spotřebitel nezískal žádné uspokojení, takže TU je nulový - křivka TU vždy začíná v počátku.\nChyták: TU není maximální při maximální spotřebě - po bodu nasycení totiž mezní užitek klesne do záporu a TU se spotřebou dalších jednotek naopak snižuje."
     },
     {
       "q": "Posun křivky poptávky po určité komoditě doleva může být způsoben tím, že:",
@@ -484,7 +484,7 @@
       "correct": [
         2
       ],
-      "info": "Pokles důchodu snižuje ochotu kupovat normální statek při každé ceně, poptávka se posune doleva. Zdražení substitutu nebo móda naopak posouvají poptávku doprava, pokles nabídky poptávku vůbec neovlivňuje."
+      "info": "Pojem: Posun celé křivky poptávky (na rozdíl od pohybu po ní) nastává, když se změní něco jiného než cena statku - třeba důchod spotřebitele.\nProč: Pokles důchodu snižuje poptávku po normálním statku při každé ceně, takže se křivka posouvá doleva.\nChyták: Zdražení substitutu nebo zlevnění komplementu poptávku naopak zvyšuje (posun doprava), proto tyto možnosti nesedí."
     },
     {
       "q": "Jestliže se ceny všech nakupovaných statků a služeb v dané ekonomice ztrojnásobí a důchod spotřebitelů také, funkce poptávky po statku Y:",
@@ -498,7 +498,7 @@
       "correct": [
         2
       ],
-      "info": "Poptávka závisí na relativních cenách a reálném důchodu, ne na nominálních číslech. Ztrojnásobí-li se všechny ceny i důchod stejně, kupní síla i vzájemný poměr cen zůstanou stejné, poptávka po Y se nezmění."
+      "info": "Pojem: Poptávková funkce závisí na relativních cenách statků a na reálné kupní síle důchodu, ne na jejich nominální výši.\nProč: Ztrojnásobí-li se stejně všechny ceny i důchod, poměr cen mezi statky i to, kolik si spotřebitel může koupit, zůstává stejné - poptávka po statku Y se proto nezmění.\nChyták: Zdá se, že když všechno vzroste, musí vzrůst i poptávka, ale rozhoduje relativní cena a reálný důchod, ne absolutní čísla."
     },
     {
       "q": "Funkci tržní ceny na trhu kapitálu plní:",
@@ -512,7 +512,7 @@
       "correct": [
         1
       ],
-      "info": "Cenu kapitálu na trhu zapůjčitelných fondů tvoří reálná úroková míra, protože vyrovnává nabídku úspor domácností a poptávku po investicích firem. Nominální úroková míra se od ní liší o inflaci, úrok ani zisk nejsou tržní cenou, jen formou odměny za kapitál."
+      "info": "Pojem: Cenou výrobního faktoru kapitál je úrok - odměna za jeho zapůjčení nebo nájem.\nProč: Inflace znehodnocuje peníze, takže skutečnou cenu kapitálu vyjadřuje reálná úroková míra, tedy nominální míra očištěná o inflaci - ta ukazuje, kolik kapitál firmu doopravdy stojí.\nChyták: Nominální úroková míra inflaci nezohledňuje, takže sama neukazuje skutečnou cenu kapitálu; zisk a nájemné jsou odměny za jiné faktory, ne obecně za kapitál."
     },
     {
       "q": "Firma v monopolistické konkurenci se od firmy v dokonalé konkurenci (obě maximalizují svůj zisk) v dlouhém období odlišuje tím, že:",
@@ -527,7 +527,7 @@
         1,
         4
       ],
-      "info": "Na rozdíl od dokonalé konkurence má firma klesající AR, protože cenu musí snížit, aby prodala víc, a proto v optimu nevyrábí při minimu AC, ale při vyšších průměrných nákladech. Firmy tedy nejsou výrobně efektivní."
+      "info": "Pojem: Průměrný příjem (AR) je příjem na jednotku produkce, tedy vlastně cena; v monopolistické konkurenci je klesající, protože firma při vyšší produkci musí snížit cenu.\nProč: Firma má díky odlišení produktu mírnou monopolní sílu, poptávka po její produkci je klesající, ne vodorovná jako v dokonalé konkurenci - proto na rozdíl od dokonalé konkurence v dlouhodobém optimu nevyrábí při minimu průměrných nákladů, ale při vyšším objemu nákladů na jednotku.\nChyták: Nulový ekonomický zisk v dlouhém období mají obě firmy stejně - to tedy není rozdíl mezi nimi, i když to zní jako specifikum."
     },
     {
       "q": "Posun křivky poptávky vlevo znamená:",
@@ -541,7 +541,7 @@
       "correct": [
         2
       ],
-      "info": "Zlevní-li substitut, spotřebitelé k němu přechází a poptávka po sledovaném statku při každé ceně klesá - křivka se posouvá vlevo. Zdražení substitutu nebo růst důchodu naopak poptávku posouvají vpravo."
+      "info": "Pojem: Substituty jsou statky, které si spotřebitel může navzájem nahrazovat, třeba dvě značky čokolády.\nProč: Zlevnění substitutu ho zatraktivní, spotřebitelé na něj přechází, a poptávka po sledovaném statku proto klesá - křivka se posouvá doleva.\nChyták: Zdražení substitutu působí opačně a růst důchodu u normálního statku poptávku zvyšuje, ne snižuje."
     },
     {
       "q": "Firma v dokonalé konkurenci. Platí následující tvrzení:",
@@ -555,7 +555,7 @@
       "correct": [
         1
       ],
-      "info": "V dlouhém období vstup a výstup firem mění nabídku, dokud se cena nevyrovná minimu AC a zisk nezmizí. Krátkodobě firma může mít zisk i ztrátu, ale volný vstup a výstup ho v dlouhém období vynuluje."
+      "info": "Pojem: Ekonomický zisk je zisk po odečtení i implicitních nákladů (například obětované mzdy podnikatele) - je přísnější než účetní zisk.\nProč: V dlouhém období mohou do dokonale konkurenčního odvětví volně vstupovat nové firmy. Pokud je zisk kladný, firmy přicházejí, nabídka roste, cena klesá, dokud zisk neklesne na nulu.\nChyták: V krátkém období může být zisk kladný, záporný i nulový - firmy ještě nestihly zareagovat vstupem nebo odchodem, proto tvrzení o vždy stejném zisku u krátkého období neplatí."
     },
     {
       "q": "Jestliže je poptávka po určitém zboží cenově neelastická uvnitř určitého cenového rámce, pak celkový příjem z prodeje tohoto zboží při růstu jeho ceny:",
@@ -569,7 +569,7 @@
       "correct": [
         3
       ],
-      "info": "U neelastické poptávky je procentní pokles poptávaného množství menší než procentní růst ceny, takže celkový příjem z prodeje (P×Q) při zdražení roste."
+      "info": "Pojem: Cenově neelastická poptávka znamená, že poptávané množství reaguje na změnu ceny méně než poměrně (elasticita v absolutní hodnotě pod 1).\nProč: Při zdražení neelastického statku klesne poptávané množství jen málo, takže vyšší cena převáží nad mírným poklesem množství a celkový příjem prodejce vzroste.\nChyták: U elastické poptávky by zdražení příjem naopak snížilo, protože množství by kleslo víc, než o kolik cena vzrostla."
     },
     {
       "q": "Pokud jahody a maliny jsou dokonalými substituty, platí, že:",
@@ -585,7 +585,7 @@
         3,
         4
       ],
-      "info": "Dokonalé substituty se liší jen cenou, takže spotřebitel kupuje výhradně levnější z nich a zlevnění jahod odvede poptávku od malin. Růst důchodu zvyšuje poptávku po normálních statcích, tedy i po malinách, když jsou zrovna levnější volbou."
+      "info": "Pojem: Dokonalé substituty jsou statky, které spotřebitel vnímá jako naprosto zaměnitelné, takže kupuje vždy ten levnější.\nProč: Zlevnění jahod je odláká od malin, poptávka po malinách klesá; je-li malina dražší, spotřebitel kupuje jen jahody; růst důchodu zvyšuje poptávku po obou, protože jde o normální statky.\nChyták: Zlevnění jahod nezvyšuje poptávané množství malin, ani poptávku po nich nenechává beze změny - jde o substituty, ne o nezávislé statky."
     },
     {
       "q": "V případě běžného tvaru křivek poptávky a nabídky, platí, že:",
@@ -599,7 +599,7 @@
       "correct": [
         4
       ],
-      "info": "Roste-li nabídka při nezměněné poptávce, křivka nabídky se posune doprava dolů podél stejné poptávkové křivky - nový průsečík má nižší P a vyšší Q. Odpověď o růstu ceny obrací směr posunu nabídky."
+      "info": "Pojem: Nabídka a poptávka jsou křivky vztahu ceny a množství na trhu; jejich průsečík určuje rovnovážnou cenu a množství.\nProč: Když nabídka roste, křivka nabídky se posouvá doprava - při nezměněné poptávce tak při původní ceně vzniká přebytek statku, který tlačí cenu dolů, a při nižší ceně roste poptávané i obchodované množství. Nová rovnováha má nižší cenu a vyšší množství.\nChyták: Někdo čeká, že růst nabídky cenu zvedne - je to naopak, víc statku na trhu cenu snižuje, ne zvyšuje."
     },
     {
       "q": "Firmy na trhu výrobních faktorů",
@@ -613,7 +613,7 @@
       "correct": [
         4
       ],
-      "info": "Na trhu výrobních faktorů firmy vystupují jako poptávající, protože faktory potřebují pro výrobu; nabízejí je domácnosti jako jejich vlastníci. Úroky a rentu jako odměnu za faktory dostávají domácnosti, ne firmy."
+      "info": "Pojem: Na trhu výrobních faktorů (práce, půda, kapitál) nabízejí faktory domácnosti, které je vlastní, a poptávají je firmy, které je potřebují k výrobě.\nProč: Firma faktor poptává, protože ho použije k výrobě statků, jež pak sama nabízí na trhu statků - role se tu oproti trhu statků obracejí.\nChyták: Úrok a renta jsou odměny, které za poskytnutí faktoru dostávají domácnosti, ne firmy, jež faktor najímají."
     },
     {
       "q": "Izokvanta vyjadřuje:",
@@ -627,7 +627,7 @@
       "correct": [
         4
       ],
-      "info": "Izokvanta zachycuje všechny kombinace práce a kapitálu, které vedou ke stejnému objemu produkce - firma po ní může nahrazovat jeden faktor druhým. Nevyjadřuje náklady, to dělá izokosta."
+      "info": "Pojem: Izokvanta je křivka zobrazující všechny kombinace dvou výrobních faktorů, práce a kapitálu, kterými firma vyrobí stejné množství produkce.\nProč: Škola uznává definici založenou na slově stejný objem produkce - to je podstata izokvanty, obdoba indiferenční křivky spotřebitele, jen pro firmu.\nChyták: Neplete se s izokostou, ta ukazuje kombinace faktorů za stejné náklady, ani s tvrzením o různém objemu produkce - to popisuje mapu izokvant, ne jednu izokvantu."
     },
     {
       "q": "Mezní míra technické substituce:",
@@ -641,7 +641,7 @@
       "correct": [
         1
       ],
-      "info": "Mezní míra technické substituce (poměr MP_L a MP_K) udává sklon izokvanty, ne izokosty. Sklon izokosty naopak určuje poměr cen výrobních faktorů (MRES)."
+      "info": "Pojem: Mezní míra technické substituce (MRTS) říká, kolik jednotek kapitálu lze nahradit jednou jednotkou práce při zachování stejné produkce.\nProč: Protože MRTS vyjadřuje tempo náhrady faktorů podél izokvanty, odpovídá právě sklonu (směrnici) izokvanty v daném bodě.\nChyták: Sklon izokosty určuje poměr cen výrobních faktorů, ne MRTS; MRTS taky nevychází ze zákona klesajícího mezního užitku, to je pojem spotřebitele, ale z klesajícího mezního produktu."
     },
     {
       "q": "V případě poptávky:",
@@ -657,7 +657,7 @@
         2,
         4
       ],
-      "info": "Tržní poptávka je součet poptávek všech spotřebitelů, substituční efekt znamená přechod k relativně levnějšímu statku - obě odpovídají definicím z učebnice. Poptávka po normálním statku klesá s cenou; pozor, dokonale elastická poptávka je vodorovná, ne vertikální."
+      "info": "Pojem: Tržní poptávka je součet poptávek všech spotřebitelů po statku. Substituční efekt popisuje, jak spotřebitel při zlevnění statku zvyšuje jeho nákup, protože je teď relativně levnější než ostatní statky.\nProč: U normálních statků poptávané množství s růstem ceny klesá, proto je křivka poptávky klesající.\nChyták: Dokonale elastická poptávka je vodorovná čára, ne vertikální - vertikální je dokonale neelastická poptávka, kterou si studenti pletou."
     },
     {
       "q": "V případě monopolu křivka poptávky odvětví:",
@@ -672,7 +672,7 @@
         1,
         2
       ],
-      "info": "Monopol je jediná firma v odvětví, takže jeho individuální poptávka je zároveň poptávkou celého trhu a splývá s křivkou AR. MR leží pod ní, protože se snižující cenou klesá i příjem z dalších jednotek."
+      "info": "Pojem: Monopol je trh s jedinou firmou, která zásobuje celý trh - proto se jí věnuje individuální poptávka, tedy poptávka po její produkci.\nProč: Protože firma je jediným prodejcem, poptávka po jejím produktu se rovná celé tržní poptávce po statku; a protože cena klesá s množstvím, poptávka splývá s křivkou průměrného příjmu (AR), ne s mezním příjmem (MR), který leží pod ní.\nChyták: Poptávka nemá pozitivní směrnici - klesá jako u každé běžné poptávkové křivky, jen u monopolu se navíc shoduje s poptávkou celého odvětví."
     },
     {
       "q": "Mezi základní charakteristiky dokonalé konkurence patří:",
@@ -689,7 +689,7 @@
         3,
         4
       ],
-      "info": "Dokonalá konkurence má homogenní produkt, mnoho malých firem se stejnou informovaností a volný vstup i výstup - proto v dlouhém období vydělá jen nulový zisk. Firma cenu neovlivňuje, jen ji přebírá z trhu (P=MR=AR)."
+      "info": "Pojem: Dokonalá konkurence je trh s tolika malými firmami, že žádná sama neovlivní cenu, všichni mají stejné informace a nikdo nikomu nebrání vstoupit ani odejít.\nProč: Stejná informovanost, volný vstup a výstup i velký počet prodávajících jsou přímo definiční znaky tohoto modelu; z volného vstupu navíc plyne, že dlouhodobě zisk klesne na nulu.\nChyták: Firma cenu neovlivňuje - je cenovým příjemcem, přebírá ji z trhu, protože její produkce je vůči celému trhu zanedbatelná."
     },
     {
       "q": "Funkce poptávky má rovnici: P = 700 - 2Q. Funkce nabídky má rovnici P = 200 + 2Q. Vláda zavede minimální cenu ve výši 300 Kč za kus. Jaká je díky tomu nerovnováha na trhu: (bez záruky)",
@@ -703,7 +703,7 @@
       "correct": [
         1
       ],
-      "info": "Dosaď P = 300 do obou rovnic: poptávané Q = 200, nabízené Q = 50, chybí 150 ks - nedostatek. Pozor: rovnováha je P = 450, takže cena 300 pod ní by jako minimální cena vůbec nepůsobila; klíč ji počítá jako pevně danou cenu (strop)."
+      "info": "Pojem: Minimální cena (cenový práh) je nejnižší cena, za kterou lze statek prodat - vláda ji zavádí, aby prodejcům zajistila vyšší výnos, například u zemědělských produktů.\nProč: Škola dosadí zadanou cenu 300 Kč přímo do obou rovnic: poptávané množství vyjde 200 ks, nabízené jen 50 ks, rozdíl 150 ks je nedostatek.\nChyták: Přebytek vzniká, když je minimální cena nad rovnováhou - pak nabízené množství převýší poptávané, jak to minimální cena běžně dělá.\nRozpor: Škola uznává nedostatek 150 ks. Podle učebnice ale minimální cena dává smysl jen nad rovnovážnou cenou, tady 450 Kč. Cena 300 Kč je pod rovnováhou, takže by trh reálně žádné omezení nepocítil a obchodovalo by se za rovnovážných 450 Kč a 125 ks."
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",
@@ -717,7 +717,7 @@
       "correct": [
         3
       ],
-      "info": "Méněcenné (inferiorní) statky mají zápornou důchodovou elasticitu - poklesne-li důchod, poptávka po nich roste, protože spotřebitel přechází z dražších normálních statků na levnější náhrady. U normálních statků je to naopak."
+      "info": "Pojem: Méněcenný (inferiorní) statek je takový, po němž poptávka roste, když důchod klesá, a klesá, když důchod roste - třeba levnější náhražka za kvalitnější zboží.\nProč: Při poklesu důchodu si spotřebitel nemůže dovolit kvalitnější statek a přechází na levnější náhražku, takže poptávka po méněcenném statku roste.\nChyták: U normálních statků platí opak - jejich poptávka s poklesem důchodu klesá, ne roste."
     },
     {
       "q": "Maximalizace zisku na základě rovnosti MR a MC je pravidlem:",
@@ -733,7 +733,7 @@
         2,
         4
       ],
-      "info": "Pravidlo MR=MC platí obecně pro maximalizaci zisku v jakékoliv tržní struktuře, tedy i v dokonalé i nedokonalé konkurenci - liší se jen tím, jak se MR a MC odvozují. Neplatí ale pro firmu maximalizující obrat (ta míří na MR=0)."
+      "info": "Pojem: Zlaté pravidlo maximalizace zisku říká, že firma maximalizuje zisk tam, kde se mezní příjem (MR) rovná meznímu nákladu (MC).\nProč: Toto pravidlo neplatí jen pro jeden typ trhu - platí univerzálně pro firmy v dokonalé i nedokonalé konkurenci, tedy pro jakoukoli tržní strukturu, protože všude firma zvyšuje produkci, dokud jí to přináší víc příjmu než nákladu.\nChyták: Pravidlo MR=MC se netýká firem maximalizujících obrat, ty používají MR=0, ani centrálně plánovaných ekonomik, kde ceny a množství neurčuje trh, ale plán."
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -748,7 +748,7 @@
         0,
         1
       ],
-      "info": "Monopol jako jediný nabízející čelí celé klesající tržní poptávce, a proto může volbou množství ovlivnit i cenu, na rozdíl od dokonalé konkurence, kde firma cenu jen přebírá. Bariéry brání vstupu, i krátkodobě může být ztrátový."
+      "info": "Pojem: Monopol je tržní struktura s jedinou firmou, která nemá blízké substituty a čelí bariérám bránícím vstupu konkurentů.\nProč: Protože je jediným dodavatelem, monopol volí zároveň množství i cenu (odvozenou z poptávky po jeho produkci) - v konkurenci by musel cenu jen přejímat z trhu.\nChyták: Několik firem v odvětví nebo volný vstup patří k oligopolu či dokonalé konkurenci, ne k monopolu, který je definován právě jednou firmou a bariérami vstupu."
     },
     {
       "q": "Pokud spotřebitel bude utrácet fixní množství peněz za nákup určitého statku, potom poptávka po tomto statku bude v daném cenovém intervalu:",
@@ -762,7 +762,7 @@
       "correct": [
         0
       ],
-      "info": "Utrácí-li spotřebitel za statek stále stejnou částku bez ohledu na cenu, procentní změna množství přesně kompenzuje procentní změnu ceny - to je definice jednotkové elasticity, výdaje P×Q zůstávají konstantní."
+      "info": "Pojem: Jednotkově elastická poptávka je hraniční případ, kdy procentní změna poptávaného množství přesně odpovídá procentní změně ceny (elasticita rovna jedné).\nProč: Utrácí-li spotřebitel za statek stále stejnou částku bez ohledu na cenu, znamená to, že množství se mění přesně opačně a stejně silně jako cena - to je definice jednotkové elasticity.\nChyták: Dokonale elastická nebo neelastická poptávka jsou extrémy s nekonečnou, respektive nulovou reakcí množství, ne případ konstantních výdajů."
     },
     {
       "q": "Primárními výrobními faktory jsou:",
@@ -776,7 +776,7 @@
       "correct": [
         1
       ],
-      "info": "Práce a půda jsou primárními výrobními faktory, protože jsou produktem přírody. Kapitál je faktorem sekundárním - vzniká lidskou činností, proto možnosti s kapitálem místo půdy neplatí."
+      "info": "Pojem: Primární (prvotní) výrobní faktor vzniká přímo z přírody, bez lidského zásahu.\nProč: Práce a půda jsou dané přírodou, zatímco kapitál je sekundární faktor - vzniká až lidskou činností, například výrobou strojů nebo budov.\nChyták: Každá odpověď, která zahrnuje kapitál, je špatně, protože kapitál je vždy výsledkem předchozí výroby, ne přírodním zdrojem jako práce a půda."
     },
     {
       "q": "Optimum spotřebitele vyjadřuje situace, kdy:",
@@ -793,7 +793,7 @@
         3,
         4
       ],
-      "info": "V optimu se poměr MU/P vyrovná u všech statků a MRS ve spotřebě se rovná MRS ve směně (poměru cen) - to je bod dotyku indiferenční křivky a rozpočtové přímky. MRSE se nerovná nule."
+      "info": "Pojem: Optimum spotřebitele je kombinace statků, při které spotřebitel v mezích svého rozpočtu dosahuje maximálního užitku.\nProč: Nastává tam, kde se sklon indiferenční křivky rovná sklonu linie rozpočtu, tedy MRS_C = MRS_E, a zároveň je poměr mezní užitečnosti k ceně stejný pro všechny statky - jinak by šlo přesunem peněz mezi statky získat víc užitku.\nChyták: MRS_E se v optimu nerovná nule - to by znamenalo, že spotřebitel jeden statek vůbec není ochoten směňovat."
     },
     {
       "q": "Mezní produkt",
@@ -809,7 +809,7 @@
         3,
         4
       ],
-      "info": "Mezní produkt vyjadřuje přírůstek celkové produkce z jedné další jednotky vstupu, proto může být kladný, nulový i záporný a v průběhu výroby i měnit trend (růst, konstantnost, pokles). Maximální je v inflexním bodě produkční funkce, ne při maximální produkci."
+      "info": "Pojem: Mezní produkt (MP) ukazuje, o kolik se zvýší celková produkce, když firma zapojí do výroby jednu jednotku navíc z určitého výrobního faktoru, třeba práce.\nProč: Podle typu produkční funkce může MP nejdřív růst a pak klesat i klesnout pod nulu - proto může nabývat kladných, nulových i záporných hodnot a jeho průběh může být rostoucí, konstantní i klesající.\nChyták: MP není maximální při maximální produkci - naopak, při maximu celkové produkce je MP nulový, protože další jednotka faktoru už produkci nezvyšuje."
     },
     {
       "q": "Podle ordinalistického pojetí teorie užitku se optimum spotřebitele nachází tam, kde: (bez záruky)",
@@ -827,7 +827,7 @@
         3,
         4
       ],
-      "info": "Pozor: klíč prohazuje značení - podle učebnice je MRSc = MUx/MUy (sklon indiferenční křivky) a MRSE = Px/Py (poměr cen), klíč je má obráceně. Podstata optima ale sedí: MRSc = MRSE, tedy dotyk indiferenční křivky a linie rozpočtu se stejným sklonem."
+      "info": "Pojem: Ordinalistické pojetí hledá optimum spotřebitele bez nutnosti měřit užitek číselně, jen srovnáním preferencí.\nProč: Optimum je v bodě, kde se linie rozpočtu dotýká nejvýše položené dosažitelné indiferenční křivky - jejich sklony jsou stejné, tedy MRS_C = MRS_E.\nChyták: Snadno se zamění, který poměr patří ke kterému MRS - spotřeba (MRS_C) souvisí s užitky, směna (MRS_E) s cenami.\nRozpor: Škola uznává MRS_C = P_x/P_y a MRS_E = MU_x/MU_y. Podle učebnice je to obráceně: MRS_C (spotřeba) = MU_x/MU_y je sklon indiferenční křivky, MRS_E (směna) = P_x/P_y je sklon linie rozpočtu. Rovnost MRS_C = MRS_E v optimu platí podle obou verzí."
     },
     {
       "q": "Normální zisk je kvantitativně roven",
@@ -841,7 +841,7 @@
       "correct": [
         0
       ],
-      "info": "Normální zisk se rovná implicitním nákladům - je to minimální výnos, který firmě kompenzuje obětovanou příležitost vlastníka kapitálu a práce. Účetní zisk implicitní náklady neodečítá, proto se s normálním ziskem neshoduje."
+      "info": "Pojem: Normální zisk je minimální odměna, kterou musí firma vydělat, aby se majiteli vyplatilo v podnikání pokračovat - kryje jen náklady obětované příležitosti, nic navíc.\nProč: Implicitní náklady jsou právě náklady obětované příležitosti, třeba mzda, o kterou majitel přišel, když nešel pracovat jinam - normální zisk se jim číselně rovná.\nChyták: Neplete se s účetním ziskem, ten počítá jen s explicitními náklady, ani s celkovými náklady či příjmy, se kterými normální zisk žádnou přímou číselnou rovnost nemá."
     },
     {
       "q": "Pokud jahody a maliny jsou dokonalými substituty, platí, že:",
@@ -857,7 +857,7 @@
         3,
         4
       ],
-      "info": "Změna vlastní ceny jahod mění jen poptávané množství jahod pohybem po křivce, ne celou poptávku. U dokonalých substitutů navíc zlevnění jahod odláká kupce od malin a je-li malina dražší, kupuje se jen levnější jahoda."
+      "info": "Pojem: U dokonalých substitutů platí, že pokles vlastní ceny mění poptávané množství zlevněného statku (pohyb po jeho křivce), zatímco poptávka po substitutu (posun jeho křivky) klesá.\nProč: Zlevnění jahod zvyšuje poptávané množství jahod samotných a zároveň snižuje poptávku po malinách, protože spotřebitelé přechází k levnějším jahodám; je-li malina dražší, kupují se jen jahody.\nChyták: Tvrzení poroste poptávka po jahodách je nepřesné - u vlastního statku jde o poptávané množství, ne o posun poptávky."
     },
     {
       "q": "Má-li být celkový příjem TR firmy maximální, musí být mezní příjem MR:",
@@ -871,7 +871,7 @@
       "correct": [
         0
       ],
-      "info": "TR je maximální tam, kde další prodaná jednotka už nic nepřidá k celkovým příjmům, tedy kde MR=0. Před tímto bodem je MR kladný (TR roste), za ním záporný (TR klesá)."
+      "info": "Pojem: Celkový příjem (TR) je součin ceny a prodaného množství - firma maximalizující obrat chce tuto hodnotu dostat na maximum.\nProč: Dokud je mezní příjem (MR) kladný, další prodaná jednotka TR ještě zvyšuje, jakmile se MR stane záporným, TR už klesá - proto je TR maximální přesně tam, kde je MR nulový.\nChyták: MR rovný jedné nebo v intervalu (0,1) nemá s maximem TR žádnou souvislost - důležitá je jen hranice mezi kladným a záporným MR, tedy bod MR=0."
     },
     {
       "q": "Firma v monopolistické konkurenci. Platí následující tvrzení:",
@@ -886,7 +886,7 @@
         0,
         2
       ],
-      "info": "V krátkém období může firma dosahovat zisku i ztráty stejně jako v dokonalé konkurenci - liší se až v dlouhém období, kdy vstup a výstup firem srazí zisk na nulu."
+      "info": "Pojem: Zisk firmy je rozdíl mezi cenou (respektive celkovými příjmy) a průměrnými náklady na jednotku produkce.\nProč: V krátkém období se firma nestihne přizpůsobit vstupem či odchodem z odvětví, takže může dosahovat zisku i ztráty podle toho, jak cena poměřuje s náklady; teprve v dlouhém období volný vstup a výstup zisk stlačí na nulu.\nChyták: Tvrzení, že v krátkém období nikdy nedosahuje ztráty, i tvrzení, že v dlouhém období může dosahovat zisku, ztráty i nulového zisku, jsou špatně - dlouhodobě končí právě u nulového zisku, ne u všech tří možností."
     },
     {
       "q": "V případě poptávky:",
@@ -902,7 +902,7 @@
         1,
         4
       ],
-      "info": "Tržní poptávka je součet poptávek všech spotřebitelů, substituční efekt znamená přechod k relativně levnějšímu statku - definice z učebnice. Poptávka po normálním statku klesá s cenou. Pozor, dokonale elastická poptávka je vodorovná, ne vertikální."
+      "info": "Pojem: Tržní poptávka je součet poptávek všech spotřebitelů po statku. Substituční efekt popisuje, jak spotřebitel při zlevnění statku zvyšuje jeho nákup, protože je teď relativně levnější než ostatní statky.\nProč: U normálních statků poptávané množství s růstem ceny klesá, proto je křivka poptávky klesající.\nChyták: Pokles ceny substitutu dělá substitut výhodnějším, takže poptávka po sledovaném statku klesá - ne roste, jak tvrdí špatná možnost."
     },
     {
       "q": "Mezi základní charakteristiky dokonalé konkurence patří:",
@@ -919,7 +919,7 @@
         3,
         4
       ],
-      "info": "Charakteristikou je homogenní produkt, volný vstup a výstup, stejná informovanost a mnoho prodávajících, což vede k nulovému zisku v dlouhém období. Produkt je homogenní, přesněji definovaný pojem než obecné „dokonalé substituty“."
+      "info": "Pojem: Dokonalá konkurence je trh s velkým počtem malých firem, dokonalou informovaností a volným vstupem i výstupem z odvětví.\nProč: Volný vstup a výstup, stejná informovanost i velký počet prodávajících patří mezi definiční znaky; z volného vstupu plyne i nulový zisk v dlouhém období.\nChyták: Firmy nevyrábějí dokonalé substituty, ale homogenní (identický) produkt - to je jiný pojem: substituty jsou podobné výrobky různých firem, homogenita znamená, že spotřebitel mezi kusy nerozezná rozdíl."
     },
     {
       "q": "Individuální poptávka. Klesne-li důchod spotřebitele, platí následující tvrzení:",
@@ -933,7 +933,7 @@
       "correct": [
         3
       ],
-      "info": "U normálního statku pokles důchodu poptávku sníží, u méněcenného ji naopak zvýší, protože má zápornou důchodovou elasticitu. Bez znalosti typu statku proto nelze předem říct, jestli poptávka vzroste, nebo klesne."
+      "info": "Pojem: Poptávka po statku roste nebo klesá při změně důchodu podle toho, jestli je statek normální, nebo méněcenný.\nProč: U normálního statku pokles důchodu poptávku sníží, u méněcenného ji naopak zvýší - bez znalosti typu statku proto nelze reakci předem určit.\nChyták: Poptávané množství se mění cenou statku, ne důchodem - tady jde o posun celé křivky poptávky vlivem důchodu, ne o pohyb po křivce."
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení: (bez záruky)",
@@ -949,7 +949,7 @@
         2,
         4
       ],
-      "info": "Firmy v konkurenčním lemu jen přebírají cenu vůdce a dominantní firma může mít díky své pozici trvalý zisk. Pozor: klíč tu tvrdí, že poptávka dominantní firmy je méně elastická než tržní - podle učebnice i klíče otázek 86 a 98 je to naopak, elastičtější."
+      "info": "Pojem: Konkurenční lem je skupina malých firem, které na stejném trhu jako dominantní firma přebírají její cenu, protože samy ji ovlivnit nedokážou.\nProč: Firmy lemu prodávají za stejnou cenu jako dominantní firma, protože ji jednoduše přejímají; dominantní firma díky své tržní síle a bariérám vstupu může dlouhodobě dosahovat kladného zisku.\nChyták: Cenu neurčuje přímo z tržní poptávky, ale z poptávky po vlastní produkci (tržní poptávka minus nabídka lemu).\nRozpor: Škola uznává, že poptávka dominantní firmy je méně elastická než tržní. Podle učebnice je to naopak: jde o zbytkovou poptávku, a ta je elastičtější, protože při vyšší ceně lem nabídne víc a ubere jí zákazníky."
     },
     {
       "q": "V případě monopolu křivka nabídky odvětví:",
@@ -963,7 +963,7 @@
       "correct": [
         0
       ],
-      "info": "Nabídku monopolu nelze sestrojit, protože neexistuje jednoznačný vztah ceny a množství: stejné množství může při jiné poptávkové křivce odpovídat jiné ceně. To platí pro každou nedokonalou konkurenci, nejen monopol."
+      "info": "Pojem: Nabídková křivka ukazuje jednoznačný vztah mezi cenou a nabízeným množstvím.\nProč: U monopolu takový jednoznačný vztah neexistuje - protože poptávka po jeho produkci klesá, stejnému optimálnímu množství (dané průsečíkem MR a MC) může při jiném tvaru poptávky odpovídat jiná cena, a naopak. Proto nabídkovou křivku monopolu nelze sestrojit.\nChyták: Součet individuálních nabídek platí jen tam, kde je víc nabízejících firem - monopol je jediná firma, takže sčítání nedává smysl."
     },
     {
       "q": "Dominantní firma realizuje vůči ostatním firmám na oligopolním trhu:",
@@ -977,7 +977,7 @@
       "correct": [
         4
       ],
-      "info": "Dominantní firma diktuje ostatním firmám cenu, kterou musí přijmout - to je přesně definice cenového vůdcovství, ostatní možnosti popisují jiné, nesouvisející strategie."
+      "info": "Pojem: Cenové vůdcovství znamená, že jedna firma (dominantní) jako první stanoví cenu a ostatní menší firmy (konkurenční lem) ji beze změny přebírají.\nProč: Právě tohle chování - určování ceny jednou firmou, kterou ostatní jen kopírují - je definicí modelu oligopolu s cenovým vůdcem.\nChyták: Cenová diskriminace, cenová válka nebo cenové pirátství popisují jiné situace (rozdílné ceny pro různé zákazníky, agresivní podbízení) - tady jde jen o přejímání jedné společné ceny."
     },
     {
       "q": "Implicitní náklady firmy vyjadřují její:",
@@ -991,7 +991,7 @@
       "correct": [
         0
       ],
-      "info": "Implicitní náklady představují ušlou hodnotu vlastních zdrojů firmy (kapitálu, práce vlastníka) a číselně odpovídají normálnímu zisku. Účetní zisk se počítá jinak - odečítá jen explicitní náklady, proto se liší."
+      "info": "Pojem: Implicitní náklady jsou náklady obětované příležitosti - hodnota toho, o co firma nebo majitel přišli tím, že své zdroje (čas, kapitál) použili v tomto podnikání místo v nejlepší jiné variantě.\nProč: Tyto náklady se navenek nikomu neplatí, ale reálně existují - jejich výše odpovídá normálnímu zisku, tedy minimální odměně, která podnikání ještě ospravedlňuje.\nChyták: Neplete se s účetním ziskem, ten implicitní náklady vůbec nepočítá, ani s ekonomickou ztrátou či záporným ziskem, které vznikají, až když příjmy nepokryjí i tyto náklady."
     },
     {
       "q": "Při rostoucí ceně daného statku",
@@ -1006,7 +1006,7 @@
         2,
         3
       ],
-      "info": "Změna ceny statku mění jen poptávané množství pohybem po téže křivce, neposouvá celou poptávku - proto se posuneme doleva nahoru. O kolik množství klesne, určuje cenová elasticita poptávky."
+      "info": "Pojem: Poptávané množství je konkrétní množství, které spotřebitel koupí při dané ceně. Cenová elasticita říká, o kolik procent se toto množství změní při jednoprocentní změně ceny.\nProč: Čím elastičtější poptávka, tím víc poptávané množství při zdražení klesne - velikost změny tedy závisí na elasticitě, graficky jde o pohyb po nezměněné křivce doleva nahoru.\nChyták: Zdražení nemění polohu křivky poptávky (žádný posun doprava) - mění se jen bod na křivce, tedy poptávané množství."
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -1023,7 +1023,7 @@
         2,
         3
       ],
-      "info": "Indiferenční analýza předpokládá, že spotřebitel zná ceny statků, platí klesající MU, může si vybírat mezi statky a umí sestavit preferenční stupnici. Měřitelnost užitku mezi předpoklady není - tu odmítá ordinalismus."
+      "info": "Pojem: Indiferenční analýza pracuje s několika výchozími předpoklady o chování spotřebitele.\nProč: Spotřebitel zná ceny statků, dokáže si mezi nimi vybírat, umí je seřadit podle preferencí (sestavit preferenční stupnici) a platí u nich zákon klesajícího mezního užitku, který dává indiferenčním křivkám jejich tvar.\nChyták: Měřitelnost užitku sem nepatří - to je naopak předpoklad kardinalistického, ne ordinalistického pojetí, na kterém indiferenční analýza stojí."
     },
     {
       "q": "Pokud je mezní fyzický produkt MPP záporný, potom celkový fyzický produkt TPP:",
@@ -1037,7 +1037,7 @@
       "correct": [
         3
       ],
-      "info": "Záporný MPP znamená, že poslední jednotka vstupu snížila celkovou produkci, takže TPP klesá. Nejde o to, že by TPP byl záporný nebo nulový - jen už překročil svůj vrchol."
+      "info": "Pojem: Mezní fyzický produkt (MPP) vyjadřuje přírůstek celkové produkce (TPP) při zapojení další jednotky výrobního faktoru.\nProč: Je-li MPP záporný, znamená to, že další jednotka faktoru celkovou produkci snižuje, proto TPP v tu chvíli klesá.\nChyták: Záporný MPP neznamená záporné TPP, produkce jen klesá z předchozí vyšší úrovně, ani že je TPP ve svém maximu - maximum TPP nastává přesně tam, kde je MPP nulový, ne záporný."
     },
     {
       "q": "Pokud je mezní fyzický produkt MPP kladný, potom celkový fyzický produkt TPP:",
@@ -1051,7 +1051,7 @@
       "correct": [
         1
       ],
-      "info": "Kladný MPP znamená, že každá další jednotka vstupu přidává k produkci, takže TPP roste. Teprve když MPP klesne na nulu, dosáhne TPP svého maxima."
+      "info": "Pojem: Mezní fyzický produkt (MPP) ukazuje, o kolik se změní celková produkce (TPP), když se zapojí další jednotka výrobního faktoru.\nProč: Je-li MPP kladný, znamená to, že každá další jednotka faktoru přidává k produkci - TPP proto roste a zůstává kladný, dokud MPP neklesne na nulu nebo do záporných hodnot.\nChyták: Kladný MPP neznamená, že TPP je ve svém maximu ani že klesá - maximum TPP nastává až tam, kde MPP klesne na nulu, a klesat TPP začne teprve při záporném MPP."
     },
     {
       "q": "Která z následujících vlastností je vlastností linie rozpočtu (BL):",
@@ -1066,7 +1066,7 @@
         0,
         4
       ],
-      "info": "Rozpočtová přímka je při konstantních cenách lineární a její sklon je dán poměrem cen statků, tedy klesající, ne pozitivní. Při růstu důchodu se posouvá doprava nahoru, ne doleva dolů."
+      "info": "Pojem: Linie rozpočtu (BL) zachycuje kombinace množství dvou statků, které spotřebitel pořídí za celý svůj důchod při daných cenách.\nProč: Je to přímka (lineární tvar), pokud jsou ceny statků konstantní, a její sklon je dán poměrem cen obou statků (P_x/P_y).\nChyták: Sklon linie rozpočtu je záporný, ne pozitivní - platí, že čím víc jednoho statku, tím míň druhého. Růst důchodu posouvá linii doprava nahoru, ne doleva dolů, a rostoucí mezní míra substituce je vlastnost indiferenční křivky, ne linie rozpočtu."
     },
     {
       "q": "V dokonalé konkurenci je Lernerův index:",
@@ -1080,7 +1080,7 @@
       "correct": [
         3
       ],
-      "info": "Lernerův index L=(P-MC)/P měří sílu firmy nad cenou. V dokonalé konkurenci je firma cenovým příjemcem a maximalizuje zisk při P=MC, takže L=0 - žádná tržní síla."
+      "info": "Pojem: Lernerův index měří tržní (monopolní) sílu firmy jako poměr (P - MC) / P, tedy o kolik cena převyšuje mezní náklady vzhledem k ceně.\nProč: V dokonalé konkurenci firma nemá vliv na cenu a maximalizuje zisk tam, kde se cena rovná mezním nákladům (P = MC). Dosazením do vzorce vyjde v čitateli nula, takže index je nula.\nChyták: Kladný index (mezi 0 a 1) patří firmám s tržní silou, například monopolu, kde cena mezní náklady převyšuje - v dokonalé konkurenci taková mezera neexistuje."
     },
     {
       "q": "V případě kardinalistické teorie užitku (užitek je přímo měřitelný):",
@@ -1096,7 +1096,7 @@
         3,
         4
       ],
-      "info": "Přebytek spotřebitele je užitek získaný bez placení za něj. TU roste, dokud MU neklesne na nulu v bodě nasycení, a racionální spotřebitel usiluje o maximální užitek, ne o nejnižší útratu."
+      "info": "Pojem: Kardinalistické pojetí předpokládá, že užitek jde přesně měřit (v penězích nebo jednotkách užitku).\nProč: Racionální spotřebitel se snaží užitek maximalizovat, a to dělá tak, že spotřebovává, dokud mu to přináší uspokojení - proto TU roste až do bodu nasycení. Přebytek spotřebitele je rozdíl mezi tím, co by byl ochoten zaplatit, a tím, co skutečně zaplatí - tedy užitek navíc, který nic nestojí.\nChyták: Tvrzení o snaze o co nejnižší útratu je zavádějící - racionální spotřebitel neminimalizuje útratu, ale maximalizuje užitek při daném rozpočtu, což není totéž."
     },
     {
       "q": "Z hlediska dopadu změny ceny jiného statku na poptávku po určitém statku, rozlišujeme statky:",
@@ -1110,7 +1110,7 @@
       "correct": [
         1
       ],
-      "info": "Křížová elasticita poptávky, tedy vliv ceny jiného statku na poptávané množství daného statku, dělí statky na substituty (kladná elasticita) a komplementy (záporná elasticita)."
+      "info": "Pojem: Substituty a komplementy popisují vztah mezi dvěma statky podle toho, jak cena jednoho ovlivňuje poptávku po druhém.\nProč: Toto dělení - substituty (nahraditelné) a komplementy (doplňkové) - odpovídá přesně hledisku vlivu ceny jiného statku na poptávku, na rozdíl od dělení podle elasticity nebo podle vlivu důchodu.\nChyták: Normální a méněcenné statky se dělí podle vlivu důchodu, ne podle ceny jiného statku - to je jiné kritérium."
     },
     {
       "q": "Pokud od hodnoty celkových nákladů TC odečteme hodnotu variabilních nákladů VC, získáme hodnotu:",
@@ -1124,7 +1124,7 @@
       "correct": [
         1
       ],
-      "info": "TC = VC + FC, takže po odečtení VC od TC zbydou právě fixní náklady FC. Ty se s objemem produkce nemění, na rozdíl od MC, AVC nebo AC."
+      "info": "Pojem: Celkové náklady (TC) firmy se skládají ze dvou částí: fixních nákladů (FC), které se s produkcí nemění, a variabilních nákladů (VC), které s produkcí rostou.\nProč: Protože platí TC = FC + VC, odečtením VC od TC zbydou právě fixní náklady FC.\nChyták: Mezní náklady (MC) se počítají z přírůstku nákladů při další jednotce produkce, ne z rozdílu TC a VC, a průměrné veličiny (AC, AVC, AFC) vznikají dělením množstvím, ne odečítáním."
     },
     {
       "q": "Mezní užitek. Platí následující tvrzení:",
@@ -1138,7 +1138,7 @@
       "correct": [
         2
       ],
-      "info": "TU je součet mezních užitků všech spotřebovaných jednotek (TU = ΣMU). MU se netýká výroby firmy, ale spotřeby, a s rostoucím množstvím zpravidla klesá, ne je konstantní nebo rostoucí."
+      "info": "Pojem: Mezní užitek (MU) je přírůstek celkového užitku (TU) z jedné další spotřebované jednotky statku.\nProč: Když mezní užitky za jednotlivé jednotky sečteš, dostaneš celkový užitek - TU je tedy kumulovaný součet MU. Matematicky MU = změna TU / změna množství.\nChyták: MU se týká spotřebitele, ne firmy - jde o užitek ze spotřeby, ne o výrobu kusu výrobku, to by byl jiný pojem (mezní produkt)."
     },
     {
       "q": "Normální zisk je kvantitativně roven (bez záruky)",
@@ -1152,7 +1152,7 @@
       "correct": [
         3
       ],
-      "info": "Pozor: klíč bere odpověď nule ve smyslu ekonomického zisku - firma s normálním ziskem pokryje explicitní i implicitní náklady a nic navíc, ekonomický zisk je nula. Kvantitativně se normální zisk rovná implicitním nákladům, jak říká klíč u otázky 44."
+      "info": "Pojem: Normální zisk je minimální odměna za podnikání odpovídající nákladům obětované příležitosti - tolik, kolik by majitel vydělal v nejlepší jiné variantě.\nProč: Škola uznává, že normální zisk je nula - míní tím nulový ekonomický zisk, tedy stav, kdy firma přesně pokryje explicitní i implicitní náklady.\nChyták: Neplete se s účetním ziskem ani s celkovými náklady či příjmy - normální zisk žádnou z těchto veličin nepředstavuje.\nRozpor: Škola uznává, že normální zisk je roven nule. Podle učebnice je ale kvantitativně roven implicitním nákladům - je to částka navíc k explicitním nákladům, kterou firma musí vydělat, aby se vyrovnala nejlepší alternativě. Nula platí jen pro ekonomický zisk, ne pro normální zisk samotný."
     },
     {
       "q": "Zákon klesajícího mezního užitku znamená, že:",
@@ -1166,7 +1166,7 @@
       "correct": [
         3
       ],
-      "info": "Zákon klesajícího mezního užitku říká, že MU s růstem spotřeby klesá, protože každá další jednotka uspokojuje potřebu méně. Netvrdí, že se MU musí nutně vyrovnat tržní ceně."
+      "info": "Pojem: Zákon klesajícího mezního užitku říká, že s růstem spotřeby statku klesá uspokojení z každé další jednotky.\nProč: Čím víc už toho spotřebitel má, tím míň ho těší další kus - proto MU se spotřebou klesá, i když celkový užitek (TU) zatím ještě roste.\nChyták: Zákon neříká nic o tom, že se MU musí vždy vyrovnat s tržní cenou - to je až podmínka optima, ne definice samotného zákona."
     },
     {
       "q": "Uvažujeme-li dva komplementární statky, potom:",
@@ -1180,7 +1180,7 @@
       "correct": [
         4
       ],
-      "info": "Komplementy se spotřebovávají společně: zdraží-li jeden, klesne jeho poptávané množství pohybem po křivce a s ním klesne i poptávka po druhém statku, protože se spotřebovává méně párů dohromady."
+      "info": "Pojem: Komplementy jsou statky spotřebovávané společně, třeba tiskárna a inkoust - jeden bez druhého ztrácí smysl.\nProč: Zdražení jednoho komplementu sníží jeho poptávané množství, a protože se ho kupuje méně, klesne i poptávka po jeho komplementu.\nChyták: Zdražení komplementu nezvyšuje poptávku po druhém statku - to by platilo u substitutů, tady jde o statky doplňkové, které se pojí spolu."
     },
     {
       "q": "Které z následujících tvrzení je pravdivé:",
@@ -1198,7 +1198,7 @@
         3,
         4
       ],
-      "info": "Platí zde více tvrzení současně: AVC a AC se s růstem produkce sbližují (fixní náklady se rozpouštějí na víc jednotek), AFC vždy klesá, TC je VC posunuté o FC, a MC určuje nabídkovou křivku firmy."
+      "info": "Pojem: Otázka shrnuje vztahy mezi náklady firmy: celkové (TC), variabilní (VC), fixní (FC), průměrné (AC, AVC, AFC) a mezní (MC).\nProč: Se zvyšující se produkcí klesá podíl fixních nákladů na jednotku, takže se AVC a AC k sobě přibližují; TC je v každém bodě o FC vyšší než VC; náklady na kapitál se počítají jako cena kapitálu krát množství kapitálu; a protože MC ukazuje náklad na další jednotku, přesně podle něj firma rozhoduje, kolik nabídnout na trh.\nChyták: Tvrzení, že AFC vždy klesá, platí proto, že FC je konstantní a dělí se čím dál větším množstvím - nezaměňuj to s AVC nebo AC, které mohou i růst."
     },
     {
       "q": "Pro mezní náklady platí následující tvrzení:",
@@ -1213,7 +1213,7 @@
         1,
         4
       ],
-      "info": "MC udává přírůstek celkových nákladů na další jednotku produkce a protíná křivku AC (i AVC) v jejich minimu. Nejsou to totéž jako součet FC a VC, ani jako AC."
+      "info": "Pojem: Mezní náklady (MC) ukazují, o kolik vzrostou celkové náklady, když firma vyrobí jednu jednotku produkce navíc.\nProč: Dokud jsou MC nižší než průměrné náklady (AC), stahují AC dolů, jakmile MC převýší AC, táhnou je nahoru - proto se křivka MC vždy protne s křivkou AC přesně v jejím minimu.\nChyták: MC nejsou součtem ani podílem AFC a AVC, ani nejsou vždy totožné s AC - jde o samostatnou veličinu počítanou z přírůstku nákladů, ne z fixních a variabilních nákladů dohromady."
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -1229,7 +1229,7 @@
         1,
         2
       ],
-      "info": "Monopol má díky bariérám vstupu omezený přístup konkurence do odvětví, a proto může sám ovlivnit množství i cenu své produkce - to ho odlišuje od dokonalé konkurence, kde je firma jen příjemcem ceny."
+      "info": "Pojem: Monopol je jediná firma na trhu, chráněná bariérami vstupu (například patentem, licencí nebo úsporami z rozsahu), takže konkurenti nemohou snadno přijít.\nProč: Právě proto, že je jediným dodavatelem, monopol rozhoduje jak o množství produkce, tak o ceně - obojí odvozuje z poptávky po své produkci.\nChyták: Volný vstup do odvětví je opak monopolu - ten funguje jen díky tomu, že vstup je omezený, jinak by přišla konkurence."
     },
     {
       "q": "Při konstrukci hranice výrobních možností zůstávají neměnné:",
@@ -1243,7 +1243,7 @@
       "correct": [
         1
       ],
-      "info": "Hranice výrobních možností ukazuje kombinace produkce dvou statků při daném, neměnném objemu zdrojů a dané technologii - mění se jen alokace zdrojů mezi statky, posun po křivce. Změna cen nebo úrokových měr křivku samu neposouvá, ta se posune jen při změně zdrojů nebo technologie."
+      "info": "Pojem: Hranice výrobních možností je křivka, která ukazuje maximální kombinace dvou statků, jaké ekonomika dokáže vyrobit při daných zdrojích a technologii.\nProč: Při jejím sestrojení se předpokládá, že celkové množství dostupných zdrojů (práce, kapitál, půda) i úroveň technologie zůstávají neměnné - mění se jen to, jak jsou zdroje rozděleny mezi výrobu obou statků, což znázorňuje pohyb po křivce.\nChyták: Technologický pokrok křivku naopak posouvá ven, takže mezi neměnné předpoklady nepatří - stejně tak alokace zdrojů mezi statky se podél křivky mění, to je přesně to, co hranice zobrazuje."
     },
     {
       "q": "Celkový užitek určitého množství zboží měřený v peněžních jednotkách je dán:",
@@ -1257,7 +1257,7 @@
       "correct": [
         3
       ],
-      "info": "TU vyjádřený v penězích je maximální částka, kterou je spotřebitel ochoten zaplatit za dané množství - jen do bodu nasycení, kde MU klesne na nulu. Za ním by další jednotka užitek snižovala."
+      "info": "Pojem: Celkový užitek v penězích vyjadřuje, kolik by byl spotřebitel za dané množství statku maximálně ochoten zaplatit.\nProč: Tato ochota platit ale platí jen do bodu nasycení - po něm už další jednotka nepřidává užitek, takže by za ni spotřebitel nic navíc nedal.\nChyták: Nejde o částku, kterou spotřebitel skutečně zaplatí (to určuje trh a cena), ale o maximum, které je ochoten dát - to jsou dvě různé věci, rozdíl mezi nimi je přebytek spotřebitele."
     },
     {
       "q": "Mezní užitek:",
@@ -1271,7 +1271,7 @@
       "correct": [
         1
       ],
-      "info": "MU je sklon tečny (derivace) funkce TU podle množství statku v daném bodě, ne derivace množství samotného. Kardinalisté považují užitek za měřitelný, ordinalisté ne - opačně, než tvrdí špatné možnosti."
+      "info": "Pojem: Mezní užitek (MU) je přírůstek užitku z poslední spotřebované jednotky statku.\nProč: Graficky ho získáš jako směrnici (sklon) tečny ke křivce celkového užitku (TU) v daném bodě - tečna ukazuje, jak rychle TU roste právě v tomto místě.\nChyták: MU se nezískává derivací množství statku, ale derivací (změnou) TU podle množství - množství je proměnná, podle které se derivuje, ne to, co se derivuje."
     },
     {
       "q": "Produkční funkce v krátkém období (nejdříve rostoucí a pak klesající výnosy ze vstupu). Platí vždy následující tvrzení:",
@@ -1285,7 +1285,7 @@
       "correct": [
         0
       ],
-      "info": "Křivka MP protíná křivku AP právě v bodě, kde je AP maximální - dokud MP převyšuje AP, průměrný produkt roste, jakmile klesne pod něj, klesá i AP. K průsečíku tedy dochází v maximu AP, ne u TPP."
+      "info": "Pojem: Průměrný produkt (AP) je produkce připadající na jednotku vstupu, mezní produkt (MP) je přírůstek produkce z poslední zapojené jednotky vstupu.\nProč: Dokud MP převyšuje AP, táhne průměr nahoru, jakmile MP klesne pod AP, táhne ho dolů - proto se křivky protínají přesně v bodě maxima AP.\nChyták: MP neprotíná TPP v jeho maximu tímto stejným způsobem, tam je MP nulový, ne že by se křivky protínaly, a AP u tohoto typu produkční funkce minimum nemá."
     },
     {
       "q": "Jedním ze základních znaků dokonalé konkurence je: (bez záruky)",
@@ -1301,7 +1301,7 @@
         3,
         4
       ],
-      "info": "Firma v dokonalé konkurenci cenu jen přebírá z trhu, a proto je poptávka po její produkci vodorovná, dokonale elastická: P = AR = MR. Pozor: klíč uznává i tvrzení, že tato poptávka splývá s mezními náklady - správně splývá s mezním příjmem MR, ne s MC."
+      "info": "Pojem: Poptávka po produkci firmy popisuje, kolik firma prodá při dané ceně - v dokonalé konkurenci je to vodorovná přímka, protože firma cenu nemůže ovlivnit.\nProč: Cena je daná trhem a firma při ní prodá libovolné množství, takže poptávka po její produkci je dokonale elastická; protože cena je konstantní, platí P = AR = MR, takže poptávka splývá s křivkou mezního příjmu (MR), ne s mezními náklady.\nChyták: Mezní náklady (MC) jsou nákladová veličina, ne příjmová - v optimu se jim cena jen rovná (P = MC).\nRozpor: Škola uznává, že poptávka po produkci firmy splývá s mezními náklady. Podle učebnice ale splývá s mezním příjmem, protože při konstantní ceně platí P = AR = MR."
     },
     {
       "q": "V prostředí monopolisticky konkurenčního trhu jsou vyráběné výrobky:",
@@ -1316,7 +1316,7 @@
         1,
         2
       ],
-      "info": "Produkty v monopolistické konkurenci jsou diferencované, tedy mírně odlišné, ale zůstávají blízkými substituty, proto si firmy stále konkurují a žádná nemá silnou tržní moc."
+      "info": "Pojem: Diferencované statky jsou produkty, které plní stejnou potřebu, ale liší se značkou, kvalitou nebo balením - proto jsou si navzájem blízkými substituty.\nProč: Monopolistická konkurence je typem nedokonalé konkurence právě proto, že firmy nabízejí odlišený, nikoli homogenní produkt - spotřebitel vidí mezi výrobky drobné rozdíly, ale klidně je zamění.\nChyták: Nejde o dokonalé komplementy (ty se spotřebovávají společně) ani o nezávislé statky - diferencované produkty stejné kategorie se spíš navzájem nahrazují."
     },
     {
       "q": "Ve srovnání s monopolem, produkuje monopolně konkurenční odvětví:",
@@ -1330,7 +1330,7 @@
       "correct": [
         1
       ],
-      "info": "Firmy v monopolistické konkurenci čelí elastičtější poptávce než monopol, mají menší tržní sílu a nižší bariéry vstupu, proto vyrábí větší objem za nižší cenu než monopol se stejnou poptávkou."
+      "info": "Pojem: Monopolně konkurenční odvětví tvoří víc firem s mírně odlišným produktem a malým vlivem na cenu; monopol je jediná firma bez blízkých substitutů s velkým vlivem na cenu.\nProč: Čím víc firem si konkuruje blízkými substituty, tím citlivěji poptávka po produkci jedné firmy reaguje na cenu - to firmy tlačí k nižší ceně a vyšší produkci než osamocený monopol, který si díky absenci konkurence drží cenu výš a produkci omezuje.\nChyták: Monopolní konkurence pořád patří mezi nedokonalou konkurenci a firmy v ní nejsou výrobně efektivní, ale má blíž k výsledku dokonalé konkurence než monopol - proto víc produkce za nižší cenu."
     },
     {
       "q": "Krátké období je období, ve kterém:",
@@ -1345,7 +1345,7 @@
         0,
         4
       ],
-      "info": "Krátké období je definováno tím, že alespoň jeden vstup (obvykle kapitál) je fixní, a firma tak může měnit jen ten variabilní - typicky práci. Proto neplatí, že by chyběly fixní náklady nebo variabilní vstup."
+      "info": "Pojem: Krátké období je časový úsek, ve kterém firma nemůže měnit množství všech výrobních faktorů - obvykle nemůže měnit kapitál, jen práci.\nProč: Škola uznává, že definičním znakem krátkého období je existence alespoň jednoho fixního vstupu, typicky kapitálu, zatímco práce zůstává variabilní - proto firma může zvyšovat jen variabilní vstup.\nChyták: Tvrzení o neexistenci variabilních nebo fixních nákladů jsou opačně - v krátkém období existují oba druhy nákladů zároveň, právě proto, že jeden vstup je fixní a druhý variabilní."
     },
     {
       "q": "V případě kardinalistické teorie užitku (užitek je přímo měřitelný):",
@@ -1360,7 +1360,7 @@
         0,
         2
       ],
-      "info": "V bodě maxima TU je MU nulový - to je podstata bodu nasycení. Racionální spotřebitel maximalizuje užitek, nesnaží se o nejnižší útratu ani o rovnost ceny a TU."
+      "info": "Pojem: Kardinalistické pojetí předpokládá, že užitek jde měřit v konkrétních jednotkách.\nProč: V bodě, kde je celkový užitek (TU) maximální, je mezní užitek (MU) nulový - to je právě bod nasycení. Racionální spotřebitel se přitom vždy snaží svůj celkový užitek maximalizovat.\nChyták: Optimum spotřebitele není tam, kde se cena rovná celkovému užitku, ale tam, kde se mezní užitek vyrovná ceně (nebo kde je poměr MU k ceně stejný napříč statky)."
     },
     {
       "q": "Označte správnou odpověď:",
@@ -1375,7 +1375,7 @@
         0,
         2
       ],
-      "info": "Izokvanta ukazuje kombinace práce a kapitálu, kterými lze vyrobit stejný objem produkce, a tedy i to, jak lze faktory vzájemně nahrazovat. Nezachycuje různé objemy produkce ani náklady - to popisuje izokosta."
+      "info": "Pojem: Izokvanta zobrazuje všechny kombinace dvou výrobních faktorů, práce a kapitálu, se kterými firma vyrobí stejné množství produkce.\nProč: Protože se dá pohybovat po izokvantě z jedné kombinace do druhé, ukazuje zároveň, jak lze jeden faktor nahrazovat druhým, aniž by se změnil objem výroby.\nChyták: Izokvanta nezobrazuje různé objemy produkce ani minimální náklady, to řeší izokosta a bod optima - vždy jde o jeden pevný objem produkce."
     },
     {
       "q": "Cílem výrobce na dokonale konkurenčním trhu je:",
@@ -1389,7 +1389,7 @@
       "correct": [
         2
       ],
-      "info": "Firma v dokonalé konkurenci nemůže ovlivnit cenu ani odlišit produkt, proto jediným cílem zůstává maximalizace zisku volbou množství, kde MC=P. Ostatní možnosti popisují cíle, které trh dokonalé konkurence firmě vůbec neumožňuje sledovat."
+      "info": "Pojem: Maximalizace zisku znamená, že firma volí takové množství produkce, při kterém je rozdíl mezi příjmy a náklady nejvyšší.\nProč: I na dokonale konkurenčním trhu je firma podnikatelský subjekt, jehož cílem je zisk - toho dosáhne při množství, kde se mezní příjem rovná mezním nákladům (MR = MC), tedy P = MC.\nChyták: Uspokojení spotřebitele, odlišení produkce nebo dokonalí zaměstnanci jsou prostředky nebo vedlejší efekty, ne cíl firmy - navíc v dokonalé konkurenci je produkt homogenní, takže se odlišit ani nedá."
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -1405,7 +1405,7 @@
         2,
         4
       ],
-      "info": "Omezený vstup do odvětví dává monopolu možnost nastavit množství i cenu produkce, na rozdíl od volného vstupu v dokonalé konkurenci, kde by dodatečné firmy takovou moc rozmělnily."
+      "info": "Pojem: Monopol je tržní struktura s jednou jedinou firmou na trhu, chráněnou bariérami, které konkurentům brání volně vstoupit do odvětví.\nProč: Díky omezenému vstupu si firma udrží pozici jediného dodavatele, a proto může sama volit jak množství, tak cenu produkce, aniž by ji vytlačila konkurence.\nChyták: Volný vstup a existence několika firem popisují jiné tržní struktury, dokonalou konkurenci nebo oligopol - u monopolu jsou přesným opakem skutečnosti, protože ten funguje jen díky bariérám."
     },
     {
       "q": "Každá firma v nedokonalé konkurenci je:",
@@ -1420,7 +1420,7 @@
         0,
         1
       ],
-      "info": "V nedokonalé konkurenci má aspoň jedna firma tržní sílu a může cenu ovlivnit - je cenovým tvůrcem, ne příjemcem jako v dokonalé konkurenci. Cenovým příjemcem je firma jen tam, kde poptávka po její produkci je dokonale elastická."
+      "info": "Pojem: Nedokonalá konkurence je situace na trhu, kde aspoň jeden účastník (prodávající nebo kupující) dokáže svým rozhodnutím ovlivnit tržní cenu, na rozdíl od dokonalé konkurence, kde firma cenu jen přebírá.\nProč: Firma v nedokonalé konkurenci nabízí produkt, který se od konkurence něčím liší, takže poptávka po jejím výstupu s cenou klesá - firma si tak cenu sama nastavuje, je tedy cenovým tvůrcem.\nChyták: Cenový příjemce je typický pro dokonalou konkurenci, kde firma cenu bere jako danou; cenový monopol a cenový regulátor nejsou standardní pojmy pro tuto situaci."
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele platí, že:",
@@ -1435,7 +1435,7 @@
         1,
         4
       ],
-      "info": "Normální statky mají kladnou důchodovou elasticitu, takže pokles důchodu jejich poptávku sníží. Méněcenné statky mají zápornou důchodovou elasticitu - jejich poptávka při poklesu důchodu naopak roste."
+      "info": "Pojem: Normální statek je takový, po němž poptávka roste s růstem důchodu a klesá s jeho poklesem - třeba kvalitnější potraviny.\nProč: Při poklesu důchodu má spotřebitel méně peněz na normální statky, takže po nich poptávka klesá, a zároveň přechází na levnější méněcenné náhražky, po kterých poptávka roste.\nChyták: Nezaměňuj to s nezbytnými statky - otázka řeší jen dělení normální/méněcenné, ne nezbytné/luxusní."
     },
     {
       "q": "Zákon klesajícího mezního užitku znamená, že:",
@@ -1449,7 +1449,7 @@
       "correct": [
         1
       ],
-      "info": "Zákon klesajícího MU vychází z toho, že s postupným uspokojováním potřeby klesá její pociťovaná intenzita, a tedy i užitek z další jednotky. Netvrdí, že TU nebo MU musí trvale růst."
+      "info": "Pojem: Zákon klesajícího mezního užitku popisuje, jak uspokojení z dalšího kusu statku slábne s rostoucí spotřebou.\nProč: Jak se potřeba postupně uspokojuje, její intenzita klesá - proto je mezní užitek z každé další jednotky nižší než z té předchozí.\nChyták: Mezní užitek s růstem spotřeby klesá, ne roste - opačné tvrzení popisuje přesný opak zákona."
     },
     {
       "q": "O křivce poptávky po produkci dominantní firmy a křivce tržní poptávky platí, že:",
@@ -1464,7 +1464,7 @@
         1,
         2
       ],
-      "info": "Křivka poptávky dominantní firmy vzniká odečtením nabídky lemu od tržní poptávky, proto je na cenu citlivější (elastičtější) než tržní poptávka, která je méně elastická. Při dost nízké ceně už lem nenabízí nic a obě křivky splynou."
+      "info": "Pojem: Poptávka po produkci dominantní firmy vzniká jako tržní poptávka minus množství, které při dané ceně nabídne konkurenční lem.\nProč: Protože se od tržní poptávky odečítá nabídka lemu, je tržní poptávka méně elastická než poptávka dominantní firmy; při dostatečně nízké ceně už lem nemá zájem nic nabízet, takže obě křivky splynou v jednu.\nChyták: Plocha mezi křivkami nepředstavuje přímo produkci konkurenčního okraje - tou je vodorovná vzdálenost (rozdíl množství) při dané ceně, ne plocha; křivky navíc nejsou rovnoběžné, jejich rozestup se s cenou mění."
     },
     {
       "q": "Dlouhé období je období, ve kterém:",
@@ -1479,7 +1479,7 @@
         1,
         4
       ],
-      "info": "V dlouhém období jsou variabilní úplně všechny vstupy, ne jen jeden - proto firma může rozšiřovat kapacity a nahrazovat kapitál prací i naopak. Tvrzení 'alespoň jeden vstup variabilní' je slabší a definici dlouhého období nevystihuje."
+      "info": "Pojem: Dlouhé období je časový úsek dostatečně dlouhý na to, aby firma mohla měnit množství úplně všech výrobních faktorů, včetně kapitálu.\nProč: Protože žádný vstup není fixní, může firma rozšiřovat výrobní kapacity, stavět nové provozy, kupovat stroje - všechny vstupy jsou tedy variabilní.\nChyták: Tvrzení, že je alespoň jeden vstup variabilní nebo že existují fixní náklady, popisuje krátké období - v dlouhém období fixní náklady jako takové neexistují, protože nic není fixní."
     },
     {
       "q": "Pokud jsou zmrzlina a čokoládová poleva dokonalými komplementy, platí, že:",
@@ -1494,7 +1494,7 @@
         1,
         4
       ],
-      "info": "Dokonalé komplementy se spotřebovávají ve fixním poměru - chybí-li poleva, ztrácí zmrzlina smysl a přestane se kupovat i ona. Zdraží-li zmrzlina, klesne její poptávané množství a s ním i poptávka po polevě."
+      "info": "Pojem: Dokonalé komplementy se spotřebovávají vždy společně v pevném poměru - bez jednoho nemá smysl kupovat druhý.\nProč: Dojde-li poleva, nelze zmrzlinu se sypáním použít, takže přestane být kupovaná i ona; růst ceny zmrzliny sníží její poptávané množství, a protože se kupuje méně zmrzliny, klesne i poptávka po polevě.\nChyták: Pokles ceny zmrzliny by naopak poptávku po polevě zvýšil, ne snížil - u komplementů jdou cena a poptávka po druhém statku opačným směrem."
     },
     {
       "q": "Pokud v důsledku vyjednávání odborů budou zaměstnavatelé vyplácet vyšší mzdy, než je mzda rovnovážná, potom:",
@@ -1509,7 +1509,7 @@
         0,
         2
       ],
-      "info": "Mzda nad rovnovážnou úrovní zvyšuje nabízené množství práce a zároveň snižuje poptávané, takže vzniká přebytek nabídky práce. Firmy tolik pracovníků nepřijmou, a tak část z nich o práci přijde."
+      "info": "Pojem: Mzdový práh je minimální mzda stanovená nad rovnovážnou úrovní, například kolektivní smlouvou nebo zákonem.\nProč: Při mzdě nad rovnováhou chce pracovat víc lidí, než kolik jich firmy poptávají - vzniká přebytek nabídky práce nad poptávkou, a protože firmy najmou méně lidí, než kolik jich mzdu chce, mnozí o práci přijdou.\nChyták: Dostatek práce pro všechny nebo nedostatek pracovníků by nastal naopak při mzdě pod rovnovážnou úrovní."
     },
     {
       "q": "Optimum spotřebitele vyjadřuje situace, kdy",
@@ -1525,7 +1525,7 @@
         2,
         4
       ],
-      "info": "V optimu se sklon indiferenční křivky rovná sklonu rozpočtové přímky, která je tečnou nejvyšší dosažitelné indiferenční křivky, a poměr MU/P je stejný u obou statků. MRS se nerovná nule."
+      "info": "Pojem: Optimum spotřebitele je bod, kde spotřebitel při daném rozpočtu dosahuje nejvyššího možného užitku.\nProč: Nastává tam, kde se sklon indiferenční křivky rovná sklonu linie rozpočtu - graficky je to bod dotyku linie rozpočtu s nejvýše položenou dosažitelnou indiferenční křivkou. Stejně tak platí, že poměr mezní užitečnosti k ceně je stejný pro všechny statky.\nChyták: MRS_E ani MRS_C se v optimu nerovná nule - nulová hodnota by znamenala, že spotřebitel je ochoten směňovat statky v nekonečném poměru, což neodpovídá bodu dotyku křivek."
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení: (bez záruky)",
@@ -1540,7 +1540,7 @@
         0,
         1
       ],
-      "info": "Dominantní firma odvodí cenu z poptávky po své vlastní produkci (tržní poptávka minus nabídka lemu) v bodě MR = MC a lem ji přebírá. Pozor: klíč tu tvrdí, že její poptávka je méně elastická než tržní - podle otázek 86 a 98 je to naopak."
+      "info": "Pojem: Dominantní firma odvozuje cenu z poptávky po vlastní produkci, tedy ze zbytkové poptávky (tržní poptávka minus nabídka konkurenčního lemu), ne přímo z celé tržní poptávky.\nProč: Podle oficiální odpovědi školy je tato zbytková poptávka méně elastická než tržní poptávka; dominantní firma cenu odvozuje právě z ní, ne z tržní poptávky jako celku.\nChyták: Firmy lemu neprodávají za nižší cenu ani samy neurčují tržní cenu - jen přebírají cenu, kterou stanoví dominantní firma.\nRozpor: Škola uznává, že poptávka po produkci dominantní firmy je méně elastická než tržní. Podle učebnice je to naopak: jde o zbytkovou poptávku (tržní poptávka minus nabídka lemu), která je elastičtější než tržní, protože při vyšší ceně lem nabídne víc a ubere dominantní firmě zákazníky."
     },
     {
       "q": "Z hlediska dopadu změny ceny jiného statku na poptávku po určitém statku, rozlišujeme statky:",
@@ -1554,7 +1554,7 @@
       "correct": [
         4
       ],
-      "info": "Podle dopadu změny ceny jiného statku na poptávané množství (křížová elasticita) dělíme statky na substituty (kladná elasticita) a komplementy (záporná elasticita)."
+      "info": "Pojem: Substituty a komplementy popisují vztah mezi dvěma statky podle toho, jak cena jednoho ovlivňuje poptávku po druhém.\nProč: Toto dělení odpovídá hledisku vlivu ceny jiného statku na poptávku, na rozdíl od dělení podle elasticity nebo podle důchodu.\nChyták: Normální, nezbytné nebo luxusní statky se dělí podle jiných kritérií (vliv důchodu, naléhavost potřeby), ne podle vztahu k ceně jiného statku."
     },
     {
       "q": "Alokační efektivnost firmy znamená:",
@@ -1570,7 +1570,7 @@
         1,
         4
       ],
-      "info": "Alokační efektivnosti je dosaženo, když cena odpovídá meznímu užitku spotřebitele i mezním nákladům výrobce - další změna produkce už nikomu nepřidá, aniž by někomu ubrala. To maximalizuje součet přebytku spotřebitele a výrobce; výroba s minimem AC je efektivnost výrobní, ne alokační."
+      "info": "Pojem: Alokační efektivnost znamená, že se zdroje a produkce rozdělují tak, že už nejde zlepšit situaci jednoho subjektu, aniž by se zhoršila situace jiného - tedy nejlepší možné využití vzácných zdrojů vzhledem k tomu, co lidé chtějí.\nProč: Toho je dosaženo tam, kde cena odpovídá mezním nákladům výroby i meznímu užitku spotřebitele (P = MC = MU) - při tomto množství je součet přebytku spotřebitele a výrobce největší možný a struktura vstupů zajišťuje přesně takový výstup, po jakém je poptávka.\nChyták: Výroba s minimálními průměrnými náklady je výrobní efektivnost, ne alokační - firma může vyrábět levně, a přesto jiné množství, než jaké trh skutečně chce."
     },
     {
       "q": "V případě kardinalistické teorie užitku (užitek je přímo měřitelný):",
@@ -1586,7 +1586,7 @@
         2,
         4
       ],
-      "info": "TU roste, dokud MU neklesne na nulu v bodě nasycení, kde je TU maximální. Přebytek spotřebitele je užitek získaný bez placení; spotřebitel usiluje o maximální užitek, ne o nejnižší útratu."
+      "info": "Pojem: Kardinalistické pojetí předpokládá měřitelnost užitku.\nProč: Celkový užitek (TU) roste, dokud spotřebitel nedosáhne bodu nasycení, kde je mezní užitek (MU) nulový a TU maximální. Přebytek spotřebitele je pak užitek navíc, který spotřebitel získá, aniž by za něj musel platit.\nChyták: Tvrzení o snaze minimalizovat útratu neplatí - racionální spotřebitel maximalizuje užitek v mezích svého rozpočtu, nesnaží se utratit co nejméně."
     },
     {
       "q": "Mezní užitek. Platí následující tvrzení:",
@@ -1602,7 +1602,7 @@
         1,
         3
       ],
-      "info": "MU s rostoucí spotřebou obvykle klesá (zákon klesajícího MU) a vyjadřuje změnu TU při spotřebě další jednotky. Součet MU za všechny jednotky dává TU."
+      "info": "Pojem: Mezní užitek (MU) je přírůstek celkového užitku (TU) z jedné další spotřebované jednotky.\nProč: S rostoucím množstvím spotřebovaného statku MU podle zákona klesajícího mezního užitku klesá, a součet všech MU za jednotlivé jednotky dává dohromady TU.\nChyták: MU se vztahuje ke spotřebiteli, ne k firmě - jde o dodatečnou jednotku spotřeby, ne výroby."
     },
     {
       "q": "Pokud se jedná o cenově elastickou poptávku, platí, že",
@@ -1617,7 +1617,7 @@
         2,
         3
       ],
-      "info": "U cenově elastické poptávky vede pokles ceny k procentně většímu nárůstu poptávaného množství, takže výdaje spotřebitelů i tržby prodejců rostou. Poptávané množství se s poklesem ceny vždy zvyšuje, nikdy neklesá."
+      "info": "Pojem: Cenově elastická poptávka znamená, že poptávané množství reaguje na změnu ceny víc než poměrně (elasticita v absolutní hodnotě nad 1).\nProč: Při poklesu ceny elastického statku poptávané množství vzroste natolik, že výdaje spotřebitelů (a tržby prodejců) vzrostou.\nChyták: Tvrzení, že žádná změna ceny neovlivní tržby, platí jen u jednotkově elastické poptávky, ne obecně u elastické."
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
@@ -1632,7 +1632,7 @@
         2,
         3
       ],
-      "info": "Stejně jako u dominantní firmy obecně: cenu určuje z poptávky po své vlastní produkci (MR=MC), ne z tržní poptávky, a díky bariérám může mít i dlouhodobě kladný zisk."
+      "info": "Pojem: Dominantní firma je velká firma, která cenu neodvozuje přímo z tržní poptávky, ale z poptávky po vlastní produkci (tržní poptávka minus nabídka konkurenčního lemu).\nProč: Díky své tržní síle a bariérám vstupu může taková firma dlouhodobě dosahovat kladného ekonomického zisku, podobně jako monopol na své části trhu.\nChyták: Cenu nestanovují firmy lemu ani neprodávají levněji - přebírají přesně tu cenu, kterou určí dominantní firma."
     },
     {
       "q": "O křivce poptávky po produkci dominantní firmy a křivce tržní poptávky platí, že:",
@@ -1647,7 +1647,7 @@
         2,
         3
       ],
-      "info": "Rozdíl mezi tržní poptávkou a poptávkou dominantní firmy tvoří produkci konkurenčního lemu; tržní poptávka je méně elastická, protože zahrnuje i zákazníky, kteří by jinak přešli k lemu."
+      "info": "Pojem: Konkurenční okraj (lem) je skupina malých firem, jejichž nabízené množství vysvětluje rozdíl mezi tržní poptávkou a poptávkou po produkci dominantní firmy.\nProč: Plocha mezi křivkou tržní poptávky a křivkou poptávky dominantní firmy při dané ceně odpovídá množství, které dodává konkurenční lem; protože se poptávka dominantní firmy počítá jako tržní poptávka minus nabídka lemu, je tržní poptávka méně elastická.\nChyták: Křivky nejsou totožné ani rovnoběžné - liší se právě o množství, které dodává lem, a tento rozdíl se s cenou mění."
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",
@@ -1663,7 +1663,7 @@
         1,
         2
       ],
-      "info": "Nižší důchod nutí spotřebitele šetřit, a tak částečně přechází na levnější substituty - to zvyšuje poptávku po méněcenných statcích se zápornou důchodovou elasticitou. Poptávka po normálních statcích naopak klesá."
+      "info": "Pojem: Substituty jsou statky, kterými lze ve spotřebě nahradit statek jiný, třeba dražší značku levnější.\nProč: Při poklesu důchodu spotřebitel částečně přechází na levnější substituty, poptávka po normálních statcích klesá a po méněcenných roste, protože klesl jeho reálný důchod.\nChyták: Snadno se zamění směr - růst poptávky patří méněcenným statkům, pokles normálním, ne naopak."
     },
     {
       "q": "Monopol. Platí následující tvrzení:",
@@ -1677,7 +1677,7 @@
       "correct": [
         1
       ],
-      "info": "Nabídku monopolu nelze graficky sestrojit, protože stejné množství vzniká při různých cenách podle tvaru poptávky. To odlišuje monopol od dokonalé konkurence, kde nabídku tvoří rostoucí část MC nad AVC."
+      "info": "Pojem: Nabídková křivka spojuje ceny s množstvím, které je firma ochotná nabídnout - u firem v dokonalé konkurenci ji tvoří rostoucí část křivky mezních nákladů (MC).\nProč: U monopolu neexistuje jednoznačný vztah cena - množství: stejnému optimálnímu množství z průsečíku MR a MC může podle tvaru poptávky odpovídat různá cena, proto nabídkovou křivku monopolu nelze graficky sestrojit.\nChyták: Vztah nabídky k rostoucí části MC platí jen v dokonalé konkurenci, kde firma cenu přejímá z trhu - u monopolu cenu naopak sama ovlivňuje, takže tenhle vztah neplatí."
     },
     {
       "q": "Mezní produkt",
@@ -1692,7 +1692,7 @@
         0,
         3
       ],
-      "info": "Mezní produkt je přírůstek produkce z jedné další jednotky faktoru, ne produkce na jednotku faktoru (to je průměrný produkt AP). Proto může být kladný, nulový i záporný a měnit svůj trend."
+      "info": "Pojem: Mezní produkt (MP) vyjadřuje přírůstek celkové produkce, který přinese poslední zapojená jednotka výrobního faktoru.\nProč: V závislosti na fázi produkční funkce může MP nejdřív růst, pak klesat i klesnout do záporných hodnot, proto může být rostoucí, konstantní i klesající a zároveň kladný, nulový i záporný.\nChyták: MP není podíl celkové produkce a množství faktoru, to je průměrný produkt AP - je to přírůstek, tedy podíl změny produkce a změny množství faktoru."
     },
     {
       "q": "V případě monopolu křivka poptávky odvětví:",
@@ -1707,7 +1707,7 @@
         0,
         3
       ],
-      "info": "Protože je monopol jedinou firmou na trhu, jeho individuální poptávka je totožná s tržní a splývá s křivkou AR - cena na každé úrovni prodeje odpovídá výšce poptávkové křivky."
+      "info": "Pojem: Individuální poptávka je poptávka po produkci jedné konkrétní firmy, na rozdíl od tržní poptávky po celém statku.\nProč: Protože monopol je jediným prodejcem na trhu, poptávka po jeho produkci se rovná poptávce celého odvětví; díky klesající ceně s množstvím tato poptávka splývá s křivkou průměrného příjmu (AR).\nChyták: Poptávka nemá pozitivní směrnici a není dokonale neelastická - je to běžná klesající křivka, jen u monopolu totožná s tržní."
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -1724,7 +1724,7 @@
         3,
         4
       ],
-      "info": "Mezi předpoklady indiferenční analýzy patří schopnost sestavit preferenční stupnici, platnost klesajícího MU, znalost cen statků a snaha maximalizovat užitek. Tvrzení, že žádný předpoklad není nutný, analýzu popírá."
+      "info": "Pojem: Indiferenční analýza staví na několika předpokladech o chování a znalostech spotřebitele.\nProč: Spotřebitel dokáže sestavit preferenční stupnici, platí zákon klesajícího mezního užitku, zná ceny statků a jako racionální spotřebitel se snaží svůj užitek maximalizovat.\nChyták: Tvrzení, že žádný předpoklad není nutný, je opak pravdy - bez těchto předpokladů by indiferenční analýza a tvar indiferenčních křivek nedávaly smysl."
     },
     {
       "q": "Pokud jsou zmrzlina a čokoládová poleva dokonalými komplementy, platí, že:",
@@ -1740,7 +1740,7 @@
         1,
         2
       ],
-      "info": "Dokonalé komplementy se spotřebovávají společně ve fixním poměru: zlevní-li zmrzlina, poroste i poptávka po polevě, zdraží-li, poptávka po polevě klesne. Chybí-li poleva, ztrácí zmrzlina smysl a přestane se kupovat vůbec."
+      "info": "Pojem: Dokonalé komplementy se spotřebovávají vždy společně v pevném poměru - bez jednoho nemá smysl kupovat druhý.\nProč: Zlevnění zmrzliny zvýší její poptávané množství, a tím i poptávku po polevě; zdražení zmrzliny naopak poptávku po polevě sníží; dojde-li poleva, přestane se kupovat i zmrzlina, protože bez ní nedává smysl.\nChyták: Poroste poptávané množství čokoládové polevy plete pojmy - u polevy jde o posun poptávky vlivem ceny zmrzliny, poptávané množství mění jen vlastní cena polevy."
     },
     {
       "q": "Monopol je jediná firma, která:",
@@ -1757,7 +1757,7 @@
         3,
         4
       ],
-      "info": "Monopol nemá blízké substituty, proto si nastavuje cenu nad MC a sám pokrývá celou tržní poptávku - přesto ho omezuje klesající poptávka, takže cenu nemůže zvyšovat bez omezení, a krátkodobě může být i ztrátový."
+      "info": "Pojem: Monopol je jediná firma na trhu nabízející produkt bez blízkých substitutů, takže spotřebitelé nemají kam jinam přejít.\nProč: Bez konkurence si monopol může stanovit cenu nad úrovní mezních nákladů a díky bariérám vstupu si tuto pozici i v krátkém období udrží; přesto může v krátkém období udělat ztrátu, pokud jsou náklady příliš vysoké, a jako jediný dodavatel pokrývá poptávku celého odvětví.\nChyták: Monopol nemůže nastavit libovolně vysokou cenu - je omezen tím, že při vyšší ceně klesá poptávané množství, takže by prodal méně a mohl by přijít o zisk."
     },
     {
       "q": "Mezní užitek. Platí následující tvrzení:",
@@ -1771,7 +1771,7 @@
       "correct": [
         4
       ],
-      "info": "MU udává změnu TU, spotřebuje-li spotřebitel (ne firma) další jednotku statku. S rostoucím množstvím obvykle klesá a může být i záporný, ne konstantní ani rostoucí."
+      "info": "Pojem: Mezní užitek (MU) je přírůstek celkového užitku (TU), který přinese jedna další spotřebovaná jednotka statku.\nProč: Definičně MU vyjadřuje právě tuto změnu TU při spotřebě dodatečné jednotky spotřebitelem.\nChyták: Jde o spotřebu, ne o výrobu - MU firmy vyrábějící kus výrobku je jiný pojem (mezní produkt nebo mezní náklad), ne mezní užitek."
     },
     {
       "q": "Při rostoucí ceně daného statku",
@@ -1785,7 +1785,7 @@
       "correct": [
         0
       ],
-      "info": "Zdražení statku je pohyb po křivce poptávky, ne její posun - poptávané množství klesá, o kolik, určuje cenová elasticita poptávky. Pohyb směřuje doleva nahoru (menší množství za vyšší cenu), ne doprava."
+      "info": "Pojem: Poptávané množství je konkrétní množství, které spotřebitel koupí při dané ceně. Cenová elasticita říká, o kolik procent se toto množství změní při jednoprocentní změně ceny.\nProč: Čím elastičtější poptávka, tím víc poptávané množství při zdražení klesne - velikost změny tedy závisí na elasticitě.\nChyták: Při zdražení se pohybujeme po křivce nahoru a doleva (méně množství), ne doprava dolů - to by odpovídalo zlevnění."
     },
     {
       "q": "Posun křivky poptávky po určité komoditě doleva může být způsoben tím, že:",
@@ -1800,7 +1800,7 @@
         0,
         1
       ],
-      "info": "Zlevnění substitutu odláká spotřebitele od sledovaného statku, poptávka klesá a křivka se posune doleva. U méněcenného statku navíc růst důchodu vede k přechodu na kvalitnější náhradu, poptávka po něm také klesá."
+      "info": "Pojem: Posun poptávky doleva znamená pokles poptávaného množství při každé ceně, ne jen v jednom bodě.\nProč: Zlevnění substitutu odláká zákazníky pryč od sledovaného statku, poptávka po něm klesá. Podle oficiální odpovědi zde navíc růst důchodu poptávku sníží, což odpovídá méněcennému statku, kde si spotřebitel při vyšším důchodu dovolí kvalitnější náhradu.\nChyták: U normálních statků by růst důchodu poptávku naopak zvýšil (posun doprava) - tady ale platí opak."
     },
     {
       "q": "Ekonomická renta je:",
@@ -1814,7 +1814,7 @@
       "correct": [
         1
       ],
-      "info": "Ekonomická renta vzniká u výrobního faktoru s fixní, dokonale neelastickou nabídkou - celá odměna pak převyšuje transferový výdělek. Naopak při dokonale elastické nabídce je celá odměna jen transferovým výdělkem a renta je nulová."
+      "info": "Pojem: Ekonomická renta je část odměny za výrobní faktor, která převyšuje transferový výdělek - tedy něco navíc nad částku, za kterou by vlastník faktor nabízel i jinde.\nProč: Čím nižší je cenová elasticita nabídky faktoru, tím větší podíl odměny tvoří renta; při dokonale neelastické, tedy fixní nabídce tvoří rentu celá odměna, protože vlastník nemá jiné využití a nabízené množství se s cenou nemění.\nChyták: Dokonale elastická nabídka naopak znamená, že celou odměnu tvoří transferový výdělek - to je opak správné odpovědi."
     },
     {
       "q": "Jsou-li mezní náklady na výrobní faktor < mezní příjem z výrobního faktoru, firma bude:",
@@ -1828,7 +1828,7 @@
       "correct": [
         3
       ],
-      "info": "Pokud MFC_L < MRP_L, další najatá jednotka práce přináší víc příjmu, než kolik stojí, takže se firmě vyplatí najímat víc a poptávka po práci roste. Rovnováha nastane až tam, kde se MFC_L a MRP_L vyrovnají."
+      "info": "Pojem: MC_F (mezní náklady na výrobní faktor) jsou náklady na další jednotku faktoru, MRP_F (příjem z mezního produktu) je příjem, který ta jednotka firmě přinese.\nProč: Dokud dodatečná jednotka faktoru vydělá víc, než kolik stojí, tedy MRP_F převyšuje MC_F, zvyšuje najímání faktoru zisk firmy, takže firma poptávku po faktoru dál zvyšuje - až do bodu, kde se MC_F rovná MRP_F.\nChyták: Firma je v rovnováze až při rovnosti MC_F a MRP_F, ne při jejich nerovnosti; poptávku by omezovala naopak, kdyby MC_F byly vyšší než MRP_F."
     },
     {
       "q": "V případě monopolu křivka poptávky odvětví:",
@@ -1842,7 +1842,7 @@
       "correct": [
         0
       ],
-      "info": "Protože monopol je jedinou firmou na trhu, jeho individuální poptávka je totožná s tržní poptávkou po statku - to je jeho klíčový rozdíl od firmy na trhu s více konkurenty."
+      "info": "Pojem: Individuální poptávka je poptávka směřovaná ke konkrétní firmě, u monopolu splývá s poptávkou celého trhu, protože firma je jediným dodavatelem.\nProč: Jelikož monopol zásobuje celý trh sám, poptávka po jeho produkci je totožná s tržní poptávkou - je to běžná klesající křivka.\nChyták: Poptávka nesplývá s MR (to je nižší křivka odvozená z klesající poptávky) ani není dokonale neelastická nebo neurčitelná - tyto vlastnosti se pletou s jinými pojmy (nabídkou monopolu, která skutečně neurčitelná je)."
     },
     {
       "q": "Označte správnou odpověď:",
@@ -1856,7 +1856,7 @@
       "correct": [
         0
       ],
-      "info": "Fixní náklady existují bez ohledu na objem výroby - i při nulové produkci firma platí například nájem. Proto jsou při Q = 0 kladné, ne nulové ani záporné."
+      "info": "Pojem: Fixní náklady (FC) jsou náklady, které firma platí bez ohledu na to, kolik vyrábí - třeba nájem provozovny.\nProč: I když firma nevyrobí nic a produkce je nulová, pořád musí platit nájem a splátky, takže FC zůstávají kladné, ne nulové.\nChyták: FC se nemění s produkcí, takže nemohou být klesající ani rostoucí ani záporné - jsou po celou dobu konstantní na stejné kladné úrovni."
     },
     {
       "q": "Mezi základní charakteristiky monopolu patří:",
@@ -1871,7 +1871,7 @@
         2,
         3
       ],
-      "info": "Omezený vstup do odvětví dává monopolu prostor ovlivnit množství produkce, na rozdíl od volného vstupu v dokonalé konkurenci, kde by další firmy takovou moc rozmělnily."
+      "info": "Pojem: Monopol je tržní struktura s jednou firmou, kam kvůli bariérám (patenty, licence, úspory z rozsahu) nemohou volně vstupovat další firmy.\nProč: Omezený vstup chrání pozici monopolu, díky čemuž může sám rozhodovat o množství produkce, které na trh dodá.\nChyták: Volný vstup, více firem nebo trvalá nemožnost ztráty jsou znaky jiných struktur nebo mylné představy - monopol může v krátkém období klidně vykázat ztrátu."
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",
@@ -1886,7 +1886,7 @@
         2,
         4
       ],
-      "info": "Nižší důchod vede spotřebitele k částečnému přechodu na levnější substituty a zvyšuje poptávku po méněcenných statcích (záporná důchodová elasticita). Nezbytné statky jsou normální, jejich poptávka s poklesem důchodu klesá, ne roste."
+      "info": "Pojem: Substituty jsou statky, kterými lze ve spotřebě nahradit statek jiný, třeba dražší značku levnější.\nProč: Při poklesu důchodu spotřebitel částečně přechází na levnější substituty a poptávka po méněcenných statcích roste, protože klesl jeho reálný důchod.\nChyták: Nezbytné statky nejsou totéž co normální - dělení tady je normální/méněcenné, nezbytnost je jiné kritérium a s touto otázkou přímo nesouvisí."
     },
     {
       "q": "Který z předpokladů platí pro indiferenční analýzu?",
@@ -1904,7 +1904,7 @@
         3,
         4
       ],
-      "info": "Indiferenční analýza staví na těchto předpokladech: spotřebitel maximalizuje užitek, platí klesající MU, může si vybírat mezi statky, umí sestavit preferenční stupnici a zná ceny statků - všechny uvedené možnosti tedy platí."
+      "info": "Pojem: Indiferenční analýza vychází z předpokladů o preferencích a znalostech spotřebitele.\nProč: Spotřebitel se snaží maximalizovat užitek, dokáže si vybírat mezi různými statky, sestavit preferenční stupnici, zná ceny statků a platí u něj zákon klesajícího mezního užitku.\nChyták: Měřitelnost užitku mezi tyto předpoklady nepatří - ordinalistické pojetí, ze kterého indiferenční analýza vychází, měřitelnost užitku nevyžaduje."
     },
     {
       "q": "Mezní náklady na výrobní faktor práce v prostředí nedokonalé konkurence na trhu výrobních faktorů: (5 b)",
@@ -1919,7 +1919,7 @@
         1,
         2
       ],
-      "info": "V nedokonalé konkurenci na trhu práce roste MFC_L rychleji než AC_L (mzda), protože nákup další jednotky práce zvedá mzdu i všem dříve najatým pracovníkům. Proto křivka MFC_L leží nad křivkou nabídky práce."
+      "info": "Pojem: MC_L (mezní náklady na práci) jsou náklady na najmutí další jednotky práce, AC_L (průměrné náklady) odpovídají mzdě za jednotku.\nProč: V nedokonalé konkurenci musí firma s růstem najímaného množství platit vyšší mzdu všem zaměstnancům, nejen tomu poslednímu najatému, proto MC_L rostou rychleji než AC_L a křivka MC_L leží nad křivkou AC_L, tedy nabídkou práce firmě.\nChyták: V dokonalé konkurenci jsou MC_L a AC_L konstantní a totožné - to platí jen tam, ne v prostředí nedokonalé konkurence popsaném v otázce."
     },
     {
       "q": "Optimální kombinace výrobních faktorů je přímo determinována: (bez záruky)",
@@ -1933,7 +1933,7 @@
       "correct": [
         2
       ],
-      "info": "Pozor: klíč váže optimální množství faktoru na hodnotu MRP, což platí pro poptávku po jednom faktoru (MRP_L = MFC_L). Optimální kombinaci víc faktorů ale učebnice definuje jinak - bodem dotyku izokvanty a izokosty (MPP_L/P_L = MPP_K/P_K)."
+      "info": "Pojem: Optimální kombinace výrobních faktorů znamená, kolik jednotek práce a kapitálu firma najme, aby při daných nákladech vyrobila co nejvíc.\nProč: Škola uznává, že o tom rozhoduje hodnota příjmu z mezního produktu faktoru, MRP_F - tedy kolik firmě dodatečná jednotka faktoru vydělá.\nChyták: Politika odborů nebo celkový produkt faktoru ovlivňují situaci jen nepřímo, samy o sobě optimální kombinaci neurčují.\nRozpor: Škola uznává, že optimální kombinaci výrobních faktorů určuje hodnota MRP. To platí pro optimální množství jednoho faktoru (MRP_L = MFC_L). Optimální kombinaci více faktorů ale učebnice definuje dotykem izokvanty a izokosty, tedy MPP_L / P_L = MPP_K / P_K."
     },
     {
       "q": "Je-li cílem firmy maximalizace obratu, poté: (bez záruky)",
@@ -1947,7 +1947,7 @@
       "correct": [
         4
       ],
-      "info": "Firma maximalizující obrat hledá maximum TR, a to je tam, kde další prodaný kus už nic nepřidá: MR = 0. Pozor: logicky by platilo i nižší cena a vyšší množství než při maximalizaci zisku (viz otázky 5 a 17), klíč to tu ale za správné neuznává."
+      "info": "Pojem: Firma maximalizující obrat cílí na co nejvyšší celkové příjmy (TR), ne na co nejvyšší rozdíl mezi příjmy a náklady jako firma maximalizující zisk.\nProč: Optimální objem produkce nastává tam, kde je mezní příjem nulový (MR=0) - do tohoto bodu ještě každá další jednotka TR zvyšuje, za ním by ho už snižovala.\nChyták: Firma nepoužívá zlaté pravidlo MR=MC, to platí pro maximalizaci zisku, a nemusí vždy dosahovat ztráty.\nRozpor: Škola uznává jen podmínku MR=0. Logicky by platilo i to, že firma prodává za nižší cenu a vyšší množství než při maximalizaci zisku, protože k prodeji další jednotky musí snížit cenu - tuto odpověď tu ale škola neuznává."
     },
     {
       "q": "Příjem z mezního fyzického produktu při nedokonalé konkurenci na trhu finálních statků a služeb: (3,33/5 b)",
@@ -1962,7 +1962,7 @@
         0,
         1
       ],
-      "info": "MRP vzniká vynásobením mezního fyzického produktu mezním příjmem, který se v nedokonalé konkurenci s růstem produkce snižuje spolu s cenou statku. Proto MRP klesá rychleji než v dokonalé konkurenci, kde cena zůstává konstantní."
+      "info": "Pojem: MRP (příjem z mezního produktu) je příjem, který firmě přinese poslední najatá jednotka faktoru - počítá se jako mezní fyzický produkt (MPP) krát mezní příjem (MR).\nProč: V nedokonalé konkurenci na trhu statku klesá s růstem produkce cena statku, a protože se z ceny odvíjí mezní příjem, klesá i MRP - a to rychleji než v dokonalé konkurenci, protože se snižuje jak MPP, tak cena.\nChyták: Tvrzení o stejném tempu poklesu jako v dokonalé konkurenci neplatí - v nedokonalé konkurenci MRP klesá rychleji, protože k poklesu MPP se navíc přidává klesající cena."
     },
     {
       "q": "Ekonomický zisk je: (5 b)",
@@ -1978,7 +1978,7 @@
         1,
         3
       ],
-      "info": "Ekonomický zisk zahrnuje i náklady obětované příležitosti, proto ovlivňuje, kam se přesouvají výrobní faktory - do odvětví s vyšším ziskem. V dlouhém období vstup a odchod firem tlačí ekonomický zisk k nule - není totožný s účetním ziskem ani vždy kladný."
+      "info": "Pojem: Ekonomický zisk je rozdíl mezi celkovými příjmy firmy a všemi jejími náklady, tedy explicitními i implicitními (náklady obětované příležitosti).\nProč: Protože implicitní náklady se do výpočtu počítají, je zisk ovlivněn náklady obětované příležitosti; v dlouhém období noví výrobci vstupují tam, kde je zisk kladný, dokud se nesníží na nulu, takže zisk směruje, kam se přesouvají výrobní faktory.\nChyták: Ekonomický zisk není totéž co účetní zisk, ten implicitní náklady nepočítá, a není vždy kladný - v krátkém období může být záporný nebo nulový."
     },
     {
       "q": "Oligopol se zalomenou křivkou: (bez záruky)",
@@ -1994,7 +1994,7 @@
         2,
         3
       ],
-      "info": "Konkurenti následují jen snížení ceny, ne zvýšení, proto se firmě nevyplatí cenou hýbat a ceny jsou stabilní i při změně nákladů. Pozor: klíč mluví o dvou nenavazujících částech křivky MC - ve skutečnosti má mezeru křivka MR, MC se v ní může pohybovat beze změny ceny."
+      "info": "Pojem: Oligopol se zalomenou křivkou poptávky popisuje trh s pár vzájemně závislými firmami, které pečlivě sledují reakce konkurentů na změnu ceny.\nProč: Sníží-li firma cenu, ostatní ji následují, aby neztratily zákazníky - to vysvětluje, proč jsou ceny na takovém trhu stabilní i při změnách nákladů.\nChyták: Při zvýšení ceny firmy naopak nenásledují, protože by tím jen posílily vlastní podíl na trhu.\nRozpor: Škola mluví o dvou na sebe nenavazujících částech křivky mezních nákladů (MC). Ve skutečnosti má mezeru (neplynulý úsek) křivka mezních příjmů (MR), protože poptávka je zalomená - MC se v tomto úseku může měnit, aniž by se změnila optimální cena."
     },
     {
       "q": "Morální hazard označuje situaci: (5 b)",
@@ -2012,7 +2012,7 @@
         3,
         4
       ],
-      "info": "Morální hazard nastává, když lépe informovaný subjekt po uzavření dohody nenese plné riziko svého jednání a snižuje užitek druhé strany - příkladem je instituce \"too big to fail\" riskující víc s vědomím státní pomoci. Je to selhání trhu z asymetrických informací."
+      "info": "Pojem: Morální hazard je situace, kdy lépe informovaná strana po uzavření dohody mění chování a přenáší riziko či náklady na druhou stranu, protože ví, že za důsledky sama neponese plnou cenu.\nProč: Patří mezi tržní selhání způsobené asymetrickými informacemi - příkladem je zásada too big to fail, kdy systémově významné instituce podstupují větší rizika, protože počítají se státní pomocí v potížích. Původce jednání tak nenese plné náklady svého jednání, což vede k neefektivní alokaci zdrojů.\nChyták: Morální hazard se liší od nepříznivého výběru - ten vzniká už před uzavřením dohody výběrem horší kvality na trhu, zatímco morální hazard nastává až po ní, změnou chování."
     },
     {
       "q": "Pokud se jedná o cenově elastickou poptávku, platí, že",
@@ -2027,7 +2027,7 @@
         0,
         3
       ],
-      "info": "U elastické poptávky pokles ceny zvýší poptávané množství procentně víc, než klesla cena, takže tržby prodejců (P×Q) rostou. Množství s poklesem ceny vždy roste, nikdy neklesá."
+      "info": "Pojem: Cenově elastická poptávka znamená, že poptávané množství reaguje na změnu ceny víc než poměrně (elasticita v absolutní hodnotě nad 1).\nProč: Při poklesu ceny elastického statku poptávané množství vzroste natolik, že tržby prodejců i výdaje spotřebitelů vzrostou.\nChyták: U neelastické poptávky by pokles ceny tržby naopak snížil, protože množství neroste dost na kompenzaci nižší ceny."
     },
     {
       "q": "V případě poptávky:",
@@ -2044,7 +2044,7 @@
         2,
         3
       ],
-      "info": "Tržní poptávka je součet poptávek všech spotřebitelů a substituční efekt znamená přechod k relativně levnějšímu statku. Zlevní-li komplement, poptávka po statku roste; zlevní-li substitut, poptávka naopak klesá."
+      "info": "Pojem: Komplementy jsou statky, které se navzájem doplňují ve spotřebě, třeba tiskárna a inkoust. Substituční efekt popisuje, jak zlevnění statku zvyšuje jeho nákup, protože zlevní relativně vůči ostatním.\nProč: Zlevnění komplementu zvyšuje jeho spotřebu, a tím i poptávku po statku, se kterým se pojí; tržní poptávka je součet poptávek všech spotřebitelů a u normálních statků poptávka s cenou klesá.\nChyták: Zlevnění substitutu naopak poptávku po sledovaném statku snižuje, protože zákazníci přejdou k levnějšímu substitutu - ne zvyšuje, jak tvrdí špatná možnost."
     },
     {
       "q": "Které z tvrzení není pravdivé",
@@ -2058,7 +2058,7 @@
       "correct": [
         0
       ],
-      "info": "Všechna nabízená tvrzení o nákladech jsou podle učebnice pravdivá (AFC klesá, TC je VC posunuté o FC, MC určuje nabídku, AVC a AC se sbližují) - proto žádné z nich není to nepravdivé."
+      "info": "Pojem: Otázka se ptá, které tvrzení o nákladech firmy (AFC, TC vs. VC, MC a nabídka, AVC a AC) neplatí.\nProč: Všechna uvedená tvrzení, tedy klesající AFC s růstem produkce, posun TC vůči VC o FC, role MC pro křivku nabídky i sbližování AVC a AC, platí - oficiální odpověď proto je, že žádné z nich není nepravdivé.\nChyták: Nenech se zmást tím, že otázka hledá nepravdivé tvrzení - když jsou správná všechna, hledaná odpověď je, že všechna tvrzení jsou pravdivá, ne konkrétní bod."
     },
     {
       "q": "Pro model oligopolu s cenovým vůdcem platí:",
@@ -2074,7 +2074,7 @@
         3,
         4
       ],
-      "info": "Dominantní firma stanoví cenu podle vlastní poptávky a nákladů, tedy v bodě MR=MC, a ostatní firmy ji jen přebírají - ty se tak chovají jako v dokonalé konkurenci, protože jsou jen příjemci ceny."
+      "info": "Pojem: Cenový vůdce je dominantní firma, která jako první stanoví cenu na trhu; ostatní firmy (konkurenční lem) ji jen přebírají a nemají na ni vliv.\nProč: Cena vzniká z optima dominantní firmy - z průsečíku jejích mezních příjmů a mezních nákladů - podle poptávky a nákladů právě téhle firmy; firmy lemu se pak chovají jako v dokonalé konkurenci, protože cenu berou jako danou a rozhodují jen o množství.\nChyták: Nejde o dokonalou konkurenci jako celek - tou se chová jen konkurenční lem, ne trh jako celek, protože dominantní firma má naopak tržní sílu."
     }
   ],
   "sets": [

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.50">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.51">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -3567,8 +3567,9 @@ function infoHtml(q) {
   const rows = lines.map(l => {
     const m = l.match(/^([^:]{2,12}):\s*(.*)$/);
     if (m && LABELS.includes(m[1])) {
-      const cls = m[1] === 'Rozpor' ? ' q-info-line-warn' : '';
-      return `<div class="q-info-line${cls}"><strong>${m[1]}:</strong> ${glossLabel(m[2])}</div>`;
+      // Návěští Pojem / Proč / Chyták se nezobrazují, odstavce stačí; Rozpor zůstává označený
+      if (m[1] === 'Rozpor') return `<div class="q-info-line q-info-line-warn"><strong>Rozpor:</strong> ${glossLabel(m[2])}</div>`;
+      return `<div class="q-info-line">${glossLabel(m[2])}</div>`;
     }
     return `<div class="q-info-line">${glossLabel(l)}</div>`;
   });
@@ -3628,7 +3629,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.50';
+const APP_VERSION = '9.51';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

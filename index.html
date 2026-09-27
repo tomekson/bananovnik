@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.53">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.54">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2421,7 +2421,7 @@ function renderQ() {
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
-  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat</span>` + preInfoBtn(q, 'renderQ');
+  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat</span>` + ((done && ihned) ? '' : preInfoBtn(q, 'renderQ'));
   if (done && ihned) {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtn}`;
     hintEl.className   = 'q-hint done';
@@ -3146,7 +3146,7 @@ function renderStudy() {
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
   const hintEl = document.getElementById('study-q-hint');
   const isRevealed = S.revealed[n];
-  const copyBtnStudy = `<span class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')">Kopírovat</span>` + preInfoBtn(q, 'renderStudy');
+  const copyBtnStudy = `<span class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')">Kopírovat</span>` + (isRevealed ? '' : preInfoBtn(q, 'renderStudy'));
   if (isRevealed || S.studyHintUsed[n]) {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtnStudy}`;
     hintEl.className = 'q-hint done';
@@ -3659,7 +3659,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.53';
+const APP_VERSION = '9.54';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

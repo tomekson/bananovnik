@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.41">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.42">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -393,6 +393,23 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-img img { display: block; max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
 .q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); text-wrap: pretty; }
 .q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; min-height: 28px; display: flex; align-items: center; gap: 8px; }
+.q-gloss { margin: -6px 0 16px; }
+.q-gloss summary {
+  display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none;
+  padding: 4px 10px; border-radius: 6px; border: 1px dashed var(--line2);
+  font-size: 11px; font-weight: 600; letter-spacing: .3px; color: var(--muted); user-select: none;
+}
+.q-gloss summary::-webkit-details-marker { display: none; }
+.q-gloss summary::before { content: '▸'; font-size: 10px; }
+.q-gloss[open] summary::before { content: '▾'; }
+.q-gloss[open] summary { color: var(--primary); border-style: solid; }
+.q-gloss dl {
+  margin: 8px 0 0; padding: 10px 12px; background: var(--card); border: 1px solid var(--line2); border-radius: 8px;
+  display: grid; grid-template-columns: max-content 1fr; gap: 5px 12px; font-size: 13px; line-height: 1.45;
+}
+.q-gloss dt { font-weight: 700; font-family: 'SF Mono','Fira Code','Cascadia Code',monospace; color: var(--primary); white-space: nowrap; }
+.q-gloss dt sub, .q-gloss dd sub { font-size: .72em; }
+.q-gloss dd { margin: 0; color: var(--text); text-wrap: pretty; }
 .btn-copy-q {
   display: inline-block; padding: 4px 10px; border-radius: 6px;
   background: var(--yellow-bg); border: 1px solid var(--yellow); color: var(--amber);
@@ -1301,6 +1318,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="q-text" id="q-text"></div>
     <div class="q-img"  id="q-img"></div>
     <div class="q-hint" id="q-hint"></div>
+    <div id="q-gloss"></div>
     <div class="opts"   id="opts"></div>
   </div>
 
@@ -1349,6 +1367,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="q-text" id="study-q-text"></div>
     <div class="q-img"  id="study-q-img"></div>
     <div class="q-hint" id="study-q-hint"></div>
+    <div id="study-q-gloss"></div>
     <div id="study-recall-box" class="study-recall-wrap" style="display:none;">
       <div class="study-recall-hint">Zkus si nejprve odpověď připomenout sám, pak teprve odhal možnosti.</div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
@@ -2022,7 +2041,7 @@ const TESTS_REGISTRY = [
     id: 'manazerska-ekonomie',
     file: 'manazerska-ekonomie.json',
     title: 'Manažerská ekonomie',
-    updatedAt: '2026-08-19',
+    updatedAt: '2026-09-27',
     questionCount: 126,
     hasSets: true
   },
@@ -2385,6 +2404,8 @@ function renderQ() {
     hintEl.innerHTML = `<span class="hint-btn" onclick="S.hintUsed[${n}]=true;renderQ()">Počet správných?</span>${copyBtn}`;
     hintEl.className = 'q-hint';
   }
+
+  document.getElementById('q-gloss').innerHTML = glossaryHtml(q, true);
 
   // Možnosti
   const showFb = done && ihned;
@@ -3078,6 +3099,7 @@ function renderStudy() {
   const revealAnswersBox = document.getElementById('study-reveal-answers-box');
   const optsEl = document.getElementById('study-opts');
   const isOptionsShown = S.optionsShown[n];
+  document.getElementById('study-q-gloss').innerHTML = glossaryHtml(q, !!isOptionsShown);
 
   if (!isOptionsShown) {
     recallBox.style.display = '';
@@ -3414,6 +3436,29 @@ function formatTestScoringNote(format) {
 // ─────────────────────────────────────────────────────────────────
 // Kopírování otázky do schránky
 // ─────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────────
+// Slovníček zkratek u otázky (pole `glossary` v JSON testu)
+// ─────────────────────────────────────────────────────────────────
+let glossOpen = false;
+
+function glossLabel(label) {
+  return label.replace(/_([A-Za-z0-9]+)/g, '<sub>$1</sub>');
+}
+
+function glossaryHtml(q, includeOpts) {
+  const gl = S.selectedTest && S.selectedTest.glossary;
+  if (!Array.isArray(gl) || !gl.length) return '';
+  const txt = q.q + ' ' + (includeOpts ? q.opts.join(' ') : '');
+  const tokens = new Set(txt.match(/[A-Za-z]+/g) || []);
+  const hits = gl.filter(e => (e.keys || []).some(k => tokens.has(k)));
+  if (!hits.length) return '';
+  const n = hits.length;
+  const cnt = n === 1 ? '1 zkratka' : n <= 4 ? `${n} zkratky` : `${n} zkratek`;
+  const rows = hits.map(e => `<dt>${glossLabel(e.label)}</dt><dd>${glossLabel(e.text)}</dd>`).join('');
+  return `<details class="q-gloss"${glossOpen ? ' open' : ''} ontoggle="glossOpen=this.open">` +
+    `<summary>Zkratky v otázce · ${cnt}</summary><dl>${rows}</dl></details>`;
+}
+
 function copyQuestion(mode) {
   const q = S.questions[S.cur];
   const format = S.selectedTest.format;
@@ -3467,7 +3512,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.41';
+const APP_VERSION = '9.42';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

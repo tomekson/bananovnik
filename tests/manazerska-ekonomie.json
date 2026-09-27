@@ -1,7 +1,7 @@
 {
   "id": "manazerska-ekonomie",
   "title": "Manažerská ekonomie",
-  "updatedAt": "2026-08-19",
+  "updatedAt": "2026-09-27",
   "rubric": "Zkouškový test: 45 min., 21 otázek po 5 bodech",
   "format": {
     "type": "multiple-choice",
@@ -14,6 +14,181 @@
     "questionCount": 21,
     "openCount": 0
   },
+  "glossary": [
+    {
+      "keys": [
+        "P"
+      ],
+      "label": "P",
+      "text": "cena (price) - kolik stojí jeden kus"
+    },
+    {
+      "keys": [
+        "Q"
+      ],
+      "label": "Q",
+      "text": "množství (quantity) - kolik kusů se vyrobí nebo prodá"
+    },
+    {
+      "keys": [
+        "TR"
+      ],
+      "label": "TR",
+      "text": "celkový příjem (total revenue) = P × Q"
+    },
+    {
+      "keys": [
+        "TC"
+      ],
+      "label": "TC",
+      "text": "celkové náklady (total cost) = FC + VC"
+    },
+    {
+      "keys": [
+        "FC"
+      ],
+      "label": "FC",
+      "text": "fixní náklady (fixed cost) - nemění se s objemem výroby, platí se i při nulové výrobě"
+    },
+    {
+      "keys": [
+        "VC"
+      ],
+      "label": "VC",
+      "text": "variabilní náklady (variable cost) - rostou s objemem výroby"
+    },
+    {
+      "keys": [
+        "MC"
+      ],
+      "label": "MC",
+      "text": "mezní náklady (marginal cost) - o kolik vzrostou TC, když se vyrobí jeden kus navíc"
+    },
+    {
+      "keys": [
+        "MR"
+      ],
+      "label": "MR",
+      "text": "mezní příjem (marginal revenue) - o kolik vzroste TR, když se prodá jeden kus navíc"
+    },
+    {
+      "keys": [
+        "AR"
+      ],
+      "label": "AR",
+      "text": "průměrný příjem (average revenue) = TR / Q, vždy roven ceně P"
+    },
+    {
+      "keys": [
+        "AC",
+        "ATC"
+      ],
+      "label": "AC",
+      "text": "průměrné (celkové) náklady (average cost) = TC / Q"
+    },
+    {
+      "keys": [
+        "AVC"
+      ],
+      "label": "AVC",
+      "text": "průměrné variabilní náklady (average variable cost) = VC / Q"
+    },
+    {
+      "keys": [
+        "AFC"
+      ],
+      "label": "AFC",
+      "text": "průměrné fixní náklady (average fixed cost) = FC / Q, s růstem výroby klesají"
+    },
+    {
+      "keys": [
+        "TU"
+      ],
+      "label": "TU",
+      "text": "celkový užitek (total utility) ze všech spotřebovaných jednotek"
+    },
+    {
+      "keys": [
+        "MU"
+      ],
+      "label": "MU",
+      "text": "mezní užitek (marginal utility) - přírůstek celkového užitku z poslední spotřebované jednotky"
+    },
+    {
+      "keys": [
+        "MUx"
+      ],
+      "label": "MU_X",
+      "text": "mezní užitek statku X"
+    },
+    {
+      "keys": [
+        "MUy"
+      ],
+      "label": "MU_Y",
+      "text": "mezní užitek statku Y"
+    },
+    {
+      "keys": [
+        "Px"
+      ],
+      "label": "P_X",
+      "text": "cena statku X"
+    },
+    {
+      "keys": [
+        "Py"
+      ],
+      "label": "P_Y",
+      "text": "cena statku Y"
+    },
+    {
+      "keys": [
+        "BL"
+      ],
+      "label": "BL",
+      "text": "linie rozpočtu (budget line) - kombinace statků, na které spotřebiteli přesně stačí důchod; sklon = P_X / P_Y"
+    },
+    {
+      "keys": [
+        "MRSC",
+        "MRSc"
+      ],
+      "label": "MRS_C",
+      "text": "mezní míra substituce ve spotřebě (consumption) - sklon indiferenční křivky = MU_X / MU_Y; kolik Y je spotřebitel ochoten vzdát za jednotku X navíc"
+    },
+    {
+      "keys": [
+        "MRSE"
+      ],
+      "label": "MRS_E",
+      "text": "mezní míra substituce ve směně (exchange) - sklon linie rozpočtu = P_X / P_Y; kolik Y musí trh vzdát za jednotku X. Optimum: MRS_C = MRS_E"
+    },
+    {
+      "keys": [
+        "TPP",
+        "TP"
+      ],
+      "label": "TPP",
+      "text": "celkový fyzický produkt (total physical product) - celkový výstup při daném množství vstupu"
+    },
+    {
+      "keys": [
+        "MPP",
+        "MP"
+      ],
+      "label": "MPP",
+      "text": "mezní fyzický produkt (marginal physical product) - přírůstek výstupu z jedné jednotky vstupu navíc"
+    },
+    {
+      "keys": [
+        "APP",
+        "AP"
+      ],
+      "label": "APP",
+      "text": "průměrný fyzický produkt (average physical product) = TPP / množství vstupu"
+    }
+  ],
   "questions": [
     {
       "q": "Nejvyšší rozdíl mezi TR a TC nastává tehdy, když:",

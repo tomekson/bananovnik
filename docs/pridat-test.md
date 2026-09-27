@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.41 (20. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.42 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -20,6 +20,7 @@ Každý test je jeden JSON soubor ve složce `tests/`. Registr testů je konstan
 | `exam` | object | ano | Bodování zkoušky, viz níže |
 | `questions` | array | ano | Otázky, viz níže |
 | `sets` | array | ne | Tematické sady, viz níže. Když je uvedeš, dej do registru `hasSets: true` |
+| `glossary` | array | ne | Slovníček zkratek, viz níže. U otázky se zobrazí jen položky, jejichž zkratka se v otázce vyskytuje |
 | `openQuestions` | string[] | ne | Seznam otevřených otázek ke zkoušce. Aplikace je zatím nikde nezobrazuje, jen je drží u testu |
 
 ### `format`
@@ -76,6 +77,23 @@ Kde se to projeví:
 ```
 
 Obrázek se ukazuje v testu, v Active recall, v přehledu odpovědí i v tisku; klik otevře plnou velikost. Soubory patří do `tests/img/<id-testu>/`.
+
+### `glossary` (slovníček zkratek)
+
+```json
+"glossary": [
+  { "keys": ["MC"], "label": "MC", "text": "mezní náklady (marginal cost) - o kolik vzrostou TC při výrobě jednoho kusu navíc" },
+  { "keys": ["MRSC", "MRSc"], "label": "MRS_C", "text": "mezní míra substituce ve spotřebě = MU_X / MU_Y" }
+]
+```
+
+| Pole | Význam |
+|---|---|
+| `keys` | Zkratky přesně tak, jak jsou zapsané v otázkách (rozlišuje velikost písmen). Víc variant zápisu = víc klíčů |
+| `label` | Zobrazený zápis. `_X` se vykreslí jako dolní index (`MRS_C` → MRS<sub>C</sub>) |
+| `text` | Český význam. Dolní indexy fungují stejně jako v `label` |
+
+Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k otázce přidá rozbalovací blok **Zkratky v otázce** jen s položkami, jejichž `keys` se v textu vyskytují. Pořadí odpovídá pořadí v `glossary`. V Active recall se možnosti započítají až po jejich odhalení. Stav rozbalení se drží po celou návštěvu, takže stačí rozbalit jednou.
 
 ### `sets` (tematické sady)
 

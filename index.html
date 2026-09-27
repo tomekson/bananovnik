@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.52">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.53">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -423,7 +423,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-info-line-warn strong { color: var(--amber); }
 .rq-card > .q-info-box { margin: 0 8px 10px; }
 .btn-copy-q {
-  display: inline-block; padding: 4px 10px; border-radius: 6px;
+  display: inline-block; white-space: nowrap; padding: 4px 10px; border-radius: 6px;
   background: var(--yellow-bg); border: 1px solid var(--yellow); color: var(--amber);
   font-size: 11px; font-weight: 600; cursor: pointer; letter-spacing: .3px;
   opacity: .6; transition: all .15s;
@@ -432,7 +432,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .btn-copy-q:active { background: var(--line); }
 .btn-copy-q.copied { opacity: 1; color: var(--green); border-color: var(--green); background: var(--green-bg); }
 .q-hint.done { color: var(--dim); }
-.hint-btn {
+.hint-btn { white-space: nowrap;
   display: inline-block; padding: 4px 10px; border-radius: 6px;
   background: var(--yellow-bg); border: 1px solid var(--yellow); color: var(--amber);
   font-size: 11px; font-weight: 600; cursor: pointer; letter-spacing: .3px;
@@ -2421,7 +2421,7 @@ function renderQ() {
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
-  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat otázku</span>` + preInfoBtn(q, 'renderQ');
+  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat</span>` + preInfoBtn(q, 'renderQ');
   if (done && ihned) {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtn}`;
     hintEl.className   = 'q-hint done';
@@ -3146,7 +3146,7 @@ function renderStudy() {
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
   const hintEl = document.getElementById('study-q-hint');
   const isRevealed = S.revealed[n];
-  const copyBtnStudy = `<span class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')">Kopírovat otázku</span>` + preInfoBtn(q, 'renderStudy');
+  const copyBtnStudy = `<span class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')">Kopírovat</span>` + preInfoBtn(q, 'renderStudy');
   if (isRevealed || S.studyHintUsed[n]) {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtnStudy}`;
     hintEl.className = 'q-hint done';
@@ -3574,7 +3574,7 @@ function infoConcept(q) {
 
 function preInfoBtn(q, rerender) {
   if (!infoConcept(q)) return '';
-  return `<span class="btn-copy-q${preInfoOpen ? ' copied' : ''}" onclick="preInfoOpen=!preInfoOpen;${rerender}()">${preInfoOpen ? 'Skrýt pojem' : 'Vysvětlit pojem'}</span>`;
+  return `<span class="btn-copy-q${preInfoOpen ? ' copied' : ''}" onclick="preInfoOpen=!preInfoOpen;${rerender}()">Pojem</span>`;
 }
 
 function preInfoHtml(q) {
@@ -3659,7 +3659,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.52';
+const APP_VERSION = '9.53';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

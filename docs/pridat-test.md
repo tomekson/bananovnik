@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.42 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.44 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -67,6 +67,7 @@ Kde se to projeví:
 | `opts` | string[] | Možnosti, ve stávajících testech 3 až 6 |
 | `correct` | number[] | Indexy správných odpovědí, **0-based**. Jeden nebo více |
 | `img` | string | Nepovinné. Cesta k obrázku se zadáním relativně ke složce `tests/`, např. `img/projektove-rizeni/q055.jpg` |
+| `info` | string | Nepovinné. Krátké vysvětlení (2 až 3 věty), proč platí správná odpověď. Zobrazí se s návěštím **Info:** po vyhodnocení otázky v testu, po odhalení odpovědí v Active recall a v přehledu odpovědí. Dolní index přes `_X` jako ve slovníčku |
 
 ```json
 {
@@ -157,10 +158,10 @@ Splněné testy se v dashboardu řadí nakonec, ostatní zůstávají v pořadí
 
    | Soubor | Kde | Co změnit |
    |---|---|---|
-   | `sw.js` | řádek 1 | `const CACHE = 'bananovnik-v9.42';` |
-   | `index.html` | `APP_VERSION` | `const APP_VERSION = '9.42';` |
-   | `index.html` | `manifest.json?v=` | `href="manifest.json?v=9.42"` |
-   | `version.json` | celý soubor | `{"v":"9.42"}` |
+   | `sw.js` | řádek 1 | `const CACHE = 'bananovnik-v9.44';` |
+   | `index.html` | `APP_VERSION` | `const APP_VERSION = '9.44';` |
+   | `index.html` | `manifest.json?v=` | `href="manifest.json?v=9.44"` |
+   | `version.json` | celý soubor | `{"v":"9.44"}` |
 
 6. **Zvaliduj strojově:**
 

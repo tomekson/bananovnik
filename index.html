@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.43">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.44">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -410,6 +410,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-gloss dt { font-weight: 700; font-family: 'SF Mono','Fira Code','Cascadia Code',monospace; color: var(--primary); white-space: nowrap; }
 .q-gloss dt sub, .q-gloss dd sub { font-size: .72em; }
 .q-gloss dd { margin: 0; color: var(--text); text-wrap: pretty; }
+.q-info-box {
+  margin: 4px 0 14px; padding: 10px 12px 10px 14px; border-left: 3px solid var(--primary);
+  background: var(--card); border-radius: 8px; font-size: 13.5px; line-height: 1.5; color: var(--text); text-wrap: pretty;
+}
+.q-info-box sub { font-size: .72em; }
+.q-info-label { font-weight: 700; color: var(--primary); margin-right: 4px; }
+.rq-card > .q-info-box { margin: 0 8px 10px; }
 .btn-copy-q {
   display: inline-block; padding: 4px 10px; border-radius: 6px;
   background: var(--yellow-bg); border: 1px solid var(--yellow); color: var(--amber);
@@ -1320,6 +1327,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="q-hint" id="q-hint"></div>
     <div id="q-gloss"></div>
     <div class="opts"   id="opts"></div>
+    <div id="q-info"></div>
   </div>
 
   <div class="quiz-ftr">
@@ -1379,6 +1387,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       <button class="btn-reveal btn-reveal-answers" onclick="revealStudy()">Zobrazit správné odpovědi</button>
     </div>
     <div class="opts" id="study-opts"></div>
+    <div id="study-q-info"></div>
   </div>
 
   <div class="quiz-ftr">
@@ -2458,6 +2467,8 @@ function renderQ() {
   });
 
   // Zpětná vazba (jen v režimu "Ihned", nebo vždy při Otestovat)
+  document.getElementById('q-info').innerHTML = showFb ? infoHtml(q) : '';
+
   const fbEl = document.getElementById('fb');
   if (done && ihned) {
     const score = S.scores[n];
@@ -2902,7 +2913,8 @@ function openReview() {
         <div class="rq-txt">${qi + 1}. ${q.q}</div>
       </div>
       ${q.img ? `<div class="q-img">${qImgHtml(q)}</div>` : ''}
-      <div class="rq-opts" id="rqo-${qi}"></div>`;
+      <div class="rq-opts" id="rqo-${qi}"></div>
+      ${confirmed ? infoHtml(q) : ''}`;
     body.appendChild(card);
 
     const optsEl = card.querySelector(`#rqo-${qi}`);
@@ -3164,6 +3176,7 @@ function renderStudy() {
     });
   }
 
+  document.getElementById('study-q-info').innerHTML = (isOptionsShown && isRevealed) ? infoHtml(q) : '';
   document.getElementById('btn-study-test').style.display = isRevealed ? '' : 'none';
 
   const mainBtn = document.getElementById('btn-study-main');
@@ -3494,6 +3507,16 @@ function glossaryHtml(q, includeOpts) {
     `<summary>Zkratky v otázce · ${cnt}</summary><dl>${rows}</dl></details>`;
 }
 
+// Info k otázce (pole `info` v JSON testu) — zobrazí se po vyhodnocení / odhalení
+function infoHtml(q) {
+  const bank = S.selectedTest && S.selectedTest.questions;
+  const orig = bank && q && q._orig ? bank[q._orig - 1] : null;
+  const info = orig && orig.info;
+  if (!info) return '';
+  const safe = String(info).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return `<div class="q-info-box"><span class="q-info-label">Info:</span>${glossLabel(safe)}</div>`;
+}
+
 function copyQuestion(mode) {
   const q = S.questions[S.cur];
   const format = S.selectedTest.format;
@@ -3547,7 +3570,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.43';
+const APP_VERSION = '9.44';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

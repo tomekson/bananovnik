@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.47">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.48">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2980,6 +2980,7 @@ function startStudy(mode, qIdx, fromSets, label) {
     revealed: questions.map(() => study !== 'recall'),
     optionsShown: questions.map(() => study !== 'recall'),
     studyHintUsed: questions.map(() => false),
+    studyPick: questions.map(() => []),
     prevScreen: null,
     fromStudySets: !!fromSets,
     studyKind: study,
@@ -3166,13 +3167,25 @@ function renderStudy() {
     revealAnswersBox.style.display = isRevealed ? 'none' : '';
     optsEl.style.display = '';
     optsEl.innerHTML = '';
+    const picks = (S.studyPick && S.studyPick[n]) || [];
+    const canPick = S.studyKind === 'recall' && !isRevealed;
     q.opts.forEach((txt, i) => {
       const isCorrect = correctSet.has(i);
+      const isPicked  = picks.includes(i);
       const ltr = LETTERS[i] || '';
       let cls, box;
-      if (isRevealed) {
+      if (isRevealed && picks.length) {
+        // Student si tipnul: vyhodnotit jako v testu
+        if (isPicked && isCorrect)      { cls = 'opt locked ok picked';   box = '✓'; }
+        else if (isPicked)              { cls = 'opt locked bad picked';  box = '✗'; }
+        else if (isCorrect)             { cls = 'opt locked miss';        box = '→'; }
+        else                            { cls = 'opt locked';             box = ltr || String(i + 1); }
+      } else if (isRevealed) {
         cls = 'opt locked ' + (isCorrect ? 'study-correct' : 'study-wrong');
         box = isCorrect ? '✓' : '✗';
+      } else if (canPick) {
+        cls = 'opt' + (isPicked ? ' sel' : '');
+        box = ltr || String(i + 1);
       } else {
         cls = 'opt locked study-neutral';
         box = ltr || String(i + 1);
@@ -3180,6 +3193,7 @@ function renderStudy() {
       const d = document.createElement('div');
       d.className = cls;
       d.innerHTML = `<div class="opt-box">${box}</div><div class="opt-txt">${txt}</div>`;
+      if (canPick) d.addEventListener('click', () => toggleStudyPick(i));
       optsEl.appendChild(d);
     });
   }
@@ -3274,6 +3288,15 @@ ${body}
 
 function showStudyOptions() {
   S.optionsShown[S.cur] = true;
+  renderStudy();
+}
+
+// Tip v Active recall: klik přepíná výběr možnosti, vyhodnotí se až po odhalení
+function toggleStudyPick(i) {
+  if (!S.studyPick) S.studyPick = S.questions.map(() => []);
+  const arr = S.studyPick[S.cur];
+  const pos = arr.indexOf(i);
+  if (pos < 0) arr.push(i); else arr.splice(pos, 1);
   renderStudy();
 }
 
@@ -3481,6 +3504,12 @@ document.addEventListener('keydown', function(e) {
   if ((e.key === 'r' || e.key === 'R') && !S.revealed[S.cur]) { if (!S.optionsShown[S.cur]) { showStudyOptions(); } else { revealStudy(); } return; }
   if ((e.key === 'n' || e.key === 'N') && !S.revealed[S.cur] && !S.studyHintUsed[S.cur]) { S.studyHintUsed[S.cur] = true; renderStudy(); return; }
   if ((e.key === 'o' || e.key === 'O' || e.code === 'KeyO' || e.key === '0' || e.code === 'Digit0' || e.code === 'Numpad0') && document.getElementById('btn-study-test').style.display !== 'none') { e.preventDefault(); testStudyQ(); return; }
+  if (S.studyKind === 'recall' && S.optionsShown[S.cur] && !S.revealed[S.cur]) {
+    const codes = ['Digit1','Digit2','Digit3','Digit4','Digit5','Digit6'];
+    const pads  = ['Numpad1','Numpad2','Numpad3','Numpad4','Numpad5','Numpad6'];
+    let idx = codes.indexOf(e.code); if (idx === -1) idx = pads.indexOf(e.code);
+    if (idx !== -1 && idx < S.questions[S.cur].opts.length) { e.preventDefault(); toggleStudyPick(idx); return; }
+  }
 });
 
 // ─────────────────────────────────────────────────────────────────
@@ -3599,7 +3628,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.47';
+const APP_VERSION = '9.48';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

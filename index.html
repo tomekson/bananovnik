@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.42">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.43">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1246,11 +1246,11 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       <div class="sec-study-label">Procházení a tisk</div>
 
       <!-- Active recall — zvýrazněný studijní vstup -->
-      <button class="btn-recall" onclick="startStudy('recall')">
+      <button class="btn-recall" onclick="startRecall()">
         <span class="btn-recall-ico">🧠</span>
         <span class="btn-recall-text">
           <span class="btn-recall-title">Active recall</span>
-          <span class="btn-recall-sub">Zkus odpovědět z paměti, pak si odhal řešení</span>
+          <span class="btn-recall-sub" id="btn-recall-sub">Zkus odpovědět z paměti, pak si odhal řešení</span>
         </span>
         <span class="btn-recall-arrow">→</span>
       </button>
@@ -1274,7 +1274,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div style="display:flex;align-items:center;gap:11px;">
       <button class="btn-ico" onclick="show('screen-start')" title="Zpět na nastavení testu">←</button>
       <div style="min-width:0;">
-        <div style="font-size:19px;font-weight:800;letter-spacing:-.3px;">Procházení s odpověďmi</div>
+        <div style="font-size:19px;font-weight:800;letter-spacing:-.3px;" id="study-sets-heading">Procházení s odpověďmi</div>
         <div style="font-size:12px;color:var(--dim);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" id="study-sets-test-title"></div>
       </div>
     </div>
@@ -1766,7 +1766,25 @@ function syncTopicSetSelection() {
   updateStartBtn();
 }
 
+function updateRecallSub() {
+  const el = document.getElementById('btn-recall-sub');
+  if (!el || !S.selectedTest) return;
+  const sets = S.selectedTest.sets || [];
+  const total = S.selectedTest.questions.length;
+  if (cfg.setSel.length) {
+    const qn = cfg.setIdx.length;
+    const names = cfg.setSel.map(i => sets[i] && sets[i].name).filter(Boolean);
+    const label = names.length === 1 ? names[0] : `${names.length} ${names.length <= 4 ? 'témata' : 'témat'}`;
+    el.textContent = `Vybraná témata: ${label} · ${qn} ${qn === 1 ? 'otázka' : qn <= 4 ? 'otázky' : 'otázek'}`;
+  } else if (sets.length) {
+    el.textContent = `Všech ${total} otázek, nebo si nejdřív vyber témata nahoře`;
+  } else {
+    el.textContent = 'Zkus odpovědět z paměti, pak si odhal řešení';
+  }
+}
+
 function updateTopicSetsSummary() {
+  updateRecallSub();
   const el = document.getElementById('topic-sets-summary');
   if (!el) return;
   const n  = cfg.setSel.length;
@@ -2959,12 +2977,28 @@ function startStudy(mode, qIdx, fromSets) {
 // ─────────────────────────────────────────────────────────────────
 let studySetsSel = [];   // indexy vybraných sad (nezávislé na cfg.setSel z procvičování)
 
-function openStudyBrowse() {
+let studySetsMode = 'direct';   // 'direct' | 'recall' — co spustí tlačítko na obrazovce výběru sad
+
+function openStudyBrowse(mode) {
   if (!S.selectedTest) return;
+  studySetsMode = mode === 'recall' ? 'recall' : 'direct';
   const sets = S.selectedTest.sets || [];
-  if (!sets.length) { startStudy('direct'); return; }
+  if (!sets.length) { startStudy(studySetsMode); return; }
+  document.getElementById('study-sets-heading').textContent =
+    studySetsMode === 'recall' ? 'Active recall' : 'Procházení s odpověďmi';
   renderStudySets();
   show('screen-study-sets');
+}
+
+// Active recall z obrazovky předmětu: vybraná témata nahoře, jinak výběr sad.
+function startRecall() {
+  if (!S.selectedTest) return;
+  if (cfg.setSel.length && cfg.setIdx.length) {
+    studySetsSel = [...cfg.setSel];
+    startStudy('recall', cfg.setIdx, true);
+    return;
+  }
+  openStudyBrowse('recall');
 }
 
 function renderStudySets() {
@@ -3038,8 +3072,9 @@ function syncStudySetsUI() {
                   + `<button type="button" class="set-clear" onclick="clearStudySets()">Zrušit výběr</button>`;
   }
   const total = S.selectedTest ? S.selectedTest.questions.length : 0;
+  const verb = studySetsMode === 'recall' ? 'Active recall' : 'Procházet';
   document.getElementById('btn-study-sets-start').textContent =
-    n ? `Procházet výběr (${qn} ${qLabel}) ↵` : `Procházet všech ${total} otázek ↵`;
+    n ? `${verb}: výběr (${qn} ${qLabel}) ↵` : `${verb}: všech ${total} otázek ↵`;
 }
 
 function clearStudySets() {
@@ -3048,7 +3083,7 @@ function clearStudySets() {
 }
 
 function startStudyFromSets() {
-  startStudy('direct', studySetsSel.length ? studySetsIdx() : null, true);
+  startStudy(studySetsMode, studySetsSel.length ? studySetsIdx() : null, true);
 }
 
 function printTestDirect() {
@@ -3512,7 +3547,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.42';
+const APP_VERSION = '9.43';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

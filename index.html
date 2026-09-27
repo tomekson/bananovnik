@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.51">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.52">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -415,6 +415,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   background: var(--card); border-radius: 8px; font-size: 13.5px; line-height: 1.5; color: var(--text); text-wrap: pretty;
 }
 .q-info-box sub { font-size: .72em; }
+.q-info-pre { margin: -6px 0 14px; }
 .q-info-line { margin: 0 0 6px; }
 .q-info-line:last-child { margin-bottom: 0; }
 .q-info-line strong { color: var(--primary); font-weight: 700; }
@@ -1330,6 +1331,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="q-img"  id="q-img"></div>
     <div class="q-hint" id="q-hint"></div>
     <div id="q-gloss"></div>
+    <div id="q-pre"></div>
     <div class="opts"   id="opts"></div>
     <div id="q-info"></div>
   </div>
@@ -1380,6 +1382,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="q-img"  id="study-q-img"></div>
     <div class="q-hint" id="study-q-hint"></div>
     <div id="study-q-gloss"></div>
+    <div id="study-q-pre"></div>
     <div id="study-recall-box" class="study-recall-wrap" style="display:none;">
       <div class="study-recall-hint">Zkus si nejprve odpověď připomenout sám, pak teprve odhal možnosti.</div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
@@ -2418,7 +2421,7 @@ function renderQ() {
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
-  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat otázku</span>`;
+  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat otázku</span>` + preInfoBtn(q, 'renderQ');
   if (done && ihned) {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtn}`;
     hintEl.className   = 'q-hint done';
@@ -2472,6 +2475,7 @@ function renderQ() {
 
   // Zpětná vazba (jen v režimu "Ihned", nebo vždy při Otestovat)
   document.getElementById('q-info').innerHTML = showFb ? infoHtml(q) : '';
+  document.getElementById('q-pre').innerHTML = showFb ? '' : preInfoHtml(q);
 
   const fbEl = document.getElementById('fb');
   if (done && ihned) {
@@ -3142,7 +3146,7 @@ function renderStudy() {
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
   const hintEl = document.getElementById('study-q-hint');
   const isRevealed = S.revealed[n];
-  const copyBtnStudy = `<span class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')">Kopírovat otázku</span>`;
+  const copyBtnStudy = `<span class="btn-copy-q" id="btn-copy-study" onclick="copyQuestion('study')">Kopírovat otázku</span>` + preInfoBtn(q, 'renderStudy');
   if (isRevealed || S.studyHintUsed[n]) {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtnStudy}`;
     hintEl.className = 'q-hint done';
@@ -3199,6 +3203,7 @@ function renderStudy() {
   }
 
   document.getElementById('study-q-info').innerHTML = (isOptionsShown && isRevealed) ? infoHtml(q) : '';
+  document.getElementById('study-q-pre').innerHTML = (isOptionsShown && isRevealed) ? '' : preInfoHtml(q);
   document.getElementById('btn-study-test').style.display = isRevealed ? '' : 'none';
 
   const mainBtn = document.getElementById('btn-study-main');
@@ -3555,6 +3560,31 @@ function glossaryHtml(q, includeOpts) {
     `<summary>Zkratky v otázce · ${cnt}</summary><dl>${rows}</dl></details>`;
 }
 
+// Vysvětlení pojmu před odpovědí: jen první odstavec Info (Pojem), aby neprozradil odpověď.
+let preInfoOpen = false;
+
+function infoConcept(q) {
+  const bank = S.selectedTest && S.selectedTest.questions;
+  const orig = bank && q && q._orig ? bank[q._orig - 1] : null;
+  const info = orig && orig.info;
+  if (!info) return '';
+  const first = String(info).split(/\n+/).map(l => l.trim()).filter(Boolean)[0] || '';
+  return first.replace(/^Pojem:\s*/, '');
+}
+
+function preInfoBtn(q, rerender) {
+  if (!infoConcept(q)) return '';
+  return `<span class="btn-copy-q${preInfoOpen ? ' copied' : ''}" onclick="preInfoOpen=!preInfoOpen;${rerender}()">${preInfoOpen ? 'Skrýt pojem' : 'Vysvětlit pojem'}</span>`;
+}
+
+function preInfoHtml(q) {
+  if (!preInfoOpen) return '';
+  const c = infoConcept(q);
+  if (!c) return '';
+  const safe = c.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return `<div class="q-info-box q-info-pre"><div class="q-info-line">${glossLabel(safe)}</div></div>`;
+}
+
 // Info k otázce (pole `info` v JSON testu) — zobrazí se po vyhodnocení / odhalení
 function infoHtml(q) {
   const bank = S.selectedTest && S.selectedTest.questions;
@@ -3629,7 +3659,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.51';
+const APP_VERSION = '9.52';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.48 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.49 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -158,10 +158,10 @@ Splněné testy se v dashboardu řadí nakonec, ostatní zůstávají v pořadí
 
    | Soubor | Kde | Co změnit |
    |---|---|---|
-   | `sw.js` | řádek 1 | `const CACHE = 'bananovnik-v9.48';` |
-   | `index.html` | `APP_VERSION` | `const APP_VERSION = '9.48';` |
-   | `index.html` | `manifest.json?v=` | `href="manifest.json?v=9.48"` |
-   | `version.json` | celý soubor | `{"v":"9.48"}` |
+   | `sw.js` | řádek 1 | `const CACHE = 'bananovnik-v9.49';` |
+   | `index.html` | `APP_VERSION` | `const APP_VERSION = '9.49';` |
+   | `index.html` | `manifest.json?v=` | `href="manifest.json?v=9.49"` |
+   | `version.json` | celý soubor | `{"v":"9.49"}` |
 
 6. **Zvaliduj strojově:**
 

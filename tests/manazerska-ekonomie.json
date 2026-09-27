@@ -470,7 +470,7 @@
       "correct": [
         4
       ],
-      "info": "Pojem: Celkový užitek (TU) je součet uspokojení ze všech dosud spotřebovaných jednotek statku.\nProč: Při nulové spotřebě spotřebitel nezískal žádné uspokojení, takže TU je nulový - křivka TU vždy začíná v počátku.\nChyták: TU není maximální při maximální spotřebě - po bodu nasycení totiž mezní užitek klesne do záporu a TU se spotřebou dalších jednotek naopak snižuje."
+      "info": "Pojem: Celkový užitek (TU) je součet uspokojení ze všech dosud spotřebovaných jednotek statku.\nProč: Při nulové spotřebě spotřebitel nezískal žádné uspokojení, takže TU je nulový. V grafu proto křivka TU vychází z bodu, kde je nulové množství i nulový užitek, a teprve s první jednotkou roste.\nChyták: TU není maximální při maximální spotřebě - po bodu nasycení totiž mezní užitek klesne do záporu a TU se spotřebou dalších jednotek naopak snižuje."
     },
     {
       "q": "Posun křivky poptávky po určité komoditě doleva může být způsoben tím, že:",

@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.56 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.57 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -67,7 +67,7 @@ Kde se to projeví:
 | `opts` | string[] | Možnosti, ve stávajících testech 3 až 6 |
 | `correct` | number[] | Indexy správných odpovědí, **0-based**. Jeden nebo více |
 | `img` | string | Nepovinné. Cesta k obrázku se zadáním relativně ke složce `tests/`, např. `img/projektove-rizeni/q055.jpg` |
-| `info` | string | Nepovinné. Vysvětlení k otázce (60 až 110 slov) v řádcích oddělených `\n` s návěštími `Pojem:` (co je klíčový pojem), `Proč:` (mechanismus, proč platí správná odpověď), `Chyták:` (proč neplatí lákavá špatná možnost) a jen u sporných otázek `Rozpor:` (co říká test vs. co říká učebnice, formulace „Podle testu … Podle učebnice …“, bez odkazů na jiné otázky). Návěští Pojem/Proč/Chyták se nezobrazují (v aplikaci jsou to tři odstavce), jen Rozpor se vykreslí tučně a oranžově. Celé se zobrazí po vyhodnocení otázky v testu, po odhalení odpovědí v Active recall a v přehledu odpovědí. Před odpovědí jde tlačítkem **Co to je?** rozbalit jen první odstavec (Pojem), který odpověď neprozrazuje. Dolní index přes `_X` jako ve slovníčku |
+| `info` | string | Nepovinné. Vysvětlení k otázce (60 až 110 slov) v řádcích oddělených `\n` s návěštími `Pojem:` (co je klíčový pojem), `Proč:` (mechanismus, proč platí správná odpověď), `Chyták:` (proč neplatí lákavá špatná možnost) a jen u sporných otázek `Rozpor:` (co říká test vs. co říká učebnice, formulace „Podle testu … Podle učebnice …“, bez odkazů na jiné otázky). Návěští Pojem/Proč/Chyták se nezobrazují (v aplikaci jsou to tři odstavce), jen Rozpor se vykreslí tučně a oranžově. Celé se zobrazí po vyhodnocení otázky v testu, po odhalení odpovědí v Active recall a v přehledu odpovědí. Před odpovědí jde tlačítkem **Teorie** rozbalit jen první odstavec (Pojem), který odpověď neprozrazuje. Dolní index přes `_X` jako ve slovníčku |
 
 ```json
 {
@@ -158,10 +158,10 @@ Splněné testy se v dashboardu řadí nakonec, ostatní zůstávají v pořadí
 
    | Soubor | Kde | Co změnit |
    |---|---|---|
-   | `sw.js` | řádek 1 | `const CACHE = 'bananovnik-v9.56';` |
-   | `index.html` | `APP_VERSION` | `const APP_VERSION = '9.56';` |
-   | `index.html` | `manifest.json?v=` | `href="manifest.json?v=9.56"` |
-   | `version.json` | celý soubor | `{"v":"9.56"}` |
+   | `sw.js` | řádek 1 | `const CACHE = 'bananovnik-v9.57';` |
+   | `index.html` | `APP_VERSION` | `const APP_VERSION = '9.57';` |
+   | `index.html` | `manifest.json?v=` | `href="manifest.json?v=9.57"` |
+   | `version.json` | celý soubor | `{"v":"9.57"}` |
 
 6. **Zvaliduj strojově:**
 

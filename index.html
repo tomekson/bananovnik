@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.60">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.61">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -411,11 +411,11 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-gloss dt sub, .q-gloss dd sub { font-size: .72em; }
 .q-gloss dd { margin: 0; color: var(--text); text-wrap: pretty; }
 .q-info-box {
-  margin: 4px 0 14px; padding: 10px 12px 10px 14px; border-left: 3px solid var(--primary);
-  background: var(--card); border-radius: 8px; font-size: 13.5px; line-height: 1.5; color: var(--text); text-wrap: pretty;
+  margin: 14px 0 14px; padding: 12px 14px 13px; border: 1.5px solid var(--line2);
+  background: var(--card); border-radius: var(--r-sm, 9px); font-size: 13.5px; line-height: 1.5; color: var(--text); text-wrap: pretty;
 }
+.q-info-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--primary); margin-bottom: 7px; }
 .q-info-box sub { font-size: .72em; }
-.q-info-pre { margin: -6px 0 14px; }
 .q-info-line { margin: 0 0 6px; }
 .q-info-line:last-child { margin-bottom: 0; }
 .q-info-line strong { color: var(--primary); font-weight: 700; }
@@ -2474,8 +2474,8 @@ function renderQ() {
   });
 
   // Zpětná vazba (jen v režimu "Ihned", nebo vždy při Otestovat)
-  document.getElementById('q-info').innerHTML = showFb ? infoHtml(q) : '';
-  document.getElementById('q-pre').innerHTML = showFb ? '' : preInfoHtml(q);
+  document.getElementById('q-info').innerHTML = (showFb || preInfoOpen) ? infoHtml(q) : '';
+  document.getElementById('q-pre').innerHTML = '';
 
   const fbEl = document.getElementById('fb');
   if (done && ihned) {
@@ -3202,8 +3202,8 @@ function renderStudy() {
     });
   }
 
-  document.getElementById('study-q-info').innerHTML = (isOptionsShown && isRevealed) ? infoHtml(q) : '';
-  document.getElementById('study-q-pre').innerHTML = (isOptionsShown && isRevealed) ? '' : preInfoHtml(q);
+  document.getElementById('study-q-info').innerHTML = ((isOptionsShown && isRevealed) || preInfoOpen) ? infoHtml(q) : '';
+  document.getElementById('study-q-pre').innerHTML = '';
   document.getElementById('btn-study-test').style.display = isRevealed ? '' : 'none';
 
   const mainBtn = document.getElementById('btn-study-main');
@@ -3574,15 +3574,17 @@ function infoConcept(q) {
 
 function preInfoBtn(q, rerender) {
   if (!infoConcept(q)) return '';
-  return `<span class="btn-copy-q${preInfoOpen ? ' copied' : ''}" onclick="preInfoOpen=!preInfoOpen;${rerender}()">Teorie</span>`;
+  return `<span class="btn-copy-q${preInfoOpen ? ' copied' : ''}" onclick="togglePreInfo('${rerender}')">Teorie</span>`;
 }
 
-function preInfoHtml(q) {
-  if (!preInfoOpen) return '';
-  const c = infoConcept(q);
-  if (!c) return '';
-  const safe = c.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  return `<div class="q-info-box q-info-pre"><div class="q-info-line">${glossLabel(safe)}</div></div>`;
+// Teorie před odpovědí: ukáže celé Info pod možnostmi (může prozradit odpověď, je to volba studenta)
+function togglePreInfo(rerender) {
+  preInfoOpen = !preInfoOpen;
+  if (rerender === 'renderStudy') renderStudy(); else renderQ();
+  if (preInfoOpen) {
+    const el = document.querySelector(rerender === 'renderStudy' ? '#study-q-info .q-info-box' : '#q-info .q-info-box');
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
 }
 
 // Info k otázce (pole `info` v JSON testu) — zobrazí se po vyhodnocení / odhalení
@@ -3603,7 +3605,7 @@ function infoHtml(q) {
     }
     return `<div class="q-info-line">${glossLabel(l)}</div>`;
   });
-  return `<div class="q-info-box">${rows.join('')}</div>`;
+  return `<div class="q-info-box"><div class="q-info-eyebrow">Teorie</div>${rows.join('')}</div>`;
 }
 
 function copyQuestion(mode) {
@@ -3659,7 +3661,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.60';
+const APP_VERSION = '9.61';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

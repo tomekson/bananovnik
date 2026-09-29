@@ -1494,7 +1494,7 @@
         1,
         4
       ],
-      "info": "Pojem: Dokonalé komplementy se spotřebovávají vždy společně, v pevném poměru. Bez jednoho nemá druhý smysl kupovat.\nProč: Když dojde poleva, nejde ji na zmrzlinu dát, takže lidé přestanou kupovat i zmrzlinu. Když zdraží zmrzlina, lidé jí kupují méně, a protože ji kupují méně, klesne i poptávka po polevě.\nChyták: Pokles ceny zmrzliny by naopak poptávku po polevě zvýšil, ne snížil. U komplementů jdou cena jednoho statku a poptávka po druhém opačným směrem."
+      "info": "Pojem: Dokonalé komplementy se spotřebovávají vždy společně, v pevném poměru. Bez jednoho nemá druhý smysl kupovat.\nProč: Když dojde poleva, nejde ji na zmrzlinu dát, takže lidé přestanou kupovat i zmrzlinu. Když zdraží zmrzlina, lidé jí kupují méně, a protože ji kupují méně, klesne i poptávka po polevě.\nChyták: Pozor na slovíčka. Zlevnění zmrzliny zájem o polevu opravdu zvedne, test tomu ale říká růst poptávky po polevě, ne růst poptávaného množství. Poptávané množství polevy se v testu mění jen tehdy, když se změní cena polevy samotné. Možnost s poptávaným množstvím polevy je proto označená jako chybná, i když směr sedí."
     },
     {
       "q": "Pokud v důsledku vyjednávání odborů budou zaměstnavatelé vyplácet vyšší mzdy, než je mzda rovnovážná, potom:",
@@ -1617,7 +1617,7 @@
         2,
         3
       ],
-      "info": "Pojem: Cenově elastická poptávka znamená, že poptávané množství reaguje na změnu ceny víc než poměrně - třeba když cena klesne o 2 %, poptávka vzroste o víc než 2 %.\nProč: Když u takového statku cena klesne, poptávané množství vzroste tolik, že celkové výdaje spotřebitelů, a tedy i tržby prodejců, nakonec vzrostou.\nChyták: Tvrzení, že žádná změna ceny neovlivní tržby, platí jen u jednotkově elastické poptávky, kde je elasticita přesně 1, ne obecně u elastické poptávky."
+      "info": "Pojem: Cenově elastická poptávka znamená, že poptávané množství reaguje na změnu ceny víc než poměrně - třeba když cena klesne o 2 %, poptávané množství vzroste o víc než 2 %.\nProč: Když u takového statku cena klesne, poptávané množství vzroste tolik, že celkové výdaje spotřebitelů, a tedy i tržby prodejců, nakonec vzrostou.\nChyták: Tvrzení, že žádná změna ceny neovlivní tržby, platí jen u jednotkově elastické poptávky, kde je elasticita přesně 1, ne obecně u elastické poptávky."
     },
     {
       "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
@@ -1740,7 +1740,7 @@
         1,
         2
       ],
-      "info": "Pojem: Dokonalé komplementy jsou statky, které se spotřebovávají vždy spolu v pevném poměru - zmrzlina bez polevy nedává smysl.\nProč: Když zmrzlina zlevní, lidé jí koupí víc, a tím i víc polevy - poptávka po polevě roste. Když zmrzlina zdraží, poptávka po polevě klesá stejným směrem. Dojde-li poleva, přestane se z tohoto důvodu kupovat i zmrzlina.\nChyták: Poptávané množství polevy mění jen cena polevy samotné, ne cena zmrzliny - to je jiný pojem než posun poptávky."
+      "info": "Pojem: Dokonalé komplementy jsou statky, které se spotřebovávají vždy spolu v pevném poměru - zmrzlina bez polevy nedává smysl.\nProč: Když zmrzlina zlevní, lidé jí koupí víc, a tím i víc polevy - poptávka po polevě roste. Když zmrzlina zdraží, poptávka po polevě klesá stejným směrem. Dojde-li poleva, přestane se z tohoto důvodu kupovat i zmrzlina.\nChyták: Pozor na slovíčka. Zlevnění zmrzliny zájem o polevu opravdu zvedne, test tomu ale říká růst poptávky po polevě, ne růst poptávaného množství. Poptávané množství polevy se v testu mění jen tehdy, když se změní cena polevy samotné. Možnost s poptávaným množstvím polevy je proto označená jako chybná, i když směr sedí."
     },
     {
       "q": "Monopol je jediná firma, která:",

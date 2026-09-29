@@ -703,7 +703,7 @@
       "correct": [
         1
       ],
-      "info": "Pojem: Minimální cena je nejnižší cena, za kterou smí prodejce statek prodat. Vláda ji zavádí, aby prodejcům zajistila vyšší výdělek, třeba u zemědělských produktů.\nProč: Podle testu se cena 300 Kč dosadí do obou rovnic. Poptávané množství vyjde 200 kusů, nabízené jen 50 kusů. Rozdíl 150 kusů chybí, takže je to nedostatek.\nChyták: Přebytek vzniká, když je minimální cena nad rovnováhou. Pak firmy nabízejí víc, než lidé chtějí koupit - a to tady minimální cena obvykle dělá.\nRozpor: Podle testu vychází nedostatek 150 ks. Podle učebnice ale minimální cena dává smysl jen nad rovnovážnou cenou, tady 450 Kč. Cena 300 Kč je pod rovnováhou, takže by trh v realitě žádné omezení nepocítil - obchodovalo by se za rovnovážných 450 Kč a 125 ks."
+      "info": "Pojem: Minimální cena je nejnižší cena, za kterou se smí statek prodávat. Vláda ji zavádí, aby prodejcům zajistila vyšší výdělek, třeba u zemědělských produktů.\nProč: Cena 300 Kč se dosadí do obou rovnic. Poptávané množství vyjde 200 kusů, nabízené jen 50 kusů. Chybí 150 kusů, takže jde o nedostatek. U zkoušky počítej přesně takhle.\nChyták: Možnosti s přebytkem lákají, protože minimální cena obvykle vede k přebytku. To ale platí jen tehdy, když je nastavená nad rovnovážnou cenou.\nRozpor: Podle testu vychází nedostatek 150 ks. Podle učebnice má minimální cena smysl jen nad rovnovážnou cenou, tady 450 Kč, a pak vzniká přebytek. Cena 300 Kč je pod rovnováhou a chová se jako maximální cena, proto výpočet dává nedostatek. Zadání nejspíš mělo říkat maximální cenu."
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",

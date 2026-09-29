@@ -307,7 +307,7 @@
       "info": "Pojem: Monopolistická konkurence je trh s velkým počtem malých firem, které nabízejí podobný, ale ne úplně stejný produkt.\nProč: Stejně jako v dokonalé konkurenci je vstup do odvětví volný. Nízké bariéry umožňují novým firmám přicházet, dokud zisk v odvětví neklesne na nulu.\nChyták: Nejde o jednu velkou a mnoho malých firem, ani o pár velkých firem - to popisuje spíš oligopol nebo monopol. Tady je typicky mnoho podobně malých firem."
     },
     {
-      "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení: (bez záruky)",
+      "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
       "opts": [
         "dominantní firma může dlouhodobě dosahovat kladného ekonomického zisku",
         "firmy v konkurenčním lemu nabízejí svou produkci za nižší cenu než dominantní firma",
@@ -692,7 +692,7 @@
       "info": "Pojem: Dokonalá konkurence je trh s tolika malými firmami, že žádná sama neurčí cenu. Všichni prodejci mají stejné informace a mohou volně vstoupit i odejít.\nProč: Stejná informovanost, volný vstup i odchod a hodně prodejců patří přímo k definici tohoto trhu. Protože kdokoli může vstoupit, dlouhodobě firmám nezbyde žádný zisk navíc - jen nulový ekonomický zisk.\nChyták: Firma cenu neurčuje, jen ji přebírá z trhu. Její vlastní produkce je na celém trhu tak malá, že cenu ovlivnit nedokáže."
     },
     {
-      "q": "Funkce poptávky má rovnici: P = 700 - 2Q. Funkce nabídky má rovnici P = 200 + 2Q. Vláda zavede minimální cenu ve výši 300 Kč za kus. Jaká je díky tomu nerovnováha na trhu: (bez záruky)",
+      "q": "Funkce poptávky má rovnici: P = 700 - 2Q. Funkce nabídky má rovnici P = 200 + 2Q. Vláda zavede minimální cenu ve výši 300 Kč za kus. Jaká je díky tomu nerovnováha na trhu:",
       "opts": [
         "nedostatek 200 ks",
         "nedostatek 150 ks",
@@ -812,7 +812,7 @@
       "info": "Pojem: Mezní produkt (MP) ukazuje, o kolik vzroste celková produkce, když firma přidá do výroby jednu jednotku navíc z nějakého výrobního faktoru, třeba práce.\nProč: Podle tvaru produkční funkce může MP nejdřív růst, pak klesat, a nakonec i klesnout pod nulu. Proto může být kladný, nulový i záporný, a jeho průběh může růst, zůstávat stejný nebo klesat.\nChyták: MP není nejvyšší při nejvyšší produkci. Naopak, když je produkce na svém maximu, MP je nulový - další jednotka faktoru už produkci nezvyšuje."
     },
     {
-      "q": "Podle ordinalistického pojetí teorie užitku se optimum spotřebitele nachází tam, kde: (bez záruky)",
+      "q": "Podle ordinalistického pojetí teorie užitku se optimum spotřebitele nachází tam, kde:",
       "opts": [
         "mezní míra substituce ve spotřebě (MRSc) = Px/Py",
         "mezní míra substituce ve směně (MRSE) = MUx/MUy",
@@ -936,7 +936,7 @@
       "info": "Pojem: Poptávka po statku při změně důchodu roste nebo klesá podle toho, jestli je statek normální, nebo méněcenný.\nProč: U normálního statku pokles důchodu poptávku sníží. U méněcenného statku ji naopak zvýší. Bez znalosti typu statku proto nejde předem říct, co se stane.\nChyták: Poptávané množství mění cena statku, ne důchod. Tady jde o posun celé poptávkové křivky vlivem důchodu, ne o pohyb po křivce."
     },
     {
-      "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení: (bez záruky)",
+      "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
       "opts": [
         "firmy v konkurenčním lemu nabízejí svou produkci za stejnou cenu jako dominantní firma",
         "firmy v konkurenčním lemu nabízejí svou produkci za nižší cenu než dominantní firma",
@@ -1141,7 +1141,7 @@
       "info": "Pojem: Mezní užitek (MU) je přírůstek celkového užitku (TU), který spotřebitel získá z jedné další spotřebované jednotky statku.\nProč: Když sečteš mezní užitky za všechny spotřebované jednotky, dostaneš celkový užitek. TU je tedy postupný součet jednotlivých MU.\nChyták: MU se týká spotřebitele, ne firmy - jde o užitek ze spotřeby, ne o výrobu kusu výrobku. To by byl jiný pojem, mezní produkt."
     },
     {
-      "q": "Normální zisk je kvantitativně roven (bez záruky)",
+      "q": "Normální zisk je kvantitativně roven",
       "opts": [
         "celkovým nákladům",
         "celkovým příjmům",
@@ -1288,7 +1288,7 @@
       "info": "Pojem: Průměrný produkt (AP) je produkce na jednotku vstupu. Mezní produkt (MP) je přírůstek produkce z poslední přidané jednotky vstupu.\nProč: Dokud je MP vyšší než AP, táhne průměr nahoru. Jakmile MP klesne pod AP, táhne ho dolů. Proto se křivky MP a AP protnou přesně v bodě, kde je AP nejvyšší.\nChyták: MP neprotíná křivku celkového produktu stejným způsobem - tam je MP jen nulový, křivky se neprotínají. AP navíc u tohoto typu produkční funkce žádné minimum nemá."
     },
     {
-      "q": "Jedním ze základních znaků dokonalé konkurence je: (bez záruky)",
+      "q": "Jedním ze základních znaků dokonalé konkurence je:",
       "opts": [
         "dokonale elastická poptávka po produkci firmy",
         "dokonale neelastická poptávka po produkci firmy",
@@ -1528,7 +1528,7 @@
       "info": "Pojem: Optimum spotřebitele je bod, kde člověk při daném rozpočtu dosáhne nejvyššího možného užitku.\nProč: Nastává tam, kde se sklon indiferenční křivky rovná sklonu rozpočtové linie - v grafu je to bod, kde se rozpočtová linie dotýká nejvýš položené dosažitelné indiferenční křivky. Zároveň platí, že poměr mezního užitku ke ceně je stejný pro všechny kupované statky.\nChyták: Mezní míra substituce (MRS_E, MRS_C - tedy poměr, v jakém je člověk ochotný směnit jeden statek za druhý) se v optimu nerovná nule. Nulová hodnota by znamenala ochotu směňovat statky v nekonečném poměru, což bodu dotyku křivek neodpovídá."
     },
     {
-      "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení: (bez záruky)",
+      "q": "Oligopol s cenovým vůdcem. Platí následující tvrzení:",
       "opts": [
         "poptávka po produkci dominantní firmy je méně elastická než poptávka tržní",
         "cenu na trhu dominantní firma odvodí z poptávky po své produkci",
@@ -1981,7 +1981,7 @@
       "info": "Pojem: Ekonomický zisk je rozdíl mezi příjmy firmy a všemi jejími náklady - i těmi skrytými, jako je ušlá příležitost.\nProč: Protože se počítají i tyto skryté náklady, zisk je jimi ovlivněn. V dlouhém období noví výrobci vstupují tam, kde je zisk kladný, dokud se nesníží na nulu - proto zisk ovlivňuje, kam se přesouvají výrobní faktory.\nChyták: Ekonomický zisk není totéž co účetní zisk, ten skryté náklady nepočítá, a není vždy kladný - v krátkém období může být záporný nebo nulový."
     },
     {
-      "q": "Oligopol se zalomenou křivkou: (bez záruky)",
+      "q": "Oligopol se zalomenou křivkou:",
       "opts": [
         "pokud firma cenu zvýší, další firmy v oligopolu ji následují",
         "pokud firma cenu sníží, další firmy v oligopolu ji následují",

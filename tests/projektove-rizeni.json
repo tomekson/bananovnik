@@ -292,7 +292,7 @@
       "info": "Pojem: ICB (IPMA Competence Baseline, ve verzi 4 Individual Competence Baseline) je dokument mezinárodní asociace IPMA. Popisuje, co má umět projektový manažer.\nProč: ICB je soubor kompetencí, tedy znalostí, schopností a dovedností projektových manažerů. Je to standard zaměřený na kompetence manažera, ne na postupy řízení.\nChyták: Procesy řízení projektu popisují jiné standardy, třeba PMI nebo PRINCE2. ICB nepokrývá jen měkké dovednosti, ale i technické a kontextové. Netýká se všech členů týmu, ale hlavně manažera."
     },
     {
-      "q": "V rámci, které fáze životního cyklu projektu je nejvyšší úroveň rizika?",
+      "q": "V rámci které fáze životního cyklu projektu je nejvyšší úroveň rizika?",
       "opts": [
         "monitorování a kontrola",
         "plánování",
@@ -441,7 +441,7 @@
         "dokument, kterým se formálně schvaluje existence projektu",
         "identifikační údaje vlastníka projektu",
         "popis projektu a rozpočet projektu",
-        "vymezení rozsahu (rámce) projektu, jeho cíle a jeho výstupy (dodávky), rozpočet, časový rámec, kontrolní body a členství v týmu projekt",
+        "vymezení rozsahu (rámce) projektu, jeho cíle a jeho výstupy (dodávky), rozpočet, časový rámec, kontrolní body a členství v týmu projektu",
         "logický rámec a časový plán projektu"
       ],
       "correct": [0, 3],
@@ -508,7 +508,7 @@
       "info": "Pojem: Standard IPMA ICB 3 dělí kompetence projektového manažera na technické (metody řízení), behaviorální (jednání s lidmi) a kontextové (vztah k organizaci).\nProč: Trvalá organizace je kontextová kompetence, popisuje vztah projektu ke stálé struktuře firmy. Orientace na výsledky je behaviorální kompetence, jde o osobní nasazení dotahovat věci do konce. Proto ani jedna do technických nepatří.\nChyták: Komunikace, týmová práce a zdroje znějí měkce, ale v ICB 3 jsou zařazené mezi technické kompetence."
     },
     {
-      "q": "Mezi metody využívané ke kontrole:",
+      "q": "Mezi metody využívané ke kontrole patří:",
       "opts": [
         "analýza vlastních sil",
         "MTA",
@@ -583,7 +583,7 @@
       "q": "Mezi nástroje řízení nákupu lze zahrnout:",
       "opts": [
         "analýza vlastní síly (make or buy)",
-        "paterova analýza (ABC analýza)",
+        "Paretova analýza (ABC analýza)",
         "stanovení priorit nakupujícího (SPN)",
         "matici dodavatel-kupující",
         "kategorizaci dodavatelů"
@@ -640,7 +640,7 @@
       "info": "Pojem: Záměr projektu je nejvyšší úroveň logického rámce. Popisuje dlouhodobý přínos, ke kterému projekt přispívá, ale sám ho nezajistí.\nProč: Záměr je dlouhodobý strategický cíl, kterého se dosáhne až spolu s dalšími projekty nebo programy. Příklad: záměr „snížit nehodovost v kraji\", projekt „postavit obchvat\". Záměr ovlivňují vnější předpoklady, třeba chování řidičů, takže za něj manažer nemůže plně odpovídat.\nChyták: Cíl projektu, za který manažer odpovídá, je o úroveň níž. Popis cílového stavu je cíl projektu. Práce potřebná k dodání produktu je rozsah projektu."
     },
     {
-      "q": "(Příklad za 15 b.) - Vypočtěte pomocí metody PERT očekávanou dobu trvání aktivit A, B, C a současně celkovou očekávanou dobu trvání aktivit v případě, že aktivity A, B, C na sebe navazují vazbu konce začátek.",
+      "q": "(Příklad za 15 b.) - Vypočtěte pomocí metody PERT očekávanou dobu trvání aktivit A, B, C a současně celkovou očekávanou dobu trvání aktivit v případě, že aktivity A, B, C na sebe navazují vazbou konec-začátek.",
       "opts": [
         "Odhad doby trvání činnosti A = 6; B = 13; C = 8. Celková doba trvání je 27.",
         "Odhad doby trvání činnosti A = 10; B = 17; C = 13. Celková doba trvání je 40.",
@@ -731,7 +731,7 @@
       "info": "Pojem: EVM porovnává plánovanou hodnotu (PV), dosaženou hodnotu hotové práce (EV) a skutečné náklady (AC). EAC je odhad celkových nákladů při dokončení.\nProč: PV za 2 měsíce = 1 300 + 1 600 = 2 900. EV = 50 % × 900 + 100 % × 800 + 80 % × 2 500 = 450 + 800 + 2 000 = 3 250. AC = 540 + 1 000 + 1 800 = 3 340. SV = EV − PV = +350, projekt je v předstihu. CV = EV − AC = −90, náklady se překračují. EAC = AC + (BAC − EV) = 3 340 + (4 200 − 3 250) = 4 290.\nChyták: Částky jsou v tisících Kč, i když možnosti píší jen Kč. Vzorec BAC / CPI dává asi 4 316, mezi možnostmi není."
     },
     {
-      "q": "(Příklad za 10 b.) - Sestavte uzlově definovaný graf, pomocí metody CPM určete celkovou dobu trvání, kriticku cestu a celkovou rezervu činnosti D.",
+      "q": "(Příklad za 10 b.) - Sestavte uzlově definovaný graf, pomocí metody CPM určete celkovou dobu trvání, kritickou cestu a celkovou rezervu činnosti D.",
       "opts": [
         "Celková doba trvání projektu je 14, na kritické cestě leží činnosti A-B-D, celková rezerva činnosti D je 0.",
         "Celková doba trvání projektu je 10, na kritické cestě leží činnosti A-C-D, celková rezerva činnosti D je 3.",
@@ -810,7 +810,7 @@
       "q": "Jakou roli v týmu má Inovátor?",
       "opts": [
         "zabraňuje konfliktům v týmu, umožňuje efektivní jednání",
-        "tvoří nové návrhy, řeší složité problémy, důležití pro základní fáze projektu",
+        "tvoří nové návrhy, řeší složité problémy, důležitý pro základní fáze projektu",
         "usiluje o dokončení projektu v daných termínech",
         "navazuje vnější kontakty, zabezpečuje jednání, získávají informace",
         "okamžitě realizuje nové nápady"
@@ -894,7 +894,7 @@
       "q": "Které z následujících kroků nejsou prováděny v průběhu ukončování projektové fáze nebo ukončování projektu?",
       "opts": [
         "sestavení konečné faktury",
-        "zpracování analýzy CBA (Cost Benefits)",
+        "zpracování analýzy CBA (Cost Benefit Analysis)",
         "zpracování poučení z průběhu projektu",
         "získání formálního souhlasu od zákazníka",
         "revize rozsahu projektu se zákazníkem"
@@ -1000,7 +1000,7 @@
       "info": "Pojem: Celková rezerva je čas, o který se činnost smí zpozdit, aniž by se posunul konec celého projektu.\nProč: Spočítá se dvěma rovnocennými způsoby: nejpozději přípustný konec − nejdříve možný konec, nebo nejpozději přípustný začátek − nejdříve možný začátek. Oba dávají stejné číslo, protože konec je vždy začátek + stejná doba trvání. Příklad: činnost smí skončit nejpozději v 20, nejdříve skončí v 15, rezerva je 5.\nChyták: Součty termínů nedávají smysl. Rozdíl „nejdříve − nejpozději\" vyjde záporný, odečítá se obráceně."
     },
     {
-      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku náklady 80 000 Kč. Existuje 5% pravděpodobnost, že dodávka dílčích částí bude o 25 500 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 27 300 Kč. 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 12%.",
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku s náklady 80 000 Kč. Existuje 5% pravděpodobnost, že dodávka dílčích částí bude o 25 500 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 27 300 Kč. S 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 12%.",
       "opts": [
         "Výše rezervy pro náhlé případy by měla být u řešeného projektu 13 820 Kč.",
         "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
@@ -1012,7 +1012,7 @@
       "info": "Pojem: Rezerva pro náhlé případy je částka v rozpočtu na očekávané dopady rizik. Spočítá se jako součet pravděpodobnost × dopad. Úspory se odečtou.\nProč: Zpoždění 0,10 × 80 000 = 8 000. Levnější dodávka −0,05 × 25 500 = −1 275. Nezapadající díly 0,15 × 27 300 = 4 095. Rychlejší montáž −0,15 × 20 000 = −3 000. Chyby 0,12 × 50 000 = 6 000. Součet: 8 000 − 1 275 + 4 095 − 3 000 + 6 000 = 13 820 Kč.\nChyták: Rezervu je nutné vytvořit, protože očekávaná hodnota rizik vychází kladná. Možnost 59 250 Kč je výsledek jiného zadání."
     },
     {
-      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku náklady 100 000 Kč. Existuje 3% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 15 000 Kč. 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 10%.",
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku s náklady 100 000 Kč. Existuje 3% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 15 000 Kč. S 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 10%.",
       "opts": [
         "Výše rezervy pro náhlé případy by měla být u řešeného projektu 20 750 Kč.",
         "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
@@ -1024,7 +1024,7 @@
       "info": "Pojem: Rezerva pro náhlé případy je částka v rozpočtu na očekávané dopady rizik. Spočítá se jako součet pravděpodobnost × dopad. Úspory se odečtou.\nProč: Zpoždění 0,10 × 100 000 = 10 000. Levnější dodávka −0,03 × 50 000 = −1 500. Nezapadající díly 0,15 × 15 000 = 2 250. Rychlejší montáž −0,15 × 20 000 = −3 000. Chyby 0,10 × 70 000 = 7 000. Součet: 10 000 − 1 500 + 2 250 − 3 000 + 7 000 = 14 750 Kč.\nChyták: Kdo úspory přičte, dostane 23 750 Kč. Možnost 59 250 Kč je výsledek jiného zadání."
     },
     {
-      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace výrobku. Máte k dispozici tyto závěry analýzy: Je 20% pravděpodobnost zpoždění převzetí dílčích částí výrobku náklady 125 000 Kč. Existuje 4% pravděpodobnost, že dodávka dílčích částí bude o 40 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 45 100 Kč. 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 8%.",
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace výrobku. Máte k dispozici tyto závěry analýzy: Je 20% pravděpodobnost zpoždění převzetí dílčích částí výrobku s náklady 125 000 Kč. Existuje 4% pravděpodobnost, že dodávka dílčích částí bude o 40 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 45 100 Kč. S 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 8%.",
       "opts": [
         "Výše rezervy pro náhlé případy by měla být u řešeného projektu 37 365 Kč.",
         "Výše rezervy pro náhlé případy by měla být u řešeného projektu 40 365 Kč.",
@@ -1144,7 +1144,7 @@
       "info": "Pojem: Projektová koordinace (štábní projektové řízení) je nejslabší forma projektové organizace. Projekt běží uvnitř běžné struktury firmy.\nProč: Manažer projektu má jen štábní, poradní funkci. Projekt koordinuje, sbírá informace a radí. Rozhodovat, vydávat příkazy a nést celkovou odpovědnost ale zůstává jeho nadřízenému v liniové struktuře.\nChyták: Vyčlenění lidí z kmenové organizace pod manažera je čistá projektová organizace. Kombinace svislé a vodorovné odpovědnosti je maticová organizace. Převod kompetencí na manažera k projektové koordinaci nepatří."
     },
     {
-      "q": "Problémy, které projektového řízení dokáže řešit:",
+      "q": "Problémy, které projektové řízení dokáže řešit:",
       "opts": [
         "Zkreslování při vnitrofiremní komunikaci.",
         "Výskyt ping-pongového efektu.",
@@ -1171,7 +1171,7 @@
       "q": "Čím se zabývá znalostní oblast projektových standardů PMI \"Rozsah\":",
       "opts": [
         "Definuje a popisuje procesy, které se týkají zejména integrace informací a jejich efektivního šíření a zajištění kvalitního reportování (podávání zpráv o stavu projektu).",
-        "Zabývá především plánováním časových aspektů projektu (harmonogramů) ve vztahu k ostatním atributům, jako jsou lidské zdroje, rozpočet, náklady a jiné.",
+        "Zabývá se především plánováním časových aspektů projektu (harmonogramů) ve vztahu k ostatním atributům, jako jsou lidské zdroje, rozpočet, náklady a jiné.",
         "Analyzuje rozsah projektu. Rozsah projektu je zde chápán jako definice a následný rozklad projektu na menší jednotky činností",
         "Zajišťuje především integraci a návaznosti na jiné projekty a koordinování změn v celém průběhu projektu.",
         "Definuje a popisuje procesy, které se týkají zejména zajišťování zdrojů."
@@ -1216,7 +1216,7 @@
       "info": "Pojem: Projektové řízení je způsob řízení, který vede projekt od zadání po dosažení cíle s pomocí plánu, týmu a kontroly.\nProč: Test uznává čtyři definice. Je to způsob řízení, kterým lze zajistit požadované cíle. Je to aplikace znalostí, dovedností, nástrojů a technik na projektové aktivity, tak ho definuje PMI. Je to řízení cesty od jednoho stavu k druhému. Je to plánování, organizování, řízení a kontrola zdrojů pro krátkodobý specifický cíl.\nChyták: Marketingový mix 4P (produkt, cena, místo, propagace) patří do marketingu, ne do projektového řízení."
     },
     {
-      "q": "Pomocí metody CPM určete: délku trvání projektu, činnosti ležící na kritické cestě a celkovou časovou rezervu činnosti E. (Pozn. Doba trvání je v levém dolním poli:",
+      "q": "Pomocí metody CPM určete: délku trvání projektu, činnosti ležící na kritické cestě a celkovou časovou rezervu činnosti E. (Pozn. Doba trvání je v levém dolním poli uzlu.)",
       "opts": [
         "Délka trvání 16 časových jednotek, činnosti na kritické cestě A-B-D-G, celková rezerva činnosti E je 1.",
         "Délka trvání 17 časových jednotek, činnosti na kritické cestě A-B-D-F, celková rezerva činnosti E je 3.",
@@ -1267,7 +1267,7 @@
     {
       "q": "Metoda kritické cesty (CPM):",
       "opts": [
-        "slouží k určeni činnosti, které mají maximální možnou rezervu",
+        "slouží k určení činností, které mají maximální možnou rezervu",
         "slouží k určení nejdelší možné doby trvání projektu",
         "je deterministická metoda",
         "slouží k určení nejkratší doby trvání projektu",
@@ -1277,7 +1277,7 @@
       "info": "Pojem: CPM (Critical Path Method, metoda kritické cesty) je metoda časového plánování. Počítá termíny činností a hledá kritickou cestu, tedy řadu činností bez rezervy.\nProč: CPM je deterministická metoda, bere doby činností jako pevně dané, bez náhody. Určí nejkratší dobu, za kterou lze projekt stihnout, protože ta se rovná délce kritické cesty. Ukáže činnosti s nulovou celkovou rezervou, jejichž zpoždění posune konec projektu.\nChyták: CPM nehledá činnosti s maximální rezervou. „Nejdelší možná doba trvání\" neexistuje, zpozdit se dá projekt libovolně."
     },
     {
-      "q": "Manažer projemtu je odpovědný za:",
+      "q": "Manažer projektu je odpovědný za:",
       "opts": [
         "Za zajištění finančních prostředků pro projekt.",
         "Za dosažení cíle projektu.",

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.63">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.64">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -650,6 +650,14 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   color: var(--dim); background: rgba(0,0,0,.06); border-radius: 5px;
   padding: 2px 7px; margin-bottom: 6px;
 }
+#update-banner {
+  position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 200;
+  width: max-content; max-width: calc(100% - 24px);
+  padding: 10px 14px; border-radius: 10px; cursor: pointer;
+  background: var(--bg); background-image: linear-gradient(var(--amber-bg), var(--amber-bg));
+  border: 1.5px solid rgba(180,83,9,.25); box-shadow: 0 4px 16px rgba(0,0,0,.12);
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--amber);
+}
 .dash-card-badge--draft { color: var(--amber); background: var(--amber-bg); }
 .draft-note { color: var(--amber); font-weight: 700; }
 .dash-empty { font-size: 14px; color: var(--muted); }
@@ -1059,6 +1067,8 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
   </div>
 </div>
 
+<button id="update-banner" type="button" hidden onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</button>
+
 <!-- ══════════════════════════ DASHBOARD ══════════════════════════ -->
 <div id="screen-dashboard" class="screen active">
   <div id="pull-hint-dash" style="text-align:center;font-size:11px;color:var(--muted);padding:6px 0;transition:opacity .2s;"></div>
@@ -1117,7 +1127,6 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       <div style="font-size:11px;color:var(--muted);margin-top:6px;line-height:1.5;">
         <span id="start-rubric"></span><span id="start-scoring-note-sep" style="display:none;"> · </span><span id="start-scoring-note" style="display:none;"></span>
       </div>
-      <div id="update-banner" style="display:none;margin-top:8px;padding:10px 14px;background:var(--amber-bg);border:1.5px solid rgba(180,83,9,.25);border-radius:10px;font-size:13px;color:var(--amber);font-weight:600;cursor:pointer;" onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</div>
     </div>
 
     <!-- ZONE A: Procvičování -->
@@ -2330,6 +2339,7 @@ function show(id) {
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
   updateDocTitle(id);
+  if (typeof onScreenChange === 'function') onScreenChange(id);
 }
 
 function updateDocTitle(id) {
@@ -3661,52 +3671,63 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.63';
+const APP_VERSION = '9.64';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 
-if ('serviceWorker' in navigator) {
-  const hasExisting = !!navigator.serviceWorker.controller;
-  let swReg = null;
+// ── Kontrola nové verze ──
+// Dlouho otevřená záložka jinak zůstane na staré verzi: kontrola běží při návratu
+// do záložky, při fokusu okna, periodicky a při přechodu na výběr testu / start testu.
+// Na výběru testu se stránka obnoví sama (nic se neztratí), na startu testu se ukáže
+// banner, během testu se nic neruší a obnova proběhne po návratu na výběr testu.
+var updatePending = false;
+var lastVersionCheck = 0;
+var swReg = null;
 
-  function showBannerIfNeeded() {
-    const lastSeen = sessionStorage.getItem('bananovnik-v');
-    if (lastSeen === APP_VERSION) return;
-    document.getElementById('update-banner').style.display = '';
-  }
-
-  function listenForUpdate(reg) {
-    reg.addEventListener('updatefound', () => {
-      const nw = reg.installing;
-      if (!nw) return;
-      nw.addEventListener('statechange', () => {
-        if (nw.state === 'activated') showBannerIfNeeded();
-      });
-    });
-  }
-
-  navigator.serviceWorker.register('sw.js').then(reg => {
-    swReg = reg;
-    if (navigator.onLine && hasExisting) {
-      reg.update();
-      listenForUpdate(reg);
-    }
-  });
-
-  sessionStorage.setItem('bananovnik-v', APP_VERSION);
-
-  // Check for updates when app returns to foreground
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible' && navigator.onLine) {
-      fetch('version.json?t=' + Date.now()).then(r => r.json()).then(d => {
-        if (d.v !== APP_VERSION) {
-          document.getElementById('update-banner').style.display = '';
-                if (swReg) swReg.update();
-        }
-      }).catch(() => {});
-    }
-  });
+function checkVersion(force) {
+  if (updatePending || !navigator.onLine) return;
+  const now = Date.now();
+  if (!force && now - lastVersionCheck < 60 * 1000) return;
+  lastVersionCheck = now;
+  fetch(BASE + 'version.json?t=' + now, { cache: 'no-store' }).then(r => r.json()).then(d => {
+    if (!d || !d.v || d.v === APP_VERSION) return;
+    updatePending = d.v;
+    if (swReg) swReg.update();
+    onScreenChange(activeScreenId());
+  }).catch(() => {});
 }
+
+function activeScreenId() {
+  const el = document.querySelector('.screen.active');
+  return el ? el.id : '';
+}
+
+function onScreenChange(id) {
+  if (!updatePending) {
+    if (id === 'screen-dashboard' || id === 'screen-start') checkVersion();
+    return;
+  }
+  // Pojistka: když CDN po obnovení vrátí pořád starou stránku, znovu se automaticky
+  // neobnovuje (smyčka), jen ukáže banner.
+  const alreadyTried = sessionStorage.getItem('bananovnik-auto-reload') === updatePending;
+  if (id === 'screen-dashboard' && !alreadyTried) {
+    sessionStorage.setItem('bananovnik-auto-reload', updatePending);
+    location.reload();
+    return;
+  }
+  document.getElementById('update-banner').hidden = !(id === 'screen-start' || id === 'screen-dashboard');
+}
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register(BASE + 'sw.js').then(reg => { swReg = reg; }).catch(() => {});
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') checkVersion();
+});
+window.addEventListener('focus', () => checkVersion());
+window.addEventListener('online', () => checkVersion(true));
+setInterval(() => { if (document.visibilityState === 'visible') checkVersion(true); }, 15 * 60 * 1000);
+checkVersion(true);
 
 // Pull-to-refresh (dashboard + start screen)
 (function() {

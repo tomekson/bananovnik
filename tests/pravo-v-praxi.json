@@ -1,0 +1,2156 @@
+{
+  "id": "pravo-v-praxi",
+  "title": "Právo v praxi",
+  "updatedAt": "2026-10-04",
+  "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech\nPomůcky: občanský zákoník, zákon o obchodních korporacích, zákoník práce",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 20,
+    "openCount": 0
+  },
+  "questions": [
+    {
+      "q": "Obchodní firma:",
+      "opts": [
+        "musí z ní vyplývat předmět činnosti",
+        "nesmí být zaměnitelná",
+        "může být věcná, fantazijní nebo smíšená",
+        "nesmí být klamavá",
+        "je totožná s obchodní značkou, pod kterou daná společnost nabízí své služby nebo výrobky"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Základní kapitál se vytváří povinně v: (bez záruky)",
+      "opts": [
+        "žádná správně",
+        "veřejné obchodní společnosti",
+        "komanditní společnosti",
+        "společnosti s ručením omezeným",
+        "akciové společnosti"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Je-li podnikatelem fyzická osoba, jedná:",
+      "opts": [
+        "pouze prostřednictvím zástupce",
+        "pouze osobně",
+        "osobně nebo za ni jedná zástupce",
+        "osobně jen v rejstříkovém řízení",
+        "žádná správně"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Nezbytnou náležitostí pracovní smlouvy je:",
+      "opts": [
+        "druh práce",
+        "den nástupu do práce",
+        "mzda",
+        "informace o tom, kdo je vedoucím zaměstnancem",
+        "místo výkonu práce"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Společnost vzniká dnem:",
+      "opts": [
+        "ke kterému byla zapsána do podnikového rejstříku",
+        "který se může lišit ode dne jejího založení",
+        "žádné správně",
+        "ke kterému byly splaceny všechny peněžité i nepeněžité vklady",
+        "účinnosti společenské smlouvy"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Nejvyšším orgánem akciové společnosti je:",
+      "opts": [
+        "kolektiv jednatelů",
+        "dozorčí rada",
+        "valná hromada",
+        "žádná správně",
+        "představenstvo"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Pro družstvo platí:",
+      "opts": [
+        "u malého družstva vykonává funkci představenstva předseda družstva",
+        "uplatňuje se zásada družstevní demokracie",
+        "je založeno k uspokojování potřeb svých členů",
+        "jeho orgány jsou správní rada, dozorčí rada a členská schůze",
+        "má variabilní základní kapitál"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje:",
+      "opts": [
+        "jestliže výše jejích výnosů nebo příjmů za 2 po sobě bezprostředně následující účetní období je extrémně nízká (pod 100 000 Kč)",
+        "chce-li zřídit odštěpný závod",
+        "jestliže výše jejích výnosů nebo příjmů za 2 po sobě bezprostředně následující účetní období je extrémně vysoká (nad 120 000 Kč)",
+        "chce-li zřídit prokuru",
+        "chce-li zřídit provozovnu"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Podnikatelem je:",
+      "opts": [
+        "osoba vykonávající (soustavně, za účelem dosažení zisku atd.) činnost, která spočívá v zastupování jiných osob",
+        "akcionář akciové společnosti kótované na burze",
+        "osoba vykonávající pomocné práce u advokáta",
+        "osoba zaměstnaná na vrcholové manažerské pozici",
+        "osoba vykonávající funkce ve statutárních nebo dozorčích orgánech obchodních společností"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Druhy živností:",
+      "opts": [
+        "u řemeslných živností je nutné vyučení v oboru nebo obdobná kvalifikace",
+        "jsou oznamovací a přikazovací",
+        "jsou ohlašovací a koncesované",
+        "jsou ohlašovací a licencované",
+        "k provozování vázaných živností je nutné státní povolení"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Živnostenské oprávnění:",
+      "opts": [
+        "lze přenést na jinou osobu",
+        "lze přenést na jinou osobu pouze se souhlasem okresní hospodářské komory",
+        "vzniká u ohlašovacích živností dnem ohlášení",
+        "vzniká u ohlašovacích živností dnem nabytí právní moci rozhodnutí o udělení koncese",
+        "vzniká u koncesovaných živností dnem nabytí právní moci rozhodnutí o udělení koncese"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Po zániku společnosti její společníci za závazky společnosti:",
+      "opts": [
+        "ručí ve sníženém rozsahu",
+        "neručí; zaniklá společnost odpovídá za jejich závazky",
+        "ručí stejně jako za jejího trvání",
+        "ručí v rozsahu stanoveném mezinárodní smlouvou",
+        "žádná správně"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Existují tyto druhy pracovněprávních vztahů:",
+      "opts": [
+        "čtyřstranné",
+        "kolektivní",
+        "volné",
+        "ochranné",
+        "individuální"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Obchodní rejstřík:",
+      "opts": [
+        "jeho součástí je sbírka listin",
+        "je veřejný seznam",
+        "žádná správně",
+        "je veden okresními soudy",
+        "je veden krajskými soudy"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Sídlo právnické osoby, která se zapisuje do veřejného rejstříku:",
+      "opts": [
+        "se do veřejného rejstříku nezapisuje",
+        "musí být uvedeno v zakladatelském právním jednání, tam však postačuje název obce",
+        "nemusí být uvedeno v zakladatelském právním jednání",
+        "se do veřejného rejstříku zapisuje pouze jako název obce",
+        "žádná správně"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Obchodní firma je název, pod kterým je podnikatel zapsán do:",
+      "opts": [
+        "rejstříku obecně prospěšných společností",
+        "podnikovém rejstříku",
+        "živnostenském rejstříku",
+        "obchodního rejstříku",
+        "nadačního rejstříku"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Společnost zaniká ke dni:",
+      "opts": [
+        "výmazu z obchodního rejstříku",
+        "výmazu z podnikového rejstříku",
+        "žádná správně",
+        "10. výročí založení",
+        "zrušovacího rozhodnutí společníků"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Na pracovněprávní vztahy se vztahuje:",
+      "opts": [
+        "zákoník práce a v otázkách, které vyjmenovává, správní řád",
+        "zákoník práce a v otázkách, které neupravuje, občanský zákoník",
+        "pouze zákoník práce",
+        "zákoník práce a v otázkách, které vyjmenovává, občanský zákoník",
+        "zákoník práce a v otázkách, které neupravuje, správní řád"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Výše vkladu každého společníka společnosti s ručením omezeným musí činit:",
+      "opts": [
+        "žádná správně",
+        "alespoň 10000 Kč",
+        "alespoň 5000 Kč",
+        "alespoň 200000 Kč",
+        "alespoň 50000 Kč"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Do obchodního rejstříku se nezapisují:",
+      "opts": [
+        "nadační fondy",
+        "družstva",
+        "akciové společnosti",
+        "občanská sdružení",
+        "zájmová sdružení právnických osob"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Ke dni právní moci rozhodnutí soudu o neplatnosti společnosti:",
+      "opts": [
+        "žádná správně",
+        "vstupuje společnost do likvidace",
+        "společnost zaniká",
+        "společnost ztrácí právo používat firemní dodatek označující právní formu",
+        "vstupuje společnost do insolvence"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Společnost vzniká dnem:",
+      "opts": [
+        "ke kterému byla zapsána do obchodního rejstříku",
+        "podpisu společenské smlouvy",
+        "ke kterému byla zapsána do podnikového rejstříku",
+        "účinnosti společenské smlouvy",
+        "ke kterému byly splaceny všechny peněžité i nepeněžité vklady"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Živnostenské oprávnění:",
+      "opts": [
+        "vzniká u ohlašovacích živností dnem ohlášení",
+        "vzniká u ohlašovacích živností dnem nabytí právní moci rozhodnutí o udělení koncese",
+        "vzniká u koncesovaných živností dnem ohlášení",
+        "lze přenést na jinou osobu",
+        "lze přenést na jinou osobu pouze se souhlasem okresní hospodářské komory"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Sídlo právnické osoby, která se zapisuje do veřejného rejstříku:",
+      "opts": [
+        "se do veřejného rejstříku zapisuje v plném rozsahu (celá adresa)",
+        "musí být uvedeno v zakladatelském právním jednání v plném rozsahu (celá adresa)",
+        "se do veřejného rejstříku zapisuje pouze jako název obce",
+        "se do veřejného rejstříku nezapisuje",
+        "nemusí být uvedeno v zakladatelském právním jednání"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Akciová společnost:",
+      "opts": [
+        "může být založena jednou osobou jen tehdy, jestliže se jedná o osobu právnickou",
+        "nemůže být založena jednou osobou",
+        "může být založena jednou osobou (fyzickou nebo právnickou)",
+        "může být založena jednou osobou jen tehdy, jestliže se jedná o osobu fyzickou",
+        "žádná správně"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Povaha nebo platnost právního úkonu:",
+      "opts": [
+        "nemá význam pro vznik obchodněprávního vztahu",
+        "má význam pouze pro incidenční spory v insolvenčním řízení",
+        "je dotčena tím, že určité osobě je zakázáno podnikat nebo že nemá oprávnění k podnikání",
+        "žádná správně",
+        "není dotčena tím, že určité osobě je zakázáno podnikat nebo že nemá oprávnění k podnikání"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Sídlo právnické osoby, která se zapisuje do veřejného rejstříku:",
+      "opts": [
+        "musí být uvedeno v zakladatelském právním jednání, tam však postačuje název obce",
+        "se do veřejného rejstříku zapisuje v plném rozsahu (celá adresa)",
+        "musí být uvedeno v zakladatelském právním jednání v plném rozsahu (celá adresa)",
+        "nemusí být uvedeno v zakladatelském právním jednání",
+        "se do veřejného rejstříku zapisuje pouze jako název obce"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Obchodní firma: (bez záruky)",
+      "opts": [
+        "může být věcná, fantazijní nebo smíšená",
+        "nesmí být zaměnitelná",
+        "se zapisuje do obchodního rejstříku",
+        "nesmí být klamavá",
+        "se nezapisuje do obchodního rejstříku"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Společnost vzniká dnem:",
+      "opts": [
+        "ke kterému byla zapsána do obchodního rejstříku",
+        "žádné správně",
+        "podpisu společenské smlouvy",
+        "který se může lišit ode dne jejího založení",
+        "účinnosti společenské smlouvy"
+      ],
+      "correct": [
+        0,
+        3
+      ]
+    },
+    {
+      "q": "Nejvyšším orgánem družstva je:",
+      "opts": [
+        "představenstvo",
+        "členská schůze",
+        "předseda",
+        "všichni družstevníci",
+        "kontrolní komise"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Živnostenské oprávnění:",
+      "opts": [
+        "vzniká u koncesovaných živností dnem nabytí právní moci rozhodnutí o udělení koncese",
+        "lze přenést na jinou osobu",
+        "vzniká u ohlašovacích živností dnem ohlášení",
+        "nelze přenést na jinou osobu",
+        "vzniká u ohlašovacích živností dnem nabytí právní moci rozhodnutí o udělení koncese"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Druhy živností:",
+      "opts": [
+        "jsou ohlašovací a koncesované",
+        "ohlašovací živnosti rozlišujeme řemeslné, vázané a volné",
+        "jsou ohlašovací a licencované",
+        "k provozování vázaných živností je nutné státní povolení",
+        "jsou oznamovací a přikazovací"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Podnikatelem je:",
+      "opts": [
+        "společník, který získává prostředky výkonem účasti ve společnosti bez zvláštní úplně je za odměnu považován podíl na zisku",
+        "osoba vykonávající pomocné práce u advokáta",
+        "akcionář akciové společnosti kótované na burze",
+        "osoba, která na vlastní účet a odpovědnost vykonává výdělečnou činnost",
+        "osoba vykonávající funkce ve statutárních nebo dozorčích orgánech obchodních společností"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Obchodní právo:",
+      "opts": [
+        "jeho kodexem je obchodní zákoník",
+        "je spíše odvětvím práva veřejného",
+        "upravuje právní normy týkající se podnikání a podnikatelů",
+        "zahrnuje právní úpravu obchodních korporací",
+        "reguluje úpravu otevírací doby v obchodech"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Druhy živností:",
+      "opts": [
+        "k provozování vázaných živností je nutné státní povolení",
+        "jsou ohlašovací a koncesované",
+        "u řemeslných živností je nutné vyučení v oboru nebo obdobná kvalifikace",
+        "ohlašovací živnosti rozlišujeme řemeslné, vázané a volné",
+        "jsou ohlašovací a licencované"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Podnikatelem je:",
+      "opts": [
+        "osoba vykonávající pomocné práce u advokáta",
+        "osoba vykonávající (soustavně, za účelem dosažení zisku atd.) činnost, která spočívá v zastupování jiných osob",
+        "společník, který získává prostředky výkonem účasti ve společnosti bez zvláštní úplně je za odměnu považován podíl na zisku",
+        "akcionář akciové společnosti kótované na burze",
+        "osoba, která na vlastní účet a odpovědnost vykonává výdělečnou činnost"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Ke dni právní moci rozhodnutí soudu o neplatnosti společnosti:",
+      "opts": [
+        "bude společnost vymazána z obchodního rejstříku",
+        "společnost zaniká",
+        "společnost ztrácí právo používat firemní dodatek označující právní formu",
+        "bude společnost vymazána z podnikového rejstříku",
+        "vstupuje společnost do likvidace"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Obchodní právo:",
+      "opts": [
+        "se zabývá právními poměry vznikajícími při podnikání",
+        "se zabývá právním postavením podnikatelů",
+        "je odvětvím veřejného práva",
+        "jeho kodexem je obchodní zákoník",
+        "je odvětvím soukromého práva"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Společnost vzniká dnem:",
+      "opts": [
+        "účinnosti společenské smlouvy",
+        "ke kterému byly splaceny všechny peněžité i nepeněžité vklady",
+        "ke kterému byla zapsána do podnikového rejstříku",
+        "ke kterému byla zapsána do obchodního rejstříku",
+        "který se může lišit ode dne jejího založení"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Obchodní firma: (bez záruky)",
+      "opts": [
+        "se nezapisuje do obchodního rejstříku",
+        "nesmí být klamavá",
+        "se zapisuje do obchodního rejstříku",
+        "nesmí být zaměnitelná",
+        "musí z ní vyplývat předmět činnosti"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Společnost zaniká ke dni:",
+      "opts": [
+        "10. výročí založení",
+        "účinnosti zrušovacího rozhodnutí společníků",
+        "ke kterému byly vráceny všechny peněžité i nepeněžité vklady společníkům",
+        "zrušovacího rozhodnutí společníků",
+        "výmazu z obchodního rejstříku"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje:",
+      "opts": [
+        "jestliže výše jejích výnosů nebo přijmů za 2 po sobě bezprostředně následující účetní období je extrémně vysoká (nad 120 000 Kč)",
+        "chce-li zřídit prokuru",
+        "chce-li zřídit provozovnu",
+        "vždy",
+        "chce-li zřídit odštěpný závod"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Druhy živností:",
+      "opts": [
+        "ohlašovací živnosti rozlišujeme řemeslné, vázané a volné",
+        "u řemeslných živností je nutné vyučení v oboru nebo obdobná kvalifikace",
+        "k provozování vázaných živností je nutné státní povolení",
+        "koncesované živnosti rozlišujeme řemeslné, vázané a volné",
+        "jsou ohlašovací a licencované"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Živnostenské oprávnění:",
+      "opts": [
+        "vzniká u koncesovaných živností dnem ohlášení",
+        "vzniká u ohlašovacích živností dnem nabytí právní moci rozhodnutí o udělení koncese",
+        "nelze přenést na jinou osobu",
+        "lze přenést na jinou osobu pouze se souhlasem okresní hospodářské komory",
+        "vzniká u koncesovaných živností dnem nabytí právní moci rozhodnutí o udělení koncese"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Společnost zaniká ke dni:",
+      "opts": [
+        "10. výročí založení",
+        "žádná správně",
+        "zrušovacího rozhodnutí společníků",
+        "výmazu z obchodního rejstříku",
+        "ke kterému byly vráceny všechny peněžité i nepeněžité vklady společníkům"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Po zániku společnosti její společníci za závazky společnosti:",
+      "opts": [
+        "ručí ve zvýšeném rozsahu",
+        "neručí",
+        "žádná správně",
+        "ručí stejně jako za jejího trvání",
+        "ručí v rozsahu stanoveném mezinárodní smlouvou"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Ke dni právní moci rozhodnutí soudu o neplatnosti společnosti:",
+      "opts": [
+        "žádná správně",
+        "bude společnost vymazána z obchodního rejstříku",
+        "vstupuje společnost do insolvence",
+        "vstupuje společnost do likvidace",
+        "společnost ztrácí právo používat firemní dodatek označující právní formu"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Mezi kategorie družstev podle zákona o obchodních korporacích řadíme:",
+      "opts": [
+        "tzv. velké družstvo",
+        "bytové družstvo",
+        "tzv. malé družstvo",
+        "sportovní družstvo",
+        "sociální družstvo"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Likvidace je fáze existence obchodní společnosti, která:",
+      "opts": [
+        "předchází zániku obchodní společnosti",
+        "směřuje k výmazu obchodní společnosti z obchodního rejstříku",
+        "předchází zrušení obchodní společnosti",
+        "je realizována prostřednictvím konkursního správce",
+        "nastává po zrušení obchodní společnosti"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Povinnost jednat s péčí řádného hospodáře má:",
+      "opts": [
+        "likvidátor",
+        "člen dozorčí rady",
+        "zaměstnanec veřejné obchodní společnosti",
+        "jednatel společnosti s ručením omezeným",
+        "člen představenstva akciové společnosti"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pro likvidaci obchodní společnosti platí, že:",
+      "opts": [
+        "se jedná o mimosoudní vypořádání majetku zrušené obchodní společnosti",
+        "jejím cílem je vypořádat majetek zrušené obchodní korporace",
+        "jejím účelem je vyrovnat dluhy věřitelů",
+        "na jejím konci je třeba naložit s čistým majetkovým zůstatkem",
+        "zrušená obchodní korporace může vykonávat pouze činnosti směřující k jejímu zániku"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pro plnou moc platí, že:",
+      "opts": [
+        "ji dělíme na speciální, generální a profesionální",
+        "druhem podnikatelské plné moci je prokura",
+        "je předpokladem smluvního zmocnění",
+        "představuje písemné osvědčení o zastoupení pro třetí osoby",
+        "nesmí být napsána vlastnoručně"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Mezi orgány družstva nepatří:",
+      "opts": [
+        "předseda",
+        "revizní komise",
+        "členská schůze",
+        "představenstvo",
+        "kontrolní rada"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Který zaměstnanec je oprávněn za obchodní společnost uzavřít smlouvu na dodávku zboží?",
+      "opts": [
+        "údržbář",
+        "manažer provozu",
+        "kurýr",
+        "generální ředitel",
+        "jednatel"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "V případě ručení za dluhy společnosti platí, že:",
+      "opts": [
+        "se nejedná o synonymum k odpovědnosti za dluhy společnosti",
+        "akcionáři ručí neomezeně",
+        "zaměstnanci ručí omězeně",
+        "jednatel ručí neomezeně",
+        "se jedná o synonymum k odpovědnosti za dluhy společnosti"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Zastupovat společnost s ručením omezeným navenek může:",
+      "opts": [
+        "advokát na základě plné moci",
+        "jednatel",
+        "zaměstnanec dle svého zařazení a funkce",
+        "společník",
+        "člen dozorčí rady"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Akcie může emitovat:",
+      "opts": [
+        "komanditní společnost",
+        "společnost s ručením omezeným",
+        "akciová společnost",
+        "družstvo",
+        "veřejná obchodní společnost"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Mezi obchodní společnosti patří: (bez záruky)",
+      "opts": [
+        "společnost s ručením omezeným",
+        "veřejné obchodní společnost",
+        "družstvo",
+        "komanditní společnost",
+        "akciová společnost"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pro obchodní firmu platí, že:",
+      "opts": [
+        "podnikatel může vlastnit i více obchodních firem",
+        "je synonymem pro obchodní společnost",
+        "může být osobní, věcná či fantazijní",
+        "nesmí být zaměnitelná s jinou obchodní firmou",
+        "se jedná o jméno, pod kterým je podnikatel zapsán do obchodního rejstříku"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pro návrh na zápis obchodní společnosti do obchodního rejstříku platí, že:",
+      "opts": [
+        "bezprostředně po jeho podání dochází k likvidaci obchodní společnosti",
+        "jeho podáním vzniká obchodní společnost",
+        "jej lze podat i mimo tzv. inteligentní formulář",
+        "jej lze podat výlučně na tzv. inteligentním formuláři",
+        "k jeho podání dochází po založení společnosti"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Valná hromada společnosti s ručením omezeným:",
+      "opts": [
+        "se koná alespoň jednou ročně",
+        "je usnášeníschopná tehdy, pokud je přítomna alespoň jedna polovina hlasů",
+        "svolává ji jednatel pozvánkou alespoň 30 dnů předem",
+        "náleží jí obchodní vedení",
+        "rozhoduje o zásadních otázkách existence společnosti"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Společnost s ručením omezeným lze považovat za:",
+      "opts": [
+        "firmu",
+        "právnickou osobu",
+        "podnikatele",
+        "obchodní korporaci",
+        "obchodní společnost"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pro odpovědného zástupce platí, že:",
+      "opts": [
+        "je fyzická osoba ustanovená podnikatelem, kterému odpovídá za řádný provoz živnosti a za dodržování živnostenskoprávních předpisů",
+        "musí být ustanoven svěřenskému fondu, pokud hodnota majetku v něm složeném činí více než 1 mil. Kč",
+        "odpovídá za dluhy obchodní společnosti",
+        "může být ustanoven do funkce nejvýše pro tři podnikatele",
+        "může být ustanoven i v případech, kdy to právní předpisy nevyžadují (dobrovolně)"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Živností není:",
+      "opts": [
+        "činnosti bank",
+        "maloobchod",
+        "\"holý\" pronájem bytů a nebytových prostor",
+        "velkoobchod",
+        "hostinská činnost"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Změna pracovního poměru:",
+      "opts": [
+        "je zásadně možná pouze na základě dohody stran",
+        "může i bez souhlasu zaměstnance nastat v podobě vyslání na pracovní cestu",
+        "může se souhlasem zaměstnance nastat v podobě vyslání na pracovní cestu",
+        "je zásadně možná na základě jednostranného jednání zaměstnance",
+        "může za zákonem stanovených podmínek nastat (v podobě převedení na jinou práci) na základě jednostranného jednání zaměstnavatele"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
+      "opts": [
+        "vklady společníků jsou zákonem přikázány",
+        "založení alespoň 2 osobami",
+        "převod podílu společníka je v zásadě možný",
+        "nevytváří se formalizovaná struktura orgánů společnosti",
+        "nevytváří základní kapitál"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Pro osobní obchodní společnosti v českém právu platí:",
+      "opts": [
+        "převod podílu společníka je v zásadě možný",
+        "založení alespoň 2 osobami",
+        "právní úprava má vesměs dispozitivní charakter",
+        "ručení (alespoň některých kategorií) společníků za dluhy společnosti je neomezené",
+        "vklady společníků jsou zákonem přikázány"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Pracovní poměr může skončit:",
+      "opts": [
+        "odstoupením od smlouvy",
+        "dohodou",
+        "vyplacením odstupného",
+        "okamžitým zrušením",
+        "výpovědí"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Obecné podmínky provozování živnosti zahrnují:",
+      "opts": [
+        "bezúhonnost ve smyslu živnostenského zákona",
+        "netečnost",
+        "odhodlanost",
+        "příčetnost",
+        "ziskovost"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Osobní (nemajetková) práva společníků obchodní korporace:",
+      "opts": [
+        "zahrnují právo na stávku",
+        "jsou v zásadě převoditelná na třetí osoby",
+        "zahrnují právo účastnit se jednání nejvyššího orgánu korporace a hlasovat na něm",
+        "zahrnují právo na autorský výtisk",
+        "zahrnují právo na informace či vysvětlení"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Je-li plnění z kupní smlouvy vadné:",
+      "opts": [
+        "kupující má vždy právo na odstranění vady",
+        "kupující má vždy možnost od smlouvy odstoupit",
+        "kupující nemá možnost od smlouvy odstoupit",
+        "kupující nemá právo na odstranění vady",
+        "kupující má možnost od smlouvy odstoupit, jde-li o podstatné porušení smlouvy"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Pracovní smlouva musí obsahovat tyto náležitosti:",
+      "opts": [
+        "údaj o délce dovolené",
+        "výše mzdy nebo platu",
+        "údaj o sídle příslušného odborového svazu",
+        "místo výkonu práce",
+        "den splatnosti mzdy nebo platu"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Systém orgánů akciové společnosti:",
+      "opts": [
+        "je zákonem pevně předepsán bez možnosti volby",
+        "vždy zahrnuje kárnou komisi",
+        "není v zákoně upraven",
+        "může mít podobu jednoho nebo několika jednatelů",
+        "vždy zahrnuje valnou hromadu (jako nejvyšší orgán společnosti)"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Pro okamžité zrušení pracovního poměru platí:",
+      "opts": [
+        "zaměstnanec může pracovní poměr okamžitě zrušit pouze z důvodů uvedených v zákoně",
+        "zaměstnavatel může dát zaměstnanci výpověď také z důvodů, pro které může pracovní poměr zrušit okamžitě",
+        "zaměstnanec může pracovní poměr okamžitě zrušit také z důvodů, pro které může dát zaměstnavateli výpověď",
+        "zaměstnavatel může pracovní poměr okamžitě zrušit z jakéhokoli důvodu i bez uvedení důvodu",
+        "zaměstnavatel může pracovní poměr okamžitě zrušit také z důvodů, pro které může dát zaměstnanci výpověď"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Za podnikatele lze považovat:",
+      "opts": [
+        "jednatele společnosti s ručením omezeným",
+        "akcionáře",
+        "spolek přátel žehu",
+        "veřejnou obchodní společnost",
+        "fyzickou osobu zapsanou v obchodním rejstříku"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Pracovní smlouva musí obsahovat tyto náležitosti:",
+      "opts": [
+        "den splatnosti mzdy nebo platu",
+        "den nástupu do práce",
+        "údaj o sídle příslušného odborového svazu",
+        "údaj o délce dovolené",
+        "druh práce"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Pracovní smlouva musí obsahovat tyto náležitosti:",
+      "opts": [
+        "výše mzdy nebo platu",
+        "údaj o délce dovolené",
+        "místo výkonu práce",
+        "údaj o sídle příslušného odborového svazu",
+        "den nástupu do práce"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Prokura: (bez záruky)",
+      "opts": [
+        "zaniká až jejím výmazem z obchodního rejstříku",
+        "vzniká již udělením, zápis v obchodním rejstříku je pouze deklaratorní",
+        "vzniká až jejím zápisem do obchodního rejstříku",
+        "převádí se jejím prostřednictvím část kompetencí statutárního orgánu na příslušnou okresní prokuraturu",
+        "se do obchodního rejstříku nezapisuje vůbec"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Majetková práva společníků obchodní korporace: (bez záruky)",
+      "opts": [
+        "zahrnují právo účastnit se jednání nejvyššího orgánu korporace a hlasovat na něm",
+        "zahrnují právo na informace či vysvětlení",
+        "jsou v zásadě převoditelná na třetí osoby",
+        "zahrnují právo na autorský výtisk",
+        "nutno vykonávat osobně (ev. v zastoupení) a v zásadě nelze převádět"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Základní kapitál se vytváří povinně v:",
+      "opts": [
+        "obecně prospěšné společnosti",
+        "žádná správně",
+        "společnosti s ručením omezeným",
+        "akciové společnosti",
+        "veřejné obchodní společnosti"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Pro prokuristu platí:",
+      "opts": [
+        "funkci prokuristy může vykonávat pouze společník dané obchodní korporace",
+        "funkci prokuristy může vykonávat také právnická osoba, a to česká i zahraniční",
+        "funkci prokuristy může vykonávat pouze fyzická osoba",
+        "prokurista je vedle jednatele druhým základním statutárním orgánem s.r.o.",
+        "prokurista je oprávněn podnikatele zastupovat pouze ve věcech souvisejících s provozem podniku vyjma nakládání s nemovitostmi (není-li i k tomu výslovně zmocněn)"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Splnění závazku:",
+      "opts": [
+        "může mít podobu prodlení",
+        "musí nastat v místě plnění stanoveném smlouvou nebo zákonem",
+        "může mít podobu narovnání",
+        "musí být řádné (tedy bez vad)",
+        "není obvyklý způsob zániku závazku"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Pro výpověď z pracovního poměru platí:",
+      "opts": [
+        "zaměstnavatel ji může podat jen z taxativně vymezených důvodů",
+        "zaměstnanec ji může podat z jakéhokoliv důvodu i bez uvedení důvodu",
+        "zaměstnavatel ji může podat z jakéhokoliv důvodu i bez uvedení důvodu",
+        "vyžaduje se písemná forma, doručení může být i náhradní (vyvěšením na úřední desce zaměstnavatele)",
+        "může být provedena jakoukoli formou pod podmínkou řádného doručení"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Provozovna podnikatele:",
+      "opts": [
+        "označuje prostor, v němž podnikatel vykonává své podnikání",
+        "může mít podobu prodejního automatu nebo mobilní provozovny",
+        "je zejména pojmem živnostenského práva (podnikatelé podnikající na jiném právním základě provozovnu nemají)",
+        "je pojmem obecného obchodního práva (každý podnikatel má provozovnu)",
+        "je pojem synonymní s pojmem \"sídlo podnikatele\""
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Do veřejného rejstříku se nezapisují:",
+      "opts": [
+        "mezinárodní organizace",
+        "družstva",
+        "politické strany",
+        "uliční výbory",
+        "akciové společnosti"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Systém orgánů akciové společnosti: (bez záruky)",
+      "opts": [
+        "může zahrnovat představenstvo a dozorčí radu (tzv. dualistický systém)",
+        "je zákonem pevně předepsán bez možnosti volby",
+        "vždy zahrnuje kárnou komisi",
+        "může zahrnovat pouze správní radu (tzv. monistický systém)",
+        "může mít podobu jednoho nebo několika jednatelů"
+      ],
+      "correct": [
+        0,
+        3
+      ]
+    },
+    {
+      "q": "Mezi zákonem stanovené orgány společnosti s ručením omezeným patří:",
+      "opts": [
+        "představenstvo",
+        "jednatel či jednatelé",
+        "valná hromada",
+        "statutární ředitel",
+        "členská schůze"
+      ],
+      "correct": [
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Který pracovník je oprávněn za obchodní společnost uzavřít smlouvu na dodávku:",
+      "opts": [
+        "manažer provozu",
+        "obchodní ředitel",
+        "jednatel - generální ředitel",
+        "kurýr",
+        "údržbář"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Obchodní firma:",
+      "opts": [
+        "musí z ní vyplývat předmět činnosti",
+        "nesmí být zaměnitelná",
+        "nesmí být klamavá",
+        "se nezapisuje do obchodního rejstříku",
+        "může zahrnovat dodatek označující právní formu"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Závazek může zaniknout:",
+      "opts": [
+        "splněním",
+        "dohodou",
+        "předlužením",
+        "výpovědí",
+        "akceptací"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Mezi zákonem stanovené orgány společnosti s ručením omezeným patří:",
+      "opts": [
+        "představenstvo",
+        "dozorčí rada (je-li zřízena)",
+        "členská schůze",
+        "jednatel či jednatelé",
+        "předseda"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "V případě smlouvy o dílo platí tyto povinnosti:",
+      "opts": [
+        "povinnost zhotovitele provést dílo vždy osobně",
+        "povinnost objednatele převzít dílo vždy osobně",
+        "povinnost zhotovitele provést na svůj náklad a nebezpečí pro objednatele dílo",
+        "povinnost stran stanovit ve smlouvě místo plnění",
+        "povinnost stran stanovit ve smlouvě kupní cenu"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
+      "opts": [
+        "právní úprava má vesměs kogentní charakter",
+        "založení alespoň 2 osobami",
+        "vklady společníků jsou zákonem přikázány",
+        "ručení společníků za dluhy společnosti je omezené nebo žádné",
+        "nevytváří se formalizovaná struktura orgánů společnosti"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
+      "opts": [
+        "ručení společníků za dluhy společnosti je omezené nebo žádné",
+        "založení alespoň 2 osobami",
+        "nevytváří se formalizovaná struktura orgánů společnosti",
+        "právní úprava má vesměs kogentní charakter",
+        "převod podílu společníka je v zásadě možný"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Provozovna podnikatele:",
+      "opts": [
+        "označuje virtuální prostor, v němž podnikatel přijímá elektronické objednávky",
+        "označuje prostor, v němž podnikatel vykonává své podnikání",
+        "je pojmem obecného obchodního práva (každý podnikatel má provozovnu)",
+        "nemusí být nijak označena",
+        "může mít podobu prodejního automatu nebo mobilní provozovny"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Osobní (nemajetková) práva společníků obchodní korporace:",
+      "opts": [
+        "nutno vykonávat osobně (ev. v zastoupení) a v zásadě nelze převádět",
+        "zahrnují právo na podíl na zisku",
+        "jsou v zásadě převoditelná na třetí osoby",
+        "zahrnují právo účastnit se jednání nejvyššího orgánu korporace a hlasovat na něm",
+        "zahrnují právo na informace či vysvětlení"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi zákonem stanovené orgány společnosti s ručením omezeným patří:",
+      "opts": [
+        "předseda",
+        "jednatel či jednatelé",
+        "valná hromada",
+        "dozorčí rada (je-li zřízena)",
+        "statutární ředitel"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "V případě kupní smlouvy platí tyto povinnosti:",
+      "opts": [
+        "povinnost prodávajícího umožnit kupujícímu nabýt vlastnické právo k věci, která je předmětem smlouvy",
+        "povinnost stran stanovit ve smlouvě místo plnění",
+        "povinnost prodávajícího odevzdat věc, která je předmětem smlouvy",
+        "povinnost kupujícího převzít věc, která je předmětem smlouvy",
+        "povinnost kupujícího zacházet s věcí, která je předmětem smlouvy, s péčí řádného hospodáře"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Pro návrh na zápis obchodní společnosti do obchodního rejstříku neprováděný notářem platí, že:",
+      "opts": [
+        "k jeho podání dochází po založení společnosti",
+        "jeho podáním vzniká obchodní společnost",
+        "jej lze podat i mimo tzv. inteligentní formulář",
+        "bezprostředně po jeho podání dochází k likvidaci obchodní společnosti",
+        "jej lze podat výlučně na tzv. inteligentním formuláři"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Pro koncesovanou živnost platí: (bez záruky)",
+      "opts": [
+        "mohou je provozovat pouze podnikatelé zapsaní v obchodním rejstříku",
+        "pro jejich provozování může živnostenský úřad stanovit zvláštní podmínky",
+        "oprávnění provozovat živnost vzniká dnem vydání rozhodnutí živnostenského úřadu o jeho udělení",
+        "musí být provozovány sdružením podnikajících osob",
+        "oprávnění provozovat živnost vzniká dnem právní moci rozhodnutí živnostenského úřadu o jeho udělení"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Sídlo podnikatele:",
+      "opts": [
+        "je primárně určeno adresou zapsanou ve veřejném rejstříku (je-li v něm podnikatel zapsán)",
+        "může být umístěno i v bytě (neruší-li to klid a pořádek v domě)",
+        "nemusí být v případě právnické osoby uvedeno v zakladatelském právním jednání",
+        "musí být v případě právnické osoby uvedeno v zakladatelském právním jednání v úplné podobě celá adresa",
+        "není nezbytným znakem podnikatele"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Pro koncesované živnosti platí: (bez záruky)",
+      "opts": [
+        "oprávnění provozovat živnost vzniká dnem ohlášení",
+        "mohou je provozovat pouze podnikatelé zapsaní v obchodním rejstříku",
+        "pro jejich provozování postačuje splňovat obecné podmínky provozování živností",
+        "oprávnění provozovat živnost vzniká dnem právní moci rozhodnutí živnostenského úřadu o jeho udělení",
+        "oprávnění provozovat živnost vzniká dnem vydání rozhodnutí živnostenského úřadu o jeho udělení"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Závazek může zaniknout:",
+      "opts": [
+        "splněním",
+        "akceptací",
+        "výpovědí",
+        "odstoupením od smlouvy",
+        "započtením"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "V případě smlouvy o dílo platí tyto povinnosti:",
+      "opts": [
+        "povinnost zhotovitele provést na svůj náklad a nebezpečí pro objednatele dílo",
+        "povinnost stran stanovit ve smlouvě kupní cenu",
+        "povinnost zhotovitele provést dílo vždy osobně",
+        "povinnost objednatele převzít dílo",
+        "povinnost objednatele převzít dílo vždy osobně"
+      ],
+      "correct": [
+        0,
+        3
+      ]
+    },
+    {
+      "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
+      "opts": [
+        "nevytváří se formalizovaná struktura orgánů společnosti",
+        "ručení společníků za dluhy společnosti je omezené nebo žádné",
+        "založení alespoň 2 osobami",
+        "převod podílu společníka je v zásadě možný",
+        "vklady společníků jsou zákonem přikázány"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Živností není:",
+      "opts": [
+        "\"holý\" pronájem bytů a nebytových prostor",
+        "činnost bank",
+        "advokacie",
+        "výroba lihovin",
+        "velkoobchod"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Odstoupení od smlouvy:",
+      "opts": [
+        "je jednostranné právní jednání, kterým se právní poměr ruší do budoucna",
+        "je dvoustranné právní jednání, kterým se právní poměr ruší od počátku",
+        "je jednostranné právní jednání, kterým se právní poměr ruší od počátku",
+        "je dvoustranné právní jednání, kterým se právní poměr ruší do budoucna",
+        "je totéž co ručení"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Pro výpověď z pracovního poměru platí:",
+      "opts": [
+        "vyžaduje se písemná forma a řádné doručení",
+        "zaměstnavatel ji může podat z jakéhokoliv důvodu i bez uvedení důvodu",
+        "zaměstnanec ji může podat z jakéhokoliv důvodu i bez uvedení důvodu",
+        "vyžaduje se písemná forma, doručení může být i náhradní (vyvěšením na úřední desce zaměstnavatele)",
+        "zaměstnavatel ji může podat jen z taxativně vymezených důvodů"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Odstoupení od smlouvy:",
+      "opts": [
+        "je totéž co výpověď smlouvy",
+        "je dvoustranné právní jednání, kterým se právní poměr ruší do budoucna",
+        "je dvoustranné právní jednání, kterým se právní poměr ruší od počátku",
+        "je totéž co započtení",
+        "je jednostranné právní jednání, kterým se právní poměr ruší od počátku"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "V případě kupní smlouvy platí tyto povinnosti:",
+      "opts": [
+        "povinnost prodávajícího odevzdat věc, která je předmětem smlouvy",
+        "povinnost kupujícího zacházet s věcí, která je předmětem smlouvy, s péčí řádného hospodáře",
+        "povinnost kupujícího převzít věc, která je předmětem smlouvy",
+        "povinnost stran stanovit ve smlouvě kupní cenu",
+        "povinnost stran stanovit ve smlouvě místo plnění"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Majetková práva společníků obchodní korporace:",
+      "opts": [
+        "jsou v zásadě převoditelná na třetí osoby",
+        "zahrnují právo na podíl na zisku",
+        "zahrnují právo na informace či vysvětlení",
+        "nutno vykonávat osobně (ev. v zastoupení) a v zásadě nelze převádět",
+        "zahrnují právo na autorský výtisk"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Zaměstnanec:",
+      "opts": [
+        "nemůže jím být stát",
+        "může být právnická i fyzická osoba",
+        "může být pouze právnická osoba",
+        "může být pouze fyzická osoba",
+        "je v právním poměru silnější stranou"
+      ],
+      "correct": [
+        0,
+        3
+      ]
+    },
+    {
+      "q": "Valná hromada akciové společnosti: (bez záruky)",
+      "opts": [
+        "se koná alespoň jednou ročně",
+        "je orgán složený z dlužníků a věřitelů akciové společnosti",
+        "rozhoduje o zásadních otázkách existence společnosti",
+        "svolává ji jednatel pozvánkou alespoň 30 dnů předem",
+        "náleží jí zastupování společnosti navenek"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "V zakladatelském právním jednání obchodní korporace musí být určeno alespoň:",
+      "opts": [
+        "název statutárního orgánu a jeho první členové",
+        "předmět činnosti",
+        "počáteční počet zaměstnanců",
+        "číslo bankovního účtu korporace",
+        "sídlo"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "V zakladatelském právním jednání obchodní korporace musí být určeno alespoň:",
+      "opts": [
+        "obchodní firma",
+        "předmět činnosti",
+        "počáteční počet zaměstnanců",
+        "sídlo",
+        "obchodní logo"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Systém orgánů akciové společnosti:",
+      "opts": [
+        "je zákonem pevně předepsán bez možnosti volby",
+        "vždy zahrnuje valnou hromadu (jako nejvyšší orgán společnosti)",
+        "může zahrnovat pouze správní radu (tzv monistický systém)",
+        "vždy zahrnuje kárnou komisi",
+        "může zahrnovat představenstvo a dozorčí radu (tzv. dualistický systém)"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
+      "opts": [
+        "převod podílu společníka je v zásadě možný",
+        "nevytváří se formalizovaná struktura orgánů společnosti",
+        "založení alespoň 2 osobami",
+        "ručení společníků za dluhy společnosti je omezené nebo žádné",
+        "právní úprava má vesměs kogentní charakter"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Zaměstnanec:",
+      "opts": [
+        "může být právnická i fyzická osoba",
+        "může být pouze fyzická osoba",
+        "je v právním poměru slabší stranou",
+        "je v právním poměru silnější stranou",
+        "může jim být i stát"
+      ],
+      "correct": [
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Sídlo podnikatele:",
+      "opts": [
+        "musí být v případě právnické osoby uvedeno v zakladatelském právním jednání, postačuje však název obce",
+        "je primárně určeno adresou zapsanou ve veřejném rejstříku (je-li v něm podnikatel zapsán)",
+        "musí být v případě právnické osoby uvedeno v zakladatelském právním jednání v úplné podobě celé adresy",
+        "není nezbytným znakem podnikatele",
+        "může být umístěno i v bytě (neruší-li to klid a pořádek v domě)"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Změna pracovního poměru:",
+      "opts": [
+        "je zásadně možná pouze na základě dohody stran",
+        "může za zákonem stanovených podmínek nastat (v podobě převedení na jinou práci) na základě jednostranného jednání zaměstnance",
+        "může se souhlasem zaměstnance nastat v podobě vyslání na pracovní cestu",
+        "může i bez souhlasu zaměstnance nastat v podobě vyslání na pracovní cestu",
+        "může za zákonem stanovených podmínek nastat (v podobě převedení na jinou práci) na základě jednostranného jednání zaměstnavatele"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Po zániku společnosti její společníci za závazky společnosti:",
+      "opts": [
+        "ručí stejně jako za jejího trvání",
+        "ručí ve zvýšeném rozsahu",
+        "ručí ve sníženém rozsahu",
+        "neručí",
+        "žádná správně"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "V případě smlouvy o dílo platí tyto povinnosti:",
+      "opts": [
+        "povinnost stran stanovit ve smlouvě kupní cenu",
+        "povinnost zhotovitele provést na svůj náklad a nebezpečí pro objednatele dílo",
+        "povinnost zhotovitele provést dílo vždy osobně",
+        "povinnost objednatele zaplatit cenu díla",
+        "povinnost objednatele převzít dílo vždy osobně"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Majetková práva společníků obchodní korporace:",
+      "opts": [
+        "zahrnují právo účastnit se jednání nejvyššího orgánu korporace a hlasovat na něm",
+        "zahrnují právo na stávku",
+        "zahrnují právo na podíl na zisku",
+        "zahrnují právo na informace či vysvětlení",
+        "nutno vykonávat osobně (ev. v zastoupení) a v zásadě nelze převádět"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Sídlo podnikatele:",
+      "opts": [
+        "nemůže být umístěno v bytě",
+        "nemusí být v případě právnické osoby uvedeno v zakladatelském právním jednání",
+        "je primárně určeno adresou zapsanou ve veřejném rejstříku (je-li v něm podnikatel zapsán)",
+        "musí být v případě právnické osoby uvedeno v zakladatelském právním jednání, postačuje však název obce",
+        "musí být v případě právnické osoby uvedeno v zakladatelském právním jednání v úplné podobě celé adresy"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Valná hromada akciové společnosti: (bez záruky)",
+      "opts": [
+        "je orgán složený z dlužníků a věřitelů akciové společnosti",
+        "náleží jí zastupování společnosti navenek",
+        "rozhoduje o zásadních otázkách existence společnosti",
+        "svolává ji jednatel pozvánkou alespoň 30 dnů předem",
+        "se koná alespoň jednou ročně"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Pro okamžité zrušení pracovního poměru platí:",
+      "opts": [
+        "zaměstnavatel může pracovní poměr okamžitě zrušit pouze z důvodů uvedených v zákoně",
+        "zaměstnanec může pracovní poměr okamžitě zrušit z jakéhokoli důvodu i bez uvedení důvodu",
+        "zaměstnavatel může dát zaměstnanci výpověď také z důvodů, pro které může pracovní poměr zrušit okamžitě",
+        "zaměstnavatel může pracovní poměr okamžitě zrušit také z důvodů, pro které může dát zaměstnanci výpověď",
+        "zaměstnanec může pracovní poměr okamžitě zrušit také z důvodů, pro které může dát zaměstnavateli výpověď"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Závazek může zaniknout:",
+      "opts": [
+        "odstoupením od smlouvy",
+        "dohodou",
+        "splněním",
+        "akceptací",
+        "výpovědí"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "V právním řádu ČR platí, že zákony: (bez záruky)",
+      "opts": [
+        "členíme na ústavní zákony, které mají vyšší právní síly a \"běžné\" zákony, které mají nižší právní sílu",
+        "přijímá vždy Parlament ČR",
+        "mají vyšší právní sílu než zákonná opatření Senátu",
+        "členíme na zákoníky a řády, které mají vyšší právní sílu, a \"běžné zákony, které mají nižší právní sílu",
+        "jsou nejdůležitějším pramenem práva"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Splnění závazku:",
+      "opts": [
+        "může mít podobu prodlení",
+        "není obvyklý způsob zániku závazku",
+        "musí být řádné (tedy bez vad)",
+        "musí nastat včas (tedy bez prodlení)",
+        "musí nastat v místě plnění stanoveném smlouvou nebo zákonem"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Výpověď smlouvy jednou ze smluvních stran:",
+      "opts": [
+        "je možná jenom v případech uvedených v zákoně",
+        "znamená, že smluvní závazek zaniká 15 dní po uplynutí výpovědní doby",
+        "je totéž jako odstoupení od smlouvy",
+        "může být učiněna jakoukoli formou, i konkludentně",
+        "je jednostranný právní úkon"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Splnění závazku:",
+      "opts": [
+        "musí nastat v místě plnění stanoveném smlouvou nebo zákonem",
+        "může mít podobu prodleni",
+        "může být realizováno formou směnky nebo šeku",
+        "není obvyklý způsob zániku závazku",
+        "musí nastat včas (tedy bez prodlení)"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "V případě smlouvy o dílo platí tyto povinnosti:",
+      "opts": [
+        "povinnost stran stanovit ve smlouvě místo plnění",
+        "povinnost zhotovitele provést na svůj náklad a nebezpečí pro objednatele dílo",
+        "povinnost objednatele zaplatit cenu díla",
+        "povinnost objednatele převzít dílo",
+        "povinnost zhotovitele provést dílo vždy osobně"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Zrušení a zánik obchodní korporace: (bez záruky)",
+      "opts": [
+        "Jsou dva rozdílné okamžiky na konci existence korporace, přičemž zrušení předchází zániku",
+        "Se týkají pouze podnikatelských činností obchodní korporací provozovaných",
+        "Jsou dvě základní stádia zakládání obchodní korporace",
+        "Jsou dva rozdílné okamžiky na konci existence korporace, které od sebe obvykle dělí exekuce",
+        "Jsou synonyma pro tentýž jev"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Zaměstnavatel:",
+      "opts": [
+        "může být pouze fyzická osoba",
+        "může být pouze právnická osoba",
+        "může být právnická i fyzická osoba",
+        "je v právním poměru slabší stranou",
+        "může jím být i stát"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Pro výpověď z pracovního poměru platí:",
+      "opts": [
+        "vyžaduje se písemná forma, doručení může být i náhradní (vyvěšením na úřední desce zaměstnavatele)",
+        "vyžaduje se písemná forma a řádné doručení",
+        "může být provedena jakoukoli formou pod podmínkou řádného doručení",
+        "zaměstnavatel ji může podat z jakéhokoliv důvodu i bez uvedení důvodu",
+        "zaměstnanec ji může podat jen z taxativně vymezených důvodů"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Zrušení a zánik obchodní korporace:",
+      "opts": [
+        "Jsou dva rozdílné okamžiky na konci existence korporace, které od sebe obvykle dělí likvidace",
+        "Jsou dva rozdílné okamžiky na konci existence korporace, přičemž zrušení předchází zániku",
+        "se týkají pouze podnikatelských činností obchodní korporací provozovaných",
+        "Jsou synonyma pro tentýž jev",
+        "Jsou dva rozdílné okamžiky na konci existence korporace, které od sebe obvykle dělí exekuce"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Prokura:",
+      "opts": [
+        "je velmi konkrétní zplnomocnění udělované podnikatelem",
+        "je velmi obecné zplnomocnění udělované podnikatelem",
+        "vzniká až jejím zápisem do obchodního rejstříku",
+        "vzniká již udělením, zápis v obchodním rejstříku je pouze deklaratorní",
+        "zaniká až jejím výmazem z obchodního rejstříku"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Obchodní firma: (bez záruky)",
+      "opts": [
+        "musí z ní vyplývat předmět činnosti",
+        "může zahrnovat dodatek označující právní formu",
+        "je totožná s obchodní značkou, pod kterou daná společnost nabízí své služby nebo výrobky",
+        "se nezapisuje do obchodního rejstříku",
+        "se zapisuje do obchodního rejstříku"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Podnikatel a obchodní právo",
+      "q": [
+        3,
+        9,
+        26,
+        33,
+        34,
+        36,
+        38,
+        75,
+        128
+      ]
+    },
+    {
+      "name": "Živnosti a provozovna",
+      "q": [
+        10,
+        11,
+        23,
+        31,
+        32,
+        35,
+        43,
+        44,
+        63,
+        64,
+        69,
+        84,
+        95,
+        100,
+        102,
+        106
+      ]
+    },
+    {
+      "name": "Firma, sídlo a rejstříky",
+      "q": [
+        1,
+        8,
+        14,
+        15,
+        16,
+        20,
+        24,
+        27,
+        28,
+        40,
+        42,
+        59,
+        60,
+        85,
+        89,
+        99,
+        101,
+        119,
+        124,
+        138
+      ]
+    },
+    {
+      "name": "Zastoupení a prokura",
+      "q": [
+        52,
+        54,
+        56,
+        78,
+        81,
+        88,
+        137
+      ]
+    },
+    {
+      "name": "Vznik a zánik společnosti",
+      "q": [
+        5,
+        12,
+        17,
+        21,
+        22,
+        29,
+        37,
+        39,
+        41,
+        45,
+        46,
+        47,
+        49,
+        51,
+        114,
+        115,
+        121,
+        133,
+        136
+      ]
+    },
+    {
+      "name": "Korporace a společníci",
+      "q": [
+        2,
+        19,
+        25,
+        55,
+        57,
+        58,
+        62,
+        66,
+        67,
+        70,
+        79,
+        80,
+        93,
+        94,
+        96,
+        105,
+        111,
+        117,
+        123
+      ]
+    },
+    {
+      "name": "Orgány s.r.o., a.s. a družstva",
+      "q": [
+        6,
+        7,
+        30,
+        48,
+        50,
+        53,
+        61,
+        73,
+        86,
+        87,
+        91,
+        97,
+        113,
+        116,
+        125
+      ]
+    },
+    {
+      "name": "Smlouvy a závazky",
+      "q": [
+        71,
+        82,
+        90,
+        92,
+        98,
+        103,
+        104,
+        107,
+        109,
+        110,
+        122,
+        127,
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "name": "Pracovní právo",
+      "q": [
+        4,
+        13,
+        18,
+        65,
+        68,
+        72,
+        74,
+        76,
+        77,
+        83,
+        108,
+        112,
+        118,
+        120,
+        126,
+        134,
+        135
+      ]
+    }
+  ]
+}

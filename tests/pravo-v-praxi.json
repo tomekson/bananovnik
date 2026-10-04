@@ -28,7 +28,8 @@
         1,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán do obchodního rejstříku (§ 423 OZ). Je to právní název, ne marketingová značka.\nProč: Firma nesmí být zaměnitelná s jinou firmou a nesmí působit klamavě (§ 424 OZ). Jinak by klamala zákazníky a obchodní partnery. Podle obsahu ji dělíme na věcnou (popisuje činnost), fantazijní (vymyšlené slovo) a smíšenou (kombinace obou).\nChyták: Z firmy nemusí vyplývat předmět činnosti, fantazijní firma je přípustná. Firma také není totožná s obchodní značkou. Značka (ochranná známka) označuje výrobky nebo služby a může se od firmy úplně lišit."
     },
     {
       "q": "Základní kapitál se vytváří povinně v: (bez záruky)",
@@ -43,7 +44,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Základní kapitál je souhrn vkladů společníků vyjádřený v penězích. Slouží jako počáteční zdroj financování a signál pro věřitele.\nProč: Kapitálové společnosti mají vklady zákonem přikázané. U s.r.o. stačí vklad alespoň 1 Kč (§ 142 ZOK). U a.s. musí základní kapitál činit alespoň 2 000 000 Kč nebo 80 000 EUR (§ 246 ZOK). Test řadí ke kapitálovým formám i komanditní společnost, protože komanditista má povinnost vložit vklad.\nChyták: Veřejná obchodní společnost základní kapitál nevytváří. Vklady v ní jsou dovolené, ne přikázané, a věřitele chrání neomezené ručení společníků.\nRozpor: Podle testu se základní kapitál povinně vytváří i v komanditní společnosti. Podle ZOK a učebnice ho povinně vytváří jen s.r.o. a a.s. Komanditní společnost je osobní společnost a povinný je u ní jen vklad komanditisty. U zkoušky odpověz podle testu."
     },
     {
       "q": "Je-li podnikatelem fyzická osoba, jedná:",
@@ -56,7 +58,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Fyzická osoba - podnikatel podniká vlastním jménem, na vlastní účet a na vlastní odpovědnost (§ 420 OZ). Jedná tedy za sebe sama.\nProč: Podnikatel může jednat osobně, ale nemusí. Za podnikatele smí jednat i zástupce: zmocněnec na základě plné moci, prokurista (§ 450 OZ) nebo zaměstnanec pověřený určitou činností (§ 430 OZ). Zastoupení je v soukromém právu běžný nástroj.\nChyták: Možnosti \"pouze osobně\" a \"pouze prostřednictvím zástupce\" jsou příliš úzké, protože zákon dovoluje obojí. Osobní jednání také není omezeno jen na rejstříkové řízení."
     },
     {
       "q": "Nezbytnou náležitostí pracovní smlouvy je:",
@@ -71,7 +74,8 @@
         0,
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Pracovní smlouva zakládá pracovní poměr. Zákon určuje, co v ní musí být, jinak smlouva nevznikne platně.\nProč: Podle § 34 odst. 1 ZP musí pracovní smlouva obsahovat tři podstatné náležitosti: druh práce, místo nebo místa výkonu práce a den nástupu do práce. Bez nich se zaměstnanec a zaměstnavatel nedohodli na tom nejdůležitějším.\nChyták: Mzda není nezbytnou náležitostí. Zaměstnavatel o ní musí zaměstnance písemně informovat (§ 37 ZP), ale může ji určit i mzdovým výměrem. Jméno vedoucího zaměstnance také patří jen do informace o obsahu pracovního poměru, ne do smlouvy."
     },
     {
       "q": "Společnost vzniká dnem:",
@@ -84,7 +88,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Založení a vznik společnosti jsou dvě různé chvíle. Založení je uzavření společenské smlouvy, vznik je zápis do obchodního rejstříku.\nProč: Společnost se zakládá společenskou smlouvou nebo zakladatelskou listinou (§ 125 OZ), ale vzniká až dnem zápisu do veřejného rejstříku (§ 126 OZ). Mezi založením a zápisem obvykle uplyne nějaký čas. Den vzniku se proto od dne založení může lišit (stejný den připadá v úvahu jen při přímém zápisu notářem).\nChyták: Podnikový rejstřík neexistuje, správně jde o obchodní rejstřík. Splacení vkladů je jen podmínkou pro podání návrhu na zápis, společnost tím nevzniká. Účinnost společenské smlouvy znamená založení, ne vznik."
     },
     {
       "q": "Nejvyšším orgánem akciové společnosti je:",
@@ -97,7 +102,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Valná hromada je shromáždění akcionářů. Jako nejvyšší orgán rozhoduje o zásadních věcech akciové společnosti.\nProč: Podle ZOK valná hromada mimo jiné mění stanovy, rozhoduje o změně základního kapitálu, schvaluje účetní závěrku a rozdělení zisku. Volí a odvolává také členy dalších orgánů, typicky dozorčí rady nebo správní rady. Proto stojí na vrcholu struktury.\nChyták: Představenstvo je statutární orgán, řídí každodenní chod a jedná za společnost navenek. Dozorčí rada je kontrolní orgán. Kolektiv jednatelů patří k s.r.o., ne k akciové společnosti."
     },
     {
       "q": "Pro družstvo platí:",
@@ -113,7 +119,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Družstvo je společenství neuzavřeného počtu osob. Zakládá se k vzájemné podpoře svých členů nebo třetích osob, případně k podnikání.\nProč: Družstvo slouží hlavně uspokojování potřeb svých členů. Uplatňuje se zásada družstevní demokracie: každý člen má zpravidla jeden hlas bez ohledu na výši vkladu. Základní kapitál tvoří souhrn členských vkladů a mění se se vstupem a odchodem členů, je tedy variabilní. Malé družstvo (méně než 50 členů) může místo představenstva a kontrolní komise mít jen předsedu.\nChyták: Orgány družstva jsou členská schůze, představenstvo a kontrolní komise. Správní rada a dozorčí rada patří k akciové společnosti."
     },
     {
       "q": "Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje:",
@@ -127,7 +134,8 @@
       "correct": [
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje buď na vlastní žádost, nebo povinně ze zákona.\nProč: Odštěpný závod se zapisuje do obchodního rejstříku (§ 503 OZ). Podnikatel, který ho chce zřídit, proto musí být v rejstříku zapsán i sám. Prokuru může udělit jen podnikatel zapsaný v obchodním rejstříku (§ 450 OZ), takže zápis je nutný i pro ni.\nChyták: Povinnost zápisu kvůli výnosům vzniká, když výnosy nebo příjmy za dvě po sobě jdoucí účetní období přesáhnou 120 milionů Kč, ne 120 tisíc. Nízké výnosy zápis nevyžadují vůbec. Provozovna se do obchodního rejstříku nezapisuje."
     },
     {
       "q": "Podnikatelem je:",
@@ -140,7 +148,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Podnikatel je ten, kdo samostatně vykonává na vlastní účet a odpovědnost výdělečnou činnost živnostenským nebo obdobným způsobem, soustavně a za účelem dosažení zisku (§ 420 OZ).\nProč: Zastupování jiných osob splňuje znaky podnikání, pokud ho osoba vykonává samostatně, soustavně a pro zisk. Typickým příkladem je obchodní zástupce.\nChyták: Akcionář jen drží akcie a pobírá podíl na zisku, sám nepodniká. Zaměstnanec na manažerské pozici ani pomocník u advokáta nejednají samostatně, pracují v závislé práci pro jiného. Člen statutárního nebo dozorčího orgánu vykonává funkci pro společnost, podnikatelem je společnost."
     },
     {
       "q": "Druhy živností:",
@@ -154,7 +163,8 @@
       "correct": [
         0,
         2
-      ]
+      ],
+      "info": "Pojem: Živnost je soustavná činnost provozovaná samostatně, vlastním jménem, na vlastní odpovědnost a za účelem zisku (§ 2 ŽZ).\nProč: Živnosti se dělí na ohlašovací a koncesované (§ 9 ŽZ). Ohlašovací vznikají ohlášením, koncesované až povolením (koncesí). Ohlašovací se dále dělí na řemeslné, vázané a volné. U řemeslných živností je podmínkou odborné způsobilosti vyučení v oboru nebo obdobná kvalifikace (§ 21 ŽZ).\nChyták: Licencované, oznamovací ani přikazovací živnosti zákon nezná. Vázaná živnost vyžaduje odbornou způsobilost, ne státní povolení. Státní povolení (koncese) je potřeba u koncesovaných živností."
     },
     {
       "q": "Živnostenské oprávnění:",
@@ -168,7 +178,8 @@
       "correct": [
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Živnostenské oprávnění je právo provozovat konkrétní živnost. Jeho vznik závisí na druhu živnosti.\nProč: Podle § 10 ŽZ vzniká oprávnění u ohlašovacích živností dnem ohlášení, pokud ohlašovatel splňuje podmínky. U koncesovaných živností vzniká dnem nabytí právní moci rozhodnutí o udělení koncese. Úřad tu musí nejdřív o žádosti rozhodnout.\nChyták: Koncese patří ke koncesovaným živnostem, u ohlašovacích žádné rozhodnutí o koncesi není. Živnostenské oprávnění je osobní a nelze ho převést na jinou osobu. Souhlas hospodářské komory na tom nic nemění."
     },
     {
       "q": "Po zániku společnosti její společníci za závazky společnosti:",
@@ -181,7 +192,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Ručení znamená, že společník odpovídá věřitelům za dluhy společnosti svým majetkem. Týká se hlavně společníků v.o.s. a komplementářů k.s.\nProč: Podle § 39 ZOK ručí společníci po zániku společnosti zrušené s likvidací za její dluhy nejméně v rozsahu, v němž ručili za jejího trvání. Zánik společnosti tedy věřitele nepoškodí. Ručení se nezmenší ani nezanikne, jen ho věřitel uplatní přímo vůči společníkům.\nChyták: Zaniklá společnost už neexistuje, a proto za nic odpovídat nemůže. Ručení se po zániku nesnižuje. Rozsah ručení určuje český zákon, ne mezinárodní smlouva."
     },
     {
       "q": "Existují tyto druhy pracovněprávních vztahů:",
@@ -195,7 +207,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Pracovněprávní vztahy jsou vztahy vznikající při výkonu závislé práce. ZP je dělí podle toho, kdo v nich stojí na straně zaměstnanců.\nProč: Individuální pracovněprávní vztahy vznikají mezi jednotlivým zaměstnancem a zaměstnavatelem, například pracovní poměr nebo dohoda o provedení práce. Kolektivní pracovněprávní vztahy vznikají mezi zaměstnavatelem a zástupci zaměstnanců, typicky odborovou organizací. Patří sem kolektivní vyjednávání a kolektivní smlouvy.\nChyták: Čtyřstranné, volné ani ochranné pracovněprávní vztahy právo nezná. Ochrana zaměstnance je zásada pracovního práva, ne samostatný druh vztahu."
     },
     {
       "q": "Obchodní rejstřík:",
@@ -210,7 +223,8 @@
         0,
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Obchodní rejstřík je veřejný seznam, do kterého se zapisují zákonem stanovené údaje o podnikatelích, hlavně o obchodních společnostech a družstvech.\nProč: Podle zákona o veřejných rejstřících obchodní rejstřík vedou krajské soudy jako rejstříkové soudy. Jeho součástí je sbírka listin, kam se ukládají třeba společenské smlouvy a účetní závěrky. Jako veřejný seznam je přístupný každému, i online.\nChyták: Okresní soudy obchodní rejstřík nevedou, to dělají krajské soudy. Možnost \"žádná správně\" neplatí, protože tři tvrzení jsou pravdivá."
     },
     {
       "q": "Sídlo právnické osoby, která se zapisuje do veřejného rejstříku:",
@@ -223,7 +237,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Sídlo je adresa, na které právnická osoba skutečně sídlí a kam jí chodí úřední pošta. Do veřejného rejstříku se zapisuje vždy.\nProč: Zakladatelské právní jednání (společenská smlouva nebo stanovy) musí sídlo obsahovat. Postačí v něm ale jen název obce. Díky tomu se při stěhování v rámci obce nemusí měnit zakladatelská listina.\nChyták: Do veřejného rejstříku se sídlo zapisuje v plném rozsahu, tedy s celou adresou, ne jen jako obec. Tvrzení, že se sídlo nezapisuje nebo nemusí být v zakladatelském jednání, je špatné."
     },
     {
       "q": "Obchodní firma je název, pod kterým je podnikatel zapsán do:",
@@ -236,7 +251,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Obchodní firma je jméno podnikatele, pod kterým vystupuje v právních vztazích.\nProč: Podle § 423 OZ je firma jméno, pod kterým je podnikatel zapsán do obchodního rejstříku. Pojem firma je tedy přímo navázaný na obchodní rejstřík. Podnikatel, který v obchodním rejstříku není, vystupuje pod svým jménem, ne pod firmou.\nChyták: Podnikový rejstřík neexistuje. Živnostenský rejstřík eviduje živnostníky, ale pojem firma s ním zákon nespojuje. Obecně prospěšné společnosti a nadace mají vlastní rejstříky a jejich názvy nejsou obchodní firmou."
     },
     {
       "q": "Společnost zaniká ke dni:",
@@ -249,7 +265,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Zánik společnosti je okamžik, kdy společnost přestane právně existovat. Předchází mu zrušení a obvykle likvidace.\nProč: Podle § 185 OZ zaniká právnická osoba zapsaná ve veřejném rejstříku dnem výmazu z tohoto rejstříku. Zápis tedy funguje symetricky: společnost zápisem vzniká a výmazem zaniká.\nChyták: Rozhodnutí společníků o zrušení společnost jen zruší, zanikne až po likvidaci a výmazu. Podnikový rejstřík neexistuje. Výročí založení nemá na existenci společnosti vliv."
     },
     {
       "q": "Na pracovněprávní vztahy se vztahuje:",
@@ -262,7 +279,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Subsidiarita znamená, že jeden předpis se použije jen tam, kde druhý nic neupravuje. V pracovním právu tak doplňuje OZ zákoník práce.\nProč: Podle § 4 ZP se pracovněprávní vztahy řídí zákoníkem práce. Nelze-li použít ZP, řídí se OZ, a to vždy v souladu se zásadami pracovního práva. OZ se tedy použije ve všem, co ZP neupravuje, nejen ve vyjmenovaných otázkách.\nChyták: Správní řád upravuje řízení před úřady a na vztah zaměstnance se zaměstnavatelem se nepoužije. Varianta \"pouze zákoník práce\" neplatí, protože ZP nepokrývá vše, například obecná pravidla o právním jednání."
     },
     {
       "q": "Výše vkladu každého společníka společnosti s ručením omezeným musí činit:",
@@ -275,7 +293,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Vklad je to, co společník vnáší do společnosti s ručením omezeným, aby získal podíl. Souhrn vkladů tvoří základní kapitál.\nProč: Podle § 142 ZOK musí výše vkladu činit alespoň 1 Kč, pokud společenská smlouva neurčí víc. Žádná z nabídnutých částek proto není zákonné minimum. Platí tedy možnost \"žádná správně\".\nChyták: Částka 200 000 Kč je minimální základní kapitál s.r.o. podle starého obchodního zákoníku, 20 000 Kč byl dřívější minimální vklad. Od roku 2014 tyto hranice neplatí. Pozor na varianty 5 000 Kč a 10 000 Kč, zákon je nezná."
     },
     {
       "q": "Do obchodního rejstříku se nezapisují:",
@@ -290,7 +309,8 @@
         0,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Každý druh právnické osoby se zapisuje do svého veřejného rejstříku. Obchodní rejstřík je určen hlavně pro obchodní korporace.\nProč: Nadační fondy se zapisují do nadačního rejstříku. Občanská sdružení jsou dnes spolky a zapisují se do spolkového rejstříku. Zájmová sdružení právnických osob také nepatří do obchodního rejstříku, protože nejsou obchodní korporací.\nChyták: Akciové společnosti a družstva se do obchodního rejstříku zapisují vždy. Obchodní rejstřík vznikl pro ně a pro další obchodní korporace."
     },
     {
       "q": "Ke dni právní moci rozhodnutí soudu o neplatnosti společnosti:",
@@ -303,7 +323,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Neplatnost společnosti vyslovuje soud, když při jejím založení došlo k vážné vadě, například chybí zakladatelská listina nebo je předmět činnosti nezákonný.\nProč: Rozhodnutí soudu o neplatnosti společnost rovnou neruší ze dne na den. Ke dni právní moci rozhodnutí společnost vstupuje do likvidace. Likvidace vypořádá majetek a dluhy, a až potom společnost zanikne výmazem z rejstříku.\nChyták: Společnost nezaniká hned, zaniká až výmazem po likvidaci. Insolvence je řešení úpadku, ne důsledek neplatnosti. Během likvidace společnost používá firmu s dodatkem \"v likvidaci\", dodatek o právní formě tedy neztrácí."
     },
     {
       "q": "Společnost vzniká dnem:",
@@ -316,7 +337,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Vznik společnosti je okamžik, kdy se z ní stane právnická osoba se všemi právy a povinnostmi.\nProč: Podle § 126 OZ vzniká právnická osoba dnem zápisu do veřejného rejstříku. U obchodní společnosti je tímto rejstříkem obchodní rejstřík. Zápis má konstitutivní účinek: teprve jím společnost vznikne.\nChyták: Podpisem nebo účinností společenské smlouvy se společnost jen zakládá. Splacení vkladů je podmínkou pro návrh na zápis, ne okamžikem vzniku. Podnikový rejstřík neexistuje."
     },
     {
       "q": "Živnostenské oprávnění:",
@@ -329,7 +351,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Živnostenské oprávnění je právo provozovat konkrétní živnost. Kdy vznikne, závisí na tom, zda jde o ohlašovací nebo koncesovanou živnost.\nProč: Podle § 10 ŽZ vzniká oprávnění u ohlašovacích živností dnem ohlášení, pokud ohlašovatel splňuje podmínky. Úřad nic nepovoluje, jen provede zápis do živnostenského rejstříku.\nChyták: U koncesovaných živností nestačí ohlášení. Oprávnění vzniká až dnem právní moci rozhodnutí o udělení koncese. Rozhodnutí o koncesi se zase netýká ohlašovacích živností. Živnostenské oprávnění je osobní a nelze ho převést, ani se souhlasem hospodářské komory."
     },
     {
       "q": "Sídlo právnické osoby, která se zapisuje do veřejného rejstříku:",
@@ -342,7 +365,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Sídlo je adresa, na které právnická osoba skutečně sídlí a kam jí chodí úřední pošta.\nProč: Do veřejného rejstříku se sídlo zapisuje v plném rozsahu, tedy s celou adresou. Rejstřík musí každému říct, kde právnickou osobu najde a kam jí doručovat.\nChyták: V zakladatelském právním jednání sídlo být musí, ale postačí v něm název obce. Celá adresa tam proto povinná není. Do rejstříku se naopak nezapisuje jen obec, ale celá adresa. Tvrzení, že se sídlo nezapisuje nebo nemusí být v zakladatelském jednání, je špatné."
     },
     {
       "q": "Akciová společnost:",
@@ -355,7 +379,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Akciová společnost je kapitálová společnost, jejíž základní kapitál je rozvržen na akcie. Akcionáři za její dluhy neručí.\nProč: ZOK dovoluje, aby akciovou společnost založil jediný zakladatel. Může jím být fyzická i právnická osoba. Zakladatel v tom případě přijímá stanovy místo uzavření smlouvy, a to formou notářského zápisu.\nChyták: Zákon nerozlišuje, zda jediný zakladatel je fyzická nebo právnická osoba. Varianty \"jen fyzická\" nebo \"jen právnická\" jsou proto špatně. Varianta \"nemůže být založena jednou osobou\" odpovídá dávno zrušené úpravě."
     },
     {
       "q": "Povaha nebo platnost právního úkonu:",
@@ -368,7 +393,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Zákaz podnikání a chybějící podnikatelské oprávnění jsou veřejnoprávní překážky. Týkají se osoby, ne samotné smlouvy.\nProč: Pokud osoba podniká bez oprávnění nebo přes zákaz, porušuje veřejné právo a hrozí jí sankce od úřadu. Smlouvy, které uzavřela, ale zůstávají platné. Chrání to druhou stranu, která o chybějícím oprávnění často neví.\nChyták: Varianta \"je dotčena\" je opak pravidla. Kdyby byla smlouva neplatná, nejvíc by na to doplatil poctivý obchodní partner. Povaha a platnost právního jednání také nemá význam jen pro incidenční spory v insolvenci."
     },
     {
       "q": "Sídlo právnické osoby, která se zapisuje do veřejného rejstříku:",
@@ -382,7 +408,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Sídlo je adresa, na které právnická osoba skutečně sídlí a kam jí chodí úřední pošta. Zákon rozlišuje, jak se uvádí v zakladatelské listině a jak v rejstříku.\nProč: Zakladatelské právní jednání sídlo obsahovat musí, ale postačí v něm název obce. Do veřejného rejstříku se sídlo zapisuje v plném rozsahu, s celou adresou. Při stěhování v rámci obce se tak mění jen zápis v rejstříku, ne společenská smlouva.\nChyták: Celá adresa v zakladatelském jednání povinná není, stačí obec. Do rejstříku se naopak nezapisuje jen obec. Sídlo v zakladatelském jednání chybět nesmí."
     },
     {
       "q": "Obchodní firma: (bez záruky)",
@@ -397,7 +424,8 @@
         0,
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán do obchodního rejstříku (§ 423 OZ).\nProč: Firma nesmí být zaměnitelná s jinou firmou ani působit klamavě (§ 424 OZ). Jinak by mátla zákazníky a obchodní partnery. Podle obsahu může být věcná (popisuje činnost), fantazijní (vymyšlené slovo) nebo smíšená.\nChyták: Varianta \"se nezapisuje do obchodního rejstříku\" je špatně. Firma je přímo definovaná zápisem do obchodního rejstříku.\nRozpor: Podle testu je tvrzení \"se zapisuje do obchodního rejstříku\" chybné. Podle § 423 OZ se firma do obchodního rejstříku zapisuje, takže tvrzení je pravdivé. U zkoušky odpověz podle testu a tuto možnost neoznačuj."
     },
     {
       "q": "Společnost vzniká dnem:",
@@ -411,7 +439,8 @@
       "correct": [
         0,
         3
-      ]
+      ],
+      "info": "Pojem: Založení a vznik společnosti jsou dvě různé chvíle. Založení je uzavření společenské smlouvy, vznik je zápis do obchodního rejstříku.\nProč: Podle § 126 OZ vzniká společnost dnem zápisu do veřejného rejstříku, u obchodních společností do obchodního rejstříku. Založení předchází zápisu, a proto se den vzniku ode dne založení obvykle liší.\nChyták: Podpisem ani účinností společenské smlouvy společnost nevzniká, jen se tím zakládá (§ 123 OZ). Vznik nastává až zápisem. Možnost \"žádné správně\" neplatí, protože dvě tvrzení jsou pravdivá."
     },
     {
       "q": "Nejvyšším orgánem družstva je:",
@@ -424,7 +453,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Členská schůze je shromáždění všech členů družstva. Rozhoduje o nejdůležitějších záležitostech družstva.\nProč: Podle ZOK je členská schůze nejvyšším orgánem družstva. Mění stanovy, volí a odvolává členy představenstva a kontrolní komise a schvaluje účetní závěrku. Hlasuje se na ní podle zásady družstevní demokracie, typicky jeden člen jeden hlas.\nChyták: Představenstvo je statutární orgán a kontrolní komise kontrolní orgán. Předseda nahrazuje představenstvo jen u malého družstva. Všichni družstevníci nejsou orgán, orgánem se stávají až jako členská schůze."
     },
     {
       "q": "Živnostenské oprávnění:",
@@ -439,7 +469,8 @@
         0,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Živnostenské oprávnění je právo provozovat konkrétní živnost. Vzniká podle druhu živnosti a je vázané na osobu podnikatele.\nProč: Podle § 10 ŽZ vzniká oprávnění u ohlašovacích živností dnem ohlášení, u koncesovaných dnem nabytí právní moci rozhodnutí o udělení koncese. Oprávnění je osobní, protože úřad posuzuje podmínky u konkrétní osoby. Proto ho nelze převést na jinou osobu.\nChyták: U ohlašovacích živností se o koncesi nerozhoduje, stačí ohlášení. Převod oprávnění zákon nedovoluje. Nový provozovatel si musí oprávnění získat sám."
     },
     {
       "q": "Druhy živností:",
@@ -453,7 +484,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Živnost je soustavná činnost provozovaná samostatně, vlastním jménem, na vlastní odpovědnost a za účelem zisku (§ 2 ŽZ).\nProč: Podle § 9 ŽZ se živnosti dělí na ohlašovací a koncesované. Ohlašovací živnosti se dále dělí na řemeslné, vázané a volné. Liší se podle toho, jakou odbornou způsobilost zákon vyžaduje: u volných žádnou, u řemeslných vyučení, u vázaných zvláštní kvalifikaci.\nChyták: Licencované, oznamovací ani přikazovací živnosti zákon nezná. Vázaná živnost vyžaduje odbornou způsobilost, ne státní povolení. Státní povolení (koncese) je potřeba jen u koncesovaných živností."
     },
     {
       "q": "Podnikatelem je:",
@@ -466,7 +498,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Podnikatel je ten, kdo samostatně vykonává na vlastní účet a odpovědnost výdělečnou činnost živnostenským nebo obdobným způsobem, soustavně a za účelem zisku (§ 420 OZ).\nProč: Správná možnost zachycuje jádro definice: vlastní účet, vlastní odpovědnost a výdělečná činnost. Podnikatel nese riziko sám a zisk i ztráta jdou za ním.\nChyták: Akcionář ani společník, který jen pobírá podíl na zisku, nepodniká, podniká společnost. Člen statutárního nebo dozorčího orgánu vykonává funkci pro společnost, ne vlastní podnikání. Pomocné práce u advokáta jsou závislá práce pro jiného."
     },
     {
       "q": "Obchodní právo:",
@@ -480,7 +513,8 @@
       "correct": [
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Obchodní právo je část soukromého práva. Upravuje vztahy podnikatelů a obchodních korporací.\nProč: Obchodní právo zahrnuje právní normy o podnikání a podnikatelích, například obchodní firmu, prokuru nebo obchodní závod v OZ. Patří do něj i úprava obchodních korporací v ZOK, tedy obchodních společností a družstev.\nChyták: Obchodní zákoník byl zrušen k 1. lednu 2014. Jeho úpravu převzal OZ a ZOK, samostatný kodex obchodního práva dnes nemáme. Obchodní právo je soukromé právo, ne veřejné. Otevírací doba obchodů patří do veřejnoprávní regulace, ne do obchodního práva."
     },
     {
       "q": "Druhy živností:",
@@ -495,7 +529,8 @@
         1,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Živnost je soustavná činnost provozovaná samostatně, vlastním jménem, na vlastní odpovědnost a za účelem zisku (§ 2 ŽZ).\nProč: Podle § 9 ŽZ se živnosti dělí na ohlašovací a koncesované. Ohlašovací živnosti se dále dělí na řemeslné, vázané a volné. U řemeslných živností je podmínkou odborné způsobilosti vyučení v oboru nebo obdobná kvalifikace (§ 21 ŽZ).\nChyták: Vázaná živnost vyžaduje odbornou způsobilost, ne státní povolení. Státní povolení (koncese) je potřeba jen u koncesovaných živností. Licencované živnosti zákon nezná."
     },
     {
       "q": "Podnikatelem je:",
@@ -509,7 +544,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Podnikatel je ten, kdo samostatně vykonává na vlastní účet a odpovědnost výdělečnou činnost živnostenským nebo obdobným způsobem, soustavně a za účelem zisku (§ 420 OZ).\nProč: Druhá platná možnost je přímo zkrácená zákonná definice. Zastupování jiných osob splňuje znaky podnikání, když ho někdo dělá soustavně, samostatně a kvůli zisku. Typicky jde o advokáta, obchodního zástupce nebo realitního makléře.\nChyták: Pomocné práce u advokáta dělá zaměstnanec, ne na vlastní účet a odpovědnost. Společník ani akcionář nepodnikají, jen mají účast v korporaci. Podnikatelem je společnost, ne její vlastník."
     },
     {
       "q": "Ke dni právní moci rozhodnutí soudu o neplatnosti společnosti:",
@@ -522,7 +558,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Neplatnost společnosti vyslovuje soud, když při jejím založení došlo k závažné vadě. Nejde o okamžitý konec, ale o důvod zrušení.\nProč: Právní mocí rozhodnutí o neplatnosti nastávají účinky zrušení společnosti (§ 129 a násl. OZ). Zrušená společnost vstupuje do likvidace. Likvidátor vypořádá majetek a dluhy a teprve potom společnost zanikne výmazem z obchodního rejstříku.\nChyták: Výmaz ani zánik nepřichází hned, nejdřív musí proběhnout likvidace. Firmu včetně dodatku o právní formě společnost dál používá, jen s dodatkem \"v likvidaci\". Podnikový rejstřík neexistuje."
     },
     {
       "q": "Obchodní právo:",
@@ -536,7 +573,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Obchodní právo je soubor pravidel o postavení podnikatelů, obchodních korporacích, obchodní firmě, prokuře a podobně.\nProč: Patří do soukromého práva, protože upravuje vztahy rovnoprávných osob, ne vztah státu a občana. Jeho jádrem je právní postavení podnikatelů. Od roku 2014 je upravené hlavně v OZ a v ZOK.\nChyták: Obchodní zákoník (513/1991) byl zrušen k 1. 1. 2014, dnes kodexem obchodního práva není. Obchodní právo je soukromé, ne veřejné.\nRozpor: Podle testu tvrzení \"se zabývá právními poměry vznikajícími při podnikání\" správné není. Věcně ale obchodní právo poměry při podnikání upravuje. U zkoušky odpověz podle testu a tuto možnost neoznačuj."
     },
     {
       "q": "Společnost vzniká dnem:",
@@ -550,7 +588,8 @@
       "correct": [
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Založení a vznik společnosti jsou dva různé okamžiky. Založení je podpis společenské smlouvy (zakladatelské listiny), vznik je zápis do obchodního rejstříku.\nProč: Právnická osoba zapisovaná do veřejného rejstříku vzniká dnem zápisu (§ 126 OZ). Mezi založením a zápisem obvykle uplyne několik dní až týdnů. Proto se den vzniku může lišit ode dne založení.\nChyták: Účinnost společenské smlouvy znamená jen založení, společnost ještě neexistuje. Splacení vkladů je jen podmínka pro podání návrhu na zápis, vznik nezpůsobí. Podnikový rejstřík neexistuje."
     },
     {
       "q": "Obchodní firma: (bez záruky)",
@@ -565,7 +604,8 @@
         1,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán v obchodním rejstříku (§ 423 OZ).\nProč: Firma nesmí být zaměnitelná s jinou firmou ani klamavá (§ 424 OZ). Jde o ochranu zákazníků a ostatních podnikatelů před záměnou a matením. Zápis do obchodního rejstříku vyplývá přímo z definice firmy, proto i tato možnost platí.\nChyták: Předmět činnosti z firmy vyplývat nemusí. Firma může být i fantazijní, třeba \"Alza\". Možnost, že se firma nezapisuje, je opakem zákonné definice."
     },
     {
       "q": "Společnost zaniká ke dni:",
@@ -578,7 +618,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Zrušení a zánik společnosti jsou různé kroky. Zrušení spustí proces ukončení, zánik je jeho konec.\nProč: Právnická osoba zapsaná ve veřejném rejstříku zaniká dnem výmazu z tohoto rejstříku (§ 185 OZ). Před výmazem musí obvykle proběhnout likvidace, která vypořádá majetek a dluhy.\nChyták: Rozhodnutí společníků o zrušení (ani jeho účinnost) společnost neukončí, jen ji pošle do likvidace. Vrácení vkladů je součást vypořádání, ne okamžik zániku. Výročí založení nemá žádný právní význam."
     },
     {
       "q": "Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje:",
@@ -592,7 +633,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje jen v případech, které stanoví zákon, nebo na vlastní žádost.\nProč: Prokuru může udělit jen podnikatel zapsaný v obchodním rejstříku (§ 450 OZ). Odštěpný závod se do obchodního rejstříku zapisuje (§ 503 OZ), takže i jeho zřizovatel musí být zapsán. Povinně se zapisuje také podnikatel s výnosy nad 120 milionů Kč ve dvou po sobě jdoucích účetních obdobích (zákon o veřejných rejstřících).\nChyták: Hranice je 120 milionů Kč, ne 120 000 Kč. Provozovna se oznamuje živnostenskému úřadu, ne rejstříku. Zápis rozhodně není povinný vždy."
     },
     {
       "q": "Druhy živností:",
@@ -606,7 +648,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Živnosti se dělí na ohlašovací a koncesované (§ 9 ŽZ). Ohlašovací se dále dělí na řemeslné, vázané a volné.\nProč: U ohlašovacích živností stačí ohlášení a splnění podmínek. U řemeslné živnosti je odbornou způsobilostí vyučení v oboru nebo obdobná kvalifikace (§ 21 ŽZ), například u zámečníka nebo pekaře.\nChyták: U vázané živnosti stačí prokázat odbornou způsobilost podle přílohy zákona, státní povolení potřebuje až koncesovaná živnost. Koncesované živnosti se na řemeslné, vázané a volné nedělí. \"Licencované\" živnosti zákon nezná."
     },
     {
       "q": "Živnostenské oprávnění:",
@@ -620,7 +663,8 @@
       "correct": [
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Živnostenské oprávnění je právo provozovat konkrétní živnost.\nProč: U ohlašovacích živností vzniká dnem ohlášení, u koncesovaných dnem právní moci rozhodnutí o udělení koncese (§ 10 ŽZ). Oprávnění je vázané na osobu podnikatele, proto ho nelze převést na nikoho jiného.\nChyták: Možnosti s prohozenými okamžiky vzniku jsou chybné - ohlášení patří k ohlašovací, rozhodnutí ke koncesované živnosti. Souhlas hospodářské komory na převod neexistuje, protože převod není možný vůbec."
     },
     {
       "q": "Společnost zaniká ke dni:",
@@ -633,7 +677,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Zánik společnosti je konec její právní existence. Liší se od zrušení, které jen spustí proces ukončení.\nProč: Právnická osoba zapsaná ve veřejném rejstříku zaniká dnem výmazu z tohoto rejstříku (§ 185 OZ). Výmazu obvykle předchází likvidace, ve které se vypořádá majetek a dluhy.\nChyták: Rozhodnutí společníků o zrušení společnost neukončí, jen ji pošle do likvidace. Vrácení vkladů je součást vypořádání, ne okamžik zániku. Možnost \"žádná správně\" neplatí, protože výmaz je správně."
     },
     {
       "q": "Po zániku společnosti její společníci za závazky společnosti:",
@@ -646,7 +691,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Ručení je povinnost společníka zaplatit dluh společnosti, když ho nezaplatí sama. Typicky ručí společníci veřejné obchodní společnosti a komplementáři.\nProč: Zánikem společnosti ručení společníků nekončí. Podle § 39 ZOK ručí společníci po zániku společnosti zrušené s likvidací za její dluhy nejméně v rozsahu, v němž ručili za jejího trvání. Věřitel tak o svou ochranu nepřijde jen proto, že společnost zmizela z rejstříku.\nChyták: Možnost \"neručí\" by věřitele připravila o ochranu. Ručení podle mezinárodní smlouvy zákon nezná. Zvýšení ručení připadá v úvahu jen do výše podílu na likvidačním zůstatku, test chce odpověď \"stejně jako za jejího trvání\"."
     },
     {
       "q": "Ke dni právní moci rozhodnutí soudu o neplatnosti společnosti:",
@@ -659,7 +705,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Neplatnost společnosti vyslovuje soud, když při jejím založení došlo k závažné vadě. Nejde o okamžitý konec, ale o důvod zrušení.\nProč: Právní mocí rozhodnutí o neplatnosti nastávají účinky zrušení společnosti (§ 129 a násl. OZ). Zrušená společnost vstupuje do likvidace. Likvidátor vypořádá majetek a dluhy a teprve potom společnost zanikne výmazem.\nChyták: Insolvence je řízení kvůli úpadku, tedy když společnost nemá na dluhy, s neplatností nesouvisí. Výmaz přijde až po likvidaci. Firmu společnost dál používá, jen s dodatkem \"v likvidaci\"."
     },
     {
       "q": "Mezi kategorie družstev podle zákona o obchodních korporacích řadíme:",
@@ -674,7 +721,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Družstvo je společenství neuzavřeného počtu osob, které podporuje své členy nebo třetí osoby či podniká. ZOK zná několik jeho zvláštních kategorií.\nProč: ZOK samostatně upravuje bytové družstvo (zajišťuje členům bydlení) a sociální družstvo (podporuje sociální začlenění, třeba zaměstnávání znevýhodněných). Malé družstvo má méně než 50 členů a může mít zjednodušenou strukturu orgánů, například předsedu místo představenstva.\nChyták: \"Velké družstvo\" ani \"sportovní družstvo\" zákon jako kategorii nezná. Sportovní činnost může družstvo vykonávat, ale samostatnou kategorií není."
     },
     {
       "q": "Likvidace je fáze existence obchodní společnosti, která:",
@@ -689,7 +737,8 @@
         0,
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Likvidace je proces, ve kterém se vypořádá majetek a dluhy zrušené společnosti (§ 187 OZ).\nProč: Pořadí je zrušení, likvidace, výmaz a zánik. Likvidace proto nastává po zrušení, předchází zániku a jejím cílem je výmaz z obchodního rejstříku. Vede ji likvidátor.\nChyták: Likvidace nemůže předcházet zrušení, protože právě zrušení ji spouští. Konkursní (insolvenční) správce patří do insolvenčního řízení, likvidaci řídí likvidátor."
     },
     {
       "q": "Povinnost jednat s péčí řádného hospodáře má:",
@@ -705,7 +754,8 @@
         1,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Péče řádného hospodáře znamená jednat loajálně, s potřebnou znalostí a pečlivostí (§ 159 OZ). Kdo to neumí, nemá funkci přijmout.\nProč: Povinnost má každý člen voleného orgánu korporace - jednatel s.r.o., člen představenstva i člen dozorčí rady. Likvidátor ji má také, protože během likvidace vykonává působnost statutárního orgánu.\nChyták: Běžný zaměstnanec veřejné obchodní společnosti není členem orgánu. Řídí se zákoníkem práce a odpovídá za škodu podle něj, ne podle měřítka řádného hospodáře."
     },
     {
       "q": "Pro likvidaci obchodní společnosti platí, že:",
@@ -722,7 +772,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Likvidace je vypořádání majetku zrušené právnické osoby (§ 187 OZ). Probíhá mimo soud, vede ji likvidátor.\nProč: Platí všech pět tvrzení. Likvidátor zpeněží majetek a vyrovná dluhy věřitelům. Co zbude (likvidační zůstatek), rozdělí mezi společníky. Zrušená korporace během likvidace smí dělat jen to, co směřuje k jejímu zániku, nové podnikání nezačíná.\nChyták: Pozor na záměnu s insolvencí. Insolvenční řízení vede soud a insolvenční správce kvůli úpadku. Likvidace probíhá mimo soud a předpokládá, že majetek na dluhy stačí."
     },
     {
       "q": "Pro plnou moc platí, že:",
@@ -737,7 +788,8 @@
         1,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Plná moc je listina, která třetím osobám dokládá, že zmocněnec smí jednat za zmocnitele (§ 441 OZ). Samotné zastoupení vzniká smlouvou o zmocnění.\nProč: Plná moc osvědčuje zastoupení navenek, proto ji test bere jako předpoklad smluvního zmocnění. Prokura je zvláštní podnikatelská plná moc pro jednání při provozu obchodního závodu (§ 450 OZ).\nChyták: Plnou moc lze klidně napsat vlastnoručně, zákon to nezakazuje. Dělí se na speciální a generální, případně individuální a společnou. \"Profesionální\" plná moc jako druh neexistuje."
     },
     {
       "q": "Mezi orgány družstva nepatří:",
@@ -751,7 +803,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Orgány družstva podle ZOK jsou členská schůze, představenstvo a kontrolní komise. Malé družstvo může mít místo představenstva předsedu.\nProč: Revizní komise ani kontrolní rada mezi orgány družstva nepatří. Kontrolním orgánem družstva je kontrolní komise. Revizní komise je pojem ze spolků a starších předpisů, kontrolní rada zákon u družstva nezná.\nChyták: Předseda vypadá jako neformální funkce, ale u malého družstva je to skutečný orgán místo představenstva. Členská schůze je nejvyšší orgán a představenstvo statutární orgán."
     },
     {
       "q": "Který zaměstnanec je oprávněn za obchodní společnost uzavřít smlouvu na dodávku zboží?",
@@ -766,7 +819,8 @@
         1,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Za společnost jedná statutární orgán a dále osoby, které ji zastupují, včetně zaměstnanců.\nProč: Jednatel je statutárním orgánem a jedná za společnost ve všem. Zaměstnanec zastupuje zaměstnavatele v jednáních, která obvykle odpovídají jeho zařazení nebo funkci (§ 166 a § 430 OZ). Generální ředitel a manažer provozu běžně uzavírají smlouvy o dodávkách zboží.\nChyták: Údržbář a kurýr jsou také zaměstnanci, ale uzavírání dodavatelských smluv do jejich funkce obvykle nepatří. Bez zvláštní plné moci takovou smlouvu za společnost uzavřít nemohou."
     },
     {
       "q": "V případě ručení za dluhy společnosti platí, že:",
@@ -779,7 +833,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Ručení je povinnost zaplatit cizí dluh, když ho dlužník nezaplatí. Odpovědnost je povinnost nést následky vlastního porušení povinnosti, typicky nahradit škodu.\nProč: Společník veřejné obchodní společnosti ručí za dluh společnosti, i když nic neporušil. Proto ručení a odpovědnost nejsou synonyma.\nChyták: Akcionáři za dluhy a.s. neručí vůbec. Zaměstnanci za dluhy společnosti neručí. Jednatel neručí neomezeně, ručí jen když způsobil škodu a nenahradil ji, a to v jejím rozsahu (§ 159 OZ)."
     },
     {
       "q": "Zastupovat společnost s ručením omezeným navenek může:",
@@ -794,7 +849,8 @@
         0,
         1,
         2
-      ]
+      ],
+      "info": "Pojem: Zastupování navenek znamená jednat za společnost vůči třetím osobám, třeba uzavírat smlouvy.\nProč: Jednatel je statutárním orgánem s.r.o. a zastupuje ji ve všech záležitostech. Advokát jedná za společnost na základě plné moci. Zaměstnanec zastupuje společnost v jednáních, která odpovídají jeho zařazení nebo funkci (§ 166 a § 430 OZ).\nChyták: Společník rozhoduje na valné hromadě, ale navenek za společnost sám nejedná, pokud není současně jednatelem. Člen dozorčí rady kontroluje, nezastupuje."
     },
     {
       "q": "Akcie může emitovat:",
@@ -807,7 +863,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Akcie je cenný papír nebo zaknihovaný cenný papír, se kterým jsou spojena práva akcionáře podílet se na řízení, zisku a likvidačním zůstatku.\nProč: Akcie může vydávat jen akciová společnost, protože její základní kapitál je rozvržen právě na akcie. Žádná jiná forma společnosti akcie nevydává.\nChyták: Společnost s ručením omezeným má podíly, které mohou být představovány kmenovým listem, ne akcií. Družstvo má členské vklady. Veřejná obchodní a komanditní společnost mají podíly bez cenného papíru."
     },
     {
       "q": "Mezi obchodní společnosti patří: (bez záruky)",
@@ -824,7 +881,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Obchodní korporace je souhrnný pojem pro obchodní společnosti a družstvo (§ 1 ZOK).\nProč: Obchodními společnostmi jsou veřejná obchodní společnost, komanditní společnost, společnost s ručením omezeným, akciová společnost a evropské formy (§ 1 ZOK). Osobní i kapitálové společnosti tedy do kategorie patří.\nChyták: Družstvo je obchodní korporace, ale není obchodní společnost. Zákon ho uvádí vedle obchodních společností jako samostatný typ.\nRozpor: Podle testu je družstvo obchodní společnost. Podle zákona (§ 1 ZOK) je družstvo jen obchodní korporace a obchodní společností není. U zkoušky odpověz podle testu."
     },
     {
       "q": "Pro obchodní firmu platí, že:",
@@ -839,7 +897,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán v obchodním rejstříku (§ 423 OZ).\nProč: Firma nesmí být zaměnitelná s jinou firmou ani klamavá (§ 424 OZ). Podle obsahu se rozlišuje osobní (ze jména, \"Jan Novák\"), věcná (podle činnosti, \"Pekárna Brno\") a fantazijní (\"Alza\"). Kombinace jsou možné.\nChyták: Firma je jméno podnikatele, ne obchodní společnost, takže to nejsou synonyma. Podnikatel vystupuje pod jedinou firmou, více firem současně mít nemůže."
     },
     {
       "q": "Pro návrh na zápis obchodní společnosti do obchodního rejstříku platí, že:",
@@ -853,7 +912,8 @@
       "correct": [
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Návrh na zápis do obchodního rejstříku podává společnost rejstříkovému soudu, aby vznikla.\nProč: Návrh se musí podat na předepsaném formuláři, který se vyplňuje elektronicky jako tzv. inteligentní formulář na portálu justice. Podává se až po založení, tedy po podpisu společenské smlouvy nebo zakladatelské listiny.\nChyták: Podáním návrhu společnost ještě nevzniká, vzniká až dnem zápisu (§ 126 OZ). Návrh lze podat i v listinné podobě, ale vždy jako výtisk vyplněného inteligentního formuláře, takže podání \"mimo formulář\" neplatí. Likvidace s podáním návrhu nesouvisí."
     },
     {
       "q": "Valná hromada společnosti s ručením omezeným:",
@@ -868,7 +928,8 @@
         0,
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Valná hromada je nejvyšší orgán s.r.o. Tvoří ji společníci.\nProč: Valná hromada se koná alespoň jednou za účetní období (§ 181 ZOK), typicky kvůli schválení účetní závěrky. Je schopná se usnášet, když jsou přítomni společníci s alespoň polovinou všech hlasů (ZOK). Rozhoduje o zásadních otázkách, například o změně společenské smlouvy, zrušení společnosti nebo volbě jednatelů.\nChyták: Pozvánku jednatel posílá nejméně 15 dnů předem (§ 184 odst. 1 ZOK), 30 dnů platí pro valnou hromadu a.s. (§ 406 ZOK). Obchodní vedení patří jednatelům, ne valné hromadě."
     },
     {
       "q": "Společnost s ručením omezeným lze považovat za:",
@@ -884,7 +945,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Společnost s ručením omezeným je jedna z forem obchodní společnosti podle ZOK.\nProč: Jako právnická osoba má vlastní právní osobnost. Je podnikatelem, protože je zapsaná v obchodním rejstříku (§ 421 OZ). Patří mezi obchodní společnosti a tím zároveň mezi obchodní korporace (§ 1 ZOK).\nChyták: Firma je jen jméno, pod kterým je podnikatel zapsán (§ 423 OZ), ne samotný podnikatel. V běžné řeči se \"firmou\" myslí podnik, ale právně je to chyba."
     },
     {
       "q": "Pro odpovědného zástupce platí, že:",
@@ -898,7 +960,8 @@
       "correct": [
         0,
         4
-      ]
+      ],
+      "info": "Pojem: Odpovědný zástupce je fyzická osoba, kterou podnikatel ustanoví a která odpovídá za řádný provoz živnosti a dodržování živnostenských předpisů (§ 11 ŽZ).\nProč: Povinně se ustanovuje hlavně u právnických osob nebo když podnikatel sám nesplňuje odbornou způsobilost. Podnikatel ho však může ustanovit i dobrovolně, když to zákon nevyžaduje.\nChyták: Funkci lze vykonávat nejvýše pro čtyři podnikatele, ne pro tři. Odpovědný zástupce za dluhy obchodní společnosti neodpovídá, odpovídá jen za provoz živnosti. Se svěřenským fondem nesouvisí."
     },
     {
       "q": "Živností není:",
@@ -912,7 +975,8 @@
       "correct": [
         0,
         2
-      ]
+      ],
+      "info": "Pojem: Živnost je soustavná činnost provozovaná samostatně, vlastním jménem, na vlastní odpovědnost a za účelem zisku (§ 2 ŽZ). Některé činnosti ŽZ výslovně vyjímá (§ 3 ŽZ).\nProč: Činnost bank se řídí zvláštními zákony a potřebuje licenci od ČNB, živností proto není. Holý pronájem bytů a nebytových prostor, tedy bez dalších služeb, také není živností. Živností se stává až s dalšími službami, třeba úklidem nebo recepcí.\nChyták: Maloobchod, velkoobchod i hostinská činnost jsou běžné živnosti. Hostinská činnost je řemeslná živnost."
     },
     {
       "q": "Změna pracovního poměru:",
@@ -927,7 +991,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Změna pracovního poměru znamená změnu obsahu pracovní smlouvy, třeba druhu práce nebo místa výkonu práce.\nProč: Obsah pracovního poměru lze změnit jen dohodou zaměstnance a zaměstnavatele (§ 40 ZP). Na pracovní cestu smí zaměstnavatel vyslat zaměstnance jen s jeho souhlasem (§ 42 ZP). Výjimkou je převedení na jinou práci, které zaměstnavatel nařídí jednostranně, ale jen v zákonem stanovených případech (§ 41 ZP), třeba ze zdravotních důvodů.\nChyták: Bez souhlasu zaměstnance pracovní cestu nařídit nelze. Jednostranně změnit pracovní poměr nemůže ani zaměstnanec."
     },
     {
       "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
@@ -941,7 +1006,8 @@
       "correct": [
         0,
         2
-      ]
+      ],
+      "info": "Pojem: Kapitálové společnosti jsou s.r.o. a a.s. Společníci do nich vkládají kapitál a za dluhy neručí nebo ručí jen omezeně.\nProč: Vklady jsou povinné, protože z nich vzniká základní kapitál. Podíl v s.r.o. lze převést, akcie lze převádět obvykle volně, takže převod je v zásadě možný.\nChyták: Kapitálovou společnost může založit i jediná osoba. Mají formalizované orgány - valnou hromadu, statutární orgán a případně dozorčí radu. Základní kapitál vytváří vždy, u s.r.o. stačí 1 Kč."
     },
     {
       "q": "Pro osobní obchodní společnosti v českém právu platí:",
@@ -956,7 +1022,8 @@
         1,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Osobní společnosti jsou veřejná obchodní a komanditní společnost. Rozhoduje osobní účast společníků a jejich ručení.\nProč: Zakládají je alespoň dvě osoby. Úprava je převážně dispozitivní, takže si společníci mohou ve společenské smlouvě mnohé upravit jinak. Společníci veřejné obchodní společnosti a komplementáři ručí za dluhy neomezeně.\nChyták: Převod podílu v osobní společnosti v zásadě možný není, protože společníci si vybírají partnery, kterým věří. Vklad zákon nepřikazuje všem - společník veřejné obchodní společnosti ani komplementář vklad mít nemusí."
     },
     {
       "q": "Pracovní poměr může skončit:",
@@ -971,7 +1038,8 @@
         1,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Způsoby skončení pracovního poměru vyjmenovává ZP (§ 48 ZP) a jiné nedovoluje.\nProč: Pracovní poměr lze rozvázat dohodou, výpovědí, okamžitým zrušením nebo zrušením ve zkušební době. Pracovní poměr na dobu určitou skončí také uplynutím sjednané doby.\nChyták: Odstoupení od smlouvy je institut OZ, pracovní poměr se jím neukončuje. Odstupné je peněžní náhrada, kterou zaměstnanec dostane při skončení z určitých důvodů. Je to následek skončení, ne jeho způsob."
     },
     {
       "q": "Obecné podmínky provozování živnosti zahrnují:",
@@ -984,7 +1052,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Všeobecné podmínky provozování živnosti platí pro každou živnost (§ 6 ŽZ). Jsou to plná svéprávnost a bezúhonnost.\nProč: Bezúhonný není ten, kdo byl pravomocně odsouzen za trestný čin spáchaný v souvislosti s podnikáním nebo s předmětem dané živnosti. Výjimkou je případ, kdy se na něj hledí, jako by nebyl odsouzen.\nChyták: Příčetnost je trestněprávní pojem, živnostenský zákon vyžaduje svéprávnost. Ziskovost ani odhodlanost podmínkou nejsou, podnikatel může být i ve ztrátě. Netečnost je slovo navíc."
     },
     {
       "q": "Osobní (nemajetková) práva společníků obchodní korporace:",
@@ -998,7 +1067,8 @@
       "correct": [
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Práva společníka se dělí na majetková (podíl na zisku, likvidačním zůstatku) a osobní neboli nemajetková (podíl na řízení a kontrole).\nProč: Osobní práva zahrnují právo účastnit se valné nebo členské schůze a hlasovat na ní. Patří k nim i právo na informace a vysvětlení, bez kterého by společník nemohl informovaně hlasovat a kontrolovat hospodaření.\nChyták: Tato práva jsou spojená s podílem a samostatně je na třetí osobu převést nelze. Právo na stávku patří zaměstnancům, ne společníkům. Autorský výtisk patří do autorského práva."
     },
     {
       "q": "Je-li plnění z kupní smlouvy vadné:",
@@ -1012,7 +1082,8 @@
       "correct": [
         0,
         4
-      ]
+      ],
+      "info": "Pojem: Vadné plnění znamená, že věc nemá vlastnosti, množství nebo jakost podle smlouvy. Kupující pak má práva z vadného plnění.\nProč: Odstranění vady (opravou nebo dodáním nové věci) může kupující žádat u podstatného i nepodstatného porušení smlouvy (§ 2106 a § 2107 OZ). Odstoupit od smlouvy může hned, jen když jde o podstatné porušení. To je takové, o kterém prodávající při uzavření smlouvy věděl nebo musel vědět, že by kupující smlouvu neuzavřel, kdyby ho předvídal (§ 2002 OZ).\nChyták: „Vždy odstoupit\" neplatí. U nepodstatného porušení odstoupí kupující, až když prodávající vadu včas neodstraní. Opačné tvrzení, že odstoupit nelze vůbec, je také špatně."
     },
     {
       "q": "Pracovní smlouva musí obsahovat tyto náležitosti:",
@@ -1025,7 +1096,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Podstatné náležitosti pracovní smlouvy jsou údaje, bez kterých smlouva nevznikne. Zbytek se řeší jinde.\nProč: Podle § 34 odst. 1 ZP musí smlouva obsahovat druh práce, místo výkonu práce a den nástupu do práce. Místo výkonu práce určuje, kde zaměstnanec práci koná. Z něj se odvozuje třeba pracovní cesta.\nChyták: Mzda, den splatnosti mzdy a délka dovolené do smlouvy povinně nepatří. Zaměstnavatel o nich musí zaměstnance písemně informovat do 7 dnů od vzniku pracovního poměru (§ 37 ZP). Mzdu lze sjednat i ve mzdovém výměru. Sídlo odborů ve smlouvě není vůbec."
     },
     {
       "q": "Systém orgánů akciové společnosti:",
@@ -1038,7 +1110,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Systém orgánů akciové společnosti je soubor orgánů, které o společnosti rozhodují, řídí ji a kontrolují.\nProč: Valná hromada je v každé a.s. nejvyšším orgánem (§ 44 odst. 1 ZOK). Rozhoduje o stanovách, základním kapitálu, volbě členů orgánů a účetní závěrce. Pod ní si společnost volí buď dualistický systém (představenstvo a dozorčí rada), nebo monistický systém (správní rada).\nChyták: Systém není „pevně předepsán bez možnosti volby\" - ZOK nechává volbu ve stanovách (§ 396 ZOK). Jednatelé patří do s.r.o., ne do a.s. Kárná komise v zákoně vůbec není."
     },
     {
       "q": "Pro okamžité zrušení pracovního poměru platí:",
@@ -1052,7 +1125,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Okamžité zrušení ukončí pracovní poměr dnem doručení, bez výpovědní doby. Je to nejtvrdší způsob skončení.\nProč: Zaměstnanec smí pracovní poměr okamžitě zrušit jen z důvodů v § 56 ZP, třeba když mu zaměstnavatel do 15 dnů nevyplatí mzdu. Zaměstnavatel může místo okamžitého zrušení zvolit mírnější výpověď. Důvody pro okamžité zrušení jsou totiž zároveň výpovědním důvodem (§ 52 písm. g) ZP).\nChyták: Opačně to nefunguje. Výpovědní důvody (třeba nadbytečnost) okamžité zrušení neumožňují, platí jen důvody z § 55 ZP. Zaměstnavatel také nikdy nemůže rušit pracovní poměr bez důvodu."
     },
     {
       "q": "Za podnikatele lze považovat:",
@@ -1066,7 +1140,8 @@
       "correct": [
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Podnikatel je ten, kdo samostatně, na vlastní účet a odpovědnost soustavně vykonává výdělečnou činnost (§ 420 OZ).\nProč: Za podnikatele se považuje každá osoba zapsaná v obchodním rejstříku (§ 421 odst. 1 OZ). Platí to i pro fyzickou osobu, která je v něm zapsaná. Veřejná obchodní společnost je obchodní korporace, která vzniká zápisem do obchodního rejstříku, takže je podnikatelem vždy.\nChyták: Jednatel ani akcionář podnikateli nejsou. Jednatel jen jedná za s.r.o., podnikatelem je společnost. Akcionář jen vlastní akcie. Spolek je neziskový a podnikání smí mít nanejvýš jako vedlejší činnost."
     },
     {
       "q": "Pracovní smlouva musí obsahovat tyto náležitosti:",
@@ -1080,7 +1155,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Podstatné náležitosti pracovní smlouvy jsou údaje, bez kterých smlouva nevznikne.\nProč: Podle § 34 odst. 1 ZP musí smlouva obsahovat druh práce, místo výkonu práce a den nástupu do práce. Druh práce určuje, jakou práci smí zaměstnavatel přidělovat. Dnem nástupu vzniká pracovní poměr (§ 36 ZP).\nChyták: Den splatnosti mzdy a délka dovolené do smlouvy povinně nepatří. Zaměstnavatel o nich musí zaměstnance písemně informovat do 7 dnů od vzniku pracovního poměru (§ 37 ZP). Údaj o sídle odborové organizace smlouva neobsahuje vůbec."
     },
     {
       "q": "Pracovní smlouva musí obsahovat tyto náležitosti:",
@@ -1094,7 +1170,8 @@
       "correct": [
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Podstatné náležitosti pracovní smlouvy jsou údaje, bez kterých smlouva nevznikne.\nProč: Podle § 34 odst. 1 ZP musí smlouva obsahovat druh práce, místo výkonu práce a den nástupu do práce. Místo výkonu práce určuje, kde zaměstnanec práci koná. Dnem nástupu vzniká pracovní poměr (§ 36 ZP).\nChyták: Výše mzdy je nejlákavější omyl. Mzdu lze sjednat ve smlouvě, ale stačí i mzdový výměr. O mzdě a délce dovolené zaměstnavatel písemně informuje do 7 dnů od vzniku pracovního poměru (§ 37 ZP). Sídlo odborů ve smlouvě není vůbec."
     },
     {
       "q": "Prokura: (bez záruky)",
@@ -1107,7 +1184,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Prokura je zvláštní obchodní plná moc. Podnikatel zapsaný v obchodním rejstříku jí zmocňuje prokuristu ke všem jednáním při provozu závodu (§ 450 OZ).\nProč: Prokura vzniká už udělením, tedy právním jednáním podnikatele. Zápis do obchodního rejstříku je povinný, ale jen deklaratorní. Pouze potvrzuje stav, který už existuje, a chrání třetí osoby, které se na rejstřík spoléhají.\nChyták: Prokura nevzniká zápisem - konstitutivní účinek má zápis jen u vzniku a zániku korporací a několika dalších údajů. Stejně tak nezaniká až výmazem, výmaz zánik jen potvrzuje. Zapisuje se, takže „nezapisuje se vůbec\" neplatí. Prokuratura s prokurou nesouvisí."
     },
     {
       "q": "Majetková práva společníků obchodní korporace: (bez záruky)",
@@ -1120,7 +1198,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Práva společníka se dělí na majetková a osobní (nemajetková). Majetková mají peněžní hodnotu, třeba podíl na zisku nebo na likvidačním zůstatku.\nProč: Majetková práva jsou spojená s podílem, a podíl je v zásadě převoditelný (u s.r.o. § 207 a § 208 ZOK). S podílem tak přecházejí na nabyvatele. Nárok na již schválený podíl na zisku lze postoupit i samostatně.\nChyták: Právo účastnit se valné hromady, hlasovat a požadovat informace jsou práva osobní, ne majetková. Ta se vykonávají osobně nebo v zastoupení a samostatně je převést nelze. Tvrzení o nepřevoditelnosti proto popisuje osobní práva. Autorský výtisk patří do autorského práva."
     },
     {
       "q": "Základní kapitál se vytváří povinně v:",
@@ -1134,7 +1213,8 @@
       "correct": [
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Základní kapitál je peněžní vyjádření souhrnu vkladů společníků. Zapisuje se do obchodního rejstříku.\nProč: Kapitálové společnosti ho tvořit musí. V s.r.o. je minimální vklad jen 1 Kč (§ 142 ZOK), ale základní kapitál společnost mít musí. V a.s. činí minimum 2 000 000 Kč nebo 80 000 eur (§ 246 ZOK).\nChyták: Veřejná obchodní společnost je osobní společnost. Společníci ručí za dluhy celým majetkem, proto vklad ani základní kapitál zákon nevyžaduje. Obecně prospěšná společnost není obchodní korporace a základní kapitál netvoří. Odpověď „žádná správně\" padá, protože s.r.o. a a.s. kapitál mají."
     },
     {
       "q": "Pro prokuristu platí:",
@@ -1148,7 +1228,8 @@
       "correct": [
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Prokurista je zástupce podnikatele zapsaného v obchodním rejstříku. Má prokuru, tedy široké obchodní zmocnění (§ 450 OZ).\nProč: Prokuru zákon zakazuje udělit právnické osobě (§ 452 odst. 1 OZ), prokuristou proto může být jen fyzická osoba. Prokurista jedná ve všech věcech provozu závodu, i tam, kde by jinak byla nutná zvláštní plná moc (§ 450 OZ). Nemovitosti smí zcizit nebo zatížit, jen když je to v prokuře výslovně uvedeno.\nChyták: Prokurista není statutární orgán. Jeho oprávnění plyne ze zmocnění, ne z funkce v orgánu. Nemusí být ani společníkem, prokuru lze udělit komukoliv, kdo je fyzickou osobou."
     },
     {
       "q": "Splnění závazku:",
@@ -1162,7 +1243,8 @@
       "correct": [
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Splnění je nejběžnější způsob zániku závazku. Dlužník poskytne věřiteli přesně to, co mu dluží.\nProč: Dluh zanikne jen řádným splněním (§ 1908 OZ). Plnění musí odpovídat obsahu závazku, tedy být včas, v ujednaném množství a jakosti, bez vad. Musí také proběhnout v místě plnění. To určuje smlouva, a když mlčí, určí ho zákon (§ 1955 a násl. OZ).\nChyták: Prodlení je opak splnění, dlužník právě neplní včas. Narovnání je samostatný způsob zániku závazku dohodou o sporných právech (§ 1903 OZ), ne podoba splnění. Splnění je naopak nejobvyklejší způsob zániku."
     },
     {
       "q": "Pro výpověď z pracovního poměru platí:",
@@ -1176,7 +1258,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Výpověď je jednostranné právní jednání, které ukončí pracovní poměr uplynutím výpovědní doby.\nProč: Zaměstnavatel smí dát výpověď jen z důvodů vyjmenovaných v § 52 ZP, třeba pro nadbytečnost nebo zdravotní nezpůsobilost. Seznam je taxativní, tedy uzavřený. Zaměstnanec může dát výpověď z jakéhokoliv důvodu i bez uvedení důvodu (§ 50 odst. 3 ZP).\nChyták: Výpověď musí mít písemnou formu, jinak se k ní nepřihlíží (§ 50 odst. 1 ZP), takže „jakákoli forma\" neplatí. Doručuje se podle § 334 a násl. ZP, třeba do vlastních rukou nebo datovou schránkou. Vyvěšení na úřední desce zaměstnavatele není způsob doručení."
     },
     {
       "q": "Provozovna podnikatele:",
@@ -1191,7 +1274,8 @@
         0,
         1,
         2
-      ]
+      ],
+      "info": "Pojem: Provozovna je prostor, v němž podnikatel provozuje živnost (§ 17 ŽZ). Živnost lze provozovat i ve více provozovnách.\nProč: Provozovnou je i prodejní automat nebo obdobné zařízení a mobilní provozovna, třeba pojízdná prodejna. Pojem pochází ze živnostenského zákona. Kdo podniká na jiném základě (lékař, advokát), provozovnu v tomto smyslu nemá.\nChyták: Nejde o pojem obecného obchodního práva, ne každý podnikatel provozovnu má. Provozovna také není totéž co sídlo. Sídlo je adresa zapsaná v rejstříku, odkud se podnikatel řídí. Provozovna je místo, kde se živnost skutečně vykonává, a často leží jinde."
     },
     {
       "q": "Do veřejného rejstříku se nezapisují:",
@@ -1206,7 +1290,8 @@
         0,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Veřejné rejstříky upravuje zákon o veřejných rejstřících. Patří k nim spolkový, nadační, ústavů, SVJ, obchodní a obecně prospěšných společností.\nProč: Politické strany a hnutí eviduje zvláštní rejstřík Ministerstva vnitra, který mezi veřejné rejstříky podle zákona nepatří. Mezinárodní organizace (třeba mezivládní) se do veřejného rejstříku také nezapisují. Výjimkou jsou mezinárodní odborové organizace a organizace zaměstnavatelů ve spolkovém rejstříku. Uliční výbor není právnická osoba, takže se nezapisuje nikam.\nChyták: Družstva i akciové společnosti se zapisují do obchodního rejstříku povinně. Zápisem dokonce vznikají (§ 126 OZ)."
     },
     {
       "q": "Systém orgánů akciové společnosti: (bez záruky)",
@@ -1220,7 +1305,8 @@
       "correct": [
         0,
         3
-      ]
+      ],
+      "info": "Pojem: Akciová společnost si ve stanovách volí jeden ze dvou systémů vnitřní struktury (§ 396 ZOK).\nProč: Dualistický systém tvoří představenstvo jako statutární orgán a dozorčí rada jako kontrolní orgán. Monistický systém má jediný orgán, správní radu, která řídí i kontroluje. V obou systémech navíc vždy existuje valná hromada. Slovem „pouze\" tedy test myslí, že správní rada nahrazuje představenstvo i dozorčí radu.\nChyták: Systém není pevně předepsán, společnost si ho vybírá, proto tato možnost neplatí. Jednatelé patří do s.r.o. Kárnou komisi zákon pro a.s. nezná."
     },
     {
       "q": "Mezi zákonem stanovené orgány společnosti s ručením omezeným patří:",
@@ -1234,7 +1320,8 @@
       "correct": [
         1,
         2
-      ]
+      ],
+      "info": "Pojem: Zákonem stanovené orgány s.r.o. jsou ty, které upravuje ZOK přímo.\nProč: Nejvyšším orgánem je valná hromada společníků (§ 44 odst. 1 ZOK). Rozhoduje třeba o změně společenské smlouvy a účetní závěrce (§ 190 ZOK). Statutárním orgánem je jeden nebo více jednatelů (§ 194 ZOK), kteří společnost řídí a jednají za ni. Dozorčí rada je nepovinná, zřizuje se jen, když to určí společenská smlouva.\nChyták: Představenstvo patří do a.s. (dualistický systém) a do družstva. Statutární ředitel byl orgán a.s. v monistickém systému a od roku 2021 ho zákon nezná. Členská schůze je nejvyšší orgán družstva, ne s.r.o."
     },
     {
       "q": "Který pracovník je oprávněn za obchodní společnost uzavřít smlouvu na dodávku:",
@@ -1249,7 +1336,8 @@
         0,
         1,
         2
-      ]
+      ],
+      "info": "Pojem: Za společnost jedná statutární orgán, prokurista nebo zaměstnanec, kterého společnost pověřila určitou činností (§ 430 OZ).\nProč: Jednatel je statutární orgán, takže může jednat ve všech záležitostech. Obchodní ředitel a manažer provozu jsou pověřeni činností, ke které uzavírání dodavatelských smluv obvykle patří. Podle § 430 OZ proto zastupují společnost ve všech jednáních, která při této činnosti obvykle bývají.\nChyták: Kurýr a údržbář mají zařazení, ke kterému uzavírání smluv obvykle nepatří. Bez zvláštní plné moci by společnost smlouvou, kterou uzavřou, nezavázali. Výjimkou je případ, kdy druhá strana mohla v dobré víře předpokládat, že k tomu oprávnění mají."
     },
     {
       "q": "Obchodní firma:",
@@ -1264,7 +1352,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán v obchodním rejstříku (§ 423 OZ).\nProč: Firma nesmí být zaměnitelná s jinou firmou a nesmí působit klamavě (§ 424 OZ). Jinak by mátla zákazníky i obchodní partnery. Obchodní korporace má navíc v názvu dodatek o právní formě, třeba „s.r.o.\" nebo „a.s.\". U korporací je dokonce povinný (§ 132 ZOK u s.r.o.).\nChyták: Předmět podnikání z firmy vyplývat nemusí, firma může být i fantazijní (třeba „Alza\"). Firma se do obchodního rejstříku naopak zapisuje vždy, je jedním ze základních zapisovaných údajů."
     },
     {
       "q": "Závazek může zaniknout:",
@@ -1279,7 +1368,8 @@
         0,
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Zánik závazku znamená, že dluh i odpovídající právo věřitele přestanou existovat.\nProč: Nejběžnějším způsobem zániku je splnění (§ 1908 OZ). Strany mohou závazek ukončit i dohodou (§ 1981 OZ). U závazků na dobu neurčitou nebo tam, kde to ujednaly strany nebo zákon, zaniká závazek výpovědí (§ 1998 OZ). Dalšími způsoby jsou třeba započtení, odstoupení, narovnání nebo nemožnost plnění.\nChyták: Předlužení je stav, kdy má dlužník víc dluhů, než činí jeho majetek. Závazky tím nezanikají, jen hrozí insolvence. Akceptace je přijetí návrhu smlouvy, takže závazek naopak vzniká."
     },
     {
       "q": "Mezi zákonem stanovené orgány společnosti s ručením omezeným patří:",
@@ -1293,7 +1383,8 @@
       "correct": [
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Zákonem stanovené orgány s.r.o. jsou ty, které upravuje ZOK přímo.\nProč: Statutárním orgánem je jeden nebo více jednatelů (§ 194 ZOK). Dozorčí rada je kontrolní orgán, který ZOK upravuje, ale společnost ji zřizuje jen tehdy, když to určí společenská smlouva. Proto „je-li zřízena\". Třetím orgánem je valná hromada, mezi možnostmi zde ale chybí.\nChyták: Představenstvo patří do a.s. v dualistickém systému a do družstva. Členská schůze je nejvyšší orgán družstva. Předseda je jen funkce uvnitř kolektivního orgánu, třeba předseda dozorčí rady, ne samostatný orgán s.r.o."
     },
     {
       "q": "V případě smlouvy o dílo platí tyto povinnosti:",
@@ -1306,7 +1397,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Smlouvou o dílo se zhotovitel zavazuje vytvořit určitý výsledek a objednatel ho převzít a zaplatit cenu (§ 2586 OZ).\nProč: Podle § 2586 OZ provádí zhotovitel dílo „na svůj náklad a nebezpečí\". Hradí tedy náklady na výrobu a nese riziko, že se dílo před předáním zničí nebo poškodí. Objednatel platí až za výsledek.\nChyták: Zhotovitel nemusí pracovat vždy osobně. Může použít jiné osoby, osobně musí jen tehdy, když dílo závisí na jeho osobních vlastnostech (§ 2589 OZ). U smlouvy o dílo se platí „cena\", ne „kupní cena\", a místo plnění ani cenu strany ujednat nemusí - zákon je doplní."
     },
     {
       "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
@@ -1321,7 +1413,8 @@
         0,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Kapitálové společnosti jsou s.r.o. a a.s. Jejich základem je kapitál společníků, ne osobní účast a ručení.\nProč: Úprava je převážně kogentní, tedy závazná. Chrání věřitele, kteří se nemohou spolehnout na majetek společníků. Vklady jsou zákonem přikázané, každý společník musí vklad převzít. Společníci s.r.o. ručí jen do výše nesplacených vkladů (§ 132 ZOK) a akcionáři za dluhy neručí vůbec.\nChyták: Kapitálovou společnost může založit i jediná osoba, proto „alespoň 2 osobami\" neplatí. Struktura orgánů je naopak formalizovaná, zákon předepisuje valnou hromadu, statutární orgán a u a.s. i kontrolní orgán."
     },
     {
       "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
@@ -1336,7 +1429,8 @@
         0,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Kapitálové společnosti jsou s.r.o. a a.s. Jejich základem je kapitál společníků, ne osobní účast a ručení.\nProč: Společníci s.r.o. ručí jen do výše nesplacených vkladů, akcionáři neručí vůbec. Úprava je převážně kogentní, protože chrání věřitele. Převod podílu je v zásadě možný: akcie jsou volně převoditelné a podíl v s.r.o. lze převést na jiného společníka, na třetí osobu se souhlasem valné hromady (§ 207 a § 208 ZOK).\nChyták: Kapitálovou společnost může založit jediná osoba, „alespoň 2 osobami\" proto neplatí. Struktura orgánů je naopak formalizovaná, zákon předepisuje valnou hromadu i statutární orgán."
     },
     {
       "q": "Provozovna podnikatele:",
@@ -1350,7 +1444,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Provozovna je prostor, v němž podnikatel provozuje živnost (§ 17 ŽZ).\nProč: Provozovnou je kancelář, dílna nebo obchod. Je jí i prodejní automat nebo obdobné zařízení a mobilní provozovna, třeba pojízdná prodejna. Vždy jde o fyzické místo, kde se živnost skutečně vykonává.\nChyták: Virtuální prostor, třeba e-shop, provozovnou není, jde o fyzický prostor. Provozovna musí být trvale a zvenčí viditelně označena firmou nebo jménem podnikatele a jeho IČO, takže „nemusí být označena\" neplatí. Pojem patří do živnostenského práva, ne každý podnikatel provozovnu má."
     },
     {
       "q": "Osobní (nemajetková) práva společníků obchodní korporace:",
@@ -1365,7 +1460,8 @@
         0,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Osobní (nemajetková) práva společníka mu umožňují podílet se na řízení a kontrole korporace. Nemají přímou peněžní hodnotu.\nProč: Patří sem hlavně právo účastnit se valné hromady, hlasovat na ní a požadovat informace a vysvětlení. Tato práva jsou vázaná na osobu společníka. Vykonává je sám nebo prostřednictvím zástupce na základě plné moci. Samostatně je převést nelze, přecházejí jen s celým podílem.\nChyták: Podíl na zisku je typické majetkové právo, ne osobní. Převoditelnost na třetí osoby je znak majetkových práv, osobní práva samostatně převést nejde."
     },
     {
       "q": "Mezi zákonem stanovené orgány společnosti s ručením omezeným patří:",
@@ -1380,7 +1476,8 @@
         1,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Zákonem stanovené orgány s.r.o. jsou ty, které upravuje ZOK přímo.\nProč: Valná hromada je nejvyšší orgán složený ze společníků (§ 44 odst. 1 ZOK), její působnost vymezuje § 190 ZOK. Statutárním orgánem je jeden nebo více jednatelů (§ 194 ZOK). Dozorčí rada je kontrolní orgán, který ZOK upravuje, ale společnost ho zřizuje, jen když to určí společenská smlouva.\nChyták: Statutární ředitel byl orgán a.s. v monistickém systému. Od roku 2021 ho zákon nezná, a v s.r.o. nebyl nikdy. Předseda je jen funkce uvnitř kolektivního orgánu, třeba předseda dozorčí rady, ne samostatný orgán s.r.o."
     },
     {
       "q": "V případě kupní smlouvy platí tyto povinnosti:",
@@ -1395,7 +1492,8 @@
         0,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Kupní smlouvou se prodávající zavazuje odevzdat kupujícímu věc a umožnit mu nabýt k ní vlastnické právo. Kupující se zavazuje věc převzít a zaplatit kupní cenu (§ 2079 OZ).\nProč: Všechny tři vybrané povinnosti plynou přímo z § 2079 OZ. Prodávající věc odevzdá a umožní kupujícímu nabýt k ní vlastnictví. Kupující ji převezme. Čtvrtou základní povinností je zaplatit kupní cenu, ta zde mezi možnostmi chybí.\nChyták: Místo plnění strany ujednat nemusí, zákon ho doplní. Péče řádného hospodáře je povinnost člena voleného orgánu korporace, ne povinnost kupujícího. S vlastní věcí kupující zachází, jak chce."
     },
     {
       "q": "Pro návrh na zápis obchodní společnosti do obchodního rejstříku neprováděný notářem platí, že:",
@@ -1409,7 +1507,8 @@
       "correct": [
         0,
         4
-      ]
+      ],
+      "info": "Pojem: Návrh na zápis je podání, kterým se žádá rejstříkový soud o zápis společnosti do obchodního rejstříku.\nProč: Společnost se nejdřív založí společenskou smlouvou nebo zakladatelskou listinou. Teprve potom se podává návrh na zápis. Když zápis neprovádí přímo notář, podává se návrh výlučně na předepsaném elektronickém formuláři, tzv. inteligentním formuláři podle zákona o veřejných rejstřících.\nChyták: Podáním návrhu společnost nevzniká. Vzniká až dnem zápisu do obchodního rejstříku (§ 126 OZ), mezi založením a vznikem je jen „založená\". Návrh na zápis s likvidací nesouvisí, likvidace je proces zrušení společnosti."
     },
     {
       "q": "Pro koncesovanou živnost platí: (bez záruky)",
@@ -1423,7 +1522,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Koncesovaná živnost je živnost, ke které je potřeba rozhodnutí živnostenského úřadu, tedy koncese. Jde třeba o silniční dopravu nebo prodej zbraní.\nProč: Oprávnění vzniká dnem právní moci rozhodnutí o udělení koncese (§ 10 odst. 1 písm. b) ŽZ). Rozhodnutí tedy už nelze napadnout odvoláním. Živnostenský úřad může podnikateli stanovit nebo změnit podmínky provozování živnosti (§ 27 odst. 3 ŽZ), třeba podle stanoviska dotčeného úřadu.\nChyták: Den vydání rozhodnutí nestačí, rozhodnutí ještě nenabylo právní moci. Zápis do obchodního rejstříku nutný není, koncesi získá i fyzická osoba bez zápisu. Sdružení podnikajících osob zákon nevyžaduje."
     },
     {
       "q": "Sídlo podnikatele:",
@@ -1437,7 +1537,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Sídlo je adresa, ke které je podnikatel právně připoután. Má ho každý podnikatel a zapisuje se do rejstříku.\nProč: Je-li podnikatel zapsán ve veřejném rejstříku, rozhoduje adresa zapsaná v něm (§ 137 OZ). Třetí osoby se na ni mohou spolehnout. Sídlo může být i v bytě, pokud to nenaruší klid a pořádek v domě (§ 136 odst. 1 OZ).\nChyták: Zakladatelské právní jednání sídlo uvést musí, stačí ale název obce. Plnou adresu navrhne společnost zapsat až do rejstříku (§ 136 OZ). Proto neplatí ani „nemusí být uvedeno\", ani „celá adresa\". Sídlo je přitom nezbytným údajem každého podnikatele."
     },
     {
       "q": "Pro koncesované živnosti platí: (bez záruky)",
@@ -1450,7 +1551,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Koncesovaná živnost je živnost, ke které je potřeba rozhodnutí živnostenského úřadu, tedy koncese.\nProč: Oprávnění vzniká dnem právní moci rozhodnutí o udělení koncese (§ 10 odst. 1 písm. b) ŽZ).\nChyták: Den vydání rozhodnutí nestačí, rozhodnutí ještě nenabylo právní moci. Den ohlášení platí pro ohlašovací živnosti (volné, řemeslné a vázané), ne pro koncesované. Zápis do obchodního rejstříku nutný není."
     },
     {
       "q": "Závazek může zaniknout:",
@@ -1466,7 +1568,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Zánik závazku znamená, že dluh i odpovídající právo věřitele přestanou existovat.\nProč: Nejběžnějším způsobem zániku je splnění (§ 1908 OZ). Výpovědí zaniká závazek, když to strany ujednají nebo stanoví zákon (§ 1998 OZ), typicky závazek na dobu neurčitou (§ 1999 OZ). Odstoupením se smlouva ruší od počátku (§ 2004 OZ). Započtením zaniknou vzájemné pohledávky stran v rozsahu, v jakém se kryjí (§ 1982 OZ).\nChyták: Akceptace je přijetí návrhu na uzavření smlouvy (§ 1740 OZ). Přijetím návrhu smlouva a závazek naopak vznikají, takže akceptace mezi způsoby zániku nepatří."
     },
     {
       "q": "V případě smlouvy o dílo platí tyto povinnosti:",
@@ -1480,7 +1583,8 @@
       "correct": [
         0,
         3
-      ]
+      ],
+      "info": "Pojem: Smlouvou o dílo se zhotovitel zavazuje vytvořit určitý výsledek a objednatel ho převzít a zaplatit cenu (§ 2586 OZ).\nProč: Zhotovitel provádí dílo „na svůj náklad a nebezpečí\". Hradí náklady na výrobu a nese riziko, že se dílo před předáním zničí. Objednatel má povinnost dokončené dílo převzít a zaplatit za ně cenu.\nChyták: Objednatel nemusí dílo převzít osobně, může za něj jednat zástupce. Ani zhotovitel nemusí pracovat vždy osobně, jen když dílo závisí na jeho osobních vlastnostech (§ 2589 OZ). U smlouvy o dílo se platí „cena\", ne „kupní cena\", a ani tu strany ujednat nemusí."
     },
     {
       "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
@@ -1495,7 +1599,8 @@
         1,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Kapitálové společnosti jsou s.r.o. a a.s. Jejich základem je kapitál společníků, ne osobní účast a ručení.\nProč: Společníci s.r.o. ručí jen do výše nesplacených vkladů, akcionáři neručí vůbec. Vklady jsou zákonem přikázané, každý společník musí vklad převzít. Převod podílu je v zásadě možný: akcie jsou volně převoditelné a podíl v s.r.o. lze převést na jiného společníka, na třetí osobu se souhlasem valné hromady (§ 207 a § 208 ZOK).\nChyták: Kapitálovou společnost může založit jediná osoba, proto „alespoň 2 osobami\" neplatí. Struktura orgánů je naopak formalizovaná, zákon předepisuje valnou hromadu i statutární orgán."
     },
     {
       "q": "Živností není:",
@@ -1510,7 +1615,8 @@
         0,
         1,
         2
-      ]
+      ],
+      "info": "Pojem: Živnost je soustavná činnost provozovaná samostatně, vlastním jménem, na vlastní odpovědnost, za účelem zisku a za podmínek živnostenského zákona (§ 2 ŽZ).\nProč: § 3 ŽZ vyjmenovává činnosti, které živností nejsou. Patří sem advokacie (svobodné povolání s vlastním zákonem), činnost bank (řídí ji zákon o bankách a licence ČNB) a pronájem bytů a nebytových prostor, pokud pronajímatel poskytuje jen základní služby spojené s nájmem.\nChyták: Výroba lihovin i velkoobchod živností jsou. Výroba lihovin je živnost koncesovaná (příloha č. 3 ŽZ), velkoobchod spadá pod živnost volnou. Přísná regulace u lihovin z činnosti živnost nedělá ani ji neruší, jen vyžaduje koncesi."
     },
     {
       "q": "Odstoupení od smlouvy:",
@@ -1523,7 +1629,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Odstoupení od smlouvy je způsob zániku závazku. Jedna strana jím smlouvu zruší, aniž by potřebovala souhlas druhé strany.\nProč: Jde o jednostranné právní jednání. Účinky nastávají, když projev dojde druhé straně. Podle § 2004 OZ se smlouva ruší od počátku (ex tunc, tedy jako by nebyla uzavřena) a strany si vrátí, co si plnily. Důvodem bývá prodlení, vadné plnění nebo jiné podstatné porušení smlouvy.\nChyták: Zrušení jen do budoucna je typické pro výpověď, ne pro odstoupení. Dvoustranné jednání by byla dohoda o zrušení smlouvy. Ručení je zajištění dluhu, s ukončením smlouvy nesouvisí."
     },
     {
       "q": "Pro výpověď z pracovního poměru platí:",
@@ -1538,7 +1645,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Výpověď je jednostranné právní jednání, kterým zaměstnavatel nebo zaměstnanec ukončí pracovní poměr po uplynutí výpovědní doby.\nProč: Podle § 50 odst. 1 ZP musí být výpověď písemná, jinak se k ní nepřihlíží. Musí být také řádně doručena druhé straně (§ 334 a násl. ZP). Zaměstnanec může dát výpověď z jakéhokoli důvodu i bez uvedení důvodu. Zaměstnavatel ji smí dát jen z důvodů, které taxativně (uzavřeným výčtem) uvádí § 52 ZP, a důvod musí ve výpovědi skutkově vymezit (§ 50 odst. 4 ZP).\nChyták: Vyvěšení na úřední desce zaměstnavatele není platný způsob doručení, zákoník práce ho nezná. Výpověď ze strany zaměstnavatele bez důvodu neplatí, chrání to slabšího zaměstnance."
     },
     {
       "q": "Odstoupení od smlouvy:",
@@ -1551,7 +1659,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Odstoupení od smlouvy je způsob zániku závazku, kterým jedna strana smlouvu zruší bez souhlasu druhé strany.\nProč: Jde o jednostranné právní jednání, účinné doručením druhé straně. Podle § 2004 odst. 1 OZ se závazek ruší od počátku (ex tunc) a strany si vrátí poskytnutá plnění. Odstoupení se ale nedotýká práva na smluvní pokutu, úrok z prodlení, náhradu škody ani zajištění dluhu (§ 2005 odst. 2 OZ).\nChyták: Výpověď ruší závazek jen do budoucna (ex nunc), takže s odstoupením totožná není. Započtení je jiný způsob zániku: vzájemné pohledávky se navzájem vyrovnají. Dvoustranné jednání by byla dohoda o zrušení."
     },
     {
       "q": "V případě kupní smlouvy platí tyto povinnosti:",
@@ -1565,7 +1674,8 @@
       "correct": [
         0,
         2
-      ]
+      ],
+      "info": "Pojem: Kupní smlouvou se prodávající zavazuje odevzdat kupujícímu věc a umožnit mu nabýt k ní vlastnické právo. Kupující se zavazuje věc převzít a zaplatit kupní cenu (§ 2079 OZ).\nProč: Odevzdání věci a její převzetí jsou dvě ze základních povinností, které zákon stranám přímo ukládá. K nim patří ještě převod vlastnického práva a zaplacení ceny.\nChyták: Kupní cenu strany ve smlouvě určit nemusí. Když je zřejmé, že chtěly smlouvu uzavřít i bez ní, platí cena obvyklá v době uzavření smlouvy (§ 2085 OZ). Místo plnění doplní zákon. Péče řádného hospodáře se týká správy cizího majetku, ne kupujícího."
     },
     {
       "q": "Majetková práva společníků obchodní korporace:",
@@ -1579,7 +1689,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Práva společníka se dělí na majetková (peněžní hodnota, například podíl na zisku nebo likvidačním zůstatku) a nemajetková neboli korporační (účast na řízení, hlasování, informace).\nProč: Majetková práva mají peněžní hodnotu, a proto jsou v zásadě převoditelná na třetí osoby, třeba jako samostatná pohledávka na výplatu zisku. Typickým majetkovým právem je právo na podíl na zisku.\nChyták: Právo na informace či vysvětlení je nemajetkové. Osobní výkon a nepřevoditelnost jsou znaky nemajetkových práv, ne majetkových. Právo na autorský výtisk patří do autorského práva, ne do práva korporací."
     },
     {
       "q": "Zaměstnanec:",
@@ -1593,7 +1704,8 @@
       "correct": [
         0,
         3
-      ]
+      ],
+      "info": "Pojem: Zaměstnanec je fyzická osoba, která se zavázala vykonávat pro zaměstnavatele závislou práci v základním pracovněprávním vztahu (§ 6 ZP).\nProč: Závislou práci lze vykonávat jen osobně, a to dokáže jen člověk. Zaměstnancem proto může být pouze fyzická osoba. Stát je abstraktní celek, zaměstnancem být nemůže. Naopak může být zaměstnavatelem, za stát jednají jeho organizační složky.\nChyták: Právnická osoba zaměstnancem být nemůže, může být jen zaměstnavatelem. Zaměstnanec není silnější strana: pracovní právo ho chrání právě proto, že je na zaměstnavateli závislý a ve vztahu slabší."
     },
     {
       "q": "Valná hromada akciové společnosti: (bez záruky)",
@@ -1607,7 +1719,8 @@
       "correct": [
         0,
         2
-      ]
+      ],
+      "info": "Pojem: Valná hromada je nejvyšší orgán akciové společnosti. Tvoří ji akcionáři, kteří na ní hlasují.\nProč: Podle § 402 ZOK se valná hromada koná alespoň jednou za účetní období, tedy obvykle jednou ročně. Schvaluje účetní závěrku a rozdělení zisku. Rozhoduje o zásadních otázkách existence společnosti: změna stanov, změna základního kapitálu, volba orgánů, zrušení s likvidací nebo přeměna.\nChyták: Svolává ji představenstvo (v monistickém systému správní rada) pozvánkou nejméně 30 dnů předem (§ 406 ZOK). Lhůta sedí, ale jednatel je orgán s.r.o., ne a.s. Zastupování navenek patří statutárnímu orgánu. Valnou hromadu netvoří dlužníci ani věřitelé, ale akcionáři."
     },
     {
       "q": "V zakladatelském právním jednání obchodní korporace musí být určeno alespoň:",
@@ -1622,7 +1735,8 @@
         0,
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Zakladatelské právní jednání je společenská smlouva, zakladatelská listina nebo stanovy. Určuje, jak bude korporace vypadat a fungovat.\nProč: Podle § 123 odst. 1 OZ musí obsahovat alespoň název (u korporace obchodní firmu), sídlo, předmět činnosti, jaký má statutární orgán a jak se vytváří, a také kdo jsou první členové statutárního orgánu. ZOK to pro s.r.o. (§ 146) a a.s. (§ 250) dál rozvádí.\nChyták: Počet zaměstnanců ani číslo bankovního účtu zákon nepožaduje. Korporace účet ani zaměstnance při založení mít nemusí. Účet se zakládá kvůli splacení vkladů, ale do zakladatelského jednání nepatří."
     },
     {
       "q": "V zakladatelském právním jednání obchodní korporace musí být určeno alespoň:",
@@ -1637,7 +1751,8 @@
         0,
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Zakladatelské právní jednání je společenská smlouva, zakladatelská listina nebo stanovy. Vymezuje základní identitu korporace.\nProč: Podle § 123 OZ musí obsahovat alespoň název, sídlo, předmět činnosti a statutární orgán. U obchodní korporace je názvem obchodní firma (§ 423 OZ). Bez firmy, sídla a předmětu podnikání nebo činnosti by korporaci nešlo zapsat do obchodního rejstříku.\nChyták: Počáteční počet zaměstnanců zákon nepožaduje, korporace zaměstnance mít nemusí. Logo není součást zakladatelského jednání. Firmu tvoří slova, grafická podoba patří do práva ochranných známek."
     },
     {
       "q": "Systém orgánů akciové společnosti:",
@@ -1652,7 +1767,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Systém orgánů určuje, kdo v akciové společnosti rozhoduje, řídí a kontroluje.\nProč: Valná hromada je vždy nejvyšším orgánem (§ 44 odst. 1 ZOK). Vedle ní si společnost ve stanovách zvolí jeden ze dvou systémů (§ 396 ZOK). Dualistický systém má představenstvo jako statutární orgán a dozorčí radu jako kontrolní orgán. Monistický systém má jen správní radu, která řídí i kontroluje, a jejím statutárním orgánem je člen nebo více členů správní rady.\nChyták: Systém není pevně předepsán. Zákon nabízí volbu mezi monistickým a dualistickým uspořádáním. Kárná komise do orgánů akciové společnosti nepatří, zákon ji nezná."
     },
     {
       "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
@@ -1667,7 +1783,8 @@
         0,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Kapitálové společnosti (s.r.o. a a.s.) jsou postavené na kapitálu, ne na osobní účasti společníků. Vkladem se účastní na společnosti, osobně ji vést nemusí.\nProč: Podíl lze v zásadě převést (u a.s. převodem akcie). Ručení je omezené (u s.r.o. do výše nesplacených vkladů, § 132 ZOK) nebo žádné (akcionář a.s. neručí vůbec). Úprava je převážně kogentní, tedy závazná, protože chrání věřitele a základní kapitál.\nChyták: S.r.o. i a.s. může založit jediná osoba, dva zakladatelé potřeba nejsou. Formalizovaná struktura orgánů naopak vzniká vždy: valná hromada, jednatelé, představenstvo nebo správní rada."
     },
     {
       "q": "Zaměstnanec:",
@@ -1681,7 +1798,8 @@
       "correct": [
         1,
         2
-      ]
+      ],
+      "info": "Pojem: Zaměstnanec je fyzická osoba, která se zavázala vykonávat pro zaměstnavatele závislou práci (§ 6 ZP).\nProč: Závislou práci lze konat jen osobně, a to dokáže jen člověk. Zaměstnancem proto může být pouze fyzická osoba. Zaměstnanec je slabší stranou, protože je ekonomicky závislý a podléhá pokynům zaměstnavatele. Proto pracovní právo stojí na zásadě zvláštní ochrany zaměstnance (§ 1a ZP).\nChyták: Právnická osoba ani stát zaměstnancem být nemohou. Stát může vystupovat jen jako zaměstnavatel. Zaměstnanec není silnější stranou, silnější je zaměstnavatel, který práci přiděluje a řídí."
     },
     {
       "q": "Sídlo podnikatele:",
@@ -1696,7 +1814,8 @@
         0,
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Sídlo je adresa, ke které se váže právní identita podnikatele. Doručují se na ni písemnosti a určuje se podle ní místní příslušnost úřadů.\nProč: Podle § 136 OZ stačí v zakladatelském právním jednání uvést jen obec. Do rejstříku se pak zapisuje úplná adresa. Podle § 137 OZ se každý může dovolat sídla zapsaného ve veřejném rejstříku a právnická osoba nemůže namítat, že sídlí jinde. Nenaruší-li to klid a pořádek v domě, může být sídlo i v bytě (§ 136 OZ).\nChyták: Úplná adresa v zakladatelském jednání být nemusí, stačí obec. Sídlo je nezbytný znak podnikatele, bez něj ho nelze zapsat do rejstříku ani mu doručovat."
     },
     {
       "q": "Změna pracovního poměru:",
@@ -1711,7 +1830,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Změna pracovního poměru je změna sjednaného druhu práce, místa výkonu práce nebo dalšího obsahu pracovní smlouvy.\nProč: Obsah pracovního poměru lze zásadně měnit jen dohodou stran (§ 40 ZP). Výjimkou je převedení na jinou práci (§ 41 ZP). Zaměstnavatel ho provede jednostranně, ale jen ze zákonných důvodů, například podle lékařského posudku nebo kvůli těhotenství. Na pracovní cestu smí zaměstnance vyslat jen po dohodě s ním (§ 42 ZP).\nChyták: Bez souhlasu zaměstnance pracovní cesta možná není, souhlas může být dán už v pracovní smlouvě. Převedení na jinou práci je oprávnění zaměstnavatele. Zaměstnanec si jednostranně jinou práci určit nemůže."
     },
     {
       "q": "Po zániku společnosti její společníci za závazky společnosti:",
@@ -1724,7 +1844,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Ručení znamená, že za dluh společnosti odpovídá vedle ní i jiná osoba, tady společník. Věřitel může plnění žádat i po ní.\nProč: Otázka míří na veřejnou obchodní společnost, kde ručí všichni společníci společně a nerozdílně celým svým majetkem. Podle § 39 ZOK ručí společníci po zániku společnosti zrušené s likvidací za její dluhy nejméně v rozsahu, v němž ručili za jejího trvání (a do výše svého podílu na likvidačním zůstatku). Zánik společnosti tak věřitele o ručitele nepřipraví.\nChyták: Možnost, že společníci po zániku neručí, je opak toho, co zákon stanoví. Ručení má věřitele chránit právě pro případ, že dlužník skončí. Snížený rozsah zákon nezná; zvýšení je možné jen do výše podílu na likvidačním zůstatku, test ale chce odpověď \"stejně jako za jejího trvání\"."
     },
     {
       "q": "V případě smlouvy o dílo platí tyto povinnosti:",
@@ -1738,7 +1859,8 @@
       "correct": [
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Smlouvou o dílo se zhotovitel zavazuje provést dílo a objednatel se zavazuje dílo převzít a zaplatit cenu (§ 2586 OZ).\nProč: Zhotovitel provádí dílo na svůj náklad a nebezpečí. Sám obstará materiál a nese riziko, že se dílo nepovede nebo zničí, dokud ho nepředá. Objednatel je povinen zaplatit cenu díla. Cenu lze ve smlouvě i jen odhadnout nebo určit způsob jejího výpočtu.\nChyták: Zhotovitel nemusí pracovat vždy osobně. Může dílo provést pod svým osobním vedením nebo přes subdodavatele, ledaže dílo závisí na jeho osobních vlastnostech (§ 2589 OZ). Objednatel dílo převzít musí, ale ne osobně. Kupní cena patří ke kupní smlouvě, u díla jde o cenu díla."
     },
     {
       "q": "Majetková práva společníků obchodní korporace:",
@@ -1751,7 +1873,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Práva společníka se dělí na majetková (mají peněžní hodnotu) a nemajetková neboli korporační (účast na řízení a kontrole korporace).\nProč: Typickým majetkovým právem je právo na podíl na zisku. Společník za svůj vklad získává podíl na hospodářském výsledku, a proto toto právo jde ocenit penězi a v zásadě i převést.\nChyták: Právo účastnit se valné hromady a hlasovat na ní je nemajetkové (korporační) právo, stejně jako právo na informace či vysvětlení. Nutnost vykonávat právo osobně a nepřevoditelnost jsou znaky nemajetkových práv. Právo na stávku patří do pracovního práva, ne ke společníkům."
     },
     {
       "q": "Sídlo podnikatele:",
@@ -1765,7 +1888,8 @@
       "correct": [
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Sídlo je adresa, ke které se váže právní identita podnikatele. Doručují se na ni písemnosti a určuje se podle ní příslušnost úřadů.\nProč: Zakladatelské právní jednání právnické osoby musí sídlo obsahovat, ale stačí uvést obec (§ 136 OZ). Úplná adresa se zapisuje do veřejného rejstříku. Podle § 137 OZ je rozhodující sídlo zapsané v rejstříku. Kdo se ho dovolá, tomu právnická osoba nemůže namítat, že sídlí jinde.\nChyták: Sídlo může být i v bytě, pokud to nenaruší klid a pořádek v domě (§ 136 OZ). Úplná adresa v zakladatelském jednání být nemusí. Sídlo je povinná náležitost zakladatelského jednání, vynechat ho nelze."
     },
     {
       "q": "Valná hromada akciové společnosti: (bez záruky)",
@@ -1779,7 +1903,8 @@
       "correct": [
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Valná hromada je nejvyšší orgán akciové společnosti. Tvoří ji akcionáři.\nProč: Rozhoduje o zásadních otázkách existence společnosti: změna stanov, změna základního kapitálu, volba a odvolání členů orgánů, schválení účetní závěrky, rozdělení zisku, zrušení s likvidací nebo přeměna. Podle § 402 ZOK se koná alespoň jednou za účetní období, tedy obvykle jednou ročně.\nChyták: Pozvánka se rozesílá nejméně 30 dnů předem (§ 406 ZOK), ale svolává ji představenstvo nebo správní rada. Jednatel je orgán s.r.o. Zastupování navenek patří statutárnímu orgánu, ne valné hromadě. Dlužníci a věřitelé ji netvoří."
     },
     {
       "q": "Pro okamžité zrušení pracovního poměru platí:",
@@ -1793,7 +1918,8 @@
       "correct": [
         0,
         2
-      ]
+      ],
+      "info": "Pojem: Okamžité zrušení ukončí pracovní poměr dnem doručení, bez výpovědní doby. Je to krajní řešení pro vážné situace.\nProč: Zaměstnavatel ho smí použít jen z důvodů v § 55 ZP: pravomocné odsouzení pro úmyslný trestný čin k nepodmíněnému trestu odnětí svobody delšímu než 1 rok (u činu spáchaného při plnění pracovních úkolů stačí nejméně 6 měsíců), nebo porušení povinností zvlášť hrubým způsobem. Podle § 52 písm. g) ZP může ze stejných důvodů zvolit i mírnější výpověď. Kdo smí víc (okamžité zrušení), smí i méně (výpověď).\nChyták: Opačně to neplatí. Výpovědní důvod (například nadbytečnost) okamžité zrušení neumožní. Zaměstnanec může okamžitě zrušit jen z důvodů v § 56 ZP (nevyplacená mzda do 15 dnů po splatnosti, ohrožení zdraví podle lékařského posudku), ne z jakéhokoli důvodu."
     },
     {
       "q": "Závazek může zaniknout:",
@@ -1809,7 +1935,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Závazek je právní vztah, ve kterém je dlužník povinen něco plnit a věřitel má právo plnění žádat. Zaniká způsoby, které stanoví OZ.\nProč: Nejběžnější je splnění (§ 1908 OZ). Strany se mohou dohodnout, že závazek zruší (§ 1981 OZ). Výpověď ukončí závazek do budoucna po uplynutí výpovědní doby (§ 1998 OZ). Odstoupení ruší smlouvu od počátku (§ 2001 a § 2004 OZ). Dalšími způsoby jsou započtení, prominutí dluhu, splynutí, odstupné a následná nemožnost plnění.\nChyták: Akceptace (přijetí nabídky) závazek neruší. Naopak ho zakládá, protože přijetím nabídky vzniká smlouva."
     },
     {
       "q": "V právním řádu ČR platí, že zákony: (bez záruky)",
@@ -1824,7 +1951,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Zákon je obecně závazný právní předpis, který přijímá zákonodárný sbor. Vedle ústavních zákonů jde o hlavní pramen českého práva.\nProč: Ústavní zákony (Ústava, Listina a další) mají vyšší právní sílu než běžné zákony a ty s nimi musí být v souladu. Zákony jsou nejdůležitějším pramenem práva, protože upravují práva a povinnosti a jen na jejich základě lze vydat podzákonné předpisy.\nChyták: Zákoníky a řády nejsou vyšší kategorie, jsou to jen názvy rozsáhlejších zákonů se stejnou právní silou. Zákony nepřijímá vždy Parlament ČR: dodnes platí i zákony, které přijalo Federální shromáždění nebo Česká národní rada.\nRozpor: Podle testu mají zákony vyšší právní sílu než zákonná opatření Senátu. Podle čl. 33 Ústavy má zákonné opatření Senátu sílu zákona, tedy stejnou. Musí ho jen dodatečně schválit Poslanecká sněmovna, jinak pozbývá platnosti. U zkoušky odpověz podle testu."
     },
     {
       "q": "Splnění závazku:",
@@ -1839,7 +1967,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "info": "Pojem: Splnění je nejběžnější způsob zániku závazku. Dlužník poskytne, co dluží, a závazek tím zanikne (§ 1908 OZ).\nProč: Aby dluh opravdu zanikl, musí být plnění řádné, tedy bez vad, ve správném množství a jakosti. Musí přijít včas, jinak je dlužník v prodlení. A musí proběhnout na místě plnění, které určí smlouva, případně zákon (§ 1955 a násl. OZ: peněžité dluhy se plní v sídle věřitele, nepeněžité v sídle dlužníka).\nChyták: Prodlení není podoba splnění, je to porušení povinnosti plnit včas. Splnění je naopak nejobvyklejší způsob zániku závazku, ne výjimka."
     },
     {
       "q": "Výpověď smlouvy jednou ze smluvních stran:",
@@ -1853,7 +1982,8 @@
       "correct": [
         0,
         4
-      ]
+      ],
+      "info": "Pojem: Výpověď je jednostranné právní jednání, kterým strana ukončí závazek do budoucna (ex nunc) po uplynutí výpovědní doby.\nProč: K výpovědi není potřeba souhlas druhé strany, stačí doručený projev vůle (test používá starší pojem \"právní úkon\"). Smlouvu lze vypovědět, když to připouští zákon. Typicky u závazků na dobu neurčitou (§ 1999 OZ), u nájmu nebo u pracovního poměru.\nChyták: Výpověď není totéž co odstoupení: odstoupení ruší smlouvu od počátku, výpověď jen do budoucna. Obecná výpovědní doba je tři měsíce ke konci čtvrtletí, ne 15 dní po jejím uplynutí. Konkludentní výpověď je nejistá a řada zákonů vyžaduje písemnou formu.\nRozpor: Podle testu je výpověď možná jen v případech uvedených v zákoně. Podle § 1998 OZ si výpověď mohou sjednat i strany ve smlouvě. U zkoušky odpověz podle testu."
     },
     {
       "q": "Splnění závazku:",
@@ -1868,7 +1998,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Splnění je nejběžnější způsob zániku závazku. Dlužník poskytne věřiteli, co mu dluží (§ 1908 OZ).\nProč: Plnit se musí na místě určeném smlouvou nebo zákonem (peněžité dluhy v sídle věřitele, nepeněžité v sídle dlužníka) a včas, jinak nastává prodlení. Platit lze i směnkou nebo šekem. Věřitel se pak má nejdřív pokusit dosáhnout zaplacení přes tento prostředek (§ 1909 OZ). Když se to podaří, dluh je splněn už dnem vystavení směnky nebo šeku.\nChyták: Prodlení není forma splnění, je to porušení povinnosti plnit včas. Splnění je naopak nejobvyklejší způsob zániku závazku."
     },
     {
       "q": "V případě smlouvy o dílo platí tyto povinnosti:",
@@ -1883,7 +2014,8 @@
         1,
         2,
         3
-      ]
+      ],
+      "info": "Pojem: Smlouvou o dílo se zhotovitel zavazuje provést dílo a objednatel se zavazuje dílo převzít a zaplatit cenu (§ 2586 OZ).\nProč: Zhotovitel provádí dílo na svůj náklad a nebezpečí. Obstará materiál a nese riziko, dokud dílo nepředá. Objednatel má dvě základní povinnosti: řádně provedené dílo převzít a zaplatit za něj cenu.\nChyták: Místo plnění ve smlouvě stanovit nemusíte, doplní ho zákon. Zhotovitel nemusí dílo provést vždy osobně. Stačí jeho osobní vedení nebo subdodavatel, ledaže provedení díla závisí na jeho osobních vlastnostech (§ 2589 OZ)."
     },
     {
       "q": "Zrušení a zánik obchodní korporace: (bez záruky)",
@@ -1896,7 +2028,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Zrušení je rozhodnutí nebo skutečnost, která ukončuje existenci korporace. Zánik je okamžik, kdy korporace právně přestane existovat, tedy výmaz z obchodního rejstříku (§ 185 OZ).\nProč: Zrušení vždy předchází zániku. Mezi nimi obvykle probíhá likvidace: likvidátor zpeněží majetek, zaplatí dluhy a zbytek rozdělí společníkům. Bez likvidace zaniká korporace při přeměně (například fúzi), kdy jmění přejde na nástupce, a po skončení konkursu (§ 173 OZ).\nChyták: Zrušení a zánik nejsou synonyma, jde o dva různé okamžiky. Mezi nimi stojí likvidace, ne exekuce. Exekuce je vymáhání dluhu a se zánikem korporace přímo nesouvisí. Netýkají se zakládání ani jen podnikatelské činnosti, ale celé existence korporace."
     },
     {
       "q": "Zaměstnavatel:",
@@ -1910,7 +2043,8 @@
       "correct": [
         2,
         4
-      ]
+      ],
+      "info": "Pojem: Zaměstnavatel je osoba, pro kterou zaměstnanec vykonává závislou práci a která ji řídí a platí (§ 7 ZP).\nProč: Zaměstnavatelem může být fyzická i právnická osoba, třeba živnostník nebo s.r.o. Zaměstnavatelem je i stát, který se v soukromém právu považuje za právnickou osobu (§ 21 OZ). V pracovněprávních vztazích za něj jedná organizační složka státu, která zaměstnance zaměstnává (§ 9 ZP), například ministerstvo nebo úřad.\nChyták: Zaměstnavatel není omezen na jeden typ osoby, „pouze fyzická“ i „pouze právnická“ jsou chybně. Slabší stranou je zaměstnanec, ne zaměstnavatel. Proto ho zákoník práce zvlášť chrání."
     },
     {
       "q": "Pro výpověď z pracovního poměru platí:",
@@ -1923,7 +2057,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Výpověď je jednostranné právní jednání, kterým zaměstnavatel nebo zaměstnanec ukončí pracovní poměr po uplynutí výpovědní doby.\nProč: Podle § 50 odst. 1 ZP musí být výpověď písemná, jinak se k ní nepřihlíží. Musí být také doručena druhé straně. Doručení upravují § 334 a násl. ZP: do vlastních rukou na pracovišti, poštou nebo elektronicky.\nChyták: Vyvěšení na úřední desce zaměstnavatele není způsob doručení podle ZP. Ústní výpověď neplatí ani při řádném doručení. Zaměstnavatel smí dát výpověď jen z důvodů v § 52 ZP. Zaměstnanec naopak z jakéhokoli důvodu i bez uvedení důvodu, taxativní výčet platí jen pro zaměstnavatele."
     },
     {
       "q": "Zrušení a zánik obchodní korporace:",
@@ -1937,7 +2072,8 @@
       "correct": [
         0,
         1
-      ]
+      ],
+      "info": "Pojem: Zrušení je skutečnost, která ukončuje existenci korporace (například rozhodnutí valné hromady nebo soudu). Zánik je okamžik, kdy korporace právně přestane existovat, tedy výmaz z obchodního rejstříku (§ 185 OZ).\nProč: Zrušení vždy předchází zániku. Obvykle je od sebe dělí likvidace (§ 187 OZ): likvidátor zpeněží majetek, zaplatí dluhy a zbytek rozdělí společníkům. Bez likvidace zaniká korporace při přeměně, kdy jmění přejde na nástupce, a po skončení konkursu (§ 173 OZ).\nChyták: Exekuce je vymáhání dluhu, zrušení od zániku nedělí. Nejde o synonyma ani o věc jen podnikatelské činnosti, týká se to celé existence korporace."
     },
     {
       "q": "Prokura:",
@@ -1951,7 +2087,8 @@
       "correct": [
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Prokura je zvláštní obchodní plná moc. Podnikatel zapsaný v obchodním rejstříku ji udělí prokuristovi (§ 450 OZ).\nProč: Je velmi obecná. Prokurista smí jednat ve všech záležitostech, ke kterým dochází při provozu podniku, jen nemovitost smí zcizit nebo zatížit, pokud je to výslovně uvedeno. Vzniká už udělením. Zápis do obchodního rejstříku je jen deklaratorní (potvrzuje stav, který už nastal), i když je povinný.\nChyták: Prokura není konkrétní plná moc pro jednu věc. Nevzniká ani nezaniká zápisem či výmazem. Zaniká například odvoláním, výpovědí, smrtí prokuristy nebo zánikem podnikatele, výmaz to jen dodatečně zaznamená."
     },
     {
       "q": "Obchodní firma: (bez záruky)",
@@ -1965,7 +2102,8 @@
       "correct": [
         1,
         4
-      ]
+      ],
+      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán do obchodního rejstříku (§ 423 OZ).\nProč: Firma se do obchodního rejstříku zapisuje, zápis ji vlastně definuje. Firma může obsahovat dodatek označující právní formu. U obchodních korporací ho dokonce obsahovat musí (například „s.r.o.“ podle § 132 ZOK, „a.s.“ podle § 243 ZOK).\nChyták: Z firmy nemusí vyplývat předmět činnosti, firma může být i smyšlené slovo. Firma není totéž co obchodní značka: značka (ochranná známka) označuje výrobky nebo služby, firma označuje podnikatele. Tvrzení, že se firma nezapisuje, je opak definice."
     }
   ],
   "sets": [

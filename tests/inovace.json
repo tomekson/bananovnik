@@ -26,7 +26,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Tradiční firemní společenská odpovědnost (CSR 1.0) chápe dobročinnost a odpovědné chování jako aktivitu vedle hlavního byznysu.\nProč: Firma nejdřív vydělá zisk a pak z něj část věnuje na sociální účely. Tvorba ekonomické a sociální hodnoty jsou dvě oddělené činnosti. CSR je oddělená od maximalizace zisku, bývá nárazová a omezená rozpočtem a obrazem firmy na veřejnosti.\nChyták: Propojení ekonomické a sociální hodnoty je naopak znak sdílené hodnoty (Porter a Kramer), která na tradiční CSR kriticky navazuje. Podmiňování jedné hodnoty druhou také popisuje novější přístupy, ne tradiční CSR."
     },
     {
       "q": "Které tvrzení o inovacích je pravdivé:",
@@ -39,7 +40,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Inovace je nový nebo zlepšený produkt, proces či model, který se úspěšně uplatní v praxi.\nProč: Nápad nebo vynález se stává inovací teprve tehdy, když vytvoří hodnotu - pro zákazníka, firmu nebo společnost. Hodnota je proto společným znakem každé úspěšné inovace.\nChyták: Patent ani velké výdaje na výzkum a vývoj nejsou podmínkou. Mnoho úspěšných inovací se nepatentuje a vzniká levně. Inovace se navíc odehrávají i ve veřejném a neziskovém sektoru a inovační proces lze řídit a opakovat."
     },
     {
       "q": "Co obvykle NENÍ charakteristikou inovační organizace?",
@@ -52,7 +54,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Inovační organizace je firma, která soustavně a opakovaně přináší inovace. Má k tomu strukturu, kulturu i postupy.\nProč: Typické znaky jsou zaujetí managementu pro změnu, podpůrné klima s pobídkami, husté vnější vazby a sítě a promyšlený výběr inovačních příležitostí. Věk firmy mezi ně nepatří. Starší firmy naopak často trpí setrvačností a byrokracií.\nChyták: Husté vnější vazby mohou působit jako okrajová vlastnost. Inovační firmy ale z vnějších sítí čerpají znalosti, partnery i podněty, proto jsou jejich důležitým znakem."
     },
     {
       "q": "Které z následujících tvrzení je správné?",
@@ -65,7 +68,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Sociální inovace je nové řešení společenského problému, které je účinnější nebo udržitelnější než dosavadní řešení.\nProč: Sociální podnikání spojuje sociální a komerční cíle. Napětí mezi nimi existuje, ale dá se řešit - třeba vhodným byznys modelem, kdy příjmy z prodeje financují sociální dopad. Proto jsou tyto konflikty řešitelné.\nChyták: Samotné vytvoření sociální hodnoty k úspěchu nestačí, řešení musí být i ekonomicky udržitelné. Empatie je důležitá, ale nestačí. Sociální inovace navíc prochází podobnými kroky jako komerční inovace."
     },
     {
       "q": "Investice do impaktu zahrnují:",
@@ -78,7 +82,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Investice do impaktu (impact investing) jsou investice do firem, organizací a fondů s jasným záměrem vytvořit sociální nebo environmentální dopad.\nProč: Investor zároveň očekává finanční výnos z vloženého kapitálu. Výnos může být nižší než tržní, ale je součástí záměru. Impakt investice musí být přesvědčivě doložen. Spojují tedy sociální impakt a finanční výnos.\nChyták: Filantropie výnos neočekává, proto investicí do impaktu není. Soustředění jen na finanční výnos je běžné investování. Varianty \"pouze sociální\" nebo \"pouze environmentální\" impakt vynechávají finanční výnos."
     },
     {
       "q": "Pivoting a učení experimentem jsou charakteristické pro:",
@@ -91,7 +96,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Start-up je nová firma, která teprve hledá opakovatelný a ziskový byznys model. Často postupuje podle metody Lean Startup.\nProč: Ve fázi start-upu firma testuje hypotézy na zákaznících v cyklu Stavět - Měřit - Učit se. Když zpětná vazba ukáže, že produkt nefunguje, firma změní směr (pivot). Učení experimentem je proto typické právě pro start-up.\nChyták: Ve fázi růstu už má firma ověřený model a hlavně ho škáluje. Ve zralosti a poklesu firma spíš optimalizuje a brání pozici, než aby experimentovala se základním směrem."
     },
     {
       "q": "Mezi výhody skupinové tvořivosti nepatří:",
@@ -104,7 +110,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Skupinová tvořivost je vytváření nápadů ve skupině, například při brainstormingu.\nProč: Skupina přináší rozmanité zkušenosti a různorodé pohledy, víc zdrojů pro zkoumání a obvykle víc nápadů než jednotlivec. To jsou její výhody. Groupthink (skupinové myšlení) je naopak nevýhoda: tlak na shodu potlačuje originální a kritické nápady.\nChyták: Rozmanitost a různorodost znějí podobně, ale obě jsou výhodou skupiny. Groupthink vypadá jako \"myšlení skupiny\", ve skutečnosti ale tvořivost brzdí."
     },
     {
       "q": "Prostředí pro tvořivost SUN zahrnuje:",
@@ -117,7 +124,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: SUN je zkratka pro prostředí, které tvořivost podporuje: Suspend judgement (odložit hodnocení), Understand (pochopit) a Nurture (podporovat a rozvíjet nápad).\nProč: Nový nápad je zpočátku křehký a nedotažený. Když ho skupina hned nekritizuje, ale snaží se ho pochopit a podpořit, nápad má šanci vyrůst. Podpora a pochopení jsou proto jádrem prostředí SUN.\nChyták: Rychlá reakce a rychlé závěry znějí jako efektivita. Ve skutečnosti vedou k předčasnému hodnocení a nápady zabíjejí. Negativismus a vyloučení možných cest jsou typické znaky prostředí, které tvořivost dusí."
     },
     {
       "q": "Která z charakteristik frugálních inovací není pravdivá:",
@@ -130,7 +138,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Frugální (skromná) inovace je levné a jednoduché řešení vyvinuté v prostředí s omezenými zdroji. Zachovává jen základní funkci produktu.\nProč: Frugální inovace mají nízkonákladový vývoj a nevyžadují drahý výzkum a vývoj. Cílí hlavně na zákazníky ve středu a základně příjmové pyramidy. Obvykle zjednodušují a zlevňují existující řešení, nejde o zásadní technologické průlomy. Proto právě toto tvrzení neplatí.\nChyták: Tvrzení o inkrementálním zlepšení může působit jako chyba. Frugální inovace ale skutečně spíš upravují známé technologie, než aby vytvářely nové."
     },
     {
       "q": "Čtyři faktory mají zásadní vliv na schopnost firmy vyvinout a vytvořit hodnotu díky inovaci. Který z uvedených faktorů mezi ně nepatří?",
@@ -143,7 +152,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Schopnost firmy vytvořit hodnotu z inovace v globálním prostředí podle Tidda a Bessanta ovlivňují vnější podmínky, ve kterých firma působí, a její zapojení do mezinárodních sítí.\nProč: Mezi faktory patří národní inovační systém, pozice firmy v mezinárodním hodnotovém řetězci a schopnost využít vnější zdroje inovací, hlavně mezinárodní sítě. Investice do základní vědy mezi ně nepatří. Firmy většinou nedělají základní výzkum, ale využívají jeho výsledky z univerzit a veřejných institucí.\nChyták: Vládní dotace mohou působit jako okrajový vliv. Patří ale k podmínkám domácího prostředí, které firmě otevírají nebo zavírají inovační příležitosti."
     },
     {
       "q": "Která metoda je nejméně používaná firmami při zjišťování informací o inovacích konkurentů?",
@@ -156,7 +166,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Firmy zjišťují informace o inovacích konkurentů různými cestami - obráceným inženýringem, licencováním, publikacemi, napodobováním nebo analýzou patentů.\nProč: Patentové dokumenty sice popisují technické řešení, ale bývají psané tak, aby prozradily co nejméně. Často navíc vycházejí se zpožděním. Firmy proto analýzu patentů využívají nejméně a dávají přednost přímějším cestám, hlavně obrácenému inženýringu a kontaktům.\nChyták: Obrácený inženýring je náročný, a proto může působit jako málo používaný. Ve skutečnosti je to jedna z nejčastějších metod, protože dává přímý pohled na hotový produkt."
     },
     {
       "q": "Které typy subjektů dosahují vysoký sociální impakt a vytvářejí vysokou business hodnotu:",
@@ -169,7 +180,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Sociální intrapodnikatel je zaměstnanec velké firmy, který uvnitř ní prosazuje inovace řešící sociální problémy a zároveň vytvářející business hodnotu.\nProč: Ze čtyř typických aktérů dosahují vysokého sociálního impaktu i vysoké business hodnoty právě sociální intrapodnikatelé. Využívají nesrovnatelné zdroje a kapacity svého zaměstnavatele, takže dokážou řešení rozšířit (upscaling) ve velkém.\nChyták: Sociální podnikatelé jsou lákaví, protože řeší sociální problémy přímo. Jejich kapacita pro zásadní impakt i business hodnota je ale zatím omezená. Business s tradiční CSR má business hodnotu, ale malý impakt, tradiční neziskovky mají nízké obojí."
     },
     {
       "q": "Jaké kognitivní dovednosti zahrnuje DNA inovátora?",
@@ -182,7 +194,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: DNA inovátora je model Dyera, Gregersena a Christensena. Popisuje pět dovedností, kterými se inovátoři liší od ostatních manažerů.\nProč: Jedinou kognitivní dovedností je asociace - schopnost propojovat zdánlivě nesouvisející otázky, problémy a myšlenky z různých oborů. Ostatní čtyři dovednosti jsou behaviorální a asociaci \"krmí\" podněty.\nChyták: Kladení otázek, pozorování, síťování a experimentování jsou také součástí DNA inovátora. Jde ale o behaviorální dovednosti (způsoby chování), ne o kognitivní."
     },
     {
       "q": "Co je národní inovační systém?",
@@ -195,7 +208,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Národní inovační systém (NIS) je struktura vztahů mezi veřejnými a soukromými institucemi v dané zemi - firmami, univerzitami, výzkumnými ústavy, státem a financujícími subjekty.\nProč: Inovace nevznikají izolovaně v jedné firmě. Vznikají ze spolupráce a toku znalostí mezi aktéry. NIS proto popisuje, jak jsou inovační aktéři v zemi propojeni a jak společně vytvářejí, šíří a využívají znalosti.\nChyták: Vládní dotace jsou jen jeden nástroj uvnitř NIS, ne celý systém. Tržní pozice nebo ekonomická výkonnost země jsou výsledky inovačnosti, ne samotný systém."
     },
     {
       "q": "Kirtonova škála srovnává:",
@@ -208,7 +222,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Kirtonova škála KAI (Kirton Adaption-Innovation) měří styl tvořivosti a řešení problémů.\nProč: Kirton staví proti sobě dva póly. Adaptor zlepšuje věci uvnitř existujícího systému (\"dělat věci lépe\"). Inovátor mění samotný systém a pravidla (\"dělat věci jinak\"). Oba styly jsou tvořivé, jen jiným způsobem. Škála tedy srovnává inovátory a adaptory.\nChyták: Modifikátor, experimentátor nebo vizionář jsou pojmy z jiných typologií tvořivosti. Varianty, které kombinují jeden správný pól s jiným pojmem, jsou proto chybné."
     },
     {
       "q": "Co NENÍ radikální inovace?",
@@ -221,7 +236,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Radikální inovace přináší zásadní změnu, která vytváří nový trh nebo přetváří celé odvětví. Inkrementální inovace jen postupně vylepšuje existující produkt.\nProč: Větší nabídka barev pro VW Brouk nemění, co auto je ani jak funguje. Jde o drobnou úpravu existujícího produktu, tedy o inkrementální inovaci.\nChyták: Facebook může působit jen jako další web. Vytvořil ale nový způsob komunikace a nový trh. Letadlový motor, integrované obvody a antibiotika jsou klasické technologické průlomy."
     },
     {
       "q": "Třetí fáze technologického dohánění zahrnuje:",
@@ -234,7 +250,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Technologické dohánění popisuje, jak firmy z dohánějících zemí postupně získávají technologické schopnosti - od montáže k vlastnímu vývoji (OEM - ODM - OBM).\nProč: V první fázi firma zvládá montáž zralých produktů. Ve druhé postupně zlepšuje procesy a učí se i obráceným inženýringem. Ve třetí fázi už zvládá kompletní výrobní dovednosti a kvalifikace. Na ně navazuje vlastní produktová inovace a výzkum a vývoj.\nChyták: Zralé produkty patří do první fáze a obrácený inženýring do druhé. Radikální inovace a hraniční výzkum a vývoj přicházejí až na konci, kdy firma technologickou hranici dohnala."
     },
     {
       "q": "Principy průlomového kapitalismu zahrnují:",
@@ -247,7 +264,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Průlomový kapitalismus (Breakthrough capitalism, Plán B) formulovali John Elkington a Jochen Zeitz. Je to vize byznysu založeného na trojí odpovědnosti - ekonomické, sociální a environmentální.\nProč: Mezi principy patří blahobyt stakeholderů, dlouhodobý horizont, pravdivé účetnictví, nové business struktury, plná transparentnost a udržitelná příroda. Firma má sloužit všem zúčastněným stranám, ne jen vlastníkům.\nChyták: Možnosti jsou postavené jako opaky skutečných principů. Místo pravdivého účetnictví \"kreativní\", místo dlouhodobého horizontu krátkodobý, místo nových struktur osvědčené, místo stakeholderů vlastníci."
     },
     {
       "q": "Které z následujících pobídek nepatří mezi významné vlivy národního inovačního systému na firemní inovační aktivity?",
@@ -260,7 +278,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Národní inovační systém ovlivňuje firemní inovace přes pobídky, které vytváří domácí prostředí.\nProč: Významné pobídky jsou ty, které mění náklady a příležitosti firmy v dané zemi - daňové úlevy na výzkum a vývoj, ceny lokálních výrobních vstupů, lokální investiční aktivity a lokální přírodní zdroje. Patentová ochrana mezi tyto pobídky v testu nepatří. Chrání výsledek inovace, ale samotnou inovační aktivitu přímo nepodněcuje.\nChyták: Patentová ochrana působí jako typický nástroj inovační politiky, proto je lákavá. Daňové úlevy jsou naopak zjevná pobídka a patří mezi významné vlivy."
     },
     {
       "q": "Nejvýznamnější globální investoři do výzkumu a vývoje jsou:",
@@ -273,7 +292,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Výdaje na výzkum a vývoj (VaV) financují různé sektory - podnikatelský sektor, vláda, vysoké školy a neziskové organizace.\nProč: Většinu globálních výdajů na VaV platí firmy. Ve vyspělých ekonomikách podnikatelský sektor financuje zhruba dvě třetiny všech výdajů. Největší investoři jsou nadnárodní korporace, například technologické, farmaceutické a automobilové firmy.\nChyták: Vlády a země vypadají jako největší investoři, protože se o veřejném financování vědy hodně mluví. Jejich podíl je ale menší než podíl firem. Nadace a banky do VaV investují jen okrajově."
     },
     {
       "q": "Minimálně životaschopný produkt je spojen s:",
@@ -286,7 +306,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Minimálně životaschopný produkt (MVP) je nejjednodušší verze produktu s nejnutnějšími funkcemi. Slouží k co nejrychlejšímu získání zpětné vazby od zákazníků.\nProč: MVP vzniká proto, aby firma ověřila hypotézu, zda zákazníci produkt opravdu chtějí. Ověřování nápadu v praxi odpovídá fázi validace (potvrzení), kdy se z nápadu stává otestované řešení. V metodě Lean Startup jde o krok Stavět - Měřit - Učit se.\nChyták: Fáze osvícení je okamžik, kdy nápad vznikne. Ten se teprve potom ověřuje. Brainstorming a šest klobouků jsou techniky pro generování a hodnocení nápadů, ne pro testování na trhu."
     },
     {
       "q": "Co není součástí tvořivého procesu?",
@@ -299,7 +320,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Tvořivý proces podle Wallase popisuje, jak vzniká nový nápad. Má čtyři fáze: přípravu (rekognici), inkubaci, osvícení (vhled) a validaci (ověření).\nProč: Člověk nejdřív problém pozná a sbírá informace. Pak problém nechá \"uležet\" v podvědomí. Následuje náhlý vhled a nakonec ověření, zda nápad funguje. Vývoj softwaru není fáze myšlení, ale konkrétní pracovní činnost, proto do tvořivého procesu nepatří.\nChyták: Validace může působit spíš jako krok řízení projektu. Ve Wallasově modelu je to ale poslední fáze tvořivého procesu, kdy se nápad prověřuje."
     },
     {
       "q": "Firemní společenská odpovědnost znamená, že firma:",
@@ -312,7 +334,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Firemní společenská odpovědnost (CSR) je fáze vývoje odpovědnosti businessu, která navazuje na filantropii.\nProč: Firma si v CSR zvolí společensky prospěšné téma a chová se odpovědněji prostřednictvím svých výrobků a služeb. Zlepšuje společnost díky tomu, co vyrábí a distribuuje, i díky způsobu, jakým to dělá. Už nejde jen o dary.\nChyták: Odpovědnost k akcionářům a stakeholderům zní jako obecná definice, ale nevystihuje podstatu - zlepšování společnosti vlastními produkty. Varianty s filantropií a dobročinnými výdaji popisují starší fázi, firemní filantropii."
     },
     {
       "q": "Cause promotion znamená:",
@@ -325,7 +348,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Cause promotion je marketingová sociální iniciativa, ve které firma podporuje sociální téma (cause) svými zdroji.\nProč: Firma poskytuje peníze, věcné příspěvky nebo jiné zdroje na reklamní kampaně, které zvyšují povědomí a zájem o sociální téma. Jádrem je propagace a přesvědčovací komunikace. Firma může podporovat i fundraising a získávání dobrovolníků.\nChyták: Spojení darů s prodejem produktů je cause-related marketing. Kampaň na změnu chování je sociální marketing. Obě možnosti jsou lákavé, protože jde o sesterské nástroje ze stejné skupiny."
     },
     {
       "q": "Pro zkoumání různých možností, ze kterých mohu volit, je charakteristické:",
@@ -338,7 +362,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Divergentní myšlení je schopnost hledat mnoho různých řešení nebo odpovědí na jeden problém. Je to klíčová složka tvořivosti.\nProč: Když zkoumám různé možnosti, ze kterých budu volit, potřebuji je nejdřív co nejvíc rozšířit. Myšlení se \"rozbíhá\" do různých směrů. Teprve potom přichází výběr.\nChyták: Logické a lineární myšlení postupují krok za krokem k jednomu závěru, takže prostor možností zužují. Realismus a plánování patří až k hodnocení a realizaci. Opakem divergentního je konvergentní myšlení, které směřuje k jedinému řešení."
     },
     {
       "q": "Rozhodnutí firmy o lokalizaci a realizaci výzkumu a vývoje závisí na mnoha významných faktorech, který mezi ně nepatří?",
@@ -351,7 +376,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Lokalizace výzkumu a vývoje (VaV) je rozhodnutí, kde firma bude VaV provádět - doma, nebo v zahraničí.\nProč: Rozhodují hlavně firemní hlediska: význam vnějších zdrojů znalostí (technologie, dodavatelé, zákazníci), dostupnost kvalifikovaných lidí, význam a náklady vnitřních transakcí, tedy komunikace mezi VaV, výrobou a marketingem, a náklady na přesun personálu. Kvalita místní vědy a technologie se mezi tyto faktory v testu neřadí.\nChyták: Kvalita místní vědy je lákavá, protože zní jako přirozený důvod. Firmy ale VaV umisťují spíš tam, kde mají výrobu, zákazníky a lidi, než podle kvality místního vědeckého zázemí."
     },
     {
       "q": "Který předpoklad o trzích v základně pyramidy je správný?",
@@ -364,7 +390,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Základna pyramidy (Bottom of the Pyramid, C. K. Prahalad) jsou miliardy lidí s nejnižšími příjmy. Pro firmy představují velký, dosud opomíjený trh.\nProč: Lidé v chudých zemích jsou dostupní zákazníci. Firma je dokáže oslovit, když jim nabídne cenově dostupný produkt a vhodnou distribuci. Dohromady mají velkou kupní sílu, i když každý jednotlivec utrácí málo.\nChyták: Všechny špatné možnosti jsou mýty, které Prahalad vyvrací. Chudé lidi zajímají značky, kvalita i technologie. Trhy v základně pyramidy kupní sílu mají, jen je rozložená mezi mnoho lidí."
     },
     {
       "q": "Které tvrzení o inovacích je pravdivé?",
@@ -377,7 +404,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Radikální inovace zásadně mění způsob, jak se věci dělají, a často přetváří celé odvětví.\nProč: Sdílení souborů na internetu (např. Napster) změnilo způsob distribuce hudby i filmů. Rozbilo model prodeje fyzických nosičů a vedlo ke vzniku nových byznys modelů, například streamingu. Proto jde o radikální inovaci.\nChyták: Skvělý nápad, záblesk geniality ani patent k úspěchu nestačí ani nejsou nutné. Úspěch záleží hlavně na řízení inovačního procesu a uvedení na trh. Výše výdajů na výzkum a vývoj úspěch také nezaručuje."
     },
     {
       "q": "Pro rozhodnutí, co udělám (jakou možnost zvolím) je charakteristické:",
@@ -390,7 +418,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Konvergentní myšlení směřuje k jednomu nejlepšímu řešení. Z mnoha možností vybírá a rozhoduje.\nProč: Rozhodování, kterou možnost zvolím, je zužování výběru. Myšlení se \"sbíhá\" k jedinému závěru. Proto je pro rozhodnutí charakteristické konvergentní myšlení.\nChyták: Divergentní myšlení je opak - možnosti rozšiřuje a hledá jich co nejvíc. Patří proto k fázi zkoumání, ne volby. Intuice a imaginace mohou rozhodování ovlivnit, ale nejsou typem myšlení, který proces výběru popisuje. Lineární myšlení je postup krok za krokem, ne výběr z možností."
     },
     {
       "q": "Principy managementu soustavné inovace zahrnují:",
@@ -403,7 +432,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Management soustavné inovace je přístup k řízení, který umožňuje firmě inovovat průběžně, ne jednorázově.\nProč: Základním principem jsou dynamické kapacity. Jsou to kompetence, síla a rychlost, které firmě umožní měnit vlastní zdroje a využít příležitosti obsažené ve změně. Firma tak dokáže reagovat na rychle se měnící prostředí a dlouhodobě se rozvíjet.\nChyták: Stabilní kapacity a ad hoc přístup jsou opakem soustavnosti - jedny změnu brzdí, druhý je nahodilý. Důraz na vedení organizace a uzavřená organizace odpovídají tradičnímu hierarchickému řízení."
     },
     {
       "q": "Mezi důvody neúspěchu modelu CSR 1.0 patří:",
@@ -416,7 +446,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: CSR 1.0 je souhrnné označení tradičního modelu firemní společenské odpovědnosti. Wayne Visser analyzuje, proč tento model selhal.\nProč: Visser uvádí tři důvody neúspěchu: inkrementalitu, okrajovost a chybějící ekonomický efekt. Inkrementální, postupné zlepšování neodpovídá rozsahu a rychlosti sociálních a environmentálních problémů. Efekt změn proto zůstává malý.\nChyták: Ostatní možnosti jsou obrácené důvody. CSR 1.0 naopak nebyla součástí jádrového businessu, neměla významný ekonomický efekt ani významný efekt změn a její role byla okrajová, ne zásadní."
     },
     {
       "q": "Jaký typ inovace je zavedení objednávacího systému pro pacienty, který snižuje čekací dobu?",
@@ -429,7 +460,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Model 4P (Tidd a Bessant) dělí inovace na inovace produktu, procesu, pozice a paradigmatu.\nProč: Objednávací systém pro pacienty nemění samotnou léčbu, kterou nemocnice poskytuje. Mění způsob, jakým se služba vytváří a doručuje - tedy postup. Proto jde o inovaci procesu.\nChyták: Inovace produktu by měnila to, co nemocnice nabízí, třeba novou léčbu. Inovace pozice mění kontext nebo cílovou skupinu nabídky. Inovace paradigmatu mění celý mentální model podnikání."
     },
     {
       "q": "Mezi nástroje podpory tvořivosti nepatří:",
@@ -442,7 +474,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Nástroje podpory tvořivosti jsou způsoby, jak rozvíjet schopnost lidí a skupin vytvářet nové nápady.\nProč: Patří sem rozvoj technik tvořivého myšlení, skupinové tvořivosti, prostředí pro tvořivost a osobních dovedností. Všechny přímo posilují vznik nápadů. Prodejní dovednosti slouží k uvedení hotového produktu na trh, ne k tvořivosti.\nChyták: Rozvoj osobních dovedností zní obecně a může působit jako vetřelec. Do podpory tvořivosti ale patří, protože tvořivost závisí i na sebedůvěře, otevřenosti a schopnosti učit se."
     },
     {
       "q": "Porterova-Kramerova sdílená hodnota znamená:",
@@ -455,7 +488,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Sdílená hodnota (corporate shared value) je koncept Michaela Portera a Marka Kramera. Jsou to politiky a postupy, které zvyšují konkurenceschopnost firmy a zároveň zlepšují ekonomické a sociální podmínky komunit.\nProč: Firma vytváří ekonomickou hodnotu takovým způsobem, že tím zároveň vytváří hodnotu pro společnost, protože řeší její potřeby a problémy. Výchozím bodem je ekonomický úspěch a konkurenceschopnost firmy.\nChyták: Obrácené pořadí, tedy sociální a tím i ekonomická hodnota, je lákavé, protože firma ekonomickou hodnotu často získává právě řešením sociálních problémů. Cílem ale zůstává konkurenceschopnost firmy. Podřízení jedné hodnoty druhé ani solidarita při rozdělování koncept nevystihují."
     },
     {
       "q": "Mezi principy radikálního managementu nepatří: (bez záruky)",
@@ -468,7 +502,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Radikální management (Steve Denning) je způsob řízení, který dosahuje vysoké produktivity, soustavné inovace a nadšeného zákazníka. Denning formuluje sedm principů.\nProč: Mezi principy patří: prvořadým cílem je potěšit zákazníka, soustředění na zákazníka vede k sebeorganizujícím se týmům, práce probíhá v iteracích směřujících k hodnotě pro zákazníka, překážky se komunikují otevřeně a vícesměrně a tým se zlepšuje sám.\nChyták: Mechanické opakování postupů, plnění předepsaných výrobních postupů a zlepšování řízené managementem jsou znaky tradičního managementu. Ty mezi principy nepatří.\nRozpor: Podle testu mezi principy nepatří \"soustředění na zákazníka vede k sebeorganizujícím se týmům\". Podle učebnice je to přímo druhý Denningův princip. Do radikálního managementu naopak nepatří tři tvrzení o mechanickém opakování, předepsaných postupech a zlepšování řízeném managementem. U zkoušky odpověz podle testu."
     },
     {
       "q": "Které tvrzení o globalizaci inovací není pravdivé: (bez záruky)",
@@ -481,7 +516,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Globalizace inovací popisuje, jak se technologie a inovace vytvářejí a šíří mezi zeměmi a firmami.\nProč: Technologie a inovace nejsou globálně rovnoměrně rozděleny. Soustřeďují se v určitých zemích a regionech, protože se obtížně přenášejí a národní prostředí ovlivňuje, jak je firmy dokážou přejímat. Proto je tvrzení o rovnoměrném rozdělení nepravdivé.\nChyták: Tvrzení o obtížné přenositelnosti a vlivu národního prostředí jsou pravdivá a vysvětlují, proč rozdělení rovnoměrné není.\nRozpor: Podle testu je jediné nepravdivé tvrzení to o rovnoměrném rozdělení. Podle učebnice je nepravdivé i tvrzení, že inovace realizují pouze vyspělé země - frugální a reverzní inovace vznikají právě v rozvojových zemích. U zkoušky odpověz podle testu."
     },
     {
       "q": "Druhá fáze technologického dohánění zahrnuje:",
@@ -494,7 +530,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Technologické dohánění popisuje, jak firmy z dohánějících zemí postupně získávají technologické schopnosti - od montáže k vlastnímu vývoji (OEM - ODM - OBM).\nProč: V první fázi firma zvládá montážní dovednosti a vyrábí zralé produkty podle cizí dokumentace. Ve druhé fázi postupně zlepšuje výrobní procesy - jde o postupnou procesní změnu. Kompletní výrobní kvalifikace, produktová inovace a vlastní výzkum a vývoj přicházejí až v dalších fázích.\nChyták: Montážní dovednosti jsou lákavé, protože jsou základem, ale patří do první fáze. Kompletní produkční kvalifikace je až třetí fáze."
     },
     {
       "q": "Které tvrzení o faktorech globalizace inovací je pravdivé?",
@@ -507,7 +544,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Globalizace inovací znamená, že firmy provádějí inovační aktivity (výzkum, vývoj, design) i mimo domovskou zemi.\nProč: Inovační aktivity následují výrobu. Čím víc firma vyrábí v zahraničí, tím víc tam potřebuje přizpůsobovat produkty a procesy místním trhům a podmínkám. Proto s podílem zahraniční produkce roste i podíl zahraničních inovačních aktivit.\nChyták: Firmy z menších zemí mají naopak vyšší podíl zahraničních inovačních aktivit, protože jejich domácí trh a zdroje jsou omezené. Opačná závislost (\"tím slabší\") odporuje zjištěnému vztahu."
     },
     {
       "q": "Které tvrzení o tvořivosti je správné?",
@@ -520,7 +558,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Tvořivost (kreativita) je schopnost přicházet s novými a užitečnými nápady. Podle Csikszentmihalyiho vzniká z interakce člověka, prostředí a znalostní oblasti.\nProč: Tvořivost není vzácný dar několika vyvolených. Má ji každý, jen se projevuje různě - někdo vymýšlí radikálně nové věci, jiný zlepšuje stávající (srovnej inovátory a adaptory u Kirtona). Proto jsou všichni lidé tvořiví, ale různým způsobem.\nChyták: Tvořivost je potřeba v celém inovačním procesu, ne jen na začátku. Divergentní myšlení je jen jedna složka tvořivosti, ne totéž. Tvořivost také není nejvýznamnější faktor úspěchu inovace - rozhoduje i realizace."
     },
     {
       "q": "Co NENÍ formou inovace?",
@@ -533,7 +572,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Inovace je nový nebo zlepšený produkt, proces, způsob uvedení na trh nebo byznys model, který vytváří hodnotu.\nProč: Nový způsob výroby, nový produkt, nový byznys model i nový kontext zavedení produktu jsou změny, které firma zavádí. Množství spotřebovaného benzínu je jen ukazatel spotřeby. Samo o sobě nic nového nepřináší, proto formou inovace není.\nChyták: Nový kontext zavedení produktu může působit vágně. Odpovídá ale inovaci pozice podle modelu 4P - stejný produkt se uvede pro novou skupinu zákazníků nebo v jiné situaci."
     },
     {
       "q": "Co není příkladem produktové inovace?",
@@ -547,7 +587,8 @@
       "correct": [
         1,
         3
-      ]
+      ],
+      "info": "Pojem: Produktová inovace mění to, co firma nabízí zákazníkovi. Procesní inovace mění způsob, jakým produkt vyrábí nebo doručuje.\nProč: Snížení energetické spotřeby ve výrobě aut a počítačově řízené výrobní operace mění výrobu, ne samotné auto nebo výrobek. Zákazník dostane stejný produkt, jen vyrobený jinak. Obě změny jsou proto procesní inovace, ne produktové.\nChyták: Nová verze iPodu, nová zubní pasta i nový design auta jsou produktové inovace, i když jde o malé změny. Inkrementální úprava produktu je pořád inovace produktu."
     },
     {
       "q": "Sociální marketing znamená:",
@@ -560,7 +601,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Sociální marketing je marketingová sociální iniciativa, ve které firma podporuje kampaň zaměřenou na změnu chování.\nProč: Cílem je společensky prospěšná změna chování - ke zlepšení zdraví, bezpečnosti, životního prostředí nebo blaha komunity. Firma k tomu používá marketingové postupy. Změna chování přináší užitek lidem i společnosti. Právě zaměření na chování odlišuje sociální marketing od cause promotion.\nChyták: Věnování částky z prodeje na charitu je cause-related marketing. Získání zdrojů pro sociální téma popisuje cause promotion nebo vedlejší efekt cause-related marketingu."
     },
     {
       "q": "Cause related marketing znamená:",
@@ -573,7 +615,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Cause-related marketing je marketingová sociální iniciativa, která spojuje dary firmy s nákupy zákazníků.\nProč: Firma věnuje peníze nebo věcný dar specifické charitě za každý prodaný produkt nebo za jinou transakci zákazníka. Nabídka obvykle trvá stanovenou dobu a týká se konkrétního produktu nebo charity. Firma tím přiláká nové zákazníky a zvýší prodej.\nChyták: Propagace, přesvědčovací komunikace, reklama na sociální téma a podpora fundraisingu a dobrovolníků popisují cause promotion. Ta zvyšuje povědomí o tématu, ale nespojuje dar s nákupem."
     },
     {
       "q": "Tradiční management ztrácí výkonnost z důvodu:",
@@ -586,7 +629,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Tradiční management je řízení založené na hierarchické byrokracii, kontrole a plnění předepsaných postupů. Steve Denning proti němu staví radikální management.\nProč: Tradiční management ztrácí výkonnost ze čtyř důvodů: práce se mění na znalostně založenou, roste význam angažovaného pracovníka, zákazník přebírá vůdčí roli a zdroje produktivity starého modelu se vyčerpaly. Proto je správně vyčerpání zdrojů produktivity.\nChyták: Ostatní možnosti obracejí skutečné příčiny. Význam angažovaného pracovníka a znalostní práce naopak roste a role zákazníka sílí, ne slábne."
     },
     {
       "q": "Které země patří do skupiny BRIC?",
@@ -599,7 +643,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: BRIC je zkratka pro skupinu velkých rychle rostoucích rozvíjejících se ekonomik. Pojem zavedl v roce 2001 Jim O'Neill z Goldman Sachs.\nProč: Zkratka vznikla z počátečních písmen čtyř zemí: Brazílie, Rusko, Indie a Čína. Tyto země spojuje velká populace, rozloha a rychlý ekonomický růst. Později se k nim přidala Jihoafrická republika a vznikla zkratka BRICS.\nChyták: Špatné možnosti využívají shodná počáteční písmena - Bolivie místo Brazílie, Izrael nebo Itálie místo Indie, Rumunsko místo Ruska. Stačí si zapamatovat, že jde o čtyři velké rozvíjející se ekonomiky."
     },
     {
       "q": "Jaké je správné pořadí strategií technologického dohánění?",
@@ -612,7 +657,8 @@
       ],
       "correct": [
         0
-      ]
+      ],
+      "info": "Pojem: Strategie technologického dohánění popisují, jak firmy z dohánějících zemí (hlavně asijských) postupně posilují své technologické schopnosti.\nProč: Firma začíná jako OEM (Original Equipment Manufacturer) - vyrábí podle cizího návrhu pro cizí značku. Pak se stává ODM (Original Design Manufacturer) - sama navrhuje, ale prodává pod cizí značkou. Nakonec jako OBM (Original Brand Manufacturer) prodává vlastní produkty pod vlastní značkou.\nChyták: Pořadí kopíruje růst schopností: výroba, pak návrh, pak značka. Varianty, kde je vlastní značka (OBM) dřív než vlastní návrh (ODM), tuto logiku porušují."
     },
     {
       "q": "Co není inkrementální inovace?",
@@ -625,7 +671,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Inkrementální inovace je malé, postupné zlepšení existujícího produktu, procesu nebo služby. Radikální inovace přináší zásadní změnu, která přetváří trh.\nProč: Elektrický automobil mění samotný princip pohonu, celé dodavatelské řetězce a infrastrukturu (nabíjení místo čerpacích stanic). Učebnice ho uvádí jako příklad radikální inovace, proto není inkrementální.\nChyták: Rychlejší cesta vlakem díky lepší signalizaci může působit jako velká změna. Vlak, trať i služba ale zůstávají stejné, zlepšuje se jen jedna část. Nový střih kabátu, nová příchuť brambůrek a nízkotučný hamburger jsou typické drobné úpravy."
     },
     {
       "q": "Co není zdrojem strategické výhody díky inovaci?",
@@ -638,7 +685,8 @@
       ],
       "correct": [
         2
-      ]
+      ],
+      "info": "Pojem: Strategická výhoda díky inovaci je náskok před konkurencí, který firmě přinese nový nebo lepší výsledek inovace.\nProč: Zdrojem výhody jsou výstupy inovací - nové nabídky produktů a služeb, komplexnost nabídky, kterou je těžké napodobit, a právní ochrana duševního vlastnictví. Růst investic do výzkumu a vývoje je jen vstup. Sám o sobě výhodu nevytváří, pokud se nepromění v úspěšnou inovaci.\nChyták: Investice do VaV zní jako samozřejmý zdroj výhody. Vysoké výdaje ale úspěch nezaručují - rozhoduje, co firma z výzkumu skutečně uvede na trh."
     },
     {
       "q": "Jaká charakteristika vyznačuje anglo-saský systém firemní správy?",
@@ -651,7 +699,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Systém firemní správy (corporate governance) určuje, kdo firmu vlastní, kontroluje a jak se financuje. Tidd a Bessant srovnávají anglosaský systém s německým a japonským.\nProč: Anglosaský systém je založený na kapitálovém trhu a rozptýleném vlastnictví. Kapitál se rychle přesouvá k novým příležitostem. Firmy proto rychle reagují na radikální inovace, například v biotechnologiích nebo IT.\nChyták: Přímá kontrola, technické vzdělání managementu a investice do problémových firem jsou znaky německého a japonského systému. Ten stojí na úzkých vazbách s bankami, dlouhodobé stabilitě a postupném zlepšování."
     },
     {
       "q": "Která z uvedených cest přejímání zahraničních inovací je nejsnazší?",
@@ -664,7 +713,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Přejímání zahraničních inovací je učení se od konkurence a zahraničních firem. Cesty se liší náročností a potřebnými schopnostmi.\nProč: Nejsnazší je získat informace o inovacích konkurence. Stačí sledovat trh, veletrhy, obchodní kontakty a produkty konkurence. Nevyžaduje to vlastní technické kapacity ani velké investice.\nChyták: Obrácený inženýring, napodobení a replikace inovací vyžadují technické dovednosti a výrobní kapacity, proto jsou náročnější. Využití znalostí z veřejných zdrojů (publikace, patenty) zní snadno, ale vyžaduje odbornou schopnost znalosti pochopit a převést do praxe."
     },
     {
       "q": "Kaizen znamená:",
@@ -677,7 +727,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Kaizen je japonský pojem pro soustavné, postupné zlepšování. Spolu s respektem k lidem tvoří pilíř systému Toyoty.\nProč: Kaizen znamená, že dostatečná kvalita nestačí. Cílem je neustále zlepšovat už dosažený výsledek po malých krocích. Zlepšování se týká všech a probíhá každý den.\nChyták: Genchi genbutsu znamená osobní zjišťování přímo v provozu (\"jdi a podívej se\"). S kaizenem souvisí, ale není totéž. Respekt k ostatním a týmová práce tvoří druhý pilíř systému Toyoty. Důraz na kvalitu je cíl, ne význam slova kaizen."
     },
     {
       "q": "Co NENÍ radikální inovace?",
@@ -690,7 +741,8 @@
       ],
       "correct": [
         4
-      ]
+      ],
+      "info": "Pojem: Radikální inovace přináší zásadní změnu, která vytvoří nový trh nebo přetvoří odvětví. Inkrementální inovace jen vylepšuje existující produkt.\nProč: Čtyřdvéřové auto je úprava karoserie existujícího automobilu. Princip, použití i trh zůstávají stejné. Jde proto o inkrementální inovaci, ne radikální.\nChyták: Kopírka může působit jako běžná kancelářská věc. Ve své době ale zásadně změnila práci s dokumenty a vytvořila nový trh. Elektrická žárovka, laser a knihtisk jsou klasické technologické průlomy."
     },
     {
       "q": "Firmy mají řadu významných důvodů, proč sledovat vývoj inovačních systémů v jiných zemích, zejména v silných ekonomikách. Který z důvodů mezi ně nepatří? (bez záruky)",
@@ -703,7 +755,8 @@
       ],
       "correct": [
         1
-      ]
+      ],
+      "info": "Pojem: Národní inovační systém (NIS) je síť institucí a vztahů, které v dané zemi vytvářejí a šíří inovace. Firmy sledují NIS jiných zemí, aby z nich mohly těžit.\nProč: Zahraniční systémy jsou zdrojem konkurenčních hrozeb, technologií k využití i podnětů pro lepší řízení inovací ve firmě. Firma tím může ušetřit na vlastním výzkumu a vývoji. Pochopit a napodobit celý zahraniční systém ale firma nemůže - je to úkol pro státní politiku, ne pro firmu.\nChyták: Úspora nákladů na vlastní VaV může působit jako vedlejší efekt. Je ale přímým důsledkem využití zahraničních technologií, a proto mezi důvody patří."
     },
     {
       "q": "Jaké země jsou označovány za asijské tygry?",
@@ -716,7 +769,8 @@
       ],
       "correct": [
         3
-      ]
+      ],
+      "info": "Pojem: Asijští tygři jsou čtyři ekonomiky východní Asie, které od 60. do 90. let 20. století dosáhly rychlé industrializace a vysokého růstu. Jsou typickým příkladem technologického dohánění.\nProč: Mezi asijské tygry patří Hongkong, Jižní Korea, Singapur a Tchajwan. Rostly díky exportu, investicím do vzdělání a postupnému zvyšování technologické úrovně.\nChyták: Čína a Malajsie jsou také rychle rostoucí asijské ekonomiky, ale do skupiny asijských tygrů nepatří. Malajsie se řadí k pozdějším \"tygřím mláďatům\" a Čína k velkým ekonomikám BRIC."
     }
   ],
   "sets": [

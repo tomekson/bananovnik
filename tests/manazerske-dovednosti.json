@@ -24,7 +24,13 @@
         "umění zdravě riskovat",
         "proaktivita a tzv. \"dlouhé myšlení\""
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Manažerské dovednosti jsou schopnost použít teoretické znalosti v manažerské praxi. Jejich základ tvoří osobní předpoklady manažera, ne konkrétní nástroje.\nProč: Manažer musí znát sám sebe, aby věděl, kde jsou jeho silné a slabé stránky. Musí odhadnout druhou stranu - podřízené, partnery i protivníka při jednání. Rozhodování vždy nese riziko, proto patří k výbavě zdravé riskování. Proaktivita a \"dlouhé myšlení\" znamenají jednat dopředu a domýšlet dlouhodobé důsledky.\nChyták: Psychodiagnostické metody (testy osobnosti) jsou nástroj psychologa. Manažer je může využít, ale nepatří k jeho základním dovednostem."
     },
     {
       "q": "Těžiště manažerských dovedností spočívá v:",
@@ -35,7 +41,13 @@
         "jednání s úřady",
         "dennodenním rozhodování"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Manažerské funkce jsou typické činnosti, které manažer vykonává: plánování, organizování, vedení lidí a kontrola. Prostupuje je rozhodování.\nProč: Těžiště manažerské práce leží v tom, co manažer dělá každý den. Plánuje úkoly, organizuje práci lidí a kontroluje výsledky. Při každé z těchto činností průběžně rozhoduje, proto patří mezi těžiště i dennodenní rozhodování.\nChyták: Jednání s úřady je jen jedna z konkrétních agend. Některý manažer ji dělá, jiný vůbec, takže netvoří těžiště manažerských dovedností."
     },
     {
       "q": "Manažer musí využívat tyto druhy energie a pečovat o ně:",
@@ -46,7 +58,13 @@
         "spirituální energie",
         "fyzická energie"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Model čtyř zdrojů energie (Jim Loehr a Tony Schwartz) říká, že výkon člověka nestojí jen na čase, ale na energii, kterou do práce vkládá.\nProč: Manažer potřebuje fyzickou energii (spánek, pohyb, strava) jako základ. Emoční energie určuje, jak zvládá stres a vztahy. Mentální (rozumová) energie mu dává soustředění a schopnost uvažovat. Spirituální energie pochází ze smyslu a hodnot a dodává motivaci. O všechny čtyři musí pečovat, jinak hrozí vyhoření.\nChyták: Elektrická energie je technický pojem. S osobní kapacitou manažera nesouvisí."
     },
     {
       "q": "Sugestivní otázka:",
@@ -57,7 +75,11 @@
         "Vede ke shrnutí informací a k rozhodnutí.",
         "Je vhodná k ujasnění a pochopení."
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Sugestivní otázka je otázka, která v sobě už obsahuje očekávanou odpověď (\"Vy přece souhlasíte, že…?\"). Odpověď na ni neposkytuje skutečná fakta.\nProč: Tazatel tlačí druhou stranu k určité odpovědi, tedy manipuluje. Zároveň tím často zpochybňuje její vlastní názor a staví ji do defenzivy. Proto se při věcném jednání nedoporučuje.\nChyták: Informace přináší otevřená otázka. K ujasnění a pochopení slouží objasňující otázka a ke shrnutí a rozhodnutí vede shrnující nebo uzavřená otázka. Sugestivní otázka nic z toho nedělá, protože odpověď předem podsouvá."
     },
     {
       "q": "Písemná komunikace v rámci vnitřní komunikace v organizaci:",
@@ -68,7 +90,11 @@
         "je obvyklá pouze v malých podnicích",
         "má marginální roli"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Vnitřní komunikace v organizaci probíhá ústně i písemně - přes oběžníky, e-maily, intranet, nástěnky a sdílené disky.\nProč: Písemná forma má nezastupitelné místo, protože zachycuje pokyny, rozhodnutí a dohody přesně a jednoznačně. Dá se k ní vrátit a doložit ji. Proto ji firmy často archivují, například zápisy z porad, směrnice nebo e-mailovou korespondenci.\nChyták: Písemná komunikace nese hlavně formální informace, ne neformální. Používají ji malé i velké podniky, ve velkých je dokonce důležitější. Její role proto není marginální."
     },
     {
       "q": "Komunikace:",
@@ -79,7 +105,11 @@
         "bývá příčinou špatných vztahů ve firmě, když je nefunkční",
         "není důležitá pro implementaci strategie firmy"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Komunikace je výměna informací mezi komunikátorem a komunikantem. Ve společenství nelze nekomunikovat.\nProč: Komunikace umožňuje, aby se informace a znalosti šířily mezi lidmi a ve firmě. Když nefunguje, vznikají nedorozumění, pocit nespravedlnosti a napětí. Nefunkční komunikace je proto častou příčinou špatných vztahů na pracovišti.\nChyták: Elektronická komunikace osobní kontakt nenahrazuje a neverbální složka nese většinu sdělení (asi 55 % řeč těla, 38 % hlas). Její význam s digitalizací neklesá. Komunikace je také klíčová pro zavedení strategie, protože ji lidé musí pochopit."
     },
     {
       "q": "Systémové myšlení:",
@@ -90,7 +120,12 @@
         "je jednou z pěti disciplín modelu učící se organizace",
         "není jednou z pěti disciplín modelu učící se organizace"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Systémové myšlení je podle Petera Senge pátá disciplína učící se organizace. Další čtyři jsou osobní mistrovství, mentální modely, sdílená vize a týmové učení.\nProč: Systémové myšlení znamená vidět celek i detail - les i stromy - a vzájemné vazby mezi nimi. Začíná pozorováním světa a opakujících se vzorců chování systémů. Cílem je najít páku, tedy místo, kde malá změna přinese velký účinek.\nChyták: Analytické myšlení rozkládá celek na části a zkoumá je odděleně. Systémové myšlení naopak sleduje souvislosti mezi částmi, takže nejde o synonyma."
     },
     {
       "q": "Při vytváření pracovních skupin by se mělo zohlednit:",
@@ -101,7 +136,12 @@
         "zda jsou předpokládaní členové vzájemně pracovně kompatibilní",
         "zda má firma dostatek zdrojů pro jejich alespoň tříletou existenci"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Pracovní skupina je seskupení lidí, kteří spolu plní úkol a jsou na sobě v práci závislí. Její složení ovlivňuje výkon i atmosféru.\nProč: Skupina potřebuje jasného vedoucího, který ji řídí a nese odpovědnost. Je třeba znát požadavky a očekávání členů, jinak klesá jejich motivace. Členové musí být pracovně kompatibilní, tedy schopní spolu spolupracovat a doplňovat se.\nChyták: Příbuzní ve vedení jsou otázka střetu zájmů, ne sestavení skupiny. Tříletá existence je zbytečná podmínka, protože skupiny často vznikají jen na krátký úkol."
     },
     {
       "q": "Rodičovské JÁ v Transakční analýze se dělí na:",
@@ -112,7 +152,11 @@
         "Dospělé JÁ.",
         "Přísné rodičovské JÁ."
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Transakční analýza (Eric Berne) popisuje osobnost třemi ego-stavy: Rodičovské Já, Dospělé Já a Dětské Já.\nProč: Rodičovské Já obsahuje naučené postoje převzaté od rodičů a autorit. Dělí se na kritické Rodičovské Já, které hodnotí, přikazuje a kritizuje, a na ochranitelské (pečující) Rodičovské Já, které pomáhá, chrání a podporuje.\nChyták: Přirozené (spontánní) Já patří k Dětskému Já, ne k Rodičovskému. Dospělé Já je samostatný ego-stav, který věcně zpracovává informace. \"Přísné\" Rodičovské Já v modelu neexistuje, jde o zkomolení kritického."
     },
     {
       "q": "Nové formy motivačních cílů, které se užívají pro zmenšení stereotypnosti práce zahrnují:",
@@ -123,7 +167,12 @@
         "Horizontální rozšíření činnosti.",
         "Obohacení práce."
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "info": "Pojem: Stereotypní práce snižuje motivaci a výkon. Proti ní se používají techniky, které mění obsah nebo náplň práce.\nProč: Rotace pracovníků střídá lidi na různých místech, takže práce není stále stejná. Horizontální rozšíření (job enlargement) přidá další úkoly na stejné úrovni. Obohacení práce (job enrichment) přidá odpovědnost, rozhodování a samostatnost, tedy vertikální rozměr. Všechny tři mění samotnou práci.\nChyták: Mentoring a koučink jsou metody rozvoje člověka. Pomáhají mu růst, ale náplň a stereotypnost jeho práce nemění."
     },
     {
       "q": "Osobní mistrovství (personal mastery):",
@@ -134,7 +183,14 @@
         "spočívá v dokonalém zvládnutí toho, co děláme",
         "znamená to přiblížit se k životu jako k tvůrčímu dílu"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Osobní mistrovství (personal mastery) je podle Petera Senge jedna z pěti disciplín učící se organizace. Organizace se učí jen přes lidi, kteří se učí sami.\nProč: Disciplína znamená stále prohlubovat a vyjasňovat osobní vizi, soustředit energii, vytrvat a dívat se na realitu objektivně. Vychází z kompetencí a dovedností, ale přesahuje je. Jde o dokonalé zvládnutí toho, co člověk dělá. Senge to přirovnává k přístupu k životu jako k tvůrčímu dílu.\nChyták: Všechny možnosti jsou správné. Zdánlivý rozpor \"přesahuje kompetence\" a \"dokonalé zvládnutí\" není - mistrovství na dovednostech stojí, ale jde dál k vizi a smyslu."
     },
     {
       "q": "Mezi základní principy delfské metody patří:",
@@ -145,7 +201,12 @@
         "Tým expertů je složen na základě zkušeností v předchozích projektech. Mezi členy týmu jsou blízké vzájemné vztahy.",
         "Vzájemná anonymita uvnitř panelu expertů, či minimálně anonymita jejich názorů."
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Delfská metoda je expertní metoda odhadu budoucího vývoje. Panel expertů odpovídá v několika kolech dotazníků a postupně se jeho názory sbližují.\nProč: Experti jsou vzájemně anonymní, takže na ně nepůsobí autorita ani tlak skupiny. Výzkumný tým mezi koly posílá řízenou zpětnou vazbu - souhrn odpovědí panelu. Statistické zpracování (medián, kvartily) ukáže většinový názor a míru shody, kterou další kola zvyšují.\nChyták: Metoda nepoužívá jen kvalitativní postupy, statistika je její základ. Blízké vztahy mezi experty jsou nežádoucí, protože by narušily anonymitu a nezávislost názorů."
     },
     {
       "q": "Úspěšná komunikace obsahuje následující formu:",
@@ -156,7 +217,12 @@
         "sdělování myšlenek bez emocí",
         "prosazování vlastních názorů"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Úspěšná komunikace znamená, že příjemce sdělení pochopí tak, jak ho odesílatel myslel. Mezi komunikační dovednosti patří aktivní naslouchání, kladení otázek, neverbální komunikace, empatie a odstraňování bariér.\nProč: Aktivní naslouchání dává mluvčímu najevo zájem a ověřuje porozumění. Odstranění šumu zabrání zkreslení sdělení. Sledování řeči těla odhalí, co člověk neříká slovy, a nese většinu informací.\nChyták: Emoce ke komunikaci patří a jejich úplné potlačení působí chladně a nedůvěryhodně. Prosazování vlastních názorů je cíl mluvčího, ne forma úspěšné komunikace."
     },
     {
       "q": "Co je to asertivita?",
@@ -167,7 +233,10 @@
         "Způsob chování založený na hodnocení protivníků.",
         "Technika vyjednávání."
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Asertivita je způsob chování, kdy člověk jasně a otevřeně prosadí své zájmy a přitom respektuje práva druhých. Stojí mezi pasivitou a agresivitou.\nProč: Asertivní člověk vychází z reálného sebehodnocení. Zná svou hodnotu, nepotřebuje se podceňovat ani povyšovat. Proto může klidně říct, co chce, odmítnout nebo přijmout kritiku.\nChyták: Dosažení cíle za každou cenu je agresivní chování. Asertivita není ani technika vyjednávání - techniky asertivity (poškrábaná deska, otevřené dveře) jsou jen nástroje. Nestojí ani na hodnocení protivníků, ale na hodnocení sebe sama."
     },
     {
       "q": "Asertivita je:",
@@ -178,7 +247,11 @@
         "manipulativní chování",
         "způsob chování, který staví nejlepší řešení problému nad osobní vítězství"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ],
+      "info": "Pojem: Asertivita je přímé a otevřené prosazení vlastních názorů a zájmů bez narušení práv ostatních.\nProč: Asertivní člověk jedná na rovnocenné úrovni s druhými. Neutíká z konfliktu a zároveň nikoho nepřeválcuje. Cílem není vyhrát, ale najít nejlepší řešení problému, proto staví řešení nad osobní vítězství.\nChyták: Agresivní chování prosazuje zájmy na úkor druhých. Submisivní chování se vzdává vlastních zájmů. Manipulativní chování prosazuje zájmy skrytě a nečestně. Ani jedno z toho asertivita není."
     },
     {
       "q": "Škodlivé návyky manažera:",
@@ -189,7 +262,13 @@
         "které se odhalí, vedou k sebepoznání a následné motivaci něco změnit",
         "dostávají manažery do „spirály smrti\" zvané smyčka zvyku"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Škodlivé návyky jsou opakované vzorce chování, které manažerovi i firmě škodí, například práce přesčas bez odpočinku. Zvyk funguje jako smyčka: spouštěč, rutina, odměna.\nProč: Smyčka zvyku vtahuje manažera do \"spirály smrti\" - čím víc pracuje, tím je unavenější a méně efektivní, a tím víc musí pracovat. Tvrdá práce přesčas proto patří ke škodlivým návykům. Když si manažer návyk uvědomí, vede ho to k sebepoznání a motivaci ke změně. Změní ho osobní disciplínou a dodržováním manažerské morálky.\nChyták: Návyky jsou naučené, a proto se dají přeučit. Tvrzení, že je nelze měnit, neplatí."
     },
     {
       "q": "Konflikty mezi lidmi se řeší technikou:",
@@ -200,7 +279,14 @@
         "konfrontace",
         "přizpůsobení"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Styly řešení konfliktu popisuje model Thomase a Kilmanna. Rozlišuje je podle toho, nakolik člověk prosazuje své zájmy a nakolik vychází vstříc druhým.\nProč: Únik (vyhýbání) konflikt neřeší a odkládá ho. Konfrontace (soutěžení) prosazuje jen vlastní zájem. Přizpůsobení upřednostní zájmy druhé strany. Kompromis znamená vzájemné ústupky. Kooperace (spolupráce) hledá řešení výhodné pro obě strany (win-win). Všech pět stylů se používá, každý se hodí do jiné situace.\nChyták: Únik a přizpůsobení vypadají jako \"neřešení\", ale v modelu jsou plnohodnotné techniky. Hodí se třeba u nedůležitých sporů nebo když je vztah důležitější než věc."
     },
     {
       "q": "Johariho okénko lze použít také:",
@@ -211,7 +297,10 @@
         "skupinovému rozhodování",
         "ilustraci neúplnosti představy, jak naše chování působí na jiné lidi"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Johariho okno (Joseph Luft a Harry Ingham) dělí informace o člověku do čtyř polí: otevřené, slepé, skryté a neznámé.\nProč: Slepé pole obsahuje to, co o nás vědí druzí, ale my ne. Model tak ukazuje, že naše představa o tom, jak působíme na ostatní, je vždy neúplná. Zpětná vazba od druhých slepé pole zmenšuje a otevřené pole zvětšuje.\nChyták: Johariho okno je nástroj sebepoznání a zpětné vazby, ne model rozhodování. S rozhodováním za jistoty, nejistoty ani ve skupině nesouvisí. Pozorování přes poloprůhledné zrcadlo je výzkumná metoda, ne Johariho okno."
     },
     {
       "q": "Pro efektivní komunikaci:",
@@ -222,7 +311,11 @@
         "je potřebné rovněž aktivní zapojení posluchačů",
         "je nezbytné používání pomůcek, jako např. projektor, tabule apod."
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Efektivní komunikace znamená, že sdělení dojde k posluchačům a ti ho pochopí. Funguje jako dvoustranný proces se zpětnou vazbou.\nProč: Řeč těla posluchačů dává mluvčímu okamžitou zpětnou vazbu - nuda, nesouhlas, nepochopení. Podle ní může mluvčí upravit tempo nebo vysvětlení. Aktivní zapojení posluchačů (otázky, diskuse, příklad) udrží jejich pozornost a ověří, že pochopili.\nChyták: Kvalitní výkon řečníka nestačí, protože komunikace je oboustranná. Analogie a pomůcky jako projektor nebo tabule pomáhají, ale nejsou nezbytné. Slovo \"nezbytné\" tyto možnosti vylučuje."
     },
     {
       "q": "Externí koučink:",
@@ -233,7 +326,14 @@
         "se používá zejména pro koučování manažerů (a ne běžných zaměstnanců)",
         "je situace, kdy koučem není zaměstnanec podniku"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Koučink je metoda rozvoje, kdy kouč pomocí otázek vede koučovaného k tomu, aby sám našel řešení a rozvinul svůj potenciál.\nProč: Externí koučink provádí kouč, který není zaměstnancem podniku. Bývá to specialista z oblasti managementu nebo psychologie. Nemusí rozumět oboru koučovaného, protože neradí věcně, ale vede ho otázkami. Protože je drahý, firmy ho využívají hlavně pro manažery. Cílem je rozvoj koučovaných zaměstnanců.\nChyták: Všechny možnosti platí. Nejvíc lidi zarazí, že kouč nemusí být odborník v oboru - u mentora by to vadilo, u kouče ne."
     },
     {
       "q": "Projektové řízení:",
@@ -244,7 +344,11 @@
         "je manažerská disciplína zaměřená na výsledky a na řízení kvality, lidí a zdrojů",
         "není nezbytná součást manažerských dovedností"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ],
+      "info": "Pojem: Projektové řízení je manažerská disciplína, která řídí jednorázovou akci (projekt) k danému cíli v čase, rozpočtu a kvalitě.\nProč: Projektové řízení se zaměřuje na výsledky a řídí kvalitu, lidi a zdroje. Manažeři dnes velkou část práce realizují formou projektů. Proto je nezbytnou součástí manažerských dovedností.\nChyták: Projektové řízení neznamená, že manažer vždy deleguje. Delegování je jen jeden z nástrojů a projektový manažer nese odpovědnost za výsledek sám. Tvrzení, že projektové řízení není manažerská disciplína nebo není nezbytné, popírá jeho podstatu."
     },
     {
       "q": "Swapping je:",
@@ -255,7 +359,10 @@
         "technika pro lepší řízení času manažera",
         "technika pro lepší podporu rozhodování manažera"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Swapping (z angl. \"swap\" - vyměnit) je technika řešení konfliktu, kdy si strany vymění pozice a hájí názor té druhé.\nProč: Hodí se pro bipolární konflikty v týmu, tedy spory dvou vyhraněných stran. Když člověk musí argumentovat za protistranu, lépe pochopí její pohled a zájmy. Napětí klesá a strany snáz najdou společné řešení.\nChyták: Swapping neřeší spokojenost s odměnou, trému, řízení času ani podporu rozhodování. Název může mást, ale \"výměna\" se týká rolí v konfliktu, ne času nebo odměn."
     },
     {
       "q": "K čemu se užívá delfská metoda?",
@@ -266,7 +373,10 @@
         "Používá se k vyvážení názorů mezi řádnou a kontrolní skupinou.",
         "Používá se k posuzování stanovených postupů, k posuzování je určena tzv. kontrolní skupina."
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Delfská metoda je expertní metoda prognózování. Panel nezávislých expertů anonymně odpovídá v několika kolech a jejich odhady se postupně sbližují.\nProč: Metoda slouží k předvídání budoucího vývoje tam, kde chybí spolehlivá data. Experti odhadují, co nastane - třeba kolik a jakých pracovníků bude firma potřebovat. Proto se hodí pro perspektivní odhady a plánování.\nChyták: Vyhodnocení minulých dat nebo dosavadního vývoje dělá statistika a analýza, ne Delfská metoda. Kontrolní skupina patří k experimentu, ne k panelu expertů."
     },
     {
       "q": "V rámci komunikačního procesu je nutné:",
@@ -277,7 +387,12 @@
         "Kódovat.",
         "Začlenit komunikační šumy."
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Komunikační proces je přenos kódovaného sdělení od odesílatele k příjemci, který ho dekóduje a pošle zpětnou vazbu. Proces narušují šumy.\nProč: Odesílatel musí myšlenku zakódovat do slov, znaků nebo gest. Sdělení se pak musí přenést kanálem k adresátovi. Adresát ho musí dekódovat, tedy převést zpět na význam. Bez kteréhokoli z těchto kroků komunikace neproběhne.\nChyták: Šumy do procesu vstupují samy a je třeba je odstraňovat, ne začleňovat. Interpretace sdělení ostatních není samostatný krok modelu - pochopení sdělení je součástí dekódování."
     },
     {
       "q": "V pracovní skupině existují:",
@@ -288,7 +403,10 @@
         "pouze formální vztahy",
         "formální i neformální vztahy, přičemž formální obvykle předvládají"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Formální vztahy v pracovní skupině určuje organizační struktura - kdo komu podléhá a co dělá. Neformální vztahy vznikají spontánně ze sympatií, zájmů a přátelství.\nProč: V každé skupině existují oba typy vztahů současně. Jejich poměr závisí na skupině, úkolu a kultuře firmy. Žádný z nich nemusí převládat - podstatné je, aby se doplňovaly a neformální vztahy podporovaly formální cíle.\nChyták: Možnosti \"obvykle převládají formální\" nebo \"neformální\" znějí přesvědčivě. Pevné pravidlo o převaze ale neexistuje. Skupina jen s jedním typem vztahů v praxi neexistuje."
     },
     {
       "q": "Tzv. efekt přihlížejících:",
@@ -299,7 +417,12 @@
         "vychází taky z předpokladu, že přítomnost jiných lidí vede k pociťování naléhavé situace jako nenaléhavé",
         "částečně vysvětluje, proč jedinec často nereaguje v situaci, kdy by měl udělat nějaký zásah, pokud je poblíž skupina dalších lidí"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Efekt přihlížejících (bystander effect, Darley a Latané) popisuje, že čím víc lidí je přítomno, tím menší je šance, že jedinec pomůže.\nProč: Odpovědnost se mezi přítomné rozptýlí - každý čeká, že zasáhne někdo jiný. Lidé navíc sledují reakce ostatních. Když nikdo nereaguje, vyhodnotí situaci jako nenaléhavou. Oba mechanismy částečně vysvětlují, proč jedinec ve skupině nezasáhne.\nChyták: Efekt nevysvětluje, proč se lidé chodí dívat na katastrofy - to je zvědavost. \"Efekt jednajících\" není ustálený pojem a slovo \"vždy\" možnost vylučuje."
     },
     {
       "q": "Při výběru členů týmu posuzujeme tyto základní oblasti:",
@@ -310,7 +433,12 @@
         "Jazykové schopnosti.",
         "Technické dovednosti."
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Výběr členů týmu stojí na hodnocení uchazečů ve třech základních oblastech: profesní zdatnost, osobní vlastnosti (způsobilost) a předpoklady pro týmovou práci.\nProč: Profesní zdatnost zajistí, že člověk úkol odborně zvládne. Osobní vlastnosti ukážou, jak se chová, jak je spolehlivý a odolný. Předpoklady pro týmovou práci rozhodnou, zda se zapojí do spolupráce a doplní ostatní.\nChyták: Jazykové schopnosti a technické dovednosti jsou dílčí části profesní zdatnosti. Záleží na konkrétní pozici, takže netvoří samostatnou základní oblast."
     },
     {
       "q": "Velikost skupiny:",
@@ -321,7 +449,11 @@
         "Působí na výkon i soudržnost skupiny.",
         "Ovlivňuje i nároky kladené na manažera."
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Velikost skupiny je počet jejích členů. Patří k hlavním faktorům, které určují, jak skupina funguje.\nProč: S rostoucím počtem členů klesá soudržnost, protože vztahy jsou volnější a vznikají podskupiny. Mění se i výkon - víc lidí přinese víc zdrojů, ale roste sociální lenost a ztráty při koordinaci. Větší skupina proto klade vyšší nároky na manažera, který musí víc koordinovat a komunikovat.\nChyták: Tvrzení, že velikost je nepodstatná nebo nepůsobí na soudržnost či výkon, popírají právě tyto mechanismy. Nejde o pravdivé tvrzení v jiné formulaci."
     },
     {
       "q": "Z následujících položek do okruhu tzv. \"manažerských dovedností\" patří:",
@@ -332,7 +464,11 @@
         "teorie osobnosti",
         "firemní kultura"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Manažerské dovednosti jsou praktické schopnosti, které manažer používá v práci. Patří k nim komunikace, vedení porad, rozhodování, řešení konfliktů a práce se stresem.\nProč: Brainstorming a brainwriting jsou intuitivní metody tvorby variant při rozhodování, které manažer sám vede. Stress management je dovednost zvládat zátěž svou i týmu. Obojí je praktická dovednost.\nChyták: Temperamentové typologie a teorie osobnosti jsou teoretické poznatky psychologie, ne dovednosti. Manažer je může znát, ale samy o sobě nejsou dovednost. Firemní kultura je vlastnost organizace, ne schopnost manažera."
     },
     {
       "q": "Správná zpětná vazba v přímé komunikaci je:",
@@ -343,7 +479,11 @@
         "Popisuje chování, nikoliv člověka.",
         "Je složitě formulovaná, aby vyjádřila problém."
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Zpětná vazba je informace o tom, jak chování člověka působí na ostatní. Správná zpětná vazba pomáhá ke změně, ne k útoku.\nProč: Mluvčí mluví sám za sebe (\"Já jsem si všiml…\"), takže za sdělení nese odpovědnost a neschovává se za druhé. Popisuje konkrétní chování, ne člověka. Chování lze změnit, kdežto hodnocení osoby (\"jsi líný\") vyvolá obranu.\nChyták: Hodnocení a popis člověka jsou přesně to, čemu se má zpětná vazba vyhnout. Má být jednoduchá a konkrétní, složitá formulace sdělení zamlží."
     },
     {
       "q": "Zásady efektivní porady jsou, k.j.:",
@@ -354,7 +494,12 @@
         "čím důležitější osoba v hierarchii, tím více dostane prostoru",
         "udržování výstižné, stručné a otevřené komunikace"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Efektivní porada má jasný cíl, program a čas. Účastníci odcházejí s konkrétními závěry a úkoly.\nProč: Pozvat se mají jen konkrétní lidé, kterých se téma týká - zbytečný účastník poradu prodlouží. Dodržování harmonogramu udrží poradu v čase a u programu. Stručná, výstižná a otevřená komunikace šetří čas a umožní všem se vyjádřit.\nChyták: Otevřené závěry \"na později\" jsou častá chyba porad - nejasné ukončení bodů. Prostor nemá záviset na postavení v hierarchii, ale na tom, co člověk k tématu přináší."
     },
     {
       "q": "Mezi nesnáze spojené s chováním lidí na poradě patří:",
@@ -365,7 +510,13 @@
         "Účastníci jsou neukáznění, rozpovídaní.",
         "Účastníci se přišli hádat."
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Nesnáze na poradě způsobují účastníci, kteří nepřispívají k cíli. Typologie účastníků zahrnuje mimo jiné typ upovídaný, hádavý, plachý a nezúčastněný.\nProč: Nepřipravení účastníci zdržují, protože se s tématem seznamují až na místě. Pasivní účastníci nepřinesou názory a porada ztrácí smysl. Rozpovídaní a neukáznění odvádějí od programu a berou čas. Kdo se přijde hádat, rozvrací spolupráci.\nChyták: Aktivita účastníků je žádoucí - porada potřebuje jejich zapojení. Problém nastane, až když aktivita přejde v neukázněnost nebo upovídanost, což popisuje jiná možnost."
     },
     {
       "q": "Mezi fáze rozhodovacího procesu patří:",
@@ -376,7 +527,14 @@
         "Hodnocení důsledků variant.",
         "Situační analýza."
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Rozhodovací proces je postup od zjištění problému k realizaci a kontrole řešení. Probíhá v návazných fázích.\nProč: Proces začíná situační analýzou - identifikací a rozborem problému. Pak se tvoří varianty a hodnotí se jejich důsledky. Následuje výběr varianty a její implementace (realizace). Na konci je monitorování, kontrola a vyhodnocení, které porovná výsledek s cílem. Všech pět možností jsou fáze procesu.\nChyták: Kontrola se snadno přehlédne, protože rozhodnutí se zdá hotové výběrem. Bez ní ale nelze napravit odchylky."
     },
     {
       "q": "Mezi časté rozhodovací chyby patří:",
@@ -387,7 +545,13 @@
         "zaměření na symptomy místo na příčiny problému",
         "rozhodování ve spěchu"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Rozhodovací chyby jsou typické nedostatky, které snižují kvalitu rozhodnutí. Efektivní rozhodnutí potřebuje kvalitu, včasnost, akceptaci a etiku.\nProč: Stejný \"mustr\" pro každý problém ignoruje jeho specifika. Pozdní zahájení zkrátí čas na analýzu a možnosti se zúží. Řešení symptomů místo příčin vede k tomu, že se problém vrací. Spěch způsobí, že rozhodovatel nezváží varianty ani důsledky.\nChyták: Zvažování všech alternativních variant chybou není. Rozšíření souboru variant naopak zvyšuje šanci najít opravdu dobré řešení."
     },
     {
       "q": "Ke znakům \"efektivních pracovních skupin\" /EPS/ patří, k.j.:",
@@ -398,7 +562,13 @@
         "jasně vymezené povinnosti a odpovědnosti",
         "ochota ke vzájemné podpoře a spolupráci"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Efektivní pracovní skupina dosahuje dobrých výsledků a její členové jsou zároveň spokojení. Spojuje ji cíl a spolupráce.\nProč: Společný cíl dává skupině směr a spojuje snahu členů. Rovnoprávnost postavení umožní, aby se každý zapojil bez strachu. Jasně vymezené povinnosti a odpovědnosti brání zmatku a překrývání. Ochota ke vzájemné podpoře a spolupráci vytváří synergii.\nChyták: Antagonistické (nepřátelské) vztahy skupinu rozkládají a jsou znakem neefektivity. Neplést s konstruktivním konfliktem názorů, který skupině prospívá."
     },
     {
       "q": "Manažer v týmu může zaujímat roli:",
@@ -409,7 +579,12 @@
         "Rozhodovací",
         "Interpersonální"
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Manažerské role popsal Henry Mintzberg. Rozdělil je do tří skupin: interpersonální, informační a rozhodovací.\nProč: Interpersonální role zahrnují reprezentanta, vedoucího a spojku - manažer jedná s lidmi. Informační role (monitor, šiřitel, mluvčí) znamenají sbírat a předávat informace. Rozhodovací role (podnikatel, řešitel problémů, alokátor zdrojů, vyjednavač) znamenají rozhodovat.\nChyták: \"Sociální\" role v modelu není, sociální stránku pokrývají interpersonální role. \"Intrapersonální\" se týká dění uvnitř člověka (třeba intrapersonální konflikt), ne vztahů s druhými."
     },
     {
       "q": "Autorem nejznámějšího dělení rolí v týmu je:",
@@ -420,7 +595,10 @@
         "Skinner",
         "Kurnický"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Týmové role popsal Meredith Belbin. Rozlišuje devět rolí, například koordinátor, tvůrce, vyhodnocovatel, realizátor, dotahovač nebo specialista.\nProč: Belbin zkoumal, proč některé týmy uspějí a jiné ne. Zjistil, že úspěšný tým potřebuje vyvážené zastoupení různých rolí, ne jen chytré jednotlivce. Jeho typologie je nejznámější a nejpoužívanější dělení rolí v týmu.\nChyták: Eric Berne je autor transakční analýzy (ego-stavy Rodič, Dospělý, Dítě). Abraham Maslow vytvořil hierarchii potřeb a B. F. Skinner je behaviorista. Nikdo z nich týmové role nepopsal."
     },
     {
       "q": "Mezi pět základních typů motivačních konfliktů podle Lewina patří:",
@@ -431,7 +609,11 @@
         "konflikt zájmů",
         "konflikt nadřízeného a podřízeného"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Motivační (intrapersonální) konflikt nastává, když na člověka působí protichůdné síly. Kurt Lewin rozlišil síly s pozitivní valencí, které přitahují, a s negativní valencí, které odpuzují.\nProč: Konflikt pozitivního a negativního podnětu v jedné situaci (apetence - averze) vzniká, když cíl láká, ale zároveň nese nepříjemnost. Konflikt dvou negativních podnětů (averze - averze) znamená volbu mezi dvěma zly. Oba patří k základním typům.\nChyták: Konflikt zájmů a konflikt nadřízeného s podřízeným jsou konflikty mezi lidmi, ne uvnitř jedince. Konflikt \"fyziologických a rozvojových potřeb\" odkazuje na Maslowa, ne na Lewina."
     },
     {
       "q": "Umění prezentovat je především založené na:",
@@ -442,7 +624,11 @@
         "na řízené diskusi a věcné argumentaci",
         "vytváření powerpointových prezentací"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Prezentační dovednosti jsou schopnost předat posluchačům v daném čase potřebné informace tak, aby je pochopili.\nProč: Základem je důkladná příprava - na přípravu se počítá asi desetinásobek doby prezentace. Patří k ní znalost publika, cíle a prostředí. Strukturované sdělování (úvod, hlavní část, závěr) pomáhá posluchačům sledovat myšlenky a zapamatovat si je.\nChyták: Řízená diskuse a argumentace jsou součást prezentace, ne její základ. Prezentace má posluchače informovat, ne přesvědčit o schopnostech řečníka. PowerPoint je jen pomůcka - spoléhání na techniku místo obsahu patří k častým chybám (\"vítězství techniky nad očekáváním\")."
     },
     {
       "q": "Manažerská prezentace je:",
@@ -453,7 +639,10 @@
         "přesvědčení posluchače, jaká já jsem nádherná osoba",
         "powerpoint"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Manažerská prezentace je nástroj řízení. Manažer jí sděluje cíle, výsledky nebo úkoly lidem, kteří s nimi budou pracovat.\nProč: Cílem je jasně a jednoznačně předat myšlenku. Manažer musí také ověřit, že ji posluchači pochopili stejně, protože na tom závisí jejich další práce. Bez ověření porozumění sdělení nesplní účel.\nChyták: Rétorické cvičení a ohromení formou staví na první místo řečníka a efekt, ne obsah. Sebeprezentace řečníka není cílem. PowerPoint je jen pomůcka, ne samotná prezentace."
     },
     {
       "q": "Naslouchání (v rámci komunikace):",
@@ -464,7 +653,12 @@
         "je nežádoucí",
         "je velmi důležitou součástí komunikace"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "info": "Pojem: Naslouchání je aktivní vnímání a pochopení toho, co říká druhý. Je neoddělitelnou součástí komunikace - bez něj žádný přenos neprobíhá.\nProč: Naslouchání je velmi důležitá součást komunikace. Doprovodné neverbální signály (přikývnutí, \"hm\", oční kontakt) dávají najevo zájem a povzbuzují mluvčího. Introverti obvykle víc poslouchají a méně mluví, proto je naslouchání spíše jejich doménou.\nChyták: U přijímacího pohovoru má víc mluvit uchazeč a manažer má víc naslouchat, aby se o něm dozvěděl co nejvíc. Tvrzení o nežádoucnosti naslouchání odporuje všemu výše."
     },
     {
       "q": "Čím se vyznačuje neúspěšný tým?",
@@ -475,7 +669,10 @@
         "Komunikace je zablokovaná.",
         "Kritik je beze strachu vyslyšen."
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Neúspěšný tým neplní cíle a jeho členové spolu nespolupracují. Typickým znakem je narušená komunikace.\nProč: Když je komunikace zablokovaná, informace nekolují, problémy se skrývají a nikdo nechce mluvit otevřeně. Členové pak nemohou koordinovat práci ani řešit konflikty, a tým selhává.\nChyták: Ostatní možnosti popisují úspěšný tým. Jasná pravidla před začátkem úkolu, otevřené vyjadřování názorů a kritika vyslechnutá beze strachu jsou znaky zdravé spolupráce. Nadřízený, který \"nevládne\", ukazuje na participativní styl vedení, ne na selhání."
     },
     {
       "q": "Adaptační gesta:",
@@ -486,7 +683,10 @@
         "slouží k uspokojování našich potřeb (poškrábání si svědícího místa, narovnání bolavých ramen)",
         "doplňují informaci podanou verbálně"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Adaptační gesta (adaptory, Ekman a Friesen) jsou drobné pohyby, kterými člověk uspokojuje své tělesné nebo psychické potřeby. Často jsou nevědomé.\nProč: Patří sem poškrábání svědícího místa, narovnání ramen, hraní s propiskou nebo dotyk vlasů. Nepředávají sdělení partnerovi, ale ulevují nám - fyzicky nebo při napětí a nervozitě. Pozorovatel z nich může vyčíst neklid.\nChyták: Název svádí k chápání \"adaptace na partnera nebo okolí\", ale gesta se přizpůsobují potřebám vlastního těla. Gesta, která doplňují slovní informaci, jsou ilustrátory, ne adaptory."
     },
     {
       "q": "Projekce, jako omyl při vnímání jiných spočívá:",
@@ -497,7 +697,11 @@
         "v tom, že necháváme ovlivnit jejich vlastnostmi",
         "v předpokladu, že se lidé chovají podobně, jako bych se v dané situaci choval já"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Projekce je omyl při vnímání druhých, kdy jim nevědomě připisujeme své vlastní rysy, myšlenky nebo pocity.\nProč: Vnímající vychází ze sebe, protože sám sebe zná nejlépe. Předpokládá proto, že druzí mají stejné vlastnosti a v dané situaci by se chovali stejně jako on. Výsledkem je zkreslený obraz druhého člověka.\nChyták: Předpoklad, že se všichni lidé chovají stejně, je zobecnění, ne projekce - projekce vychází z vlastní osoby. Podvědomé přehlížení nechtěných rysů je selektivní vnímání. Ovlivnění vlastnostmi druhých je spíš haló efekt."
     },
     {
       "q": "Předpokladem efektivního rozhodování v týmu je:",
@@ -508,7 +712,11 @@
         "Vhodný cíl.",
         "Individuální jednání členů týmu."
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ],
+      "info": "Pojem: Rozhodování v týmu (participativní rozhodování) využívá znalosti a pohledy více lidí. Hodí se hlavně pro špatně strukturované problémy.\nProč: Vhodná kombinace členů zajistí, že tým má potřebné znalosti a různé pohledy na problém. Vhodný cíl dává rozhodování směr a kritérium, podle kterého tým hodnotí varianty. Bez nich tým buď nemá z čeho vybírat, nebo neví, kam směřuje.\nChyták: Volné (liberální) vedení nechává tým bez koordinace a hrozí chaos. Uzavřenost manažera a individuální jednání členů popírají samotnou podstatu společného rozhodování."
     },
     {
       "q": "Prostředky neverbální komunikace:",
@@ -519,7 +727,11 @@
         "jsou obvykle vědomě kontrolované",
         "jsou obvykle v komunikaci samostatné (tj. obejdou se bez verbálního sdělení)"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Neverbální komunikace zahrnuje mimiku, gesta, postoj, pohyby, oční kontakt, vzdálenost a dotyk. Nese většinu informací ve sdělení.\nProč: Neverbální projevy jsou přítomny takřka vždy, protože \"nelze nekomunikovat\" - tělo mluví, i když mlčíme. Sdělují hlavně pocity, emoce a postoje, tedy to, jak člověk o věci smýšlí a jak se cítí.\nChyták: Neverbální signály nejsou vždy v souladu se slovy - nesoulad často prozradí skutečný postoj. Člověk je obvykle nekontroluje vědomě, proto jsou upřímnější než slova. Většinou doprovázejí verbální sdělení, samostatně stojí jen výjimečně."
     },
     {
       "q": "V procesu sociální percepce se uplatňují:",
@@ -530,7 +742,10 @@
         "tři komponenty (vnímající osoba, vnímaná osoba, zkušenost s komunikací)",
         "dva komponenty (vnímající osoba; vnímaná osoba)"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Sociální percepce je vnímání a posuzování druhých lidí. Vytváříme si při ní představu o tom, jací jsou.\nProč: Proces má tři komponenty. Vnímající osoba přináší své zkušenosti, postoje a očekávání. Vnímaná osoba působí vzhledem, projevy a statusem. Situační kontext určuje, jak chování vyložíme - stejný projev působí jinak na poradě a jinak na večírku.\nChyták: Komunikační prostředí a zkušenost s komunikací nejsou samostatné komponenty - jsou součástí situace nebo vnímající osoby. Model se dvěma komponentami vynechává kontext, bez kterého vnímání nelze vyložit."
     },
     {
       "q": "V průběhu hodnotícího pohovoru se hodnotí:",
@@ -541,7 +756,12 @@
         "Subjektivní kvantitativní údaje plnění úkolu pracovníkem.",
         "Subjektivní kvalitativní údaje plnění úkolu pracovníkem."
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Hodnotící pohovor je rozhovor manažera s pracovníkem o jeho výkonu za určité období a o dalším rozvoji.\nProč: Hodnocení má být co nejobjektivnější, proto stojí na měřitelných kvantitativních údajích o plnění úkolů. Posuzuje se, jak pracovník splnil stanovené cíle a úkoly. Hodnotí se i kompetence, tedy jak práci dělá a co potřebuje rozvíjet.\nChyták: Subjektivní údaje (dojmy, sympatie) hodnocení zkreslují a vyvolávají pocit nespravedlnosti. Proto nemají být jeho základem, ať jsou kvantitativní, nebo kvalitativní."
     },
     {
       "q": "Nefunkčnost týmu mívá následující příčinu:",
@@ -552,7 +772,14 @@
         "vyhýbání se zodpovědnosti",
         "nezájem o výsledek"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Model pěti dysfunkcí týmu popsal Patrick Lencioni. Ukazuje, proč tým nefunguje, i když jsou v něm schopní lidé.\nProč: Dysfunkce na sebe navazují jako pyramida. Základem je nedostatek důvěry. Bez důvěry se lidé bojí otevřeného konfliktu. Bez konfliktu se nikdo doopravdy nezaváže k rozhodnutí. Bez závazku se lidé vyhýbají zodpovědnosti. Nakonec každý sleduje své zájmy a ztrácí zájem o společný výsledek. Platí proto všech pět možností.\nChyták: Lákavé je některou možnost vyřadit jako \"důsledek, ne příčinu\". Každá z pěti dysfunkcí ale sama o sobě způsobuje nefunkčnost týmu."
     },
     {
       "q": "Doporučenou technikou pro poskytování zpětné vazby je:",
@@ -563,7 +790,11 @@
         "metoda sendviče",
         "konfrontace"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Zpětná vazba je informace pro pracovníka o tom, jak jeho práci a chování vnímá okolí. Má být věcná, konkrétní, včasná a má popisovat chování, ne člověka.\nProč: Metoda \"Start, Stop, Continue\" říká, s čím má člověk začít, co přestat dělat a v čem pokračovat. Zaměřuje se tak na budoucí chování. Metoda sendviče zabalí kritiku mezi dvě pozitivní sdělení, takže ji příjemce lépe přijme.\nChyták: Kritika před \"nastoupenou jednotkou\" člověka veřejně ponižuje a vyvolá obranu. Hra na psychologa hodnotí osobnost místo chování. Konfrontace vede ke konfliktu, ne ke zlepšení."
     },
     {
       "q": "Manažeři neradi delegují, protože, k.j.:",
@@ -574,7 +805,14 @@
         "chtějí mít za všechno osobní zásluhu",
         "trpí syndromem „nejlépe si to udělám sám\""
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Delegování je předávání úkolů a s nimi spojené odpovědnosti z manažera na podřízené. Patří k nejtěžším manažerským úkolům.\nProč: Manažeři delegují neradi z několika psychologických důvodů. Bojí se chyb podřízených, za které ponesou odpovědnost. Bojí se, že je podřízený přeroste a ohrozí jejich pozici. Vysvětlování jim připadá jako ztráta času. Chtějí mít zásluhy jen pro sebe. A trpí syndromem \"nejlépe si to udělám sám\". Platí všech pět možností.\nChyták: Obava z \"nárůstu kvalit podřízených\" zní absurdně, protože rozvoj podřízených je cílem delegování. Manažer se ale může cítit ohrožen konkurencí zespodu."
     },
     {
       "q": "Delegování:",
@@ -585,7 +823,13 @@
         "je jedním ze stimulačních prostředků pro zvýšení pracovní motivace",
         "je efektivní, když jsou úkoly jednoznačně rozdělené a zadané konkrétním pracovníkům"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Delegování je proces, kdy manažer pověřuje podřízené odpovědností za pracovní úkoly. Úkoly předává dočasně a účelově konkrétnímu člověku.\nProč: Delegování je nezbytná manažerská činnost, protože manažer nemůže dělat všechno sám. Zároveň motivuje: pracovník cítí důvěru, ocenění a má prostor se rozvíjet. Funguje efektivně, když jsou úkoly jasně rozdělené a zadané konkrétním lidem. Pak každý ví, co a do kdy má udělat.\nChyták: Delegování není známkou nekompetentnosti manažera. Naopak: manažer, který nedeleguje, se zahltí prací a jeho podřízení se nerozvíjejí."
     },
     {
       "q": "Transakční analýza pracuje s:",
@@ -596,7 +840,11 @@
         "Dětským JÁ.",
         "Technickým JÁ."
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ],
+      "info": "Pojem: Transakční analýza je metoda Erica Berna na dekódování komunikace. Pracuje se třemi ego-stavy osobnosti: Rodičovské Já, Dospělé Já a Dětské Já.\nProč: Rodičovské Já může být kritické nebo ochranitelské a nese naučená pravidla a příkazy. Dětské Já může být přirozené (spontánní) nebo přizpůsobivé a nese emoce. Dospělé Já jedná věcně a racionálně. Komunikace se rozbíjí, když si lidé odpovídají z neočekávaných ego-stavů.\nChyták: Generální, Speciální ani Technické Já v transakční analýze neexistují. Znějí odborně, ale jsou vymyšlené. Pamatuj trojici Rodič - Dospělý - Dítě."
     },
     {
       "q": "Mezi zásady skupinového rozhodování patří mimo jiné:",
@@ -607,7 +855,14 @@
         "úkoly pro skupinu mají mít jasný začátek a konec",
         "lepší výsledek bude dosažen, pokud spolu členové nesoutěží"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Skupinové (participativní) rozhodování znamená, že o problému rozhoduje víc lidí najednou. Hodí se hlavně pro špatně strukturované, nové problémy.\nProč: Menší skupina se lépe koordinuje a nehrozí v ní skupinová lenost. Úkol má vyžadovat různé znalosti, jinak skupina nepřináší nic navíc oproti jednotlivci. Konkrétní úkol s jasným začátkem a koncem drží skupinu u věci. Spolupráce místo soutěžení vede k lepším výsledkům, protože členové sdílejí informace.\nChyták: Všech pět možností platí. Lákavé je vyřadit \"omezit počet členů\", protože víc lidí přinese víc nápadů. S počtem lidí ale roste časová a koordinační náročnost."
     },
     {
       "q": "Kompetitivní strategie (výhra-prohra):",
@@ -618,7 +873,10 @@
         "maximalizuje zisk všech zúčastněných stran",
         "se používá zejména v situacích, kdy chtějí strany dlouhodobě spolupracovat"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Kompetitivní (soutěživá) strategie vyjednávání je jednání \"kdo z koho\". Jedna strana vyhraje, druhá prohraje (výhra-prohra).\nProč: Je to jedna z možných vyjednávacích strategií vedle kooperativní, principiální a dalších. Výhra-prohra je dokonce nejčastěji volenou strategií řešení konfliktů. Každá strana se snaží co nejvíc prosadit vlastní návrh.\nChyták: Nemaximalizuje zisk všech stran, to dělá strategie výhra-výhra. Nehodí se pro dlouhodobou spolupráci, protože poražená strana si křivdu pamatuje. Není ani jediná možná, ani méně obvyklá."
     },
     {
       "q": "Doporučovanou technikou asertivity je:",
@@ -629,7 +887,11 @@
         "přijatelný kompromis na základě empatie",
         "tzv. poškrábaná gramofonová deska"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Asertivita je schopnost prosadit svá práva a názory bez agrese a bez podřízení se. Předmět uvádí řadu asertivních technik.\nProč: Poškrábaná gramofonová deska znamená klidně a opakovaně trvat na svém požadavku, dokud ho druhý nevezme vážně. Přijatelný kompromis hledá řešení přijatelné pro obě strany. Vychází z empatie, tedy z pochopení potřeb druhého.\nChyták: Nadřazenost v jednání je agresivní chování, ne asertivní. Pasivní rezistence a mlčení jsou pasivní chování: člověk svůj názor neřekne a problém se neřeší."
     },
     {
       "q": "Jaké mohou být důvody slabší výkonnosti?",
@@ -640,7 +902,12 @@
         "Nadměrná pečlivost.",
         "Angažovanost."
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Slabší výkonnost znamená, že pracovník nedosahuje požadovaného výkonu. Manažer musí nejdřív zjistit příčinu, teprve pak zvolit řešení.\nProč: Nemoc snižuje fyzické i psychické síly. Odborný nedostatek znamená, že člověku chybí znalosti nebo dovednosti, a řeší se vzděláváním. Nadměrná pečlivost vypadá jako ctnost, ale perfekcionista se zdržuje detaily a nestíhá.\nChyták: Aktivita a angažovanost jsou předpoklady dobrého výkonu, ne jeho brzdy. Proto mezi důvody slabší výkonnosti nepatří."
     },
     {
       "q": "Mezi zásady, kterých by se měl manažer držet při vedení hodnotícího pohovoru patří:",
@@ -651,7 +918,10 @@
         "Je nutno hodnotit člověka komplexně.",
         "Hodnotící pohovor má motivovat."
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Hodnotící pohovor je rozhovor manažera s pracovníkem o jeho výkonu za uplynulé období. Slouží jako systematická zpětná vazba.\nProč: Hlavním smyslem pohovoru je motivovat pracovníka k lepšímu výkonu a rozvoji. Proto má být věcný a má končit dohodou o dalších cílech.\nChyták: Hodnotit člověka \"komplexně\" zní správně. Pohovor ale hodnotí pracovní výkon a chování, ne osobnost jako celek. Hodnotí se celé období, ne jen poslední dny, jinak vzniká chyba čerstvého dojmu. Srovnávání s ostatními a ironie motivaci ničí."
     },
     {
       "q": "Ideální tým je:",
@@ -662,7 +932,11 @@
         "velká skupina lidí, kteří neustále diskutují o cílech",
         "malá skupina lidí, jejichž vlastnosti a dovednosti se navzájem doplňují a posilují"
       ],
-      "correct": [2, 4]
+      "correct": [
+        2,
+        4
+      ],
+      "info": "Pojem: Tým je skupina lidí zaměřená na úkol. Skládá se z lidí s různými, ale doplňujícími se znalostmi a dovednostmi.\nProč: Ideální tým má společný cíl a každý člen v něm zná svou roli a zodpovědnost. Je spíše malý, aby se lidé mohli domluvit. Jeho síla vychází z toho, že se vlastnosti a dovednosti členů navzájem doplňují a posilují.\nChyták: Skupina lidí se stejnými vlastnostmi nemá kdo pokrýt slabá místa. Všichni nemusí mít ideální manažerské dovednosti. Velká skupina, která jen diskutuje o cílech, nic nevytvoří."
     },
     {
       "q": "Charakteristikami efektivních týmů jsou:",
@@ -673,7 +947,13 @@
         "vytvoření vnitřní normy",
         "vedoucí s osobností flegmatiků"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Efektivní tým dosahuje cíle s rozumným vynaložením sil a jeho členové jsou spokojení se spoluprací.\nProč: Jasně vymezené role a odpovědnosti zabrání zmatku a dublování práce. Navazující a doplňující se působení členů vytváří synergii. Společný cíl drží tým pohromadě. Vnitřní normy, tedy nepsaná pravidla chování, umožňují spolupráci bez neustálého vyjednávání.\nChyták: Vedoucí s osobností flegmatika není znakem efektivního týmu. Temperament vedoucího efektivitu týmu neurčuje, a flegmatik \"kliďas\" je mezi typy moderátorů spíš problémový."
     },
     {
       "q": "Delfská metoda je:",
@@ -684,7 +964,11 @@
         "metoda skupinového hledání řešení zjišťování názorů spolupracovníků",
         "metoda skupinového hledání řešení zjišťování názorů skupiny expertů"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Delfská metoda je expertní prognostická technika. Odhaduje budoucí vývoj na základě názorů skupiny expertů.\nProč: Experti odpovídají anonymně a ve více kolech. Po každém kole dostanou souhrn odpovědí ostatních a své odhady mohou upravit. Názory se tak postupně sbližují bez vlivu autorit a dominantních jedinců. Jde proto o skupinové hledání řešení a o předvídání budoucích jevů.\nChyták: Metoda nevyhodnocuje dosavadní postupy, dívá se do budoucna. Nepracuje s běžnými spolupracovníky ani členy týmu, ale s experty. A není individuální."
     },
     {
       "q": "Mezi bariéry v osobnosti manažera patří:",
@@ -695,7 +979,10 @@
         "angažovanost",
         "aktivita"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Bariéry v osobnosti manažera jsou vlastnosti a návyky, které mu brání dobře řídit a rozhodovat.\nProč: Myšlenkové a jednací stereotypy znamenají, že manažer řeší nové situace starými, zaběhnutými postupy. Nevidí proto nová řešení, brání se změnám a přehlíží signály, že staré postupy už nefungují.\nChyták: Strukturovaný přístup, konkrétní vymezení problémů, angažovanost a aktivita jsou předpoklady dobré manažerské práce. Bariérou nejsou, naopak manažerovi pomáhají."
     },
     {
       "q": "Řízení změny je:",
@@ -706,7 +993,10 @@
         "projektové řízení",
         "procesní řízení"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Řízení změny (change management) zahrnuje řídící aktivity, které posouvají jedince, tým nebo organizaci ze stávajícího stavu do budoucího žádoucího stavu.\nProč: Změna naráží na odpor lidí. Klíčovou částí řízení změny je proto přesvědčit ostatní i sebe o jejím smyslu. Když lidé změně rozumí a věří jí, podpoří ji místo odporu.\nChyták: \"Změnové řízení\" je jen jiný název, nic nevysvětluje. Projektové a procesní řízení jsou samostatné manažerské disciplíny. Odmítání změny je naopak odpor, který má řízení změny překonat."
     },
     {
       "q": "Moderátor porady by:",
@@ -717,7 +1007,13 @@
         "měl určovat termíny pro splnění úkolů",
         "měl usnadňovat vzájemné porozumění"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Moderátor (facilitátor) porady pečuje o její proces: o dodržování programu a času, o komunikaci a vztahy mezi účastníky. Vedoucí porady tak má prostor řešit obsah.\nProč: Moderátor má být nestranný, aby všichni měli stejný prostor. Ovlivňuje délku příspěvků a určuje jejich pořadí, aby porada skončila včas a nikdo ji neovládl. Usnadňuje vzájemné porozumění, například shrnutím nebo kontrolní otázkou.\nChyták: Termíny pro splnění úkolů moderátor neurčuje. Odpovědnosti a termíny na závěr shrnuje vedoucí porady a zapisují se do zápisu. Moderátor řídí proces, ne obsah rozhodnutí."
     },
     {
       "q": "Mezi příčiny konfliktu patří:",
@@ -728,7 +1024,14 @@
         "Aktuální situace.",
         "Nedostatek informací."
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Konflikt je střetnutí dvou nebo více protichůdných snah, potřeb, hodnot nebo zájmů. Příčin může být mnoho.\nProč: Vztahy mezi lidmi a emoce tvoří emocionální rovinu konfliktu. Aktuální situace, například stres nebo časový tlak, konflikt spouští. Nedostatek informací vede k domněnkám a nedorozuměním. Nadbytek informací vede k zahlcení, různým výkladům a přehlédnutí podstatného. Platí všech pět možností.\nChyták: Lákavé je vyřadit \"nadbytek informací\", protože víc informací obvykle pomáhá. Informační zahlcení ale vede k nedorozuměním stejně jako jejich nedostatek."
     },
     {
       "q": "Konkurenční strategie (výhra — prohra):",
@@ -739,7 +1042,11 @@
         "Pomáhá udržovat dobré mezilidské vztahy.",
         "Umožňuje oboustrannou spokojenost s dosažením řešením."
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Konkurenční (kompetitivní) strategie vyjednávání je jednání \"kdo z koho\". Jedna strana vyhraje, druhá prohraje.\nProč: Je to jedna z možných vyjednávacích strategií. Často ji volí dominantní typy lidí, kteří chtějí vyhrát i za cenu, že se druhá strana cítí poražená.\nChyták: Nepomáhá udržovat dobré vztahy, protože poražený si křivdu pamatuje. Neumožňuje oboustrannou spokojenost, to dělá strategie výhra-výhra. Mezi obvyklé strategie patří, výhra-prohra je dokonce nejčastěji volená strategie."
     },
     {
       "q": "Léčka odhadů a předpovědí:",
@@ -750,7 +1057,12 @@
         "Nepatří mezi rozhodovací \"léčky\".",
         "Souvisí také s přílišnou opatrností v rozhodování."
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Rozhodovací léčky jsou psychologické pasti, které zkreslují úsudek rozhodovatele. Popsali je Hammond, Keeney a Raiffa. Léčka odhadů a předpovědí je jednou z nich.\nProč: Lidé přeceňují přesnost svých odhadů a podceňují nejistotu. Druhou podobou léčky je přílišná opatrnost: rozhodovatel ze strachu \"pro jistotu\" zkresluje odhady k horšímu. Třetí podobou je přeceňování událostí, které si snadno vybavíme.\nChyták: Léčka se netýká jen meteorologie, slovo \"předpověď\" je tu obecné. A mezi základní rozhodovací léčky patří, takže tvrzení \"nepatří\" neplatí."
     },
     {
       "q": "Postojem těla se zabývá:",
@@ -761,7 +1073,10 @@
         "Gestika.",
         "Posturologie."
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Posturologie je obor neverbální komunikace, který se zabývá postojem a polohou těla. Například vzpřímený, shrbený, otevřený nebo uzavřený postoj.\nProč: Postoj těla prozrazuje sebevědomí, zájem, napětí nebo odmítnutí. Proto patří mezi základní druhy neverbální komunikace spolu s mimikou, proxemikou, haptikou, kinezikou a gestikou.\nChyták: Proxemika se zabývá vzdáleností mezi lidmi. Haptika dotyky. Gestika pohyby rukou a hlavy. Paralingvistika tónem, hlasitostí a tempem řeči. Žádná z nich se nezabývá postojem těla."
     },
     {
       "q": "Kompromisní styl řešení konfliktů:",
@@ -772,7 +1087,11 @@
         "je vhodné používat tehdy, kdy existuje příliš málo informací o konfliktu",
         "spočívá v nalezení nejvhodnějšího řešení pro jednu ze stran konfliktu, kterému se druhá strana přizpůsobí"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Kompromisní styl řešení konfliktů patří mezi pět stylů podle Thomase a Kilmanna. Obě strany se vzdají části svých požadavků.\nProč: Funguje na principu \"dej - ber\": strany si postupně ustupují, až se potkají. Hodí se tam, kde je jakákoliv dohoda lepší než žádná, například když hrozí vážné následky nedohody nebo chybí čas.\nChyták: Kompromis není výhra-výhra. Každá strana část svých cílů ztratí, výhra-výhra odpovídá kooperativnímu stylu. Řešení výhodné jen pro jednu stranu, které se druhá přizpůsobí, popisuje přizpůsobivý nebo dominující styl."
     },
     {
       "q": "Pro kompromisní styl řešení konfliktů platí, že:",
@@ -783,7 +1102,11 @@
         "Jednou dosáhne veškerých svých cílů jedna strana, podruhé druhá strana konfliktu.",
         "Je vhodné použít v situaci, kdy nemůžeme konflikt ovlivnit."
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Kompromisní styl řešení konfliktů patří mezi pět stylů podle Thomase a Kilmanna. Obě strany se vzdají části svých požadavků.\nProč: Styl stojí na oboustranných ústupcích, každý trochu ustoupí. Hodí se tam, kde by nedohoda měla fatální následky, protože i částečná dohoda je lepší než žádná.\nChyták: Kompromis není výhra-výhra, to je kooperativní styl, kde obě strany získají vše podstatné. Střídání, kdy jednou vyhraje jedna strana a podruhé druhá, není kompromis v jednom konfliktu. Když konflikt ovlivnit nemůžeme, hodí se spíš únikový styl."
     },
     {
       "q": "Cílem manipulace je:",
@@ -794,7 +1117,12 @@
         "Dostat někoho pod tlak.",
         "Pomoci druhému v nouzi."
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Manipulace je skryté ovlivňování druhého člověka ve prospěch manipulátora. Využívá nátlak, emoce nebo zatajování informací.\nProč: Cílem manipulace je, aby druhý dělal, co manipulátor chce, i když to není v jeho zájmu. Manipulátor k tomu druhého často dostává pod tlak. V pracovním prostředí může manipulace sloužit i k oslabení výkonu konkurenta.\nChyták: Pomoc druhému v nouzi je opak manipulace, ta sleduje vlastní prospěch. Zjišťování vlastních hranic a možností je sebepoznání, ne ovlivňování druhých."
     },
     {
       "q": "Výkonnost a fungování týmu obvykle závisí na:",
@@ -805,7 +1133,12 @@
         "Eisenhowerově principu.",
         "Provázanosti týmových rolí."
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Výkonnost týmu ukazuje, jak dobře tým plní svůj cíl. Závisí hlavně na tom, kdo v týmu je a jak spolu členové spolupracují.\nProč: Velikost skupiny ovlivňuje výkon: v příliš velkém týmu klesá efektivita a roste sociální lenost. Výběr členů určuje, jaké znalosti a dovednosti tým má. Provázanost týmových rolí (například podle Belbina) zajistí, že se členové doplňují.\nChyták: Výše očekávané finanční odměny motivuje jednotlivce, ale fungování týmu sama neurčuje. Eisenhowerův princip je nástroj time managementu pro třídění úkolů podle důležitosti a naléhavosti."
     },
     {
       "q": "Součástí rozhodovacího procesu jsou:",
@@ -816,7 +1149,12 @@
         "Výběr rozhodovatelů.",
         "Monitorování a kontrola."
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Rozhodovací proces je postup řešení problému s více variantami. Vede od identifikace problému přes tvorbu a hodnocení variant až k realizaci a kontrole.\nProč: Situační analýza na začátku zjišťuje, co se děje a jaký je problém. Hodnocení důsledků variant umožní vybrat tu nejlepší. Monitorování a kontrola na konci hlídá odchylky od cílů a spouští nápravná opatření.\nChyták: Určení odměny za úspěšnou realizaci je věc motivace, ne rozhodování. Výběr rozhodovatelů není krokem procesu, rozhodovatel (subjekt) je jeho prvkem, se kterým proces už pracuje."
     },
     {
       "q": "Příčinou konfliktních situací nejčastěji bývá:",
@@ -827,7 +1165,12 @@
         "Osobní emocionální reakce.",
         "Mocenský útok na autoritu či pozici."
       ],
-      "correct": [2, 3, 4]
+      "correct": [
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Konflikt vzniká, když se střetnou protichůdné zájmy, názory nebo emoce. Má věcnou, emocionální a hodnotovou rovinu.\nProč: Racionální rozdíl v názorech na předmět jednání je věcná příčina: lidé vidí řešení jinak. Osobní emocionální reakce tvoří vztahovou rovinu: někoho se něco dotkne. Mocenský útok na autoritu nebo pozici ohrožuje postavení druhého a vyvolá obranu.\nChyták: Týmový brainstorming je technika hledání nápadů a kritika je v něm zakázaná, takže konflikty spíš tlumí. Konsensus o řešení je výsledek dohody, tedy opak konfliktu."
     },
     {
       "q": "Asertivní technika \"otevřených dveří\":",
@@ -838,7 +1181,10 @@
         "Spočívá v tom, že nereagujeme na protivníkovy argumenty.",
         "Se obvykle používá pro prosazení svého požadavku."
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Technika otevřených dveří je asertivní obrana proti neoprávněné nebo manipulativní kritice. Člověk uzná, co může být na kritice pravdivé, ale nenechá se zatlačit.\nProč: Kritik čeká obranu nebo protiútok. Když místo toho klidně odpovíš \"Možná máš pravdu, že…\", kritika ztratí sílu a konflikt se nevyhrotí. Proto se technika používá hlavně v reakci na neoprávněnou kritiku.\nChyták: Nepřijímáš všechny námitky a neakceptuješ je, uznáváš jen to, co může být pravda. Nejde o ignorování argumentů. K prosazení vlastního požadavku slouží jiná technika, poškrábaná deska."
     },
     {
       "q": "Léčka ukotvení:",
@@ -849,7 +1195,10 @@
         "Spočívá v přílišném zafixování se na provedený odhad.",
         "Informuje o podvědomém fixování se na první získanou informaci."
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Léčka ukotvení je psychologická rozhodovací past. Popsali ji Hammond, Keeney a Raiffa.\nProč: Mozek dá první získané informaci nepřiměřenou váhu. Ta pak funguje jako kotva, ke které vztahujeme všechny další úvahy. Typicky první cena ve vyjednávání nebo první odhad ovlivní výsledek, i když je nahodilý.\nChyták: Fixace na současný stav je jiná léčka, léčka statu quo. Víra, že rozhodujeme racionálně, a přílišná fixace na vlastní odhad patří k jiným léčkám. Ukotvení se týká právě první informace."
     },
     {
       "q": "V průběhu prezentace je vhodné:",
@@ -860,7 +1209,11 @@
         "zaměřit se výhradně na nejméně sympatickou osobu v publiku",
         "zaměřit se výhradně na nejsympatičtější osobu v publiku"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Prezentace má v daném čase předat posluchačům potřebné informace a udržet jejich pozornost.\nProč: Řečnické otázky zapojují posluchače do přemýšlení, aniž by museli odpovídat, a oživují projev. Průběžná pozornost všem posluchačům, hlavně oční kontakt, dává každému pocit, že mluvíš k němu. Tak udržíš pozornost celého publika.\nChyták: Zaměřit se výhradně na jednu osobu, sympatickou i nesympatickou, ostatní vyřadí. Přehlížet poznámky z publika působí arogantně a ztratíš kontakt s posluchači."
     },
     {
       "q": "Delegovat by se mělo:",
@@ -871,7 +1224,13 @@
         "Nejlépe v souladu s pracovními předpoklady a osobními zájmy pracovníka, na kterého je úkol delegován.",
         "Jasně a úplně."
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Delegování je předání úkolu a odpovědnosti z manažera na podřízeného. Dobré delegování má jasná pravidla.\nProč: Úkol se deleguje na nejnižší úroveň, na které ho lze udělat. Manažer tak šetří svůj čas na úkoly, které zvládne jen on. Pracovník potřebuje odpovídající podporu: zdroje, pravomoci a pomoc. Úkol má odpovídat jeho předpokladům a zájmům, protože pak ho dělá lépe a s chutí. Zadání musí být jasné a úplné: proč, co, do kdy a s jakými pravomocemi.\nChyták: \"Co nejméně\" neplatí. Málo delegující manažer se zahltí prací a jeho podřízení se nerozvíjejí."
     },
     {
       "q": "Ústní komunikace v organizaci:",
@@ -882,7 +1241,11 @@
         "Spočívá často v předávání neformálních informací.",
         "Je důležitou složkou při předávání formálních sdělení."
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Ústní komunikace v organizaci je přímé mluvené předávání informací, například osobně, po telefonu nebo na poradě.\nProč: Mluvené slovo se snadno zapomene a nezůstane po něm záznam. Proto se dlouhodobé úkoly obvykle zadávají písemně, aby se k nim šlo vracet. Ústní komunikace naopak často slouží k předávání neformálních informací.\nChyták: Ústní komunikace neprobíhá v přesně vymezené formální podobě. Rozhodně existuje, je nejběžnější formou komunikace. Formální sdělení se předávají hlavně písemně: oběžníky, e-mail, intranet nebo zápis z porady."
     },
     {
       "q": "Efektivní produktivita je definována jako:",
@@ -893,7 +1256,12 @@
         "Objem práce udělané za jednotku času.",
         "Schopnost vykonávat práci."
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Efektivní produktivita neměří jen množství práce, ale hlavně hodnotu výsledku vzhledem k vynaložené energii.\nProč: Minimalizace plýtvání odstraňuje činnosti, které nic nepřinášejí. Vztah mezi výsledkem a energií potřebnou k jeho dosažení vyjadřuje efektivitu. Objem práce za jednotku času s přidanou hodnotou pro zákazníka počítá jen práci, která má smysl.\nChyták: Samotný objem práce za jednotku času je obyčejná produktivita. Nerozlišuje užitečnou práci od zbytečné. Schopnost vykonávat práci je výkonnost nebo kompetence, ne produktivita."
     },
     {
       "q": "Typickými znaky dobrého time managementu jsou:",
@@ -904,7 +1272,10 @@
         "Perfekcionalismus a stres.",
         "Dlouhý seznam lidí čekajících na schůzku."
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Time management je řízení vlastního času tak, aby se člověk věnoval důležitým věcem a nezahlcoval se.\nProč: Delegování uvolní manažerovi čas. Úkoly, které zvládnou jiní, předá a sám se věnuje tomu, co může udělat jen on. Proto je typickým znakem dobrého time managementu.\nChyták: Přetíženost, perfekcionismus, stres a dlouhá fronta lidí čekajících na schůzku jsou naopak příznaky špatného hospodaření s časem. Tři záznamová média vedou k roztříštění. Lepší je jeden spolehlivý systém."
     },
     {
       "q": "Mezi složky kondice patří:",
@@ -915,7 +1286,13 @@
         "Fyziologická složka.",
         "Fyzická složka."
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Kondice manažera je jeho celková připravenost zvládat náročnou práci. Má čtyři složky: fyzickou, duševní, duchovní a společenskou.\nProč: Fyzická složka znamená zdraví, pohyb a odpočinek. Duševní složka znamená psychickou odolnost a zvládání stresu. Duchovní složka dává práci smysl a hodnoty. Společenská složka představuje vztahy a sociální oporu. Když jedna složka vázne, kondice jako celek klesá.\nChyták: \"Fyziologická složka\" zní odborně, ale mezi čtyři složky kondice nepatří. Tělesnou stránku už pokrývá složka fyzická."
     },
     {
       "q": "Jakých zásad by se měl manažer držet při skupinovém rozhodování?",
@@ -926,7 +1303,11 @@
         "Dávat skupině konkrétní úkoly.",
         "Úkol musí mít počátek a konec."
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Skupinové rozhodování znamená, že o problému rozhoduje víc lidí najednou. Manažer musí skupině vytvořit podmínky, aby fungovala.\nProč: Konkrétní úkol skupina pochopí stejně a nerozptyluje se. Úkol s jasným počátkem a koncem drží tempo a skupina ví, kdy je hotovo.\nChyták: Abstraktní úkoly vedou k nekonečné diskusi. Soutěžení uvnitř skupiny škodí: členové si zadržují informace a lepší výsledek přinese spolupráce. Chválit jednotlivce rozbíjí skupinového ducha. Chválit se má skupina jako celek."
     },
     {
       "q": "Mezi styly ovlivňování patří:",
@@ -937,7 +1318,12 @@
         "Styl společné vize.",
         "Styl asertivního přesvědčování."
       ],
-      "correct": [2, 3, 4]
+      "correct": [
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Styly ovlivňování popisují, jak manažer přesvědčuje a vede druhé k cíli. Uznávaný model rozlišuje styl odměn a trestů, asertivního přesvědčování, spolupráce a důvěry, společné vize a styl ústupu.\nProč: Styl spolupráce a důvěry staví na vztazích a zapojení lidí. Styl společné vize inspiruje obrazem budoucnosti, ke které chtějí lidé společně dojít. Styl asertivního přesvědčování prosazuje požadavky otevřeně a věcně, s argumenty.\nChyták: Styl nedůvěry ani styl individuálního cíle mezi styly ovlivňování nepatří. Nedůvěra popisuje špatný vztah, ne způsob ovlivňování, a ovlivňování se vždy týká cíle sdíleného s druhými."
     },
     {
       "q": "Mezi problémové týmové role patří:",
@@ -948,7 +1334,13 @@
         "Naslouchající osoba.",
         "Nenaslouchající osoba."
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Problémové týmové role jsou způsoby chování, které narušují spolupráci v týmu.\nProč: Samotář pracuje raději sám, takže nesdílí informace ani výsledky. Dominující osoba ráda mluví, přehlušuje ostatní a brání jim v zapojení. Snílek se nesoustředí a odvádí pozornost od úkolu. Nenaslouchající osoba přeslechne nápady ostatních a vznikají nedorozumění.\nChyták: Naslouchající osoba problémová není. Aktivní naslouchání patří mezi klíčové komunikační dovednosti a týmu pomáhá."
     },
     {
       "q": "Efektivní pracovní skupina:",
@@ -959,7 +1351,12 @@
         "Obvykle obsahuje maximálně tři týmové role.",
         "Je obvykle vytvořená pro vyřešení konkrétního projektu."
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Efektivní pracovní skupina spolu dobře spolupracuje na konkrétním cíli. Znaky jsou společný cíl, rovnoprávnost, jasné odpovědnosti a ochota si pomáhat.\nProč: Obvykle nepotřebuje formální vnitřní strukturu, protože se lidé řídí cílem a dohodou. Má obsahovat co nejvíce týmových rolí (podle Belbina), aby se schopnosti členů doplňovaly. Obvykle vzniká kvůli konkrétnímu projektu a po jeho splnění zaniká.\nChyták: Složení podle pohlaví efektivitu neurčuje, různorodost spíš pomáhá. Omezení na nejvýše tři týmové role neplatí, s méně rolemi chybějí důležité funkce."
     },
     {
       "q": "Proč manažeři neradi delegují?",
@@ -970,7 +1367,13 @@
         "mají strach ze ztráty kontroly",
         "zastávají názor \"nikdy se to u nás nedělalo\""
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Delegování je předávání úkolů a odpovědnosti z manažera na podřízené. Manažeři se mu často vyhýbají.\nProč: Syndrom \"nejlépe si to udělám sám\" vychází z přesvědčení, že nikdo jiný to neudělá stejně dobře. Nedostatečná důvěra v podřízené vede k tomu, že jim manažer nic nesvěří. Strach ze ztráty kontroly brání pustit úkol z rukou. Postoj \"nikdy se to u nás nedělalo\" brzdí změnu zaběhnutých postupů.\nChyták: \"Protože nejsou líní\" je obrácená logika. Líný manažer by naopak delegoval rád. Píle sama důvodem k nedelegování není."
     },
     {
       "q": "Společnými znaky, kterými se vyznačuje tým jsou:",
@@ -981,7 +1384,14 @@
         "Atmosféra.",
         "Struktura a organizace."
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Tým je skupina lidí zaměřená na společný cíl. Od pouhého seskupení lidí ho odlišují určité společné znaky.\nProč: Soudržnost drží členy pohromadě. Skupinové normy jsou nepsaná pravidla chování. Komunikace umožňuje sdílet informace a koordinovat práci. Atmosféra ovlivňuje spokojenost a angažovanost členů. Struktura a organizace určují role a odpovědnosti. Platí všech pět možností.\nChyták: Lákavé je vyřadit \"atmosféru\" jako něco neměřitelného. Nepříznivá atmosféra ale narušuje soudržnost i komunikaci, takže k charakteristice týmu patří."
     },
     {
       "q": "Soudržnost sociální (pracovní) skupiny:",
@@ -992,7 +1402,10 @@
         "Vyjadřuje ochotu angažovat se ve prospěch společných cílů.",
         "Je nepřímo úměrná skupinové konformitě."
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Soudržnost (koheze) skupiny vyjadřuje ochotu členů angažovat se ve prospěch společných cílů. Drží skupinu pohromadě.\nProč: Soudržná skupina sdílí cíle a členové pro ně chtějí pracovat. Proto je ochota angažovat se jádrem definice.\nChyták: Soudržnost není přímo ani nepřímo úměrná konformitě. Soudržnost konformitu podporuje, ale nejsou to dvě veličiny v pevném poměru.\nRozpor: Podle testu soudržnost s menším počtem členů neroste. Podle běžně uznávané sociální psychologie bývají menší skupiny soudržnější, protože se členové lépe znají a snáze se domluví. Učebnice tuto úměru výslovně neformuluje. U zkoušky odpověz podle testu."
     },
     {
       "q": "Mezi pět stylů zvládání konfliktů patří:",
@@ -1003,7 +1416,13 @@
         "kompromisní styl",
         "konfrontační styl"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Styly zvládání konfliktů popisuje model Thomase a Kilmanna. Rozlišuje pět stylů podle míry prosazování vlastních zájmů a míry spolupráce.\nProč: Únikový styl konflikt neřeší a vyhýbá se mu. Přizpůsobivý styl ustoupí ve prospěch druhého. Kooperativní styl hledá řešení výhra-výhra. Kompromisní styl stojí na vzájemných ústupcích.\nChyták: Test považuje konfrontační styl za nesprávnou možnost.\nRozpor: Podle testu konfrontační styl mezi pět stylů nepatří. Podle výkladu předmětu je pátým stylem styl dominující, tedy útočný, konfrontační nebo soutěživý (výhra-prohra). Konfrontační styl tak do pětice patří. U zkoušky odpověz podle testu a konfrontační styl neoznačuj."
     },
     {
       "q": "Zkreslení předávané informace v rámci komunikace:",
@@ -1014,7 +1433,12 @@
         "Je často důsledkem špatného dekódování.",
         "Je téměř nemožné, je-li komunikace formální."
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Komunikační proces je přenos zakódovaného sdělení od odesílatele k příjemci, který ho dekóduje a pošle zpětnou vazbu. Do přenosu vstupují šumy.\nProč: Vnější vlivy, například hluk nebo oslnění, jsou šumy, které sdělení zkreslí. Příjemce často sdělení špatně dekóduje a pochopí jinak, než bylo míněno. Aktivní naslouchání a zpětná vazba ověří, že si strany rozumějí, a zkreslení tak minimalizují.\nChyták: Ani písemná, ani formální komunikace zkreslení nezabrání. Psaný text si čtenář také vyloží po svém a chybí v něm tón hlasu a řeč těla."
     },
     {
       "q": "Týmová dynamika prochází následujícími fázemi v průběhu práce na projektu v tomto pořadí:",
@@ -1025,7 +1449,10 @@
         "Formování, Normování, Spaní na Vavřínech, Výkonnost, Bouření.",
         "Výkonnost, Normování, Spaní na vavřínech, Bouření, Formování."
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Vývoj týmu popsal Bruce Tuckman fázemi formování, bouření, normování a výkonnost. Pátou fází je zde spaní na vavřínech: tým po úspěchu ztrácí ostražitost a stagnuje. V původním modelu je pátou fází ukončení týmu.\nProč: Při formování se lidé seznamují a jsou opatrní. Při bouření se střetávají názory a probíhá boj o role. Při normování se ustálí pravidla a role. Ve fázi výkonnosti tým naplno pracuje. Teprve po úspěchu přichází uspokojení, tedy spaní na vavřínech.\nChyták: Chybná pořadí prohazují bouření a normování. Konflikty ale přicházejí dřív než pravidla, ta vznikají právě jejich řešením."
     },
     {
       "q": "Propojování lidí:",
@@ -1036,7 +1463,13 @@
         "Ovlivňuje postavení a výkonnost firem.",
         "Posiluje týmovou spolupráci a vede k nízkým organizačním hierarchiím."
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Propojování lidí (networking) je vytváření vztahů mezi lidmi, výměna informací a udržování osobních kontaktů. Výsledkem je síť konexí.\nProč: Je součástí strategie sociálních sítí, které firmy cíleně budují. Kontakty přinášejí informace, příležitosti a spolupráci, takže ovlivňují postavení a výkonnost firem. Uvnitř firmy posiluje týmovou spolupráci a vede k plošším hierarchiím, protože lidé komunikují napříč úrovněmi.\nChyták: Význam manažerů nesnižuje. Manažeři jsou naopak důležité uzly sítě, které propojují lidi a informace."
     },
     {
       "q": "Participativní rozhodování:",
@@ -1047,7 +1480,11 @@
         "je rozhodování individuální",
         "je rozhodnutí, při kterém každý zainteresovaný jedinec rozhoduje pouze v intencích své odbornosti"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Participativní rozhodování je rozhodování ve skupině, kdy se na rozhodnutí podílejí i dotčení pracovníci. Uplatňuje se hlavně u špatně strukturovaných problémů.\nProč: Je to kolektivní rozhodování, ne individuální. Míra účasti lidí závisí na stylu řízení organizace. V autokraticky řízené firmě rozhoduje šéf sám, a participace se tam proto uplatňuje těžko.\nChyták: Participativní rozhodování není možné jen v malých firmách. Uplatňuje se v organizacích všech velikostí. Rozhodování, kdy každý rozhoduje jen o své odbornosti, je dělba pravomocí, ne společné rozhodnutí."
     },
     {
       "q": "Mezi základní doporučení stylu věcné manažerské prezentace nepatří:",
@@ -1058,7 +1495,10 @@
         "Emotivní fabulování.",
         "Interpretace faktů, dat a grafů."
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Věcná manažerská prezentace předává fakta a argumenty. Má jasnou strukturu a drží se hlavní myšlenky.\nProč: Emotivní fabulování, tedy vymýšlení a přibarvování příběhů, je v rozporu s věcností. Oslabuje důvěryhodnost a odvádí pozornost od faktů. Proto mezi doporučení věcné prezentace nepatří.\nChyták: Důkladná příprava, udržení hlavní myšlenky a interpretace faktů, dat a grafů k věcné prezentaci patří. Přesvědčování o důležitosti sdělení také: přesvědčit o svém postoji je jedním z cílů prezentace."
     },
     {
       "q": "Mezi časté chyby porad patří:",
@@ -1069,7 +1509,11 @@
         "že nezačínají včas",
         "že se rigidně dodržuje určený čas"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ],
+      "info": "Pojem: Porada je řízené setkání, které má vést k informování nebo k rozhodnutí. Její efektivitu snižují typické chyby.\nProč: Když účastníci nedostanou podklady předem, přijdou nepřipravení a porada se protáhne. Pozdní zahájení plýtvá časem všech a narušuje harmonogram. Obě chyby uvádí předmět mezi častými chybami porad, spolu s nezasláním programu a nedodržením času.\nChyták: Rigidní dodržování času chybou není, skončit včas je zásada. Porada nemusí mít nezávislého moderátora, často ji vede vedoucí. Rozhodnutí odlišné od přání vedoucího je normální výsledek diskuse."
     },
     {
       "q": "Mezi časté chyby porad patří:",
@@ -1080,7 +1524,12 @@
         "Nezasílání programu porady",
         "Nefunkčnost technických prostředků"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Porada je řízené setkání, které má vést k jasným závěrům v omezeném čase. Typické chyby porad sbírá předmět do přehledu od přípravy po zápis.\nProč: Nejasně ukončený bod znamená, že nikdo neví, co se rozhodlo a kdo co udělá. Nedodržený harmonogram prodlužuje poradu a poslední body se odbydou. Bez zaslaného programu se účastníci nepřipraví a porada se rozbíhá.\nChyták: Chybou je NEvypnutí telefonů, ne jejich vypnutí. Nefunkční technika poradu zdrží, ale mezi typické chyby vedení porad ji předmět neřadí."
     },
     {
       "q": "Metoda 6.3.5:",
@@ -1091,7 +1540,11 @@
         "Jednou z podob Delfské metody.",
         "Metoda tvůrčího myšlení."
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ],
+      "info": "Pojem: Metoda 6-3-5 je technika tvůrčího myšlení, kterou popsal Bernd Rohrbach. Šest účastníků napíše každý tři nápady za pět minut a list pošle dál.\nProč: Nápady se zapisují, ne vyslovují, proto jde o jednu z podob brainwritingu. Každý účastník rozvíjí nápady předchůdců, takže za půl hodiny vznikne až 108 návrhů. Slouží k tvorbě variant řešení, tedy k tvůrčímu myšlení.\nChyták: Synektika hledá řešení přes analogie a metafory, ne psaním do kola. Delfská metoda sbírá anonymní názory expertů v několika kolech. S asertivitou metoda nesouvisí."
     },
     {
       "q": "Mentální modely:",
@@ -1102,7 +1555,13 @@
         "Zkreslují skutečnost.",
         "Určují emoce a pocity člověka."
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Mentální modely jsou vnitřní obrazy okolního světa, které si člověk vytvořil ve své mysli. Peter Senge je řadí mezi pět disciplín učící se organizace.\nProč: Model je vždy zjednodušení, proto skutečnost zkresluje. Každý má jiný model, a tak stejnou situaci vidí jinak - odtud vznikají konflikty. Další Sengeho disciplíny jsou systémové myšlení, osobní mistrovství, sdílená vize a týmové učení.\nChyták: Mentální modely ovlivňují, jak situaci vykládáme, ale emoce a pocity přímo neurčují. Emoce mají další zdroje, třeba temperament a aktuální potřeby."
     },
     {
       "q": "Léčka statu quo:",
@@ -1113,7 +1572,10 @@
         "Vysvětluje, proč nejsme ochotni vzdát se věcí, do které jsme již mnoho investovali.",
         "Spočívá v mínění, že činíme logická, racionální rozhodnutí."
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Léčky rozhodování jsou podvědomé chyby úsudku, které popsali Hammond, Keeney a Raiffa. Léčka statu quo je sklon setrvat u současného stavu.\nProč: Změna nese riziko a odpovědnost, setrvání působí bezpečněji. Člověk proto současný stav nadhodnocuje, i když jiná varianta je lepší. Fixace na současný stav je tak jádrem této léčky.\nChyták: Hledání informací, které potvrzují očekávání, je léčka potvrzování. Fixace na první odhad je léčka ukotvení. Neochota vzdát se věci, do které jsme hodně investovali, je léčka utopených nákladů."
     },
     {
       "q": "Laterární (horizontální) komunikační kanál:",
@@ -1124,7 +1586,11 @@
         "Je vždy formálně podporován pracovníky vedení organizace.",
         "Je sdělování informací mezi pracovníky na různých hierarchických úrovních v organizaci."
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Komunikační kanály dělí předmět na vertikální (vzestupné a sestupné), laterální a diagonální. Laterální neboli horizontální kanál vede mezi lidmi na stejné úrovni hierarchie.\nProč: Kolegové na stejné úrovni si předávají informace napřímo, bez nadřízeného. Proto tudy často tečou i neformální informace, třeba neoficiální zprávy a domluvy mezi odděleními.\nChyták: Vzestupný a sestupný směr patří vertikální komunikaci. Komunikace mezi různými úrovněmi je vertikální nebo diagonální, ne laterální. Vedení laterální kanál vždy formálně nepodporuje, často vzniká spontánně."
     },
     {
       "q": "Jaké jsou důvody manažerů nedelegovat?",
@@ -1135,7 +1601,11 @@
         "Jsou kreativní.",
         "Chtějí zlepšit svůj time-management."
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Delegování je předání úkolu a odpovědnosti za jeho splnění podřízenému. Manažeři ho často odmítají z osobních obav.\nProč: Manažer, který se obává konkurence, nechce, aby podřízený ukázal, že práci zvládne stejně dobře. Syndrom nepostradatelnosti znamená přesvědčení, že bez manažera se nic neudělá dobře. Obojí vede k tomu, že si manažer práci nechává.\nChyták: Pracovitost a kreativita samy o sobě důvodem nedelegovat nejsou. Zlepšení time managementu je naopak cíl delegování, ne důvod se mu vyhnout."
     },
     {
       "q": "Informaci, že z 20% nejvýznamnějších příčin lze odvodit 80% následků, nazýváme:",
@@ -1146,7 +1616,10 @@
         "Paretovo pravidlo.",
         "Johariho pravdilo."
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Paretovo pravidlo, známé jako pravidlo 80/20, pojmenoval Joseph Juran podle ekonoma Vilfreda Pareta. Říká, že malá část příčin způsobuje většinu následků.\nProč: Přibližně 20 % nejvýznamnějších příčin vysvětluje asi 80 % následků. Manažer se proto má soustředit na tu menšinu příčin, která má největší dopad. Na tomto principu stojí Paretova analýza v rozhodování i v time managementu.\nChyták: Pravidlo 20 % ani 80 % jako samostatné pojmy neexistují. Johari je okno sebepoznání, ne pravidlo o příčinách. Kolb popsal cyklus učení."
     },
     {
       "q": "Brainstorming:",
@@ -1157,7 +1630,12 @@
         "je technika používaná pro kreativní řešení problémů",
         "upřednostňuje kvalitu nápadů před jejich množstvím"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Brainstorming je technika kreativního řešení problémů, kterou zavedl Alex Osborn. Skupina nejprve volně generuje nápady a teprve potom je hodnotí.\nProč: Proces má minimálně dvě fáze, tvorbu nápadů a jejich hodnocení. Ve fázi tvorby platí zákaz kritiky, protože kritika lidi brzdí. Cílem je co nejvíc nápadů, z nichž se pak vyberou ty dobré.\nChyták: Dominantní autoritativní vedoucí brainstorming dusí, lidé se bojí mluvit. Metoda upřednostňuje množství nápadů, ne jejich kvalitu - kvalita se řeší až při hodnocení."
     },
     {
       "q": "Efekt skupinové polarizace:",
@@ -1168,7 +1646,12 @@
         "znamená, že skupina používá stejný \"slang\"",
         "způsobuje \"ztrátu\" běžných/nevyhraněných argumenty"
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Skupinová polarizace je jev, kdy skupina dojde k extrémnějšímu rozhodnutí, než by zvolil průměrný člen sám. Popsali ho Stoner (posun k riziku) a Moscovici.\nProč: Členové se v diskusi přizpůsobují převládajícímu názoru, polarizace tedy může vycházet ze skupinové konformity. Zaznívají hlavně argumenty pro většinový směr. Umírněné a nevyhraněné argumenty se ztrácejí a skupina se posouvá k extrému.\nChyták: Polarizace neznamená rozdělení skupiny na dva rivaly. Posouvá se celá skupina jedním směrem. Se společným slangem skupiny nesouvisí."
     },
     {
       "q": "Jak lze charakterizovat Brainstorming?",
@@ -1179,7 +1662,11 @@
         "Jako techniku upřednostňující kvalitu odpovědí.",
         "Jako techniku sloužící k prosazení zájmů."
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Brainstorming je technika kreativního řešení problémů podle Alexe Osborna. Skupina v krátkém čase vytváří co nejvíc nápadů bez kritiky.\nProč: Metoda stojí na představě, že velké množství nápadů zvyšuje šanci najít ten dobrý. Proto upřednostňuje kvantitu odpovědí. Nápady se hodnotí až v další fázi.\nChyták: Kvalita má přednost až při hodnocení, ve fázi tvorby jde o množství. Asertivní technika slouží k prosazení vlastních práv v komunikaci. Brainstorming nikomu nepomáhá prosadit zájmy, hledá společné řešení."
     },
     {
       "q": "Jaká jsou základní pravidla Brainstormingu?",
@@ -1190,7 +1677,11 @@
         "Kvalita má přednost před kvantitou",
         "Diferenciace"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Brainstorming má jednoduchá pravidla, která formuloval Alex Osborn. Mají uvolnit tvořivost celé skupiny.\nProč: Kvantita má přednost před kvalitou, protože z mnoha nápadů je snazší vybrat dobrý. Rovnost účastníků znamená, že nápad šéfa i nováčka má stejnou váhu. Bez ní by lidé čekali na názor nadřízeného. K pravidlům patří i zákaz kritiky a vítání odvážných nápadů.\nChyták: Korekce odpovědí odporuje zákazu kritiky, nápady se během tvorby neopravují. Kvalita před kvantitou je opak pravidla. Diferenciace mezi pravidla nepatří."
     },
     {
       "q": "Podle jakých kritérií by měl být nastaven cíl?",
@@ -1201,7 +1692,14 @@
         "Měl by být termínovaný.",
         "Měl by být měřitelný."
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Cíl se nastavuje podle kritérií SMART. Česká verze předmětu je: specifický, měřitelný, akceptovaný, reálný a termínovaný.\nProč: Specifický cíl říká přesně, co se má dosáhnout. Měřitelný cíl umožní ověřit splnění. Akceptovaný cíl lidé přijmou za svůj, a proto se pro něj nasadí. Reálný cíl je dosažitelný s dostupnými zdroji. Termínovaný cíl má jasný termín, takže nejde odkládat.\nChyták: Platí všech pět kritérií, každé odpovídá jednomu písmenu SMART. Vynecháním kteréhokoli by cíl ztratil jasnost nebo kontrolovatelnost."
     },
     {
       "q": "Brainwriting:",
@@ -1212,7 +1710,12 @@
         "je společně s brainstormingem nástrojem pro kreativní řešení problémů",
         "je použitelný i u místně dislokovaných skupin řešitelů"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "info": "Pojem: Brainwriting je písemná varianta brainstormingu. Účastníci nápady píší, místo aby je říkali nahlas.\nProč: Psaní snižuje tlak skupiny, proto metoda vyhovuje submisivnějším a plachým lidem. Stejně jako brainstorming slouží ke kreativnímu řešení problémů. Nápady se dají předávat i na dálku, takže funguje i u místně dislokovaných skupin.\nChyták: Brainwriting nevyžaduje dominantní jedince, naopak omezuje jejich převahu. Nevylepšuje předem připravené řešení, nápady vznikají od začátku během sezení."
     },
     {
       "q": "O negativním konfliktu hovoříme, když:",
@@ -1223,7 +1726,14 @@
         "Jedinci vidí druhé jako konkurenty.",
         "Více se soustředí na prosazení sebe sama než na práva druhých."
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Negativní (destruktivní) konflikt poškozuje vztahy a výkon. Pozitivní konflikt naopak přináší nové nápady a řešení.\nProč: V negativním konfliktu jde o vítězství za každou cenu, ne o řešení. Lidé si nedůvěřují a druhé vidí jako konkurenty. Výroky míří na osobu místo na věc a každý prosazuje sebe, ne práva druhých. Všech pět znaků proto platí.\nChyták: Všechny možnosti popisují destruktivní konflikt. Rozdíl oproti pozitivnímu konfliktu je v tom, že pozitivní konflikt řeší věc a respektuje druhou stranu."
     },
     {
       "q": "Proxemika:",
@@ -1234,7 +1744,12 @@
         "sleduje postoje a gesta komunikujících stran",
         "je vyjádřena vzdálenostmi komunikujících stran"
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Proxemika je součást neverbální komunikace, kterou popsal Edward T. Hall. Sleduje vzdálenost mezi komunikujícími.\nProč: Vzdálenost vyjadřuje vztah mezi lidmi. Hall ji dělí do zón: intimní, osobní, sociální a veřejné. Proxemika se tedy vyjadřuje vzdálenostmi a pracuje se zónami. Příliš malá vzdálenost působí vtíravě, příliš velká odměřeně.\nChyták: Zóny jsou čtyři, ne pět. Postoje těla sleduje posturologie a gesta gestika, ne proxemika."
     },
     {
       "q": "Změnový proces podle J.Kottera má následujících 8 kroků:",
@@ -1245,7 +1760,10 @@
         "Vedoucí tým, Vize a strategie změny, Nová kultura, Delegování, Pocit naléhavosti, Sdílení vize, Sdílení prvních úspěchů, Vytrvání v úsilí",
         "Pocit naléhavosti, Vedoucí tým, Vize a strategie změny, Sdílení vize, Delegování, Sdílení prvních úspěchů, Vytrvání v úsilí, Nová kultura"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ],
+      "info": "Pojem: John Kotter popsal model řízení změny v osmi krocích. Pořadí kroků je pevné, protože každý krok staví na předchozím.\nProč: Nejdřív je třeba vyvolat pocit naléhavosti, jinak se nikdo nepohne. Pak se sestaví vedoucí tým, který vytvoří vizi a strategii změny a vizi sdílí. Následuje delegování pravomocí, sdílení prvních úspěchů a vytrvání v úsilí. Nakonec se změna ukotví v nové kultuře.\nChyták: Nová kultura je až poslední krok, změna se do kultury zapisuje, když už funguje. Vedoucí tým nemůže být první, dokud lidé necítí naléhavost."
     },
     {
       "q": "Jaké jsou typy intrapersonálních konfliktů?",
@@ -1256,7 +1774,12 @@
         "Konflikt dvou kladných sil.",
         "Konflikt dvou záporných sil."
       ],
-      "correct": [1, 3, 4]
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Intrapersonální konflikt probíhá uvnitř jednoho člověka. Kurt Lewin ho popsal jako střet sil, které člověka k cíli táhnou nebo od něj odpuzují.\nProč: Konflikt dvou kladných sil nastane, když volím mezi dvěma lákavými možnostmi. Konflikt dvou záporných sil je volba mezi dvěma nepříjemnými možnostmi. Konflikt kladné a záporné síly vzniká, když má jeden cíl lákavou i odpudivou stránku.\nChyták: Konflikt mezi skupinami je meziskupinový, ne intrapersonální. Konflikt tří kladných sil Lewin jako typ neuvádí."
     },
     {
       "q": "Co znamená heuristika?",
@@ -1267,7 +1790,10 @@
         "Výběr variant.",
         "Technika přímé komunikace."
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Heuristika je přístup k řešení problémů, který nehledá jediný předem daný postup. Používá zkušenost, intuici a nápady.\nProč: Heuristika je divergentní (diverzní), tedy rozbíhavá - hledá víc možných cest. Proto stojí za kreativními technikami. Výsledek není zaručený, ale umožní najít i nekonvenční řešení.\nChyták: Algoritmický přístup je opak heuristiky, postupuje podle pevných kroků k jistému výsledku. Výběr variant je jen jedna fáze rozhodování. Personifikace a přímá komunikace s heuristikou nesouvisejí."
     },
     {
       "q": "Rozhodnost je:",
@@ -1278,7 +1804,11 @@
         "je u manažerů vnímána jako profesionální schopnost",
         "schopnost samostatně vybrat řešení a nést za něj zodpovědnost"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Rozhodnost je schopnost samostatně vybrat řešení a nést za něj zodpovědnost. U manažerů se vnímá jako profesionální schopnost.\nProč: Manažer musí rozhodovat i při nejistotě a za výsledek ručí. Rozhodnost proto okolí čte jako znak profesionality. Bez ochoty nést zodpovědnost by výběr řešení nebyl rozhodností.\nChyták: Proces výběru nejlepšího rozhodnutí je rozhodování, ne rozhodnost. Ztotožnit se s řešením skupiny je loajalita nebo konformita. Rozhodnost se nemění výchovou snadno, je poměrně stálá."
     },
     {
       "q": "Alternativní otázka:",
@@ -1289,7 +1819,10 @@
         "Je vhodná k ujasnění a pochopení",
         "Vytváří možnost určitého výběru"
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Technika kladení otázek pomáhá řídit rozhovor. Každý typ otázky má jiný účel, například otevřená, uzavřená, alternativní nebo shrnující.\nProč: Alternativní otázka nabízí dvě nebo více konkrétních možností, například \"Hodí se vám úterý, nebo středa?\". Druhá strana tak vybírá z nabídky. Otázka tím vytváří možnost určitého výběru a posouvá rozhovor k dohodě.\nChyták: Shrnutí a vedení k rozhodnutí popisuje shrnující otázku. Rozmluvení posluchače je úkol otevřené otázky. Ujasnění a pochopení slouží otázka kontrolní neboli objasňující."
     },
     {
       "q": "Prokrastinace je: (bez záruky)",
@@ -1300,7 +1833,11 @@
         "vědomé snižování osobní výkonnostní laťky",
         "nechuť zvyšovat úsilí a pracovní morálku"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Prokrastinace je chorobné odkládání pracovních úkolů a povinností. Předmět ji označuje jako synonymum \"studentova syndromu\".\nProč: Studentův syndrom popsal Eliyahu Goldratt. Student začne pracovat až těsně před termínem, i když měl času dost. Stejně funguje prokrastinace: úkol se opakovaně odkládá, ačkoli to člověku škodí.\nChyták: Ztráta času je následek prokrastinace, ne její definice. Vědomé snižování laťky ani nechuť zvyšovat úsilí nejsou odkládání úkolů."
     },
     {
       "q": "Zpětná vazba musí:",
@@ -1311,7 +1848,12 @@
         "být vztažená k chování a postojům",
         "být poskytnuta s časovým odstupem"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Zpětná vazba je informace o tom, jak druhý člověk pracuje nebo jedná. Má mu pomoct se zlepšit.\nProč: Zpětná vazba je orientovaná na budoucnost, protože jejím cílem je změna, ne trest za minulost. Musí být věcná a konkrétní, jinak člověk neví, co změnit. Vztahuje se k chování a postojům, ne k osobnosti.\nChyták: Zpětná vazba má přijít co nejdřív po události, s časovým odstupem ztrácí účinek. Předjímat reakci druhé strany zpětnou vazbu zkresluje, má se naopak naslouchat."
     },
     {
       "q": "„Sociální facilitace\" znamená, že:",
@@ -1322,7 +1864,12 @@
         "jde o jev opačný k sociální inhibici",
         "dochází k rozptýlení odpovědnosti členů pracovní skupiny"
       ],
-      "correct": [1, 2, 3]
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Sociální facilitace je jev, kdy pouhá přítomnost dalších lidí zvyšuje výkon jedince. Popsal ho Norman Triplett a vysvětlil Robert Zajonc.\nProč: Přítomnost druhých zvyšuje aktivaci, a tím výkon u jednoduchých a zvládnutých úkolů. Proto je výhodné, když členové skupiny pracují společně. Opačným jevem je sociální inhibice, kdy přítomnost druhých výkon snižuje.\nChyták: Pokles výkonu v přítomnosti druhých je sociální inhibice. Rozptýlení odpovědnosti patří k sociální lenosti a efektu přihlížejících, ne k facilitaci."
     },
     {
       "q": "Mezi zásady efektivní porady patří, k.j.:",
@@ -1333,7 +1880,13 @@
         "rovné příležitosti k vyjádření",
         "dodržování programu a harmonogramu"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Efektivní porada má jasný cíl, program a závazné závěry. Zásady vedení porady stanovují, jak toho dosáhnout.\nProč: Jasný cíl říká, proč se lidé scházejí. Dodržování programu a harmonogramu hlídá čas. Výstižná, stručná a otevřená komunikace zabrání zbytečnému zdržování. Rovné příležitosti k vyjádření zajistí, že zazní názory všech, nejen nejhlasitějších.\nChyták: Nejednoznačné závěry jsou naopak typická chyba porad. Každý bod má skončit jasným závěrem, kdo co a do kdy udělá."
     },
     {
       "q": "Šumy v komunikaci:",
@@ -1344,7 +1897,13 @@
         "Mohou vznikat z vnějších příčin.",
         "Mohou být dané osobní zkušeností a rozdíly ve vzdělání."
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Šum je cokoli, co v komunikačním procesu ruší přenos sdělení mezi odesílatelem a příjemcem.\nProč: Šum ztěžuje porozumění, protože sdělení dorazí zkreslené. Může mít vnější příčiny, třeba hluk nebo špatné spojení. Může vzniknout i z rozdílné zkušenosti a vzdělání, kdy si příjemce slova vyloží jinak. Malý šum ale nemusí být závažný problém, pokud sdělení projde.\nChyták: Šumy nejde vždy zcela odstranit. Dají se jen omezit, například zpětnou vazbou, která ověří, že si strany rozumí."
     },
     {
       "q": "Manažer by měl pro zajištění motivovanosti členů týmu:",
@@ -1355,7 +1914,14 @@
         "Měřit a hodnotit výkony — individuální i skupinové.",
         "Hodnotit výkon pravidelně."
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Motivační klima je prostředí v týmu, které podporuje ochotu lidí podávat výkon. Za jeho vytváření odpovídá manažer.\nProč: Pozitivní klima posiluje vnitřní motivaci. Pomoc zaostávajícím ukazuje, že manažerovi na lidech záleží. Nízký výkon se má řešit hned, jinak se problém rozšíří. Pravidelné měření a hodnocení individuálních i skupinových výkonů dává lidem zpětnou vazbu a pocit spravedlnosti.\nChyták: Platí všech pět možností. Každá řeší jinou stránku motivace - klima, podporu, nápravu, měření a pravidelnost hodnocení."
     },
     {
       "q": "Skupinové rozhodování je výhodné, protože:",
@@ -1366,7 +1932,13 @@
         "členové týmu si mohou navzájem korigovat názory",
         "v týmu existují koalice"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Skupinové rozhodování znamená, že o řešení rozhoduje víc lidí společně. Má výhody i nevýhody, třeba skupinové myšlení.\nProč: Ve skupině se sejde víc informací a zkušeností než u jednotlivce. Techniky jako brainstorming pomáhají najít nekonvenční řešení. Společná práce lidi motivuje a zvyšuje přijetí rozhodnutí. Členové si navzájem korigují názory, a tím snižují chyby.\nChyták: Koalice v týmu jsou spíš nevýhoda. Vedou k prosazování dílčích zájmů a mohou rozhodnutí zablokovat."
     },
     {
       "q": "Mezi pět stylů zvládání konfliktů patří:",
@@ -1376,7 +1948,12 @@
         "Kosmetický styl.",
         "Kooperativní styl."
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Pět stylů zvládání konfliktů vychází z modelu Thomase a Kilmanna. Styly se liší mírou sebeprosazení a mírou spolupráce.\nProč: Únikový styl se konfliktu vyhne. Kompromisní styl hledá oboustranné ústupky. Kooperativní styl hledá řešení výhodné pro obě strany. Zbývající dva styly jsou soupeřivý a přizpůsobivý.\nChyták: Kosmetický styl mezi pět stylů nepatří. Název zní věrohodně, ale v modelu žádný takový styl není."
     },
     {
       "q": "Mezi fáze efektivního vedení hovoru patří: (bez záruky)",
@@ -1387,7 +1964,12 @@
         "Analytická fáze",
         "Syntetická fáze"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Efektivní vedení hovoru, třeba pohovoru se zaměstnancem, má podle předmětu několik fází. Patří k nim vstupní, analytická a bilanční fáze.\nProč: Ve vstupní fázi se navazuje kontakt a vysvětluje účel hovoru. V analytické fázi se zjišťují fakta a příčiny. V bilanční fázi se shrnuje, co se dohodlo, a určí další kroky.\nChyták: Syntetická fáze zní jako logický protějšek analytické, ale do členění předmětu nepatří. Objektivistická fáze neexistuje."
     },
     {
       "q": "Gemba je:",
@@ -1398,7 +1980,11 @@
         "technika řízení „Managing by Remote Control\"",
         "porada s přímými podřízenými"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Gemba je japonský výraz pro \"skutečné místo\", tedy místo, kde se tvoří hodnota. Pochází z lean managementu (Toyota).\nProč: Gemba znamená, že manažer chodí za zaměstnanci přímo tam, kde pracují. Problémy vidí na vlastní oči, ne z hlášení. Proto odpovídá technice Managing by walking around, kterou proslavila firma Hewlett-Packard.\nChyták: Managing by Objectives je řízení podle cílů, ne návštěva pracoviště. Managing by Remote Control je řízení na dálku, tedy opak gemby. Porada s podřízenými probíhá mimo místo výkonu práce."
     },
     {
       "q": "Konfrontace v rámci vývoje týmu: (bez záruky)",
@@ -1409,7 +1995,11 @@
         "je nezbytnou součástí tvorby, resp. rozvoje týmu",
         "by měla proběhnout co nejdříve po sestavení týmu"
       ],
-      "correct": [0, 3]
+      "correct": [
+        0,
+        3
+      ],
+      "info": "Pojem: Konfrontace (storming) je druhá fáze vývoje týmu podle Bruce Tuckmana. Následuje po formování a před normováním.\nProč: Členové se střetávají v názorech a hledají své místo. Tím vzniká neformální vůdce a rozdělují se role. Bez této fáze tým nedospěje k vlastním normám, proto je nezbytnou součástí vývoje.\nChyták: Konfrontace neznamená střet týmu s požadavky okolí, ale střet členů mezi sebou. Nemá se uspěchat hned po sestavení týmu, přichází přirozeně po fázi formování."
     },
     {
       "q": "Měkké vyjednávání spočívá v: (bez záruky)",
@@ -1420,7 +2010,11 @@
         "Získání výhody na úkor druhé strany za každou cenu",
         "Neústupnosti od předem stanoveného minimálního zisku"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Měkké vyjednávání je styl, kterému jde hlavně o dohodu a dobrý vztah s druhou stranou. Opakem je tvrdé vyjednávání.\nProč: Měkký vyjednavač je ochoten ustoupit, proto směřuje ke kompromisu. I měkké vyjednávání ale potřebuje přípravu. Vyjednavač si předem stanoví cíle a strategii, aby věděl, kam až může ustoupit.\nChyták: Získat výhodu za každou cenu a neustoupit od minimálního zisku je tvrdé vyjednávání. Spontánní reakce bez přípravy je chyba každého stylu vyjednávání."
     },
     {
       "q": "Delegování je charakterizováno následovně:",
@@ -1431,7 +2025,11 @@
         "přináší prospěch manažerům i zaměstnancům",
         "je založené na důvěře, ale i na kontrole"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Delegování je předání úkolu a odpovědnosti podřízenému na základě rozhodnutí manažera. Patří k nejobtížnějším manažerským úkolům.\nProč: Manažer získá čas na koncepční práci a podřízení se rozvíjejí a cítí ocenění. Prospěch mají tedy obě strany. Delegování stojí na důvěře, ale manažer musí výsledky kontrolovat, protože konečnou odpovědnost nese on.\nChyták: Delegování není jen zadání úkolu, zahrnuje i pravomoci, podporu a kontrolu. Manažer jím svou autoritu nesnižuje. Delegovat se nemá jen nepříjemná administrativa."
     },
     {
       "q": "Rozhodovací proces začíná:",
@@ -1442,7 +2040,10 @@
         "výběrem kritérií",
         "výběrem variant"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Rozhodovací proces je sled kroků od rozpoznání problému po kontrolu výsledků. Prvním krokem je identifikace a zhodnocení rozhodovací situace.\nProč: Než manažer začne hledat řešení, musí vědět, co se děje a proč je třeba rozhodovat. Zhodnocení situace zahrnuje sběr a analýzu informací. Bez něj by další kroky stály na neznámém problému.\nChyták: Výběr kritérií, tvorba a posouzení variant přicházejí až po analýze problému. Realizace varianty je téměř na konci procesu, před monitorováním a kontrolou."
     },
     {
       "q": "Neverbální komunikace:",
@@ -1453,7 +2054,11 @@
         "tvoří podstatnou část informací, které z komunikace získáváme",
         "slouží obvykle k prezentování pocitů, emocí a postojů"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Neverbální komunikace je sdělování beze slov, například mimikou, gesty, postojem nebo vzdáleností. Podle Alberta Mehrabiana tvoří slova jen asi 7 % sdělení.\nProč: Zbytek nese tón hlasu (38 %) a řeč těla (55 %), takže neverbální složka dává podstatnou část informací. Tělo prozradí hlavně pocity, emoce a postoje, které slovy často nevyslovíme.\nChyták: Neverbální komunikace nefunguje jen tváří v tvář, tón hlasu slyšíme i v telefonu. Neuplatňuje se jen při cizí řeči, je přítomná v každé komunikaci. Marginální část informací tvoří naopak slova."
     },
     {
       "q": "Hlavní rozdíl manažera od lídra je v tom, že manažer:",
@@ -1464,7 +2069,12 @@
         "realizuje změnové programy",
         "dává lidem pravidelnou zpětnou vazbu"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "info": "Pojem: Manažer a lídr jsou dvě role. Manažer zajišťuje řád, plánování a kontrolu. Lídr dává směr, vizi a inspiraci.\nProč: Pravidelné porady a pravidelná zpětná vazba patří k řízení každodenního provozu, tedy k manažerovi. Podle předmětu manažer také realizuje změnové programy - převádí změnu do konkrétních kroků.\nChyták: Vymýšlet strategickou vizi a motivovat lidi k následování je typická role lídra. Manažer se nezajímá jen o koncepční práci, většinu času řídí operativu.\nRozpor: Podle testu realizuje změnové programy manažer. Podle Johna Kottera se manažer stará o stabilitu a změnu vede lídr. U zkoušky odpověz podle testu."
     },
     {
       "q": "Menší rozhodnost manažera:",
@@ -1475,7 +2085,12 @@
         "Může být někdy kompenzována rozhodností jeho pracovního týmu.",
         "Může někdy být kompenzována delegováním úkolu."
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "info": "Pojem: Rozhodnost je schopnost samostatně zvolit řešení a nést za něj zodpovědnost. U manažera se očekává jako profesionální schopnost.\nProč: Nerozhodný manažer zdržuje práci a ztrácí autoritu, proto se menší rozhodnost vnímá spíš negativně. Slabinu ale může vyrovnat rozhodný tým. Pomůže i delegování, kdy rozhodnutí převezme kompetentní podřízený.\nChyták: Podřízení nerozhodnost nečtou jako solidaritu, ale jako slabost. V autokratických organizacích se rozhodnost očekává ještě víc, protože rozhoduje hlavně vedoucí."
     },
     {
       "q": "Mezi opatření proti manipulaci patří:",
@@ -1486,7 +2101,11 @@
         "Dělat si poznámky.",
         "Vítat lichotky."
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Manipulace je skryté ovlivňování, kdy manipulátor sleduje svůj zájem na úkor druhého. Bránit se jde asertivně a s pečlivostí.\nProč: Nejasná žádost je typický nástroj manipulátora, protože se pak dá vykládat, jak se mu hodí. Proto je lepší na ni nereagovat a chtít upřesnění. Poznámky dávají přehled o tom, co kdo řekl a slíbil. Manipulátor pak nemůže fakta překrucovat.\nChyták: Podrobné informace o sobě dávají manipulátorovi do ruky páky. Lichotky jsou častý manipulační nástroj. Zprostředkování přes další subjekty situaci jen zamlží."
     },
     {
       "q": "Součástmi rozhodovacího procesu jsou:",
@@ -1497,7 +2116,12 @@
         "monitorování a kontrola",
         "určení odměny za úspěšnou realizaci rozhodnutí"
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Rozhodovací proces má podle předmětu kroky od identifikace problému přes tvorbu a hodnocení variant až po realizaci a kontrolu.\nProč: Situační analýza zmapuje problém a jeho příčiny. Hodnocení důsledků variant podle kritérií umožní vybrat nejlepší variantu. Monitorování a kontrola po realizaci hlídá odchylky od cílů a spouští nápravu.\nChyták: Výběr rozhodovatelů ani určení odměny za úspěch nejsou kroky rozhodovacího procesu. Rozhodovatel je subjekt procesu, ne jeho fáze."
     },
     {
       "q": "Únikový styl zvládání konfliktů:",
@@ -1508,7 +2132,12 @@
         "vede k řešení formou kompromisu",
         "je vysoce efektivní, pokud jde o zásadní konflikty"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Únikový styl je jeden z pěti stylů zvládání konfliktů podle Thomase a Kilmanna. Člověk se konfliktu vyhne nebo ho odloží.\nProč: Únikový styl neprosazuje vlastní zájmy ani nespolupracuje, je tedy nesebeprosazovací a nekooperativní. Volí ho lidé, kteří se konfliktům vyhýbají. Hodí se tam, kde jedinec nemá moc nic změnit nebo kde je spor nedůležitý.\nChyták: Kompromis je samostatný styl, únik k žádnému řešení nevede. U zásadních konfliktů je únik neefektivní, problém zůstává a narůstá."
     },
     {
       "q": "Čím je ovlivňováno rozhodování?",
@@ -1519,7 +2148,10 @@
         "Je ovlivňováno nejen osobou rozhodovatele (jeho vůlí a hodnotovým systémem), ale i vnějšími faktory rozhodovací situace (okolnostmi).",
         "Je ovlivňováno pouze situací v týmu."
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Rozhodování ovlivňují vnitřní i vnější faktory. Vnitřní faktory jsou spojené s osobou rozhodovatele, vnější s rozhodovací situací.\nProč: Rozhodovatel vnáší do rozhodnutí svou vůli, hodnoty, zkušenost a postoj k riziku. Současně ho omezují okolnosti, třeba čas, zdroje, informace a riziko. Výsledné rozhodnutí je proto vždy kombinací obojího.\nChyták: Možnosti se slovy \"jen\" nebo \"pouze\" vybírají jediný faktor. Proto neplatí ani osoba rozhodovatele, ani vnější faktory samotné. Styl přesvědčování a situace v týmu jsou jen dílčí vlivy."
     },
     {
       "q": "Rozhodování na poradách může mít následující podoby:",
@@ -1530,7 +2162,14 @@
         "autoritativní (rozhodne ten, kdo zodpovídá)",
         "konzultativní (po vyjádření skupiny rozhodne autorita)"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Na poradě se dá rozhodnout několika způsoby. Liší se tím, kdo má poslední slovo.\nProč: Delegativní rozhodnutí přenechá volbu expertovi. Jednomyslné rozhodnutí vyžaduje souhlas všech. Většinové rozhodnutí stojí na hlasování. Autoritativně rozhodne ten, kdo nese odpovědnost. Konzultativně rozhodne autorita, ale až po vyslechnutí skupiny.\nChyták: Platí všech pět podob. Liší se rychlostí a mírou přijetí - jednomyslnost je pomalá, ale lidé rozhodnutí přijmou snáz. Autoritativní rozhodnutí je rychlé, ale méně přijímané."
     },
     {
       "q": "Agilní přístup k managementu je charakterizován následujícími tvrzeními:",
@@ -1541,7 +2180,11 @@
         "V agilním přístupu převládá důvěra nad kontrolou",
         "Agilita je běh na dlouhou trať - nepřináší rychlá řešení ani výsledky"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ],
+      "info": "Pojem: Agilní přístup řídí práci v krátkých cyklech s průběžnou zpětnou vazbou. Vychází z Agilního manifestu z roku 2001.\nProč: Agilní tým neposuzuje úspěch podle množství výstupů, ale podle hodnoty pro zákazníka. Týmy se samy organizují, proto vedení stojí na důvěře víc než na kontrole.\nChyták: Agilní tým nepracuje vždy rychleji, jen dodává hodnotu po menších částech. Agilita má jasná pravidla, třeba role a události ve Scrumu. Rychlé dílčí výsledky přináší právě díky krátkým cyklům."
     },
     {
       "q": "Autorem motivačně-hygienické teorie je:",
@@ -1552,7 +2195,10 @@
         "Taylor",
         "Addams"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Motivačně-hygienickou (dvoufaktorovou) teorii vytvořil Frederick Herzberg. Rozlišuje motivátory a hygienické faktory.\nProč: Motivátory, jako uznání, odpovědnost a smysl práce, vedou ke spokojenosti a vyššímu výkonu. Hygienické faktory, jako mzda, podmínky a vztahy, jen brání nespokojenosti. Jejich zlepšení samo lidi nemotivuje.\nChyták: Maslow je autor hierarchie potřeb. Vroom vytvořil teorii očekávání. Taylor stojí u vědeckého řízení. Addams s motivací nesouvisí."
     },
     {
       "q": "Liberální styl vedení znamená:",
@@ -1563,7 +2209,10 @@
         "Manažer akceptuje znalosti svých pracovníků a před rozhodnutím se ptá na jejich názor",
         "Manažer striktně zadává úkoly a pravidelně je kontroluje"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Klasické styly vedení jsou autoritativní, demokratický a liberální, jak je popsal Kurt Lewin. Liberální styl se označuje také jako laissez-faire.\nProč: Liberální manažer nechává pracovníky jít vlastní cestou. Do chodu skupiny nezasahuje a rozhodování přenechává jí. Hodí se pro zkušené a samostatné odborníky, jinak vede k chaosu.\nChyták: Plné zapojení do rozhodování a ptaní se na názor popisuje demokratický styl. Striktní zadávání úkolů a kontrola je autoritativní styl. Neakceptování znalostí pracovníků také patří k autoritativnímu stylu."
     },
     {
       "q": "Kooperativní strategie (výhra - výhra):",
@@ -1574,7 +2223,11 @@
         "spočívá v hledání kompromisního řešení",
         "je jednou z možných vyjednávacích strategií"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Kooperativní strategie výhra-výhra je jedna z vyjednávacích strategií. Hledá řešení, se kterým budou obě strany opravdu spokojené.\nProč: Strategie vyžaduje důvěru a otevřenou komunikaci. Vyplatí se hlavně tam, kde strany chtějí spolupracovat dlouhodobě. Dobrý vztah je pro ně cennější než jednorázová výhoda.\nChyták: Kompromis je dílčí ústupek obou stran, každá něco ztratí. Výhra-výhra hledá řešení, kde nikdo neprohrává. Strategie se v praxi používá, ale nejčastější není - převládá poziční vyjednávání."
     },
     {
       "q": "Osobní zóna je:",
@@ -1585,7 +2238,10 @@
         "Nad 30 cm.",
         "50cm-1,5m."
       ],
-      "correct": [4]
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Osobní zóna je jedna ze čtyř zón proxemiky podle Edwarda T. Halla. Je vyhrazená pro přátele, rodinu a blízké kolegy.\nProč: V předmětu má osobní zóna rozsah 50 cm až 1,5 m. Do této vzdálenosti pouštíme lidi, kterým důvěřujeme. Když do ní vstoupí cizí člověk, cítíme nepohodlí.\nChyták: Do 50 cm je intimní zóna. Více než 4 m je veřejná zóna. Rozmezí 1 až 3 m spadá zhruba do sociální zóny. Údaj \"nad 30 cm\" nemá horní hranici, takže žádnou zónu nevymezuje."
     },
     {
       "q": "Klíčová kompetence manažera obsahuje následující komponenty:",
@@ -1596,7 +2252,12 @@
         "dril, askeze a odříkání",
         "čistý trestní rejstřík"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Klíčová kompetence manažera je souhrn předpokladů, které mu umožňují podávat vynikající výkon. Skládá se ze tří komponent.\nProč: Znalosti a vědomosti dávají odborný základ. Měkké dovednosti, jako komunikace a vedení lidí, a tvrdé dovednosti, jako plánování a rozpočty, umožní znalosti použít v praxi. Postoje a hodnoty určují, jak a proč manažer jedná.\nChyták: Dril, askeze a odříkání nejsou součástí kompetence, jde o životní postoj. Čistý trestní rejstřík může být podmínkou přijetí do funkce, ne složkou kompetence."
     },
     {
       "q": "V rámci rozvoje týmu lze identifikovat:",
@@ -1607,7 +2268,10 @@
         "různý počet etap v závislosti na počtu členů týmu",
         "4 etapy (výběr členů, konfrontace, tvorba norem, výběr cílů)"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Rozvoj týmu je postupné dozrávání skupiny lidí ve funkční tým. Nejznámější model pochází od Bruce Tuckmana (forming, storming, norming, performing, adjourning).\nProč: Tým prochází pěti etapami. Při orientaci se lidé seznamují. Při konfrontaci se střetávají názory a boj o pozice. Pak tým utváří pravidla a normy. Ve fázi výkonnosti naplno plní úkoly. Poslední etapa udržení (u Tuckmana ukončení) řeší, jak výkon udržet, nebo tým rozpustit.\nChyták: Počet etap nezávisí na rolích ani na počtu členů. Model platí obecně pro každý tým. Výčty se třemi nebo čtyřmi etapami vynechávají konfrontaci nebo výkon."
     },
     {
       "q": "Efektivní porada má následující pravidlo:",
@@ -1618,7 +2282,12 @@
         "shrnujeme závěry a úkoly",
         "nezdržujeme se kontrolou úkolů"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Efektivní porada je porada, která v co nejkratším čase dojde k jasným rozhodnutím a úkolům. Stojí na přípravě, kázni a závěrech.\nProč: Včasný začátek i konec šetří čas všech a buduje respekt k pravidlům. Agenda poslaná předem umožní účastníkům se připravit. Shrnutí závěrů a úkolů na konci zajistí, že každý ví, co má udělat, kdo za to odpovídá a do kdy.\nChyták: Zabíhání do podrobností má moderátor naopak přerušit, jinak porada ztratí čas. Kontrola úkolů z minula patří na začátek porady, proto se jí nevyhýbáme."
     },
     {
       "q": "Mezi komunikační zlozvyky nepatří:",
@@ -1629,7 +2298,10 @@
         "Skákání do řeči.",
         "Mlžení a únik od tématu."
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Komunikační zlozvyky jsou návyky, které zhoršují porozumění a vztahy. Patří sem nálepkování, generalizování, skákání do řeči a mlžení.\nProč: Tón, který odpovídá obsahu, je naopak znak dobré komunikace. Neverbální a paralingvistická složka (tón, barva hlasu) pak podporuje slovní sdělení a neodporuje mu. Proto mezi zlozvyky nepatří.\nChyták: Nálepkování (\"ty jsi vždycky líný\") a zevšeobecňování (\"nikdy nic nedotáhneš\") útočí na člověka místo na věc. Skákání do řeči ukazuje nezájem. Mlžení a únik od tématu brání řešit skutečný problém. Všechny čtyři tedy zlozvyky jsou."
     },
     {
       "q": "V komunikaci může být sdělení:",
@@ -1640,7 +2312,14 @@
         "vyjádřeno neverbálně",
         "vyjádřeno verbálně"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Komunikační proces je přenos zakódovaného sdělení od odesílatele k příjemci. Příjemce ho dekóduje a odpovídá zpětnou vazbou. Přenos ruší šumy.\nProč: Sdělení může být verbální, neverbální, nebo obojí najednou. Slova nesou jen asi 7 % informací, tón hlasu 38 % a řeč těla 55 %. Komunikace je navíc oboustranná, takže každé sdělení může být reakcí na předchozí sdělení druhé strany. Šumy (hluk, emoce, předsudky) sdělení zkreslují.\nChyták: Všechny možnosti platí. Nenech se zmást tím, že verbální a neverbální vyjádření jsou uvedena zvlášť i dohromady."
     },
     {
       "q": "Mezi výhody skupinového rozhodování patří:",
@@ -1651,7 +2330,10 @@
         "Manažer při skupinovém řešení musí brát v úvahu i sociální vazby a vztahy v týmu.",
         "Členové jsou si podobní a nedochází k interakci."
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Skupinové (participativní) rozhodování je rozhodování ve skupině. Používá se hlavně u špatně strukturovaných, nových problémů.\nProč: Hlavní výhodou je, že skupina spojí různé zkušenosti, znalosti a pohledy. Jednotlivec vychází jen ze svých znalostí. Skupina proto najde víc variant a přijme objektivnější a přijatelnější rozhodnutí.\nChyták: Odborně náročný problém, kterému rozumí jen část týmu, je nevýhoda. Komunikační problémy heterogenní skupiny také. Nutnost hlídat sociální vazby je komplikace pro manažera, ne výhoda. Podobní členové bez interakce jsou riziko skupinového myšlení."
     },
     {
       "q": "Mezi techniky přímé komunikace nepatří:",
@@ -1662,7 +2344,10 @@
         "protiotázky",
         "pokažená gramofonová deska"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Techniky přímé (asertivní) komunikace pomáhají otevřeně a slušně prosadit vlastní stanovisko. Patří sem pokažená gramofonová deska, otevřené dveře, protiotázky a reakce zpětnou vazbou.\nProč: Synektika není komunikační technika. Je to intuitivní metoda tvorby variant při rozhodování, podobně jako brainstorming. Hledá nová řešení pomocí analogií a spojování nesouvisejících prvků.\nChyták: Pokažená gramofonová deska znamená klidně opakovat svůj požadavek. Otevřené dveře znamenají uznat na kritice to, co je pravdivé. Protiotázky vracejí manipulátorovi odpovědnost. Všechny tři jsou typické asertivní techniky."
     },
     {
       "q": "Jestliže účastníci porady nejsou připraveni, je možné: (bez záruky)",
@@ -1673,7 +2358,11 @@
         "Odkázat se na pravidla a zesílit důraz v hlase i v jednání.",
         "Oznámit rizika vzniklá nepřipraveností účastníků, zadat úkoly, vyjasnit sankce a pokračovat."
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Nepřipravenost účastníků je častá chyba porady. Moderátor ji musí řešit tak, aby porada přinesla výsledek a lidé se příště připravili.\nProč: Moderátor může poradu přerušit na jasně vymezený čas, aby si účastníci doplnili informace. Nebo může otevřeně pojmenovat rizika nepřipravenosti, zadat úkoly, vyjasnit důsledky a pokračovat. Obě cesty řeší problém věcně a vedou k výsledku.\nChyták: Sankce s přerušením porady trestají, ale problém neřeší. Jednací pravidla proti osobním sporům řeší jinou situaci. Zvýšený důraz v hlase přípravu nenahradí."
     },
     {
       "q": "Integrita manažera je definována jako:",
@@ -1684,7 +2373,11 @@
         "„fair play\"",
         "celistvost a jednota jeho osobnosti, dovednosti, slib, skutků, etiky a morálky"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Integrita manažera znamená, že jeho osobnost, slova a činy tvoří jeden celek. Manažer jedná čestně a předvídatelně.\nProč: Integrita je celistvost a jednota osobnosti, dovedností, slibů, skutků, etiky a morálky. Manažer dělá, co říká, a říká, co si myslí. Vystihuje to i pojem \"fair play\": hraje férově vůči podřízeným, kolegům i firmě.\nChyták: Jednat proti svědomí kvůli firemním hodnotám, nebo naopak proti firmě kvůli svědomí, je rozpor, ne integrita. Dilema věrnosti firmě nebo sobě popisuje konflikt hodnot. Integrita je stav, kdy takový rozpor nevzniká."
     },
     {
       "q": "Doteky v rámci pracovní komunikace: (bez záruky)",
@@ -1695,7 +2388,11 @@
         "jsou až na podání ruky při pozdravu, většinou ne zcela vědomé",
         "se často omezují na podání roky při pozdravu"
       ],
-      "correct": [0, 4]
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Haptika je neverbální komunikace dotekem. V pracovním prostředí je velmi omezená.\nProč: V oficiální pracovní komunikaci se doteky většinou omezují na podání ruky při pozdravu. Čím je vztah a situace neformálnější, tím je doteků víc (poplácání po rameni, objetí mezi blízkými kolegy).\nChyták: Doteky nejsou naprosto nepřípustné, podání ruky je běžné a vhodné. Ženy se mezi sebou dotýkají spíš častěji než muži. Tvrzení, že doteky jsou mimo pozdrav většinou nevědomé, klíč nepovažuje za správné, protože popisuje spíš vlastnosti neverbální komunikace obecně."
     },
     {
       "q": "Nejvyšší míra zastoupení rozhodovacích schopností by měla být:",
@@ -1706,7 +2403,10 @@
         "u jakéhokoliv typu manažerů, pokud obvykle řeší stereotypní úkoly",
         "u manažerů první linie"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Rozhodovací schopnosti jsou schopnosti řešit problémy, volit mezi variantami a nést za volbu odpovědnost. Jejich význam roste s úrovní řízení.\nProč: Top management řeší špatně strukturované problémy. Jsou nové, neopakovatelné, mají mnoho faktorů a nemají standardní postup. Jde o strategická rozhodnutí s velkým dopadem na celou firmu. Proto top manažeři potřebují nejvyšší míru rozhodovacích schopností.\nChyták: Stereotypní, dobře strukturované úkoly mají rutinní postupy. Řeší je hlavně první linie a střední management. Rozhodování je tam snazší, proto tam není potřeba nejvyšší míra těchto schopností."
     },
     {
       "q": "Mezi základní chyby na poradách patří:",
@@ -1717,7 +2417,13 @@
         "odbíhání od tématu",
         "nepřítomnost klíčových účastníků"
       ],
-      "correct": [1, 2, 3, 4]
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Chyby porad jsou nedostatky, kvůli kterým porada trvá dlouho a nepřinese rozhodnutí. Většina vzniká při přípravě.\nProč: Bez jasného programu a cíle porada nemá směr. Příliš mnoho účastníků zpomaluje diskusi, doporučuje se do 12 lidí. Odbíhání od tématu plýtvá časem. Bez klíčových účastníků nejde rozhodnout a porada se musí opakovat.\nChyták: Striktní dodržování harmonogramu není chyba. Je to naopak pravidlo efektivní porady. Chybou je nedodržení času a programu."
     },
     {
       "q": "Kooperativní styl řešení konfliktů:",
@@ -1728,7 +2434,12 @@
         "často spočívá v hledání příčin konfliktu a tvorbě alternativních řešení",
         "je vždy spojen s nutností udělat ústupky od optimálního řešení u všech zúčastněných stran konfliktu"
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Kooperativní (integrující) styl řešení konfliktů znamená spolupráci. Obě strany hledají řešení, které uspokojí zájmy všech. U Thomase a Kilmanna je to styl spolupráce.\nProč: Výsledkem je výhra - výhra, kdy nikdo neztrácí. Strany hledají příčiny konfliktu a tvoří alternativní řešení. Proto se hodí pro dlouhodobé obchodní partnery, kde chceme zachovat dobrý vztah.\nChyták: Výhra - prohra patří k dominujícímu (soutěživému) stylu. Nutnost ústupků od optimálního řešení na všech stranách popisuje kompromis. Kooperace naopak hledá řešení, které ústupky nevyžaduje."
     },
     {
       "q": "Na schůzku je vhodné přijít:",
@@ -1739,7 +2450,10 @@
         "Kdykoliv kolem stanoveného času.",
         "Se zpožděním 5 minut."
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Dochvilnost je základ profesní etikety a respektu k času druhých. Na schůzku se přichází přesně.\nProč: Přesný příchod ukazuje, že si vážíš času partnera a jednání bereš vážně. Začít včas je i první pravidlo efektivní porady. Je rozumné být na místě o pár minut dřív, ale do jednání vstoupit v domluvený čas.\nChyták: Příchod o 15 nebo 20 minut dřív partnera tlačí, protože tě musí čekat nebo se přizpůsobit. Zpoždění, i pětiminutové, je neslušné a narušuje harmonogram. \"Kdykoliv kolem stanoveného času\" není dochvilnost."
     },
     {
       "q": "Pro efektivní delegování je vhodné zvážit, zda:",
@@ -1750,7 +2464,12 @@
         "pracovník není příbuzný někoho důležitého",
         "pracovník pochopil, co je jeho úkolem"
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Delegování je předání úkolu a odpovědnosti z pracovní náplně manažera na podřízeného. Patří k nejtěžším manažerským úkolům.\nProč: Manažer zvažuje, komu deleguje. Pracovník musí mít na úkol dost času, jinak termín nestihne. Musí mít potřebné kompetence, jinak dostává úkol, na který není připraven. A musí pochopit, co se od něj čeká, jaký je termín a jaké má pravomoci.\nChyták: Koníčky ani příbuzenské vztahy s pracovním úkolem nesouvisí. Rozhodování podle nich by bylo nesystémové a neférové."
     },
     {
       "q": "Písemná komunikace v rámci vnitřní komunikace v organizaci:",
@@ -1761,7 +2480,11 @@
         "probíhá většinou formou oběžníků, e-mailů nebo oznámení na vývěskách",
         "je obvykle snadno skladovatelná"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Písemná vnitřní komunikace jsou písemná sdělení uvnitř organizace. Patří sem oběžníky, e-maily, nástěnky, intranet a sdílené disky.\nProč: Nejběžnější formou jsou oběžníky, e-maily a oznámení na vývěskách. Písemná sdělení se dají snadno uložit a archivovat, takže se k nim lze vrátit a doložit, co bylo řečeno.\nChyták: Písemnou komunikaci používají i malé firmy, třeba e-mail. Nese převážně formální informace (pokyny, oznámení). I písemná komunikace má neverbální prvky: formu, úpravu, typ písma, emotikony nebo rychlost odpovědi."
     },
     {
       "q": "Při využití nátlakové techniky partnera \"Nemám jinou možnost\": (bez záruky)",
@@ -1772,7 +2495,10 @@
         "Se partner snaží dostat druhou stranu do časového presu.",
         "Se partner snaží partnera zastrašit svou převahou."
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Nátlakové vyjednávací taktiky jsou manipulativní postupy, kterými partner tlačí druhou stranu k ústupkům. Patří sem \"Nemám jinou možnost\", zastrašování, časový nátlak, početní převaha, zatajování informací nebo blufování.\nProč: Při taktice \"Nemám jinou možnost\" partner předstírá bezmoc. Tvrdí, že ho svazují okolnosti, a snaží se druhou stranu obměkčit, aby z lítosti ustoupila.\nChyták: Zatajování informací, časový nátlak a zastrašování převahou jsou samostatné nátlakové taktiky se svými názvy. Spolupráce naopak nátlak vylučuje."
     },
     {
       "q": "Dobře vedený rozhovor:",
@@ -1783,7 +2509,12 @@
         "Je konkrétní.",
         "Neobsahuje dopředné vazby."
       ],
-      "correct": [0, 2, 3]
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Dobře vedený rozhovor je strukturovaný rozhovor s cílem. Končí dohodou, kterou obě strany chápou stejně.\nProč: Zpětná vazba hodnotí, co se stalo. Dopředná vazba (feedforward) míří do budoucna a ptá se, co a jak udělat příště. Rozhovor má jasný výstup, tedy společnou dohodu. Je konkrétní, mluví o faktech a chování, ne o dojmech.\nChyták: Hodnocení člověka vyvolává obranu a rozhovor uzavírá. Dobrý rozhovor popisuje chování, ne osobu. Rozhovor bez dopředných vazeb jen rekapituluje minulost a nevede ke zlepšení."
     },
     {
       "q": "Sociální lenost: (bez záruky)",
@@ -1794,7 +2525,11 @@
         "je často zodpovědná za výhodnost skupinové práce oproti práci jednotlivců",
         "je termín, kterým se popisuje neochota navazovat skupinové vztahy"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Sociální lenost (social loafing) je jev, kdy člověk ve skupině vynakládá menší úsilí, než kdyby pracoval sám. Jeho vklad je méně vidět a odpovědnost se rozptyluje.\nProč: Sociální facilitace výkon v přítomnosti druhých zvyšuje, sociální lenost ho ve skupině snižuje. Proto ji test označuje za protiklad facilitace. Vysvětluje, proč je výkon skupiny někdy nižší než součet výkonů jednotlivců.\nChyták: Sociální lenost nevysvětluje výhodnost skupinové práce, ale její nevýhodu. Se sociální inhibicí v protikladu není, obě výkon snižují.\nRozpor: Podle testu je sociální lenost přesným protikladem sociální facilitace. Podle sociální psychologie (Zajonc) je přesným protikladem facilitace sociální inhibice a sociální lenost je samostatný jev. U zkoušky odpověz podle testu."
     },
     {
       "q": "Skupinové myšlení je:",
@@ -1805,7 +2540,10 @@
         "Pozitivní jev, který je potvrzením dobrého manažera.",
         "Skupinová polarizace."
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Skupinové myšlení (groupthink) popsal Irving Janis. Soudržná skupina dá přednost shodě před kritickým posouzením.\nProč: Členové potlačí své pochybnosti a názory ve prospěch skupinového konsensu. Nechtějí narušit harmonii ani vybočit. Skupina pak přehlíží rizika a přijímá horší rozhodnutí.\nChyták: Skupinové myšlení není pozitivní jev ani důkaz dobrého týmu nebo manažera. Skupinová polarizace je jiný jev: skupina zaujme extrémnější postoj než jednotlivci.\nRozpor: Podle testu nevystihuje skupinové myšlení výrok, že jde o negativní jev, který by se v týmu neměl vyskytovat. Podle učebnice je to právě negativní jev a nevýhoda skupinového rozhodování, kterou má manažer omezit. U zkoušky odpověz podle testu."
     },
     {
       "q": "Vyberte správné (á) tvrzení:",
@@ -1816,7 +2554,11 @@
         "tým lze vytvořit jmenováním jeho členů a další rozvoj je zbytečný",
         "pracovní tým má formálně lépe propracovanou strukturu než pracovní skupina"
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Pracovní tým je skupina lidí s různými, ale doplňujícími se znalostmi a společným cílem. Pracovní skupina je volnější seskupení lidí, kteří pracují vedle sebe.\nProč: Tým se vyvíjí v několika etapách (orientace, konfrontace, utváření pravidel, výkonnost, udržení). Členové týmu na sobě vzájemně závisí a spolupracují na společném cíli. Proto je tým vnitřně provázanější než skupina.\nChyták: Tým nevznikne jmenováním, musí projít vývojem a potřebuje rozvoj. Více neformálních vazeb má spíš tým. Formálně propracovanější strukturu má spíš pracovní skupina, tým stojí víc na spolupráci."
     },
     {
       "q": "V rámci vývoje konfliktu:",
@@ -1827,7 +2569,11 @@
         "lze obvykle pozorovat etapu polarity",
         "obvykle není možné pozorovat žádné definovatelné etapy"
       ],
-      "correct": [2, 3]
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Vývoj konfliktu je sled fází, kterými konflikt prochází. Model Plamínka začíná homeostázou, pokračuje signály a odlišnostmi a dál eskaluje.\nProč: Konflikt má několik navazujících etap, od spouštěčů přes eskalaci a vrchol po zklidnění. Typická je etapa polarity. Problém se personifikuje a strany jednají ve stylu \"kdo z koho\".\nChyták: Racionalizace není samostatná etapa. Objevuje se až v postkonfliktním stavu jako úvahy typu \"kdyby\". Ignorování není vždy nevhodné: vyhýbavý styl se hodí u banálních sporů nebo když je potřeba nechat emoce vychladnout. Tvrzení, že konflikt nemá etapy, odporuje všem modelům."
     },
     {
       "q": "Úkolem facilitátora je:",
@@ -1838,7 +2584,10 @@
         "spíše sdělovat, než se vyptávat",
         "hlídat čas schůzky"
       ],
-      "correct": [2]
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Facilitátor je nestranný průvodce skupinovou diskusí. Řídí proces jednání, ne jeho obsah.\nProč: Facilitátor pomáhá týmu najít postup, jak dosáhnout cíle. Klade otázky, zapojuje účastníky a podporuje tvořivost. Řešení a rozhodnutí však nechává na skupině.\nChyták: Facilitátor nerozhoduje a neřeší problém na základě vlastních zkušeností, to by byl expert nebo manažer. Víc se ptá, než sděluje.\nRozpor: Podle testu hlídání času schůzky k úkolům facilitátora nepatří. Podle učebnice facilitátor řídí průběh diskuse a dbá i na její časový průběh. U zkoušky odpověz podle testu."
     },
     {
       "q": "Rysy úspěšné týmové práce jsou např.:",
@@ -1849,7 +2598,13 @@
         "specifický systém odměn a trestů uvnitř týmu",
         "společný cíl, resp. cíle všech členů týmu"
       ],
-      "correct": [0, 1, 2, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Úspěšná týmová práce je spolupráce, ve které tým dosáhne víc než jednotlivci samostatně. Stojí na společném cíli a dobrých vztazích.\nProč: Synergický efekt znamená, že výsledek týmu je větší než součet výkonů jednotlivců. Dělba práce využije různé, doplňující se dovednosti členů. Neformální vztahy posilují důvěru a otevřenou komunikaci. Společný cíl drží tým pohromadě a dává práci směr.\nChyták: Specifický systém odměn a trestů uvnitř týmu není rys týmové práce. Odměňování určuje manažer a organizace, ne tým sám."
     },
     {
       "q": "Kvalitní manažer:",
@@ -1860,7 +2615,10 @@
         "nesmí nic rozhodovat bez předchozí důkladné analýzy",
         "musí mít minimálně středoškolské vzdělání"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Kvalitní manažer nemusí být největším odborníkem v týmu. Jeho úkolem je vést lidi, rozhodovat a využít znalosti specialistů.\nProč: Manažer může nerozumět okrajovým aspektům problému, na detaily má odborníky. Zásadním aspektům svého oboru ale rozumět musí. Jinak nedokáže posoudit návrhy ani nést odpovědnost za rozhodnutí.\nChyták: Nepřipustit, že něco nevím, je známka nejistoty a podkopává důvěru. Ne každé rozhodnutí vyžaduje důkladnou analýzu, rutinní problémy se řeší rychle. Kvalitu manažera neurčuje stupeň vzdělání."
     },
     {
       "q": "Týmová spolupráce je důležitá, protože:",
@@ -1871,7 +2629,10 @@
         "motivace se zvyšuje - jeden motivuje druhého",
         "tým je jako rodina, ve které se všichni mají rádi a sdílejí společné hodnoty"
       ],
-      "correct": [3]
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Týmová spolupráce je společná práce lidí na sdíleném cíli. Členové se navzájem podporují a doplňují.\nProč: Ve fungujícím týmu se lidé navzájem motivují. Úspěch a nasazení jednoho strhává ostatní. Proto týmová spolupráce zvyšuje motivaci i výkon.\nChyták: Víc lidí na jednom úkolu samo o sobě nic nepřináší. Schopnost spolupráce není vrozená, učí se. Tým není rodina, kde se všichni mají rádi. Potřebuje i zdravé konflikty.\nRozpor: Podle testu důvodem důležitosti týmové spolupráce není společná pozitivní synergie. Podle učebnice je synergický efekt hlavním přínosem týmové práce. U zkoušky odpověz podle testu."
     },
     {
       "q": "Manažer se zaměřuje spíše na:",
@@ -1882,7 +2643,11 @@
         "koučink a facilitaci, než na kontrolu úkolů",
         "budoucnost, než současnost"
       ],
-      "correct": [1, 2]
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Manažer a leader (lídr) se liší zaměřením. Manažer spravuje systém a zajišťuje plnění úkolů, lídr inspiruje a vede ke změně.\nProč: Manažer se zaměřuje na stabilitu, pořádek a fungující procesy. Rozhoduje spíš na základě logiky a analýzy dat. Řeší současnost, krátkodobé cíle a kontrolu.\nChyták: Charisma, změna, intuice, budoucnost a koučink jsou typické rysy lídra. Manažer se naopak opírá o formální autoritu a kontrolu úkolů."
     },
     {
       "q": "Technikou vyjednávání je:",
@@ -1893,7 +2658,14 @@
         "tzv. distributivní vyjednávání",
         "tzv. integrativní vyjednávání"
       ],
-      "correct": [0, 1, 2, 3, 4]
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Techniky a taktiky vyjednávání jsou postupy, kterými strany prosazují své zájmy. Zahrnují strategie, styly i manipulativní taktiky.\nProč: Distributivní vyjednávání dělí pevný \"koláč\", co jeden získá, druhý ztratí. Integrativní vyjednávání hledá výhru - výhru. Nejlepší alternativa (BATNA) určuje, kdy od jednání odejít. Minimální alternativa určuje spodní hranici, kterou ještě přijmeme. Sarkasmus a zahlcování nepodstatnými informacemi jsou manipulativní taktiky, které partnera znejistí nebo zmatou.\nChyták: Všechny možnosti platí, i když první dvě jsou neférové.\nRozpor: Podle testu jsou sarkasmus a zahlcování informacemi vyjednávací techniky. Podle učebnice mezi pojmenované taktiky nepatří, sarkasmus je spíš komunikační chyba. U zkoušky odpověz podle testu."
     },
     {
       "q": "Týmová spolupráce:",
@@ -1904,7 +2676,11 @@
         "není možná, pokud mají spolupracovat lidé různých charakterů či odborností",
         "se vyznačuje zcela bezkonfliktní komunikací"
       ],
-      "correct": [0, 1]
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Týmová spolupráce je koordinovaná práce lidí na společném cíli. Členové se doplňují znalostmi a dovednostmi.\nProč: Díky synergii bývá týmová práce pro firmu výhodnější než práce izolovaných jedinců. Základem je společný cíl, bez něj vzniká jen skupina lidí vedle sebe.\nChyták: Tým potřebuje i odměny a další motivaci, spolupráce sama nestačí. Různé povahy a odbornosti jsou naopak výhoda (Belbinovy role se doplňují). Tým není bezkonfliktní. Konflikty patří k vývoji týmu, například k fázi konfrontace."
     },
     {
       "q": "Jednotlivé role v týmu:",
@@ -1915,7 +2691,11 @@
         "mohou být předem formálně definovány",
         "bývají předem formálně definovány"
       ],
-      "correct": [3, 4]
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Role v týmu je typický způsob, jak člověk v týmu přispívá a jedná. Rozlišujeme formální role (funkce, odpovědnost) a týmové role podle povahy (Belbin).\nProč: Role mohou být předem formálně definovány a v pracovních týmech obvykle bývají: vedoucí, specialista, zapisovatel. Vedle nich vznikají neformální role podle osobnosti členů.\nChyták: Slova \"musí\" a \"nesmí\" jsou příliš absolutní. Formální definice rolí není povinná ani zakázaná. \"Nebývají\" odporuje praxi, kde se role běžně určují."
     },
     {
       "q": "Mezi druhy porad nepatří:",
@@ -1926,7 +2706,10 @@
         "Operativní porada.",
         "Informativní porada."
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Porady se dělí podle několika kritérií: periodicity (pravidelné, nepravidelné), formálnosti, účelu (informativní, řešitelské, operativní, kontrolní, krizové) a připravenosti.\nProč: Klíč považuje formální poradu za druh, který mezi porady nepatří. Chápe ji jako \"poradu pro poradu\", která nemá skutečný účel a jen formálně plní povinnost se sejít.\nChyták: Řešitelská porada hledá řešení problému. Operativní koordinuje aktuální úkoly. Informativní předává informace. Motivační má povzbudit tým.\nRozpor: Podle testu formální porada mezi druhy porad nepatří. Podle učebnice se porady z hlediska formálnosti dělí právě na formální (s pevným programem a harmonogramem) a neformální. U zkoušky odpověz podle testu."
     },
     {
       "q": "Mezi formy komunikace patří:",
@@ -1937,7 +2720,12 @@
         "neverbální komunikace",
         "komunikace činem"
       ],
-      "correct": [2, 3, 4]
+      "correct": [
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Formy komunikace popisují, jakým způsobem sdělení předáváme. Rozlišujeme verbální komunikaci, neverbální komunikaci a komunikaci činem.\nProč: Verbální komunikace používá slova, mluvená i psaná. Neverbální komunikace používá mimiku, gesta, postoj, vzdálenost, dotek a tón hlasu. Komunikace činem znamená, že sdělení nese samotné jednání. Manažer například ukáže hodnoty vlastním příkladem.\nChyták: \"Komunikace pasivitou\" a \"skrytá komunikace\" nejsou ustálené formy komunikace. Nečinnost se dá vyložit jako sdělení, ale do klasického dělení nepatří."
     },
     {
       "q": "Ishikavův diagram (graf) se objevuje v literatuře i pod názvy:",
@@ -1948,7 +2736,11 @@
         "diagram příčin a následků",
         "diagram předpokladů"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ],
+      "info": "Pojem: Ishikawův diagram je nástroj kauzální analýzy. Navrhl ho Kaoru Ishikawa a pomáhá systematicky najít možné příčiny problému.\nProč: Říká se mu diagram příčin a následků, protože vede od následku (problému) k jeho příčinám. Podle tvaru se mu říká i diagram rybí kosti. Hlava ryby je problém a kosti jsou skupiny příčin (lidé, metody, stroje, materiál).\nChyták: Rozhodovací diagram nebo strom slouží k volbě mezi variantami, ne k hledání příčin. \"Diagram důsledků a problémů\" a \"diagram předpokladů\" jsou vymyšlené názvy."
     },
     {
       "q": "Mezi nevýhody skupinového rozhodování patří:",
@@ -1959,7 +2751,12 @@
         "v rámci skupiny existují sociální vazby",
         "neobjektivnost, pokud je skupina příliš homogenní"
       ],
-      "correct": [0, 1, 4]
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "info": "Pojem: Skupinové (participativní) rozhodování přináší víc pohledů, ale má i nevýhody. Patří k nim časová a koordinační náročnost, dominance jednotlivců a skupinové myšlení.\nProč: Skupina potřebuje čas na diskusi a dosažení shody, proto je rozhodování pomalejší. V homogenní skupině lidé snáz potlačí odlišné názory a podlehnou skupinovému myšlení. Rozhodnutí pak bývá neobjektivní, protože chybí kritický pohled zvenčí.\nChyták: Nemožnost určit autora nápadu není nevýhoda, autorství není cílem rozhodování. Sociální vazby existují v každé skupině a samy nevýhodou nejsou, problémem jsou až personální konflikty."
     },
     {
       "q": "Asertivní komunikace:",
@@ -1970,7 +2767,11 @@
         "je obvykle součástí běžné komunikace",
         "je použitelná pro zdravé sebeprosazování"
       ],
-      "correct": [1, 4]
+      "correct": [
+        1,
+        4
+      ],
+      "info": "Pojem: Asertivita je schopnost prosadit své zájmy a názory otevřeně, přiměřeně a bez agrese. Stojí mezi pasivním a agresivním jednáním.\nProč: Asertivní komunikace je otevřená a pomáhá bránit se manipulaci, například technikami pokažené gramofonové desky nebo otevřených dveří. Slouží ke zdravému sebeprosazování, které respektuje práva druhých.\nChyták: Technika se jmenuje pokažená gramofonová (poškrábaná) deska, ne \"pokažený výtah\". Asertivita neslouží k prosazení všech požadavků. Člověk má i právo nechovat se asertivně a umět ustoupit. Asertivita není běžnou součástí komunikace, je potřeba se ji učit."
     },
     {
       "q": "Interní koučink:",
@@ -1981,7 +2782,11 @@
         "pomáhá k rozvoji koučovaných zaměstnanců",
         "je situace, kdy kouč přijede přímo do podniku"
       ],
-      "correct": [1, 3]
+      "correct": [
+        1,
+        3
+      ],
+      "info": "Pojem: Koučink je individuální metoda rozvoje zaměstnance. Manažer nebo kouč ho podporuje, vede a pomáhá mu řešit pracovní problémy. Interní koučink probíhá uvnitř firmy, vede ho manažer v roli kouče nebo interní kouč.\nProč: Koučink pomáhá rozvoji koučovaných zaměstnanců, protože průběžně rozvíjí jejich schopnosti a samostatnost. Pro manažera je náročnější než příkaz nebo delegování. Musí se ptát, naslouchat a vést člověka k řešení.\nChyták: Příjezd kouče do podniku nebo cesta manažera za koučem popisují externí koučink.\nRozpor: Podle testu interní koučink neaplikuje manažer v každodenní praxi. Podle učebnice je koučink právě metoda, kterou manažer průběžně používá při vedení svých lidí. U zkoušky odpověz podle testu."
     },
     {
       "q": "Mezi chyby v aktivním naslouchání patří:",
@@ -1992,7 +2797,11 @@
         "Koncentrace na více informací.",
         "Angažovanost."
       ],
-      "correct": [0, 2]
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Aktivní naslouchání jsou slovní a mimoslovní projevy, kterými posluchač povzbuzuje řečníka. Ukazuje tím zájem a porozumění.\nProč: Netečnost znamená, že posluchač neprojevuje zájem, nereaguje a nedívá se do očí. Řečník pak cítí, že ho nikdo neposlouchá. Nadřazenost posluchače znamená, že posluchač dává najevo, že ví víc, poučuje nebo převádí řeč na sebe. Obojí komunikaci blokuje.\nChyták: Soustředění, koncentrace na informace a angažovanost jsou naopak předpoklady aktivního naslouchání, ne jeho chyby."
     },
     {
       "q": "Vertikální komunikační kanál:",
@@ -2003,7 +2812,10 @@
         "bývá používán převážně pro neformální sdělení",
         "je v organizaci vždy pouze sestupný (od nadřízených k podřízeným)"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Komunikační kanály popisují, kudy v organizaci tečou informace. Rozlišujeme vertikální, laterální (horizontální) a diagonální kanál.\nProč: Vertikální kanál vede mezi úrovněmi hierarchie. Je sestupný (od nadřízených dolů: pokyny, cíle) i vzestupný (od podřízených nahoru: hlášení, zpětná vazba, podněty).\nChyták: Komunikace mezi pracovníky na stejné úrovni je laterální, ne vertikální. Vertikální kanál není jen sestupný. Vertikální kanál je formální a vedení ho podporuje, slouží hlavně k formálním sdělením."
     },
     {
       "q": "Mezi jednotlivé fáze vyjednávacího procesu patří:",
@@ -2014,7 +2826,13 @@
         "příprava",
         "návrh"
       ],
-      "correct": [0, 2, 3, 4]
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Vyjednávací proces je komunikace, která se pohybuje kupředu i zpět s cílem dojít ke společnému rozhodnutí. Test ho dělí na přípravu, návrh, diskuzi a dohodu.\nProč: V přípravě si strany vyjasní cíle, informace a svou nejlepší alternativu (BATNA). Pak předloží návrh. V diskuzi si vymění argumenty, zjišťují zájmy a hledají ústupky. Proces vrcholí dohodou, která jednání uzavírá.\nChyták: Ukončení zní jako přirozená poslední fáze, samostatnou fází ale není. Jednání uzavírá dohoda, případně přerušení, kolaps nebo nedohoda - to jsou výsledky vyjednávání, ne jeho fáze."
     },
     {
       "q": "Pokud je jako styl vedení užíván styl participativní:",
@@ -2025,7 +2843,12 @@
         "Manažer svolává členy týmu, aby jim oznámil své rozhodnutí.",
         "Manažer vysvětluje skupině své záměry a situaci."
       ],
-      "correct": [1, 2, 4]
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Participativní styl vedení zapojuje členy týmu do rozhodování. Patří k Likertovým stylům (autoritativní, benevolentní, konzultativní, participativní).\nProč: Manažer vysvětluje skupině své záměry a situaci, aby lidé rozuměli souvislostem. Členové skupiny se podílejí na rozhodování. Manažer vítá kritiku svého postupu, protože ji bere jako cenný podnět.\nChyták: Odmítání kritiky a svolání týmu jen kvůli oznámení hotového rozhodnutí patří k autoritativnímu stylu. V modelu Tannenbauma a Schmidta je to první stupeň, kdy manažer rozhoduje sám."
     },
     {
       "q": "Optimální velikost týmu:",
@@ -2036,7 +2859,10 @@
         "je 15 - 30 členů",
         "je minimálně osm členů, aby bylo možné „obsadit\" všechny týmové role"
       ],
-      "correct": [0]
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Velikost týmu ovlivňuje jeho efektivitu. Malý tým nemá dost znalostí a velký tým se špatně koordinuje.\nProč: Optimální velikost týmu je obvykle 5 až 15 členů. Tým je dost velký, aby pokryl potřebné dovednosti a role. Zároveň je dost malý pro přímou komunikaci a rychlou dohodu. Nad touto hranicí klesá efektivita a roste sociální lenost.\nChyták: Přesné číslo 12 je příliš úzké, optimum je rozmezí. 15 až 30 členů je už příliš. Týmových rolí podle Belbina je devět, ale jeden člověk může zastávat víc rolí. Proto není potřeba osm nebo víc členů."
     },
     {
       "q": "V rámci proxemiky rozlišujeme následující typy zón:",
@@ -2047,7 +2873,12 @@
         "Veřejná zóna.",
         "Obecná zóna."
       ],
-      "correct": [0, 1, 3]
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Proxemika je neverbální komunikace vzdáleností mezi lidmi. Zóny popsal antropolog Edward T. Hall.\nProč: Rozlišují se čtyři zóny. Intimní zóna (do 50 cm) je pro nejbližší osoby. Osobní zóna (50 cm až 1,5 m) je pro přátele a blízké kolegy. Sociální zóna (zhruba 1,5 až 4 m) je pro formální a pracovní jednání. Veřejná zóna (nad 4 m) je pro projevy a přednášky. Hall původně uváděl o něco menší hranice (45 cm, 1,2 m a 3,6 m).\nChyták: Speciální a obecná zóna neexistují. Jsou to vymyšlené názvy, které se mají plést s osobní a sociální zónou."
     },
     {
       "q": "Pro kvalitní prezentaci je vhodné:",
@@ -2058,7 +2889,10 @@
         "používat sarkasmus",
         "poskytovat komplexní řešení"
       ],
-      "correct": [1]
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Kvalitní prezentace sděluje v daném čase potřebné informace a přizpůsobí se publiku. Stojí na přípravě, kontaktu s posluchači a srozumitelnosti.\nProč: Prezentující má naslouchat publiku. Sleduje jeho reakce, odpovídá na otázky a zapojuje posluchače do diskuse. Tím udrží pozornost a ověří, že sdělení dorazilo.\nChyták: Ironie a sarkasmus publikum zraňují a odcizují. Komplexní řešení posluchače zahlcuje, nejčastější chybou je právě přemíra informací. Bonton je samozřejmý předpoklad slušného vystoupení, ale klíč ho nepovažuje za specifické doporučení pro kvalitní prezentaci."
     },
     {
       "q": "Úkolem kouče je: (bez záruky)",
@@ -2069,7 +2903,12 @@
         "pomoci realizovat potenciál a cíle koučovaného",
         "vést přátelský rozhovor s koučovaným"
       ],
-      "correct": [0, 3, 4]
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "info": "Pojem: Koučink je individuální metoda rozvoje, při které kouč podporuje koučovaného při řešení pracovních problémů a rozvoji schopností. Kouč vede, povzbuzuje a může i radit.\nProč: Úkolem kouče je pomoci koučovanému realizovat jeho potenciál a cíle. Vede s ním přátelský, důvěrný rozhovor. Do procesu může přispět vlastní zkušeností, ale řešení nechává na koučovaném. Pozor: přísnější pojetí koučinku (Whitmore) rady a vlastní zkušenosti nechává mentorovi.\nChyták: Kouč neurčuje, co má koučovaný udělat. Řešení musí najít a přijmout koučovaný sám. Otázka \"proč?\" vyvolává obranu a ospravedlňování, proto kouč volí spíš otázky \"co\" a \"jak\"."
     },
     {
       "q": "Mezi podvědomé tendence v hodnocení patři:",
@@ -2080,7 +2919,12 @@
         "vhodná komunikace",
         "porovnávání se standardy"
       ],
-      "correct": [0, 1, 2]
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Podvědomé tendence v hodnocení jsou chyby sociální percepce. Kvůli nim druhé hodnotíme zkresleně, aniž si to uvědomujeme.\nProč: První dojem přetrvává a zbarvuje další vnímání. Sympatie nás vedou hodnotit příjemné lidi lépe. Znaky společenského postavení (oblečení, titul, auto) způsobí, že lidem přisuzujeme vlastnosti podle statusu. Dalšími tendencemi jsou kontrast, setrvačnost a porovnávání se sebou.\nChyták: Porovnávání se standardy je objektivní metoda hodnocení. Podvědomá tendence je porovnávání se sebou. Vhodná komunikace je dovednost, ne zkreslení."
     },
     {
       "q": "Delegovat úkoly by manažer měl za předpokladu:",
@@ -2091,7 +2935,13 @@
         "na nejnižší možnou míru (princip subsidiarity)",
         "že chce prověřit schopnosti podřízených"
       ],
-      "correct": [0, 1, 2, 3]
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Delegování je dočasné a účelové předání úkolu a odpovědnosti konkrétnímu podřízenému. Musí mít jasná pravidla a kontrolu.\nProč: Pracovník potřebuje včas znát pravidla, termín a čas na řešení. Potřebuje podporu, tedy zdroje, pomoc a pravomoci. Úkol musí odpovídat jeho schopnostem a pracovním předpokladům. Úkol se deleguje na nejnižší úroveň, která ho zvládne (princip subsidiarity), aby manažer měl čas na důležitější práci.\nChyták: Prověření schopností podřízených je jen vedlejší přínos delegování. Není to předpoklad, za kterého se má delegovat."
     },
     {
       "q": "Jaké jsou role v týmu? (otázka z komentářů, bez záruky)",
@@ -2102,81 +2952,294 @@
         "Rozdělovač",
         "Všudybyl"
       ],
-      "correct": [0, 2, 4]
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Týmové role popsal Meredith Belbin. Je jich devět a každá popisuje typický způsob, jak člověk v týmu přispívá.\nProč: Inovátor (plant) přináší nové, tvořivé nápady. Analytik je české označení vyhodnocovatele (monitor evaluator), který kriticky posuzuje návrhy. Všudybyl je české označení vyhledávače zdrojů (resource investigator), který navazuje kontakty mimo tým. Další role jsou koordinátor, usměrňovač, týmový pracovník, realizátor, dokončovatel a specialista.\nChyták: Syntetik a Rozdělovač nejsou Belbinovy role. Mají se plést s koordinátorem, který propojuje a rozděluje práci."
     }
   ],
   "sets": [
     {
       "name": "Prezentace",
-      "q": [39, 40, 77, 95, 186]
+      "q": [
+        39,
+        40,
+        77,
+        95,
+        186
+      ]
     },
     {
       "name": "Porady a facilitace",
-      "q": [31, 32, 64, 96, 97, 120, 146, 151, 155, 157, 166, 174]
+      "q": [
+        31,
+        32,
+        64,
+        96,
+        97,
+        120,
+        146,
+        151,
+        155,
+        157,
+        166,
+        174
+      ]
     },
     {
       "name": "Motivace, hodnocení a koučink",
-      "q": [10, 20, 48, 57, 58, 108, 122, 140, 179, 187]
+      "q": [
+        10,
+        20,
+        48,
+        57,
+        58,
+        108,
+        122,
+        140,
+        179,
+        187
+      ]
     },
     {
       "name": "Efektivní tým a spolupráce",
-      "q": [25, 35, 42, 49, 59, 60, 72, 86, 88, 89, 167, 169, 172]
+      "q": [
+        25,
+        35,
+        42,
+        49,
+        59,
+        60,
+        72,
+        86,
+        88,
+        89,
+        167,
+        169,
+        172
+      ]
     },
     {
       "name": "Asertivita a manipulace",
-      "q": [14, 15, 56, 71, 75, 134, 178]
+      "q": [
+        14,
+        15,
+        56,
+        71,
+        75,
+        134,
+        178
+      ]
     },
     {
       "name": "Neverbální komunikace",
-      "q": [43, 46, 68, 111, 131, 143, 153, 185]
+      "q": [
+        43,
+        46,
+        68,
+        111,
+        131,
+        143,
+        153,
+        185
+      ]
     },
     {
       "name": "Delegování",
-      "q": [51, 52, 78, 87, 102, 129, 158, 189]
+      "q": [
+        51,
+        52,
+        78,
+        87,
+        102,
+        129,
+        158,
+        189
+      ]
     },
     {
       "name": "Rozhovor, naslouchání, zpětná vazba",
-      "q": [4, 30, 41, 50, 116, 118, 125, 150, 161, 180]
+      "q": [
+        4,
+        30,
+        41,
+        50,
+        116,
+        118,
+        125,
+        150,
+        161,
+        180
+      ]
     },
     {
       "name": "Tým: sestavení, vývoj a role",
-      "q": [8, 27, 28, 36, 37, 85, 92, 127, 145, 164, 173, 184, 190]
+      "q": [
+        8,
+        27,
+        28,
+        36,
+        37,
+        85,
+        92,
+        127,
+        145,
+        164,
+        173,
+        184,
+        190
+      ]
     },
     {
       "name": "Styly vedení, změna a čas",
-      "q": [21, 63, 80, 81, 84, 112, 117, 126, 139, 141, 183]
+      "q": [
+        21,
+        63,
+        80,
+        81,
+        84,
+        112,
+        117,
+        126,
+        139,
+        141,
+        183
+      ]
     },
     {
       "name": "Manažer, jeho role a osobnost",
-      "q": [1, 2, 3, 7, 11, 16, 29, 62, 82, 99, 132, 144, 152, 168, 170]
+      "q": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        16,
+        29,
+        62,
+        82,
+        99,
+        132,
+        144,
+        152,
+        168,
+        170
+      ]
     },
     {
       "name": "Komunikace v organizaci",
-      "q": [5, 6, 13, 19, 24, 79, 91, 93, 101, 121, 147, 148, 159, 175, 181]
+      "q": [
+        5,
+        6,
+        13,
+        19,
+        24,
+        79,
+        91,
+        93,
+        101,
+        121,
+        147,
+        148,
+        159,
+        175,
+        181
+      ]
     },
     {
       "name": "Vyjednávání",
-      "q": [55, 66, 128, 142, 160, 171, 182]
+      "q": [
+        55,
+        66,
+        128,
+        142,
+        160,
+        171,
+        182
+      ]
     },
     {
       "name": "Skupinové rozhodování",
-      "q": [45, 54, 83, 94, 105, 123, 138, 149, 163, 177]
+      "q": [
+        45,
+        54,
+        83,
+        94,
+        105,
+        123,
+        138,
+        149,
+        163,
+        177
+      ]
     },
     {
       "name": "Rozhodování a rozhodovací léčky",
-      "q": [33, 34, 67, 73, 76, 100, 114, 115, 130, 133, 135, 137, 154]
+      "q": [
+        33,
+        34,
+        67,
+        73,
+        76,
+        100,
+        114,
+        115,
+        130,
+        133,
+        135,
+        137,
+        154
+      ]
     },
     {
       "name": "Konflikty a jejich řešení",
-      "q": [17, 22, 38, 65, 69, 70, 74, 90, 110, 113, 124, 136, 156, 165]
+      "q": [
+        17,
+        22,
+        38,
+        65,
+        69,
+        70,
+        74,
+        90,
+        110,
+        113,
+        124,
+        136,
+        156,
+        165
+      ]
     },
     {
       "name": "Kreativní techniky a delfská metoda",
-      "q": [12, 23, 61, 98, 103, 104, 106, 107, 109, 176]
+      "q": [
+        12,
+        23,
+        61,
+        98,
+        103,
+        104,
+        106,
+        107,
+        109,
+        176
+      ]
     },
     {
       "name": "Vnímání, skupinové jevy a transakční analýza",
-      "q": [9, 18, 26, 44, 47, 53, 119, 162, 188]
+      "q": [
+        9,
+        18,
+        26,
+        44,
+        47,
+        53,
+        119,
+        162,
+        188
+      ]
     }
   ],
   "openQuestions": [

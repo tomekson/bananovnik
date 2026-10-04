@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.62 (27. září 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.66 (4. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -185,6 +185,31 @@ Splněné testy se v dashboardu řadí nakonec, ostatní zůstávají v pořadí
 7. **Ověř v prohlížeči** (`python3 -m http.server 8080 --bind 127.0.0.1`, pak `http://127.0.0.1:8080`): dlaždice se správným počtem otázek a štítkem, detail s rubrikou a sadami, výběr sady dá očekávaný počet otázek, kvíz vyhodnotí správnou odpověď, simulace zkoušky losuje `exam.questionCount` otázek.
 
 Service worker drží starou verzi i na localhostu. Když se změna nezobrazí, přidej k URL parametr (`?v=2`) nebo si v prohlížeči smaž cache.
+
+---
+
+## Dotazník bez správných odpovědí (`format.type: "point-distribution"`)
+
+Typ pro sebehodnoticí dotazníky, kde se v každé sekci rozděluje pevný počet bodů a výsledkem je profil, ne skóre. První a zatím jediný je `tests/belbin.json` (Belbinův test týmových rolí). Kvízový engine se pro něj nepoužívá: `selectTest` pozná typ a otevře vlastní obrazovky `screen-survey-start`, `screen-survey` a `screen-survey-result`.
+
+| Pole | Popis |
+|---|---|
+| `format` | `{ "type": "point-distribution", "budget": 10 }`. `budget` = kolik bodů se rozdělí v každé sekci |
+| `sections` | Pole sekcí `{ "prompt": "…", "items": [{ "t": "text výroku", "role": "<id role>" }] }`. Pořadí `items` odpovídá písmenům a, b, c… ze zadání |
+| `roles` | Pole rolí `{ "id", "name", "en", "bands", "about", "strengths", "weakness" }` |
+| `roles[].bands` | Minimální body pro pásmo nízká, střední, vysoká a velmi vysoká (4 čísla). Pod první hodnotou je pásmo velmi nízká |
+| `bandLabels` | Názvy pěti pásem od nejnižšího |
+
+Vyhodnocení: body se sečtou po rolích, velmi vysoké pásmo = přirozená role, střední a vysoké = role, které student zvládne převzít, velmi nízké a nízké = role, kterým se má vyhnout. Rozdělané body i poslední výsledek drží `localStorage` pod klíčem `bananovnik-survey-<id>`.
+
+Registr: místo `questionCount` a `hasSets` dej `survey: true` a `sectionCount` (počet sekcí). Validační skript z checklistu u dotazníku kontroluje `sections.length` proti `sectionCount`:
+
+```js
+if (t.survey) { if (f.sections.length !== t.sectionCount) bad.push('sections'); }
+else if (f.questions.length !== t.questionCount) bad.push('count');
+```
+
+Před nasazením ověř klíč: v každé sekci musí mít každá role právě jeden výrok. Chyba v přepisu klíče se neprojeví chybou, jen zkresleným profilem.
 
 ---
 

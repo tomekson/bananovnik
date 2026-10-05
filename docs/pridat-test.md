@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.69 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.70 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -103,7 +103,7 @@ Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k
 "sources": {
   "ucebnice": { "label": "Učebnice", "title": "Stará: Manažerská ekonomie (2023)", "pageWord": "str." },
   "riha":     { "label": "Slidy", "title": "Říha: přednášky 2024/25", "pageWord": "slidy" },
-  "video":    { "label": "Video / audio", "title": "Videolearning Mikroekonomie, MP3 v kurzu" }
+  "video":    { "label": "Videolearning", "title": "Videolearning Mikroekonomie, MP3 v kurzu", "pageWord": "v čase" }
 },
 "sets": [ { "name": "Užitek a spotřebitel", "q": [7, 19],
             "read": [ { "src": "ucebnice", "ref": "4.1–4.2 Kardinalistická teorie užitku", "pages": "68–76" } ] } ],
@@ -113,12 +113,12 @@ Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k
 
 | Pole | Význam |
 |---|---|
-| `sources.<id>.label` | Krátký typ zdroje, zobrazí se tučně (Učebnice, Slidy, Video / audio) |
+| `sources.<id>.label` | Krátký typ zdroje, zobrazí se tučně (Učebnice, Videolearning, Slidy). Pořadí klíčů v `sources` určuje pořadí řádků: skripta, videolearning, přednáška |
 | `sources.<id>.title` | Plný název, zobrazí se jako tooltip |
-| `sources.<id>.pageWord` | Slovo před čísly stran (`str.`, `slidy`). Bez něj `str.` |
+| `sources.<id>.pageWord` | Slovo před hodnotou `pages` (`str.`, `slidy`, `v čase`). Bez něj `str.` |
 | `read[].src` | Klíč zdroje ze `sources`. Může chybět, když jde jen o poznámku |
 | `read[].ref` | Kapitola nebo téma. Dolní index přes `_X` |
-| `read[].pages` | Strany jako text (`68–76`, `79 a 82`) |
+| `read[].pages` | Strany nebo čas jako text (`68–76`, `79 a 82`, `10:30–23:00`) |
 | `read[].note` | Upozornění oranžově, např. „V učebnici není." |
 
 Kde se to ukáže: u otázky dole v kartě Teorie jako „Ke studiu" (nejdřív `read` otázky, pak `read` její sady). U vybraných sad na úvodní obrazovce předmětu a na výběru sad pro procházení. Odkazy na soubory se záměrně nezobrazují. `read` u otázky je doplňkové pole jako `info`, zadání, možnosti ani klíč nemění.

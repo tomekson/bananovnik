@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.69">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.70">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4031,13 +4031,20 @@ function questionReadItems(q) {
   if (!t || !q || !q._orig) return [];
   const orig = t.questions[q._orig - 1] || {};
   const set = (t.sets || []).find(s => (s.q || []).includes(q._orig));
-  return [...(orig.read || []), ...((set && set.read) || [])];
+  return sortRead([...(orig.read || []), ...((set && set.read) || [])]);
+}
+
+// Pořadí sekcí podle pořadí klíčů v `sources` (učebnice, videolearning, přednáška); poznámky bez zdroje první
+function sortRead(items) {
+  const keys = Object.keys((S.selectedTest && S.selectedTest.sources) || {});
+  const rank = r => r.src ? (keys.indexOf(r.src) + 1 || keys.length + 1) : 0;
+  return items.map((r, i) => ({ r, i })).sort((a, b) => rank(a.r) - rank(b.r) || a.i - b.i).map(x => x.r);
 }
 
 function setsReadHtml(idxList) {
   const sets = (S.selectedTest && S.selectedTest.sets) || [];
   return idxList.map(i => sets[i]).filter(s => s && s.read && s.read.length)
-    .map(s => `<div class="set-read">${readListHtml(s.read, 'Ke studiu · ' + s.name)}</div>`).join('');
+    .map(s => `<div class="set-read">${readListHtml(sortRead(s.read), 'Ke studiu · ' + s.name)}</div>`).join('');
 }
 
 // Info k otázce (pole `info` v JSON testu) — zobrazí se po vyhodnocení / odhalení
@@ -4114,7 +4121,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.69';
+const APP_VERSION = '9.70';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -20,14 +20,15 @@
       "title": "Stará: Manažerská ekonomie - základní kurz (VŠEM 2023)",
       "pageWord": "str."
     },
+    "video": {
+      "label": "Videolearning",
+      "title": "Videolearning Mikroekonomie (2022), 8 dílů, MP3 v kurzu",
+      "pageWord": "v čase"
+    },
     "riha": {
       "label": "Slidy",
       "title": "Říha: Manažerská ekonomie, přednášky 2024/25",
       "pageWord": "slidy"
-    },
-    "video": {
-      "label": "Video / audio",
-      "title": "Videolearning Mikroekonomie (2022), MP3 v kurzu"
     }
   },
   "glossary": [
@@ -349,6 +350,11 @@
           "src": "ucebnice",
           "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
           "pages": "140–141"
+        },
+        {
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: model s cenovým vůdcem",
+          "pages": "23:30–25:20"
         }
       ]
     },
@@ -460,7 +466,7 @@
       "info": "Pojem: Odpisy (amortizace) jsou peněžní vyjádření toho, o kolik se opotřebí kapitálové statky firmy, třeba stroje nebo budovy, za dané období.\nProč: Odpisy nahrazují opotřebený kapitál, proto se jim říká restituční (obnovovací) investice. Firma z nich získává zdroje na nákup nových strojů místo dosluhujících, a protože souvisí s výrobou, počítají se do nákladů firmy.\nChyták: Odpisy nezvyšují zásobu kapitálu, jen ji udržují na stejné úrovni. Růst zásoby kapitálu zajišťují až investice nad rámec odpisů.",
       "read": [
         {
-          "note": "Odpisy neřeší učebnice ani slidy Říha. Zkus se zeptat NotebookLM."
+          "note": "Odpisy neřeší učebnice, slidy Říha ani videolearning. Zkus se zeptat NotebookLM."
         }
       ]
     },
@@ -744,6 +750,11 @@
           "src": "ucebnice",
           "ref": "3.2.1–3.2.2 Maximální a minimální cena",
           "pages": "56–58"
+        },
+        {
+          "src": "video",
+          "ref": "díl 1 Poptávka a nabídka: maximální a minimální cena",
+          "pages": "35:00–40:00"
         }
       ]
     },
@@ -875,6 +886,11 @@
           "src": "ucebnice",
           "ref": "4.3.1 a 4.3.2 Značení MRS_C a MRS_E",
           "pages": "79 a 82"
+        },
+        {
+          "src": "video",
+          "ref": "díl 3 Spotřebitel, užitek a poptávka: mezní míra substituce",
+          "pages": "14:00–20:00"
         }
       ]
     },
@@ -1016,6 +1032,11 @@
           "src": "ucebnice",
           "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
           "pages": "140–141"
+        },
+        {
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: model s cenovým vůdcem",
+          "pages": "23:30–25:20"
         }
       ]
     },
@@ -1151,7 +1172,7 @@
       "info": "Pojem: Lernerův index měří tržní sílu firmy jako poměr (P - MC) / P, kde MC je mezní náklad - tedy o kolik cena převyšuje mezní náklad vzhledem k ceně.\nProč: V dokonalé konkurenci firma neovlivní cenu a vydělá nejvíc tam, kde se cena rovná meznímu nákladu (P = MC). Po dosazení vyjde v čitateli nula, takže index je nula.\nChyták: Kladný index patří firmám s tržní silou, třeba monopolu, kde cena mezní náklady převyšuje. V dokonalé konkurenci taková mezera neexistuje.",
       "read": [
         {
-          "note": "Lernerův index neřeší učebnice ani slidy Říha. Vysvětlení je jen v textu Teorie výše."
+          "note": "Lernerův index neřeší učebnice, slidy Říha ani videolearning. Vysvětlení je jen v textu Teorie výše."
         }
       ]
     },
@@ -1334,7 +1355,7 @@
           "src": "riha",
           "ref": "1. přednáška: hranice produkčních možností",
           "pages": "52–55",
-          "note": "V učebnici není."
+          "note": "V učebnici ani ve videolearningu není."
         }
       ]
     },
@@ -1646,6 +1667,11 @@
           "src": "ucebnice",
           "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
           "pages": "140–141"
+        },
+        {
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: model s cenovým vůdcem",
+          "pages": "23:30–25:20"
         }
       ]
     },
@@ -2046,6 +2072,11 @@
           "src": "ucebnice",
           "ref": "5.3.3 Izokosta a optimum výroby (optimální kombinace faktorů)",
           "pages": "110–112"
+        },
+        {
+          "src": "video",
+          "ref": "díl 4 Teorie firmy: izokvanta a izokosta",
+          "pages": "16:00–21:30"
         }
       ]
     },
@@ -2061,7 +2092,14 @@
       "correct": [
         4
       ],
-      "info": "Pojem: Firma maximalizující obrat chce co nejvyšší celkové příjmy, ne co nejvyšší rozdíl mezi příjmy a náklady jako firma maximalizující zisk.\nProč: Optimální objem produkce nastává tam, kde je MR (mezní příjem) nulový. Do tohoto bodu ještě každá další prodaná jednotka celkové příjmy zvyšuje, za ním by je už snižovala.\nChyták: Firma nepoužívá pravidlo MR=MC - to platí pro maximalizaci zisku. A nemusí vždy prodělávat.\nRozpor: Podle testu platí jen podmínka MR=0. Logicky by měla platit i nižší cena a vyšší množství než při maximalizaci zisku, protože k prodeji další jednotky musí firma snížit cenu - test tuhle možnost ale za správnou nebere."
+      "info": "Pojem: Firma maximalizující obrat chce co nejvyšší celkové příjmy, ne co nejvyšší rozdíl mezi příjmy a náklady jako firma maximalizující zisk.\nProč: Optimální objem produkce nastává tam, kde je MR (mezní příjem) nulový. Do tohoto bodu ještě každá další prodaná jednotka celkové příjmy zvyšuje, za ním by je už snižovala.\nChyták: Firma nepoužívá pravidlo MR=MC - to platí pro maximalizaci zisku. A nemusí vždy prodělávat.\nRozpor: Podle testu platí jen podmínka MR=0. Logicky by měla platit i nižší cena a vyšší množství než při maximalizaci zisku, protože k prodeji další jednotky musí firma snížit cenu - test tuhle možnost ale za správnou nebere.",
+      "read": [
+        {
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: maximalizace obratu",
+          "pages": "37:30–38:40"
+        }
+      ]
     },
     {
       "q": "Příjem z mezního fyzického produktu při nedokonalé konkurenci na trhu finálních statků a služeb: (3,33/5 b)",
@@ -2111,7 +2149,10 @@
       "info": "Pojem: Oligopol se zalomenou křivkou poptávky popisuje trh s pár firmami, které pečlivě sledují, jak konkurence reaguje na změnu ceny.\nProč: Sníží-li firma cenu, ostatní ji následují, aby neztratily zákazníky. Proto jsou ceny na takovém trhu stabilní, i když se mění náklady.\nChyták: Při zvýšení ceny ji firmy naopak nenásledují, protože by tím jen posílily vlastní podíl na trhu.\nRozpor: Podle testu má dvě na sebe nenavazující části křivka MC (mezní náklady). Ve skutečnosti má mezeru křivka MR (mezní příjem), protože poptávka je zalomená - MC se v tomto úseku může měnit, aniž by se změnila optimální cena.",
       "read": [
         {
-          "note": "Průběh křivek MC a MR u zalomené poptávky učebnice ani slidy neuvádějí."
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: zalomená křivka poptávky",
+          "pages": "25:15–27:30",
+          "note": "Učebnice ani slidy průběh MC a MR neuvádějí. Video ukazuje, že se mezní náklady mohou měnit beze změny ceny."
         }
       ]
     },
@@ -2131,7 +2172,14 @@
         3,
         4
       ],
-      "info": "Pojem: Morální hazard nastává, když lépe informovaná strana po uzavření dohody změní chování a přenese riziko nebo náklady na druhou stranu.\nProč: Ví, že za důsledky sama neponese plnou cenu. Patří mezi tržní selhání kvůli nerovnoměrně rozdělené informaci - příkladem je zásada too big to fail, kdy velké instituce podstupují víc rizika, protože počítají s pomocí státu. Kvůli tomu se zdroje využívají neefektivně.\nChyták: Morální hazard se liší od nepříznivého výběru - ten vzniká už před uzavřením dohody výběrem horší kvality, morální hazard až po ní, změnou chování."
+      "info": "Pojem: Morální hazard nastává, když lépe informovaná strana po uzavření dohody změní chování a přenese riziko nebo náklady na druhou stranu.\nProč: Ví, že za důsledky sama neponese plnou cenu. Patří mezi tržní selhání kvůli nerovnoměrně rozdělené informaci - příkladem je zásada too big to fail, kdy velké instituce podstupují víc rizika, protože počítají s pomocí státu. Kvůli tomu se zdroje využívají neefektivně.\nChyták: Morální hazard se liší od nepříznivého výběru - ten vzniká už před uzavřením dohody výběrem horší kvality, morální hazard až po ní, změnou chování.",
+      "read": [
+        {
+          "src": "video",
+          "ref": "díl 8 Tržní nedokonalosti: morální hazard a nepříznivý výběr",
+          "pages": "12:40–13:30"
+        }
+      ]
     },
     {
       "q": "Pokud se jedná o cenově elastickou poptávku, platí, že",
@@ -2220,12 +2268,13 @@
           "pages": "68–76"
         },
         {
-          "src": "riha",
-          "ref": "1. a 2. přednáška: mezní užitek"
+          "src": "video",
+          "ref": "díl 3 Spotřebitel, užitek a poptávka: mezní a celkový užitek",
+          "pages": "0:00–10:30"
         },
         {
-          "src": "video",
-          "ref": "díl 3: Spotřebitel, užitek a poptávka"
+          "src": "riha",
+          "ref": "1. a 2. přednáška: mezní užitek"
         }
       ]
     },
@@ -2250,12 +2299,13 @@
           "pages": "77–83"
         },
         {
-          "src": "riha",
-          "ref": "2. přednáška: indiferenční analýza"
+          "src": "video",
+          "ref": "díl 3 Spotřebitel, užitek a poptávka: indiferenční analýza a optimum",
+          "pages": "10:30–23:00"
         },
         {
-          "src": "video",
-          "ref": "díl 3: Spotřebitel, užitek a poptávka"
+          "src": "riha",
+          "ref": "2. přednáška: indiferenční analýza"
         }
       ]
     },
@@ -2294,12 +2344,23 @@
           "pages": "83–84"
         },
         {
-          "src": "riha",
-          "ref": "2. přednáška: poptávková funkce"
+          "src": "video",
+          "ref": "díl 1 Poptávka a nabídka: poptávka a její posuny",
+          "pages": "3:00–16:00"
         },
         {
           "src": "video",
-          "ref": "díl 1: Poptávka a nabídka"
+          "ref": "díl 2 Elasticita: důchodová elasticita",
+          "pages": "14:00–18:00"
+        },
+        {
+          "src": "video",
+          "ref": "díl 3 Spotřebitel, užitek a poptávka: odvození poptávky",
+          "pages": "22:00–27:00"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: poptávková funkce"
         }
       ]
     },
@@ -2320,12 +2381,13 @@
           "pages": "33–39"
         },
         {
-          "src": "riha",
-          "ref": "2. přednáška: elasticita poptávky"
+          "src": "video",
+          "ref": "díl 2 Elasticita: cenová a důchodová elasticita",
+          "pages": "0:00–18:00"
         },
         {
-          "src": "video",
-          "ref": "díl 2: Elasticita"
+          "src": "riha",
+          "ref": "2. přednáška: elasticita poptávky"
         }
       ]
     },
@@ -2357,12 +2419,18 @@
           "pages": "39–40"
         },
         {
-          "src": "riha",
-          "ref": "2. přednáška: elasticita poptávky"
+          "src": "video",
+          "ref": "díl 1 Poptávka a nabídka: substituty a komplementy",
+          "pages": "8:00–12:00"
         },
         {
           "src": "video",
-          "ref": "díl 2: Elasticita"
+          "ref": "díl 2 Elasticita: křížová elasticita",
+          "pages": "18:00–20:00"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: elasticita poptávky"
         }
       ]
     },
@@ -2392,12 +2460,13 @@
           "pages": "56–58"
         },
         {
-          "src": "riha",
-          "ref": "3. přednáška: nabídková funkce"
+          "src": "video",
+          "ref": "díl 1 Poptávka a nabídka: nabídka, rovnováha, regulace cen",
+          "pages": "16:00–40:00"
         },
         {
-          "src": "video",
-          "ref": "díl 1: Poptávka a nabídka"
+          "src": "riha",
+          "ref": "3. přednáška: nabídková funkce"
         }
       ]
     },
@@ -2428,12 +2497,18 @@
           "pages": "104–109"
         },
         {
-          "src": "riha",
-          "ref": "2. přednáška: náklady; 3. přednáška: zisk a příjmy"
+          "src": "video",
+          "ref": "díl 4 Teorie firmy: ekonomický a normální zisk",
+          "pages": "0:30–3:30"
         },
         {
           "src": "video",
-          "ref": "díl 4: Teorie firmy"
+          "ref": "díl 4 Teorie firmy: náklady",
+          "pages": "10:00–16:00"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: náklady; 3. přednáška: zisk a příjmy"
         }
       ]
     },
@@ -2464,12 +2539,18 @@
           "pages": "110–111"
         },
         {
-          "src": "riha",
-          "ref": "2. přednáška: produkční funkce"
+          "src": "video",
+          "ref": "díl 4 Teorie firmy: produkce",
+          "pages": "5:00–10:00"
         },
         {
           "src": "video",
-          "ref": "díl 4: Teorie firmy"
+          "ref": "díl 4 Teorie firmy: izokvanta a izokosta",
+          "pages": "16:00–21:30"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: produkční funkce"
         }
       ]
     },
@@ -2494,12 +2575,13 @@
           "pages": "126–133"
         },
         {
-          "src": "riha",
-          "ref": "3. přednáška: dokonalá konkurence"
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: dokonalá konkurence",
+          "pages": "0:00–11:40"
         },
         {
-          "src": "video",
-          "ref": "díl 5: Konkurenční prostředí"
+          "src": "riha",
+          "ref": "3. přednáška: dokonalá konkurence"
         }
       ]
     },
@@ -2519,12 +2601,13 @@
           "pages": "142–143"
         },
         {
-          "src": "riha",
-          "ref": "4. přednáška: monopolistická konkurence"
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: monopolistická konkurence",
+          "pages": "27:30–36:30"
         },
         {
-          "src": "video",
-          "ref": "díl 5: Konkurenční prostředí"
+          "src": "riha",
+          "ref": "4. přednáška: monopolistická konkurence"
         }
       ]
     },
@@ -2549,12 +2632,13 @@
           "pages": "134–138"
         },
         {
-          "src": "riha",
-          "ref": "4. přednáška: monopol"
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: monopol",
+          "pages": "11:40–22:30"
         },
         {
-          "src": "video",
-          "ref": "díl 5: Konkurenční prostředí"
+          "src": "riha",
+          "ref": "4. přednáška: monopol"
         }
       ]
     },
@@ -2578,12 +2662,13 @@
           "pages": "139–141"
         },
         {
-          "src": "riha",
-          "ref": "4. přednáška: oligopol"
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: oligopol, kartel, cenový vůdce, zalomená poptávka",
+          "pages": "22:30–27:30"
         },
         {
-          "src": "video",
-          "ref": "díl 5: Konkurenční prostředí"
+          "src": "riha",
+          "ref": "4. přednáška: oligopol"
         }
       ]
     },
@@ -2618,12 +2703,18 @@
           "pages": "170–173"
         },
         {
-          "src": "riha",
-          "ref": "5. přednáška: trh výrobních faktorů"
+          "src": "video",
+          "ref": "díl 6 Trh výrobních faktorů",
+          "pages": "celý díl, 18 min."
         },
         {
           "src": "video",
-          "ref": "díly 6 a 7: Trh výrobních faktorů, trh práce a kapitálu"
+          "ref": "díl 7 Trh práce a kapitálu",
+          "pages": "celý díl, 13 min."
+        },
+        {
+          "src": "riha",
+          "ref": "5. přednáška: trh výrobních faktorů"
         }
       ]
     },
@@ -2654,12 +2745,18 @@
           "pages": "118"
         },
         {
-          "src": "riha",
-          "ref": "3. přednáška: zisk, příjmy a maximalizace zisku"
+          "src": "video",
+          "ref": "díl 4 Teorie firmy: příjmy a maximalizace zisku",
+          "pages": "22:00–29:00"
         },
         {
           "src": "video",
-          "ref": "díl 4: Teorie firmy"
+          "ref": "díl 5 Konkurenční prostředí: maximalizace obratu",
+          "pages": "37:30–38:40"
+        },
+        {
+          "src": "riha",
+          "ref": "3. přednáška: zisk, příjmy a maximalizace zisku"
         }
       ]
     },
@@ -2689,12 +2786,18 @@
           "pages": "179–189"
         },
         {
-          "src": "riha",
-          "ref": "4. přednáška: tržní síla; 6. přednáška: externality, veřejné statky, asymetrické informace"
+          "src": "video",
+          "ref": "díl 5 Konkurenční prostředí: tržní síla a ztráta mrtvé váhy",
+          "pages": "15:00–22:30"
         },
         {
           "src": "video",
-          "ref": "díl 8: Tržní nedokonalosti"
+          "ref": "díl 8 Tržní nedokonalosti",
+          "pages": "celý díl, 15 min."
+        },
+        {
+          "src": "riha",
+          "ref": "4. přednáška: tržní síla; 6. přednáška: externality, veřejné statky, asymetrické informace"
         }
       ]
     }

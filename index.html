@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.67">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.68">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -726,7 +726,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .sv-natural { border: 2px solid var(--primary-mid); }
 .sv-natural .sv-card-label { color: var(--primary); }
 .sv-role-name { font-size: 22px; font-weight: 800; letter-spacing: -.4px; color: var(--primary); line-height: 1.2; }
-.sv-role-en { font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: 0; margin-left: 6px; }
+.sv-role-en { display: block; font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: 0; margin-top: 2px; white-space: nowrap; }
 .sv-role-desc { font-size: 14px; line-height: 1.5; color: var(--text); }
 .sv-role-desc b { color: var(--dim); font-weight: 600; }
 .sv-sep { border: none; border-top: 1px dashed var(--line2); margin: 2px 0; }
@@ -4064,7 +4064,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.67';
+const APP_VERSION = '9.68';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.73">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.74">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4136,13 +4136,13 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.73';
+const APP_VERSION = '9.74';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 
 // ── Kontrola nové verze ──
 // Dlouho otevřená záložka jinak zůstane na staré verzi: kontrola běží při návratu
-// do záložky, při fokusu okna, periodicky a při přechodu na výběr testu / start testu.
+// do záložky, při fokusu okna, každých 5 minut a při přechodu na výběr testu / start testu.
 // Na výběru testu se stránka obnoví sama (nic se neztratí), na startu testu se ukáže
 // banner, během testu se nic neruší a obnova proběhne po návratu na výběr testu.
 var updatePending = false;
@@ -4191,7 +4191,7 @@ document.addEventListener('visibilitychange', () => {
 });
 window.addEventListener('focus', () => checkVersion());
 window.addEventListener('online', () => checkVersion(true));
-setInterval(() => { if (document.visibilityState === 'visible') checkVersion(true); }, 15 * 60 * 1000);
+setInterval(() => { if (document.visibilityState === 'visible') checkVersion(true); }, 5 * 60 * 1000);
 checkVersion(true);
 
 // Pull-to-refresh (dashboard + start screen)

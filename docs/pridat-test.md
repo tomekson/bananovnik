@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.71 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.72 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -119,7 +119,7 @@ Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k
 | `read[].src` | Klíč zdroje ze `sources`. Může chybět, když jde jen o poznámku |
 | `read[].ref` | Kapitola nebo téma. Dolní index přes `_X` |
 | `read[].pages` | Strany nebo čas jako text (`68–76`, `79 a 82`, `10:30–23:00`) |
-| `read[].pagesPrint` | Nepovinné. Strany v tištěné verzi, když se liší od elektronické. Pak se zobrazí „str. (e-verze 68–76 / tištěná 75–83)“. U Manažerské ekonomie přepočteno podle začátků podkapitol v obsahu obou verzí, uvnitř podkapitoly může tištěná strana ujet o jednu |
+| `read[].pagesPrint` | Nepovinné. Strany v tištěné verzi, když se liší od elektronické. Pak se zobrazí za názvem kapitoly v závorce: „4.1–4.2 Kardinalistická teorie užitku (str. e-verze 68–76 / tištěná 75–83)“. U Manažerské ekonomie přepočteno podle začátků podkapitol v obsahu obou verzí, uvnitř podkapitoly může tištěná strana ujet o jednu |
 | `read[].note` | Upozornění oranžově, např. „V učebnici není." |
 
 Kde se to ukáže: u otázky dole v kartě Teorie jako „Ke studiu" (nejdřív `read` otázky, pak `read` její sady). U vybraných sad na úvodní obrazovce předmětu a na výběru sad pro procházení. Odkazy na soubory se záměrně nezobrazují. `read` u otázky je doplňkové pole jako `info`, zadání, možnosti ani klíč nemění.

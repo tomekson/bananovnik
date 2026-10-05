@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.72">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.73">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -421,6 +421,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-src ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .q-src li { font-size: 12.5px; line-height: 1.45; color: var(--muted); }
 .q-src li strong { color: var(--text); font-weight: 600; }
+.q-src-group > ul { list-style: disc; margin: 2px 0 2px; padding-left: 18px; display: grid; gap: 2px; }
+.q-src-group > ul > li::marker { color: var(--line2); }
 .q-src li sub { font-size: .72em; }
 .q-src-note { color: var(--amber); }
 .set-read { margin-top: 10px; padding: 11px 13px 12px; border: 1.5px solid var(--line2); border-radius: var(--r-sm, 9px); background: var(--card); }
@@ -4009,23 +4011,34 @@ function togglePreInfo(rerender) {
 // Studijní zdroje (pole `sources`, `sets[].read`, `questions[].read` v JSON testu)
 function escHtml(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
-function readItemHtml(r) {
-  const srcs = (S.selectedTest && S.selectedTest.sources) || {};
-  const src = r.src ? srcs[r.src] : null;
+function readItemText(r, src) {
   const parts = [];
   const pw = escHtml((src && src.pageWord) || 'str.');
   if (r.ref) parts.push(glossLabel(escHtml(r.ref)) + (r.pages && r.pagesPrint ? ` (${pw} e-verze ${escHtml(r.pages)} / tištěná ${escHtml(r.pagesPrint)})` : ''));
   else if (r.pages && r.pagesPrint) parts.push(`(${pw} e-verze ${escHtml(r.pages)} / tištěná ${escHtml(r.pagesPrint)})`);
   if (r.pages && !r.pagesPrint) parts.push(`${pw} ${escHtml(r.pages)}`);
-  let html = src ? `<strong title="${escHtml(src.title || '')}">${escHtml(src.label)}</strong> ` : '';
-  html += parts.join(', ');
-  if (r.note) html += `${parts.length || src ? ' · ' : ''}<span class="q-src-note">${escHtml(r.note)}</span>`;
-  return `<li>${html}</li>`;
+  let html = parts.join(', ');
+  if (r.note) html += `${parts.length ? ' · ' : ''}<span class="q-src-note">${escHtml(r.note)}</span>`;
+  return html;
 }
 
+// Řádky seskupené podle zdroje: název zdroje jednou, pod ním body. Poznámky bez zdroje samostatně.
 function readListHtml(items, heading) {
   if (!items || !items.length) return '';
-  return `<div class="q-src"><div class="q-src-h">${escHtml(heading)}</div><ul>${items.map(readItemHtml).join('')}</ul></div>`;
+  const srcs = (S.selectedTest && S.selectedTest.sources) || {};
+  const groups = [];
+  items.forEach(r => {
+    const last = groups[groups.length - 1];
+    if (r.src && last && last.src === r.src) last.items.push(r);
+    else groups.push({ src: r.src || null, items: [r] });
+  });
+  const html = groups.map(g => {
+    const src = g.src ? srcs[g.src] : null;
+    if (!src) return g.items.map(r => `<li class="q-src-solo">${readItemText(r, null)}</li>`).join('');
+    const pts = g.items.map(r => `<li>${readItemText(r, src)}</li>`).join('');
+    return `<li class="q-src-group"><strong title="${escHtml(src.title || '')}">${escHtml(src.label)}</strong><ul>${pts}</ul></li>`;
+  }).join('');
+  return `<div class="q-src"><div class="q-src-h">${escHtml(heading)}</div><ul>${html}</ul></div>`;
 }
 
 function questionReadItems(q) {
@@ -4123,7 +4136,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.72';
+const APP_VERSION = '9.73';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

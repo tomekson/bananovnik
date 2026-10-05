@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.70">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.71">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4014,7 +4014,8 @@ function readItemHtml(r) {
   const src = r.src ? srcs[r.src] : null;
   const parts = [];
   if (r.ref) parts.push(glossLabel(escHtml(r.ref)));
-  if (r.pages) parts.push(`${escHtml((src && src.pageWord) || 'str.')} ${escHtml(r.pages)}`);
+  if (r.pages && r.pagesPrint) parts.push(`${escHtml((src && src.pageWord) || 'str.')} (e-verze ${escHtml(r.pages)} / tištěná ${escHtml(r.pagesPrint)})`);
+  else if (r.pages) parts.push(`${escHtml((src && src.pageWord) || 'str.')} ${escHtml(r.pages)}`);
   let html = src ? `<strong title="${escHtml(src.title || '')}">${escHtml(src.label)}</strong> ` : '';
   html += parts.join(', ');
   if (r.note) html += `${parts.length || src ? ' · ' : ''}<span class="q-src-note">${escHtml(r.note)}</span>`;
@@ -4121,7 +4122,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.70';
+const APP_VERSION = '9.71';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

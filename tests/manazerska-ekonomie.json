@@ -17,7 +17,7 @@
   "sources": {
     "ucebnice": {
       "label": "Učebnice",
-      "title": "Stará: Manažerská ekonomie - základní kurz (VŠEM 2023)",
+      "title": "Stará: Manažerská ekonomie - základní kurz, 1. vydání (VŠEM 2023). E-verze ISBN 978-80-88502-13-5, tištěná ISBN 978-80-88502-12-8",
       "pageWord": "str."
     },
     "video": {
@@ -267,7 +267,8 @@
         {
           "src": "ucebnice",
           "ref": "2.1 Druhy statků (vzácný a volný statek)",
-          "pages": "25"
+          "pages": "25",
+          "pagesPrint": "30"
         }
       ]
     },
@@ -349,7 +350,8 @@
         {
           "src": "ucebnice",
           "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
-          "pages": "140–141"
+          "pages": "140–141",
+          "pagesPrint": "150–151"
         },
         {
           "src": "video",
@@ -749,7 +751,8 @@
         {
           "src": "ucebnice",
           "ref": "3.2.1–3.2.2 Maximální a minimální cena",
-          "pages": "56–58"
+          "pages": "56–58",
+          "pagesPrint": "62–64"
         },
         {
           "src": "video",
@@ -885,7 +888,8 @@
         {
           "src": "ucebnice",
           "ref": "4.3.1 a 4.3.2 Značení MRS_C a MRS_E",
-          "pages": "79 a 82"
+          "pages": "79 a 82",
+          "pagesPrint": "86 a 89"
         },
         {
           "src": "video",
@@ -912,7 +916,8 @@
           "src": "ucebnice",
           "ref": "5.1 Explicitní a implicitní náklady",
           "pages": "94",
-          "note": "Pojem normální zisk učebnice nepoužívá, nejblíž jsou implicitní náklady."
+          "note": "Pojem normální zisk učebnice nepoužívá, nejblíž jsou implicitní náklady.",
+          "pagesPrint": "103"
         },
         {
           "src": "riha",
@@ -1031,7 +1036,8 @@
         {
           "src": "ucebnice",
           "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
-          "pages": "140–141"
+          "pages": "140–141",
+          "pagesPrint": "150–151"
         },
         {
           "src": "video",
@@ -1252,7 +1258,8 @@
           "src": "ucebnice",
           "ref": "5.1 Explicitní a implicitní náklady",
           "pages": "94",
-          "note": "Pojem normální zisk učebnice nepoužívá, nejblíž jsou implicitní náklady."
+          "note": "Pojem normální zisk učebnice nepoužívá, nejblíž jsou implicitní náklady.",
+          "pagesPrint": "103"
         },
         {
           "src": "riha",
@@ -1420,7 +1427,8 @@
         {
           "src": "ucebnice",
           "ref": "5.4 Příjmy firmy, obr. 5.16 (AR = MR = D)",
-          "pages": "115–116"
+          "pages": "115–116",
+          "pagesPrint": "124–125"
         }
       ]
     },
@@ -1666,7 +1674,8 @@
         {
           "src": "ucebnice",
           "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
-          "pages": "140–141"
+          "pages": "140–141",
+          "pagesPrint": "150–151"
         },
         {
           "src": "video",
@@ -2071,7 +2080,8 @@
         {
           "src": "ucebnice",
           "ref": "5.3.3 Izokosta a optimum výroby (optimální kombinace faktorů)",
-          "pages": "110–112"
+          "pages": "110–112",
+          "pagesPrint": "119–121"
         },
         {
           "src": "video",
@@ -2265,7 +2275,8 @@
         {
           "src": "ucebnice",
           "ref": "4.1–4.2 Kardinalistická teorie užitku",
-          "pages": "68–76"
+          "pages": "68–76",
+          "pagesPrint": "75–83"
         },
         {
           "src": "video",
@@ -2296,7 +2307,8 @@
         {
           "src": "ucebnice",
           "ref": "4.3.1–4.3.3 Indiferenční křivka, rozpočet, optimum",
-          "pages": "77–83"
+          "pages": "77–83",
+          "pagesPrint": "84–90"
         },
         {
           "src": "video",
@@ -2331,17 +2343,20 @@
         {
           "src": "ucebnice",
           "ref": "2.1 Druhy statků, 2.2 Poptávka po statku",
-          "pages": "25–29"
+          "pages": "25–29",
+          "pagesPrint": "30–34"
         },
         {
           "src": "ucebnice",
           "ref": "2.4.2 Důchodová elasticita",
-          "pages": "37–38"
+          "pages": "37–38",
+          "pagesPrint": "42–43"
         },
         {
           "src": "ucebnice",
           "ref": "4.3.4 Odvození poptávky",
-          "pages": "83–84"
+          "pages": "83–84",
+          "pagesPrint": "90–91"
         },
         {
           "src": "video",
@@ -2378,7 +2393,8 @@
         {
           "src": "ucebnice",
           "ref": "2.4 Elasticita poptávky",
-          "pages": "33–39"
+          "pages": "33–39",
+          "pagesPrint": "38–44"
         },
         {
           "src": "video",
@@ -2406,17 +2422,20 @@
         {
           "src": "ucebnice",
           "ref": "2.1 Druhy statků",
-          "pages": "25"
+          "pages": "25",
+          "pagesPrint": "30"
         },
         {
           "src": "ucebnice",
           "ref": "2.2 Posuny poptávky",
-          "pages": "28–29"
+          "pages": "28–29",
+          "pagesPrint": "33–34"
         },
         {
           "src": "ucebnice",
           "ref": "2.4.3 Křížová elasticita",
-          "pages": "39–40"
+          "pages": "39–40",
+          "pagesPrint": "44–45"
         },
         {
           "src": "video",
@@ -2447,17 +2466,20 @@
         {
           "src": "ucebnice",
           "ref": "2.3 Nabídka statku",
-          "pages": "30–32"
+          "pages": "30–32",
+          "pagesPrint": "35–37"
         },
         {
           "src": "ucebnice",
           "ref": "3.1 Rovnováha na trhu",
-          "pages": "48–53"
+          "pages": "48–53",
+          "pagesPrint": "54–59"
         },
         {
           "src": "ucebnice",
           "ref": "3.2.1–3.2.2 Maximální a minimální cena",
-          "pages": "56–58"
+          "pages": "56–58",
+          "pagesPrint": "62–64"
         },
         {
           "src": "video",
@@ -2489,12 +2511,14 @@
         {
           "src": "ucebnice",
           "ref": "5.1 Firma a její cíle (explicitní a implicitní náklady)",
-          "pages": "93–94"
+          "pages": "93–94",
+          "pagesPrint": "102–103"
         },
         {
           "src": "ucebnice",
           "ref": "5.3.1–5.3.2 Náklady firmy",
-          "pages": "104–109"
+          "pages": "104–109",
+          "pagesPrint": "113–118"
         },
         {
           "src": "video",
@@ -2531,12 +2555,14 @@
         {
           "src": "ucebnice",
           "ref": "5.2 Produkce firmy",
-          "pages": "95–103"
+          "pages": "95–103",
+          "pagesPrint": "104–112"
         },
         {
           "src": "ucebnice",
           "ref": "5.3.3 Izokosta a optimum výroby",
-          "pages": "110–111"
+          "pages": "110–111",
+          "pagesPrint": "119–120"
         },
         {
           "src": "video",
@@ -2567,12 +2593,14 @@
         {
           "src": "ucebnice",
           "ref": "5.4 Příjmy firmy",
-          "pages": "114–116"
+          "pages": "114–116",
+          "pagesPrint": "123–125"
         },
         {
           "src": "ucebnice",
           "ref": "6.1–6.2 Dokonalá konkurence",
-          "pages": "126–133"
+          "pages": "126–133",
+          "pagesPrint": "136–143"
         },
         {
           "src": "video",
@@ -2598,7 +2626,8 @@
         {
           "src": "ucebnice",
           "ref": "6.3.4 Monopolistická konkurence",
-          "pages": "142–143"
+          "pages": "142–143",
+          "pagesPrint": "152–153"
         },
         {
           "src": "video",
@@ -2629,7 +2658,8 @@
         {
           "src": "ucebnice",
           "ref": "6.3.1–6.3.2 Nedokonalá konkurence a monopol",
-          "pages": "134–138"
+          "pages": "134–138",
+          "pagesPrint": "144–148"
         },
         {
           "src": "video",
@@ -2659,7 +2689,8 @@
         {
           "src": "ucebnice",
           "ref": "6.3.3 Oligopol",
-          "pages": "139–141"
+          "pages": "139–141",
+          "pagesPrint": "149–151"
         },
         {
           "src": "video",
@@ -2690,17 +2721,20 @@
         {
           "src": "ucebnice",
           "ref": "7.1–7.3 Trh výrobních faktorů, renta, MRP a MFC",
-          "pages": "150–161"
+          "pages": "150–161",
+          "pagesPrint": "162–173"
         },
         {
           "src": "ucebnice",
           "ref": "7.4 Trh práce",
-          "pages": "162–169"
+          "pages": "162–169",
+          "pagesPrint": "174–181"
         },
         {
           "src": "ucebnice",
           "ref": "7.5 Kapitál",
-          "pages": "170–173"
+          "pages": "170–173",
+          "pagesPrint": "182–185"
         },
         {
           "src": "video",
@@ -2732,17 +2766,20 @@
         {
           "src": "ucebnice",
           "ref": "5.1 Firma a její cíle",
-          "pages": "93"
+          "pages": "93",
+          "pagesPrint": "102"
         },
         {
           "src": "ucebnice",
           "ref": "5.4 Příjmy firmy a maximalizace obratu",
-          "pages": "114–117"
+          "pages": "114–117",
+          "pagesPrint": "123–126"
         },
         {
           "src": "ucebnice",
           "ref": "5.5 Maximalizace zisku",
-          "pages": "118"
+          "pages": "118",
+          "pagesPrint": "127"
         },
         {
           "src": "video",
@@ -2773,17 +2810,20 @@
         {
           "src": "ucebnice",
           "ref": "6.2.4 Výrobní a alokační efektivnost",
-          "pages": "133"
+          "pages": "133",
+          "pagesPrint": "143"
         },
         {
           "src": "ucebnice",
           "ref": "6.3.2 Ztráta mrtvé váhy",
-          "pages": "138"
+          "pages": "138",
+          "pagesPrint": "148"
         },
         {
           "src": "ucebnice",
           "ref": "8 Tržní selhání",
-          "pages": "179–189"
+          "pages": "179–189",
+          "pagesPrint": "193–203"
         },
         {
           "src": "video",

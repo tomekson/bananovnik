@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.76 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.77 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -106,7 +106,7 @@ Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k
   "video":    { "label": "Videolearning", "title": "Videolearning Mikroekonomie, MP3 v kurzu", "pageWord": "v čase" }
 },
 "sets": [ { "name": "Užitek a spotřebitel", "q": [7, 19],
-            "read": [ { "src": "ucebnice", "ref": "4.1–4.2 Kardinalistická teorie užitku", "pages": "68–76" } ] } ],
+            "read": [ { "src": "ucebnice", "ref": "kap. 4.1–4.2 Kardinalistická teorie užitku", "pages": "68–76" } ] } ],
 "questions": [ { "q": "…", "opts": ["…"], "correct": [0],
                  "read": [ { "src": "riha", "ref": "1. přednáška: hranice produkčních možností", "pages": "52–55", "note": "V učebnici není." } ] } ]
 ```
@@ -117,7 +117,7 @@ Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k
 | `sources.<id>.title` | Plný název, zobrazí se jako tooltip |
 | `sources.<id>.pageWord` | Slovo před hodnotou `pages` (`str.`, `slidy`, `v čase`). Bez něj `str.` |
 | `read[].src` | Klíč zdroje ze `sources`. Může chybět, když jde jen o poznámku |
-| `read[].ref` | Kapitola nebo téma. Dolní index přes `_X` |
+| `read[].ref` | Kapitola nebo téma. U učebnice začíná „kap.“ (kap. 4.1–4.2 …). Dolní index přes `_X` |
 | `read[].pages` | Strany nebo čas jako text (`68–76`, `79 a 82`, `10:30–23:00`) |
 | `read[].pagesPrint` | Nepovinné. Strany v tištěné verzi, když se liší od elektronické. Pak se zobrazí za názvem kapitoly v závorce: „4.1–4.2 Kardinalistická teorie užitku (str. e-verze 68–76 / tištěná 75–83)“. U Manažerské ekonomie přepočteno podle začátků podkapitol v obsahu obou verzí, uvnitř podkapitoly může tištěná strana ujet o jednu |
 | `read[].note` | Upozornění oranžově, např. „V učebnici není." |

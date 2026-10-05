@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.75 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.76 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -135,7 +135,7 @@ Kde se to ukáže: u otázky dole v kartě Teorie jako „Ke studiu" (nejdřív 
 
 - **Indexy jsou 1-based** (aplikace počítá `n - 1`). Index mimo rozsah se tiše ignoruje, takže překlep nevyhodí chybu, jen zmizí otázka.
 - **Sady musí pokrývat všechny otázky** a nemají se překrývat. Vybraná témata se slévají do jednoho testu bez duplicit.
-- **Řaď od nejlehčího tématu k nejtěžšímu**, nebo podle struktury sylabu. V rozhraní se ukazují první 4 sady, zbytek je za tlačítkem „Zobrazit všech N témat" - co je nahoře, to student uvidí první.
+- **Řaď od nejlehčího tématu k nejtěžšímu**, nebo podle struktury sylabu. V rozhraní se ukazují první dvě řady sad a třetí napůl do ztracena, zbytek je za tlačítkem „Zobrazit všech N témat" - co je nahoře, to student uvidí první.
 - Název drž krátký, vejde se do dlaždice vedle počtu otázek.
 
 ### Sporné otázky

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.75">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.76">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -263,6 +263,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .set-toggle:hover { border-color: var(--yellow); color: var(--text); background: var(--yellow-bg); }
 .set-toggle:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
 .set-toggle .set-toggle-caret { font-size: 10px; opacity: .7; margin-left: 2px; }
+/* Sbalené sady: dvě řady celé, třetí napůl a do ztracena, přes ni tlačítko */
+.set-grid--peek {
+  overflow: hidden; padding: 3px 6px 0 3px; margin: -3px -6px 0 -3px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - var(--peek-fade, 40px)), transparent);
+          mask-image: linear-gradient(to bottom, #000 calc(100% - var(--peek-fade, 40px)), transparent);
+}
+.set-grid--peek + .set-toggle { position: relative; z-index: 1; margin-top: -18px; background: var(--bg); border-style: solid; }
 @media (prefers-reduced-motion: reduce) {
   .set-pill, .set-pill::before { transition: none; }
   .set-pill:active { transform: none; }
@@ -1222,9 +1229,9 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
           </span>
         </div>
         <div id="topic-sets" class="set-grid"></div>
+        <button type="button" id="topic-sets-toggle" class="set-toggle" style="display:none" onclick="toggleTopicSets()"></button>
         <div id="topic-sets-summary" class="set-summary"></div>
         <div id="topic-sets-read"></div>
-        <button type="button" id="topic-sets-toggle" class="set-toggle" style="display:none" onclick="toggleTopicSets()"></button>
       </div>
 
       <!-- Separator — skrytý pokud nejsou sady -->
@@ -1844,7 +1851,6 @@ function renderTopicSets() {
   applyTopicSetsVisibility();
 }
 
-const TOPIC_SETS_VISIBLE = 4;
 
 function topicSetsKey() {
   const id = (S.selectedTest && S.selectedTest.id) || '';
@@ -1867,13 +1873,31 @@ function applyTopicSetsVisibility() {
   if (!container) return;
   const pills = [...container.querySelectorAll('.set-pill')];
   const expanded = topicSetsExpanded();
-  // Skrýt přebytečné, ale nikdy ne právě vybranou sadu
-  pills.forEach((el, i) => {
-    const hide = !expanded && i >= TOPIC_SETS_VISIBLE && !el.classList.contains('active');
-    el.classList.toggle('set-hidden', hide);
-  });
+  pills.forEach(el => el.classList.remove('set-hidden'));
+  container.classList.remove('set-grid--peek');
+  container.style.maxHeight = '';
+  if (!pills.length) { if (btn) btn.style.display = 'none'; return; }
+  // Obrazovka ještě není vidět (display: none) -> změřit až po zobrazení
+  if (!container.offsetParent) { requestAnimationFrame(() => { if (container.offsetParent) applyTopicSetsVisibility(); }); }
+  // Řady podle skutečného rozložení (počet sloupců se mění se šířkou)
+  const tops = [...new Set(pills.map(el => el.offsetTop))].sort((a, b) => a - b);
+  const rows = tops.length;
+  const needToggle = rows > 2;
+  if (!expanded && needToggle) {
+    const row3 = pills.filter(el => el.offsetTop === tops[2]);
+    const activeBelow = pills.some(el => el.classList.contains('active') && el.offsetTop >= tops[2]);
+    if (!activeBelow && row3.length) {
+      // Pod třetí řadou vše skrýt, třetí řadu useknout v půlce a nechat vyblednout
+      pills.forEach(el => { if (el.offsetTop > tops[2]) el.classList.add('set-hidden'); });
+      const h3 = Math.max(...row3.map(el => el.offsetHeight));
+      const cut = tops[2] - container.offsetTop + Math.round(h3 * 0.5);
+      container.classList.add('set-grid--peek');
+      container.style.setProperty('--peek-fade', Math.round(h3 * 0.9) + 'px');
+      container.style.maxHeight = (cut + 3) + 'px';
+    }
+  }
   if (!btn) return;
-  if (pills.length > TOPIC_SETS_VISIBLE) {
+  if (needToggle) {
     btn.style.display = '';
     btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     btn.innerHTML = expanded
@@ -1883,6 +1907,12 @@ function applyTopicSetsVisibility() {
     btn.style.display = 'none';
   }
 }
+
+let _setsResizeT = null;
+window.addEventListener('resize', () => {
+  clearTimeout(_setsResizeT);
+  _setsResizeT = setTimeout(applyTopicSetsVisibility, 120);
+});
 
 // Klik přepíná téma ve výběru — vybraná témata se slijí do jednoho testu.
 // force = true (dvojklik) téma vždy ponechá vybrané, ať už klik dopadl jakkoli.
@@ -4136,7 +4166,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.75';
+const APP_VERSION = '9.76';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

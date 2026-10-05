@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.66 (4. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.69 (5. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -21,6 +21,7 @@ Každý test je jeden JSON soubor ve složce `tests/`. Registr testů je konstan
 | `questions` | array | ano | Otázky, viz níže |
 | `sets` | array | ne | Tematické sady, viz níže. Když je uvedeš, dej do registru `hasSets: true` |
 | `glossary` | array | ne | Slovníček zkratek, viz níže. U otázky se zobrazí jen položky, jejichž zkratka se v otázce vyskytuje |
+| `sources` | object | ne | Studijní zdroje předmětu (učebnice, slidy, video), viz níže. Odkazují na ně pole `read` u sad a otázek |
 | `openQuestions` | string[] | ne | Seznam otevřených otázek ke zkoušce. Aplikace je zatím nikde nezobrazuje, jen je drží u testu |
 
 ### `format`
@@ -95,6 +96,32 @@ Obrázek se ukazuje v testu, v Active recall, v přehledu odpovědí i v tisku; 
 | `text` | Český význam. Dolní indexy fungují stejně jako v `label` |
 
 Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k otázce přidá rozbalovací blok **Zkratky v otázce** jen s položkami, jejichž `keys` se v textu vyskytují. Pořadí odpovídá pořadí v `glossary`. V Active recall se možnosti započítají až po jejich odhalení. Stav rozbalení se drží po celou návštěvu, takže stačí rozbalit jednou.
+
+### `sources` a `read` (studijní zdroje)
+
+```json
+"sources": {
+  "ucebnice": { "label": "Učebnice", "title": "Stará: Manažerská ekonomie (2023)", "pageWord": "str." },
+  "riha":     { "label": "Slidy", "title": "Říha: přednášky 2024/25", "pageWord": "slidy" },
+  "video":    { "label": "Video / audio", "title": "Videolearning Mikroekonomie, MP3 v kurzu" }
+},
+"sets": [ { "name": "Užitek a spotřebitel", "q": [7, 19],
+            "read": [ { "src": "ucebnice", "ref": "4.1–4.2 Kardinalistická teorie užitku", "pages": "68–76" } ] } ],
+"questions": [ { "q": "…", "opts": ["…"], "correct": [0],
+                 "read": [ { "src": "riha", "ref": "1. přednáška: hranice produkčních možností", "pages": "52–55", "note": "V učebnici není." } ] } ]
+```
+
+| Pole | Význam |
+|---|---|
+| `sources.<id>.label` | Krátký typ zdroje, zobrazí se tučně (Učebnice, Slidy, Video / audio) |
+| `sources.<id>.title` | Plný název, zobrazí se jako tooltip |
+| `sources.<id>.pageWord` | Slovo před čísly stran (`str.`, `slidy`). Bez něj `str.` |
+| `read[].src` | Klíč zdroje ze `sources`. Může chybět, když jde jen o poznámku |
+| `read[].ref` | Kapitola nebo téma. Dolní index přes `_X` |
+| `read[].pages` | Strany jako text (`68–76`, `79 a 82`) |
+| `read[].note` | Upozornění oranžově, např. „V učebnici není." |
+
+Kde se to ukáže: u otázky dole v kartě Teorie jako „Ke studiu" (nejdřív `read` otázky, pak `read` její sady). U vybraných sad na úvodní obrazovce předmětu a na výběru sad pro procházení. Odkazy na soubory se záměrně nezobrazují. `read` u otázky je doplňkové pole jako `info`, zadání, možnosti ani klíč nemění.
 
 ### `sets` (tematické sady)
 

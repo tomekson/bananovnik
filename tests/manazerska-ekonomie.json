@@ -14,6 +14,22 @@
     "questionCount": 21,
     "openCount": 0
   },
+  "sources": {
+    "ucebnice": {
+      "label": "Učebnice",
+      "title": "Stará: Manažerská ekonomie - základní kurz (VŠEM 2023)",
+      "pageWord": "str."
+    },
+    "riha": {
+      "label": "Slidy",
+      "title": "Říha: Manažerská ekonomie, přednášky 2024/25",
+      "pageWord": "slidy"
+    },
+    "video": {
+      "label": "Video / audio",
+      "title": "Videolearning Mikroekonomie (2022), MP3 v kurzu"
+    }
+  },
   "glossary": [
     {
       "keys": [
@@ -245,7 +261,14 @@
       "correct": [
         1
       ],
-      "info": "Pojem: Ekonomický statek je věc nebo služba, které je méně, než by lidé chtěli spotřebovat - proto má cenu. Opakem je volný statek, třeba vzduch, kterého je dost pro všechny zdarma.\nProč: Aby byl statek ekonomický, musí být užitečný, vzácný a vyrobený z omezených zdrojů. Z toho plyne i nenulová cena, protože ho někdo musí za náklady vyrobit a prodat.\nChyták: Odpovědi bez podmínky nenulové ceny vynechávají znak, který ekonomický statek odlišuje od volného. Samotná vzácnost a užitečnost cenu ještě nezaručí."
+      "info": "Pojem: Ekonomický statek je věc nebo služba, které je méně, než by lidé chtěli spotřebovat - proto má cenu. Opakem je volný statek, třeba vzduch, kterého je dost pro všechny zdarma.\nProč: Aby byl statek ekonomický, musí být užitečný, vzácný a vyrobený z omezených zdrojů. Z toho plyne i nenulová cena, protože ho někdo musí za náklady vyrobit a prodat.\nChyták: Odpovědi bez podmínky nenulové ceny vynechávají znak, který ekonomický statek odlišuje od volného. Samotná vzácnost a užitečnost cenu ještě nezaručí.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "2.1 Druhy statků (vzácný a volný statek)",
+          "pages": "25"
+        }
+      ]
     },
     {
       "q": "Firma maximalizující obrat, oproti firmě maximalizující zisk zpravidla:",
@@ -320,7 +343,14 @@
         2,
         4
       ],
-      "info": "Pojem: Dominantní firma je velká firma, jejíž podíl na trhu je tak silný, že si sama určuje cenu. Konkurenční lem je skupina malých firem na stejném trhu, které tuto cenu jen přebírají.\nProč: Dominantní firma se na své části trhu chová jako monopol a díky bariérám vstupu si udrží zisk i dlouhodobě. Firmy lemu prodávají za stejnou cenu, jakou určí dominantní firma, protože samy na cenu nemají vliv.\nChyták: Cenu nestanovují firmy lemu - naopak ji jen přebírají.\nRozpor: Podle testu je poptávka dominantní firmy méně elastická než tržní. Podle učebnice je to naopak: vzniká jako tržní poptávka minus nabídka lemu, proto je elastičtější."
+      "info": "Pojem: Dominantní firma je velká firma, jejíž podíl na trhu je tak silný, že si sama určuje cenu. Konkurenční lem je skupina malých firem na stejném trhu, které tuto cenu jen přebírají.\nProč: Dominantní firma se na své části trhu chová jako monopol a díky bariérám vstupu si udrží zisk i dlouhodobě. Firmy lemu prodávají za stejnou cenu, jakou určí dominantní firma, protože samy na cenu nemají vliv.\nChyták: Cenu nestanovují firmy lemu - naopak ji jen přebírají.\nRozpor: Podle testu je poptávka dominantní firmy méně elastická než tržní. Podle učebnice je to naopak: vzniká jako tržní poptávka minus nabídka lemu, proto je elastičtější.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
+          "pages": "140–141"
+        }
+      ]
     },
     {
       "q": "Vztah mezi monopolem a monopsonem na trhu práce se v ekonomii nazývá:",
@@ -427,7 +457,12 @@
         2,
         4
       ],
-      "info": "Pojem: Odpisy (amortizace) jsou peněžní vyjádření toho, o kolik se opotřebí kapitálové statky firmy, třeba stroje nebo budovy, za dané období.\nProč: Odpisy nahrazují opotřebený kapitál, proto se jim říká restituční (obnovovací) investice. Firma z nich získává zdroje na nákup nových strojů místo dosluhujících, a protože souvisí s výrobou, počítají se do nákladů firmy.\nChyták: Odpisy nezvyšují zásobu kapitálu, jen ji udržují na stejné úrovni. Růst zásoby kapitálu zajišťují až investice nad rámec odpisů."
+      "info": "Pojem: Odpisy (amortizace) jsou peněžní vyjádření toho, o kolik se opotřebí kapitálové statky firmy, třeba stroje nebo budovy, za dané období.\nProč: Odpisy nahrazují opotřebený kapitál, proto se jim říká restituční (obnovovací) investice. Firma z nich získává zdroje na nákup nových strojů místo dosluhujících, a protože souvisí s výrobou, počítají se do nákladů firmy.\nChyták: Odpisy nezvyšují zásobu kapitálu, jen ji udržují na stejné úrovni. Růst zásoby kapitálu zajišťují až investice nad rámec odpisů.",
+      "read": [
+        {
+          "note": "Odpisy neřeší učebnice ani slidy Říha. Zkus se zeptat NotebookLM."
+        }
+      ]
     },
     {
       "q": "Firma maximalizující obrat vyrábí ve srovnání s firmou maximalizující zisk:",
@@ -703,7 +738,14 @@
       "correct": [
         1
       ],
-      "info": "Pojem: Minimální cena je nejnižší cena, za kterou se smí statek prodávat. Vláda ji zavádí, aby prodejcům zajistila vyšší výdělek, třeba u zemědělských produktů.\nProč: Cena 300 Kč se dosadí do obou rovnic. Poptávané množství vyjde 200 kusů, nabízené jen 50 kusů. Chybí 150 kusů, takže jde o nedostatek. U zkoušky počítej přesně takhle.\nChyták: Možnosti s přebytkem lákají, protože minimální cena obvykle vede k přebytku. To ale platí jen tehdy, když je nastavená nad rovnovážnou cenou.\nRozpor: Podle testu vychází nedostatek 150 ks. Podle učebnice má minimální cena smysl jen nad rovnovážnou cenou, tady 450 Kč, a pak vzniká přebytek. Cena 300 Kč je pod rovnováhou a chová se jako maximální cena, proto výpočet dává nedostatek. Zadání nejspíš mělo říkat maximální cenu."
+      "info": "Pojem: Minimální cena je nejnižší cena, za kterou se smí statek prodávat. Vláda ji zavádí, aby prodejcům zajistila vyšší výdělek, třeba u zemědělských produktů.\nProč: Cena 300 Kč se dosadí do obou rovnic. Poptávané množství vyjde 200 kusů, nabízené jen 50 kusů. Chybí 150 kusů, takže jde o nedostatek. U zkoušky počítej přesně takhle.\nChyták: Možnosti s přebytkem lákají, protože minimální cena obvykle vede k přebytku. To ale platí jen tehdy, když je nastavená nad rovnovážnou cenou.\nRozpor: Podle testu vychází nedostatek 150 ks. Podle učebnice má minimální cena smysl jen nad rovnovážnou cenou, tady 450 Kč, a pak vzniká přebytek. Cena 300 Kč je pod rovnováhou a chová se jako maximální cena, proto výpočet dává nedostatek. Zadání nejspíš mělo říkat maximální cenu.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "3.2.1–3.2.2 Maximální a minimální cena",
+          "pages": "56–58"
+        }
+      ]
     },
     {
       "q": "Při poklesu (nominálního) důchodu spotřebitele, platí, že:",
@@ -827,7 +869,14 @@
         3,
         4
       ],
-      "info": "Pojem: Ordinalistické pojetí hledá optimum spotřebitele bez měření užitku v číslech - stačí umět srovnat, co má spotřebitel radši.\nProč: Optimum je bod, kde se linie rozpočtu dotýká nejvýš položené dosažitelné indiferenční křivky. V tomto bodě mají obě čáry stejný sklon - mezní míra substituce ve spotřebě (MRS_C) se rovná mezní míře substituce ve směně (MRS_E).\nChyták: Snadno se zamění, který poměr patří ke kterému MRS. Spotřeba (MRS_C) souvisí s užitky, směna (MRS_E) s cenami.\nRozpor: Podle testu platí MRS_C = P_x/P_y a MRS_E = MU_x/MU_y. Podle učebnice je to obráceně: MRS_C (spotřeba) = MU_x/MU_y je sklon indiferenční křivky, MRS_E (směna) = P_x/P_y je sklon linie rozpočtu. Rovnost MRS_C = MRS_E v optimu platí podle obou verzí."
+      "info": "Pojem: Ordinalistické pojetí hledá optimum spotřebitele bez měření užitku v číslech - stačí umět srovnat, co má spotřebitel radši.\nProč: Optimum je bod, kde se linie rozpočtu dotýká nejvýš položené dosažitelné indiferenční křivky. V tomto bodě mají obě čáry stejný sklon - mezní míra substituce ve spotřebě (MRS_C) se rovná mezní míře substituce ve směně (MRS_E).\nChyták: Snadno se zamění, který poměr patří ke kterému MRS. Spotřeba (MRS_C) souvisí s užitky, směna (MRS_E) s cenami.\nRozpor: Podle testu platí MRS_C = P_x/P_y a MRS_E = MU_x/MU_y. Podle učebnice je to obráceně: MRS_C (spotřeba) = MU_x/MU_y je sklon indiferenční křivky, MRS_E (směna) = P_x/P_y je sklon linie rozpočtu. Rovnost MRS_C = MRS_E v optimu platí podle obou verzí.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "4.3.1 a 4.3.2 Značení MRS_C a MRS_E",
+          "pages": "79 a 82"
+        }
+      ]
     },
     {
       "q": "Normální zisk je kvantitativně roven",
@@ -841,7 +890,19 @@
       "correct": [
         0
       ],
-      "info": "Pojem: Normální zisk je nejnižší odměna, kterou musí firma vydělat, aby se majiteli vyplatilo v podnikání pokračovat. Kryje jen to, o co majitel přišel tím, že nedělá něco jiného.\nProč: Implicitní náklady jsou přesně tahle ušlá příležitost, třeba mzda, kterou by majitel dostal v jiné práci. Normální zisk se jim číselně rovná.\nChyták: Neplete se s účetním ziskem, ten počítá jen s penězi, které firma skutečně zaplatila. Neplete se ani s celkovými náklady nebo příjmy, se kterými normální zisk žádnou přímou rovnost nemá."
+      "info": "Pojem: Normální zisk je nejnižší odměna, kterou musí firma vydělat, aby se majiteli vyplatilo v podnikání pokračovat. Kryje jen to, o co majitel přišel tím, že nedělá něco jiného.\nProč: Implicitní náklady jsou přesně tahle ušlá příležitost, třeba mzda, kterou by majitel dostal v jiné práci. Normální zisk se jim číselně rovná.\nChyták: Neplete se s účetním ziskem, ten počítá jen s penězi, které firma skutečně zaplatila. Neplete se ani s celkovými náklady nebo příjmy, se kterými normální zisk žádnou přímou rovnost nemá.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.1 Explicitní a implicitní náklady",
+          "pages": "94",
+          "note": "Pojem normální zisk učebnice nepoužívá, nejblíž jsou implicitní náklady."
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: náklady obětované příležitosti"
+        }
+      ]
     },
     {
       "q": "Pokud jahody a maliny jsou dokonalými substituty, platí, že:",
@@ -949,7 +1010,14 @@
         2,
         4
       ],
-      "info": "Pojem: Konkurenční lem je skupina malých firem na stejném trhu jako dominantní firma. Cenu samy neurčí, tak přebírají cenu dominantní firmy.\nProč: Firmy lemu prodávají za stejnou cenu jako dominantní firma, protože ji jednoduše kopírují. Dominantní firma má díky své síle a bariérám pro nové firmy dlouhodobě kladný zisk.\nChyták: Dominantní firma neurčuje cenu přímo z celé tržní poptávky, ale z poptávky po vlastní produkci - tedy tržní poptávka minus to, co nabídne lem.\nRozpor: Podle testu je poptávka dominantní firmy méně elastická než tržní. Podle učebnice je to naopak: jde o zbytkovou poptávku, a ta je citlivější na cenu, protože při vyšší ceně lem nabídne víc a ubere jí zákazníky."
+      "info": "Pojem: Konkurenční lem je skupina malých firem na stejném trhu jako dominantní firma. Cenu samy neurčí, tak přebírají cenu dominantní firmy.\nProč: Firmy lemu prodávají za stejnou cenu jako dominantní firma, protože ji jednoduše kopírují. Dominantní firma má díky své síle a bariérám pro nové firmy dlouhodobě kladný zisk.\nChyták: Dominantní firma neurčuje cenu přímo z celé tržní poptávky, ale z poptávky po vlastní produkci - tedy tržní poptávka minus to, co nabídne lem.\nRozpor: Podle testu je poptávka dominantní firmy méně elastická než tržní. Podle učebnice je to naopak: jde o zbytkovou poptávku, a ta je citlivější na cenu, protože při vyšší ceně lem nabídne víc a ubere jí zákazníky.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
+          "pages": "140–141"
+        }
+      ]
     },
     {
       "q": "V případě monopolu křivka nabídky odvětví:",
@@ -1080,7 +1148,12 @@
       "correct": [
         3
       ],
-      "info": "Pojem: Lernerův index měří tržní sílu firmy jako poměr (P - MC) / P, kde MC je mezní náklad - tedy o kolik cena převyšuje mezní náklad vzhledem k ceně.\nProč: V dokonalé konkurenci firma neovlivní cenu a vydělá nejvíc tam, kde se cena rovná meznímu nákladu (P = MC). Po dosazení vyjde v čitateli nula, takže index je nula.\nChyták: Kladný index patří firmám s tržní silou, třeba monopolu, kde cena mezní náklady převyšuje. V dokonalé konkurenci taková mezera neexistuje."
+      "info": "Pojem: Lernerův index měří tržní sílu firmy jako poměr (P - MC) / P, kde MC je mezní náklad - tedy o kolik cena převyšuje mezní náklad vzhledem k ceně.\nProč: V dokonalé konkurenci firma neovlivní cenu a vydělá nejvíc tam, kde se cena rovná meznímu nákladu (P = MC). Po dosazení vyjde v čitateli nula, takže index je nula.\nChyták: Kladný index patří firmám s tržní silou, třeba monopolu, kde cena mezní náklady převyšuje. V dokonalé konkurenci taková mezera neexistuje.",
+      "read": [
+        {
+          "note": "Lernerův index neřeší učebnice ani slidy Říha. Vysvětlení je jen v textu Teorie výše."
+        }
+      ]
     },
     {
       "q": "V případě kardinalistické teorie užitku (užitek je přímo měřitelný):",
@@ -1152,7 +1225,19 @@
       "correct": [
         3
       ],
-      "info": "Pojem: Normální zisk je nejnižší odměna, kterou majitel firmy potřebuje, aby se mu podnikání vyplatilo. Je to tolik, kolik by vydělal v nejlepší jiné práci nebo podnikání.\nProč: Podle testu je normální zisk nula. Myslí se tím nulový ekonomický zisk - stav, kdy firma přesně pokryje všechny své náklady, včetně nákladů obětované příležitosti, tedy toho, o co přišla, když nezvolila jinou variantu.\nChyták: Normální zisk není totéž co účetní zisk ani celkové náklady nebo příjmy. Je to samostatná veličina.\nRozpor: Podle testu je normální zisk nula. Podle učebnice je ale roven implicitním (skrytým) nákladům - to je částka navíc k viditelným nákladům, kterou firma musí vydělat, aby se vyrovnala nejlepší alternativě. Nula platí jen pro ekonomický zisk, ne pro normální zisk samotný."
+      "info": "Pojem: Normální zisk je nejnižší odměna, kterou majitel firmy potřebuje, aby se mu podnikání vyplatilo. Je to tolik, kolik by vydělal v nejlepší jiné práci nebo podnikání.\nProč: Podle testu je normální zisk nula. Myslí se tím nulový ekonomický zisk - stav, kdy firma přesně pokryje všechny své náklady, včetně nákladů obětované příležitosti, tedy toho, o co přišla, když nezvolila jinou variantu.\nChyták: Normální zisk není totéž co účetní zisk ani celkové náklady nebo příjmy. Je to samostatná veličina.\nRozpor: Podle testu je normální zisk nula. Podle učebnice je ale roven implicitním (skrytým) nákladům - to je částka navíc k viditelným nákladům, kterou firma musí vydělat, aby se vyrovnala nejlepší alternativě. Nula platí jen pro ekonomický zisk, ne pro normální zisk samotný.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.1 Explicitní a implicitní náklady",
+          "pages": "94",
+          "note": "Pojem normální zisk učebnice nepoužívá, nejblíž jsou implicitní náklady."
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: náklady obětované příležitosti"
+        }
+      ]
     },
     {
       "q": "Zákon klesajícího mezního užitku znamená, že:",
@@ -1243,7 +1328,15 @@
       "correct": [
         1
       ],
-      "info": "Pojem: Hranice výrobních možností je křivka. Ukazuje, kolik nejvíc dvou statků dokáže ekonomika vyrobit při daných zdrojích a technologii.\nProč: Při jejím sestrojení platí, že celkové zdroje (práce, kapitál, půda) i úroveň technologie zůstávají stejné. Mění se jen to, jak jsou zdroje rozdělené mezi výrobu obou statků - to je pohyb po křivce.\nChyták: Technologický pokrok naopak křivku posouvá ven, takže mezi neměnné věci nepatří. Stejně tak se podél křivky mění rozdělení zdrojů mezi statky - to je přesně to, co křivka ukazuje."
+      "info": "Pojem: Hranice výrobních možností je křivka. Ukazuje, kolik nejvíc dvou statků dokáže ekonomika vyrobit při daných zdrojích a technologii.\nProč: Při jejím sestrojení platí, že celkové zdroje (práce, kapitál, půda) i úroveň technologie zůstávají stejné. Mění se jen to, jak jsou zdroje rozdělené mezi výrobu obou statků - to je pohyb po křivce.\nChyták: Technologický pokrok naopak křivku posouvá ven, takže mezi neměnné věci nepatří. Stejně tak se podél křivky mění rozdělení zdrojů mezi statky - to je přesně to, co křivka ukazuje.",
+      "read": [
+        {
+          "src": "riha",
+          "ref": "1. přednáška: hranice produkčních možností",
+          "pages": "52–55",
+          "note": "V učebnici není."
+        }
+      ]
     },
     {
       "q": "Celkový užitek určitého množství zboží měřený v peněžních jednotkách je dán:",
@@ -1301,7 +1394,14 @@
         3,
         4
       ],
-      "info": "Pojem: Poptávka po produkci jedné firmy říká, kolik firma prodá při dané ceně. V dokonalé konkurenci je to vodorovná čára, protože firma cenu sama nemůže ovlivnit.\nProč: Cenu určuje trh, firma při ní prodá, kolik chce - poptávka po její produkci je proto dokonale elastická, čili nekonečně citlivá na cenu. Protože cena je stálá, platí P (cena) = AR (průměrný příjem) = MR (mezní příjem, příjem z poslední jednotky) - poptávka splývá s MR, ne s mezními náklady.\nChyták: Mezní náklady (MC, náklad na poslední jednotku) jsou nákladová veličina, ne příjmová. V optimu se jim cena jen rovná (P = MC), s poptávkou ale nesplývají.\nRozpor: Podle testu poptávka po produkci firmy splývá s mezními náklady. Podle učebnice splývá s mezním příjmem, protože při stálé ceně platí P = AR = MR."
+      "info": "Pojem: Poptávka po produkci jedné firmy říká, kolik firma prodá při dané ceně. V dokonalé konkurenci je to vodorovná čára, protože firma cenu sama nemůže ovlivnit.\nProč: Cenu určuje trh, firma při ní prodá, kolik chce - poptávka po její produkci je proto dokonale elastická, čili nekonečně citlivá na cenu. Protože cena je stálá, platí P (cena) = AR (průměrný příjem) = MR (mezní příjem, příjem z poslední jednotky) - poptávka splývá s MR, ne s mezními náklady.\nChyták: Mezní náklady (MC, náklad na poslední jednotku) jsou nákladová veličina, ne příjmová. V optimu se jim cena jen rovná (P = MC), s poptávkou ale nesplývají.\nRozpor: Podle testu poptávka po produkci firmy splývá s mezními náklady. Podle učebnice splývá s mezním příjmem, protože při stálé ceně platí P = AR = MR.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.4 Příjmy firmy, obr. 5.16 (AR = MR = D)",
+          "pages": "115–116"
+        }
+      ]
     },
     {
       "q": "V prostředí monopolisticky konkurenčního trhu jsou vyráběné výrobky:",
@@ -1540,7 +1640,14 @@
         0,
         1
       ],
-      "info": "Pojem: Dominantní firma odvozuje cenu z poptávky po vlastní produkci - tedy ze zbytkové poptávky, která vznikne, když se od tržní poptávky odečte nabídka menších firem, konkurenčního lemu.\nProč: Podle testu je tato zbytková poptávka méně elastická, tedy méně citlivá na cenu, než tržní poptávka. Dominantní firma cenu odvozuje právě z ní, ne z celé tržní poptávky.\nChyták: Firmy v konkurenčním lemu neprodávají levněji ani samy neurčují tržní cenu - jen přebírají cenu, kterou stanoví dominantní firma.\nRozpor: Podle testu je poptávka po produkci dominantní firmy méně elastická než tržní. Podle učebnice je to naopak: jde o zbytkovou poptávku, která je elastičtější než tržní, protože při vyšší ceně lem nabídne víc a ubere dominantní firmě zákazníky."
+      "info": "Pojem: Dominantní firma odvozuje cenu z poptávky po vlastní produkci - tedy ze zbytkové poptávky, která vznikne, když se od tržní poptávky odečte nabídka menších firem, konkurenčního lemu.\nProč: Podle testu je tato zbytková poptávka méně elastická, tedy méně citlivá na cenu, než tržní poptávka. Dominantní firma cenu odvozuje právě z ní, ne z celé tržní poptávky.\nChyták: Firmy v konkurenčním lemu neprodávají levněji ani samy neurčují tržní cenu - jen přebírají cenu, kterou stanoví dominantní firma.\nRozpor: Podle testu je poptávka po produkci dominantní firmy méně elastická než tržní. Podle učebnice je to naopak: jde o zbytkovou poptávku, která je elastičtější než tržní, protože při vyšší ceně lem nabídne víc a ubere dominantní firmě zákazníky.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "6.3.3 Oligopol s dominantní firmou, obr. 6.9",
+          "pages": "140–141"
+        }
+      ]
     },
     {
       "q": "Z hlediska dopadu změny ceny jiného statku na poptávku po určitém statku, rozlišujeme statky:",
@@ -1933,7 +2040,14 @@
       "correct": [
         2
       ],
-      "info": "Pojem: Optimální kombinace výrobních faktorů znamená, kolik jednotek práce a kapitálu firma najme, aby při daných nákladech vyrobila co nejvíc.\nProč: Podle testu o tom rozhoduje MRP_F, příjem z mezního produktu faktoru - kolik firmě dodatečná jednotka faktoru vydělá.\nChyták: Politika odborů nebo celková produkce faktoru situaci ovlivňují jen nepřímo. Samy o sobě optimální kombinaci neurčují.\nRozpor: Podle testu určuje optimální kombinaci výrobních faktorů hodnota MRP. To ale platí pro optimální množství jednoho faktoru. Optimální kombinaci víc faktorů učebnice definuje jinak - dotykem izokvanty a izokosty, tedy poměrem MPP_L / P_L = MPP_K / P_K."
+      "info": "Pojem: Optimální kombinace výrobních faktorů znamená, kolik jednotek práce a kapitálu firma najme, aby při daných nákladech vyrobila co nejvíc.\nProč: Podle testu o tom rozhoduje MRP_F, příjem z mezního produktu faktoru - kolik firmě dodatečná jednotka faktoru vydělá.\nChyták: Politika odborů nebo celková produkce faktoru situaci ovlivňují jen nepřímo. Samy o sobě optimální kombinaci neurčují.\nRozpor: Podle testu určuje optimální kombinaci výrobních faktorů hodnota MRP. To ale platí pro optimální množství jednoho faktoru. Optimální kombinaci víc faktorů učebnice definuje jinak - dotykem izokvanty a izokosty, tedy poměrem MPP_L / P_L = MPP_K / P_K.",
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.3.3 Izokosta a optimum výroby (optimální kombinace faktorů)",
+          "pages": "110–112"
+        }
+      ]
     },
     {
       "q": "Je-li cílem firmy maximalizace obratu, poté: (bez záruky)",
@@ -1994,7 +2108,12 @@
         2,
         3
       ],
-      "info": "Pojem: Oligopol se zalomenou křivkou poptávky popisuje trh s pár firmami, které pečlivě sledují, jak konkurence reaguje na změnu ceny.\nProč: Sníží-li firma cenu, ostatní ji následují, aby neztratily zákazníky. Proto jsou ceny na takovém trhu stabilní, i když se mění náklady.\nChyták: Při zvýšení ceny ji firmy naopak nenásledují, protože by tím jen posílily vlastní podíl na trhu.\nRozpor: Podle testu má dvě na sebe nenavazující části křivka MC (mezní náklady). Ve skutečnosti má mezeru křivka MR (mezní příjem), protože poptávka je zalomená - MC se v tomto úseku může měnit, aniž by se změnila optimální cena."
+      "info": "Pojem: Oligopol se zalomenou křivkou poptávky popisuje trh s pár firmami, které pečlivě sledují, jak konkurence reaguje na změnu ceny.\nProč: Sníží-li firma cenu, ostatní ji následují, aby neztratily zákazníky. Proto jsou ceny na takovém trhu stabilní, i když se mění náklady.\nChyták: Při zvýšení ceny ji firmy naopak nenásledují, protože by tím jen posílily vlastní podíl na trhu.\nRozpor: Podle testu má dvě na sebe nenavazující části křivka MC (mezní náklady). Ve skutečnosti má mezeru křivka MR (mezní příjem), protože poptávka je zalomená - MC se v tomto úseku může měnit, aniž by se změnila optimální cena.",
+      "read": [
+        {
+          "note": "Průběh křivek MC a MR u zalomené poptávky učebnice ani slidy neuvádějí."
+        }
+      ]
     },
     {
       "q": "Morální hazard označuje situaci: (5 b)",
@@ -2093,6 +2212,21 @@
         94,
         95,
         106
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "4.1–4.2 Kardinalistická teorie užitku",
+          "pages": "68–76"
+        },
+        {
+          "src": "riha",
+          "ref": "1. a 2. přednáška: mezní užitek"
+        },
+        {
+          "src": "video",
+          "ref": "díl 3: Spotřebitel, užitek a poptávka"
+        }
       ]
     },
     {
@@ -2108,6 +2242,21 @@
         90,
         103,
         115
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "4.3.1–4.3.3 Indiferenční křivka, rozpočet, optimum",
+          "pages": "77–83"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: indiferenční analýza"
+        },
+        {
+          "src": "video",
+          "ref": "díl 3: Spotřebitel, užitek a poptávka"
+        }
       ]
     },
     {
@@ -2127,6 +2276,31 @@
         108,
         114,
         124
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "2.1 Druhy statků, 2.2 Poptávka po statku",
+          "pages": "25–29"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "2.4.2 Důchodová elasticita",
+          "pages": "37–38"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "4.3.4 Odvození poptávky",
+          "pages": "83–84"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: poptávková funkce"
+        },
+        {
+          "src": "video",
+          "ref": "díl 1: Poptávka a nabídka"
+        }
       ]
     },
     {
@@ -2138,6 +2312,21 @@
         39,
         96,
         123
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "2.4 Elasticita poptávky",
+          "pages": "33–39"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: elasticita poptávky"
+        },
+        {
+          "src": "video",
+          "ref": "díl 2: Elasticita"
+        }
       ]
     },
     {
@@ -2150,6 +2339,31 @@
         88,
         92,
         104
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "2.1 Druhy statků",
+          "pages": "25"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "2.2 Posuny poptávky",
+          "pages": "28–29"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "2.4.3 Křížová elasticita",
+          "pages": "39–40"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: elasticita poptávky"
+        },
+        {
+          "src": "video",
+          "ref": "díl 2: Elasticita"
+        }
       ]
     },
     {
@@ -2160,6 +2374,31 @@
         28,
         35,
         71
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "2.3 Nabídka statku",
+          "pages": "30–32"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "3.1 Rovnováha na trhu",
+          "pages": "48–53"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "3.2.1–3.2.2 Maximální a minimální cena",
+          "pages": "56–58"
+        },
+        {
+          "src": "riha",
+          "ref": "3. přednáška: nabídková funkce"
+        },
+        {
+          "src": "video",
+          "ref": "díl 1: Poptávka a nabídka"
+        }
       ]
     },
     {
@@ -2176,6 +2415,26 @@
         112,
         120,
         125
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.1 Firma a její cíle (explicitní a implicitní náklady)",
+          "pages": "93–94"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "5.3.1–5.3.2 Náklady firmy",
+          "pages": "104–109"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: náklady; 3. přednáška: zisk a příjmy"
+        },
+        {
+          "src": "video",
+          "ref": "díl 4: Teorie firmy"
+        }
       ]
     },
     {
@@ -2192,6 +2451,26 @@
         80,
         87,
         101
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.2 Produkce firmy",
+          "pages": "95–103"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "5.3.3 Izokosta a optimum výroby",
+          "pages": "110–111"
+        },
+        {
+          "src": "riha",
+          "ref": "2. přednáška: produkční funkce"
+        },
+        {
+          "src": "video",
+          "ref": "díl 4: Teorie firmy"
+        }
       ]
     },
     {
@@ -2202,6 +2481,26 @@
         49,
         75,
         81
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.4 Příjmy firmy",
+          "pages": "114–116"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "6.1–6.2 Dokonalá konkurence",
+          "pages": "126–133"
+        },
+        {
+          "src": "riha",
+          "ref": "3. přednáška: dokonalá konkurence"
+        },
+        {
+          "src": "video",
+          "ref": "díl 5: Konkurenční prostředí"
+        }
       ]
     },
     {
@@ -2212,6 +2511,21 @@
         23,
         47,
         76
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "6.3.4 Monopolistická konkurence",
+          "pages": "142–143"
+        },
+        {
+          "src": "riha",
+          "ref": "4. přednáška: monopolistická konkurence"
+        },
+        {
+          "src": "video",
+          "ref": "díl 5: Konkurenční prostředí"
+        }
       ]
     },
     {
@@ -2227,6 +2541,21 @@
         105,
         111,
         113
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "6.3.1–6.3.2 Nedokonalá konkurence a monopol",
+          "pages": "134–138"
+        },
+        {
+          "src": "riha",
+          "ref": "4. přednáška: monopol"
+        },
+        {
+          "src": "video",
+          "ref": "díl 5: Konkurenční prostředí"
+        }
       ]
     },
     {
@@ -2241,6 +2570,21 @@
         98,
         121,
         126
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "6.3.3 Oligopol",
+          "pages": "139–141"
+        },
+        {
+          "src": "riha",
+          "ref": "4. přednáška: oligopol"
+        },
+        {
+          "src": "video",
+          "ref": "díl 5: Konkurenční prostředí"
+        }
       ]
     },
     {
@@ -2256,6 +2600,31 @@
         116,
         117,
         119
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "7.1–7.3 Trh výrobních faktorů, renta, MRP a MFC",
+          "pages": "150–161"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "7.4 Trh práce",
+          "pages": "162–169"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "7.5 Kapitál",
+          "pages": "170–173"
+        },
+        {
+          "src": "riha",
+          "ref": "5. přednáška: trh výrobních faktorů"
+        },
+        {
+          "src": "video",
+          "ref": "díly 6 a 7: Trh výrobních faktorů, trh práce a kapitálu"
+        }
       ]
     },
     {
@@ -2267,6 +2636,31 @@
         37,
         46,
         118
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "5.1 Firma a její cíle",
+          "pages": "93"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "5.4 Příjmy firmy a maximalizace obratu",
+          "pages": "114–117"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "5.5 Maximalizace zisku",
+          "pages": "118"
+        },
+        {
+          "src": "riha",
+          "ref": "3. přednáška: zisk, příjmy a maximalizace zisku"
+        },
+        {
+          "src": "video",
+          "ref": "díl 4: Teorie firmy"
+        }
       ]
     },
     {
@@ -2277,6 +2671,31 @@
         83,
         93,
         122
+      ],
+      "read": [
+        {
+          "src": "ucebnice",
+          "ref": "6.2.4 Výrobní a alokační efektivnost",
+          "pages": "133"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "6.3.2 Ztráta mrtvé váhy",
+          "pages": "138"
+        },
+        {
+          "src": "ucebnice",
+          "ref": "8 Tržní selhání",
+          "pages": "179–189"
+        },
+        {
+          "src": "riha",
+          "ref": "4. přednáška: tržní síla; 6. přednáška: externality, veřejné statky, asymetrické informace"
+        },
+        {
+          "src": "video",
+          "ref": "díl 8: Tržní nedokonalosti"
+        }
       ]
     }
   ]

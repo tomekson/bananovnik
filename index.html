@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.68">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.69">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -416,6 +416,16 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .q-info-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--primary); margin-bottom: 7px; }
 .q-info-box sub { font-size: .72em; }
+.q-src { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line2); }
+.q-src-h { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.q-src ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.q-src li { font-size: 12.5px; line-height: 1.45; color: var(--muted); }
+.q-src li strong { color: var(--text); font-weight: 600; }
+.q-src li sub { font-size: .72em; }
+.q-src-note { color: var(--amber); }
+.set-read { margin-top: 10px; padding: 11px 13px 12px; border: 1.5px solid var(--line2); border-radius: var(--r-sm, 9px); background: var(--card); }
+.set-read + .set-read { margin-top: 8px; }
+.set-read .q-src { margin-top: 0; padding-top: 0; border-top: 0; }
 .q-info-line { margin: 0 0 6px; }
 .q-info-line:last-child { margin-bottom: 0; }
 .q-info-line strong { color: var(--primary); font-weight: 700; }
@@ -1211,6 +1221,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
         </div>
         <div id="topic-sets" class="set-grid"></div>
         <div id="topic-sets-summary" class="set-summary"></div>
+        <div id="topic-sets-read"></div>
         <button type="button" id="topic-sets-toggle" class="set-toggle" style="display:none" onclick="toggleTopicSets()"></button>
       </div>
 
@@ -1371,6 +1382,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       </div>
       <div id="study-sets" class="set-grid"></div>
       <div id="study-sets-summary" class="set-summary"></div>
+      <div id="study-sets-read"></div>
     </div>
 
     <button class="btn-start" id="btn-study-sets-start" onclick="startStudyFromSets()">Procházet ↵</button>
@@ -1939,6 +1951,8 @@ function updateRecallSub() {
 
 function updateTopicSetsSummary() {
   updateRecallSub();
+  const readEl = document.getElementById('topic-sets-read');
+  if (readEl) readEl.innerHTML = setsReadHtml(cfg.setSel);
   const el = document.getElementById('topic-sets-summary');
   if (!el) return;
   const n  = cfg.setSel.length;
@@ -3251,6 +3265,8 @@ function syncStudySetsUI() {
     el.classList.toggle('active', on);
     el.setAttribute('aria-pressed', on ? 'true' : 'false');
   });
+  const readEl = document.getElementById('study-sets-read');
+  if (readEl) readEl.innerHTML = setsReadHtml(studySetsSel);
   const n  = studySetsSel.length;
   const qn = studySetsIdx().length;
   const qLabel = qn === 1 ? 'otázka' : qn >= 2 && qn <= 4 ? 'otázky' : 'otázek';
@@ -3990,6 +4006,40 @@ function togglePreInfo(rerender) {
   }
 }
 
+// Studijní zdroje (pole `sources`, `sets[].read`, `questions[].read` v JSON testu)
+function escHtml(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+function readItemHtml(r) {
+  const srcs = (S.selectedTest && S.selectedTest.sources) || {};
+  const src = r.src ? srcs[r.src] : null;
+  const parts = [];
+  if (r.ref) parts.push(glossLabel(escHtml(r.ref)));
+  if (r.pages) parts.push(`${escHtml((src && src.pageWord) || 'str.')} ${escHtml(r.pages)}`);
+  let html = src ? `<strong title="${escHtml(src.title || '')}">${escHtml(src.label)}</strong> ` : '';
+  html += parts.join(', ');
+  if (r.note) html += `${parts.length || src ? ' · ' : ''}<span class="q-src-note">${escHtml(r.note)}</span>`;
+  return `<li>${html}</li>`;
+}
+
+function readListHtml(items, heading) {
+  if (!items || !items.length) return '';
+  return `<div class="q-src"><div class="q-src-h">${escHtml(heading)}</div><ul>${items.map(readItemHtml).join('')}</ul></div>`;
+}
+
+function questionReadItems(q) {
+  const t = S.selectedTest;
+  if (!t || !q || !q._orig) return [];
+  const orig = t.questions[q._orig - 1] || {};
+  const set = (t.sets || []).find(s => (s.q || []).includes(q._orig));
+  return [...(orig.read || []), ...((set && set.read) || [])];
+}
+
+function setsReadHtml(idxList) {
+  const sets = (S.selectedTest && S.selectedTest.sets) || [];
+  return idxList.map(i => sets[i]).filter(s => s && s.read && s.read.length)
+    .map(s => `<div class="set-read">${readListHtml(s.read, 'Ke studiu · ' + s.name)}</div>`).join('');
+}
+
 // Info k otázce (pole `info` v JSON testu) — zobrazí se po vyhodnocení / odhalení
 function infoHtml(q) {
   const bank = S.selectedTest && S.selectedTest.questions;
@@ -4008,7 +4058,7 @@ function infoHtml(q) {
     }
     return `<div class="q-info-line">${glossLabel(l)}</div>`;
   });
-  return `<div class="q-info-box"><div class="q-info-eyebrow">Teorie</div>${rows.join('')}</div>`;
+  return `<div class="q-info-box"><div class="q-info-eyebrow">Teorie</div>${rows.join('')}${readListHtml(questionReadItems(q), 'Ke studiu')}</div>`;
 }
 
 function copyQuestion(mode) {
@@ -4064,7 +4114,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.68';
+const APP_VERSION = '9.69';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

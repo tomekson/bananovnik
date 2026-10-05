@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.74">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.75">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1140,7 +1140,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
   </div>
 </div>
 
-<button id="update-banner" type="button" hidden onclick="location.reload()">Nová verze k dispozici — klikni pro aktualizaci.</button>
+<button id="update-banner" type="button" hidden onclick="applyUpdate()">Nová verze k dispozici — klikni pro aktualizaci.</button>
 
 <!-- ══════════════════════════ DASHBOARD ══════════════════════════ -->
 <div id="screen-dashboard" class="screen active">
@@ -4136,7 +4136,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.74';
+const APP_VERSION = '9.75';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 
@@ -4162,6 +4162,21 @@ function checkVersion(force) {
   }).catch(() => {});
 }
 
+// Obnova na novou verzi: GitHub Pages posílá max-age=600, takže prosté location.reload()
+// může do 10 minut načíst z HTTP cache pořád starý index.html. Proto nejdřív vynutit
+// stažení ze sítě (cache: 'reload' zároveň přepíše HTTP cache) a aktualizovat service worker.
+var applyingUpdate = false;
+function applyUpdate() {
+  if (applyingUpdate) return;
+  applyingUpdate = true;
+  const banner = document.getElementById('update-banner');
+  if (banner) banner.textContent = 'Aktualizuji…';
+  const urls = [BASE, BASE + 'index.html', BASE + 'version.json', BASE + 'sw.js', location.href];
+  Promise.all(urls.map(u => fetch(u, { cache: 'reload' }).catch(() => null)))
+    .then(() => swReg ? swReg.update().catch(() => {}) : null)
+    .finally(() => location.reload());
+}
+
 function activeScreenId() {
   const el = document.querySelector('.screen.active');
   return el ? el.id : '';
@@ -4177,7 +4192,7 @@ function onScreenChange(id) {
   const alreadyTried = sessionStorage.getItem('bananovnik-auto-reload') === updatePending;
   if (id === 'screen-dashboard' && !alreadyTried) {
     sessionStorage.setItem('bananovnik-auto-reload', updatePending);
-    location.reload();
+    applyUpdate();
     return;
   }
   document.getElementById('update-banner').hidden = !(id === 'screen-start' || id === 'screen-dashboard' || id === 'screen-survey-start');

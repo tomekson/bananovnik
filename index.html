@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.77">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.78">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2633,7 +2633,7 @@ function renderQ() {
   const hintEl = document.getElementById('q-hint');
   const c = q.correct.length;
   const hintTxt = c === 1 ? '1 správná odpověď' : c <= 4 ? `${c} správné odpovědi` : `${c} správných odpovědí`;
-  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat otázku</span>` + ((done && ihned) ? '' : preInfoBtn(q, 'renderQ'));
+  const copyBtn = `<span class="btn-copy-q" id="btn-copy-q" onclick="copyQuestion('quiz')">Kopírovat otázku</span>` + preInfoBtn(q, 'renderQ');
   if (done && ihned) {
     hintEl.innerHTML = `<span>${hintTxt}</span>${copyBtn}`;
     hintEl.className   = 'q-hint done';
@@ -2686,7 +2686,8 @@ function renderQ() {
   });
 
   // Zpětná vazba (jen v režimu "Ihned", nebo vždy při Otestovat)
-  document.getElementById('q-info').innerHTML = (showFb || preInfoOpen) ? infoHtml(q) : '';
+  // Teorie jen na kliknutí, ani po vyhodnocení se sama neotevře
+  document.getElementById('q-info').innerHTML = isPreInfoOpen(q) ? infoHtml(q) : '';
   document.getElementById('q-pre').innerHTML = '';
 
   const fbEl = document.getElementById('fb');
@@ -3416,7 +3417,7 @@ function renderStudy() {
     });
   }
 
-  document.getElementById('study-q-info').innerHTML = ((isOptionsShown && isRevealed) || preInfoOpen) ? infoHtml(q) : '';
+  document.getElementById('study-q-info').innerHTML = ((isOptionsShown && isRevealed) || isPreInfoOpen(q)) ? infoHtml(q) : '';
   document.getElementById('study-q-pre').innerHTML = '';
   document.getElementById('btn-study-test').style.display = isRevealed ? '' : 'none';
 
@@ -4012,7 +4013,9 @@ function glossaryHtml(q, includeOpts) {
 }
 
 // Vysvětlení pojmu před odpovědí: jen první odstavec Info (Pojem), aby neprozradil odpověď.
-let preInfoOpen = false;
+// Otázka, u které je Teorie otevřená; přechod na jinou otázku ji tím zavře
+let preInfoQ = null;
+function isPreInfoOpen(q) { return !!q && preInfoQ === q; }
 
 function infoConcept(q) {
   const bank = S.selectedTest && S.selectedTest.questions;
@@ -4025,14 +4028,15 @@ function infoConcept(q) {
 
 function preInfoBtn(q, rerender) {
   if (!infoConcept(q)) return '';
-  return `<span class="btn-copy-q${preInfoOpen ? ' copied' : ''}" onclick="togglePreInfo('${rerender}')">Teorie</span>`;
+  return `<span class="btn-copy-q${isPreInfoOpen(q) ? ' copied' : ''}" onclick="togglePreInfo('${rerender}')">Teorie</span>`;
 }
 
 // Teorie před odpovědí: ukáže celé Info pod možnostmi (může prozradit odpověď, je to volba studenta)
 function togglePreInfo(rerender) {
-  preInfoOpen = !preInfoOpen;
+  const q = S.questions[S.cur];
+  preInfoQ = isPreInfoOpen(q) ? null : q;
   if (rerender === 'renderStudy') renderStudy(); else renderQ();
-  if (preInfoOpen) {
+  if (preInfoQ) {
     const el = document.querySelector(rerender === 'renderStudy' ? '#study-q-info .q-info-box' : '#q-info .q-info-box');
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
@@ -4166,7 +4170,7 @@ if (_sysDark) _sysDark.addEventListener('change', () => {
 });
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.77';
+const APP_VERSION = '9.78';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

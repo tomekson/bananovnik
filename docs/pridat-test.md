@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.81 (7. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.82 (7. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -68,7 +68,7 @@ Kde se to projeví:
 | `opts` | string[] | Možnosti, ve stávajících testech 3 až 6 |
 | `correct` | number[] | Indexy správných odpovědí, **0-based**. Jeden nebo více |
 | `img` | string | Nepovinné. Cesta k obrázku se zadáním relativně ke složce `tests/`, např. `img/projektove-rizeni/q055.jpg` |
-| `info` | string | Nepovinné. Vysvětlení k otázce (60 až 110 slov) v řádcích oddělených `\n` s návěštími `Pojem:` (co je klíčový pojem), `Proč:` (mechanismus, proč platí správná odpověď), `Chyták:` (proč neplatí lákavá špatná možnost) a jen u sporných otázek `Rozpor:` (co říká test vs. co říká učebnice, formulace „Podle testu … Podle učebnice …“, bez odkazů na jiné otázky). Návěští Pojem/Proč/Chyták se nezobrazují (v aplikaci jsou to tři odstavce), jen Rozpor se vykreslí tučně a oranžově. Celé se zobrazí po vyhodnocení otázky v testu, po odhalení odpovědí v Active recall a v přehledu odpovědí. Před odpovědí jde tlačítkem **Teorie** rozbalit celý text pod možnostmi (může odpověď prozradit, je to volba studenta). Text má vždy popisek TEORIE. Dolní index přes `_X` jako ve slovníčku |
+| `info` | string | Nepovinné. Teorie k otázce (90 až 170 slov): vysvětluje ekonomickou látku, na které otázka stojí - pojmy, vztahy, mechanismus, vzorec, příklad. Nekomentuje otázku ani možnosti (žádné „otázka se ptá“, „všechna tvrzení platí“), špatné možnosti vyvrací výkladem, jak to funguje. 3 až 5 odstavců oddělených `\n`, odstavec max 3 věty. První řádek začíná návěštím `Pojem:` (nezobrazuje se), ostatní odstavce jsou bez návěští. Jen u sporných otázek poslední řádek `Rozpor:` (co říká test vs. co říká učebnice, formulace „Podle testu … Podle učebnice …“, bez odkazů na jiné otázky), vykreslí se tučně a oranžově. Zobrazí se jen po kliknutí na tlačítko **Teorie** (v testu je k dispozici před i po vyhodnocení, přechod na jinou otázku ji zavře), po odhalení odpovědí v Active recall a v přehledu odpovědí. Text má vždy popisek TEORIE. Dolní index přes `_X` jako ve slovníčku |
 
 ```json
 {

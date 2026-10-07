@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.80">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.81">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4002,7 +4002,7 @@ function glossaryHtml(q, includeOpts) {
   const gl = S.selectedTest && S.selectedTest.glossary;
   if (!Array.isArray(gl) || !gl.length) return '';
   const txt = q.q + ' ' + (includeOpts ? q.opts.join(' ') : '');
-  const tokens = new Set(txt.match(/[A-Za-z]+/g) || []);
+  const tokens = new Set(txt.match(/\p{L}+/gu) || []);
   const hits = gl.filter(e => (e.keys || []).some(k => tokens.has(k)));
   if (!hits.length) return '';
   const n = hits.length;
@@ -4164,7 +4164,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.80';
+const APP_VERSION = '9.81';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

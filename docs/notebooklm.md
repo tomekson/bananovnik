@@ -35,5 +35,6 @@ notebooklm source fulltext -n 50a4444a-b64a-4461-a7b0-a79fd3d8a8d5 <source_id> -
 1. `curl -LsSf https://astral.sh/uv/install.sh | sh` (systémový Python 3.9 nestačí, potřeba 3.10+).
 2. `uv tool install --python 3.12 "notebooklm-py[browser]"`
 3. `notebooklm login` - otevře prohlížeč, přihlášení se uloží do `~/.notebooklm/profiles/default/storage_state.json`. Soubor nikdy necommituj.
+   - Pozor (10/2026): NotebookLM přesměrovává na `notebook.google.com` a `login` pak uloží stav hned, bez přihlašovacích cookies (`Missing required cookies: SID`). Řešení: po přihlášení v okně Playwrightu spusť `launch_persistent_context` nad `~/.notebooklm/profiles/default/browser_profile`, otevři `https://notebooklm.google.com/` a ulož `ctx.storage_state(path=...storage_state.json)`. Bundled Chromium: `~/.local/share/uv/tools/notebooklm-py/bin/python -m playwright install chromium`.
 4. `notebooklm skill install --scope project --target claude` - skill pro Claude Code do `.claude/skills/notebooklm/` (složka `.claude/` je v `.gitignore`).
 5. Ověření: `notebooklm auth check --test --json` vrátí `"status": "ok"`.

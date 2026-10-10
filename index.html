@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.84">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.85">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2614,6 +2614,7 @@ function startQuiz() {
 function renderQ() {
   const n      = S.cur;
   const q      = S.questions[n];
+  syncPreInfo(q);
   const tot    = S.questions.length;
   const isExam = cfg.mode === 'exam';
   const done   = S.confirmed[n];
@@ -3345,6 +3346,7 @@ function printTestDirect() {
 function renderStudy() {
   const n = S.cur;
   const q = S.questions[n];
+  syncPreInfo(q);
   const tot = S.questions.length;
   const correctSet = new Set(q.correct);
   const LETTERS = ['1','2','3','4','5','6'];
@@ -4013,9 +4015,10 @@ function glossaryHtml(q, includeOpts) {
 }
 
 // Vysvětlení pojmu před odpovědí: jen první odstavec Info (Pojem), aby neprozradil odpověď.
-// Otázka, u které je Teorie otevřená; přechod na jinou otázku ji tím zavře
+// Otázka, u které je Teorie otevřená; přechod na jinou otázku ji zavře natrvalo (ani po návratu se sama neotevře)
 let preInfoQ = null;
 function isPreInfoOpen(q) { return !!q && preInfoQ === q; }
+function syncPreInfo(q) { if (preInfoQ !== q) preInfoQ = null; }
 
 function infoConcept(q) {
   const bank = S.selectedTest && S.selectedTest.questions;
@@ -4164,7 +4167,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.84';
+const APP_VERSION = '9.85';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.85">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.86">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -432,6 +432,16 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-src-group > ul > li::marker { color: var(--line2); }
 .q-src li sub { font-size: .72em; }
 .q-src-note { color: var(--amber); }
+.set-read-wrap { margin-top: 10px; }
+.set-read-wrap summary {
+  display: flex; align-items: center; gap: 6px; cursor: pointer; list-style: none;
+  padding: 9px 12px; border-radius: var(--r-sm, 9px); border: 1.5px dashed var(--line2);
+  font-size: 13px; font-weight: 600; color: var(--muted); user-select: none;
+}
+.set-read-wrap summary::-webkit-details-marker { display: none; }
+.set-read-wrap summary::before { content: '▸'; font-size: 11px; }
+.set-read-wrap[open] summary::before { content: '▾'; }
+.set-read-wrap[open] summary { color: var(--primary); border-style: solid; }
 .set-read { margin-top: 10px; padding: 11px 13px 12px; border: 1.5px solid var(--line2); border-radius: var(--r-sm, 9px); background: var(--card); }
 .set-read + .set-read { margin-top: 8px; }
 .set-read .q-src { margin-top: 0; padding-top: 0; border-top: 0; }
@@ -4093,10 +4103,18 @@ function sortRead(items) {
   return items.map((r, i) => ({ r, i })).sort((a, b) => rank(a.r) - rank(b.r) || a.i - b.i).map(x => x.r);
 }
 
+// Studijní zdroje vybraných sad sbalené do jednoho řádku, aby start testu zůstal nahoře
+let setsReadOpen = false;
 function setsReadHtml(idxList) {
   const sets = (S.selectedTest && S.selectedTest.sets) || [];
-  return idxList.map(i => sets[i]).filter(s => s && s.read && s.read.length)
+  const withRead = idxList.map(i => sets[i]).filter(s => s && s.read && s.read.length);
+  if (!withRead.length) return '';
+  const n = withRead.length;
+  const label = n === 1 ? withRead[0].name : n <= 4 ? `${n} témata` : `${n} témat`;
+  const cards = withRead
     .map(s => `<div class="set-read">${readListHtml(sortRead(s.read), 'Ke studiu · ' + s.name)}</div>`).join('');
+  return `<details class="set-read-wrap"${setsReadOpen ? ' open' : ''} ontoggle="setsReadOpen=this.open">` +
+    `<summary>Ke studiu · ${escHtml(label)}</summary>${cards}</details>`;
 }
 
 // Info k otázce (pole `info` v JSON testu) — zobrazí se po vyhodnocení / odhalení
@@ -4167,7 +4185,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.85';
+const APP_VERSION = '9.86';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

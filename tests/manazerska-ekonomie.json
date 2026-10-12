@@ -204,6 +204,83 @@
       ],
       "label": "APP",
       "text": "průměrný fyzický produkt (average physical product) = TPP / množství vstupu"
+    },
+    {
+      "keys": [
+        "D"
+      ],
+      "label": "D",
+      "text": "poptávka (demand) - kolik kupující koupí při jednotlivých cenách"
+    },
+    {
+      "keys": [
+        "S"
+      ],
+      "label": "S",
+      "text": "nabídka (supply) - kolik prodávající nabídnou při jednotlivých cenách"
+    },
+    {
+      "keys": [
+        "L"
+      ],
+      "label": "L",
+      "text": "práce (labour) - výrobní faktor, množství práce"
+    },
+    {
+      "keys": [
+        "K"
+      ],
+      "label": "K",
+      "text": "kapitál - výrobní faktor, třeba stroje a budovy"
+    },
+    {
+      "keys": [
+        "Δ"
+      ],
+      "label": "Δ",
+      "text": "delta - změna veličiny, třeba ΔQ je změna množství"
+    },
+    {
+      "keys": [
+        "MRS"
+      ],
+      "label": "MRS",
+      "text": "mezní míra substituce (marginal rate of substitution) - v jakém poměru se jeden statek nahradí druhým"
+    },
+    {
+      "keys": [
+        "MRTS"
+      ],
+      "label": "MRTS",
+      "text": "mezní míra technické substituce - kolik kapitálu nahradí jednotka práce při stejné produkci; sklon izokvanty"
+    },
+    {
+      "keys": [
+        "MRES"
+      ],
+      "label": "MRES",
+      "text": "mezní míra ekonomické substituce - poměr cen výrobních faktorů P_L / P_K; sklon izokosty"
+    },
+    {
+      "keys": [
+        "MRP"
+      ],
+      "label": "MRP",
+      "text": "příjem z mezního produktu (marginal revenue product) = MP × MR; o kolik vzroste příjem z jednotky faktoru navíc"
+    },
+    {
+      "keys": [
+        "EPD"
+      ],
+      "label": "E_PD",
+      "text": "cenová elasticita poptávky - o kolik % se změní poptávané množství, když cena vzroste o 1 %"
+    },
+    {
+      "keys": [
+        "EDI"
+      ],
+      "label": "E_DI",
+      "text": "důchodová elasticita poptávky - o kolik % se změní poptávané množství, když důchod vzroste o 1 %"
     }
   ],
   "questions": [

@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.88 (12. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.89 (12. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -20,7 +20,7 @@ Každý test je jeden JSON soubor ve složce `tests/`. Registr testů je konstan
 | `exam` | object | ano | Bodování zkoušky, viz níže |
 | `questions` | array | ano | Otázky, viz níže |
 | `sets` | array | ne | Tematické sady, viz níže. Když je uvedeš, dej do registru `hasSets: true` |
-| `glossary` | array | ne | Slovníček zkratek, viz níže. U otázky se zobrazí jen položky, jejichž zkratka se v otázce vyskytuje |
+| `glossary` | array | ne | Slovníček zkratek, viz níže. U otázky i v Teorii se zobrazí jen položky, jejichž zkratka se v textu vyskytuje |
 | `sources` | object | ne | Studijní zdroje předmětu (učebnice, slidy, video), viz níže. Odkazují na ně pole `read` u sad a otázek |
 | `openQuestions` | string[] | ne | Seznam otevřených otázek ke zkoušce. Aplikace je zatím nikde nezobrazuje, jen je drží u testu |
 
@@ -96,6 +96,8 @@ Obrázek se ukazuje v testu, v Active recall, v přehledu odpovědí i v tisku; 
 | `text` | Český význam. Dolní indexy fungují stejně jako v `label` |
 
 Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k otázce přidá rozbalovací blok **Zkratky v otázce** jen s položkami, jejichž `keys` se v textu vyskytují. Pořadí odpovídá pořadí v `glossary`. V Active recall se možnosti započítají až po jejich odhalení. Stav rozbalení se drží po celou návštěvu, takže stačí rozbalit jednou.
+
+Stejný slovníček používá i blok **Teorie**: pod text `info` přidá rozbalovací řádek **Zkratky v teorii** (funkce `glossHits` v `infoHtml`). Zkratka s indexem se hledá v celém tvaru i po částech, takže `MRS_C` najde klíče `MRSC`, `MRSc`, `MRS` i `C` a `ΔQ` najde `Δ` a `Q`. Jednopísmenné slovo na začátku věty (`S vyšším důchodem…`) se za zkratku nepovažuje.
 
 ### `sources` a `read` (studijní zdroje)
 

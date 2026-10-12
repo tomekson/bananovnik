@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 9.87 (12. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 9.88 (12. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 

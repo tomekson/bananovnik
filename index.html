@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.94">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.95">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4082,7 +4082,12 @@ function togglePreInfo(rerender) {
   if (rerender === 'renderStudy') renderStudy(); else renderQ();
   if (preInfoQ) {
     const el = document.querySelector(rerender === 'renderStudy' ? '#study-q-info .q-info-box' : '#q-info .q-info-box');
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // začátek Teorie těsně pod sticky hlavičku (scrollIntoView nepočítá s hlavičkou ani fixní patičkou)
+    if (el) {
+      const hdr = el.closest('.screen')?.querySelector('.quiz-hdr');
+      const top = el.getBoundingClientRect().top + window.scrollY - (hdr ? hdr.offsetHeight : 0) - 12;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
   }
 }
 
@@ -4217,7 +4222,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.94';
+const APP_VERSION = '9.95';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

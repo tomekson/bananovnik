@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.93">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.94">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4217,7 +4217,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.93';
+const APP_VERSION = '9.94';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 
@@ -4330,22 +4330,29 @@ checkVersion(true);
   });
 })();
 
-// Swipe ←/→ pro listování otázkami na dotykovém zařízení
+// Swipe ←/→ pro listování otázkami na dotykovém zařízení.
+// Při označování textu (dlouhý stisk, posun úchytů výběru) se nelistuje.
 (function() {
   let swipeStartX = null;
   let swipeStartY = null;
+  let swipeStartT = 0;
+  const hasSelection = () => { const sel = window.getSelection(); return !!sel && !sel.isCollapsed && sel.toString().trim() !== ''; };
   document.addEventListener('touchstart', e => {
     if (!document.getElementById('screen-quiz').classList.contains('active')) return;
+    if (hasSelection()) { swipeStartX = null; return; }
     swipeStartX = e.touches[0].clientX;
     swipeStartY = e.touches[0].clientY;
+    swipeStartT = Date.now();
   }, { passive: true });
   document.addEventListener('touchend', e => {
     if (!document.getElementById('screen-quiz').classList.contains('active')) return;
     if (swipeStartX === null) return;
     const dx = e.changedTouches[0].clientX - swipeStartX;
     const dy = e.changedTouches[0].clientY - swipeStartY;
+    const held = Date.now() - swipeStartT;
     swipeStartX = null;
     swipeStartY = null;
+    if (hasSelection() || held > 450) return;
     if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
     if (dx < 0) goQ(1); else goQ(-1);
   }, { passive: true });

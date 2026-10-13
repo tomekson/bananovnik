@@ -2189,7 +2189,7 @@
       ]
     },
     {
-      "q": "Příjem z mezního fyzického produktu při nedokonalé konkurenci na trhu finálních statků a služeb: (3,33/5 b)",
+      "q": "Příjem z mezního fyzického produktu při nedokonalé konkurenci na trhu finálních statků a služeb: (3,33/5 b) (bez záruky)",
       "opts": [
         "je určen mezním fyzickým produktem a cenou statku",
         "je klesající",
@@ -2199,9 +2199,10 @@
       ],
       "correct": [
         0,
-        1
+        1,
+        4
       ],
-      "info": "Pojem: MRP_F (příjem z mezního produktu faktoru) je příjem z prodeje produkce, kterou přinese poslední najatá jednotka faktoru. Platí MRP_F = MP_F · MR, kde MP_F je mezní fyzický produkt a MR mezní příjem.\nV nedokonalé konkurenci na trhu statku má příjem z mezního fyzického produktu dvě vlastnosti. Je určen mezním fyzickým produktem a cenou statku. Zároveň je klesající, a to rychleji než v dokonalé konkurenci.\nUrčení mezním fyzickým produktem a cenou: MR v nedokonalé konkurenci vychází z ceny statku, která s produkcí klesá. MRP_F tedy závisí na mezních veličinách a ceně. Celkový produkt a průměrná cena ho neurčují.\nKlesající průběh: mezní fyzický produkt s každou další jednotkou faktoru klesá. Firma navíc při větší produkci musí zlevnit, takže MR je nižší než cena a s produkcí klesá.\nTempo poklesu: v dokonalé konkurenci je cena konstantní a MR = P. MRP_F tam klesá jen kvůli klesajícímu MP_F, v nedokonalé konkurenci proto klesá rychleji. O kolik rychleji, záleží na tvaru poptávky, pevný poměr jako dvojnásobek neplatí."
+      "info": "Pojem: MRP_F (příjem z mezního produktu faktoru) je příjem z prodeje produkce, kterou přinese poslední najatá jednotka faktoru. Platí MRP_F = MP_F · MR, kde MP_F je mezní fyzický produkt a MR mezní příjem.\nV nedokonalé konkurenci na trhu statku má příjem z mezního fyzického produktu tři vlastnosti. Je určen mezním fyzickým produktem a cenou statku. Je klesající. A klesá rychleji než v dokonalé konkurenci.\nUrčení mezním fyzickým produktem a cenou: MR v nedokonalé konkurenci vychází z ceny statku, která s produkcí klesá. MRP_F tedy závisí na mezních veličinách a ceně. Celkový produkt a průměrná cena ho neurčují.\nKlesající průběh: mezní fyzický produkt s každou další jednotkou faktoru klesá. Firma navíc při větší produkci musí zlevnit, takže MR je nižší než cena a s produkcí klesá.\nTempo poklesu: v dokonalé konkurenci je cena konstantní a MR = P. MRP_F tam klesá jen kvůli klesajícímu MP_F. V nedokonalé konkurenci klesá i MR, a to při lineární poptávce dvakrát rychleji než cena. MRP_F proto klesá rychleji, ne stejným tempem.\nRozpor: Primát uvádí jako správné jen první dvě vlastnosti, ale za ně byly 3,33 z 5 bodů, tedy 2/3. Třetí správnou je podle videolearningu (MR klesá dvakrát rychleji než cena) nejspíš dvakrát rychlejší pokles. Učebnice u MRP píše jen rychleji, proto bez záruky."
     },
     {
       "q": "Ekonomický zisk je: (5 b)",

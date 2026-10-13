@@ -186,7 +186,7 @@
         "TPP",
         "TP"
       ],
-      "label": "TPP",
+      "label": "TPP, TP",
       "text": "celkový fyzický produkt (total physical product) - celkový výstup při daném množství vstupu"
     },
     {
@@ -194,16 +194,16 @@
         "MPP",
         "MP"
       ],
-      "label": "MPP",
-      "text": "mezní fyzický produkt (marginal physical product) - přírůstek výstupu z jedné jednotky vstupu navíc"
+      "label": "MPP, MP",
+      "text": "mezní fyzický produkt (marginal physical product) - přírůstek výstupu z jedné jednotky vstupu navíc; MP_F je mezní produkt výrobního faktoru, MP_L práce, MP_K kapitálu"
     },
     {
       "keys": [
         "APP",
         "AP"
       ],
-      "label": "APP",
-      "text": "průměrný fyzický produkt (average physical product) = TPP / množství vstupu"
+      "label": "APP, AP",
+      "text": "průměrný fyzický produkt (average physical product) = TPP / množství vstupu; AP_L je průměrný produkt práce"
     },
     {
       "keys": [
@@ -266,7 +266,7 @@
         "MRP"
       ],
       "label": "MRP",
-      "text": "příjem z mezního produktu (marginal revenue product) = MP × MR; o kolik vzroste příjem z jednotky faktoru navíc"
+      "text": "příjem z mezního produktu (marginal revenue product) = MP × MR; o kolik vzroste příjem z jednotky faktoru navíc; MRP_F je příjem z mezního produktu výrobního faktoru"
     },
     {
       "keys": [

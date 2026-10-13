@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=9.97">
+<link rel="manifest" href="/bananovnik/manifest.json?v=9.98">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1533,7 +1533,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       <button class="btn-start" id="btn-retry-wrong" onclick="retryWrong()" style="display:none">Opakovat chybné</button>
       <button class="btn-start" onclick="openReview()">Přehled odpovědí</button>
       <div style="display:flex;gap:9px"><button class="btn-sec" style="flex:1" onclick="repeatQuiz()" title="Zopakovat test se stejnými otázkami v tom samém pořadí">Opakovat tyto otázky</button>
-      <button class="btn-sec" style="flex:1" onclick="show('screen-start')" title="Změnit počet otázek, pořadí nebo jiné nastavení">Změnit nastavení testu</button></div>
+      <button class="btn-sec" style="flex:1" id="btn-results-settings" onclick="show('screen-start')" title="Změnit počet otázek, pořadí nebo jiné nastavení">Změnit nastavení testu</button></div>
       <button class="btn-sec" style="width:100%;font-size:13px;padding:9px" onclick="goToDashboard()">Vybrat jiný test</button>
     </div>
   </div>
@@ -3034,6 +3034,11 @@ function showResults() {
     grid.classList.remove('cols4');
   }
 
+  // U testů s tematickými sadami vede tlačítko hlavně k výběru jiné sady
+  const hasSets = !!(S.selectedTest && (S.selectedTest.sets || []).length);
+  const setBtn = document.getElementById('btn-results-settings');
+  setBtn.textContent = hasSets ? 'Vybrat jinou tematickou sadu' : 'Změnit nastavení testu';
+  setBtn.title = hasSets ? 'Vybrat jiné téma, počet otázek nebo jiné nastavení' : 'Změnit počet otázek, pořadí nebo jiné nastavení';
   S.prevScreen = 'screen-results';
   show('screen-results');
   animScore(raw, 900);
@@ -4222,7 +4227,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '9.97';
+const APP_VERSION = '9.98';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

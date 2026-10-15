@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.00">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.01">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1766,10 +1766,6 @@ function buildRangeChunks(total, chunkSize) {
     } else {
       chunks.push({ from: fullChunks * chunkSize + 1, to: total });
     }
-  }
-  if (chunks.length > 5) {
-    chunks.splice(4);
-    chunks.push({ from: 4 * chunkSize + 1, to: total });
   }
   return chunks;
 }
@@ -4227,7 +4223,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.00';
+const APP_VERSION = '10.01';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

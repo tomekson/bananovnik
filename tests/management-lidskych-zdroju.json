@@ -1,0 +1,2451 @@
+{
+  "id": "management-lidskych-zdroju",
+  "title": "Management lidských zdrojů",
+  "updatedAt": "2026-10-18",
+  "rubric": "Zkouškový test: 60 min., 20 otázek po 4 bodech + 1 otevřená za 20 bodů, bez pomůcek",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 80,
+    "openPoints": 20,
+    "passPoints": 51,
+    "questionCount": 20,
+    "openCount": 1
+  },
+  "sets": [
+    {
+      "name": "Pojetí MLZ, strategie a personální útvar",
+      "q": [
+        20,
+        24,
+        48,
+        59,
+        61,
+        63,
+        64,
+        68,
+        71,
+        94,
+        96,
+        106,
+        115,
+        116,
+        117,
+        118,
+        119,
+        121,
+        123,
+        125,
+        129,
+        131,
+        146,
+        147,
+        151
+      ]
+    },
+    {
+      "name": "Personální plánování a analýza pracovních míst",
+      "q": [
+        4,
+        25,
+        39,
+        40,
+        43,
+        50,
+        52,
+        55,
+        56,
+        66,
+        70,
+        72,
+        87,
+        93,
+        103,
+        132
+      ]
+    },
+    {
+      "name": "Získávání pracovníků a personální marketing",
+      "q": [
+        6,
+        8,
+        12,
+        27,
+        28,
+        29,
+        30,
+        34,
+        51,
+        53,
+        74,
+        75,
+        76,
+        77,
+        80,
+        82,
+        92,
+        108,
+        109,
+        110,
+        112,
+        113,
+        136,
+        137,
+        138,
+        141
+      ]
+    },
+    {
+      "name": "Výběr pracovníků",
+      "q": [
+        2,
+        5,
+        32,
+        54,
+        58,
+        60,
+        83,
+        89,
+        101,
+        114,
+        122,
+        124,
+        126,
+        133,
+        148,
+        149,
+        150
+      ]
+    },
+    {
+      "name": "Pracovní poměr a odbory",
+      "q": [
+        1,
+        3,
+        14,
+        22,
+        37,
+        91,
+        107,
+        128,
+        134
+      ]
+    },
+    {
+      "name": "Adaptace pracovníků",
+      "q": [
+        7,
+        9,
+        31,
+        57,
+        78,
+        97,
+        127,
+        130
+      ]
+    },
+    {
+      "name": "Hodnocení a řízení pracovního výkonu",
+      "q": [
+        10,
+        11,
+        13,
+        42,
+        45,
+        46,
+        47,
+        62,
+        90,
+        95,
+        99,
+        105,
+        143
+      ]
+    },
+    {
+      "name": "Odměňování a motivace",
+      "q": [
+        41,
+        44,
+        73,
+        135,
+        139,
+        140,
+        142,
+        144,
+        145
+      ]
+    },
+    {
+      "name": "Vzdělávání a rozvoj",
+      "q": [
+        15,
+        16,
+        17,
+        35,
+        36,
+        38,
+        49,
+        67,
+        79,
+        81,
+        88,
+        98,
+        100,
+        104,
+        120
+      ]
+    },
+    {
+      "name": "Rozmisťování, propouštění a fluktuace",
+      "q": [
+        18,
+        19,
+        21,
+        23,
+        26,
+        33,
+        65,
+        69,
+        84,
+        85,
+        86,
+        102,
+        111
+      ]
+    }
+  ],
+  "openQuestions": [
+    "Co je outplacement (jeho cíle, co by měl program outplacementu obsahovat, příklady z českého trhu práce)?",
+    "Co je to pracovní motivace, stimulace, motivační program organizace. Popište rozdíl mezi vnitřní motivaci a vnější motivací.",
+    "Jaké jsou zdroje získávání pracovníků (charakterizujte jednotlivé zdroje, uveďte jejich výhody a nevýhody)",
+    "Vysvětlete pojem „personální strategie“ (vztah ke strategii organizace, její cíle). Co je podstatou strategického managementu lidských zdrojů?",
+    "Co je cílem procesu přijímání zaměstnance (vysvětlete pojmy zaměstnanec, zaměstnavatel, závislá práce, pracovněprávní vztah, jaké jsou podstatné náležitosti pracovní smlouvy, jakými způsoby lze dle zákoníku práce pracovní poměr ukončit)?",
+    "Popište personální činnosti (metody cíle úskalí).",
+    "Popište proces adaptace zaměstnanců (co je cílem, co by měl proces adaptace obsahovat, vysvětlete úlohu mentora při adaptaci).",
+    "Co je strategie managementu lidských zdrojů (konkurence schopnost lidí).",
+    "Jaká je role liniových manažerů v managementu lidských zdrojů?",
+    "Vysvětlete mechanistický a motivační přístup k vytváření pracovních míst (co mají oba přístupy společného, jaké jsou zásady vytváření motivujících pracovních míst)?",
+    "Jaká je role liniových manažerů?",
+    "Jaké jsou jednotlivé kroky v rámci procesu získávání pracovníků (co je cílem procesu získávání, metody získávání, rozdíl mezi získáváním a náborem, jaké náležitosti by měl mít inzerát)?",
+    "Jaké jsou funkce personálního útvaru a role personalistů v organizaci (uveďte a stručně charakterizujte funkce a role; jaký by měl být odborný a osobnostní profil personálního manažera)?",
+    "Popište fluktuaci (jak jí předejít, jak se počítá).",
+    "Popište rozdíl mezi hodnocením pracovníků a řízením pracovního výkonu. Co je to dohoda o pracovním výkonu a jakou má roli?",
+    "Vysvětlete pojmy mzda, plat a odměna z dohod. Jaký je mezi těmito pojmy rozdíl? Co jsou zaměstnanecké výhody a jaký mají význam v odměňování zaměstnanců?",
+    "Jaké jsou jednotlivé etapy procesu výběru zaměstnanců (co je cílem procesu výběru, jaké jsou úskalí výběrových pohovorů, struktura výběrového pohovoru)?",
+    "Jaká jsou specifika managementu lidských zdrojů jako nejnovější etapy ve vývoji personální práce (stručně charakterizujte jednotlivé etapy ve vývoji personalistiky a zaměřte se na specifika současné etapy)?"
+  ],
+  "questions": [
+    {
+      "q": "Nestanoví-li zákoník práce jinak, zakládá se pracovní poměr:",
+      "opts": [
+        "dohodou o pracovní činnosti mezi zaměstnavatelem a zaměstnancem",
+        "smlouvou o dílo",
+        "dohodou o výpomoci",
+        "pracovní smlouvou mezi zaměstnavatelem a zaměstnancem",
+        "dohodou o provedení práce mezi zaměstnavatelem a zaměstnancem"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Jaké jsou nejčastější chyby při vedení výběrového pohovoru?",
+      "opts": [
+        "vedení pohovoru na základě prvního dojmu",
+        "nezapisování si poznámek z průběhu výběrového pohovoru",
+        "kladení sugestivních otázek",
+        "kladení diskriminujících otázek",
+        "tendence více naslouchat než hovořit"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Mezi povinnosti organizace vyplývající z pracovního poměru patří:",
+      "opts": [
+        "dodržovat pracovní podmínky stanovené právními předpisy",
+        "poskytovat všem zaměstnancům ochranné pracovní podmínky",
+        "vytvářet podmínky pro plnění jeho pracovních úkolů",
+        "přidělovat pracovníkovi práci podle pracovní smlouvy",
+        "platit pracovníkovi za vykonanou práci mzdu nebo plat"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Při plánování lidských zdrojů se řeší především otázky:",
+      "opts": [
+        "jaké budou vnitřní zdroje pracovníků",
+        "v jakém časovém horizontu se vymění vrcholové vedení společnosti",
+        "kolik finančních prostředků uvolní organizace na růst mezd",
+        "kolik pracovníků a v jaké struktuře bude třeba přijmout a uvolnit",
+        "jaká bude situace na trhu pracovních sil v budoucnu"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Výběrové pohovory členíme na:",
+      "opts": [
+        "polostrukturovaný",
+        "nestrukturovaný",
+        "strukturovaný",
+        "kmenový",
+        "vázaný"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Které pracovníky dané organizace můžeme využít při obsazování volné (nově vytvořené) pracovní funkce v rámci tzv. vnitřních zdrojů?",
+      "opts": [
+        "uspořené v důsledku technického pokroku",
+        "ti, kteří mají vlastní zájem změnit práci",
+        "ti, kteří jsou připraveni vykonávat náročnější práci",
+        "volné pracovníky na trhu práce",
+        "uvolněné v důsledku změn"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Průběžné obsazování volných (nově vytvořených) pracovních funkcí v organizaci zajišťujeme prostřednictvím následujících personálních činností v tomto pořadí:",
+      "opts": [
+        "získávání, výběr, přijímání a hodnocení pracovníků",
+        "získávání, výběr, přijímání a propouštění pracovníků",
+        "získávání, výběr, přijímání a odměňování pracovníků",
+        "získávání, výběr, přijímání a adaptace pracovníků",
+        "výběr, získávání, přijímání a adaptace pracovníků"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Získávání pracovníků zahrnuje tyto činnosti:",
+      "opts": [
+        "nabízení volných pracovních míst",
+        "výběr nejvhodnějšího kandidáta",
+        "rozpoznávání a vyhledávání vhodných pracovních zdrojů",
+        "jednání s uchazeči",
+        "informování o volných pracovních místech v organizaci"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaký je úkol (úkoly) personálního útvaru v rámci adaptace nového pracovníka?",
+      "opts": [
+        "řídit a koordinovat celý průběh útvarové adaptace",
+        "koordinovat celoorganizační adaptaci",
+        "podílet se na počáteční fázi adaptace",
+        "vypracovat koncepci adaptace",
+        "řídit celoorganizační adaptaci"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké jsou zásady přípravy a vedení hodnoticího rozhovoru?",
+      "opts": [
+        "v hodnocení se nemají objevit překvapení pro hodnoceného",
+        "pracovník, který vede hodnotící rozhovor, by ho měl začít vždy negativní skutečnostní a až potom přecházet k pozitivním skutečnostem",
+        "společné úsilí hodnoceného i hodnotitele o řešení problémů zaměstnance, pracoviště, firmy",
+        "příprava na hodnotící pohovor by neměla přesahovat dva dny",
+        "zapojit zaměstnance do procesu hodnocení a realizovat prvky sebehodnocení"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Pracovní výkonnost je charakterizována jako:",
+      "opts": [
+        "zkoumání a posuzování pracovního výkonu každého jednotlivého pracovníka",
+        "předpoklad nebo potenciál zaměstnance podat konkrétní pracovní výkon v podobě měřitelných výsledků",
+        "dosahování konkrétních výsledků v požadované kvalitě, kvantitě a ve stanoveném termínu",
+        "zkoumání a posuzování pracovního výkonu týmu / skupiny",
+        "úroveň pracovního úsilí"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Cílem personálního marketingu je:",
+      "opts": [
+        "Vytvoření adaptačního plánu",
+        "Prodej výrobků a služeb",
+        "Vytvoření kariérové mapy",
+        "Výběr uchazeče",
+        "Budování značky zaměstnavatele jako \"zaměstnavatele první volby\""
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Jaký je cíl (cíle) řízení pracovního výkonu?",
+      "opts": [
+        "maximalizace potenciálu jednotlivců a týmů",
+        "zvýšení nákladů",
+        "motivování lidí k nejlepším výsledkům",
+        "propojování individuálních cílů všech pracovníků s cíli organizace",
+        "zaměření úkolů na správné věci a na jejich správné vykonávání"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Základní oblasti působnosti odborových orgánů zahrnují:",
+      "opts": [
+        "součinnost, spolurozhodování, rozhodování a kontrolu",
+        "součinnost, spolurozhodování, rozhodování a koordinaci",
+        "spolusoučinnost, součinnost, rozhodování a kontrolu",
+        "součinnost, spolurozhodování, koordinaci a kontrolu",
+        "součinnost, spolurozhodování, koordinaci a zpětnou vazbu"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Systém formování pracovních schopností člověka zahrnuje oblast:",
+      "opts": [
+        "odborné vzdělávání",
+        "všeobecného vzdělávání",
+        "zvyšování kvalifikace",
+        "rozvoje",
+        "hodnocení pracovního výkonu"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Jaká by měla být úloha vedoucích pracovníků u větších organizací v procesu vzdělávání zaměstnanců?",
+      "opts": [
+        "organizovat a metodicky vést vyhodnocení výsledku",
+        "součinnost při plánování vzdělávání",
+        "identifikovat potřeby vzdělání",
+        "navrhovat politiku vzdělávání pracovníků",
+        "odpovědnost za realizaci vzdělání na pracovišti"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Mezi metody vzdělávání a rozvoje pracovníků na pracovišti patří:",
+      "opts": [
+        "mentoring",
+        "asistování",
+        "rotace práce",
+        "instruktáž při výkonu práce a pověření úkolem",
+        "workshopy"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Do pasivní stránky rozmisťování pracovníků v rámci vnější mobility patří?",
+      "opts": [
+        "rozhodnutí pracovníků z organizace odejít",
+        "přijímání pracovníků",
+        "ukončení pracovního poměru úmrtím",
+        "získávání pracovníků",
+        "penzionování pracovníků"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Při výběru pracovníků, kteří mají být propuštění se používá metoda:",
+      "opts": [
+        "LIFO",
+        "FIFO",
+        "FOLI",
+        "FOFI",
+        "PIPO"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Jaké je v současnosti optimální postavení personálního manažera ve větší organizaci?",
+      "opts": [
+        "funkce personálního manažera by měla být kumulována s funkcí finančního manažera",
+        "personální manažer by měl optimálně být součástí vrcholového vedení organizace",
+        "personální manažer by měl být na úrovni asistentské pozice, protože vykonává převážně administrativní činnosti spojené se zaměstnáváním pracovníků",
+        "funkce personálního manažera by měla být kumulována s funkcí jednatele společnosti",
+        "personální manažer by měl být podřízený finančnímu řediteli"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Jaké jsou politiky penzionování pracovníků?",
+      "opts": [
+        "dobrovolná politika",
+        "pasivní politika důchodového věku",
+        "politika výběrového důchodového věku",
+        "nedobrovolná politika důchodového věku",
+        "politika pevného důchodového věku"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "V rámci hromadného propouštění má zaměstnavatel povinnost písemně informovat odborovou organizaci o:",
+      "opts": [
+        "době, kdy se hromadné propouštění uskuteční",
+        "hlediscích pro výběr dotčených zaměstnanců",
+        "důvodech, počtu a profesním složení zaměstnanců",
+        "odstupném",
+        "zaměstnavatel v případě hromadného propouštění nemá povinnost informovat odborovou organizaci"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Mezi formy rozmisťování pracovníků v rámci tzv. vnitřní mobility  pracovníků patří:",
+      "opts": [
+        "skončení pracovního poměru",
+        "získávání, výběr, přijímání a adaptace pracovníků",
+        "převádění pracovníků na jinou práci",
+        "penzionování pracovníků",
+        "povyšování pracovníků"
+      ],
+      "correct": [
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Podmínkou pro personální práci v organizaci je existence jakých informací?",
+      "opts": [
+        "subjektivních",
+        "podrobných",
+        "věrohodných",
+        "aktuálních",
+        "obecných"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Personální plánování usiluje o to, aby organizace měla pracovní síly:",
+      "opts": [
+        "s potřebnými znalostmi",
+        "v potřebném množství",
+        "s přiměřenými náklady",
+        "s žádoucími osobnostními charakteristikami",
+        "v požadované věkové struktuře"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Při převádění pracovníků na jinou práci (pracoviště) přecházejí pracovníci v hierarchii organizace na:",
+      "opts": [
+        "pracovní funkce s nižší nebo stejnou mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí",
+        "pracovní funkce s nižší mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí",
+        "pracovní funkce s vyšší nebo nižší mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí",
+        "pracovní funkce s přibližně stejnou mírou složitosti, odpovědnosti a namáhavosti práce jako v případě dosavadních pracovních funkcí",
+        "pracovní funkce s vyšší mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Jaké informace by měla obsahovat nabídka zaměstnání?",
+      "opts": [
+        "počet zaměstnanců pracujících v dané společnosti",
+        "název organizace",
+        "místo výkonu práce",
+        "požadavky na vzdělání, kvalifikaci, dovednosti a zkušenosti",
+        "název pracovní funkce"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké činnosti zahrnuje získávání pracovníků?",
+      "opts": [
+        "Inzerování volné pracovní pozice.",
+        "Vytváření plánů rozvoje.",
+        "Jednání s uchazeči.",
+        "Rozpoznávání a vyhledávání vhodných pracovních zdrojů.",
+        "Adaptaci nových zaměstnanců."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Mezi tzv. vnější zdroje pracovní síly patří:",
+      "opts": [
+        "pracovníci dané firmy, kteří mají vlastní zájem změnit práci",
+        "volní pracovníci na trhu práce",
+        "pracovníci dané firmy uspoření v důsledku technického pokroku",
+        "pracovníci jiných organizací",
+        "absolventi škol a jiných vzdělávacích institucí"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi tzv. vnitřní zdroje pracovní síly patří:",
+      "opts": [
+        "pracovníci uspoření v důsledku technického pokroku",
+        "pracovníci jiných organizací",
+        "pracovníci dané firmy, kteří mají vlastní zájem změnit práci",
+        "volní pracovníci na trhu práce",
+        "absolventi škol a jiných vzdělávacích institucí"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Adaptačně-vzdělávací program organizace musí zabezpečit:",
+      "opts": [
+        "odborné začlenění nového pracovníka do organizace a pracovní funkce",
+        "seznámení pracovníka s organizací",
+        "sociální začlenění nového pracovníka do organizace a pracovní funkce",
+        "stanovení výše mzdy nebo platu na období minimálně dvou let",
+        "informování nového pracovníka o skutečnostech, které jsou důležité pro jeho úspěšnou činnost v rámci organizace a pracovní funkce"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Ve strukturovaném životopise by neměly chybět:",
+      "opts": [
+        "údaje o praxi",
+        "osobní údaje",
+        "datum a podpis",
+        "údaje o vzdělávání",
+        "informace o zaměstnání rodičů"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Mezi formy rozmisťování pracovníků v rámci tzv. vnější mobility pracovníků patří:",
+      "opts": [
+        "povyšování pracovníků",
+        "získávání, výběr, přijímání a adaptace pracovníků",
+        "převádění pracovníků na jinou práci (pracoviště)",
+        "penzionování pracovníků",
+        "skončení pracovního poměru"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké mohou být nevýhody získávání zaměstnanců z vnitřních zdrojů?",
+      "opts": [
+        "uchazeč lépe zná organizaci",
+        "soutěžení o povýšení může negativně ovlivňovat morálku a mezilidské vztahy",
+        "organizace lépe zná slabé stránky uchazeče",
+        "organizace lépe zná silné stránky uchazeče",
+        "vytváření překážek v pronikání nových myšlenek a přístupů z venku"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Kterou aktivitu zařazujeme do systému vzdělávání pracovníků organizace:",
+      "opts": [
+        "prohlubování kvalifikace - training",
+        "rekvalifikace - retraining",
+        "adaptace",
+        "outplacement",
+        "outsourcing"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Systém formování pracovních schopností pracovníka organizace nezahrnuje:",
+      "opts": [
+        "adaptaci (orientaci) pracovníků",
+        "doškolování (prohlubování kvalifikace) pracovníků",
+        "základní přípravu pracovníků na povolání",
+        "profesní rehabilitaci",
+        "přeškolování (rekvalifikace) pracovníků"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Zaměstnanec je:",
+      "opts": [
+        "povinen plnit pokyny nadřízených vydané v souladu s právními předpisy a spolupracovat s ostatními zaměstnanci",
+        "fyzická osoba, která se zavázala k výkonu závislé práce v základním pracovněprávním vztahu",
+        "povinen pracovat řádně podle svých sil, znalostí a schopností",
+        "osoba, která se zavázala k výkonu práce v základním pracovněprávním vztahu",
+        "osoba, pro kterou se fyzická osoba zavázala k výkonu závislé práce v základním pracovněprávním vztahu"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "K podstatným rysům učící se organizace patří:",
+      "opts": [
+        "rozvoj kvalitních mezilidských vztahů",
+        "kultura povzbuzující zpochybňování zaběhnutých způsobů vykonávání práce",
+        "úzké delegování pravomocí",
+        "ve vzdělávání jsou podporování jen pracovníci, kteří řídí další pracovníky",
+        "motivování a podporování zaměstnanců k soustavnému učení, získávání nových schopností"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Cílem personálního plánování je zajistit, aby organizace měla pracovní síly:",
+      "opts": [
+        "S žádoucími osobnostními charakteristikami",
+        "V potřebném množství (kvantita)",
+        "Ve správný čas",
+        "Optimálně motivované a s žádoucím poměrem k práci",
+        "S potřebnými znalostmi, dovednostmi a zkušenostmi (kvalita)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jak lze dělit plány v oblasti lidských zdrojů? (2/4 bodů) (bez záruky)",
+      "opts": [
+        "Členění dle úrovně rozhodovacího procesu",
+        "Členění dle věcné náplně plánu",
+        "Členění dle smysluplnosti/nesmysluplnosti",
+        "Členění dle časového hlediska",
+        "Členění dle srozumitelnosti"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Důležitým faktorem v oblasti odměňování je:   (2/4 bodů) (bez záruky)",
+      "opts": [
+        "jednoznačnost odměňování",
+        "daná zastávaná pozice",
+        "jasnost systému odměňování",
+        "dosažené vzdělání",
+        "pravidelnost odměňování"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Pro jaké účely se v praxi nejčastěji využívá hodnocení pracovníků?",
+      "opts": [
+        "rozmisťování pracovníků (povyšování, převedení, přeřazování)",
+        "vzdělávání a rozvoj pracovníků",
+        "odměňování",
+        "stimulace k zlepšení pracovního výkonu a motivování pracovníků",
+        "stanovení firemní strategie"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Cíle personálního plánování by měly splňovat tzv. SMART kritéria, co to znamená?",
+      "opts": [
+        "Obecné, měřitelné, dosažitelné, výsledkově orientované, časově ohraničené.",
+        "Specifické, měřitelné, nedosažitelné, výsledkově orientované, časově ohraničené.",
+        "Specifické, měřitelné, dosažitelné, finančně nenáročné, časově ohraničené.",
+        "Specifické, měřitelné, dosažitelné, výsledkově orientované, časově ohraničené.",
+        "Specifické, měřitelné, dosažitelné, výsledkově orientované."
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Jaké jsou základní faktory hmotné odměny, které ovlivňují motivační účinnost a pracovní spokojenost?",
+      "opts": [
+        "prodleva mezi výkonem a oceněním",
+        "uznání nadřízeného pracovníka",
+        "předem stanovená pravidla vztahu mezi výkonem a odměnou",
+        "jasný vztah mezi pracovním výkonem a výší odměny",
+        "výše mzdy"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Řízení pracovního výkonu je provázaný systém:",
+      "opts": [
+        "hodnocení pracovního výkonu pro rozhodování o přijímání pracovníků",
+        "pracovních úkolů - plánování pracovní kariéry - povyšování",
+        "pracovních úkolů - vzdělávání a rozvoje pracovníků - hodnocení pracovního výkonu a odměňování",
+        "hodnocení pracovního výkonu pro rozhodování a propuštění",
+        "hodnocení pracovního výkonu pro určení kompetencí, potřebných pro výkon pracovní funkce"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Jaké jsou zásady přípravy a vedení hodnotícího rozhovoru?",
+      "opts": [
+        "společné úsilí hodnoceného i hodnotitele o řešení problému zaměstnance, pracoviště, firmy",
+        "zapojit zaměstnance do procesu hodnocení a realizovat prvky sebehodnocení",
+        "v hodnocení se nemají objevit překvapení pro hodnoceného",
+        "příprava na hodnotící pohovor by neměla přesahovat dva dny",
+        "pracovník, který vede hodnotící rozhovor, by ho měl začít vždy negativní skutečností a až potom přecházet pozitivním skutečnostem"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Čím se zabývá hodnocení pracovníků?",
+      "opts": [
+        "dosaženými pracovními úspěchy u předešlého zaměstnavatele",
+        "hledáním cest ke zlepšení pracovního výkonu",
+        "pracovním chováním a pracovními vztahy",
+        "plněním pracovníkovi stanovených úkolů",
+        "sdělováním a projednáváním výsledků"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Dobrovolná péče v oblasti personálního a sociálního rozvoje zaměstnanců:",
+      "opts": [
+        "stát určuje rozsah dobrovolné péče v oblasti personálního a sociálního rozvoje zaměstnanců",
+        "vymezuje jí zákoník práce",
+        "je výrazem personální politiky zaměstnavatele, výrazem jeho úsilí o získání konkurenční výhody na trhu práce",
+        "je dána zákony",
+        "je vždy dána vyšší kolektivní smlouvou"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Doškolování (prohlubování kvalifikace) pracovníků znamená:",
+      "opts": [
+        "získávání znalostí, dovedností a osobních vlastností nad rámec podmínek a požadavků stávajících pracovních funkcí a organizace",
+        "přizpůsobování znalostí, dovedností a osobních vlastností pracovníků novým podmínkám a požadavkům stávajících pracovních funkcí a organizací",
+        "osvojení si nových dovedností a osobních vlastností, které pracovníkům umožní i vykonávání práce v rámci jiných než stávajících pracovních funkcí",
+        "osvojení si nových znalostí, dovedností a osobních vlastností, které pracovníkům umožní vykonávání práce v rámci jiných než stávajících pracovních funkcí",
+        "přivyknutí pracovníků na podmínky a požadavky nových pracovních funkcí a organizace"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Princip plánování potřeb lidských zdrojů je založen na:",
+      "opts": [
+        "prognóze potřeby a zdrojů pracovních sil",
+        "prognóze míry nezaměstnanosti",
+        "prognóze poptávky",
+        "prognóze nákladů na adaptaci",
+        "prognóze vývoje tržeb dané organizace"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Jaké informace kompletní by měl obsahovat inzerát?",
+      "opts": [
+        "informace o organizaci, pracovním místě a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o požadavcích na pracovníka, mzdě/platu a zaměstnaneckých výhodách, místě výkonu práce a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o organizaci, pracovním místě, požadavcích na pracovníka, mzdě/platu a zaměstnaneckých výhodách, místě výkonu práce a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o místě výkonu práce a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o organizaci, pracovním místě, požadavcích na pracovníka"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Při plánování lidských zdrojů se sledují:",
+      "opts": [
+        "vývojové tendence míry nezaměstnanosti",
+        "specifické schopnosti a požadavky pracovníků",
+        "náklady na získávání pracovníků",
+        "průměrné mzdy v organizaci",
+        "náklady na adaptaci pracovníků"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Mezi metody získávání pracovníků patří:",
+      "opts": [
+        "spolupráce se školami",
+        "inzerce v tisku",
+        "spolupráce s úřady práce",
+        "psychologické testy",
+        "zkoumání životopisů"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Příprava na výběrový pohovor (strukturovaný) zpravidla zahrnuje:",
+      "opts": [
+        "seznámení se s žádostmi o zaměstnání a životopisy uchazečů",
+        "přípravu některých otázek, které budeme uchazeči klást",
+        "návrh struktury (fází) výběrového pohovoru",
+        "adaptační proces",
+        "volbu profesionálního vzhledu a vystupování"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Metody sloužící k odhadu perspektivní potřeby pracovníků dělíme na:",
+      "opts": [
+        "subjektivní a objektivní",
+        "deduktivní a intuitivní",
+        "kmenové a vázané",
+        "intuitivní a kvantitativní",
+        "intuitivní a poměrné"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Která metoda (metody) patří mezi tzv. intuitivní metody personálního plánování?",
+      "opts": [
+        "kaskádová metoda",
+        "metoda manažerských odhadů",
+        "delfská metoda",
+        "korelace a regrese",
+        "grafická analýza"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Adaptace pracovníků je program adaptačních a vzdělávacích aktivit, jež mají tyto specifické úkoly:",
+      "opts": [
+        "vybrat nejvhodnějšího kandidáta na obsazovanou pozici na základě předvýběru uchazečů",
+        "urychlit proces seznamování pracovníka s novými podmínkami, pracovním a sociálním prostředím, potřebnými znalostmi a dovednostmi",
+        "zkrátit období, po které pracovník nepodává standardní výkon a nedostatečně se orientuje v novém pracovním a sociálním prostředí",
+        "zajistit potřebný počet nových pracovníků v požadované profesní struktuře",
+        "urychlit proces seznamování pracovníka s jeho novými pracovními úkoly"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "K čemu slouží metoda Assessment Centre (AC)?",
+      "opts": [
+        "urychlení procesu adaptace nových pracovníků",
+        "zvýšení podnikové kultury",
+        "hodnocení pracovníků",
+        "výběru pracovníků",
+        "testování uchazečů při řešení modelových úkolů"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Které činnosti předcházení formulaci personální strategie?",
+      "opts": [
+        "předvýběr zaměstnanců",
+        "analýza současného stavu, vnitřních a vnějších podmínek",
+        "stanovení personálních politik",
+        "zajištění funkčního obsazení personálního útvaru",
+        "výběr zaměstnanců"
+      ],
+      "correct": [
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Prostřednictvím výběrového pohovoru můžeme:",
+      "opts": [
+        "zjistit představu uchazečů o pracovních podmínkách",
+        "posoudit odbornou způsobilost uchazečů",
+        "zjišťovat náboženské vyznání a politické přesvědčení",
+        "podat uchazečům informace o organizaci, práci a pracovních podmínkách",
+        "posoudit osobnost a motivaci uchazečů"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Modely řízení lidských zdrojů jsou:",
+      "opts": [
+        "Model rozporu",
+        "Model neshody",
+        "Model shody",
+        "Harvardský systém",
+        "Londýnský systém"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Jaké jsou tři základní faktory ovlivňující pracovní výkon pracovníka?",
+      "opts": [
+        "organizační struktura",
+        "právní forma organizace",
+        "vnímání role",
+        "úsilí",
+        "schopnosti"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "V které činnosti většinou spočívá úloha liniových manažerů v realizaci personální strategie? (bez záruky)",
+      "opts": [
+        "v řízení výrobního procesu tak, aby organizace dosahovala co možná nejvyššího zisku",
+        "hodnocení výkonu zaměstnanců",
+        "v praktické realizaci personálních politik a postupů",
+        "propouštění zaměstnanců",
+        "v řízení a dosahování vysokého výkonu zaměstnanců"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Označte hlavní úkoly řízení lidských zdrojů z pohledu současné teorie a praxe:",
+      "opts": [
+        "zvyšování úrovně zaměstnanosti",
+        "vytváření dynamického souladu mezi počtem a strukturou pracovních míst, počtem a strukturou pracovníků",
+        "formování efektivního stylu vedení lidí a zdravých mezilidských vztahů",
+        "optimální využívání pracovních sil v organizaci",
+        "personální a sociální rozvoj pracovníků"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi formy rozmisťování pracovníků v rámci tzv. \"vnitřní mobility\" nepatří:",
+      "opts": [
+        "přeřazení na nižší funkci",
+        "rozhodnutí pracovníka z organizace odejít",
+        "převedení pracovníka na jinou práci nebo pracoviště",
+        "výběr vhodných kandidátů pro přípravu personálních rezerv",
+        "povyšování pracovníků"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Co je výstupem analýzy pracovních míst?",
+      "opts": [
+        "Kariérní mapa",
+        "Organizační schéma",
+        "Popis pracovního místa",
+        "Plán flexibility",
+        "Plán vzdělávání"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Smyslem hodnocení efektivnosti vzdělávacího procesu je:",
+      "opts": [
+        "ověření, zda vynaložené prostředky (čas, náklady) byly využity na dosažení požadovaných cílů",
+        "splnění plánů personálního rozvoje zúčastněných pracovníků",
+        "získání podkladů pro stanovení strategie firmy",
+        "získání podkladů pro personální plánování",
+        "realizace kariérových plánů organizace"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Největším bohatstvím organizace jsou lidé, kteří:",
+      "opts": [
+        "jsou nositeli znalostí a zkušeností",
+        "vtiskují organizaci kolektivní charakter",
+        "jsou schopni kreativity",
+        "jsou schopni experimentovat",
+        "jsou schopni dávat si různé věci do vzájemných souvislostí"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké mohou být negativní důsledky vysoké míry odchodu pracovníků?",
+      "opts": [
+        "úspora nákladů",
+        "možné přechodné zhoršení péče o zákazníky",
+        "ztráta zákazníků",
+        "možný únik citlivých informací",
+        "ztráta zaškolených pracovníků"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Které tvrzení vystihuje obsah, úkoly a cíle personálního plánování?",
+      "opts": [
+        "zabezpečuje získávání pracovníků",
+        "identifikuje potřebu obsadit určité pracovní místo",
+        "realizuje rozmístění pracovníků",
+        "realizuje propouštění pracovníků",
+        "zabezpečuje výběr pracovníků"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Mezi obecná východiska personální strategie patří:",
+      "opts": [
+        "personální strategie společnosti musí být alespoň dvakrát ročně aktualizována",
+        "personální strategie je determinována celkovou strategií organizace",
+        "personální strategie musí brát v úvahu i vnější, mimo organizaci existující podmínky reprodukce pracovní síly",
+        "personální strategie by neměla být determinována celkovou strategií organizace",
+        "personální cíle musí být provázané s ostatními cíli organizace"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Z časového hlediska dělíme plány na:",
+      "opts": [
+        "Specifické (faktické)",
+        "Dlouhodobé (strategické)",
+        "Krátkodobé (strategické)",
+        "Střednědobé (taktické)",
+        "Krátkodobé (operativní)"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké mohou být nástroje ovlivňující pracovní úsilí?",
+      "opts": [
+        "atmosféra pracovní skupiny",
+        "účinný mzdový systém",
+        "atraktivní obsah práce",
+        "povzbuzování - neformální vztahy",
+        "právní forma podnikání"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Jaké máme obecné zásady efektivního získávání pracovníků?",
+      "opts": [
+        "uchazeče získáváme na základě jejich pracovních schopností",
+        "volné pracovní pozice se nejprve snažíme obsadit z vnějších zdrojů",
+        "při oslovování vnějších zdrojů postupujeme neanonymně",
+        "volné pracovní pozice obsazujeme až poté, co uplynou minimálně 3 měsíce od uvolnění této pozice",
+        "uchazečům sdělujeme přesné, relevantní a úplné informace"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Jaké činnosti zahrnuje získávání pracovníků?",
+      "opts": [
+        "Adaptaci nových zaměstnanců.",
+        "Inzerování volné pracovní pozice.",
+        "Jednání s uchazeči.",
+        "Vytváření plánů rozvoje.",
+        "Rozpoznávání a vyhledávání vhodných pracovních zdrojů."
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Která z uvedených metod se týká získávání pracovníků?",
+      "opts": [
+        "výběrový pohovor",
+        "doporučení současného zaměstnance",
+        "doporučení dřívějšího zaměstnance",
+        "přímé oslovení vyhlédnutého kandidáta",
+        "testy znalostí"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Mezi nevýhody získávání pracovníků z vnějších zdrojů nepatří:",
+      "opts": [
+        "Možné konflikty se stávajícími pracovníky, kteří se cítili kvalifikováni na danou pozici",
+        "Škála talentů je větší mimo organizaci",
+        "Nábor nových lidí je obtížnější a nákladnější",
+        "Nový pracovník může přinést nové postřehy a přístupy",
+        "Adaptace a orientace je delší"
+      ],
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Adaptace pracovníků jakožto speciální adaptačně-vzdělávací program musí zabezpečit:",
+      "opts": [
+        "zajistit pracovníkovi rotaci práce",
+        "sociální začlenění do organizace",
+        "informování o skutečnostech, které jsou důležité pro jeho úspěšnou činnost v rámci organizace",
+        "odborné začlenění na pracovišti a mimo něj",
+        "umožnění prostudování zákoníku práce"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Označte metodu vzdělávání, které patří mezi tzv. \"Metody vzdělávání mimo pracoviště - (off the job)\":",
+      "opts": [
+        "pověření úkolem",
+        "rotace práce",
+        "simulace",
+        "workshop, případová studie",
+        "asistování"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Proces získávání pracovníků obsahuje následující činnosti:",
+      "opts": [
+        "identifikace potřeby obsadit určitou pracovní funkci",
+        "volba metod získávání pracovníků",
+        "volba dokumentů požadovaných od uchazečů",
+        "popis a specifikace obsazované pracovní funkce",
+        "adaptace pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Jaká metoda (metody) patří mezi analýzy potřeb vzdělávání?",
+      "opts": [
+        "korelační analýza",
+        "intuitivní metoda",
+        "delfská metoda",
+        "hodnocení pracovního výkonu",
+        "kaskádová metoda"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Mezi zásady efektivního získávání pracovníků patří:",
+      "opts": [
+        "uchazeče získáváme na základě jejich pracovních schopností",
+        "uchazečům sdělujeme přesné, pravdivé, úplné a relevantní informace",
+        "uchazeče, kteří neodpovídají naší věkové představě o ideálním uchazeči vyřadíme",
+        "volné pracovní funkce se snažíme obsadit nejprve z vnitřních zdrojů",
+        "při oslovování vnějších zdrojů vystupujeme anonymně"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Označte metodu (metody), která se nepoužívá při výběru pracovníků:",
+      "opts": [
+        "výběrový pohovor",
+        "hodnotící rozhovor",
+        "přijetí pracovníka na zkušební dobu",
+        "zkoumání / hodnocení životopisu (osobního dotazníku)",
+        "ověřování referencí"
+      ],
+      "correct": [
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Při rozmisťování pracovníků musíme brát v úvahu:",
+      "opts": [
+        "profil, povahu pracovního místa (má primární roli) a profil pracovníka",
+        "povahu neformálního vztahu pracovníka s jeho přímým nadřízeným pracovníkem",
+        "věk pracovníka",
+        "trvání pracovního poměru",
+        "sociální postavení pracovníka"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Jaké mohou být důvody outplacementu?",
+      "opts": [
+        "zodpovědnost organizace za propouštěné zaměstnance",
+        "poděkování zaměstnancům za jejich práci pro firmu",
+        "úspora nákladů za propuštěné zaměstnance",
+        "marketing a zvýšení prestiže značky zaměstnavatele",
+        "outplacement je v případě hromadného propouštění zákonnou povinností"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Na co může být zaměřena pomoc zaměstnavatele zaměstnancům při hromadném propouštění?",
+      "opts": [
+        "na poradenství vztahující se k lepší orientaci na trhu práce",
+        "konzultace zaměřené na zahájení nové kariéry",
+        "na převedení zaměstnance na jinou práci ve společnosti",
+        "hledání jiného zaměstnání",
+        "psychologické poradenství"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "V důsledku správného personálního plánování by měla mít organizace zaměstnance:",
+      "opts": [
+        "v potřebném množství",
+        "s žádoucími osobními charakteristikami",
+        "s potřebnými znalostmi, dovednostmi a zkušenostmi",
+        "v požadované věkové struktuře",
+        "ve správný čas"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Úkolem kouče je:",
+      "opts": [
+        "vést přátelský rozhovor s koučovaným",
+        "pomoci realizovat potenciál a cíle koučovaného",
+        "přispívat vlastní zkušeností v procesu koučování",
+        "určit, co má koučovaný udělat",
+        "ptát se proč?"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Do jakých skupin dělíme uchazeče při předvýběru?",
+      "opts": [
+        "velmi vhodní, vhodnější, vhodní a nevhodní",
+        "velmi vhodní, vhodní a nevhodní",
+        "vhodní, nevhodní a nepřijatelní",
+        "nevhodní a nepřijatelní",
+        "velmi vhodní a vhodní"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Jaké jsou fáze řízení pracovního výkonu?",
+      "opts": [
+        "koncipování hlavních principů",
+        "získání liniových manažerů",
+        "zápisy z porady vedení organizace",
+        "sestavení pracovní náplně",
+        "obchodní smlouvy"
+      ],
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "q": "Pracovní poměr podle zákoníku práce vzniká:",
+      "opts": [
+        "dnem, který byl sjednán jako den podpisu pracovní smlouvy",
+        "dnem, který byl sjednán v pracovní smlouvě jako den nástupu do práce",
+        "vždy k prvnímu dni v daném měsíci, ve kterém zaměstnanec nastupuje do práce",
+        "dnem, kdy kandidát projeví souhlas s pracovní nabídkou zaměstnavatele",
+        "dnem, který byl sjednán jako den doručení pracovní smlouvy"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Jako externí zdroje v procesu získávání a výběru jsou označování:",
+      "opts": [
+        "Ženy na mateřské dovolené.",
+        "Pracovníci, kteří jsou již způsobilí k výkonu náročnější pozice, tj. dozráli pro vyšší pozici.",
+        "Lidé ve starobním důchodu.",
+        "Lidé volní na trhu práce.",
+        "Pracovníci přesouvaní na jiné pozice v důsledku organizačních změn."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Jaké jsou přístupy k tvorbě plánů v oblasti lidských zdrojů?",
+      "opts": [
+        "Shora dolů – nadřazený plán a jeho cíle jsou rozpracovány na nižší úroveň. Jedná se o divergentní přístup využívající deduktivní techniky uvažování (matka – dcera). Nevýhoda – absence zpětné vazby.",
+        "Plánování ze středu.",
+        "Obousměrné plánování – kombinace přístupů shora a zdola. Odchylky mezi směry jsou vyhodnocovány a korigovány.",
+        "Zdola nahoru - syntézou dílčích plánů vzniká firemní plán. Jedná se i konvergentní přístup využívající induktivní techniky uvažování.",
+        "Protisměrné plánování – jiné plány vytvářejí řadoví zaměstnanci a jiné manažeři. Odchylky mezi směry jsou vyhodnocovány tak, aby plány šly protisměrně."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Jaké jsou principy budování efektivních vztahů na pracovišti?",
+      "opts": [
+        "otevřenost a rovnost vztahů",
+        "problémy se řeší přes rozhodovatele",
+        "nastavení skupinových cílů",
+        "skupině je poskytována zpětná vazba",
+        "mezi členy panuje nerovnost"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Při zkoumání výkonu - výkonnosti pracovníka lze konstatovat, že výkon je funkcí:",
+      "opts": [
+        "hygienických faktorů",
+        "schopnosti",
+        "výkonosti v určitém čase",
+        "štěstí",
+        "motivace"
+      ],
+      "correct": [
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Cílem řízení lidských zdrojů je:",
+      "opts": [
+        "srovnání pracovních míst s jinými organizacemi",
+        "personální a sociální rozvoj",
+        "osobní rozvoj pracovníků",
+        "odměňování pracovníků",
+        "spolupráce s konkurenčními organizacemi"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Na které oblasti se zaměřuje adaptace pracovníků:",
+      "opts": [
+        "celoorganizační adaptaci",
+        "sociální adaptaci",
+        "útvarovou, skupinovou adaptaci",
+        "adaptaci na konkrétní pracovní místo",
+        "psychologickou adaptaci"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Jaké tvrzení týkající se vzdělávání a rozvoje pracovníků je pravdivé?",
+      "opts": [
+        "vytváří předpoklady pro neustálé zlepšování pracovního výkonu a chování pracovníků",
+        "formuje osobnost pracovníka",
+        "zvyšuje použitelnost pracovníků v organizaci i na trhu práce",
+        "vzdělávání zaměstnanců je výlučně jejich osobní záležitostí",
+        "zvyšuje připravenost pracovníků na změny podmínek a požadavků pracovních míst"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Které personální procesy by se měly vázat na výsledky hodnocení pracovního výkonu?",
+      "opts": [
+        "vzdělávání a rozvoj",
+        "kariérové plánování",
+        "výběr pracovníků",
+        "odměňování",
+        "získávání pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Jaká by měla být úloha personálního útvaru v procesu vzdělávání zaměstnanců?",
+      "opts": [
+        "zabezpečit odbornou a organizační stránku všech fází vzdělávání",
+        "navrhovat strategii vzdělávání pracovníků",
+        "vzdělávat pracovníky v odborných znalostech",
+        "navrhovat program a rozpočet vzdělávání",
+        "analyzovat potřebu vzdělávání"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi používané metody výběru pracovníků patří:",
+      "opts": [
+        "hodnocení životopisů",
+        "assessment centre",
+        "psychologické testy",
+        "výběrový pohovor",
+        "ověřování referencí"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Outplacement je definován jako:",
+      "opts": [
+        "forma osobní odměny při přechodu pracovníka na jinou práci",
+        "provize, určená personální agentuře za zajištění nových pracovníků",
+        "pomoc ze strany organizace, poskytovaná propouštěným pracovníkům z důvodu nadbytečnosti",
+        "motivační program pro snižování nadbytečných pracovníků",
+        "druh hodnotícího rozhovoru"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Popis pracovního místa je výsledkem:",
+      "opts": [
+        "Personálního marketingu.",
+        "Procesu získávání a výběru.",
+        "Hodnocení pracovníků.",
+        "Plánů rozvoje.",
+        "Analýzy pracovního místa."
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Vzdělávání a rozvoj pracovníků v organizaci probíhá jako neustále se opakující proces, jež zahrnuje posloupnost následujících činností:",
+      "opts": [
+        "plánování, identifikace potřeby, realizace a hodnocení výsledků",
+        "identifikace potřeby, plánování, realizace a hodnocení výsledků",
+        "identifikace potřeby, realizace, plánování a hodnocení výsledků",
+        "identifikace potřeby, hodnocení výsledků, plánování a realizace",
+        "identifikace potřeby, realizace, hodnocení výsledků a plánování"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Jaké mohou být problémy a chyby hodnocení pracovníků?",
+      "opts": [
+        "tendence hodnotitele hodnotit pracovníky podle svých vlastních měřítek",
+        "přiměřená příprava na hodnocení pracovníků",
+        "tendence k hodnocení pracovníků hodnotami ze středu stupnice",
+        "přílišná shovívavost",
+        "přílišná přísnost"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Mezi personální činnosti nepatří:",
+      "opts": [
+        "Hodnocení pracovníků",
+        "Personální marketing",
+        "Personální plánování",
+        "Ukončování pracovního poměru",
+        "Strategické analýzy vnějšího a vnitřního prostředí"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Mezi povinné náležitosti pracovní smlouvy podle zákoníku práce patří:",
+      "opts": [
+        "den nástupu do práce",
+        "zařazení zaměstnance do tarifní třídy",
+        "výše mzdy nebo platu",
+        "místo nebo místa výkonu práce, ve kterých má být práce vykonávána",
+        "druh práce, který má zaměstnanec pro zaměstnavatele vykonávat"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Získávání pracovníků je činnost, která zahrnuje:",
+      "opts": [
+        "jednání s uchazeči a přesvědčování vhodných jedinců o výhodnosti práce v organizaci",
+        "rozpoznávání a vyhledávání vhodných pracovních zdrojů",
+        "informování o volných pracovních místech v organizaci a nabízení těchto volných pracovních míst",
+        "výběr pracovníků",
+        "adaptaci pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Personální marketing představuje:",
+      "opts": [
+        "úsilí o zformování a udržení potřebné pracovní síly organizace",
+        "získávání pracovníků pouze z externích zdrojů",
+        "získávání pracovníků pouze z interních zdrojů",
+        "metodou výběru pracovníků na uvolněné pracovní místo",
+        "úsilí o upoutání pozornosti potencionálních zaměstnanců"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Mezi metody získávání pracovníků patří:",
+      "opts": [
+        "Analýza pracovního místa",
+        "Assessment centre",
+        "Výběrový pohovor",
+        "Inzerce na pracovních portálech",
+        "Doporučení zaměstnance"
+      ],
+      "correct": [
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Obecně je možné negativa fluktuace shrnout následovně:",
+      "opts": [
+        "zvýšené náklady na výběr a adaptaci nových pracovníků na uvolněné pracovní místo",
+        "možný únik citlivých informací a obchodního tajemství",
+        "ztráta zaškolených pracovníků na daném pracovním místě",
+        "příliv nových lidí a nápadů do organizace",
+        "vytvoření příležitostí ke kariernímu postupu"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "q": "Mezi výhody získávání pracovníků z vnitřních zdrojů patří:",
+      "opts": [
+        "Uchazeč zná lépe organizaci",
+        "Zvyšuje se morálka a motivace zaměstnance (možnost povýšení, zvýšená možnost stability PP)",
+        "Překážky pronikání nových přístupů a myšlenek zvenku",
+        "Pracovníci mohou být povyšování tak dlouho, až se dostanou na pozici, na kterou nestačí",
+        "Lepší návratnost investic, které organizace vložila do pracovní síly"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Proces získávání pracovníků zpravidla vychází z výsledků:",
+      "opts": [
+        "vzdělávání pracovníků",
+        "odměňování pracovníků a poskytování zaměstnaneckých výhod",
+        "řízení pracovního výkonu a hodnocení pracovníků",
+        "rozvoje pracovníků",
+        "analýzy pracovních funkcí a personálního plánování"
+      ],
+      "correct": [
+        4
+      ]
+    },
+    {
+      "q": "Co vše je cílem výběru pracovníků:",
+      "opts": [
+        "Cílem je rozpoznat, který z uchazečů, shromážděných během procesu získávání pracovníků a prošlých předvýběrem, bude pravděpodobně nejlépe vyhovovat požadavkům obsazovaného pracovního místa i přispěje k vytváření zdravých mezilidských vztahů v pracovní sku",
+        "Kdo z uchazečů je dostatečně flexibilní a má rozvojový potenciál pro to, aby se přizpůsobil předpokládaným změnám na pracovním místě, v pracovní skupině (týmu) i v organizaci.",
+        "Kdo z uchazečů je schopen přispívat k vytváření žádoucí týmové a organizační kultury.",
+        "Kdo z uchazečů je schopen akceptovat hodnoty příslušné pracovní skupiny (týmu), útvaru a organizace.",
+        "Posoudit odborné, ale i osobnostní charakteristiky uchazeče, jeho potenciál."
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké máme zdroje v organizaci?",
+      "opts": [
+        "lidské",
+        "ani jedna odpověď není správná",
+        "informace",
+        "finanční",
+        "materiální"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "V čem spočívá role personálního managera jakožto psychologa organizace?",
+      "opts": [
+        "vede tým pracovníků",
+        "poskytuje informace o situaci na trhu práce, o míře inflace, o praktikách odměňování",
+        "zajišťuje kvalitu a efektivitu všech procesů a systémů řízení lidských zdrojů",
+        "analyzuje vnitřní prostředí podniku a podmínky, ze kterých je možné a vhodné uplatnit procesy personálního řízení",
+        "zkvalitňuje podnikové procesy"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Jaké pojetí personální práce (personalistiky) je charakteristické strategickým přístupem k personální práci a všem personálním činnostem?",
+      "opts": [
+        "personálně administrativní řízení",
+        "personalistika",
+        "management lidských zdrojů",
+        "řízení lidských zdrojů",
+        "personální administrativa"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Projekce jako omyl při vnímání jiných, spočívá:",
+      "opts": [
+        "v předpokladu, že se lidé chovají podobně, jako bych se v dané situaci choval já",
+        "v předpokladu, že se všichni lidé chovají ve stejné situaci stejně",
+        "v tom, že necháváme ovlivnit jejich vlastnostmi",
+        "v tom, že si do nich promítáme naše rysy",
+        "v podvědomém přehlížení některých (nechtěných) osobnostních rysů"
+      ],
+      "correct": [
+        0,
+        3
+      ]
+    },
+    {
+      "q": "V rámci komunikačního procesu je nutné:",
+      "opts": [
+        "interpretovat sdělení ostatním",
+        "dekódovat",
+        "přenos sdělení mezi odesílatelem a adresátem",
+        "začlenit komunikační šumy",
+        "kódovat"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Za metodu hodnocení efektivnosti vzdělávacího procesu (pro porovnání skutečných výsledků s cíli) nelze považovat:",
+      "opts": [
+        "mentoring",
+        "kvantifikace přínosu vzdělávacího procesu",
+        "coaching",
+        "testy znalostí (před a po skončení akce)",
+        "pozorovací checklist k monitorování vzdělávacího programu"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "q": "Mezi funkce personálního útvaru patří:",
+      "opts": [
+        "Funkce plánovací",
+        "Funkce metodická",
+        "Funkce koncepční",
+        "Funkce koordinační",
+        "Funkce informační"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Od uchazečů o zaměstnání můžeme běžně požadovat následující dokumenty:",
+      "opts": [
+        "životopis",
+        "kopie diplomů, vysvědčení, certifikátů apod.",
+        "osobní dotazník",
+        "žádost o zaměstnání",
+        "potvrzení o zdravotní způsobilosti"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Personální politika musí být:",
+      "opts": [
+        "neustále se měnící",
+        "dobře zformulovaná",
+        "minimálně jednou ročně aktualizována",
+        "srozumitelná a přijatelná pro pracovníky",
+        "dlouhodobě stabilní"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Cílem výběru zaměstnanců je:",
+      "opts": [
+        "vybrat vhodné uchazeče",
+        "identifikovat nekvalitní uchazeče",
+        "plánovat počet pracovníků",
+        "identifikovat vhodné uchazeče",
+        "hodnotit zaměstnance"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Do oblasti personální práce patří:",
+      "opts": [
+        "průzkum trhu práce",
+        "vytváření konkurenčního prostředí",
+        "dodržování zákonů v oblasti práce",
+        "personální plánování",
+        "zdravotní péče o pracovníky"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaká jsou kritéria výběru pracovníků?",
+      "opts": [
+        "subjektivní",
+        "neměnná",
+        "stálá",
+        "objektivní",
+        "smíšená"
+      ],
+      "correct": [
+        0,
+        3
+      ]
+    },
+    {
+      "q": "Jaké směry adaptace rozlišujeme?",
+      "opts": [
+        "pracovní směr",
+        "enviromentální směr",
+        "nepřímý směr",
+        "přímý směr",
+        "sociální směr"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Pracovní poměr může skončit:",
+      "opts": [
+        "ve zkušební lhůtě",
+        "okamžitou výpovědí",
+        "dohodou obou zúčastněných stran",
+        "nemocí pracovníka",
+        "skončením jmenovacího období"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Úkolem personálního útvaru je:",
+      "opts": [
+        "vytvářet finanční plány",
+        "poskytovat poradenskou činnost v oblasti HR",
+        "zajišťovat administrativní činnost v rámci lidských zdrojů",
+        "vytvářet marketingové plány organizace",
+        "formulovat koncepční a metodickou činnost v oblasti vzdělávání pracovníků"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "q": "Adaptace pracovníků by měla zahrnovat:",
+      "opts": [
+        "Maladaptaci",
+        "Adaptační plány",
+        "Adaptaci na organizační kulturu",
+        "Adaptaci v rámci pracovního týmu",
+        "Adaptaci na pracovní místo"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Hlavním cílem všech personálních činností v organizaci je zabezpečit, aby:",
+      "opts": [
+        "se pravidelně investovalo do finančního kapitálu",
+        "organizace vytvářela vhodnou podnikovou strategii",
+        "organizace vytvářela vhodnou personální strategii a politiku a tak v praxi dosahovala úspěchů",
+        "se zvýšila mobilita pracovníků",
+        "organizace byla srovnatelná s ostatními organizacemi"
+      ],
+      "correct": [
+        2
+      ]
+    },
+    {
+      "q": "Která metoda (metody) patří mezi tzv. kvantitativní metody personálního plánování?",
+      "opts": [
+        "korelace a regrese",
+        "kaskádová metoda",
+        "delfská metoda",
+        "metoda manažerských odhadů",
+        "grafická analýza"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Mezi psychologické testy používané v rámci výběru pracovníků patří: (3/4 bodů) (bez záruky)",
+      "opts": [
+        "testy osobnosti",
+        "testy schopností (testy inteligence)",
+        "testy znalostí",
+        "testy diagnostické",
+        "testy speciálních schopností a dovedností"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "q": "Kolektivní smlouva:",
+      "opts": [
+        "může být uzavřena na dobu určitou nebo na dobu neurčitou",
+        "je v každé organizaci",
+        "má volnost v obsahu",
+        "upravuje práva zaměstnanců v pracovněprávních vztazích, jakož i práva nebo povinnosti smluvních stran této smlouvy",
+        "upravuje vztahy mezi zaměstnavateli, zaměstnanci a rovněž mezi zaměstnavateli nebo jejich organizací (organizacemi) a odbornou organizací (organizacemi)"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Motivace pracovníka je:",
+      "opts": [
+        "individuální proces",
+        "stereotypní proces",
+        "proces postupného budování důvěry mezi vedoucím pracovníkem a jeho podřízeným",
+        "proces, který je nutné převést na \"čísla\"",
+        "přístupem pracovníka k práci"
+      ],
+      "correct": [
+        0,
+        4
+      ]
+    },
+    {
+      "q": "Jaké jsou možné metody získávání pracovníků?",
+      "opts": [
+        "hodnocení životopisů",
+        "výběrový pohovor",
+        "doporučení stávajícího pracovníka",
+        "doporučení dřívějšího pracovníka",
+        "outplacement"
+      ],
+      "correct": [
+        2,
+        3
+      ]
+    },
+    {
+      "q": "Kterou činnost (činnosti) zahrnuje činnost získávání pracovníků:",
+      "opts": [
+        "adaptaci pracovníka",
+        "formulace a uveřejnění nabídky zaměstnání",
+        "identifikace zdrojů pracovní síly",
+        "volba dokumentů požadovaných od uchazečů",
+        "identifikace potřeby obsadit určitou funkci"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Úsilí o zformování a udržení potřebné pracovní síly organizace, které se opírá o vytváření dobré zaměstnavatelské pověsti organizace se nazývá:",
+      "opts": [
+        "SWOT analýza",
+        "kariérové plánování",
+        "personální strategie",
+        "personální marketing",
+        "personální plánování"
+      ],
+      "correct": [
+        3
+      ]
+    },
+    {
+      "q": "Relační odměny:",
+      "opts": [
+        "jsou vztahovými odměnami",
+        "zahrnují příplatky ke mzdě či platu",
+        "jejich souhrn tvoří celkovou hmotnou odměnu",
+        "zahrnují peněžní odměnu",
+        "jsou vyjádřitelné v penězích"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Forma relačních odměn:",
+      "opts": [
+        "je zaměřena na dosažení určitého stupně odpovědnosti",
+        "cílí na vnitřní potřeby pracovníků",
+        "je zaměřena na dosažení určitého stupně výsledků",
+        "je zaměřena na dosažení určitého stupně uznání",
+        "je zaměřena na dosažení určitého stupně osobního růstu"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké jsou výhody získávání pracovníků z vnitřních zdrojů?",
+      "opts": [
+        "organizace lépe zná slabé stránky uchazeče",
+        "škála talentů v organizaci je mnohem větší, než by bylo možné nalézt vně organizace",
+        "lepší návratnost investic, které organizace vložila do pracovníků",
+        "organizace lépe zná silné a slabé stránky uchazeče",
+        "uchazeč lépe zná organizaci"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Vyjádření různé míry složitosti, odpovědnosti a namáhavosti práce představuje: (2/4 bodů) (bez záruky)",
+      "opts": [
+        "Platový stupeň",
+        "Platová třída",
+        "Zaučená mzda",
+        "Minimální mzda",
+        "Příplatek ke mzdě či platu"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Hodnocení pracovníků obvykle provádí:",
+      "opts": [
+        "nadřízený pracovník spolu se zástupcem odborové organizace",
+        "nadřízený pracovník",
+        "zástupce poradenské firmy a vedoucí pracovník",
+        "nadřízený pracovník spolu s pracovníkem personálního útvaru",
+        "komise jmenovaná ředitelem"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Transakční odměny:",
+      "opts": [
+        "jsou vztahovými odměnami",
+        "jejich souhrn tvoří celkovou hmotnou odměnu",
+        "jsou vyjádřitelné v penězích",
+        "zahrnují finanční odměnu",
+        "zahrnují benefity"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Typy pracovní motivace zahrnují:  (2/4 bodů) (bez záruky)",
+      "opts": [
+        "Vnitřní a vnější motivaci",
+        "Motivaci smyslem a posláním práce",
+        "Horizontální a vertikální motivaci",
+        "Stimulaci",
+        "Interpersonální a intrapersonální motivaci"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    {
+      "q": "Vývojové etapy personální práce zahrnují:",
+      "opts": [
+        "Personální řízení",
+        "Personální administrativu",
+        "Moderní personalistiku",
+        "Management/Řízení lidských zdrojů",
+        "Rozvoj lidských zdrojů"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "q": "Vedení lidí je: (bez záruky)",
+      "opts": [
+        "způsob managementu, který se opírá o měkké faktory řízení",
+        "působení na lidi ve smyslu podporování jejich vlastní iniciativy, schopností, dovedností",
+        "nová moderní disciplína",
+        "způsob managementu, který se opírá o tvrdé faktory řízení",
+        "ovlivňování lidí s cílem zkvalitnění a zefektivnění plnění stanovených úkolů, v podněcování aktivity a iniciativy lidí, zvláště pak jejich tvůrčího a inovačního ducha (x)"
+      ],
+      "correct": [
+        1
+      ]
+    },
+    {
+      "q": "Které metody patří mezi metody výběru?  (4 b)",
+      "opts": [
+        "Testy a dotazníky.",
+        "Reference.",
+        "Pohovor.",
+        "Assessment centre.",
+        "Telefonické interview."
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké by měly být běžně kladené požadavky na vhodného kandidáta při obsazování volného pracovního místa?  (4 b)",
+      "opts": [
+        "politická příslušnost",
+        "požadované chování",
+        "požadovaný věk",
+        "požadavky na postoje",
+        "odborné znalosti"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Jaké tvrzení týkající se předvýběru uchazečů je pravdivé? (3/4 bodů) (bez záruky)",
+      "opts": [
+        "výsledkem předvýběru uchazečů je rozdělení uchazečů do dvou skupin, na vhodné a nevhodné uchazeče",
+        "předvýběr uchazečů představuje první fázi procesu získávání zaměstnanců",
+        "předvýběr uchazečů provádíme na základě hodnocení shromážděných dokumentů uchazečů (žádostí o zaměstnání a životopisů)",
+        "předvýběr uchazečů předchází procesu výběru uchazečů",
+        "při předvýběru uchazečů hodnotíme především odbornou způsobilost uchazečů vykonávat práci v rámci obsazené pracovní funkce"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "q": "Management lidských zdrojů Je moderní koncepce práce s lidmi, která zdůrazňuje:",
+      "opts": [
+        "lidi jako zdroj organizace, který musí být kvalitně a efektivně řízen",
+        "nesoulad zájmů managementu a zaměstnanců za účelem zabezpečení potřeb zaměstnanců",
+        "soulad zájmů managementu a zaměstnanců o zabezpečení potřeb všech zainteresovaných stran zaměstnaneckého vztahu",
+        "maximalizaci zisku",
+        "lidi jako zdroj pracovní síly"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    }
+  ]
+}

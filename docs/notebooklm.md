@@ -11,6 +11,7 @@ Každý předmět má vlastní notebook v NotebookLM (účet tomekmasek@gmail.co
 | `inovace` | Inovace \| VŠEM T4 | `b6e1fd3a-e5f7-4d05-ad57-fa4cd8547049` |
 | `manazerska-ekonomie` | Manažerská ekonomie \| VŠEM T3 | `b345ad69-97bb-451a-8f63-c9b211c5688b` |
 | `politologie-mezinarodni-vztahy` | Politologie a mezinárodní vztahy \| VŠEM T3 | `fec129ea-8456-4e74-82f8-addd43fb57f3` |
+| `management-lidskych-zdroju` | Management lidských zdrojů \| VŠEM T4 | `beb70b89-e779-4560-83f9-60c1b5bfde79` |
 | `pravo-v-praxi` | Právo v praxi \| VŠEM T4 | `5d0594fd-6cf3-48e4-8d72-dfa8b29ac3ef` |
 | `pravo-prostredi` | Právo a právní prostředí \| VŠEM T3 | `6365dfb6-4bd4-4dd4-a276-89ab8d9df94b` |
 | `etika-spolecenska-odpovednost` | Etika a společenská odpovědnost \| VŠEM T3 | `09223f18-0664-4fbe-b618-720dd5dc672e` |

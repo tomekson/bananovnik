@@ -2,7 +2,7 @@
   "id": "inovace-prednaska-2026-10-17",
   "title": "Inovace (přednáška 17. 10. 2026)",
   "updatedAt": "2026-10-17",
-  "rubric": "Otázky, které Ing. Cyril Kotulič, Ph.D. ukázal 17. 10. 2026 jako testové (slidy „Opakování“).\nKlíč odpovědí zatím chybí, doplní se z audio přepisu přednášky. Do té doby se každá odpověď vyhodnotí jako chybná.\nZkouška: 60 min., 12 otázek po 5 bodech + 2 otevřené po 20 bodech, bez pomůcek. K úspěchu je potřeba 51 bodů.",
+  "rubric": "Otázky, které Ing. Cyril Kotulič, Ph.D. ukázal 17. 10. 2026 jako testové (slidy „Opakování“). Klíč je podle odpovědí lektora z audio záznamu. Kde se lektor rozchází se skripty nebo nebyl dobře slyšet, je otázka označená (bez záruky).\nZkouška: 60 min., 12 otázek po 5 bodech + 2 otevřené po 20 bodech, bez pomůcek. K úspěchu je potřeba 51 bodů.",
   "format": {
     "type": "multiple-choice",
     "correctAnswers": "one-or-more"
@@ -31,7 +31,11 @@
         "produktové, marketingové, technické",
         "technické, netechnické, sociální"
       ],
-      "correct": [],
+      "correct": [
+        1,
+        2,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -49,7 +53,9 @@
         "kritické hodnocení",
         "optimizmus"
       ],
-      "correct": [],
+      "correct": [
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -59,7 +65,7 @@
       ]
     },
     {
-      "q": "Klaster je",
+      "q": "Klaster je (bez záruky)",
       "opts": [
         "soubor regionálně propojených společností a přidružených institucí a organizací",
         "seskupení vybraných firem rozhodnutím regionální samosprávy",
@@ -67,7 +73,10 @@
         "soubor regionálně náhodně propojených společností a přidružených institucí za účelem podnikání v oboru",
         "seskupení firem výhradně ze stejného oboru podnikání"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -85,7 +94,9 @@
         "je forma ochranného dokumentu a jsou s ním spojena vlastnická práva na vynález",
         "nemůže využívat více než jedna firma"
       ],
-      "correct": [],
+      "correct": [
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -103,7 +114,9 @@
         "invence, imitace, intenzifikace",
         "invence, vynález, inovace"
       ],
-      "correct": [],
+      "correct": [
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -121,7 +134,13 @@
         "konzultanty",
         "školy a univerzity"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -139,7 +158,13 @@
         "management, zaměstnance, zákazníky",
         "stát, podniky, zákazníky"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -158,7 +183,9 @@
         "spolupracující firma na základě analýzy srovnatelných produktů",
         "management na základě analýzy srovnatelných produktů"
       ],
-      "correct": [],
+      "correct": [
+        1
+      ],
       "read": [
         {
           "src": "slidy",
@@ -176,7 +203,9 @@
         "obecný blahobyt",
         "neutralizace neúspěšných inovací"
       ],
-      "correct": [],
+      "correct": [
+        0
+      ],
       "read": [
         {
           "src": "slidy",
@@ -194,7 +223,13 @@
         "může být konkurence",
         "může být spolupracující firma"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -204,7 +239,7 @@
       ]
     },
     {
-      "q": "Zdrojem inovací z vnitřního prostředí je",
+      "q": "Zdrojem inovací z vnitřního prostředí je (bez záruky)",
       "opts": [
         "Vlastní VaV",
         "Technologické útvary – projekce, konstrukce, technologie",
@@ -212,7 +247,13 @@
         "Marketing a prodej",
         "Logistika (nákup a zásobování)"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -230,7 +271,13 @@
         "zákazníky a obchodem,",
         "konkurencí a odvětvím."
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -248,7 +295,9 @@
         "změnu struktury odvětví nebo trhu",
         "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
       ],
-      "correct": [],
+      "correct": [
+        1
+      ],
       "read": [
         {
           "src": "slidy",
@@ -266,7 +315,9 @@
         "zavedení nových a významně vylepšených výrobků inovací založenou na změně pracovního postupu",
         "založena na náhradě stávajícího řešení principiálně jiným"
       ],
-      "correct": [],
+      "correct": [
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -284,7 +335,9 @@
         "začíná myšlenkou (návrhem něčeho nového)",
         "začíná komunikací se zákazníky"
       ],
-      "correct": [],
+      "correct": [
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -303,7 +356,10 @@
         "musí čekat na vhodnou příležitost na trhu",
         "musí spolupracovat s konkurencí"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1
+      ],
       "read": [
         {
           "src": "slidy",
@@ -321,7 +377,11 @@
         "na ještě nevyjádřené problémy managementu",
         "na potřeby zákazníků, které vzniknou v budoucnosti"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -331,7 +391,7 @@
       ]
     },
     {
-      "q": "Konkurenční inovační výhoda",
+      "q": "Konkurenční inovační výhoda (bez záruky)",
       "opts": [
         "má vyjadřovat výhodu vůči konkurenci, která je založena na inovačním úsilí podniku a týká se důležitého užitku pro zákazníka",
         "má vyjadřovat výhodu konkurence, která je založena na inovačním úsilí podniku a týká se důležitého užitku pro zákazníka",
@@ -339,7 +399,12 @@
         "může vyjadřovat výhodu naší firmy vůči konkurenci",
         "může vyjadřovat výhodu konkurence vůči naší firmě"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -357,7 +422,11 @@
         "z aplikace manažerských postupů na udržení stávajících trhů",
         "ze vstupu zcela nového technického objektu na trh"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -375,7 +444,12 @@
         "ekonomické a institucionální prvky, které ovlivňují vývoj a difúzi inovací",
         "ekonomické a politologické prvky, které ovlivňují vývoj a difúzi inovací"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -393,7 +467,9 @@
         "schopností inovačních aktérů snižovat náklady",
         "schopností inovačních aktérů snižovat náklady a vytvářet zisk"
       ],
-      "correct": [],
+      "correct": [
+        0
+      ],
       "read": [
         {
           "src": "slidy",
@@ -411,7 +487,9 @@
         "představují subjekty, které mění inovace",
         "představují subjekty, které přeměňují inovace"
       ],
-      "correct": [],
+      "correct": [
+        0
+      ],
       "read": [
         {
           "src": "slidy",
@@ -429,7 +507,9 @@
         "představují subjekty, které mění inovace",
         "představují subjekty, které přeměňují inovace"
       ],
-      "correct": [],
+      "correct": [
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -447,7 +527,12 @@
         "veřejný a akademický sektor",
         "podnikatelský a konkurenční sektor"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -465,7 +550,9 @@
         "výrazně zjednodušující inovační proces",
         "stimulující inovační schopnosti firem v regionu"
       ],
-      "correct": [],
+      "correct": [
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -483,7 +570,13 @@
         "podnikové potřeby,",
         "politické požadavky (požadavky státu)."
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -501,7 +594,11 @@
         "Přetvoření šancí – potřeba trhu, která se změní s příchodem konkurence",
         "Realizace šancí – realizace příležitosti bez poptávky zákazníků"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -519,7 +616,9 @@
         "změnu struktury odvětví nebo trhu",
         "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
       ],
-      "correct": [],
+      "correct": [
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -537,7 +636,9 @@
         "změnu struktury odvětví nebo trhu",
         "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
       ],
-      "correct": [],
+      "correct": [
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -555,7 +656,9 @@
         "zavedení nové organizační metody v podnikových obchodních praktikách, v organizaci pracovního místa nebo v externích vztazích",
         "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
       ],
-      "correct": [],
+      "correct": [
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -573,7 +676,9 @@
         "změnu struktury odvětví nebo trhu",
         "nové a oproti dostupným alternativám lepší řešení, která naplňují naléhavé sociální potřeby a zároveň vytvářejí nové sociální vztahy nebo spolupráce"
       ],
-      "correct": [],
+      "correct": [
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -591,7 +696,9 @@
         "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
         "zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie"
       ],
-      "correct": [],
+      "correct": [
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -609,7 +716,9 @@
         "je zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
         "je zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie"
       ],
-      "correct": [],
+      "correct": [
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -627,7 +736,11 @@
         "je spojitým kreativním vylepšováním stávajícího výrobku, služby nebo procesu",
         "je uceleným procesem, který zahrnuje činnosti od výzkumu přes aplikaci jeho výsledků až po jejich komerční využití"
       ],
-      "correct": [],
+      "correct": [
+        1,
+        2,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -645,7 +758,11 @@
         "adopci",
         "inventarizaci"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        2,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -663,7 +780,9 @@
         "první vážné ohrožení konkurence",
         "přijetí a aplikace konkurenčního řešení"
       ],
-      "correct": [],
+      "correct": [
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -681,7 +800,9 @@
         "první vážné ohrožení konkurence",
         "přijetí a aplikace konkurenčního řešení"
       ],
-      "correct": [],
+      "correct": [
+        1
+      ],
       "read": [
         {
           "src": "slidy",
@@ -699,7 +820,10 @@
         "aplikaci manažerských postupů zaměřených na udržení tržních cílů",
         "na rozvoj strategie v oblasti zajištění LZ"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1
+      ],
       "read": [
         {
           "src": "slidy",
@@ -717,7 +841,10 @@
         "Úrok je náklad pro věřitele",
         "RPSN se platí při uzavření dohody, úrok postupně"
       ],
-      "correct": [],
+      "correct": [
+        1,
+        2
+      ],
       "read": [
         {
           "src": "slidy",
@@ -735,7 +862,11 @@
         "špatně koncipovaného podnikatelského plánu",
         "nízké hodnoty základního kapitálu"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -745,7 +876,7 @@
       ]
     },
     {
-      "q": "Nepodnikatelské organizace (NPO) by měly při inovačních aktivitách:",
+      "q": "Nepodnikatelské organizace (NPO) by měly při inovačních aktivitách: (bez záruky)",
       "opts": [
         "mít jasně a jednoznačně definované cíle svého působení",
         "dobře specifikovat procesy, umožňující účelný a efektivní postup k definovaným cílům",
@@ -753,7 +884,11 @@
         "mít striktně vymezené oblasti odpovědnosti a pravomocí jednotlivých odborně způsobilých pracovníků",
         "pravidelně inovovat technologie a organizační procesy"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -771,7 +906,12 @@
         "nedochází ke snížení cash flow a firma pak snadněji získá další úvěr z důvodu dostatku kapitálu",
         "je výhodou pro podnik možnost využití sítě kontaktů investora"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -781,7 +921,7 @@
       ]
     },
     {
-      "q": "Trvale udržitelné tempo růstu podniku charakterizuje",
+      "q": "Trvale udržitelné tempo růstu podniku charakterizuje (bez záruky)",
       "opts": [
         "Účetní zvyšování cizího kapitálu",
         "Zvyšování tržního podílu a přiměřený růst tržeb",
@@ -789,7 +929,10 @@
         "Sníží se konkurence podniku  na základě komparace produktů",
         "Dochází k reinvesticím ze zisku"
       ],
-      "correct": [],
+      "correct": [
+        2,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -799,7 +942,7 @@
       ]
     },
     {
-      "q": "Přidanou hodnotu charakterizuje",
+      "q": "Přidanou hodnotu charakterizuje (bez záruky)",
       "opts": [
         "vyřešení problému zákazníka",
         "pravidelný odvod DPH",
@@ -807,7 +950,11 @@
         "snižování položek manažerského účetnictví v oblasti finančních rezerv",
         "komparační výhoda"
       ],
-      "correct": [],
+      "correct": [
+        1,
+        2,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -825,7 +972,11 @@
         "ztrátou z hlediska nutnosti investovat kapitál",
         "porovnání výdajů na investici a výnosu"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -835,7 +986,7 @@
       ]
     },
     {
-      "q": "Při hodnocení investice",
+      "q": "Při hodnocení investice (bez záruky)",
       "opts": [
         "hodnotíme výhradně rizikovost a výnosnost",
         "hodnotíme likvidnost a rizikovost",
@@ -843,7 +994,10 @@
         "hodnotíme dobu splácení",
         "nehodnotíme likvidnost"
       ],
-      "correct": [],
+      "correct": [
+        1,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -853,7 +1007,7 @@
       ]
     },
     {
-      "q": "Náklady ve finančním účetnictví",
+      "q": "Náklady ve finančním účetnictví (bez záruky)",
       "opts": [
         "nejsme povinni vyjadřovat",
         "řídí se legislativou o vedení účetnictví pro ekonomicky samostatné subjekty",
@@ -861,7 +1015,12 @@
         "úzce souvisí s daňovým zatížením",
         "peněžně vyjadřují spotřeby"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -871,7 +1030,7 @@
       ]
     },
     {
-      "q": "Optimalizace jako proces",
+      "q": "Optimalizace jako proces (bez záruky)",
       "opts": [
         "představuje ekonomické zlepšení",
         "představuje zlepšení dle předem zvolených optimalizačních kritérií",
@@ -879,7 +1038,11 @@
         "bere v úvahu omezující podmínky",
         "vždy jde o hledání procesních úspor"
       ],
-      "correct": [],
+      "correct": [
+        1,
+        2,
+        3
+      ],
       "read": [
         {
           "src": "slidy",
@@ -897,7 +1060,11 @@
         "není pro podnik obecně závazná, podléhá však pravidelnému auditu",
         "jejím úkolem je udržet objem mzdových prostředků tak, aby se neblokovala konkurenční schopnost podniku"
       ],
-      "correct": [],
+      "correct": [
+        1,
+        2,
+        4
+      ],
       "read": [
         {
           "src": "slidy",
@@ -915,7 +1082,10 @@
         "logistika je podpůrná a distribuční složka, jejíž výše je zanedbatelná z hlediska koncentrace výroby",
         "nepřináší úspory"
       ],
-      "correct": [],
+      "correct": [
+        0,
+        2
+      ],
       "read": [
         {
           "src": "slidy",

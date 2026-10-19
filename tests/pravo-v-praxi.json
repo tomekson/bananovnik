@@ -2108,7 +2108,7 @@
   ],
   "sets": [
     {
-      "name": "Bez pomůcek: Živnosti a provozovna",
+      "name": "Živnosti a provozovna",
       "q": [
         10,
         11,
@@ -2129,7 +2129,7 @@
       ]
     },
     {
-      "name": "Bez pomůcek: Obchodní rejstřík",
+      "name": "Obchodní rejstřík",
       "q": [
         8,
         14,
@@ -2141,7 +2141,7 @@
       ]
     },
     {
-      "name": "Bez pomůcek: Pojmy obchodního práva",
+      "name": "Pojmy obchodního práva",
       "q": [
         26,
         34,
@@ -2150,7 +2150,7 @@
       ]
     },
     {
-      "name": "Bez pomůcek: Práva a ručení společníků",
+      "name": "Práva a ručení společníků",
       "q": [
         55,
         70,

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.07">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.08">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2310,7 +2310,8 @@ const TESTS_REGISTRY = [
     title: 'Manažerská ekonomie',
     updatedAt: '2026-09-27',
     questionCount: 126,
-    hasSets: true
+    hasSets: true,
+    retired: true
   },
   {
     id: 'politologie-mezinarodni-vztahy',
@@ -4247,7 +4248,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.07';
+const APP_VERSION = '10.08';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

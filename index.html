@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.06">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.07">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -530,6 +530,12 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 }
 .fb.show { display: flex; animation: fadeUp .2s ease; }
 .fb-icon { font-size: 20px; }
+/* Koláč podílu bodů u částečně správné odpovědi, plní se od 12 h po směru hodin */
+.fb-pie {
+  display: block; width: 18px; height: 18px; border-radius: 50%;
+  border: 1.5px solid var(--text);
+  background: conic-gradient(var(--text) calc(var(--p) * 1turn), transparent 0);
+}
 .fb-txt  { flex: 1; font-size: 14px; color: var(--dim); }
 .fb-txt strong { color: var(--text); }
 .fb-pts  { font-size: 20px; font-weight: 700; font-family: 'SF Mono',monospace; }
@@ -2728,7 +2734,7 @@ function renderQ() {
       document.getElementById('fb-pts').style.color  = isRetry ? 'var(--muted)' : 'var(--green)';
     } else if (score > 0) {
       const cSel = sel.filter(i => correctSet.has(i)).length;
-      document.getElementById('fb-icon').textContent = '◐';
+      document.getElementById('fb-icon').innerHTML = `<span class="fb-pie" style="--p:${score}"></span>`;
       document.getElementById('fb-txt').innerHTML    = isRetry ? `<strong>Částečně správně.</strong> ${cSel} ze ${q.correct.length} správných. (opakování)` : `<strong>Částečně správně.</strong> ${cSel} ze ${q.correct.length} správných.`;
       document.getElementById('fb-pts').textContent  = isRetry ? '—' : '+' + score.toFixed(2).replace('.', ',');
       document.getElementById('fb-pts').style.color  = isRetry ? 'var(--muted)' : 'var(--amber)';
@@ -4241,7 +4247,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.06';
+const APP_VERSION = '10.07';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

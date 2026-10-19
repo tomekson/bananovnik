@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.12">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.13">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -452,6 +452,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-info-line strong { color: var(--primary); font-weight: 700; }
 .q-info-line-warn { border-top: 1px dashed var(--line2); padding-top: 6px; }
 .q-info-line-warn strong { color: var(--amber); }
+.q-info-line-where { border-top: 1px dashed var(--line2); padding-top: 6px; }
 .q-info-box .q-gloss { margin: 10px 0 0; }
 .rq-card > .q-info-box { margin: 0 8px 10px; }
 .btn-copy-q {
@@ -2240,7 +2241,7 @@ const TESTS_REGISTRY = [
     file: 'pravo-v-praxi.json',
     title: 'Právo v praxi',
     examSchema: '20 uzavřených otázek',
-    updatedAt: '2026-10-04',
+    updatedAt: '2026-10-19',
     questionCount: 138,
     hasSets: true,
     draft: true
@@ -4228,11 +4229,12 @@ function infoHtml(q) {
   if (!info) return '';
   const safe = String(info).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const lines = safe.split(/\n+/).map(l => l.trim()).filter(Boolean);
-  const LABELS = ['Pojem', 'Proč', 'Chyták', 'Rozpor'];
+  const LABELS = ['Pojem', 'Proč', 'Chyták', 'Rozpor', 'Kde to najdu'];
   const rows = lines.map(l => {
     const m = l.match(/^([^:]{2,12}):\s*(.*)$/);
     if (m && LABELS.includes(m[1])) {
-      // Návěští Pojem / Proč / Chyták se nezobrazují, odstavce stačí; Rozpor zůstává označený
+      // Návěští Pojem / Proč / Chyták se nezobrazují, odstavce stačí; Kde to najdu a Rozpor zůstávají označené
+      if (m[1] === 'Kde to najdu') return `<div class="q-info-line q-info-line-where"><strong>Kde to najdu:</strong> ${glossLabel(m[2])}</div>`;
       if (m[1] === 'Rozpor') return `<div class="q-info-line q-info-line-warn"><strong>Rozpor:</strong> ${glossLabel(m[2])}</div>`;
       return `<div class="q-info-line">${glossLabel(m[2])}</div>`;
     }
@@ -4289,7 +4291,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.12';
+const APP_VERSION = '10.13';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 10.12 (19. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 10.13 (19. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -68,7 +68,7 @@ Kde se to projeví:
 | `opts` | string[] | Možnosti, ve stávajících testech 3 až 6 |
 | `correct` | number[] | Indexy správných odpovědí, **0-based**. Jeden nebo více |
 | `img` | string | Nepovinné. Cesta k obrázku se zadáním relativně ke složce `tests/`, např. `img/projektove-rizeni/q055.jpg` |
-| `info` | string | Nepovinné. Teorie k otázce (90 až 170 slov): vysvětluje ekonomickou látku, na které otázka stojí - pojmy, vztahy, mechanismus, vzorec, příklad. Nekomentuje otázku ani možnosti (žádné „otázka se ptá“, „všechna tvrzení platí“), špatné možnosti vyvrací výkladem, jak to funguje. 3 až 5 odstavců oddělených `\n`, odstavec max 3 věty. První řádek začíná návěštím `Pojem:` (nezobrazuje se), ostatní odstavce jsou bez návěští. Jen u sporných otázek poslední řádek `Rozpor:` (co říká test vs. co říká učebnice, formulace „Podle testu … Podle učebnice …“, bez odkazů na jiné otázky), vykreslí se tučně a oranžově. Zobrazí se jen po kliknutí na tlačítko **Teorie** (v testu je k dispozici před i po vyhodnocení, přechod na jinou otázku ji zavře), po odhalení odpovědí v Active recall a v přehledu odpovědí. Text má vždy popisek TEORIE. Dolní index přes `_X` jako ve slovníčku |
+| `info` | string | Nepovinné. Teorie k otázce (90 až 170 slov): vysvětluje ekonomickou látku, na které otázka stojí - pojmy, vztahy, mechanismus, vzorec, příklad. Nekomentuje otázku ani možnosti (žádné „otázka se ptá“, „všechna tvrzení platí“), špatné možnosti vyvrací výkladem, jak to funguje. 3 až 5 odstavců oddělených `\n`, odstavec max 3 věty. První řádek začíná návěštím `Pojem:` (nezobrazuje se), ostatní odstavce jsou bez návěští. U testů s povolenými pomůckami (zákony) řádek `Kde to najdu:` s paragrafem, nebo s informací, že to v pomůckách není; vykreslí se s tučným návěštím a stojí před případným řádkem `Rozpor:`. Jen u sporných otázek poslední řádek `Rozpor:` (co říká test vs. co říká učebnice, formulace „Podle testu … Podle učebnice …“, bez odkazů na jiné otázky), vykreslí se tučně a oranžově. Zobrazí se jen po kliknutí na tlačítko **Teorie** (v testu je k dispozici před i po vyhodnocení, přechod na jinou otázku ji zavře), po odhalení odpovědí v Active recall a v přehledu odpovědí. Text má vždy popisek TEORIE. Dolní index přes `_X` jako ve slovníčku |
 
 ```json
 {

@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 10.08 (19. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 10.09 (19. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -173,8 +173,9 @@ Když si u otázky nejsi jistý klíčem (rozpory v komentářích na Primátu, 
 | `hasSets` | `true`, když má test `sets`. Přidá na dlaždici ikonu tematických sad |
 | `draft` | `true` = štítek **Pracovní verze** (žlutý) na dlaždici i v detailu. Pro test, jehož klíč ještě není ověřený zkouškou |
 | `retired` | `true` = štítek **✓ Splněno** a ztmavená dlaždice. Pro už složený předmět |
+| `retiredAt` | Datum splnění (`YYYY-MM-DD`), patří k `retired`. Určuje pořadí splněných testů |
 
-Splněné testy se v dashboardu řadí nakonec, ostatní zůstávají v pořadí registru - nový test patří na začátek pole.
+Splněné testy se v dashboardu řadí nakonec, mezi sebou od naposledy splněného (`retiredAt`). Ostatní zůstávají v pořadí registru - nový test patří na začátek pole.
 
 ---
 

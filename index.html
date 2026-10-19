@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.08">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.09">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2251,7 +2251,8 @@ const TESTS_REGISTRY = [
     updatedAt: '2026-10-03',
     survey: true,
     sectionCount: 7,
-    retired: true
+    retired: true,
+    retiredAt: '2026-10-07'
   },
   {
     id: 'inovace',
@@ -2269,7 +2270,8 @@ const TESTS_REGISTRY = [
     updatedAt: '2026-09-19',
     questionCount: 247,
     hasSets: true,
-    retired: true
+    retired: true,
+    retiredAt: '2026-09-19'
   },
   {
     id: 'etika-spolecenska-odpovednost',
@@ -2277,7 +2279,8 @@ const TESTS_REGISTRY = [
     title: 'Etika a společenská odpovědnost',
     updatedAt: '2026-06-16',
     questionCount: 50,
-    retired: true
+    retired: true,
+    retiredAt: '2026-06-21'
   },
   {
     id: 'pravo-prostredi',
@@ -2285,7 +2288,8 @@ const TESTS_REGISTRY = [
     title: 'Právo a právní prostředí',
     updatedAt: '2026-06-19',
     questionCount: 68,
-    retired: true
+    retired: true,
+    retiredAt: '2026-06-21'
   },
   {
     id: 'projektove-rizeni',
@@ -2311,7 +2315,8 @@ const TESTS_REGISTRY = [
     updatedAt: '2026-09-27',
     questionCount: 126,
     hasSets: true,
-    retired: true
+    retired: true,
+    retiredAt: '2026-10-19'
   },
   {
     id: 'politologie-mezinarodni-vztahy',
@@ -2319,7 +2324,8 @@ const TESTS_REGISTRY = [
     title: 'Politologie a mezinárodní vztahy',
     updatedAt: '2026-05-30',
     questionCount: 95,
-    retired: true
+    retired: true,
+    retiredAt: '2026-06-15'
   },
   {
     id: 'komunikace',
@@ -2327,7 +2333,8 @@ const TESTS_REGISTRY = [
     title: 'Komunikace a komunikační dovednosti',
     updatedAt: '2026-04-03',
     questionCount: 103,
-    retired: true
+    retired: true,
+    retiredAt: '2026-05-16'
   },
   {
     id: 'management',
@@ -2335,7 +2342,8 @@ const TESTS_REGISTRY = [
     title: 'Management',
     updatedAt: '2026-04-24',
     questionCount: 86,
-    retired: true
+    retired: true,
+    retiredAt: '2026-05-16'
   },
   {
     id: 'management-stare',
@@ -2343,7 +2351,8 @@ const TESTS_REGISTRY = [
     title: 'Management (starší verze testu)',
     updatedAt: '2026-04-24',
     questionCount: 14,
-    retired: true
+    retired: true,
+    retiredAt: '2026-05-16'
   }
 ];
 
@@ -2479,7 +2488,10 @@ function renderDashboard(query) {
     container.innerHTML = '<div class="dash-empty">Žádné testy k dispozici.</div>';
     return;
   }
-  const sorted = [...TESTS_REGISTRY].sort((a, b) => (a.retired ? 1 : 0) - (b.retired ? 1 : 0));
+  // splněné za nesplněné, mezi sebou od naposledy splněného
+  const sorted = [...TESTS_REGISTRY].sort((a, b) =>
+    (a.retired ? 1 : 0) - (b.retired ? 1 : 0)
+    || (b.retiredAt || '').localeCompare(a.retiredAt || ''));
   const filtered = sorted.filter(t => testMatchesQuery(t, q));
   if (!filtered.length) {
     container.innerHTML = '<div class="dash-empty">Žádný test neodpovídá hledání.</div>';
@@ -4248,7 +4260,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.08';
+const APP_VERSION = '10.09';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

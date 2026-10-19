@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.11">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.12">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -444,6 +444,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .set-read-wrap[open] summary { color: var(--primary); border-style: solid; }
 .set-read { margin-top: 10px; padding: 11px 13px 12px; border: 1.5px solid var(--line2); border-radius: var(--r-sm, 9px); background: var(--card); }
 .set-read + .set-read { margin-top: 8px; }
+.open-q-list { padding-left: 32px; display: grid; gap: 6px; font-size: 14px; line-height: 1.45; color: var(--text); }
+.open-q-list li::marker { color: var(--dim); font-weight: 600; }
 .set-read .q-src { margin-top: 0; padding-top: 0; border-top: 0; }
 .q-info-line { margin: 0 0 6px; }
 .q-info-line:last-child { margin-bottom: 0; }
@@ -1226,6 +1228,10 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       <div style="font-size:11px;color:var(--muted);margin-top:6px;line-height:1.5;">
         <span id="start-rubric"></span><span id="start-scoring-note-sep" style="display:none;"> · </span><span id="start-scoring-note" style="display:none;"></span>
       </div>
+      <details class="set-read-wrap" id="start-open-q" style="display:none;">
+        <summary id="start-open-q-sum"></summary>
+        <ol class="set-read open-q-list" id="start-open-q-list"></ol>
+      </details>
     </div>
 
     <!-- ZONE A: Procvičování -->
@@ -2564,6 +2570,12 @@ async function selectTest(id, skipPush) {
     document.getElementById('start-meta').innerHTML = total + ' otázek v databázi · aktualizováno ' + formatDate(test.updatedAt)
       + (reg.draft ? ' · <span class="draft-note">Pracovní verze</span>' : '');
     document.getElementById('start-rubric').textContent = test.rubric || '';
+    const openQ = test.openQuestions || [];
+    const openQEl = document.getElementById('start-open-q');
+    openQEl.style.display = openQ.length ? '' : 'none';
+    openQEl.open = false;
+    document.getElementById('start-open-q-sum').textContent = `Otevřené otázky (${openQ.length})`;
+    document.getElementById('start-open-q-list').innerHTML = openQ.map(t => `<li>${escHtml(t)}</li>`).join('');
     document.getElementById('all-range-label').textContent = '1–' + total;
     renderRangeChunks();
     renderTopicSets();
@@ -4277,7 +4289,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.11';
+const APP_VERSION = '10.12';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

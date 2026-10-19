@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 10.11 (19. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 10.12 (19. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -22,7 +22,7 @@ Každý test je jeden JSON soubor ve složce `tests/`. Registr testů je konstan
 | `sets` | array | ne | Tematické sady, viz níže. Když je uvedeš, dej do registru `hasSets: true` |
 | `glossary` | array | ne | Slovníček zkratek, viz níže. U otázky i v Teorii se zobrazí jen položky, jejichž zkratka se v textu vyskytuje |
 | `sources` | object | ne | Studijní zdroje předmětu (učebnice, slidy, video), viz níže. Odkazují na ně pole `read` u sad a otázek |
-| `openQuestions` | string[] | ne | Seznam otevřených otázek ke zkoušce. Aplikace je zatím nikde nezobrazuje, jen je drží u testu |
+| `openQuestions` | string[] | ne | Seznam otevřených otázek ke zkoušce. V detailu testu se zobrazí jako sbalený blok **Otevřené otázky (N)** pod podmínkami zkoušky |
 
 ### `format`
 

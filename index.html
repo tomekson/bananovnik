@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.09">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.10">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -677,6 +677,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .dash-card-sets { display: inline-flex; align-items: center; color: var(--primary); flex: none; margin-left: auto; }
 .dash-card-sets svg { display: block; }
 .dash-card--retired .dash-card-sets { color: var(--dim); opacity: .7; }
+.dash-card-schema { font-size: 14px; color: var(--text); margin-top: 4px; font-weight: 600; }
+.dash-card--retired .dash-card-schema { color: var(--dim); }
 .dash-card-sub { font-size: 13px; color: var(--dim); margin-top: 4px; font-weight: 500; }
 .dash-card--retired { opacity: .45; }
 .dash-card--retired .dash-card-title { color: var(--dim); }
@@ -2221,17 +2223,9 @@ const TESTS_REGISTRY = [
     id: 'management-lidskych-zdroju',
     file: 'management-lidskych-zdroju.json',
     title: 'Management lidských zdrojů',
+    examSchema: '20 uzavřených + 1 otevřená',
     updatedAt: '2026-10-18',
     questionCount: 151,
-    hasSets: true,
-    draft: true
-  },
-  {
-    id: 'inovace-prednaska-2026-10-17',
-    file: 'inovace-prednaska-2026-10-17.json',
-    title: 'Inovace (přednáška 17. 10. 2026)',
-    updatedAt: '2026-10-17',
-    questionCount: 50,
     hasSets: true,
     draft: true
   },
@@ -2239,6 +2233,7 @@ const TESTS_REGISTRY = [
     id: 'pravo-v-praxi',
     file: 'pravo-v-praxi.json',
     title: 'Právo v praxi',
+    examSchema: '20 uzavřených otázek',
     updatedAt: '2026-10-04',
     questionCount: 138,
     hasSets: true,
@@ -2258,8 +2253,19 @@ const TESTS_REGISTRY = [
     id: 'inovace',
     file: 'inovace.json',
     title: 'Inovace',
+    examSchema: '12 uzavřených + 2 otevřené',
     updatedAt: '2026-09-20',
     questionCount: 54,
+    hasSets: true,
+    draft: true
+  },
+  {
+    id: 'inovace-prednaska-2026-10-17',
+    file: 'inovace-prednaska-2026-10-17.json',
+    title: 'Inovace (online 17. 10. 2026)',
+    examSchema: '12 uzavřených + 2 otevřené',
+    updatedAt: '2026-10-17',
+    questionCount: 50,
     hasSets: true,
     draft: true
   },
@@ -2267,6 +2273,7 @@ const TESTS_REGISTRY = [
     id: 'anglicky-jazyk',
     file: 'anglicky-jazyk.json',
     title: 'Anglický jazyk',
+    examSchema: '90 uzavřených otázek',
     updatedAt: '2026-09-19',
     questionCount: 247,
     hasSets: true,
@@ -2277,6 +2284,7 @@ const TESTS_REGISTRY = [
     id: 'etika-spolecenska-odpovednost',
     file: 'etika-spolecenska-odpovednost.json',
     title: 'Etika a společenská odpovědnost',
+    examSchema: '20 uzavřených otázek',
     updatedAt: '2026-06-16',
     questionCount: 50,
     retired: true,
@@ -2286,6 +2294,7 @@ const TESTS_REGISTRY = [
     id: 'pravo-prostredi',
     file: 'pravo-prostredi.json',
     title: 'Právo a právní prostředí',
+    examSchema: '20 uzavřených otázek',
     updatedAt: '2026-06-19',
     questionCount: 68,
     retired: true,
@@ -2295,6 +2304,7 @@ const TESTS_REGISTRY = [
     id: 'projektove-rizeni',
     file: 'projektove-rizeni.json',
     title: 'Projektové řízení',
+    examSchema: '14 otázek, z toho 4 příklady',
     updatedAt: '2026-10-14',
     questionCount: 105,
     hasSets: true,
@@ -2304,6 +2314,7 @@ const TESTS_REGISTRY = [
     id: 'manazerske-dovednosti',
     file: 'manazerske-dovednosti.json',
     title: 'Manažerské dovednosti',
+    examSchema: '16 uzavřených + 1 otevřená',
     updatedAt: '2026-09-19',
     questionCount: 190,
     hasSets: true
@@ -2312,6 +2323,7 @@ const TESTS_REGISTRY = [
     id: 'manazerska-ekonomie',
     file: 'manazerska-ekonomie.json',
     title: 'Manažerská ekonomie',
+    examSchema: '21 uzavřených otázek',
     updatedAt: '2026-09-27',
     questionCount: 126,
     hasSets: true,
@@ -2322,6 +2334,7 @@ const TESTS_REGISTRY = [
     id: 'politologie-mezinarodni-vztahy',
     file: 'politologie-mezinarodni-vztahy.json',
     title: 'Politologie a mezinárodní vztahy',
+    examSchema: '20 uzavřených otázek',
     updatedAt: '2026-05-30',
     questionCount: 95,
     retired: true,
@@ -2331,6 +2344,7 @@ const TESTS_REGISTRY = [
     id: 'komunikace',
     file: 'komunikace.json',
     title: 'Komunikace a komunikační dovednosti',
+    examSchema: '25 uzavřených otázek',
     updatedAt: '2026-04-03',
     questionCount: 103,
     retired: true,
@@ -2340,6 +2354,7 @@ const TESTS_REGISTRY = [
     id: 'management',
     file: 'management.json',
     title: 'Management',
+    examSchema: '16 uzavřených + 1 otevřená',
     updatedAt: '2026-04-24',
     questionCount: 86,
     retired: true,
@@ -2349,6 +2364,7 @@ const TESTS_REGISTRY = [
     id: 'management-stare',
     file: 'management-stare.json',
     title: 'Management (starší verze testu)',
+    examSchema: '16 uzavřených + 1 otevřená',
     updatedAt: '2026-04-24',
     questionCount: 14,
     retired: true,
@@ -2518,7 +2534,8 @@ function renderDashboard(query) {
       subText = `${t.questionCount} ${qLabel} v databázi · aktualizováno ${formatDate(t.updatedAt)}`;
     }
     const setsIcon = t.hasSets ? `<span class="dash-card-sets" role="img" aria-label="Tematické sady" title="Tematické sady"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>` : '';
-    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}${setsIcon}</div><div class="dash-card-sub">${subText}</div>`;
+    const schema = !isSearching && t.examSchema ? `<div class="dash-card-schema">Zkouška: ${t.examSchema}</div>` : '';
+    card.innerHTML = `${badge}<div class="dash-card-title">${t.title}${setsIcon}</div>${schema}<div class="dash-card-sub">${subText}</div>`;
     card.onclick = () => selectTest(t.id);
     container.appendChild(card);
   });
@@ -4260,7 +4277,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.09';
+const APP_VERSION = '10.10';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

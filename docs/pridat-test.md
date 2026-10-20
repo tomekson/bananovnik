@@ -216,6 +216,8 @@ Splněné testy se v dashboardu řadí nakonec, mezi sebou od naposledy splněn�
 
 7. **Ověř v prohlížeči** (`python3 -m http.server 8080 --bind 127.0.0.1`, pak `http://127.0.0.1:8080`): dlaždice se správným počtem otázek a štítkem, detail s rubrikou a sadami, výběr sady dá očekávaný počet otázek, kvíz vyhodnotí správnou odpověď, simulace zkoušky losuje `exam.questionCount` otázek.
 
+8. **Obnov test v NotebookLM** po pushi: `python3 scripts/test-md.py --upload <id>` (víc testů najednou: víc id za sebou). Platí i pro každou úpravu existujícího testu (klíč, Teorie, Rozpor, sady, slovníček), ne jen pro nový test. Nový test nejdřív zapiš do tabulky v `docs/notebooklm.md`.
+
 Service worker drží starou verzi i na localhostu. Když se změna nezobrazí, přidej k URL parametr (`?v=2`) nebo si v prohlížeči smaž cache.
 
 ---

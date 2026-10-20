@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 """Export testu z tests/<id>.json do Markdownu pro NotebookLM.
 
-Použití: python3 scripts/test-md.py <id> [výstupní.md]
-Bez výstupního souboru píše do .work/notebooklm/bananovnik-test-<id>.md.
+Použití:
+  python3 scripts/test-md.py <id> [výstupní.md]   jen export
+  python3 scripts/test-md.py --upload <id> [<id> ...]
+      export do .work/notebooklm/ a výměna zdroje bananovnik-test-<id>.md
+      v notebooku podle tabulky v docs/notebooklm.md
 """
 import json
+import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -101,7 +106,41 @@ def export(test_id):
     return "\n".join(out).rstrip() + "\n"
 
 
+def notebook_id(test_id):
+    table = (ROOT / "docs" / "notebooklm.md").read_text("utf-8")
+    for line in table.splitlines():
+        cells = line.split(" | ")
+        if len(cells) >= 3 and f"`{test_id}`" in cells[0]:
+            m = re.search(r"`([0-9a-f-]{36})`", line)
+            return m.group(1) if m else None
+    return None
+
+
+def upload(test_id):
+    nb = notebook_id(test_id)
+    if not nb:
+        print(f"{test_id}: bez notebooku v docs/notebooklm.md, přeskočeno")
+        return True
+    title = f"bananovnik-test-{test_id}.md"
+    dest = ROOT / ".work" / "notebooklm" / title
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(export(test_id), "utf-8")
+    listing = subprocess.run(["notebooklm", "source", "list", "-n", nb, "--json"],
+                             capture_output=True, text=True, check=True)
+    for src in json.loads(listing.stdout)["sources"]:
+        if src["title"] == title:
+            subprocess.run(["notebooklm", "source", "delete", "-y", "-n", nb, src["id"]],
+                           capture_output=True, check=True)
+    add = subprocess.run(["notebooklm", "source", "add", "-n", nb, "--timeout", "180", str(dest)],
+                         capture_output=True, text=True)
+    print(f"{test_id}: {'nahráno' if add.returncode == 0 else 'CHYBA ' + add.stderr.strip()}")
+    return add.returncode == 0
+
+
 if __name__ == "__main__":
+    if sys.argv[1] == "--upload":
+        ok = all([upload(t) for t in sys.argv[2:]])
+        sys.exit(0 if ok else 1)
     tid = sys.argv[1]
     dest = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / ".work" / "notebooklm" / f"bananovnik-test-{tid}.md"
     dest.parent.mkdir(parents=True, exist_ok=True)

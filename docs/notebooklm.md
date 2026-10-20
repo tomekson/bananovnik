@@ -23,13 +23,13 @@ Nový test: doplň řádek sem. ID najdeš přes `notebooklm list --json --no-tr
 
 ## Test jako zdroj v notebooku
 
-Každý notebook má zdroj `bananovnik-test-<id>.md`: export testu z Banánovníku s klíčem, Teorií, Rozpory, sadami a slovníčkem. Po každé změně testu ho obnov:
+Každý notebook má zdroj `bananovnik-test-<id>.md`: export testu z Banánovníku s klíčem, Teorií, Rozpory, sadami a slovníčkem. **Po každé změně `tests/<id>.json` ho obnov, uživatel to nekontroluje:**
 
 ```sh
-python3 scripts/test-md.py <id>                 # zapíše .work/notebooklm/bananovnik-test-<id>.md
-notebooklm source delete-by-title -y -n <ID> "bananovnik-test-<id>.md"
-notebooklm source add -n <ID> --timeout 180 .work/notebooklm/bananovnik-test-<id>.md
+python3 scripts/test-md.py --upload <id> [<id> ...]
 ```
+
+Skript vyrobí `.work/notebooklm/bananovnik-test-<id>.md`, v notebooku podle tabulky výše smaže starý zdroj stejného jména a nahraje nový. Test bez notebooku přeskočí.
 
 Původní výpisy z Primátu (`primat-*-testove-otazky-*.md`) v notebooku nech, jsou to zdrojová data. Staré PDF exporty `Test — <předmět>.pdf` z května 2026 jsou smazané, nahradil je MD export.
 

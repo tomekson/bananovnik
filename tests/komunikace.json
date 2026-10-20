@@ -1,7 +1,7 @@
 {
   "id": "komunikace",
   "title": "Komunikace a komunikační dovednosti",
-  "updatedAt": "2026-04-03",
+  "updatedAt": "2026-10-20",
   "rubric": "Zkouškový test: 60 min., 25 otázek po 4 bodech",
   "format": {
     "type": "multiple-choice",
@@ -67,7 +67,8 @@
       "correct": [
         0,
         2,
-        3
+        3,
+        4
       ]
     },
     {

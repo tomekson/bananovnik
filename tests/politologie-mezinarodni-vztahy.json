@@ -1,7 +1,7 @@
 {
   "id": "politologie-mezinarodni-vztahy",
   "title": "Politologie a mezinárodní vztahy",
-  "updatedAt": "2026-05-30",
+  "updatedAt": "2026-10-20",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech",
   "format": {
     "type": "multiple-choice",
@@ -500,6 +500,7 @@
         "Jejich funkcí je spoluutváření politických rozhodnutí a získávání politické podpory pro ně"
       ],
       "correct": [
+        0,
         1,
         3,
         4
@@ -850,6 +851,7 @@
         "Její nejvýznamnější činností je přijímání regionálních mezinárodních smluv, např. Úmluva o ochraně lidských práv a základních svobod"
       ],
       "correct": [
+        0,
         1,
         3
       ]

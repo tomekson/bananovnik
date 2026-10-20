@@ -1,7 +1,7 @@
 {
   "id": "pravo-prostredi",
   "title": "Právo a právní prostředí",
-  "updatedAt": "2026-06-15",
+  "updatedAt": "2026-10-20",
   "rubric": "Zkouškový test: 30 min., 20 otázek po 5 bodech",
   "format": {
     "type": "multiple-choice",
@@ -923,6 +923,7 @@
         "Právo se promlčí, jestliže nebylo vykonáno v době v zákoně stanovené. K promlčení soud přihlédne jen k námitce dlužníka. Dovolá-li se dlužník promlčení, nelze promlčené právo věřiteli přiznat"
       ],
       "correct": [
+        0,
         4
       ]
     },

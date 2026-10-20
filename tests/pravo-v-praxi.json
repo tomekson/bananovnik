@@ -14,6 +14,71 @@
     "questionCount": 20,
     "openCount": 0
   },
+  "glossary": [
+    {
+      "keys": [
+        "OZ"
+      ],
+      "label": "OZ",
+      "text": "občanský zákoník (zákon č. 89/2012 Sb.)"
+    },
+    {
+      "keys": [
+        "ZOK"
+      ],
+      "label": "ZOK",
+      "text": "zákon o obchodních korporacích (zákon č. 90/2012 Sb.) - upravuje obchodní společnosti a družstva"
+    },
+    {
+      "keys": [
+        "ZP"
+      ],
+      "label": "ZP",
+      "text": "zákoník práce (zákon č. 262/2006 Sb.)"
+    },
+    {
+      "keys": [
+        "ŽZ"
+      ],
+      "label": "ŽZ",
+      "text": "živnostenský zákon (zákon č. 455/1991 Sb.)"
+    },
+    {
+      "keys": [
+        "ČR"
+      ],
+      "label": "ČR",
+      "text": "Česká republika"
+    },
+    {
+      "keys": [
+        "ČNB"
+      ],
+      "label": "ČNB",
+      "text": "Česká národní banka"
+    },
+    {
+      "keys": [
+        "SVJ"
+      ],
+      "label": "SVJ",
+      "text": "společenství vlastníků jednotek - právnická osoba vlastníků bytů a nebytových prostor v domě"
+    },
+    {
+      "keys": [
+        "IČO"
+      ],
+      "label": "IČO",
+      "text": "identifikační číslo osoby - osmimístné číslo, které přiděluje správce základního registru osob"
+    },
+    {
+      "keys": [
+        "EUR"
+      ],
+      "label": "EUR",
+      "text": "euro (měna)"
+    }
+  ],
   "questions": [
     {
       "q": "Obchodní firma:",

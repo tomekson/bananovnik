@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.28">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.29">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4107,11 +4107,20 @@ function glossHits(txt) {
   return gl.filter(e => (e.keys || []).some(k => tokens.has(k)));
 }
 
+function glossRowsHtml(hits) {
+  return hits.map(e => `<dt>${glossLabel(e.label)}</dt><dd>${glossLabel(e.text)}</dd>`).join('');
+}
+
+// Zkratky v Teorii se vypisují rovnou, bez rozbalování
+function glossListHtml(hits) {
+  return hits.length ? `<div class="q-gloss"><dl>${glossRowsHtml(hits)}</dl></div>` : '';
+}
+
 function glossDetailsHtml(hits, title, open, toggleVar) {
   if (!hits.length) return '';
   const n = hits.length;
   const cnt = n === 1 ? '1 zkratka' : n <= 4 ? `${n} zkratky` : `${n} zkratek`;
-  const rows = hits.map(e => `<dt>${glossLabel(e.label)}</dt><dd>${glossLabel(e.text)}</dd>`).join('');
+  const rows = glossRowsHtml(hits);
   return `<details class="q-gloss"${open ? ' open' : ''} ontoggle="${toggleVar}=this.open">` +
     `<summary>${title} · ${cnt}</summary><dl>${rows}</dl></details>`;
 }
@@ -4120,8 +4129,6 @@ function glossaryHtml(q, includeOpts) {
   const txt = q.q + ' ' + (includeOpts ? q.opts.join(' ') : '');
   return glossDetailsHtml(glossHits(txt), 'Zkratky v otázce', glossOpen, 'glossOpen');
 }
-
-let infoGlossOpen = false;
 
 // Vysvětlení pojmu před odpovědí: jen první odstavec Info (Pojem), aby neprozradil odpověď.
 // Otázka, u které je Teorie otevřená; přechod na jinou otázku ji zavře natrvalo (ani po návratu se sama neotevře)
@@ -4240,7 +4247,7 @@ function infoHtml(q) {
     }
     return `<div class="q-info-line">${glossLabel(l)}</div>`;
   });
-  const gloss = glossDetailsHtml(glossHits(String(info)), 'Zkratky v teorii', infoGlossOpen, 'infoGlossOpen');
+  const gloss = glossListHtml(glossHits(String(info)));
   return `<div class="q-info-box"><div class="q-info-eyebrow">Teorie</div>${rows.join('')}${gloss}${readListHtml(questionReadItems(q), 'Ke studiu')}</div>`;
 }
 
@@ -4291,7 +4298,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.28';
+const APP_VERSION = '10.29';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

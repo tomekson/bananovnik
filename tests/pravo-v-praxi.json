@@ -453,9 +453,10 @@
       "correct": [
         0,
         1,
+        2,
         3
       ],
-      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán do obchodního rejstříku (§ 423 OZ).\nProč: Firma nesmí být zaměnitelná s jinou firmou ani působit klamavě (§ 424 OZ). Jinak by mátla zákazníky a obchodní partnery. Podle obsahu může být věcná (popisuje činnost), fantazijní (vymyšlené slovo) nebo smíšená.\nChyták: Varianta \"se nezapisuje do obchodního rejstříku\" je špatně. Firma je přímo definovaná zápisem do obchodního rejstříku.\nKde to najdu: Občanský zákoník § 423 odst. 1 (firma se zapisuje do obchodního rejstříku) a § 424 (nesmí být zaměnitelná ani klamavá).\nRozpor: Podle testu je tvrzení \"se zapisuje do obchodního rejstříku\" chybné. Podle § 423 OZ se firma do obchodního rejstříku zapisuje, takže tvrzení je pravdivé."
+      "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán do obchodního rejstříku (§ 423 OZ).\nProč: Firma nesmí být zaměnitelná s jinou firmou ani působit klamavě (§ 424 OZ). Jinak by mátla zákazníky a obchodní partnery. Podle obsahu může být věcná (popisuje činnost), fantazijní (vymyšlené slovo) nebo smíšená.\nChyták: Varianta \"se nezapisuje do obchodního rejstříku\" je špatně. Firma je přímo definovaná zápisem do obchodního rejstříku.\nKde to najdu: Občanský zákoník § 423 odst. 1 (firma se zapisuje do obchodního rejstříku) a § 424 (nesmí být zaměnitelná ani klamavá).\nRozpor: Primát možnost \"se zapisuje do obchodního rejstříku\" za správnou nepočítá. Autorka testu v komentářích na Primátu uvádí, že za ni oficiální vyhodnocení zkoušky (EZK) nedává body. Podle § 423 OZ je ale tvrzení pravdivé a otázky 40 a 136 ho počítají jako správné, proto ho jako správné počítá i tento test."
     },
     {
       "q": "Společnost vzniká dnem:",

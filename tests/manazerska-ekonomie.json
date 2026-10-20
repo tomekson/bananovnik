@@ -1,7 +1,7 @@
 {
   "id": "manazerska-ekonomie",
   "title": "Manažerská ekonomie",
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-20",
   "rubric": "Zkouškový test: 45 min., 21 otázek po 5 bodech",
   "format": {
     "type": "multiple-choice",
@@ -2177,9 +2177,10 @@
         "optimální objem produkce bude odpovídat situaci, kdy mezní příjem je roven nulový (MR=0)"
       ],
       "correct": [
+        3,
         4
       ],
-      "info": "Pojem: Firma maximalizující obrat usiluje o co nejvyšší celkové příjmy TR (cena krát prodané množství), ne o co nejvyšší zisk.\nTR roste, dokud je mezní příjem MR (příjem z kusu navíc) kladný. Když MR klesne pod nulu, další kus TR snižuje. Optimální objem takové firmy proto leží tam, kde MR = 0.\nZlaté pravidlo MR = MC (mezní náklady, náklady na kus navíc) používá firma maximalizující zisk. Protože MC jsou kladné, zastaví se tato firma dřív, při kladném MR.\nFirma maximalizující obrat tedy vyrábí víc a kvůli klesající poptávce prodává levněji. Ztráta ji nutně nečeká. Pokud TR převyšují celkové náklady TC, má zisk, jen ne nejvyšší dosažitelný.\nRozpor: Podle testu platí jen MR = 0, nižší cenu a vyšší množství než při maximalizaci zisku za správné nebere. Podle učebnice ale firma maximalizující zisk nabízí menší množství než při maximalizaci obratu, takže nižší cena a vyšší množství logicky platí také.",
+      "info": "Pojem: Firma maximalizující obrat usiluje o co nejvyšší celkové příjmy TR (cena krát prodané množství), ne o co nejvyšší zisk.\nTR roste, dokud je mezní příjem MR (příjem z kusu navíc) kladný. Když MR klesne pod nulu, další kus TR snižuje. Optimální objem takové firmy proto leží tam, kde MR = 0.\nZlaté pravidlo MR = MC (mezní náklady, náklady na kus navíc) používá firma maximalizující zisk. Protože MC jsou kladné, zastaví se tato firma dřív, při kladném MR.\nFirma maximalizující obrat tedy vyrábí víc a kvůli klesající poptávce prodává levněji. Ztráta ji nutně nečeká. Pokud TR převyšují celkové náklady TC, má zisk, jen ne nejvyšší dosažitelný.",
       "read": [
         {
           "src": "video",

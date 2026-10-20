@@ -1,7 +1,7 @@
 {
   "id": "pravo-v-praxi",
   "title": "Právo v praxi",
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech\nPomůcky: občanský zákoník, zákon o obchodních korporacích, zákoník práce",
   "format": {
     "type": "multiple-choice",
@@ -1771,22 +1771,6 @@
       "info": "Pojem: Systém orgánů určuje, kdo v akciové společnosti rozhoduje, řídí a kontroluje.\nProč: Valná hromada je vždy nejvyšším orgánem (§ 44 odst. 1 ZOK). Vedle ní si společnost ve stanovách zvolí jeden ze dvou systémů (§ 396 ZOK). Dualistický systém má představenstvo jako statutární orgán a dozorčí radu jako kontrolní orgán. Monistický systém má jen správní radu, která řídí i kontroluje, a jejím statutárním orgánem je člen nebo více členů správní rady.\nChyták: Systém není pevně předepsán. Zákon nabízí volbu mezi monistickým a dualistickým uspořádáním. Kárná komise do orgánů akciové společnosti nepatří, zákon ji nezná.\nKde to najdu: Zákon o obchodních korporacích § 44 odst. 1 (valná hromada jako nejvyšší orgán) a § 396 (dualistický systém s představenstvem a dozorčí radou, nebo monistický se správní radou)."
     },
     {
-      "q": "Pro kapitálové obchodní společnosti v českém právu platí:",
-      "opts": [
-        "převod podílu společníka je v zásadě možný",
-        "nevytváří se formalizovaná struktura orgánů společnosti",
-        "založení alespoň 2 osobami",
-        "ručení společníků za dluhy společnosti je omezené nebo žádné",
-        "právní úprava má vesměs kogentní charakter"
-      ],
-      "correct": [
-        0,
-        3,
-        4
-      ],
-      "info": "Pojem: Kapitálové společnosti (s.r.o. a a.s.) jsou postavené na kapitálu, ne na osobní účasti společníků. Vkladem se účastní na společnosti, osobně ji vést nemusí.\nProč: Podíl lze v zásadě převést (u a.s. převodem akcie). Ručení je omezené (u s.r.o. do výše nesplacených vkladů, § 132 ZOK) nebo žádné (akcionář a.s. neručí vůbec). Úprava je převážně kogentní, tedy závazná, protože chrání věřitele a základní kapitál.\nChyták: S.r.o. i a.s. může založit jediná osoba, dva zakladatelé potřeba nejsou. Formalizovaná struktura orgánů naopak vzniká vždy: valná hromada, jednatelé, představenstvo nebo správní rada.\nKde to najdu: Zákon o obchodních korporacích § 1 odst. 2 (osobní společnosti jsou v.o.s. a k.s., kapitálové s.r.o. a a.s.), § 11 (kapitálovou společnost může založit jediný zakladatel), § 132 (ručení společníků s.r.o.), § 142 a § 246 (povinné vklady), § 207 (převod podílu)."
-    },
-    {
       "q": "Zaměstnanec:",
       "opts": [
         "může být právnická i fyzická osoba",
@@ -1890,21 +1874,6 @@
         3
       ],
       "info": "Pojem: Sídlo je adresa, ke které se váže právní identita podnikatele. Doručují se na ni písemnosti a určuje se podle ní příslušnost úřadů.\nProč: Zakladatelské právní jednání právnické osoby musí sídlo obsahovat, ale stačí uvést obec (§ 136 OZ). Úplná adresa se zapisuje do veřejného rejstříku. Podle § 137 OZ je rozhodující sídlo zapsané v rejstříku. Kdo se ho dovolá, tomu právnická osoba nemůže namítat, že sídlí jinde.\nChyták: Sídlo může být i v bytě, pokud to nenaruší klid a pořádek v domě (§ 136 OZ). Úplná adresa v zakladatelském jednání být nemusí. Sídlo je povinná náležitost zakladatelského jednání, vynechat ho nelze.\nKde to najdu: Občanský zákoník § 429 odst. 1 (sídlo podnikatele se určí adresou zapsanou ve veřejném rejstříku) a § 136 (sídlo může být i v bytě, v zakladatelském jednání postačí název obce)."
-    },
-    {
-      "q": "Valná hromada akciové společnosti: (bez záruky)",
-      "opts": [
-        "je orgán složený z dlužníků a věřitelů akciové společnosti",
-        "náleží jí zastupování společnosti navenek",
-        "rozhoduje o zásadních otázkách existence společnosti",
-        "svolává ji jednatel pozvánkou alespoň 30 dnů předem",
-        "se koná alespoň jednou ročně"
-      ],
-      "correct": [
-        2,
-        4
-      ],
-      "info": "Pojem: Valná hromada je nejvyšší orgán akciové společnosti. Tvoří ji akcionáři.\nProč: Rozhoduje o zásadních otázkách existence společnosti: změna stanov, změna základního kapitálu, volba a odvolání členů orgánů, schválení účetní závěrky, rozdělení zisku, zrušení s likvidací nebo přeměna. Podle § 402 ZOK se koná alespoň jednou za účetní období, tedy obvykle jednou ročně.\nChyták: Pozvánka se rozesílá nejméně 30 dnů předem (§ 406 ZOK), ale svolává ji představenstvo nebo správní rada. Jednatel je orgán s.r.o. Zastupování navenek patří statutárnímu orgánu, ne valné hromadě. Dlužníci a věřitelé ji netvoří.\nKde to najdu: Zákon o obchodních korporacích § 402 (valnou hromadu a.s. svolává představenstvo nebo správní rada alespoň jednou za účetní období), § 406 (pozvánka 30 dnů předem) a § 421 (působnost valné hromady)."
     },
     {
       "q": "Pro okamžité zrušení pracovního poměru platí:",
@@ -2146,7 +2115,7 @@
         26,
         34,
         38,
-        128
+        126
       ]
     },
     {
@@ -2157,7 +2126,7 @@
         79,
         96,
         111,
-        123
+        122
       ]
     },
     {
@@ -2183,9 +2152,9 @@
         59,
         89,
         101,
-        119,
-        124,
-        138
+        118,
+        123,
+        136
       ]
     },
     {
@@ -2197,7 +2166,7 @@
         78,
         81,
         88,
-        137
+        135
       ]
     },
     {
@@ -2219,9 +2188,9 @@
         51,
         114,
         115,
-        121,
-        133,
-        136
+        120,
+        131,
+        134
       ]
     },
     {
@@ -2238,8 +2207,7 @@
         80,
         93,
         94,
-        105,
-        117
+        105
       ]
     },
     {
@@ -2258,8 +2226,7 @@
         91,
         97,
         113,
-        116,
-        125
+        116
       ]
     },
     {
@@ -2275,12 +2242,12 @@
         107,
         109,
         110,
-        122,
+        121,
+        125,
         127,
+        128,
         129,
-        130,
-        131,
-        132
+        130
       ]
     },
     {
@@ -2298,11 +2265,11 @@
         83,
         108,
         112,
-        118,
-        120,
-        126,
-        134,
-        135
+        117,
+        119,
+        124,
+        132,
+        133
       ]
     }
   ]

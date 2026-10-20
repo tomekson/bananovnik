@@ -42,41 +42,6 @@
       ],
       "label": "ŽZ",
       "text": "živnostenský zákon (zákon č. 455/1991 Sb.)"
-    },
-    {
-      "keys": [
-        "ČR"
-      ],
-      "label": "ČR",
-      "text": "Česká republika"
-    },
-    {
-      "keys": [
-        "ČNB"
-      ],
-      "label": "ČNB",
-      "text": "Česká národní banka"
-    },
-    {
-      "keys": [
-        "SVJ"
-      ],
-      "label": "SVJ",
-      "text": "společenství vlastníků jednotek - právnická osoba vlastníků bytů a nebytových prostor v domě"
-    },
-    {
-      "keys": [
-        "IČO"
-      ],
-      "label": "IČO",
-      "text": "identifikační číslo osoby - osmimístné číslo, které přiděluje správce základního registru osob"
-    },
-    {
-      "keys": [
-        "EUR"
-      ],
-      "label": "EUR",
-      "text": "euro (měna)"
     }
   ],
   "questions": [

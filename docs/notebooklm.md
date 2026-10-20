@@ -21,6 +21,18 @@ Každý předmět má vlastní notebook v NotebookLM (účet tomekmasek@gmail.co
 
 Nový test: doplň řádek sem. ID najdeš přes `notebooklm list --json --no-truncate`.
 
+## Test jako zdroj v notebooku
+
+Každý notebook má zdroj `bananovnik-test-<id>.md`: export testu z Banánovníku s klíčem, Teorií, Rozpory, sadami a slovníčkem. Po každé změně testu ho obnov:
+
+```sh
+python3 scripts/test-md.py <id>                 # zapíše .work/notebooklm/bananovnik-test-<id>.md
+notebooklm source delete-by-title -y -n <ID> "bananovnik-test-<id>.md"
+notebooklm source add -n <ID> --timeout 180 .work/notebooklm/bananovnik-test-<id>.md
+```
+
+Původní výpisy z Primátu (`primat-*-testove-otazky-*.md`) v notebooku nech, jsou to zdrojová data. Staré PDF exporty `Test — <předmět>.pdf` z května 2026 jsou smazané, nahradil je MD export.
+
 ## Použití
 
 Notebook vždy předávej přes `-n <ID>`, ne přes `notebooklm use`. `use` mění globální stav a při práci na víc předmětech by dotaz šel do špatného notebooku.

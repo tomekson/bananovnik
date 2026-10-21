@@ -326,9 +326,7 @@
       "info": "Pojem: DNA inovátora je model Dyera, Gregersena a Christensena. Popisuje pět dovedností, kterými se inovátoři liší od ostatních manažerů.\nProč: Jedinou kognitivní dovedností je asociace - schopnost propojovat zdánlivě nesouvisející otázky, problémy a myšlenky z různých oborů. Ostatní čtyři dovednosti jsou behaviorální a asociaci \"krmí\" podněty.\nChyták: Kladení otázek, pozorování, síťování a experimentování jsou také součástí DNA inovátora. Jde ale o behaviorální dovednosti (způsoby chování), ne o kognitivní.",
       "read": [
         {
-          "src": "slidy16",
-          "ref": "DNA inovátora",
-          "pages": "42"
+          "note": "V učebnicích, slidech ani videolearningu není, látku vysvětluje jen Teorie výše."
         }
       ]
     },
@@ -368,9 +366,7 @@
       "info": "Pojem: Kirtonova škála KAI (Kirton Adaption-Innovation) měří styl tvořivosti a řešení problémů.\nProč: Kirton staví proti sobě dva póly. Adaptor zlepšuje věci uvnitř existujícího systému (\"dělat věci lépe\"). Inovátor mění samotný systém a pravidla (\"dělat věci jinak\"). Oba styly jsou tvořivé, jen jiným způsobem. Škála tedy srovnává inovátory a adaptory.\nChyták: Modifikátor, experimentátor nebo vizionář jsou pojmy z jiných typologií tvořivosti. Varianty, které kombinují jeden správný pól s jiným pojmem, jsou proto chybné.",
       "read": [
         {
-          "src": "slidy16",
-          "ref": "Styly a typy tvořivosti: Kirtonova škála od adaptora po inovátora",
-          "pages": "44"
+          "note": "V učebnicích, slidech ani videolearningu není, látku vysvětluje jen Teorie výše."
         }
       ]
     },
@@ -741,9 +737,7 @@
           "pages": "45"
         },
         {
-          "src": "slidy16",
-          "ref": "Dimenze inovací: produkt, proces, pozice, paradigma",
-          "pages": "12"
+          "note": "Přesně tohle ve zdrojích není, jen související výklad."
         }
       ]
     },
@@ -912,11 +906,6 @@
           "src": "kotulic",
           "ref": "kap. 2.3 Kreativita",
           "pages": "33–34"
-        },
-        {
-          "src": "slidy16",
-          "ref": "Styly a typy tvořivosti",
-          "pages": "44"
         }
       ]
     },
@@ -1260,11 +1249,6 @@
       "label": "Slidy",
       "title": "Kotulič: Inovace, slidy 2024/25",
       "pageWord": "slidy"
-    },
-    "slidy16": {
-      "label": "Slidy 2016",
-      "title": "Kadeřábková: Inovace a podnikání, slidy 9. 1. 2016 (eVyhledávač VŠEM, starší předmět)",
-      "pageWord": "slide"
     }
   },
   "sets": [
@@ -1300,11 +1284,6 @@
           "src": "slidy",
           "ref": "Klasifikace inovací",
           "pages": "90–118"
-        },
-        {
-          "src": "slidy16",
-          "ref": "Dimenze a typy inovací",
-          "pages": "11–16"
         }
       ]
     },
@@ -1331,11 +1310,6 @@
           "src": "slidy",
           "ref": "Inovační metody - intuitivní postupy",
           "pages": "276–307"
-        },
-        {
-          "src": "slidy16",
-          "ref": "Tvořivost, DNA inovátora, styly tvořivosti",
-          "pages": "38–45"
         }
       ]
     },

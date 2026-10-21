@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.30">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.31">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -414,19 +414,22 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   margin: 8px 0 0; padding: 10px 12px; background: var(--card); border: 1px solid var(--line2); border-radius: 8px;
   display: grid; grid-template-columns: max-content 1fr; gap: 5px 12px; font-size: 13px; line-height: 1.45;
 }
-.q-gloss dt { font-weight: 700; font-family: 'SF Mono','Fira Code','Cascadia Code',monospace; color: var(--primary); white-space: nowrap; }
+.q-gloss dt, .q-info-gloss dt { font-weight: 700; color: var(--primary); white-space: nowrap; }
 .q-gloss dt sub, .q-gloss dd sub { font-size: .72em; }
-.q-gloss dd { margin: 0; color: var(--text); text-wrap: pretty; }
+.q-gloss dd, .q-info-gloss dd { margin: 0; color: var(--text); text-wrap: pretty; }
 .q-info-box {
   margin: 14px 0 14px; padding: 12px 14px 13px; border: 1.5px solid var(--line2);
   background: var(--card); border-radius: var(--r-sm, 9px); font-size: 13.5px; line-height: 1.5; color: var(--text); text-wrap: pretty;
 }
-.q-info-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--primary); margin-bottom: 7px; }
+.q-info-eyebrow, .q-info-h, .q-src-h { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--primary); margin-bottom: 7px; }
 .q-info-box sub { font-size: .72em; }
-.q-src { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line2); }
-.q-src-h { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+/* Části Teorie (Rozpor, Kde to najdu, Zkratky, Ke studiu): přerušovaná linka a stejný nadpis jako TEORIE */
+.q-info-sec, .q-src { margin-top: 9px; padding-top: 8px; border-top: 1px dashed var(--line2); }
+.q-info-h, .q-src-h { margin-bottom: 4px; }
+.q-info-h-warn { color: var(--amber); }
+.q-info-gloss { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 3px 12px; }
 .q-src ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
-.q-src li { font-size: 12.5px; line-height: 1.45; color: var(--muted); }
+.q-src li { line-height: 1.5; color: var(--text); }
 .q-src li strong { color: var(--text); font-weight: 600; }
 .q-src-group > ul { list-style: disc; margin: 2px 0 2px; padding-left: 18px; display: grid; gap: 2px; }
 .q-src-group > ul > li::marker { color: var(--line2); }
@@ -449,11 +452,6 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .set-read .q-src { margin-top: 0; padding-top: 0; border-top: 0; }
 .q-info-line { margin: 0 0 6px; }
 .q-info-line:last-child { margin-bottom: 0; }
-.q-info-line strong { color: var(--primary); font-weight: 700; }
-.q-info-line-warn { border-top: 1px dashed var(--line2); padding-top: 6px; }
-.q-info-line-warn strong { color: var(--amber); }
-.q-info-line-where { border-top: 1px dashed var(--line2); padding-top: 6px; }
-.q-info-box .q-gloss { margin: 10px 0 0; }
 .rq-card > .q-info-box { margin: 0 8px 10px; }
 .btn-copy-q {
   display: inline-block; white-space: nowrap; padding: 4px 10px; border-radius: 6px;
@@ -4111,9 +4109,13 @@ function glossRowsHtml(hits) {
   return hits.map(e => `<dt>${glossLabel(e.label)}</dt><dd>${glossLabel(e.text)}</dd>`).join('');
 }
 
-// Zkratky v Teorii se vypisují rovnou, bez rozbalování
+// Zkratky v Teorii se vypisují rovnou jako samostatná část, bez rozbalování
 function glossListHtml(hits) {
-  return hits.length ? `<div class="q-gloss"><dl>${glossRowsHtml(hits)}</dl></div>` : '';
+  return hits.length ? infoSecHtml('Zkratky', `<dl class="q-info-gloss">${glossRowsHtml(hits)}</dl>`) : '';
+}
+
+function infoSecHtml(title, body, warn) {
+  return `<div class="q-info-sec"><div class="q-info-h${warn ? ' q-info-h-warn' : ''}">${title}</div>${body}</div>`;
 }
 
 function glossDetailsHtml(hits, title, open, toggleVar) {
@@ -4241,8 +4243,8 @@ function infoHtml(q) {
     const m = l.match(/^([^:]{2,12}):\s*(.*)$/);
     if (m && LABELS.includes(m[1])) {
       // Návěští Pojem / Proč / Chyták se nezobrazují, odstavce stačí; Kde to najdu a Rozpor zůstávají označené
-      if (m[1] === 'Kde to najdu') return `<div class="q-info-line q-info-line-where"><strong>Kde to najdu:</strong> ${glossLabel(m[2])}</div>`;
-      if (m[1] === 'Rozpor') return `<div class="q-info-line q-info-line-warn"><strong>Rozpor:</strong> ${glossLabel(m[2])}</div>`;
+      if (m[1] === 'Kde to najdu') return infoSecHtml('Kde to najdu', `<div>${glossLabel(m[2])}</div>`);
+      if (m[1] === 'Rozpor') return infoSecHtml('Rozpor', `<div>${glossLabel(m[2])}</div>`, true);
       return `<div class="q-info-line">${glossLabel(m[2])}</div>`;
     }
     return `<div class="q-info-line">${glossLabel(l)}</div>`;
@@ -4298,7 +4300,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.30';
+const APP_VERSION = '10.31';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

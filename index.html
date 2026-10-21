@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.35">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.36">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -381,6 +381,26 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .btn-ico:active { background: var(--line); }
 .prog-label { font-size: 13px; color: var(--dim); font-weight: 500; }
 .prog-label b { color: var(--text); }
+.prog-jump { background: none; border: 1px dashed transparent; border-radius: 7px; padding: 3px 6px; cursor: pointer; font-family: inherit; }
+.prog-jump:hover, .prog-jump:focus-visible { border-color: var(--line2); }
+.jump-pop {
+  position: fixed; inset: auto; margin: 0; width: min(340px, calc(100vw - 24px)); max-height: 60vh; overflow: auto;
+  padding: 12px; border: 1.5px solid var(--line2); border-radius: var(--r-sm, 9px); background: var(--card); color: var(--text);
+  box-shadow: 0 8px 24px rgba(0,0,0,.14);
+}
+.jump-form { display: flex; gap: 8px; margin-bottom: 10px; }
+.jump-form input {
+  flex: 1; min-width: 0; padding: 8px 10px; font: inherit; font-size: 16px; color: var(--text);
+  border: 1.5px solid var(--line2); border-radius: 8px; background: var(--bg, #fff);
+}
+.jump-form button { padding: 8px 14px; font: inherit; font-weight: 700; font-size: 14px; border-radius: 8px; border: 1.5px solid var(--primary); background: var(--primary); color: #fff; cursor: pointer; }
+.jump-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap: 6px; }
+.jump-grid button {
+  height: 36px; font: inherit; font-size: 13px; font-weight: 600; color: var(--dim); cursor: pointer;
+  border: 1px solid var(--line2); border-radius: 7px; background: var(--card2);
+}
+.jump-grid button.done { color: var(--text); background: var(--line); }
+.jump-grid button.cur { color: var(--primary); border: 2px solid var(--primary); background: var(--card); }
 .pbar { height: 4px; background: var(--card2); border-radius: 100px; overflow: hidden; }
 .pbar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--yellow)); border-radius: 100px; transition: width .4s cubic-bezier(.4,0,.2,1); }
 .btn-nav { width: 28px; height: 28px; font-size: 18px; font-weight: 700; border-radius: 7px; border-color: var(--yellow); background: var(--yellow-bg); }
@@ -1434,7 +1454,8 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
         <button class="btn-ico" onclick="askAbort()">✕</button>
         <div class="quiz-nav-center" style="display:flex;align-items:center;gap:6px;">
           <button class="btn-ico btn-nav" id="btn-prev" onclick="goQ(-1)">‹</button>
-          <span class="prog-label"><b id="p-cur">1</b> / <span id="p-tot">—</span></span>
+          <button class="prog-label prog-jump" popovertarget="jump-quiz" onclick="openJump('quiz', this)" title="Přejít na otázku"><b id="p-cur">1</b> / <span id="p-tot">—</span></button>
+          <div class="jump-pop" id="jump-quiz" popover></div>
           <button class="btn-ico btn-nav" id="btn-next" onclick="goQ(1)">›</button>
         </div>
         <button class="btn-ico" onclick="openReview()" title="Přehled mých dosavadních odpovědí v tomto testu" style="font-size:11px;padding:0 10px;width:auto;">Přehled odpovědí</button>
@@ -1481,7 +1502,8 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
         </div>
         <div class="quiz-nav-center" style="display:flex;align-items:center;gap:6px;">
           <button class="btn-ico btn-nav" id="btn-study-prev" onclick="goStudy(-1)">‹</button>
-          <span class="prog-label"><b id="study-cur">1</b> / <span id="study-tot">—</span></span>
+          <button class="prog-label prog-jump" popovertarget="jump-study" onclick="openJump('study', this)" title="Přejít na otázku"><b id="study-cur">1</b> / <span id="study-tot">—</span></button>
+          <div class="jump-pop" id="jump-study" popover></div>
           <button class="btn-ico btn-nav" id="btn-study-next" onclick="goStudy(1)">›</button>
         </div>
         <div style="display:flex;align-items:center;gap:6px;">
@@ -3637,6 +3659,29 @@ function revealStudy() {
   renderStudy();
 }
 
+// Rychlý skok na otázku: klepnutí na „1 / 42“ otevře pole pro číslo a mřížku všech otázek
+function openJump(kind, btn) {
+  const pop = document.getElementById('jump-' + kind);
+  const n = S.questions.length;
+  const done = i => kind === 'quiz' ? !!(S.confirmed && S.confirmed[i]) : !!(S.revealed && S.revealed[i] && S.studyKind === 'recall');
+  const cells = S.questions.map((_, i) =>
+    `<button class="${i === S.cur ? 'cur' : done(i) ? 'done' : ''}" onclick="jumpTo('${kind}', ${i})">${i + 1}</button>`).join('');
+  pop.innerHTML = `<form class="jump-form" onsubmit="event.preventDefault(); jumpTo('${kind}', this.num.value - 1)">` +
+    `<input name="num" type="number" inputmode="numeric" min="1" max="${n}" placeholder="Číslo otázky (1–${n})">` +
+    `<button>Přejít</button></form><div class="jump-grid">${cells}</div>`;
+  const r = btn.getBoundingClientRect();
+  pop.style.top = (r.bottom + 8) + 'px';
+  pop.style.left = Math.max(12, Math.min(window.innerWidth - 12 - Math.min(340, window.innerWidth - 24), r.left + r.width / 2 - 170)) + 'px';
+}
+
+function jumpTo(kind, i) {
+  i = Math.round(Number(i));
+  if (!(i >= 0 && i < S.questions.length)) return;
+  document.getElementById('jump-' + kind).hidePopover();
+  if (i === S.cur) return;
+  if (kind === 'quiz') goQ(i - S.cur); else goStudy(i - S.cur);
+}
+
 function goStudy(dir) {
   const next = S.cur + dir;
   if (next < 0) return;
@@ -4316,7 +4361,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.35';
+const APP_VERSION = '10.36';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.33">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.34">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -394,10 +394,10 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   display: flex; justify-content: space-between; align-items: center;
 }
 .q-num-orig { color: var(--muted); font-weight: 500; }
-.q-num { gap: 12px; }
+.q-num { gap: 12px; align-items: flex-start; }
 .q-num > span:first-child { flex-shrink: 0; }
 .q-num-where {
-  min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  flex: 1; min-width: 0; text-align: right; line-height: 1.35;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
   font-size: 12px; letter-spacing: 0; text-transform: none;
 }
@@ -3257,11 +3257,7 @@ function buildStudyQuestions(qIdx) {
 // Kde jsem: název testu a vybraná sada / rozsah / zkouška vpravo v řádku „Otázka X z Y“
 function quizScopeLabel() {
   if (cfg.mode === 'exam') return 'zkouška';
-  if (cfg.mode === 'set') {
-    const sets = (S.selectedTest && S.selectedTest.sets) || [];
-    const names = cfg.setSel.map(i => sets[i] && sets[i].name).filter(Boolean);
-    return names.length === 1 ? names[0] : names.length ? `${names.length} ${names.length <= 4 ? 'témata' : 'témat'}` : null;
-  }
+  if (cfg.mode === 'set') return setNamesLabel(cfg.setSel);
   if (cfg.mode === 'range') {
     const from = document.getElementById('range-from').value, to = document.getElementById('range-to').value;
     return `otázky ${from}–${to}`;
@@ -3321,10 +3317,7 @@ function openStudyBrowse(mode) {
 function startRecall() {
   if (!S.selectedTest) return;
   if (cfg.setSel.length && cfg.setIdx.length) {
-    const sets = S.selectedTest.sets || [];
-    const names = cfg.setSel.map(i => sets[i] && sets[i].name).filter(Boolean);
-    const label = names.length === 1 ? names[0] : `${names.length} ${names.length <= 4 ? 'témata' : 'témat'}`;
-    startStudy('recall', cfg.setIdx, false, label);
+    startStudy('recall', cfg.setIdx, false, setNamesLabel(cfg.setSel));
     return;
   }
   openStudyBrowse('recall');
@@ -3377,10 +3370,14 @@ function studySetsIdx() {
 }
 
 function studySetsLabel() {
+  return setNamesLabel(studySetsSel);
+}
+
+// Názvy vybraných sad vypsané celé, aby šla stejná kombinace spustit znovu
+function setNamesLabel(idxs) {
   const sets = (S.selectedTest && S.selectedTest.sets) || [];
-  if (studySetsSel.length === 1 && sets[studySetsSel[0]]) return sets[studySetsSel[0]].name;
-  const n = studySetsSel.length;
-  return n + ' ' + (n <= 4 ? 'témata' : 'témat');
+  const names = idxs.map(i => sets[i] && sets[i].name).filter(Boolean);
+  return names.length ? names.join(', ') : null;
 }
 
 function syncStudySetsUI() {
@@ -4296,7 +4293,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.33';
+const APP_VERSION = '10.34';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

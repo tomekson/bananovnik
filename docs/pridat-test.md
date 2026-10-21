@@ -1,6 +1,6 @@
 # Jak přidat nový test do Banánovníku
 
-Aktuální k verzi 10.32 (20. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
+Aktuální k verzi 10.33 (20. října 2026). Když se tento návod a `index.html` rozejdou, platí `index.html` a návod se opraví.
 
 ## Přehled
 
@@ -95,9 +95,9 @@ Obrázek se ukazuje v testu, v Active recall, v přehledu odpovědí i v tisku; 
 | `label` | Zobrazený zápis. `_X` se vykreslí jako dolní index (`MRS_C` → MRS<sub>C</sub>) |
 | `text` | Český význam. Dolní indexy fungují stejně jako v `label` |
 
-Aplikace (funkce `glossaryHtml`) rozseká text otázky a možností na slova a k otázce přidá rozbalovací blok **Zkratky v otázce** jen s položkami, jejichž `keys` se v textu vyskytují. Pořadí odpovídá pořadí v `glossary`. V Active recall se možnosti započítají až po jejich odhalení. Stav rozbalení se drží po celou návštěvu, takže stačí rozbalit jednou.
+Aplikace slovníček vypisuje jen v bloku **Teorie**, jako samostatnou část **Zkratky** (oddělenou přerušovanou linkou jako Kde to najdu, Rozpor a Ke studiu), bez rozbalování (funkce `glossHits` a `glossListHtml` v `infoHtml`). Prohledá text otázky, možností i `info` a vypíše jen položky, jejichž `keys` se v textu vyskytují. Pořadí odpovídá pořadí v `glossary`. Nad možnostmi se zkratky nezobrazují, aby nebyly dvakrát.
 
-Stejný slovníček používá i blok **Teorie**: pod text `info` rovnou vypíše nalezené zkratky jako samostatnou část **Zkratky** (oddělenou přerušovanou linkou jako Kde to najdu, Rozpor a Ke studiu), bez rozbalování (funkce `glossHits` a `glossListHtml` v `infoHtml`). U otázky a možností zůstává rozbalovací řádek **Zkratky v otázce**. Zkratka s indexem se hledá v celém tvaru i po částech, takže `MRS_C` najde klíče `MRSC`, `MRSc`, `MRS` i `C` a `ΔQ` najde `Δ` a `Q`. Jednopísmenné slovo na začátku věty (`S vyšším důchodem…`) se za zkratku nepovažuje.
+Zkratka s indexem se hledá v celém tvaru i po částech, takže `MRS_C` najde klíče `MRSC`, `MRSc`, `MRS` i `C` a `ΔQ` najde `Δ` a `Q`. Jednopísmenné slovo na začátku věty (`S vyšším důchodem…`) se za zkratku nepovažuje.
 
 ### `sources` a `read` (studijní zdroje)
 

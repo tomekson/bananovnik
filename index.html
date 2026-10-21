@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.32">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.33">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -407,23 +407,8 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-img img { display: block; max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
 .q-text { font-size: 17px; font-weight: 700; line-height: 1.45; letter-spacing: -.2px; margin-bottom: 7px; color: var(--text); text-wrap: pretty; }
 .q-hint { font-size: 12px; color: var(--muted); margin-bottom: 16px; font-weight: 500; min-height: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-.q-gloss { margin: -6px 0 16px; }
-.q-gloss summary {
-  display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none;
-  padding: 4px 10px; border-radius: 6px; border: 1px dashed var(--line2);
-  font-size: 11px; font-weight: 600; letter-spacing: .3px; color: var(--muted); user-select: none;
-}
-.q-gloss summary::-webkit-details-marker { display: none; }
-.q-gloss summary::before { content: '▸'; font-size: 10px; }
-.q-gloss[open] summary::before { content: '▾'; }
-.q-gloss[open] summary { color: var(--primary); border-style: solid; }
-.q-gloss dl {
-  margin: 8px 0 0; padding: 10px 12px; background: var(--card); border: 1px solid var(--line2); border-radius: 8px;
-  display: grid; grid-template-columns: max-content 1fr; gap: 5px 12px; font-size: 13px; line-height: 1.45;
-}
-.q-gloss dt, .q-info-gloss dt { font-weight: 700; color: var(--primary); white-space: nowrap; }
-.q-gloss dt sub, .q-gloss dd sub { font-size: .72em; }
-.q-gloss dd, .q-info-gloss dd { margin: 0; color: var(--text); text-wrap: pretty; }
+.q-info-gloss dt { font-weight: 700; color: var(--primary); white-space: nowrap; }
+.q-info-gloss dd { margin: 0; color: var(--text); text-wrap: pretty; }
 .q-info-box {
   margin: 14px 0 14px; padding: 12px 14px 13px; border: 1.5px solid var(--line2);
   background: var(--card); border-radius: var(--r-sm, 9px); font-size: 13.5px; line-height: 1.5; color: var(--text); text-wrap: pretty;
@@ -1452,7 +1437,6 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="q-text" id="q-text"></div>
     <div class="q-img"  id="q-img"></div>
     <div class="q-hint" id="q-hint"></div>
-    <div id="q-gloss"></div>
     <div id="q-pre"></div>
     <div class="opts"   id="opts"></div>
     <div id="q-info"></div>
@@ -1503,7 +1487,6 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     <div class="q-text" id="study-q-text"></div>
     <div class="q-img"  id="study-q-img"></div>
     <div class="q-hint" id="study-q-hint"></div>
-    <div id="study-q-gloss"></div>
     <div id="study-q-pre"></div>
     <div id="study-recall-box" class="study-recall-wrap" style="display:none;">
       <div class="study-recall-hint">Zkus si nejprve odpověď připomenout sám, pak teprve odhal možnosti.</div>
@@ -2733,7 +2716,6 @@ function renderQ() {
     hintEl.className = 'q-hint';
   }
 
-  document.getElementById('q-gloss').innerHTML = glossaryHtml(q, true);
 
   // Možnosti
   const showFb = done && ihned;
@@ -3484,7 +3466,6 @@ function renderStudy() {
   const revealAnswersBox = document.getElementById('study-reveal-answers-box');
   const optsEl = document.getElementById('study-opts');
   const isOptionsShown = S.optionsShown[n];
-  document.getElementById('study-q-gloss').innerHTML = glossaryHtml(q, !!isOptionsShown);
 
   if (!isOptionsShown) {
     recallBox.style.display = '';
@@ -4100,10 +4081,8 @@ function formatTestScoringNote(format) {
 // Kopírování otázky do schránky
 // ─────────────────────────────────────────────────────────────────
 // ─────────────────────────────────────────────────────────────────
-// Slovníček zkratek u otázky (pole `glossary` v JSON testu)
+// Slovníček zkratek (pole `glossary` v JSON testu), vypisuje se jen v Teorii
 // ─────────────────────────────────────────────────────────────────
-let glossOpen = false;
-
 function glossLabel(label) {
   return label.replace(/_([A-Za-z0-9]+)/g, '<sub>$1</sub>');
 }
@@ -4140,27 +4119,13 @@ function glossRowsHtml(hits) {
   return hits.map(e => `<dt>${glossLabel(e.label)}</dt><dd>${glossLabel(e.text)}</dd>`).join('');
 }
 
-// Zkratky v Teorii se vypisují rovnou jako samostatná část, bez rozbalování
+// Zkratky z otázky, možností i textu Teorie se vypisují rovnou jako samostatná část Teorie
 function glossListHtml(hits) {
   return hits.length ? infoSecHtml('Zkratky', `<dl class="q-info-gloss">${glossRowsHtml(hits)}</dl>`) : '';
 }
 
 function infoSecHtml(title, body, warn) {
   return `<div class="q-info-sec"><div class="q-info-h${warn ? ' q-info-h-warn' : ''}">${title}</div>${body}</div>`;
-}
-
-function glossDetailsHtml(hits, title, open, toggleVar) {
-  if (!hits.length) return '';
-  const n = hits.length;
-  const cnt = n === 1 ? '1 zkratka' : n <= 4 ? `${n} zkratky` : `${n} zkratek`;
-  const rows = glossRowsHtml(hits);
-  return `<details class="q-gloss"${open ? ' open' : ''} ontoggle="${toggleVar}=this.open">` +
-    `<summary>${title} · ${cnt}</summary><dl>${rows}</dl></details>`;
-}
-
-function glossaryHtml(q, includeOpts) {
-  const txt = q.q + ' ' + (includeOpts ? q.opts.join(' ') : '');
-  return glossDetailsHtml(glossHits(txt), 'Zkratky v otázce', glossOpen, 'glossOpen');
 }
 
 // Vysvětlení pojmu před odpovědí: jen první odstavec Info (Pojem), aby neprozradil odpověď.
@@ -4280,7 +4245,7 @@ function infoHtml(q) {
     }
     return `<div class="q-info-line">${glossLabel(l)}</div>`;
   });
-  const gloss = glossListHtml(glossHits(String(info)));
+  const gloss = glossListHtml(glossHits(`${q.q || ''} ${(q.opts || []).join(' ')} ${info}`));
   return `<div class="q-info-box"><div class="q-info-eyebrow">Teorie</div>${rows.join('')}${gloss}${readListHtml(questionReadItems(q), 'Ke studiu')}</div>`;
 }
 
@@ -4331,7 +4296,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.32';
+const APP_VERSION = '10.33';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

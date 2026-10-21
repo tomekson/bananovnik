@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.41">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.42">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2277,7 +2277,7 @@ const TESTS_REGISTRY = [
     file: 'inovace.json',
     title: 'Inovace',
     examSchema: '12 uzavřených + 2 otevřené',
-    updatedAt: '2026-09-20',
+    updatedAt: '2026-10-21',
     questionCount: 54,
     hasSets: true,
     draft: true
@@ -4356,7 +4356,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.41';
+const APP_VERSION = '10.42';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

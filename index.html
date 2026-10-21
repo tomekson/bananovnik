@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.34">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.35">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -396,8 +396,19 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .q-num-orig { color: var(--muted); font-weight: 500; }
 .q-num { gap: 12px; align-items: flex-start; }
 .q-num > span:first-child { flex-shrink: 0; }
+.q-where-btn {
+  display: inline-grid; place-items: center; width: 17px; height: 17px; margin-left: 6px; padding: 0; vertical-align: -3px;
+  border: 1.5px solid currentColor; border-radius: 50%; background: none; color: inherit; cursor: pointer;
+  font: italic 700 11px Georgia, serif;
+}
+.q-where-pop {
+  position: fixed; inset: auto; margin: 0; max-width: min(320px, calc(100vw - 24px)); padding: 9px 12px;
+  border: 1.5px solid var(--line2); border-radius: var(--r-sm, 9px); background: var(--card); color: var(--text);
+  font: 400 13px/1.45 -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0; text-transform: none; text-align: left; white-space: normal; box-shadow: 0 6px 20px rgba(0,0,0,.12);
+}
 .q-num-where {
-  flex: 1; min-width: 0; text-align: right; line-height: 1.35;
+  flex: 1; min-width: 0; text-align: right; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
   font-size: 12px; letter-spacing: 0; text-transform: none;
 }
@@ -2689,7 +2700,7 @@ function renderQ() {
   document.getElementById('p-cur').textContent     = n + 1;
   document.getElementById('p-tot').textContent     = tot;
   document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
-  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span>${qNumWhereHtml(S.quizLabel)}`;
+  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span>${qNumWhereHtml(S.quizLabel, 'quiz')}`;
   document.getElementById('q-text').textContent    = q.q;
   document.getElementById('q-img').innerHTML       = qImgHtml(q);
 
@@ -3256,19 +3267,31 @@ function buildStudyQuestions(qIdx) {
 
 // Kde jsem: název testu a vybraná sada / rozsah / zkouška vpravo v řádku „Otázka X z Y“
 function quizScopeLabel() {
-  if (cfg.mode === 'exam') return 'zkouška';
+  if (cfg.mode === 'exam') return 'Simulace zkoušky';
   if (cfg.mode === 'set') return setNamesLabel(cfg.setSel);
   if (cfg.mode === 'range') {
     const from = document.getElementById('range-from').value, to = document.getElementById('range-to').value;
-    return `otázky ${from}–${to}`;
+    return `Otázky ${from}–${to}`;
   }
   return null;
 }
 
-function qNumWhereHtml(label) {
-  const title = S.selectedTest ? S.selectedTest.title : '';
-  const text = label && label !== title ? `${title} · ${label}` : title;
-  return `<span class="q-num-orig q-num-where" title="${escHtml(text)}">${escHtml(text)}</span>`;
+// Vpravo jen název testu; vybrané sady / rozsah ukáže ikona ⓘ v bublině (nativní popover)
+function qNumWhereHtml(label, key) {
+  const title = escHtml(S.selectedTest ? S.selectedTest.title : '');
+  if (!label) return `<span class="q-num-orig q-num-where">${title}</span>`;
+  const id = 'qwhere-' + key;
+  return `<span class="q-num-orig q-num-where">${title}` +
+    `<button class="q-where-btn" popovertarget="${id}" aria-label="Které otázky procvičuji" onclick="placeWherePop(this, '${id}')">i</button></span>` +
+    `<div class="q-where-pop" id="${id}" popover>${escHtml(label)}</div>`;
+}
+
+// Bublinu umístí pod ikonu, zarovnanou k pravému okraji
+function placeWherePop(btn, id) {
+  const pop = document.getElementById(id);
+  const r = btn.getBoundingClientRect();
+  pop.style.top = (r.bottom + 6) + 'px';
+  pop.style.right = Math.max(12, window.innerWidth - r.right) + 'px';
 }
 
 function startStudy(mode, qIdx, fromSets, label) {
@@ -3377,7 +3400,7 @@ function studySetsLabel() {
 function setNamesLabel(idxs) {
   const sets = (S.selectedTest && S.selectedTest.sets) || [];
   const names = idxs.map(i => sets[i] && sets[i].name).filter(Boolean);
-  return names.length ? names.join(', ') : null;
+  return names.length ? `${names.length === 1 ? 'Téma' : 'Témata'}: ${names.join(', ')}` : null;
 }
 
 function syncStudySetsUI() {
@@ -3442,7 +3465,7 @@ function renderStudy() {
   document.getElementById('study-tot').textContent = tot;
   document.getElementById('study-pbar').style.width = ((n + 1) / tot * 100) + '%';
   document.getElementById('study-q-num').innerHTML =
-    `<span>Otázka ${n + 1} z ${tot}</span>${qNumWhereHtml(S.studyLabel)}`;
+    `<span>Otázka ${n + 1} z ${tot}</span>${qNumWhereHtml(S.studyLabel, 'study')}`;
   document.getElementById('study-q-text').textContent = q.q;
   document.getElementById('study-q-img').innerHTML = qImgHtml(q);
 
@@ -4293,7 +4316,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.34';
+const APP_VERSION = '10.35';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

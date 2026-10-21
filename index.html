@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.31">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.32">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -394,6 +394,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   display: flex; justify-content: space-between; align-items: center;
 }
 .q-num-orig { color: var(--muted); font-weight: 500; }
+.q-num { gap: 12px; }
+.q-num > span:first-child { flex-shrink: 0; }
+.q-num-where {
+  min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px; letter-spacing: 0; text-transform: none;
+}
 .q-num-title { cursor: pointer; color: var(--muted); transition: color .15s; }
 .q-num-title:hover { color: var(--primary); }
 .q-img { margin: 2px 0 12px; }
@@ -2653,6 +2660,7 @@ function startQuiz() {
   }
 
   if (!pool.length) return;
+  const quizLabel = quizScopeLabel();
 
   const questions = pool.map(q => {
     const correctSet = new Set(q.correct);
@@ -2664,6 +2672,7 @@ function startQuiz() {
 
   S = {
     selectedTest: S.selectedTest,
+    quizLabel,
     questions,
     cur:        0,
     answers:    questions.map(() => []),
@@ -2697,7 +2706,7 @@ function renderQ() {
   document.getElementById('p-cur').textContent     = n + 1;
   document.getElementById('p-tot').textContent     = tot;
   document.getElementById('pbar-fill').style.width = ((n + 1) / tot * 100) + '%';
-  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span>`;
+  document.getElementById('q-num').innerHTML = `<span>Otázka ${n + 1} z ${tot}</span>${qNumWhereHtml(S.quizLabel)}`;
   document.getElementById('q-text').textContent    = q.q;
   document.getElementById('q-img').innerHTML       = qImgHtml(q);
 
@@ -2877,6 +2886,7 @@ function repeatQuiz() {
   const questions = S.savedQuestions;
   S = {
     selectedTest: S.selectedTest,
+    quizLabel: S.quizLabel,
     questions,
     cur:        0,
     answers:    questions.map(() => []),
@@ -3262,6 +3272,27 @@ function buildStudyQuestions(qIdx) {
   });
 }
 
+// Kde jsem: název testu a vybraná sada / rozsah / zkouška vpravo v řádku „Otázka X z Y“
+function quizScopeLabel() {
+  if (cfg.mode === 'exam') return 'zkouška';
+  if (cfg.mode === 'set') {
+    const sets = (S.selectedTest && S.selectedTest.sets) || [];
+    const names = cfg.setSel.map(i => sets[i] && sets[i].name).filter(Boolean);
+    return names.length === 1 ? names[0] : names.length ? `${names.length} ${names.length <= 4 ? 'témata' : 'témat'}` : null;
+  }
+  if (cfg.mode === 'range') {
+    const from = document.getElementById('range-from').value, to = document.getElementById('range-to').value;
+    return `otázky ${from}–${to}`;
+  }
+  return null;
+}
+
+function qNumWhereHtml(label) {
+  const title = S.selectedTest ? S.selectedTest.title : '';
+  const text = label && label !== title ? `${title} · ${label}` : title;
+  return `<span class="q-num-orig q-num-where" title="${escHtml(text)}">${escHtml(text)}</span>`;
+}
+
 function startStudy(mode, qIdx, fromSets, label) {
   if (!S.selectedTest) return;
   const study = mode || cfg.study;          // 'direct' | 'recall'
@@ -3432,7 +3463,7 @@ function renderStudy() {
   document.getElementById('study-tot').textContent = tot;
   document.getElementById('study-pbar').style.width = ((n + 1) / tot * 100) + '%';
   document.getElementById('study-q-num').innerHTML =
-    `<span>Otázka ${n + 1} z ${tot}</span><span class="q-num-orig">${S.studyLabel || S.selectedTest.title}</span>`;
+    `<span>Otázka ${n + 1} z ${tot}</span>${qNumWhereHtml(S.studyLabel)}`;
   document.getElementById('study-q-text').textContent = q.q;
   document.getElementById('study-q-img').innerHTML = qImgHtml(q);
 
@@ -4300,7 +4331,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.31';
+const APP_VERSION = '10.32';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

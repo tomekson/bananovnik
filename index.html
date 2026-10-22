@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.47">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.48">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1405,6 +1405,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
         <button class="btn-sec" style="flex:1;text-align:center;position:relative;padding:11px 40px 11px 16px;font-size:14px;" onclick="openStudyBrowse()">Procházení s odpověďmi<span style="position:absolute;right:16px;top:50%;transform:translateY(-50%);">→</span></button>
         <button class="btn-sec" style="padding:7px 13px;font-size:13px;border-radius:9px;flex-shrink:0;" onclick="printTestDirect()">Tisk testu</button>
       </div>
+      <button class="btn-sec" id="btn-share-test" style="width:100%;text-align:center;padding:11px 16px;font-size:14px;margin-top:8px;" onclick="shareTest()">Sdílet test ↗</button>
     </div>
 
     <div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;text-align:center;">Vyzkoušej offline v iOS — v prohlížeče zvol „Sdílet - Přidat na plochu".</div>
@@ -4309,6 +4310,22 @@ function infoHtml(q) {
   return `<div class="q-info-box"><div class="q-info-eyebrow">Teorie</div>${rows.join('')}${gloss}${readListHtml(questionReadItems(q), 'Ke studiu')}</div>`;
 }
 
+function shareTest() {
+  const id = sessionStorage.getItem('bananovnik-last-test');
+  const url = id ? location.origin + BASE + id + '/' : location.href;
+  const title = S.selectedTest ? S.selectedTest.title : document.title;
+  if (navigator.share) {
+    navigator.share({ title, url }).catch(() => {});
+    return;
+  }
+  navigator.clipboard.writeText(url).then(() => {
+    const btn = document.getElementById('btn-share-test');
+    const orig = btn.textContent;
+    btn.textContent = '✓ Odkaz zkopírován';
+    setTimeout(() => { btn.textContent = orig; }, 1800);
+  });
+}
+
 function copyQuestion(mode) {
   const q = S.questions[S.cur];
   const format = S.selectedTest.format;
@@ -4356,7 +4373,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.47';
+const APP_VERSION = '10.48';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

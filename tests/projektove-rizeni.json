@@ -1,7 +1,7 @@
 {
   "id": "projektove-rizeni",
   "title": "Projektové řízení",
-  "updatedAt": "2026-10-14",
+  "updatedAt": "2026-10-22",
   "rubric": "Zkouškový test: 45 min., 14 otázek (z toho 4 příklady po 10 až 25 bodech), celkem 100 bodů, pomůcka: kalkulačka. K úspěchu je potřeba 51 bodů.",
   "format": {
     "type": "multiple-choice",
@@ -2418,6 +2418,36 @@
           "pages": "42"
         }
       ]
+    },
+    {
+      "q": "Výhody diagramu PERT jsou:",
+      "opts": [
+        "Zobrazuje vzájemnou závislost činností.",
+        "Lze ho použít při průběžných kontrolách i závěrečném hodnocení projektu.",
+        "Velmi jednoduché použití, nevyžaduje žádné zkušenosti.",
+        "Umožňuje znázornit předpokládaný i skutečný postup projektu.",
+        "Lze ho rozšířit o plánování nákladů."
+      ],
+      "correct": [0, 1, 3, 4],
+      "info": "Pojem: Diagram PERT je síťový graf projektu. Uzly a šipky v něm ukazují činnosti a jejich návaznosti, dobu trvání každé činnosti odhaduje ze tří hodnot: optimistické, nejpravděpodobnější a pesimistické.\nVzájemná závislost činností je v diagramu PERT vidět přímo. Šipky spojují každou činnost s činnostmi, na které navazuje. Tím se liší od klasického Ganttova diagramu, který závislosti nezobrazuje.\nDo síťového grafu lze vedle předpokládaného postupu zakreslit i skutečný postup projektu. Diagram proto slouží při průběžných kontrolách i při závěrečném hodnocení projektu. Odpovídá tomu i název Program Evaluation and Review Technique (metoda hodnocení a kontroly projektu).\nDiagram PERT lze rozšířit o plánování nákladů. Varianta PERT/Cost přiřazuje každé činnosti rozpočet a sleduje jeho čerpání.\nJednoduché použití PERT nemá. Vyžaduje zkušenosti se síťovými grafy, tři odhady pro každou činnost a výpočet pravděpodobnosti. Jednoduchost a nenáročnost na zpracování jsou výhody Ganttova diagramu.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Výhody Ganttova diagramu",
+          "pages": "102"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Síťové diagramy CPA",
+          "pages": "106"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Používané síťové diagramy (CPM, PERT, GERT)",
+          "pages": "115",
+          "note": "Výhody diagramu PERT ve slidech nejsou."
+        }
+      ]
     }
   ],
   "sets": [
@@ -2451,7 +2481,7 @@
     },
     {
       "name": "Časové plánování a síťová analýza",
-      "q": [6, 7, 20, 22, 30, 47, 81, 95, 104]
+      "q": [6, 7, 20, 22, 30, 47, 81, 95, 104, 106]
     },
     {
       "name": "Sledování projektu a EVM",

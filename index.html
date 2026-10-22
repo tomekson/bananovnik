@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.45">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.46">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2258,8 +2258,8 @@ const TESTS_REGISTRY = [
     file: 'pravo-v-praxi.json',
     title: 'Právo v praxi',
     examSchema: '20 uzavřených otázek',
-    updatedAt: '2026-10-20',
-    questionCount: 136,
+    updatedAt: '2026-10-22',
+    questionCount: 137,
     hasSets: true
   },
   {
@@ -2328,8 +2328,8 @@ const TESTS_REGISTRY = [
     file: 'projektove-rizeni.json',
     title: 'Projektové řízení',
     examSchema: '14 otázek, z toho 4 příklady',
-    updatedAt: '2026-10-14',
-    questionCount: 105,
+    updatedAt: '2026-10-22',
+    questionCount: 106,
     hasSets: true,
     draft: true
   },
@@ -4356,7 +4356,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.45';
+const APP_VERSION = '10.46';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

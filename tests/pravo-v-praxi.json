@@ -1,7 +1,7 @@
 {
   "id": "pravo-v-praxi",
   "title": "Právo v praxi",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-22",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech\nPomůcky: občanský zákoník, zákon o obchodních korporacích, zákoník práce",
   "format": {
     "type": "multiple-choice",
@@ -2104,6 +2104,22 @@
         4
       ],
       "info": "Pojem: Obchodní firma je jméno, pod kterým je podnikatel zapsán do obchodního rejstříku (§ 423 OZ).\nProč: Firma se do obchodního rejstříku zapisuje, zápis ji vlastně definuje. Firma může obsahovat dodatek označující právní formu. U obchodních korporací ho dokonce obsahovat musí (například „s.r.o.“ podle § 132 ZOK, „a.s.“ podle § 243 ZOK).\nChyták: Z firmy nemusí vyplývat předmět činnosti, firma může být i smyšlené slovo. Firma není totéž co obchodní značka: značka (ochranná známka) označuje výrobky nebo služby, firma označuje podnikatele. Tvrzení, že se firma nezapisuje, je opak definice.\nKde to najdu: Občanský zákoník § 423 odst. 1 (obchodní firma se zapisuje do obchodního rejstříku); dodatek právní formy Zákon o obchodních korporacích § 132 odst. 2 (s.r.o.) a § 243 odst. 2 (a.s.)."
+    },
+    {
+      "q": "Pro okamžité zrušení pracovního poměru platí:",
+      "opts": [
+        "zaměstnavatel může pracovní poměr okamžitě zrušit pouze z důvodů uvedených v zákoně",
+        "zaměstnavatel může dát zaměstnanci výpověď také z důvodů, pro které může pracovní poměr zrušit okamžitě",
+        "zaměstnavatel může pracovní poměr okamžitě zrušit z jakéhokoli důvodu i bez uvedení důvodu",
+        "zaměstnanec může pracovní poměr okamžitě zrušit pouze z důvodů uvedených v zákoně",
+        "zaměstnanec může pracovní poměr okamžitě zrušit z jakéhokoli důvodu i bez uvedení důvodu"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Okamžité zrušení ukončí pracovní poměr dnem doručení, bez výpovědní doby. Zákon ho připouští jen ve vážných situacích, které sám vyjmenovává, a to pro obě strany.\nProč: Zaměstnavatel smí okamžitě zrušit jen z důvodů v § 55 ZP: pravomocné odsouzení pro úmyslný trestný čin k nepodmíněnému trestu odnětí svobody delšímu než 1 rok (u činu při plnění pracovních úkolů nejméně 6 měsíců), nebo porušení povinností zvlášť hrubým způsobem. Ze stejných důvodů může zvolit i mírnější výpověď (§ 52 písm. g) ZP). Zaměstnanec smí okamžitě zrušit jen z důvodů v § 56 ZP: ohrožení zdraví podle lékařského posudku, když ho zaměstnavatel do 15 dnů od předložení posudku nepřevede na jinou vhodnou práci, nebo mzda (i její část či náhrada mzdy) nevyplacená do 15 dnů po uplynutí období splatnosti.\nChyták: Bez důvodu nemůže pracovní poměr okamžitě zrušit ani zaměstnavatel, ani zaměstnanec. Zaměstnanec může dát výpověď bez uvedení důvodu, ta ale skončí až po výpovědní době. Bez uvedení důvodu lze pracovní poměr zrušit jen ve zkušební době (§ 66 ZP), to je ale jiný institut.\nKde to najdu: Zákoník práce § 55 a 56 (důvody okamžitého zrušení zaměstnavatelem a zaměstnancem) a § 52 písm. g) (výpověď z důvodů pro okamžité zrušení)."
     }
   ],
   "sets": [
@@ -2300,7 +2316,8 @@
         119,
         124,
         132,
-        133
+        133,
+        137
       ]
     }
   ]

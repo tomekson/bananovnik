@@ -1,0 +1,2503 @@
+{
+  "id": "projektove-rizeni",
+  "title": "Projektové řízení",
+  "updatedAt": "2026-10-22",
+  "rubric": "Zkouškový test: 45 min., 14 otázek (z toho 4 příklady po 10 až 25 bodech), celkem 100 bodů, pomůcka: kalkulačka. K úspěchu je potřeba 51 bodů.",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 14,
+    "openCount": 0
+  },
+  "sources": {
+    "slidy24": {
+      "label": "Slidy",
+      "title": "Chvátalová: Projektové řízení, slidy ZS 2024/25, části 1 až 3",
+      "pageWord": "str."
+    },
+    "slidy26": {
+      "label": "Slidy 2026",
+      "title": "Chvátalová: Projektové řízení, slidy ZS 2026, K1",
+      "pageWord": "slide"
+    },
+    "prednaska": {
+      "label": "Přednáška",
+      "title": "Chvátalová: přednášky 19. 9. a 3. 10. 2026, vlastní nahrávka",
+      "pageWord": "v čase"
+    }
+  },
+  "glossary": [
+    {
+      "keys": [
+        "PM"
+      ],
+      "label": "PM",
+      "text": "projektový management (project management) - řízení projektů"
+    },
+    {
+      "keys": [
+        "PV"
+      ],
+      "label": "PV",
+      "text": "plánovaná hodnota (planned value) - rozpočtované náklady práce, která měla být k datu kontroly hotová"
+    },
+    {
+      "keys": [
+        "EV"
+      ],
+      "label": "EV",
+      "text": "dosažená hodnota (earned value) - rozpočtované náklady práce, která je k datu kontroly skutečně hotová"
+    },
+    {
+      "keys": [
+        "AC"
+      ],
+      "label": "AC",
+      "text": "skutečné náklady (actual cost) - kolik hotová práce k datu kontroly opravdu stála"
+    },
+    {
+      "keys": [
+        "SV"
+      ],
+      "label": "SV",
+      "text": "odchylka harmonogramu (schedule variance) = EV - PV; záporná znamená zpoždění"
+    },
+    {
+      "keys": [
+        "CV"
+      ],
+      "label": "CV",
+      "text": "nákladová odchylka (cost variance) = EV - AC; záporná znamená překročení rozpočtu"
+    },
+    {
+      "keys": [
+        "SPI"
+      ],
+      "label": "SPI",
+      "text": "index výkonnosti harmonogramu (schedule performance index) = EV / PV; pod 1 znamená zpoždění"
+    },
+    {
+      "keys": [
+        "CPI"
+      ],
+      "label": "CPI",
+      "text": "index nákladové výkonnosti (cost performance index) = EV / AC; pod 1 znamená překročení rozpočtu"
+    },
+    {
+      "keys": [
+        "BAC"
+      ],
+      "label": "BAC",
+      "text": "celkový rozpočet projektu (budget at completion)"
+    },
+    {
+      "keys": [
+        "EAC"
+      ],
+      "label": "EAC",
+      "text": "odhad celkových nákladů při dokončení (estimate at completion)"
+    },
+    {
+      "keys": [
+        "EVM"
+      ],
+      "label": "EVM",
+      "text": "metoda dosažené hodnoty (earned value management) - porovnává PV, EV a AC"
+    },
+    {
+      "keys": [
+        "CPM"
+      ],
+      "label": "CPM",
+      "text": "metoda kritické cesty (critical path method) - síťový graf s pevnými dobami trvání činností"
+    },
+    {
+      "keys": [
+        "PERT"
+      ],
+      "label": "PERT",
+      "text": "síťová metoda s odhadem doby trvání ze tří hodnot: optimistické, nejpravděpodobnější a pesimistické"
+    },
+    {
+      "keys": [
+        "WBS"
+      ],
+      "label": "WBS",
+      "text": "hierarchická struktura prací (work breakdown structure) - rozpad projektu na pracovní balíky"
+    },
+    {
+      "keys": [
+        "OBS"
+      ],
+      "label": "OBS",
+      "text": "organizační struktura projektu (organizational breakdown structure) - kdo v projektu co dělá"
+    },
+    {
+      "keys": [
+        "RAM"
+      ],
+      "label": "RAM",
+      "text": "matice odpovědnosti (responsibility assignment matrix) - propojuje činnosti z WBS s lidmi z OBS"
+    },
+    {
+      "keys": [
+        "RIPRAN"
+      ],
+      "label": "RIPRAN",
+      "text": "česká metoda analýzy rizik projektu (risk project analysis)"
+    },
+    {
+      "keys": [
+        "LFM"
+      ],
+      "label": "LFM",
+      "text": "metoda logického rámce (logical framework method)"
+    },
+    {
+      "keys": [
+        "SMART"
+      ],
+      "label": "SMART",
+      "text": "pravidlo pro formulaci cílů: specifický, měřitelný, dosažitelný, realistický, časově ohraničený"
+    },
+    {
+      "keys": [
+        "SWOT"
+      ],
+      "label": "SWOT",
+      "text": "analýza silných a slabých stránek, příležitostí a hrozeb"
+    },
+    {
+      "keys": [
+        "MTA"
+      ],
+      "label": "MTA",
+      "text": "trendová analýza milníků (milestone trend analysis)"
+    },
+    {
+      "keys": [
+        "NPV"
+      ],
+      "label": "NPV",
+      "text": "čistá současná hodnota (net present value) - ukazatel výhodnosti investice"
+    },
+    {
+      "keys": [
+        "PMI"
+      ],
+      "label": "PMI",
+      "text": "Project Management Institute - americká organizace, autor standardu PMBOK"
+    },
+    {
+      "keys": [
+        "CAPM"
+      ],
+      "label": "CAPM",
+      "text": "Certified Associate in Project Management - základní certifikace PMI"
+    },
+    {
+      "keys": [
+        "IPMA"
+      ],
+      "label": "IPMA",
+      "text": "International Project Management Association - mezinárodní asociace, autor standardu ICB"
+    },
+    {
+      "keys": [
+        "ICB"
+      ],
+      "label": "ICB",
+      "text": "IPMA Individual Competence Baseline - standard kompetencí projektového manažera"
+    },
+    {
+      "keys": [
+        "NCB"
+      ],
+      "label": "NCB",
+      "text": "National Competence Baseline - národní verze standardu kompetencí IPMA"
+    },
+    {
+      "keys": [
+        "PRINCE"
+      ],
+      "label": "PRINCE2",
+      "text": "PRojects IN Controlled Environments - britská metodika řízení projektů"
+    },
+    {
+      "keys": [
+        "OGC"
+      ],
+      "label": "OGC",
+      "text": "Office of Government Commerce - britský vládní úřad, vlastník metodiky PRINCE2"
+    },
+    {
+      "keys": [
+        "ANSI"
+      ],
+      "label": "ANSI",
+      "text": "American National Standards Institute - americký národní normalizační úřad"
+    },
+    {
+      "keys": [
+        "SSADM"
+      ],
+      "label": "SSADM",
+      "text": "Structured Systems Analysis and Design Method - britská metodika vývoje informačních systémů"
+    },
+    {
+      "keys": [
+        "ISO"
+      ],
+      "label": "ISO",
+      "text": "Mezinárodní organizace pro normalizaci (International Organization for Standardization)"
+    },
+    {
+      "keys": [
+        "ČSN"
+      ],
+      "label": "ČSN",
+      "text": "česká technická norma"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Projektový tým je:",
+      "opts": [
+        "skupina pracovníků zpracovávající projektovou dokumentaci",
+        "volné sdružení osob se společným cílem",
+        "skupina pracovníků různých profesí vyčleněná k řešení projektu",
+        "skupina pracovníků provádějící činnosti dle své pracovní náplně",
+        "skupina pracovníků realizujících stavbu"
+      ],
+      "correct": [2],
+      "info": "Pojem: Projektový tým je skupina pracovníků různých profesí, kterou firma vyčlení k řešení jednoho projektu.\nProjektové týmy jsou většinou multidisciplinární. Specialisté z různých odvětví v nich spolupracují, aby dosáhli komplexních výsledků.\nTým je dočasný. Po ukončení projektu předá výstupy liniové organizaci a rozpustí se.\nČinnosti podle pracovní náplně patří k běžnému provozu firmy, ne k projektu. Skupina, která je dělá, proto projektový tým netvoří.\nVolné sdružení osob se společným cílem nemá vyčleněné členy s různými odbornostmi. Zpracování projektové dokumentace ani stavba nejsou povinný obsah týmu. Jsou to jen některé z mnoha typů projektů.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Týmová práce (kompetence ICB 4)",
+          "pages": "53"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Práce v projektovém týmu",
+          "pages": "45"
+        }
+      ]
+    },
+    {
+      "q": "Mezi kritéria úspěšnosti projektu nepatří:",
+      "opts": [
+        "nedosažení kvality",
+        "uspokojení očekávání všech zainteresovaných stran",
+        "splnění požadavků zákazníka",
+        "motivace projektového týmu",
+        "překročení plánovaných nákladů a termínů"
+      ],
+      "correct": [0, 4],
+      "info": "Pojem: Kritéria úspěšnosti projektu jsou měřítka, podle kterých po skončení poznáme, jestli se projekt povedl.\nHlavní, objektivně ověřitelné kritérium je dodržení trojimperativu. Trojimperativ tvoří tři veličiny: čas (harmonogram), náklady (rozpočet) a rozsah s kvalitou.\nDosažení kvality je proto kritérium úspěchu. Nedosažení kvality ho popírá a patří mezi znaky neúspěchu. Totéž platí pro překročení plánovaných nákladů a termínů.\nÚspěch ale neměří jen trojimperativ. Projekt musí uspokojit očekávání všech zainteresovaných stran (stakeholderů), tedy všech, koho projekt ovlivňuje nebo kdo ho může ovlivnit. Nestačí, že se líbí sponzorovi.\nKritériem je také splnění požadavků zákazníka a motivace projektového týmu. Tato kritéria jsou méně objektivní, proto je třeba je předem jasně definovat.",
+      "read": [
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: kritéria úspěchu a trojimperativ",
+          "pages": "1:00:16-1:03:00"
+        }
+      ]
+    },
+    {
+      "q": "Metoda logického rámce (LFM):",
+      "opts": [
+        "slouží jako pomůcka při stanovování cílů projektu a jako podpora k jejich dosahování",
+        "je základem pro vytvoření plánu projektu",
+        "je využívána hlavně v poprojektové fázi",
+        "obsahuje metriky pro hodnocení kvality projektu",
+        "popisuje strategii projektu a obsahuje popis projektu v souvislosti s vnějšími předpoklady"
+      ],
+      "correct": [0, 1, 3, 4],
+      "info": "Pojem: Metoda logického rámce (LFM, Logical Framework Method) je tabulka 4 × 4, která na jedné stránce popíše strategii projektu.\nLFM má čtyři řádky a čtyři sloupce. Řádky jsou záměr, cíl, výstupy a činnosti. Sloupce jsou popis, objektivně ověřitelné ukazatele, zdroje ověření a vnější předpoklady.\nLFM pomáhá stanovit cíle projektu a podporuje jejich dosahování. Popisuje strategii projektu v souvislosti s vnějšími předpoklady. Vnější předpoklady jsou okolnosti, které tým neovlivní, ale projekt na nich závisí.\nLFM obsahuje metriky, tedy ukazatele pro hodnocení kvality a splnění cílů projektu.\nLFM je základem pro vytvoření plánu projektu. Slidy Chvátalové ho řadí mezi výstupy zahájení (inicializace) jako dokument strategie projektu. Z něj pak vychází plánování.\nLFM vzniká na začátku projektu, ne v poprojektové fázi. Poprojektová fáze přichází až po ukončení projektu a slouží k vyhodnocení.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Zahájení (Inicializace) projektu",
+          "pages": "66"
+        }
+      ]
+    },
+    {
+      "q": "Mezi metody sledování realizace projektu nepatří:",
+      "opts": [
+        "metoda proporcionální na základě času",
+        "struktura EVM (Earned Value Management)",
+        "rozhodovací strom",
+        "metoda přírůstkových milníků",
+        "logický rámec"
+      ],
+      "correct": [2, 4],
+      "info": "Pojem: Metody sledování realizace projektu zjišťují, kolik práce je skutečně hotovo, a porovnávají to s plánem.\nSylabus řadí mezi metody vyhodnocení stavu projektu procentuální metodu a metodu dosažené hodnoty EVM (Earned Value Management, řízení dosažené hodnoty).\nMetoda proporcionální na základě času odhaduje hotovou práci podle uplynulého času. Metoda přírůstkových milníků započítá hotovou část práce po dosažení každého milníku, tedy důležitého kontrolního bodu. EVM porovnává plán, skutečně hotovou práci a skutečné náklady.\nRozhodovací strom je nástroj rozhodování. Porovnává důsledky možných rozhodnutí, třeba při analýze rizik. Průběh projektu neměří.\nLogický rámec je metoda plánování. Shrnuje cíle, výstupy a ukazatele projektu. Také nesleduje, kolik práce je hotovo.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Sylabus: metody pro vyhodnocení stavu projektu",
+          "pages": "8"
+        }
+      ]
+    },
+    {
+      "q": "Matice odpovědnosti:",
+      "opts": [
+        "přiřazuje odpovědnosti jednotlivým úrovním managementu v podniku",
+        "popisuje vztahy členů projektového týmu interních a externích spolupracovníků k činnostem řešených v rámci projektu",
+        "zajišťuje přiřazení každého prvku WBS k odpovědné osobě",
+        "zahrnuje úkoly všech zainteresovaných stran",
+        "popisuje pouze vztahy interních členů v týmu vztahující se k činnostem řešených v rámci plánování"
+      ],
+      "correct": [1, 2],
+      "info": "Pojem: Matice odpovědnosti (RAM, Responsibility Assignment Matrix) je tabulka, která přiřazuje lidi k pracím projektu.\nŘádky tvoří prvky WBS (Work Breakdown Structure, rozpad projektu na menší části práce), sloupce lidé. V průsečíku stojí role člověka u dané práce, třeba odpovídá, schvaluje nebo je informován.\nMatice zajišťuje, že každý prvek WBS má odpovědnou osobu.\nZahrnuje členy projektového týmu, interní i externí spolupracovníky. Popisuje jejich vztah k činnostem projektu, nejen v plánování.\nMatice se týká jen projektu. Odpovědnosti úrovní managementu podniku řeší organizační struktura firmy. Úkoly všech zainteresovaných stran nezahrnuje, jen úkoly lidí, kteří na projektu pracují.",
+      "read": [
+        {
+          "ref": "PMBOK: matice přiřazení odpovědností (RAM), vazba na WBS",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Rezervu volnou určíme jako:",
+      "opts": [
+        "součet nejpozději přípustného začátku a nejdříve možného začátku",
+        "rozdíl nejdříve možného začátku a nejpozději přípustného začátku",
+        "součet rezerv celkových na kritické cestě",
+        "rozdíl začátku možného následníka a konce možného předchůdce",
+        "rozdíl nejpozději přípustného konce a nejdříve možného konce"
+      ],
+      "correct": [3],
+      "info": "Pojem: Volná rezerva je čas, o který se činnost může zpozdit, aniž by posunula nejdříve možný začátek následující činnosti.\nRezerva je časový úsek. Počítá se proto jako rozdíl dvou termínů, nikdy jako jejich součet.\nVolnou rezervu určíme jako rozdíl: nejdříve možný začátek následníka minus nejdříve možný konec předchůdce (RV = ZM_násl - KM). Předchůdce je tu naše činnost, následník na ni přímo navazuje. Příklad: následník může začít v týdnu 10, činnost nejdříve skončí v týdnu 8, volná rezerva je 2 týdny.\nRezervy jsou tři: celková, volná a nezávislá. Celková rezerva se počítá z nejpozději přípustných termínů: RC = KP - KM = ZP - ZM. Měří zpoždění, které neohrozí konec celého projektu.\nČinnost na kritické cestě má celkovou rezervu nula. Součet takových rezerv je nula, takže nic neurčuje. Rozdíl ZM - ZP vyjde záporný, protože nejdříve možný začátek nikdy nepřijde později než nejpozději přípustný.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        }
+      ]
+    },
+    {
+      "q": "Kritická cesta představuje:",
+      "opts": [
+        "nejkratší cestu v síti",
+        "návaznost činností používajících vzácný zdroj",
+        "nejkratší možnou dobu trvání projektu",
+        "nejdelší možnou dobu trvání projektu",
+        "nejdelší cestu v síti"
+      ],
+      "correct": [2, 4],
+      "info": "Pojem: Kritická cesta je nejdelší cesta v síťovém grafu, tedy řada navazujících činností bez časové rezervy. Síťový graf je schéma činností projektu a jejich návazností.\nKritická cesta udává nejkratší možnou dobu realizace projektu. Projekt nemůže skončit dřív, než se projdou všechny činnosti na ní.\nProjekt může trvat déle, když se činnost na kritické cestě zpozdí. Nejdelší možná doba trvání proto neexistuje. Kritická cesta určuje jen dolní mez, tedy nejkratší dobu, za kterou projekt stihneme.\nNejkratší cesta v síti kritická není. Kritická je právě ta nejdelší, protože ostatní cesty musí na její délku čekat. Činnosti na ostatních cestách mají proto časovou rezervu.\nVzácný zdroj kritickou cestu neurčuje. Kritická cesta vychází jen z dob trvání činností a jejich návazností.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        },
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 2: kritická cesta a rezervy",
+          "pages": "0:20:15–0:28:55"
+        }
+      ]
+    },
+    {
+      "q": "Mezi zainteresované strany projektu (Stakeholders) patří:",
+      "opts": [
+        "vlastník projektu",
+        "sponzor projektu",
+        "uživatel projektu",
+        "vládní instituce a samosprávní orgány",
+        "dodavatelé projektu"
+      ],
+      "correct": [0, 1, 2, 3, 4],
+      "info": "Pojem: Zainteresované strany (stakeholdeři, anglicky Stakeholders) jsou osoby a organizace, které se na projektu podílejí nebo kterých se projekt týká.\nSlidy je vymezují třemi znaky: jsou aktivně zapojeny do projektu, projekt ovlivní jejich zájmy, nebo mají vliv na průběh či výsledek projektu. Stačí splnit jeden znak.\nVnitřní stakeholdeři jsou vlastník projektu, správní rada a zaměstnanci. Sponzor projekt financuje a podporuje. Uživatel projektu bude výsledek používat.\nVnější stakeholdeři jsou klienti, dodavatelé a strategičtí partneři. Dodavatelé dodávají práci nebo materiál, třeba stavbu atrakcí na hřišti.\nVládní instituce a samosprávní orgány jsou také stakeholdeři. Radnice, stavební úřad a hygiena vydávají povolení a provádějí kolaudaci. Bez nich projekt nedokončíte.\nZainteresované strany nejsou jen lidé uvnitř firmy. Patří mezi ně i ti, kdo projekt jen schvalují nebo připomínkují.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Zainteresované strany - STAKEHOLDERS",
+          "pages": "61"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 2: stakeholdeři a okolí projektu",
+          "pages": "0:43:38-0:45:30"
+        }
+      ]
+    },
+    {
+      "q": "Který z následujících vzorců slouží k určení nákladového indexu (CPI) v metodě EVM?",
+      "opts": [
+        "AC/EV",
+        "EV-AC",
+        "EV/AC",
+        "AC/PV",
+        "AC-EV"
+      ],
+      "correct": [2],
+      "info": "Pojem: CPI (Cost Performance Index, nákladový index) v metodě EVM říká, kolik hodnoty práce projekt získá za každou utracenou korunu.\nVzorec zní CPI = EV / AC. Dosažená hodnota (EV, Earned Value) je rozpočtová cena skutečně hotové práce. Skutečné náklady (AC, Actual Cost) jsou peníze, které se na ni opravdu utratily.\nKdyž je CPI větší než 1, projekt šetří. Když je menší než 1, je dražší, než se plánovalo.\nRozdíl EV - AC je nákladová odchylka (CV) v korunách, ne index. Podíl AC / EV je obrácený poměr. Rozdíl AC - EV je obrácená odchylka.\nPlánovaná hodnota (PV, Planned Value) patří do indexu času SPI, ne do nákladového indexu. Proto AC / PV není CPI.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Co čekat od testu? (EVM)",
+          "pages": "13"
+        },
+        {
+          "ref": "PMBOK: EVM, vzorec CPI",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Metoda EVM (Earned Value Management):",
+      "opts": [
+        "hodnotí kvalitu projektu",
+        "hodnotí komplexní rizika projektu",
+        "posuzuje časový postup projektu ve vazbě na vynaložené náklady",
+        "vyjadřuje užitnou hodnotu projektu",
+        "je využívána v realizační práci projektu"
+      ],
+      "correct": [2, 4],
+      "info": "Pojem: EVM (Earned Value Management, řízení dosažené hodnoty) je metoda kontroly průběhu projektu. Počítá odchylky od rozpočtu a od času.\nEVM posuzuje časový postup projektu ve vazbě na vynaložené náklady. Porovnává tři čísla: kolik se mělo udělat (PV), kolik je opravdu hotovo (EV) a kolik to stálo (AC).\nPoužívá se v realizační práci projektu. Slidy ji řadí mezi metody kontroly průběhu projektu, tedy do fáze, kdy se práce dělá a průběžně kontroluje.\nEVM nehodnotí kvalitu a nevyjadřuje užitnou hodnotu výsledku. Počítá jen peníze a postup práce.\nKomplexní rizika EVM neposuzuje. Rizika řeší metody analýzy rizik, například RIPRAN nebo bodovací metoda s mapou rizik.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Co čekat od testu? (metody kontroly průběhu projektu EVM)",
+          "pages": "13"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: EVM jako výpočet odchylek",
+          "pages": "0:22:57-0:23:30"
+        }
+      ]
+    },
+    {
+      "q": "Který z procesů řízení projektu vyžaduje nejvyšší množství času a nákladů?",
+      "opts": [
+        "inicializace",
+        "uzavírání",
+        "implementace",
+        "realizace",
+        "plánování"
+      ],
+      "correct": [3],
+      "info": "Pojem: Procesy řízení projektu se dělí do pěti skupin: inicializace (zahájení), plánování, realizace, monitorování a kontrola a uzavírání (ukončování).\nNejvíc času a nákladů spotřebuje realizace. Graf průběhu nákladů v životním cyklu má maximum ve fázi realizace.\nV realizaci se dělá vlastní práce: staví se, vyvíjí, nakupuje a pracují lidé.\nInicializace, plánování a uzavírání jsou hlavně řízení a dokumentace. Stojí jen zlomek nákladů realizace.\nPlánování je důležité, ale jeho náklady jsou v grafu výrazně nižší než náklady realizace. Chyba v plánu se projeví až při realizaci.\nImplementace mezi pěti skupinami procesů není. Sylabus toto slovo používá jen v popisu kroků projektové fáze.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Skupiny procesů řízení projektu",
+          "pages": "78"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Průběh nákladů v životním cyklu",
+          "pages": "80"
+        }
+      ]
+    },
+    {
+      "q": "Projekt z pohledu projektového managementu lze definovat jako:",
+      "opts": [
+        "rutinní aktivity produkující jednoduchý produkt",
+        "řízení změny od jednoho stavu k druhému",
+        "úkoly řešené opakovaně v rámci firmy",
+        "soubor konkrétních aktivit směřujících k naplnění jedinečného cíle",
+        "dokumentace stavby"
+      ],
+      "correct": [1, 3],
+      "info": "Pojem: Projekt je činnost, která plní úkoly k dosažení stanoveného cíle s omezeným souborem zdrojů a v limitovaném čase. Projekt je změna.\nCílem projektu je nová kvalita, nový stav. Projekt proto je řízení změny od jednoho stavu k druhému. Příklad: firma bez e-shopu se změní na firmu s e-shopem.\nProjekt je soubor konkrétních aktivit, které směřují k naplnění jedinečného cíle. Jedinečný cíl se v téže podobě neopakuje.\nRutinní činnosti projekt nejsou. Periodicky opakované úkoly udržují současný stav a patří do běžného provozu. Slidy projektové řízení pro takové činnosti vylučují.\nProjekt není rutina s jednoduchým produktem. Je to složitá, komplexní akce. Dokumentace stavby je jen jeden z možných výstupů, ne definice projektu.",
+      "read": [
+        {
+          "src": "slidy26",
+          "ref": "Jak definovat projekt?",
+          "pages": "15"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Kdy použít projektový management",
+          "pages": "18"
+        }
+      ]
+    },
+    {
+      "q": "Součástí plánování potřeb zdrojů je:",
+      "opts": [
+        "zpracování logického rámce",
+        "zpracování matice zodpovědnosti",
+        "popis prací na nejvyšší hierarchické úrovni",
+        "určení potřebných zdrojů a nároků na ně",
+        "analýza vyváženosti zdrojů"
+      ],
+      "correct": [3, 4],
+      "info": "Pojem: Plánování potřeb zdrojů určuje, jaké zdroje projekt potřebuje, v jakém množství a kdy.\nZdroje jsou lidé, stroje, materiál a peníze. Plánování zdrojů zahrnuje určení potřebných zdrojů a nároků na ně a analýzu vyváženosti zdrojů.\nUrčení zdrojů: ke každé činnosti se zapíše, co potřebuje a kolik. Součet nároků v čase ukazuje histogram zdrojů.\nAnalýza vyváženosti zdrojů ověří, že v žádném období projekt nepotřebuje víc zdrojů, než má k dispozici. Když potřebuje, činnosti se posunou nebo se zdroje doplní. Tomu se říká vyrovnání zdrojů (resource leveling).\nJiné nástroje plánování řeší jiné věci.\nLogický rámec stanovuje cíle. Matice zodpovědnosti určuje, kdo za co odpovídá. Popis prací na nejvyšší hierarchické úrovni patří do tvorby WBS, tedy rozpadu projektu na části.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Plánování projektu",
+          "pages": "93"
+        }
+      ]
+    },
+    {
+      "q": "Účelem Zakládací listiny projektu je:",
+      "opts": [
+        "umožnit projektovému manažerovi využít při realizaci projektu zdroje organizace",
+        "udělit pravomoc projektovému manažerovi k zahájení projektu",
+        "formálně schválit existenci projektu",
+        "identifikovat odpovědnosti zainteresovaných osob",
+        "specifikovat cíle projektu"
+      ],
+      "correct": [0, 2, 3, 4],
+      "info": "Pojem: Zakládací listina projektu (Project Charter) je dokument, který formálně schvaluje existenci projektu. Je výstupem zahájení (inicializace).\nZahájením se projekt oficiálně rozjíždí a má nárok na zdroje a pracovníky organizace. Listina proto umožňuje manažerovi projektu využít při realizaci zdroje organizace.\nListina specifikuje cíle projektu. Identifikuje také odpovědnosti zainteresovaných osob.\nRozhodnutí projekt zahájit dělá sponzor nebo vedení. Listina nedává manažerovi pravomoc projekt zahájit. Dává mu pravomoc projekt řídit a čerpat zdroje.\nZahájení vychází z výstupů předprojektové fáze, například ze studie proveditelnosti (Feasibility Study). Dalšími vstupy jsou návrhy na manažera a členy týmu a požadavky stakeholderů, tedy zainteresovaných stran.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Zahájení (Inicializace) projektu",
+          "pages": "66"
+        }
+      ]
+    },
+    {
+      "q": "Cílem postimplementačního hodnocení (případně auditu) projektu je:",
+      "opts": [
+        "vysvětlit skutečnosti, které se nedařily",
+        "ukázat, jak by se měly upravit postupy, aby se budoucí projekty realizovaly efektivněji",
+        "najít viníka problémů a zkritizovat postup řešení",
+        "zkontrolovat výkony týmu a koncové položky projektu",
+        "objektivně posoudit využité techniky a postupy řízení projektu a poučit se z nich"
+      ],
+      "correct": [1, 3, 4],
+      "info": "Pojem: Postimplementační hodnocení (audit, postimplementační analýza) je vyhodnocení projektu po jeho skončení, v poprojektové fázi. Jeho cílem je poučit se pro budoucí projekty.\nSlidy popisují poprojektovou fázi jako vyhodnocení projektu a návrh opatření. Vyhodnocení je rozbor přípravy a průběhu projektu. Opatření mají zvýšit kvalitu dalších projektů.\nAudit proto zkontroluje výkony týmu a koncové položky projektu a objektivně posoudí použité techniky řízení. Pak ukáže, jak upravit postupy, aby budoucí projekty šly efektivněji.\nVýsledkem jsou lessons learned, tedy naučené lekce. Zachycují, co se povedlo a co ne.\nHledání viníka cílem není. Kritika postupu nikoho nic nenaučí a lidé by problémy zatajovali. Popis neúspěchů je jen podklad k tomu, aby se upravily postupy.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Poprojektová fáze",
+          "pages": "69"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: poprojektová fáze, lessons learned",
+          "pages": "0:31:36-0:32:36"
+        }
+      ]
+    },
+    {
+      "q": "Fáze projektu jsou:",
+      "opts": [
+        "Koncepční, realizační, plánovací",
+        "Předprojektová, projektová, poprojektová",
+        "Iniciační, přípravná, vyhodnocovací",
+        "Koncepční, Vývojová, ukončovací",
+        "Přípravná, prováděcí, hodnotící"
+      ],
+      "correct": [1],
+      "info": "Pojem: Fáze projektu jsou velké časové úseky v životním cyklu projektu, tedy v celé jeho cestě od nápadu po vyhodnocení.\nProjekt má tři fáze: předprojektovou, projektovou a poprojektovou. Žádné jiné názvy fází slidy neuvádějí.\nPředprojektová fáze ověřuje, zda má projekt smysl: analýzy a průzkumy, studie příležitosti, studie proveditelnosti, investiční studie a rozhodnutí.\nProjektová fáze projekt zahájí, podrobně naplánuje, realizuje a ukončí. Plánování a realizace jsou tedy části projektové fáze, ne samostatné fáze.\nPoprojektová fáze projekt vyhodnotí a řeší záruky. Obsahuje postimplementační analýzu a návrhy na zlepšení příštích projektů.\nPořadí je dané: nejdřív předprojektová, potom projektová, nakonec poprojektová.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Fáze projektu",
+          "pages": "57"
+        },
+        {
+          "src": "slidy26",
+          "ref": "Sylabus: fáze projektu",
+          "pages": "7"
+        }
+      ]
+    },
+    {
+      "q": "Po dokončení realizace technických výstupů projektu je nutné:",
+      "opts": [
+        "sestavit plán protirizikových opatření",
+        "ověřit rozsah projektu",
+        "aktualizovat plán komunikace",
+        "vypracovat ponaučení z projektu",
+        "provést kontrolu nákladů"
+      ],
+      "correct": [3],
+      "info": "Pojem: Ponaučení z projektu (lessons learned) je záznam toho, co se v projektu povedlo a co ne, aby z toho čerpaly další projekty.\nProč: Po dokončení technických výstupů začíná ukončování projektu. Hlavním krokem je sepsat ponaučení, dokud si tým pamatuje podrobnosti. Projekt už nic nového nevyrábí, zbývá hlavně předat výsledek a poučit se.\nChyták: Plán protirizikových opatření se sestavuje při plánování, ne na konci. Plán komunikace se aktualizuje průběžně. Rozsah a náklady se kontrolují během celé realizace, ne až po jejím dokončení."
+    },
+    {
+      "q": "Plán řízení projektu (Project Management Plan) neobsahuje:",
+      "opts": [
+        "plán řízení lidských zdrojů",
+        "plán komunikace",
+        "časový plán",
+        "plán řízení rizik",
+        "plán ovlivňování zainteresovaných stran"
+      ],
+      "correct": [4],
+      "info": "Pojem: Plán řízení projektu (Project Management Plan) je hlavní plán, který spojuje dílčí plány: časový plán, rozpočet, plán lidských zdrojů, komunikace, rizik a další.\nProč: Plán lidských zdrojů, plán komunikace, časový plán i plán řízení rizik jsou jeho běžné součásti. Podle testu tam nepatří plán ovlivňování zainteresovaných stran.\nChyták: Slovo „ovlivňování\" zní jako manipulace, proto možnost působí jako cizí.\nRozpor: Podle testu plán ovlivňování zainteresovaných stran do plánu řízení projektu nepatří. Podle standardu PMBOK (5. vydání) je jeho součástí plán řízení zainteresovaných stran, který právě popisuje, jak stakeholdery zapojit a ovlivnit. Test nejspíš vychází z PMBOK 4. vydání, kde tento plán ještě nebyl."
+    },
+    {
+      "q": "Mezi hlavní světové standardy patří:",
+      "opts": [
+        "ISO 10 006, PMC, NCB",
+        "PMI, CAPM, IPMA",
+        "PRINCE 2, OGC, ANSI",
+        "IPMA, PRINCE 2, PMI",
+        "SSADM, IPMA, ISO 10 006"
+      ],
+      "correct": [3],
+      "info": "Pojem: Standard projektového řízení je uznávaný soubor pravidel a doporučení, jak projekty řídit.\nHlavní světové standardy jsou tři: IPMA, PRINCE2 a PMI.\nIPMA (International Project Management Association) je mezinárodní asociace s evropskými kořeny. Její standard ICB popisuje kompetence projektového manažera.\nPRINCE2 (PRojects IN Controlled Environments) je britská metodika řízení projektu krok za krokem. PMI (Project Management Institute) je americký institut, který vydává příručku PMBOK s procesy a znalostními oblastmi.\nDalší zkratky nejsou hlavní světové standardy. CAPM je certifikát PMI. NCB je národní verze kompetencí IPMA.\nOGC je britský úřad, který PRINCE2 vydával, ANSI americký normalizační institut. SSADM je metodika vývoje informačních systémů. ISO 10006 je norma pro řízení kvality v projektech.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Hlavní standardy managementu projektů (slide je jen obrázek)",
+          "pages": "36"
+        }
+      ]
+    },
+    {
+      "q": "V uzlově definovaném síťovém grafu:",
+      "opts": [
+        "neurčujeme rezervy",
+        "rozeznáváme činnosti pouze reálné",
+        "se činnosti nacházejí v uzlu",
+        "rozeznáváme činnosti fiktivní, distanční a reálné",
+        "rozeznáváme vazby konec-začátek, začátek-začátek, konec-konec a začátek-konec"
+      ],
+      "correct": [1, 2, 4],
+      "info": "Pojem: Uzlově definovaný síťový graf zobrazuje činnosti jako uzly (čtyřúhelníky). Šipky mezi uzly vyjadřují vazby mezi činnostmi.\nČinnost leží v uzlu. Všechny činnosti jsou reálné, tedy mají nárok na čas a na zdroje. Fiktivní a distanční činnosti existují jen v hranově definovaném grafu, kde činnosti leží na hranách.\nVazby jsou čtyři: konec-začátek (KZ), začátek-začátek (ZZ), konec-konec (KK) a začátek-konec (ZK). Při KZ předchůdce musí skončit, aby následník mohl začít. Při ZZ musí předchůdce začít, aby následník mohl začít.\nPři KK musí předchůdce skončit, aby následník mohl skončit. Při ZK musí předchůdce začít, aby následník mohl skončit.\nRezervy se v uzlovém grafu určují. Uzel obsahuje čtyři termíny: ZM a KM (nejdříve možný začátek a konec) a ZP a KP (nejpozději přípustný začátek a konec). Z nich se počítají rezervy.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Síťový graf",
+          "pages": "109"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Uzlově definovaný SG",
+          "pages": "110"
+        }
+      ]
+    },
+    {
+      "q": "Náklady životního cyklu projektu jsou součtem veškerých nákladů vynaložených na:",
+      "opts": [
+        "vývoj, výrobu, provoz, údržbu",
+        "výrobu, provoz a údržbu",
+        "vývoj, výrobu, provoz, údržbu a likvidaci",
+        "vývoj, výrobu, provoz a likvidaci",
+        "výrobu, provoz a likvidaci"
+      ],
+      "correct": [2],
+      "info": "Pojem: Náklady životního cyklu (LCC, Life Cycle Cost) jsou součet všech nákladů na výsledek projektu za celou dobu jeho existence.\nLCC zahrnuje pět položek: vývoj, výrobu, provoz, údržbu a likvidaci.\nVývoj a výroba jsou náklady na pořízení. Provoz a údržba vznikají při používání výsledku. Likvidace přichází na konci jeho života.\nŽádná z pěti položek se nesmí vynechat. Součet bez vývoje nebo bez likvidace je jen část nákladů, ne LCC.\nPříklad: auto nestojí jen kupní cenu. Platíš i palivo a servis a nakonec ekologickou likvidaci. Teprve součet všech položek ukazuje skutečnou cenu.",
+      "read": [
+        {
+          "ref": "ČSN EN 60300-3-3: náklady životního cyklu (LCC)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Při časovém plánování se obvykle určují:",
+      "opts": [
+        "termíny, náklady a odpovědnosti",
+        "termíny, rezervy a kritická cesta",
+        "termíny a kritická cesta",
+        "termíny, náklady, rezervy",
+        "termíny a náklady"
+      ],
+      "correct": [1],
+      "info": "Pojem: Časové plánování určuje, kdy se jednotlivé činnosti projektu udělají a jak dlouho projekt potrvá.\nPlánování termínů má čtyři kroky: definování činností, odhad doby trvání, řazení činností a sestavení časového plánu s analýzou. Řazení stanoví vzájemné závislosti činností.\nAnalýza časového plánu dává tři výstupy: dobu trvání, kritické aktivity a rezervy. Termíny činností vycházejí z doby trvání a potřeby zdrojů. Poslední krok zjistí časové rezervy a kritickou cestu.\nRezerva je čas, o který se činnost smí zpozdit bez ohrožení konce projektu. Kritická cesta je nejdelší řada činností, která určuje délku projektu.\nNáklady plánuje samostatná část plánu projektu: plán nákladů. Odpovědnosti patří do organizace projektu a lidských zdrojů. Časové plánování je neřeší.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Plánování termínů",
+          "pages": "95"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Časové plány",
+          "pages": "97"
+        }
+      ]
+    },
+    {
+      "q": "ICB společnosti IPMA představuje:",
+      "opts": [
+        "soubor kompetencí pokrývající schopnosti a dovednosti projektových manažerů",
+        "standard zaměřený na procesní problematiku projektového managementu",
+        "soubor měkkých dovedností, které využívá manažer projektu",
+        "standard zaměřený na kompetence projektového manažera",
+        "soubor metod a technik, které musí umět každý člen realizačního týmu projektu"
+      ],
+      "correct": [0, 3],
+      "info": "Pojem: ICB (IPMA Competence Baseline) je standard mezinárodní asociace IPMA. Popisuje kompetence projektového manažera, tedy jeho znalosti, schopnosti a dovednosti.\nICB je soubor kompetencí. Zaměřuje se na to, co má umět manažer projektu, ne na postupy řízení. Slidy vycházejí z ICB verze 4.\nICB pokrývá tři skupiny kompetencí: kontextové, behaviorální a technické. Měkké dovednosti jsou jen behaviorální část.\nTechnické kompetence zahrnují návrh projektu, rozsah, čas nebo kvalitu. Kontextové popisují vztah projektu k organizaci.\nProcesy řízení projektu popisují jiné standardy, například PMI nebo PRINCE2. ICB není procesní standard.\nICB se týká hlavně vedoucího projektu. Není to soubor metod pro každého člena realizačního týmu.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Kontextové elementy kompetence projektového leadera",
+          "pages": "50"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 3: tři typy kompetencí lídra",
+          "pages": "0:12:28–0:13:30"
+        }
+      ]
+    },
+    {
+      "q": "V rámci které fáze životního cyklu projektu je nejvyšší úroveň rizika?",
+      "opts": [
+        "monitorování a kontrola",
+        "plánování",
+        "inicializace",
+        "realizace",
+        "uzavírání"
+      ],
+      "correct": [2],
+      "info": "Pojem: Riziko projektu je nejistá událost, která může ohrozit cíle projektu, tedy čas, náklady nebo kvalitu.\nÚroveň rizika je nejvyšší na začátku, ve fázi inicializace. Pak klesá po celou dobu projektu.\nNa začátku víme nejméně: nejsou hotové plány, známí dodavatelé ani skutečné náklady. S postupem projektu se informace zpřesňují a nejistota klesá.\nOpačně se chovají náklady na změny. Rostou s časem, takže chyba v realizaci stojí víc než na začátku. To je dopad rizika, ne jeho úroveň.\nPlánování, realizace, monitorování a kontrola i uzavírání přicházejí později, kdy je riziko už nižší.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Úroveň rizik a nákladů v průběhu životního cyklu",
+          "pages": "81"
+        }
+      ]
+    },
+    {
+      "q": "Kontrola časového plánu, kontrolní zprávy a správa smluv patří do skupiny procesů řízení projektu:",
+      "opts": [
+        "plánování",
+        "realizace",
+        "inicializace",
+        "kontrola a řízení",
+        "ukončování"
+      ],
+      "correct": [1],
+      "info": "Pojem: Skupiny procesů řízení projektu jsou inicializace, plánování, realizace, monitorování a kontrola a ukončování.\nProč: Podle testu patří kontrola časového plánu, kontrolní zprávy a správa smluv do realizace. Při realizaci se smlouvy plní a práce se dělá, proto je test řadí sem.\nChyták: Slovo „kontrola\" v zadání svádí ke skupině kontrola a řízení. Test ale tuto možnost za správnou nebere.\nRozpor: Podle testu jde o realizaci. Podle standardu PMI (PMBOK) patří kontrola časového plánu, podávání zpráv o výkonu i administrace smluv do skupiny monitorování a kontrola, tedy do možnosti „kontrola a řízení\"."
+    },
+    {
+      "q": "Odhad nákladů při dokončení projektu je podle metody EVM určen jako:",
+      "opts": [
+        "poměr nákladového indexu (CPI) a plánovaných nákladů (BAC)",
+        "poměr plánovaných nákladů (BAC) a prováděcího indexu (SPI)",
+        "součin plánovaných nákladů (BAC) a nákladového indexu (CPI)",
+        "poměr plánovaných nákladů (BAC) a nákladového indexu (CPI)",
+        "rozdíl plánovaných nákladů (BAC) a prováděcího indexu (SPI)"
+      ],
+      "correct": [3],
+      "info": "Pojem: EAC (Estimate At Completion, odhad nákladů při dokončení) říká, kolik bude projekt stát celkem, když bude pokračovat stejně jako dosud.\nVzorec zní EAC = BAC / CPI. Je to poměr plánovaných nákladů (BAC, Budget At Completion, celkový rozpočet) a nákladového indexu (CPI = EV / AC).\nPříklad: CPI je 0,8. Za korunu tedy dostaneme práci za 80 haléřů. Rozpočet 100 tis. Kč naroste na 100 / 0,8 = 125 tis. Kč.\nSoučin BAC × CPI by při překračování nákladů odhad snížil na 80 tis. Kč. Poměr CPI / BAC je obrácený a nevyjde z něj částka v korunách.\nSPI je index času, ne nákladů. Do odhadu nákladů proto nepatří, ani jako podíl, ani jako rozdíl.",
+      "read": [
+        {
+          "ref": "PMBOK: EVM, odhad nákladů při dokončení EAC",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Mezi kvantitativní metody analýzy rizik lze zahrnout:",
+      "opts": [
+        "struktura RBS (Risk Breakdown Structure)",
+        "analýza SWOT",
+        "analýza monte carlo",
+        "analýza citlivosti",
+        "matice rizik"
+      ],
+      "correct": [2, 3],
+      "info": "Pojem: Kvantitativní analýza rizik vyjadřuje rizika čísly: pravděpodobností, korunami nebo dny zpoždění.\nMezi kvantitativní metody patří simulace Monte Carlo, analýza citlivosti a očekávaná peněžní hodnota (EMV, Expected Monetary Value).\nAnalýza Monte Carlo je stochastická simulace. Počítač tisíckrát nasimuluje průběh projektu s náhodnými hodnotami a ukáže pravděpodobnost splnění termínu nebo rozpočtu.\nAnalýza citlivosti zkoumá, jak moc se změní výsledek, když se změní jedna vstupní hodnota.\nKvalitativní jsou matice rizik, tedy tabulka pravděpodobnost × dopad ve stupních.\nRBS a SWOT také nejsou kvantitativní. RBS (Risk Breakdown Structure) rozdělí rizika do kategorií a slouží k jejich identifikaci. SWOT slovně shrnuje silné a slabé stránky, příležitosti a hrozby.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Odhad doby trvání činností (simulace, Monte Carlo)",
+          "pages": "96"
+        },
+        {
+          "ref": "PMBOK: kvantitativní analýza rizik",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Mezi kvalitativní metody analýzy rizik nepatří:",
+      "opts": [
+        "struktura RBS (Risk Breakdown Structure)",
+        "modelování a simulace",
+        "analýza SWOT",
+        "analýza citlivosti",
+        "RIPRAN"
+      ],
+      "correct": [1, 3],
+      "info": "Pojem: Kvalitativní analýza rizik hodnotí rizika slovně nebo body, například jako vysokou pravděpodobnost a malý dopad. Nepočítá přesná čísla.\nKvantitativní analýza naopak pracuje s čísly a výpočty. Patří do ní modelování a simulace (například Monte Carlo) a analýza citlivosti.\nModelování a simulace opakovaně počítají průběh projektu s náhodnými hodnotami. Analýza citlivosti měří, jak změna jednoho vstupu mění výsledek. Obě jsou kvantitativní.\nKvalitativní metody jsou RBS, SWOT a RIPRAN. RBS (Risk Breakdown Structure) je stromové rozdělení rizik do kategorií. SWOT shrnuje silné a slabé stránky, příležitosti a hrozby.\nRIPRAN je česká metoda analýzy rizik. Pravděpodobnost a dopad se v ní obvykle hodnotí slovními stupni.",
+      "read": [
+        {
+          "ref": "PMBOK: kvalitativní a kvantitativní analýza rizik",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Mezi procesy podle standardu PMI patří:",
+      "opts": [
+        "plánování",
+        "realizace",
+        "inicializace",
+        "monitoring a controlling",
+        "uzavírání"
+      ],
+      "correct": [0, 1, 2, 3, 4],
+      "info": "Pojem: PMI (Project Management Institute) je americký institut. Jeho standard PMBOK dělí řízení projektu do pěti skupin procesů.\nSkupin procesů je pět. Slidy je uvádějí takto: zahájení (Initiating), plánování (Planning), realizace (Executing), monitorování a kontrola (Monitoring and Controlling) a ukončování (Closing).\nZahájení se jinak říká inicializace. Ukončování se říká uzavírání. Jde o tytéž skupiny, jen s jiným překladem.\nMonitoring a controlling je jedna skupina procesů. Monitoring sleduje, jak projekt probíhá. Controlling řídí odchylky od plánu.\nRealizace znamená provádění práce podle plánu. Plánování určuje, co a kdy se udělá. Ukončování projekt formálně uzavře.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Skupiny procesů PMI (slide bez nadpisu)",
+          "pages": "78"
+        }
+      ]
+    },
+    {
+      "q": "Mezi metody časového plánování nepatří:",
+      "opts": [
+        "harmonogram (Ganttův diagram)",
+        "analýza trendů plnění milníků",
+        "metoda CPM",
+        "síťová analýza",
+        "struktura WBS (Work Breakdown Structure)"
+      ],
+      "correct": [1, 4],
+      "info": "Pojem: Metody časového plánování určují termíny činností a délku projektu.\nSlidy uvádějí tři metody plánování času: Ganttův diagram, síťové grafy a metodu kritické cesty. Ganttův diagram zobrazuje činnosti jako vodorovné pruhy v kalendáři. Síťová analýza a CPM pracují se síťovým grafem.\nWBS (Work Breakdown Structure, hierarchický rozpad projektu na části práce) patří do strukturování projektu. To je první aktivita plánování projektu a předchází plánování času. WBS termíny neurčuje.\nAnalýza trendů plnění milníků (MTA) je kontrolní metoda. Milník je důležitý bod projektu. Při každé kontrole se sleduje, jak se předpokládaný termín milníku posouvá.\nKontrola porovnává plán se skutečností. Plánování termíny teprve vytváří.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metody plánování času",
+          "pages": "87"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Plánování projektu",
+          "pages": "93"
+        }
+      ]
+    },
+    {
+      "q": "Kvantitativní metody rizikové analýzy se vyznačují:",
+      "opts": [
+        "subjektivním pohledem hodnotitele",
+        "číselným ohodnocením rizik",
+        "slovní charakteristikou rizik",
+        "využitím simulačních technik",
+        "možnosti vyjádření dopadu rizika ve finančních jednotkách"
+      ],
+      "correct": [1, 3, 4],
+      "info": "Pojem: Kvantitativní metody analýzy rizik vyjadřují rizika čísly, třeba pravděpodobností v procentech nebo škodou v korunách.\nKvantitativní metody se vyznačují číselným ohodnocením rizik. Každé riziko dostane pravděpodobnost a dopad jako číslo.\nČasto používají simulační techniky. Metoda Monte Carlo mnohokrát nasimuluje průběh projektu a ukáže, s jakou pravděpodobností projekt stihne termín nebo rozpočet.\nDopad rizika jde vyjádřit ve finančních jednotkách, například očekávaná škoda 50 000 Kč. Z takových čísel se plánuje finanční rezerva.\nSubjektivní pohled hodnotitele a slovní charakteristika rizik jsou znaky kvalitativních metod. Hodnocení slovy jako vysoké nebo nízké kvantitativní není.",
+      "read": [
+        {
+          "ref": "PMBOK: kvantitativní analýza rizik",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "K základním vlastnostem projektu patří:",
+      "opts": [
+        "složitost a komplexnost",
+        "vymezenost (čas, rozpočet, zdroje atp.)",
+        "nízká až zanedbatelná úroveň rizika",
+        "jedinečnost cíle, podmínek a postupu",
+        "realizace s projektovým týmem"
+      ],
+      "correct": [0, 1, 3, 4],
+      "info": "Pojem: Základní vlastnosti projektu odlišují projekt od běžného provozu firmy.\nProjekt je složitý a komplexní. Propojuje víc oborů a činností. Slidy proto řadí projektové řízení k složitým, komplexním přístupům.\nProjekt je vymezený. Má stanovený cíl, omezené zdroje, limitovaný čas a rozpočet.\nProjekt je jedinečný. Cíl, podmínky i postup se v téže podobě neopakují. Slidy proto uvádějí specifické, neopakující se úkoly.\nProjekt realizuje projektový tým.\nRiziko projektu je vysoké, ne nízké. Protože je projekt jedinečný, chybí zkušenost se stejnou akcí a nejistota je velká. Jednoduché bezrizikové akce jsou opakem projektu a projektové řízení se na ně nepoužívá.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Kdy použít projektový management",
+          "pages": "18"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Úroveň rizik a nákladů v průběhu životního cyklu",
+          "pages": "81"
+        }
+      ]
+    },
+    {
+      "q": "Behaviorální kompetence: (bez záruky)",
+      "opts": [
+        "obsahují 13 elementů kompetencí",
+        "obsahují 15 elementů kompetencí",
+        "představují základní elementy, které se označují jako „hard skills“",
+        "představují základní elementy kompetencí z interpersonální oblasti",
+        "představují elementy kompetencí nutné při řízení trvalých organizací s nejasně stanoveným modelem řízení"
+      ],
+      "correct": [1, 3],
+      "info": "Pojem: Behaviorální kompetence jsou podle standardu IPMA ICB 3 dovednosti v jednání s lidmi a se sebou samým, třeba vedení, vyjednávání nebo řešení konfliktů.\nProč: ICB 3 jich uvádí 15. Jde o elementy z interpersonální oblasti, tedy o vztahy mezi lidmi. Patří sem vůdcovství, angažovanost, sebeovládání, asertivita, kreativita, etika a další.\nChyták: Hard skills (tvrdé, technické dovednosti) jsou technické kompetence, ne behaviorální. Vztah k trvalé organizaci popisují kontextové kompetence. Novější ICB 4 přejmenovala tuto oblast na lidské kompetence (People) a uvádí jich 10."
+    },
+    {
+      "q": "Kontextové kompetence:",
+      "opts": [
+        "obsahují 13 elementů",
+        "obsahují 11 elementů",
+        "představují základní elementy kompetencí z oblasti technik a metod využívaných při komplexním přístupu k řízení projektu",
+        "představují základní elementy kompetencí pokrývající integrační a systémové znalosti a dovednosti projektového managera",
+        "představují základní elementy pokrývající měkké dovednosti projektového managera"
+      ],
+      "correct": [1, 3],
+      "info": "Pojem: Kontextové kompetence jsou podle IPMA ICB 3 znalosti o prostředí, ve kterém projekt běží. Jde o vztah projektu k firmě, jejím systémům a pravidlům.\nProč: ICB 3 uvádí 11 kontextových elementů, například orientaci na projekty, programy a portfolia, personální management, finance nebo právo. Pokrývají integrační a systémové znalosti manažera: jak projekt zapadá do celé organizace.\nChyták: Techniky a metody řízení projektu jsou technické kompetence. Měkké dovednosti jsou behaviorální kompetence. Počet 13 neplatí pro žádnou oblast ICB 3."
+    },
+    {
+      "q": "Řízení rizik zahrnuje procesy:",
+      "opts": [
+        "plán řízení rizik",
+        "identifikace rizik",
+        "ohodnocování rizik",
+        "plánování protirizikových opatření",
+        "monitorování a kontrola"
+      ],
+      "correct": [0, 1, 2, 3, 4],
+      "info": "Pojem: Řízení rizik je soustavná práce s nejistými událostmi, které mohou projekt ohrozit nebo mu pomoct.\nŘízení rizik zahrnuje tyto procesy: plán řízení rizik, identifikaci rizik, ohodnocování rizik, plánování protirizikových opatření a monitorování a kontrolu.\nPlán řízení rizik určí pravidla a je součástí plánu projektu. Identifikace rizik najde, co se může stát. Ohodnocování určí pravděpodobnost a dopad.\nPlánování protirizikových opatření připraví reakci, třeba pojištění nebo rezervu. Monitorování a kontrola sleduje rizika po celý projekt.\nSlidy Chvátalové uvádějí jako jádro identifikaci, ohodnocení a ošetření rizik.\nPlánování protirizikových opatření odpovídá ošetření rizik. Monitorování a kontrola hlídá, zda opatření fungují a zda nevznikla nová rizika.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Dílčí oblasti projektového managementu: Management rizik",
+          "pages": "24"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Sylabus: Řízení kvality a rizik v projektech",
+          "pages": "11"
+        }
+      ]
+    },
+    {
+      "q": "Hlavním obsahem „zadávací listiny projektu“ (projekt charter):",
+      "opts": [
+        "dokument, kterým se formálně schvaluje existence projektu",
+        "identifikační údaje vlastníka projektu",
+        "popis projektu a rozpočet projektu",
+        "vymezení rozsahu (rámce) projektu, jeho cíle a jeho výstupy (dodávky), rozpočet, časový rámec, kontrolní body a členství v týmu projektu",
+        "logický rámec a časový plán projektu"
+      ],
+      "correct": [0, 3],
+      "info": "Pojem: Zakládací (zadávací) listina projektu, anglicky Project Charter, je dokument, kterým se formálně schvaluje existence projektu.\nObsahuje hlavní parametry projektu: vymezení rozsahu (rámce) projektu, cíle, výstupy (dodávky), rozpočet, časový rámec, kontrolní body a členství v týmu. Kontrolní body jsou klíčové milníky.\nListina je tedy mnohem širší než údaje o vlastníkovi nebo samotný popis a rozpočet.\nLogický rámec do listiny nepatří. Slidy ho uvádějí jako samostatný druhý výstup zahájení: dokument strategie projektu.\nPodrobný časový plán vzniká až při plánování. Listina obsahuje jen souhrnný časový rámec.\nZahájení vychází z výstupů předprojektové fáze, například ze studie proveditelnosti (Feasibility Study), a z požadavků stakeholderů, tedy zainteresovaných stran.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Zahájení (Inicializace) projektu",
+          "pages": "66"
+        }
+      ]
+    },
+    {
+      "q": "Řízení rizik projektu:",
+      "opts": [
+        "je potřeba provádět pouze při ukončování projektu, abychom zjistili nepříznivé okolnosti, které způsobily problémy projektu",
+        "je potřeba provádět ve všech fázích životního cyklu projektu",
+        "je potřeba provádět pouze při samostatné realizaci projektu",
+        "není součástí projektového managementu",
+        "je potřeba provádět pouze ve fázi inicializace"
+      ],
+      "correct": [1],
+      "info": "Pojem: Řízení rizik projektu znamená hledat, hodnotit a ošetřovat nejisté události, které mohou projekt ohrozit.\nŘízení rizik je součástí projektového managementu. Probíhá opakovaně ve všech fázích životního cyklu projektu, od přípravy po ukončení.\nRizika se objevují a mění po celou dobu projektu. Na začátku hrozí špatný odhad, při realizaci výpadek dodavatele, na konci nepřevzetí výsledku zákazníkem. Slidy zachycují riziko a nejistotu v grafu přes celý průběh projektu.\nŘízení rizik jen na konci by přišlo pozdě, protože škoda už nastala. Omezit ho na fázi inicializace nebo na samostatnou realizaci nestačí.\nKdo řízení rizik přeskočí, zjistí nepříznivé okolnosti až ve chvíli, kdy projekt už má problém.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Úroveň rizik a nákladů v průběhu životního cyklu",
+          "pages": "81"
+        }
+      ]
+    },
+    {
+      "q": "Princip managementu řízení rizika využívající principu predikační vazby se nazývá:",
+      "opts": [
+        "akční",
+        "reakční",
+        "reaktivní",
+        "proaktivní",
+        "funkční"
+      ],
+      "correct": [3],
+      "info": "Pojem: Predikační vazba znamená předvídání: na riziko reagujeme dřív, než nastane. Takový princip řízení rizik se nazývá proaktivní.\nŘízení rizik rozlišuje proaktivní a reaktivní přístup.\nProaktivní přístup rizika předem hledá, odhaduje jejich pravděpodobnost a dopad a připravuje opatření. Příklad: pojistíš se ještě před bouří.\nReaktivní přístup řeší problémy až poté, co nastanou. Je to opak předvídání.\nAkční, reakční a funkční nejsou ustálené názvy přístupů k řízení rizik.\nPredikace je odhad budoucího vývoje. Proaktivní řízení tedy odhaduje rizika dřív, než způsobí škodu, a reaguje na ně předem. Reaktivní řízení čeká, až problém nastane.",
+      "read": [
+        {
+          "ref": "Proaktivní a reaktivní řízení rizik",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Objektivně ověřitelné ukazatele:",
+      "opts": [
+        "mohou být vyjádřeny pouze ve fyzických jednotkách",
+        "jsou součástí horizontálních vazeb logického rámce",
+        "mohou být vyjádřeny pouze v peněžních jednotkách",
+        "vytvářejí základ pro měření efektivity a účelnosti projektu",
+        "jsou uvedeny v logickém rámci a prokazují, že záměru, cíle, a konkrétních výstupů bylo dosaženo"
+      ],
+      "correct": [1, 3, 4],
+      "info": "Pojem: Objektivně ověřitelné ukazatele (OVI) jsou měřitelná kritéria v logickém rámci, která prokazují, že cíl byl splněn.\nLogický rámec je tabulka 4 × 4. Řádky jsou záměr, cíl, výstupy a činnosti. Sloupce jsou popis, ukazatele, zdroje ověření a vnější předpoklady.\nUkazatele jsou jeden ze sloupců rámce. Tvoří horizontální vazbu: na řádku říkají, jak cíl změřit, a zdroje ověření říkají, kde to ověřit.\nUkazatele prokazují, že záměru, cíle i konkrétních výstupů bylo dosaženo. Tvoří základ pro měření efektivity a účelnosti projektu.\nUkazatel lze vyjádřit kvantitou, kvalitou, časem i penězi. Fyzické jednotky (kusy, kilometry) a peněžní jednotky jsou jen dva z možných způsobů. Funguje i procento nebo termín.",
+      "read": [
+        {
+          "ref": "Metoda logického rámce (EU PCM): matice 4 x 4, ukazatele a zdroje ověření",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Využívání softwarových nástrojů při řízení projektu:",
+      "opts": [
+        "slouží jako podpora při řízení projektu",
+        "není vhodné, sledování dat o projektu je úkolem projektového managera",
+        "nahrazuje řízení projektu",
+        "nárokuje čas na proškolení a trénink personálu",
+        "pomáhá projektovému manažerovi při řešení konfliktů"
+      ],
+      "correct": [0, 3],
+      "info": "Pojem: Softwarové nástroje pro řízení projektu jsou programy jako MS Project nebo Jira, které pomáhají plánovat termíny a zdroje a sledovat průběh.\nSoftware je podpora řízení projektu, ne jeho náhrada. Rychle přepočítá harmonogram a ukáže zpoždění nebo přetížené lidi. Rozhodují dál lidé, kteří projekt řídí.\nZavedení softwaru stojí čas. Lidé se musí nástroj naučit, proto vyžaduje proškolení a trénink personálu. Bez toho ho nikdo nevyužije naplno.\nSledování dat o projektu zůstává úkolem projektového manažera. Software mu ho usnadní, takže je vhodný.\nŘešení konfliktů je úloha manažera a jeho komunikace s lidmi. Software konflikty neřeší a manažerovi s nimi nepomáhá.",
+      "read": [
+        {
+          "ref": "PMBOK: nástroje a techniky řízení projektu, softwarová podpora",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Která z uvedených kompetencí nepatří do technických kompetencí:",
+      "opts": [
+        "komunikace",
+        "týmová práce",
+        "trvalá organizace",
+        "orientace na výsledky",
+        "zdroje"
+      ],
+      "correct": [2, 3],
+      "info": "Pojem: Standard IPMA ICB 3 dělí kompetence projektového manažera na technické (metody řízení), behaviorální (jednání s lidmi) a kontextové (vztah k organizaci).\nProč: Trvalá organizace je kontextová kompetence, popisuje vztah projektu ke stálé struktuře firmy. Orientace na výsledky je behaviorální kompetence, jde o osobní nasazení dotahovat věci do konce. Proto ani jedna do technických nepatří.\nChyták: Komunikace, týmová práce a zdroje znějí měkce, ale v ICB 3 jsou zařazené mezi technické kompetence."
+    },
+    {
+      "q": "Mezi metody využívané ke kontrole patří:",
+      "opts": [
+        "analýza vlastních sil",
+        "MTA",
+        "metoda procentuálního plnění",
+        "SSD",
+        "NPV"
+      ],
+      "correct": [1, 2, 3],
+      "info": "Pojem: Metody kontroly projektu porovnávají skutečný stav projektu s plánem a ukazují odchylky.\nMetoda procentuálního plnění odhaduje, kolik procent práce je hotovo. Sylabus ji řadí mezi metody vyhodnocení stavu projektu. Je to jedna z nejjednodušších kontrolních metod.\nMTA (Milestone Trend Analysis, analýza trendů milníků) sleduje, jak se při každé kontrole posouvá odhadovaný termín milníků. Posun ukáže zpoždění dřív, než nastane. Tým tak stihne zasáhnout včas.\nAnalýza vlastních sil hodnotí, co organizace zvládne vlastními lidmi a zdroji. Patří do přípravy a plánování, ne do kontroly. Neporovnává skutečný stav s plánem.\nNPV (Net Present Value, čistá současná hodnota) hodnotí, jestli se investice vyplatí. Rozhoduje před projektem o investici. Průběh projektu nekontroluje.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Sylabus: metody pro vyhodnocení stavu projektu",
+          "pages": "8"
+        },
+        {
+          "ref": "Praxe kontroly projektu: analýza trendů milníků (MTA)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Metoda RIPRAN se používá k:",
+      "opts": [
+        "rozhodování o obstarávání v projektu",
+        "dekompozici projektu do pracovních balíků",
+        "tvorbě organizační struktury",
+        "analýze projektových rizik",
+        "vyhodnocení projektu"
+      ],
+      "correct": [3],
+      "info": "Pojem: RIPRAN (Risk Project Analysis) je česká metoda analýzy projektových rizik, kterou vyvinul Branislav Lacko.\nRIPRAN slouží k analýze rizik projektu. Slidy Chvátalové ji uvádějí mezi metodami pro analýzu projektových rizik, vedle bodovací metody s mapou rizik.\nPostup zahrnuje identifikaci nebezpečí a hrozeb, kvantifikaci rizik (odhad pravděpodobnosti a dopadu, obvykle slovními stupni), návrh opatření a celkové posouzení.\nJiné oblasti řeší jiné nástroje.\nRozpad projektu na pracovní balíky dělá WBS. Organizační strukturu ukazuje OBS. Rozhodování o obstarávání patří k řízení nákupu.\nVyhodnocení stavu projektu a jeho pokroku dělá procentuální metoda a metoda dosažené hodnoty (EVM).",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Sylabus: metody pro analýzu projektových rizik (RIPRAN)",
+          "pages": "8"
+        }
+      ]
+    },
+    {
+      "q": "Principy projektového managementu (PM):",
+      "opts": [
+        "princip strukturování problému",
+        "princip časových skoků",
+        "princip přiměřených prostředků",
+        "princip týmové práce",
+        "princip systémového přístupu"
+      ],
+      "correct": [0, 2, 3, 4],
+      "info": "Pojem: Principy projektového managementu (PM) jsou základní pravidla, na kterých projektové řízení stojí.\nPrincip strukturování problému: velký úkol se rozloží na menší části.\nPrincip přiměřených prostředků: řízení se přizpůsobí velikosti projektu. Malý projekt nepotřebuje složitý aparát.\nPrincip týmové práce: projekt řeší tým různých odborníků. Společná práce spojuje obory, které by jinak pracovaly odděleně.\nPrincip systémového přístupu: projekt se posuzuje jako celek se všemi vazbami. Slidy dodávají, že takový přístup přináší informace využitelné v dalších projektech.\nPrincip časových skoků mezi principy nepatří. Nenajdete ho ve slidech ani v PMBOK a IPMA. Projekt postupuje plynule po fázích a navazujících činnostech.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Systémový přístup k řízení projektu",
+          "pages": "20"
+        },
+        {
+          "ref": "Principy projektového managementu: strukturování problému, přiměřené prostředky",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Work Breakdown Structure (WBS) představuje:",
+      "opts": [
+        "zjednodušenou liniově—štábní strukturu sestavenou podle organizačního řádu",
+        "strukturovaný rozklad projektu na komponenty",
+        "organizační schéma",
+        "struktura rozdělení prací, odpovídající technickým požadavkům zákazníka na produkt a smlouvě",
+        "neformální strukturu, kterou si jednorázově vytvoří pro organizaci projektu jeho tým"
+      ],
+      "correct": [1, 3],
+      "info": "Pojem: WBS (Work Breakdown Structure, struktura rozdělení prací) je strukturovaný rozklad projektu na komponenty.\nWBS rozkládá práci projektu hierarchicky, shora dolů, až na pracovní balíky. Pracovní balík už jde naplánovat a přidělit.\nWBS dělí práci podle toho, co má projekt dodat. Odpovídá technickým požadavkům zákazníka na produkt a smlouvě.\nWBS rozkládá práci, ne lidi. Lidi a útvary ukazuje OBS (Organisation Breakdown Structure), tedy organizační struktura projektu. Organizační schéma a liniově-štábní struktura popisují organizaci firmy, ne rozdělení prací.\nWBS není neformální struktura, kterou si jednorázově vytvoří tým. Je to formální součást plánu projektu a vychází ze smlouvy a z požadavků zákazníka.",
+      "read": [
+        {
+          "ref": "PMBOK: řízení rozsahu, tvorba WBS",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Organisation Breakdown Structure - OBS projektu představuje:",
+      "opts": [
+        "struktura rozdělení prací, odpovídající technickým požadavkům",
+        "funkční organizační strukturu",
+        "popis a obsah prací na nejnižší hierarchické úrovni, odpovědné osoby, lhůty, zdroje, náklady požadavkům zákazníka na produkt a smlouvy",
+        "schéma postupu prací na projektu",
+        "schéma neformální struktury, kterou si jednorázově vytvoří pro řízení projektu jeho tým"
+      ],
+      "correct": [1],
+      "info": "Pojem: OBS (Organisation Breakdown Structure) je organizační struktura projektu. Ukazuje, které útvary a lidé se na projektu podílejí.\nOBS odpovídá funkční organizační struktuře. Funkční struktura dělí lidi podle útvarů, například vývoj, nákup, výroba. OBS tak ukazuje, který útvar odpovídá za kterou část práce.\nOBS je oficiální struktura. Není to neformální schéma, které si jednorázově vytvoří tým.\nOstatní pojmy popisují jiné věci. WBS dělí práci podle technických požadavků zákazníka. Slovník WBS popisuje pracovní balíky: obsah prací, odpovědné osoby, lhůty, zdroje a náklady.\nSchéma postupu prací na projektu je síťový graf. Ten ukazuje návaznosti činností, ne organizaci lidí.",
+      "read": [
+        {
+          "ref": "PMBOK: organizační struktura projektu (OBS)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Metoda PERT (Program Evaluation and Review Technique):",
+      "opts": [
+        "je využívána při kontrole průběhu projektu",
+        "je deterministickou metodou",
+        "slouží k určení nejpravděpodobnější doby trvání činnosti",
+        "patří mezi metody časového plánování",
+        "patří mezi metody využívané pro určení kvalitativních požadavků na výstupy"
+      ],
+      "correct": [2, 3],
+      "info": "Pojem: PERT (Program Evaluation and Review Technique) je stochastická metoda časového plánování. Odhaduje dobu trvání činností s nejistou délkou.\nPERT patří do plánování času. Slidy řadí PERT mezi stochastické metody odhadu doby trvání činností. Stochastická metoda počítá s náhodou a dává výsledek jen s určitou pravděpodobností.\nDeterministická je metoda CPM. Bere doby činností jako pevně dané. PERT proto deterministický není.\nU každé činnosti se odhadnou tři časy: optimistický (a), nejpravděpodobnější (m) a pesimistický (b). Nejpravděpodobnější doba je vstupní odhad. Z odhadů vychází očekávaná doba te = (a + 4m + b) / 6.\nPERT slouží k plánování, ne ke kontrole průběhu projektu. Průběh projektu vyhodnocuje například metoda dosažené hodnoty (EVM). S kvalitativními požadavky na výstupy PERT nesouvisí, pracuje jen s časem.\nRozpor: Podle testu PERT určuje nejpravděpodobnější dobu trvání činnosti. Podle PMBOK je nejpravděpodobnější doba (m) vstupní odhad a PERT z ní počítá očekávanou dobu trvání. Podle testu se PERT také nevyužívá při kontrole průběhu projektu. Vyhodnocená zkouška ale u otázky \"Výhody diagramu PERT jsou:\" počítá jako správnou možnost \"Lze ho použít při průběžných kontrolách i závěrečném hodnocení projektu.\" Slidy tuto vlastnost PERT neuvádějí.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Odhad doby trvání činností",
+          "pages": "96"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Síťové diagramy CPA",
+          "pages": "106"
+        }
+      ]
+    },
+    {
+      "q": "Mezi nástroje řízení nákupu lze zahrnout:",
+      "opts": [
+        "analýza vlastní síly (make or buy)",
+        "Paretova analýza (ABC analýza)",
+        "stanovení priorit nakupujícího (SPN)",
+        "matici dodavatel-kupující",
+        "kategorizaci dodavatelů"
+      ],
+      "correct": [0, 1, 4],
+      "info": "Pojem: Řízení nákupu v projektu rozhoduje, co se koupí, od koho a za jakých podmínek.\nMezi nástroje řízení nákupu patří analýza vlastní síly (make or buy), Paretova analýza (ABC analýza) a kategorizace dodavatelů.\nAnalýza vlastní síly porovná, zda je výhodnější práci udělat vlastními silami, nebo ji koupit.\nParetova analýza (ABC analýza) rozdělí nakupované položky podle hodnoty do skupin A, B a C. Malá část položek tvoří většinu nákladů. Pozornost se soustředí na skupinu A.\nKategorizace dodavatelů rozdělí dodavatele podle významu a spolehlivosti.\nStanovení priorit nakupujícího (SPN) a matice dodavatel-kupující se mezi tyto základní nástroje řízení nákupu neřadí.",
+      "read": [
+        {
+          "ref": "PMBOK: plánování nákupu, analýza make or buy",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "V metodě EVM rozdíl EV–AC představuje:",
+      "opts": [
+        "prováděcí odchylku SV",
+        "náklady při dokončení",
+        "prováděcí index SPI",
+        "nákladovou odchylku CV",
+        "nákladový index CPI"
+      ],
+      "correct": [3],
+      "info": "Pojem: Nákladová odchylka CV (Cost Variance) v metodě EVM ukazuje, o kolik korun se skutečné náklady liší od ceny hotové práce.\nVzorec zní CV = EV - AC. EV (dosažená hodnota) je rozpočtová cena skutečně hotové práce. AC (skutečné náklady) jsou peníze, které se utratily.\nKladná CV znamená úsporu, záporná překročení nákladů. Příklad: hotová práce měla stát 100, utratili jsme 120, CV = 100 - 120 = -20.\nProváděcí (časová) odchylka SV = EV - PV porovnává hotovou práci s plánem, ne s náklady.\nIndexy CPI = EV / AC a SPI = EV / PV jsou podíly, ne rozdíly. Náklady při dokončení (EAC) jsou odhad celkové ceny projektu.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Co čekat od testu? (EVM)",
+          "pages": "13"
+        },
+        {
+          "ref": "PMBOK: EVM, nákladová odchylka CV",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Podklady pro plánování struktury WBS jsou:",
+      "opts": [
+        "zakládací listina projektu (tzv. Project Charter)",
+        "projektový manuál společnosti",
+        "matice zodpovědnosti (RAM)",
+        "soupis produktu, výsledku a výstupu, kterých má být realizací projektu dosaženo (tzv. Project Scope Statement)",
+        "analýza požadavků zainteresovaných stran"
+      ],
+      "correct": [0, 2, 3],
+      "info": "Pojem: Struktura WBS je stromový rozpad projektu na menší části práce. Než se WBS sestaví, potřebuje podklady.\nProč: Podle testu jsou podklady zakládací listina (oficiální schválení projektu s cíli), Project Scope Statement (soupis výstupů, které projekt dodá) a matice odpovědnosti (RAM, tabulka kdo za co odpovídá).\nChyták: Projektový manuál firmy a analýza požadavků stakeholderů test mezi podklady neřadí.\nRozpor: Podle testu je matice odpovědnosti podkladem pro WBS. Podle učebnice matice odpovědnosti vzniká až z hotové WBS, protože přiřazuje lidi k jejím prvkům. Podle PMBOK je vstupem naopak dokumentace požadavků zainteresovaných stran."
+    },
+    {
+      "q": "Program představuje:",
+      "opts": [
+        "skupinu věcně souvisejících, společně řízených projektů směřujících k dosažení cíle",
+        "proces rozhodování, jak přistupovat, plánovat a řídit projekty",
+        "metodika postupu realizace projektu",
+        "sled vzájemně propojených akcí, které společně dosahují řadu cílů v rámci jedné celkové strategie",
+        "skupinu projektů seskupených do jednoho celku za účelem efektivnějšího řízení. Projekty se ovlivňují pouze sdílenými zdroji a časovým rámcem"
+      ],
+      "correct": [0, 3],
+      "info": "Pojem: Program je skupina projektů, které spolu věcně souvisejí a řídí se společně, aby dosáhly společného cíle.\nProgram, projekt a portfolio se liší ve dvou věcech: zda mají společný cíl a zda se řídí společně.\nProgram má společný strategický cíl a společné řízení. Je to sled vzájemně propojených akcí, které společně plní řadu cílů v rámci jedné celkové strategie. Příklad: program digitalizace úřadu zahrnuje nový web, elektronickou spisovnu a školení úředníků.\nPortfolio je seskupení projektů a programů kvůli koordinaci a efektivnějšímu řízení zdrojů. Projekty v něm spojují jen sdílené zdroje a časový rámec. Portfolio nemá stanovený začátek, konec ani konkrétní cíl.\nMetodika je postup, jak projekt realizovat. Rozhodování o tom, jak projekty plánovat a řídit, je řízení projektů, ne program.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Program a portfolio",
+          "pages": "84"
+        }
+      ]
+    },
+    {
+      "q": "Pojem záměr projektu:",
+      "opts": [
+        "je cíl projektu, za který zodpovídá projektový manager",
+        "je práce, která musí být provedena, aby bylo možné dosáhnout plánovaného produktu nebo k dodání služby se specifikovanými vlastnostmi a funkcemi",
+        "je popis stavu, do kterého se chceme realizací projektu dostat",
+        "je dlouhodobý, strategický cíl, k jehož dosažení napomáhá realizace několika projektů nebo programů",
+        "je ovlivněn vnějšími předpoklady a za jeho dosažení nemůže být projektový manager a jeho tým plně zodpovědný"
+      ],
+      "correct": [3, 4],
+      "info": "Pojem: Záměr projektu je nejvyšší úroveň logického rámce. Je to dlouhodobý, strategický cíl, ke kterému projekt jen přispívá.\nLogický rámec (metoda LFA) řadí cíle do úrovní: záměr, cíl projektu, výstupy a aktivity. Záměr je nejvýš.\nK záměru přispívá několik projektů nebo programů společně. Příklad: záměr je snížit nehodovost v kraji, projekt je postavit obchvat.\nZáměr závisí na vnějších předpokladech, třeba na chování řidičů. Projektový manažer a jeho tým proto za jeho dosažení nemohou plně odpovídat.\nCíl projektu je o úroveň níž. Je to popis stavu, do kterého se realizací projektu chceme dostat, a manažer za něj odpovídá.\nPráce potřebná k dodání produktu nebo služby se specifikovanými vlastnostmi a funkcemi je rozsah projektu. Záměr to není.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Zahájení (Inicializace) projektu",
+          "pages": "66"
+        },
+        {
+          "ref": "Metoda logického rámce (LFA): úrovně záměr, cíl, výstupy, aktivity",
+          "note": "Ve slidech je jen zmínka, výklad matice tam není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 15 b.) - Vypočtěte pomocí metody PERT očekávanou dobu trvání aktivit A, B, C a současně celkovou očekávanou dobu trvání aktivit v případě, že aktivity A, B, C na sebe navazují vazbou konec-začátek.",
+      "opts": [
+        "Odhad doby trvání činnosti A = 6; B = 13; C = 8. Celková doba trvání je 27.",
+        "Odhad doby trvání činnosti A = 10; B = 17; C = 13. Celková doba trvání je 40.",
+        "Odhad doby trvání činnosti A = 7,33; B = 14,33; C = 10,83. Celková doba trvání je 32,5.",
+        "Odhad doby trvání činnosti A = 10; B = 14,5; C = 12. Celková doba trvání je 36,5.",
+        "Odhad doby trvání činnosti A = 7,5; B = 16; C = 11. Celková doba trvání je 34,5."
+      ],
+      "correct": [2],
+      "img": "img/projektove-rizeni/q053.jpg",
+      "info": "Pojem: Metoda PERT (Program Evaluation and Review Technique, metoda hodnocení a kontroly projektu) odhaduje dobu činnosti ze tří odhadů.\nTři odhady jsou: optimistický (a), nejpravděpodobnější (m) a pesimistický (b). Očekávaná doba je t_e = (a + 4m + b) / 6. Nejpravděpodobnější odhad má váhu 4, krajní odhady váhu 1.\nSamotné optimistické nebo samotné pesimistické časy PERT nepoužívá. Prostý průměr krajních odhadů také ne, protože ignoruje m.\nPostup: A: (6 + 4 × 7 + 10) / 6 = 44 / 6 = 7,33. B: (13 + 4 × 14 + 17) / 6 = 86 / 6 = 14,33. C: (8 + 4 × 11 + 13) / 6 = 65 / 6 = 10,83.\nVazba konec-začátek znamená, že činnost začne, až předchozí skončí. Doby se proto sčítají: 44 / 6 + 86 / 6 + 65 / 6 = 195 / 6 = 32,5 týdne.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Mezi používané síťové diagramy patří mj.",
+          "pages": "115"
+        },
+        {
+          "ref": "PMBOK: odhad trvání činností, tříbodový odhad (PERT)",
+          "note": "Vzorec ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 15 b.) - Vypočtěte pomocí metody PERT očekávanou dobu trvání aktivit A, B, C a současně celkovou očekávanou dobu trvání aktivit v případě, že aktivity A, B, C na sebe navazují vazbou konce začátek.",
+      "opts": [
+        "Odhad doby trvání činnosti A = 27; B = 60; C = 37. Celková doba trvání je 124.",
+        "Odhad doby trvání činnosti A = 27; B = 65; C = 37. Celková doba trvání je 129.",
+        "Odhad doby trvání činnosti A = 30,5; B = 60; C = 43,5. Celková doba trvání je 134.",
+        "Odhad doby trvání činnosti A = 28,17; B = 61,67; C = 36,5. Celková doba trvání je 126,34.",
+        "Odhad doby trvání činnosti A = 30,5; B = 65; C = 43,5. Celková doba trvání je 139."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q054.jpg",
+      "info": "Pojem: Metoda PERT (Program Evaluation and Review Technique, metoda hodnocení a kontroly projektu) odhaduje dobu činnosti ze tří odhadů.\nTři odhady jsou: optimistický (a), nejpravděpodobnější (m) a pesimistický (b). Očekávaná doba je t_e = (a + 4m + b) / 6. Nejpravděpodobnější odhad má váhu 4, krajní odhady váhu 1.\nSamotné nejpravděpodobnější časy PERT nepoužívá. Prostý průměr a a b také ne, protože ignoruje m.\nPostup: A: (14 + 4 × 27 + 47) / 6 = 169 / 6 = 28,17. B: (41 + 4 × 60 + 89) / 6 = 370 / 6 = 61,67. C: (29 + 4 × 37 + 42) / 6 = 219 / 6 = 36,5.\nVazba konec-začátek znamená, že se doby sčítají: 28,17 + 61,67 + 36,5 = 126,34 týdne. Přesně vychází 758 / 6 = 126,33, rozdíl dělá zaokrouhlení.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Mezi používané síťové diagramy patří mj.",
+          "pages": "115"
+        },
+        {
+          "ref": "PMBOK: odhad trvání činností, tříbodový odhad (PERT)",
+          "note": "Vzorec ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 15 b.) - Z následující tabulky dopočtěte nejdříve možný konec a určete celkovou rezervu u činnosti 1 až 4.",
+      "opts": [
+        "Nejdříve možné konce činností 1 až 4: 40, 16, 40, 21. Celkové rezervy činností 1 až 4: 25, 0, 52, 75.",
+        "Nejdříve možné konce činností 1 až 4: 25, 9, 52, 75. Celkové rezervy činností 1 až 4: 20, 1, 0, 8.",
+        "Nejdříve možné konce činností 1 až 4: 25, 9, 52, 75. Celkové rezervy činností 1 až 4: 30, 16, 40, 21.",
+        "Nejdříve možné konce činností 1 až 4: 30, 16, 40, 21. Celkové rezervy činností 1 až 4: 25, 9, 52, 75.",
+        "Nejdříve možné konce činností 1 až 4: 35, 16, 40, 88. Celkové rezervy činností 1 až 4: 35, 9, 52, 96."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q055.jpg",
+      "info": "Pojem: Nejdříve možný konec (KM) je nejbližší okamžik, kdy činnost může skončit. Celková rezerva (RC) je čas, o který se činnost smí zpozdit bez posunu konce projektu.\nPlatí KM = ZM + t, kde ZM je nejdříve možný začátek a t trvání. Platí RC = ZP - ZM, kde ZP je nejpozději přípustný začátek. Totéž dá RC = KP - KM, kde KP je nejpozději přípustný konec.\nNejpozději přípustný začátek ani konec není nejdříve možný konec. Obě hodnoty jsou v tabulce zadané. Rezerva také není konec činnosti.\nKonce: činnost 1: 10 + 20 = 30; činnost 2: 14 + 2 = 16; činnost 3: 27 + 13 = 40; činnost 4: 13 + 8 = 21.\nRezervy: činnost 1: 35 - 10 = 25; činnost 2: 23 - 14 = 9; činnost 3: 79 - 27 = 52; činnost 4: 88 - 13 = 75.\nKontrola druhým vzorcem sedí: 55 - 30 = 25; 25 - 16 = 9; 92 - 40 = 52; 96 - 21 = 75.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        },
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 2: celková rezerva a kontrola dvěma odečty",
+          "pages": "0:27:59-0:29:55"
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 15 b.) - Z následující tabulky dopočtěte nejdříve možný konec činností, určete celkové rezervy a kritickou cestu.",
+      "opts": [
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 2, 4, 0, 0. Na kritické cestě leží činnosti C,D.",
+        "Nejdříve možné konce činností A až D: 15, 12, 19, 10. Celkové rezervy činností A až D: 0, 4, 4, 4. Na kritické cestě leží činnosti A,D.",
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 0, 0, 4, 4. Na kritické cestě leží činnosti C,D.",
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 0, 0, 4, 4. Na kritické cestě leží činnosti A, B.",
+        "Nejdříve možné konce činností A až D: 12, 15, 10, 19. Celkové rezervy činností A až D: 0, 0, 1, 1. Na kritické cestě leží činnosti A,B."
+      ],
+      "correct": [0],
+      "img": "img/projektove-rizeni/q056.jpg",
+      "info": "Pojem: Kritická cesta je nejdelší cesta sítí. Udává nejkratší možnou dobu projektu a leží na ní činnosti s nulovou celkovou rezervou.\nPlatí KM = ZM + t a RC = ZP - ZM. V tabulce jsou poslední dva sloupce omylem nadepsané Nejdříve přípustný. Ve skutečnosti jde o nejpozději přípustný začátek (ZP) a konec (KP).\nKonce: A: 0 + 12 = 12; B: 12 + 3 = 15; C: 0 + 10 = 10; D: 10 + 9 = 19.\nRezervy: A: 2 - 0 = 2; B: 16 - 12 = 4; C: 0 - 0 = 0; D: 10 - 10 = 0.\nČinnosti A a B mají rezervu, takže na kritické cestě neleží. Nulovou rezervu mají C a D. Kritická cesta C-D trvá 10 + 9 = 19 dní.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        },
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 2: celková rezerva a kritická cesta",
+          "pages": "0:27:59-0:29:55"
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Sestavte síťový graf a určete celkovou dobu trvání projektu a určete rezervy jednotlivých činností. K dispozici máte tyto informace: / Činnost A může začít ihned a trvá 4 týdny. Činnost B může začít v okamžiku dokončení činnosti A a trvá 2 týdny. Činnost C může začít v okamžiku dokončení činnosti A a trvá 8 týdnů. Činnost D může začít v okamžiku dokončení činnosti B a trvá 7 týdnů. Činnost E může začít v okamžiku dokončení činnosti D a C a trvá 3 týdny.",
+      "opts": [
+        "Celková doba trvání projektu je 15 týdnů a rezervy činností jsou A = 0, B = 0, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 13 týdnů a rezervy činností jsou A = 0, B = 0, C = 1, D = 0, E = 0.",
+        "Celková doba trvání projektu je 16 týdnů a rezervy činností jsou A = 0, B = 2, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 16 týdnů a rezervy činností jsou A = 0, B = 0, C = 1, D = 0, E = 0.",
+        "Celková doba trvání projektu je 12 týdnů a rezervy činností jsou A = 0, B = 1, C = 1, D = 0, E = 0."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q057.jpg",
+      "info": "Pojem: Síťový graf zobrazuje činnosti a jejich návaznosti. Délku projektu určuje nejdelší cesta grafem, kritická cesta.\nVýpočet vpřed: činnost začne, až skončí všechny její předchůdkyně. Do začátku se proto bere největší z jejich konců. Výpočet vzad: činnost musí skončit, než začne její nejbližší následnice.\nTermíny: A: 0 až 4; B: 4 až 6; C: 4 až 12; D: 6 až 13. E čeká na D i C, takže začne v 13 a skončí v 16.\nProjekt trvá 16 týdnů. Cesta A-B-D-E je 4 + 2 + 7 + 3 = 16 a má nulové rezervy. Cesta A-C-E je 4 + 8 + 3 = 15, tedy o týden kratší.\nČinnost C končí v 12, ale E začíná až ve 13. Rezerva C je proto 13 - 12 = 1 týden. Činnost B na kritické cestě leží, její rezerva je 0.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Analýza časového plánu",
+          "pages": "112"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Sestavte síťový graf, určete celkovou dobu trvání projektu a určete rezervy jednotlivých činností. K dispozici máte tyto informace: / Činnost A může začít ihned a trvá 3 týdny. Činnost B může začít v okamžiku dokončení činnosti A a trvá 3 týdny. Činnost C může začít v okamžiku dokončení činnosti A a trvá 6 týdnů. Činnost D může začít v okamžiku dokončení činnosti B a trvá 8 týdnů. Činnost E může začít v okamžiku dokončení činnosti D a trvá 4 týdny.",
+      "opts": [
+        "Celková doba trvání projektu je 13 týdnů a rezervy činností jsou A = 0, B = 0, C = 5, D = 0, E = 0.",
+        "Celková doba trvání projektu je 13 týdnů a rezervy činností jsou A = 0, B = 0, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 18 týdnů a rezervy činností jsou A = 0, B = 0, C = 9, D = 0, E = 0.",
+        "Celková doba trvání projektu je 18 týdnů a rezervy činností jsou A = 0, B = 5, C = 0, D = 0, E = 0.",
+        "Celková doba trvání projektu je 18 týdnů a rezervy činností jsou A = 0, B = 0, C = 1, D = 0, E = 0."
+      ],
+      "correct": [2],
+      "img": "img/projektove-rizeni/q058.jpg",
+      "info": "Pojem: Síťový graf zobrazuje činnosti a jejich návaznosti. Délku projektu určuje nejdelší cesta grafem, kritická cesta.\nČinnost bez následnice směřuje do cíle projektu. Smí tedy skončit nejpozději v okamžiku, kdy končí celý projekt.\nTermíny: A: 0 až 3; B: 3 až 6; C: 3 až 9; D: 6 až 14. E čeká jen na D, takže začne ve 14 a skončí v 18.\nProjekt trvá 18 týdnů. Cesta A-B-D-E je 3 + 3 + 8 + 4 = 18 a má nulové rezervy. Cesta A-C je jen 3 + 6 = 9.\nČinnost C nemá následnici a může skončit až v 18. Její rezerva je 18 - 9 = 9 týdnů. Činnost B na kritické cestě leží, její rezerva je 0.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        },
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 2: činnost směřující do cíle projektu, zpětný chod",
+          "pages": "0:48:02-0:50:03"
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 2 měsících metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn v harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za druhý měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 50% AC 540 tis. Kč / činnost B - hotovo 100% 1.000 tis. Kč / činnost C - hotovo 80% 1.800 tis. Kč / Uvedený projekt určete vyhodnoťte z hlediska času a nákladů a odhad nákladů při dokončení (EAC).",
+      "opts": [
+        "Projekt je ve zpoždění, náklady jsou podle plánu. Odhad nákladů při dokončení činí 4200 Kč.",
+        "Projekt je v předstihu, náklady jsou překračovány. Odhad nákladů při dokončení činí 4290 Kč.",
+        "Projekt je ve zpoždění, náklady jsou podle plánu. Odhad nákladů při dokončení činí 4100 Kč.",
+        "Projekt je v předstihu, náklady jsou podle plánu. Odhad nákladů při dokončení činí 4200 Kč.",
+        "Projekt je ve zpoždění, náklady jsou překračovány. Odhad nákladů při dokončení činí 4330 Kč."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q059.jpg",
+      "info": "Pojem: EVM (Earned Value Method, metoda dosažené hodnoty) porovnává plán, hotovou práci a skutečné náklady. PV je plánovaná hodnota, EV dosažená hodnota (rozpočet skutečně hotové práce) a AC skutečné náklady.\nProváděcí (časová) odchylka je SV = EV - PV; nákladová odchylka je CV = EV - AC. Záporná SV znamená zpoždění, kladná předstih, nulová plán. Záporná CV znamená překročení nákladů, kladná úsporu.\nEAC (Estimate At Completion, odhad nákladů při dokončení) se tu počítá jako AC + (BAC - EV), kde BAC je celkový rozpočet. Vzorec předpokládá, že zbylá práce poběží podle rozpočtu. Rovná-li se EAC rozpočtu, jsou náklady přesně podle plánu.\nPostup: rozpočet A 900, B 800, C 2 500, BAC 4 200; PV za 2 měsíce = 1 300 + 1 600 = 2 900. EV = 0,5 × 900 + 1 × 800 + 0,8 × 2 500 = 450 + 800 + 2 000 = 3 250; AC = 540 + 1 000 + 1 800 = 3 340.\nSV = 3 250 - 2 900 = +350, projekt je v předstihu. CV = 3 250 - 3 340 = -90, náklady se překračují. EAC = 3 340 + (4 200 - 3 250) = 4 290 (vše v tisících Kč).",
+      "read": [
+        {
+          "ref": "PMBOK: řízení nákladů, analýza dosažené hodnoty (EVM)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Sestavte uzlově definovaný graf, pomocí metody CPM určete celkovou dobu trvání, kritickou cestu a celkovou rezervu činnosti D.",
+      "opts": [
+        "Celková doba trvání projektu je 14, na kritické cestě leží činnosti A-B-D, celková rezerva činnosti D je 0.",
+        "Celková doba trvání projektu je 10, na kritické cestě leží činnosti A-C-D, celková rezerva činnosti D je 3.",
+        "Celková doba trvání projektu je 11, na kritické cestě leží činnosti A-B-C-E, celková rezerva činnosti D je 0.",
+        "Celková doba trvání projektu je 16, na kritické cestě leží činnosti A-B-C-E, celková rezerva činnosti D je 1.",
+        "Celková doba trvání projektu je 9, na kritické cestě leží činnosti A-B-D, celková rezerva činnosti D je 3."
+      ],
+      "correct": [3],
+      "img": "img/projektove-rizeni/q060.jpg",
+      "info": "Pojem: CPM (Critical Path Method, metoda kritické cesty) najde nejdelší cestu sítí. Uzlově definovaný graf má činnosti v uzlech a vazby na hranách.\nVazby ze zadání: A předchází B a D; B předchází C; C i D předchází E. Činnost D tedy navazuje na A, ne na B.\nVýpočet vpřed: A: 0 až 7; B: 7 až 11; D: 7 až 13; C: 11 až 14. E čeká na C i D, začne ve 14 a skončí v 16.\nProjekt trvá 16. Cesta A-B-C-E je 7 + 4 + 3 + 2 = 16 a je kritická. Cesta A-D-E je 7 + 6 + 2 = 15, tedy kratší.\nČinnost D musí skončit nejpozději ve 14, kdy začíná E. Končí ve 13, proto je její celková rezerva 14 - 13 = 1.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Analýza časového plánu",
+          "pages": "112"
+        },
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 2: výpočet vpřed v uzlově orientovaném grafu",
+          "pages": "0:13:05-0:14:15"
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 2 měsících metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn v harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za druhý měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 90% AC 650 tis. Kč / činnost B - hotovo 80% AC 1.500 tis. Kč / činnost C - hotovo 70% AC 1.550 tis. Kč / Pro uvedený projekt určete nákladovou (CV) a prováděcí (SV) odchylku a vyhodnoťte stav realizace projektu z hlediska času a nákladů.",
+      "opts": [
+        "Prováděcí odchylka SV = -70; nákladová odchylka CV = -370. Projekt je v předstihu a nákladnější.",
+        "Prováděcí odchylka SV = -70; nákladová odchylka CV = -370. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí odchylka SV = -370; nákladová odchylka CV = -70. Projekt je v předstihu a levnější.",
+        "Prováděcí odchylka SV = -70; nákladová odchylka CV = -370. Projekt je ve zpoždění a levnější.",
+        "Prováděcí odchylka SV = -370; nákladová odchylka CV = -70. Projekt je ve zpoždění a nákladnější."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q061.jpg",
+      "info": "Pojem: EVM (Earned Value Method, metoda dosažené hodnoty) porovnává plán, hotovou práci a skutečné náklady. PV je plánovaná hodnota, EV dosažená hodnota (rozpočet skutečně hotové práce) a AC skutečné náklady.\nProváděcí (časová) odchylka je SV = EV - PV; nákladová odchylka je CV = EV - AC. Záporná SV znamená zpoždění, kladná předstih, nulová plán. Záporná CV znamená překročení nákladů, kladná úsporu.\nPostup: rozpočet A 600, B 1 300, C 2 500. PV za 2 měsíce = 1 450 + 1 950 = 3 400.\nEV = 0,9 × 600 + 0,8 × 1 300 + 0,7 × 2 500 = 540 + 1 040 + 1 750 = 3 330.\nAC = 650 + 1 500 + 1 550 = 3 700. SV = 3 330 - 3 400 = -70, projekt je ve zpoždění. CV = 3 330 - 3 700 = -370, projekt je nákladnější.\nHodnota -70 patří prováděcí odchylce (čas), hodnota -370 nákladové. Částky jsou v tisících Kč.",
+      "read": [
+        {
+          "ref": "PMBOK: řízení nákladů, analýza dosažené hodnoty (EVM)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 1 měsíci metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn na harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za první měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 45% AC 500 tis. Kč / činnost B - hotovo 80% AC 480 tis. Kč / činnost C - hotovo 50% AC 1.000 tis. Kč / Pro uvedený projekt určete nákladový (CPI) a prováděcí (SPI) index a vyhodnoťte stav realizace projektu z hlediska času a nákladů.",
+      "opts": [
+        "Prováděcí index SPI = 0,97; nákladový index CPI = 0,86. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí index SPI = 1,07; nákladový index CPI = 0,5. Projekt je v předstihu a nákladnější.",
+        "Prováděcí index SPI = 0,752; nákladový index CPI = 1,053. Projekt je v předstihu a nákladnější.",
+        "Prováděcí index SPI = 0,97; nákladový index CPI = 0,85. Projekt je v předstihu a levnější.",
+        "Prováděcí index SPI = 0,95; nákladový index CPI = 1,45. Projekt je ve zpoždění a levnější."
+      ],
+      "correct": [0],
+      "img": "img/projektove-rizeni/q062.jpg",
+      "info": "Pojem: EVM (Earned Value Method, metoda dosažené hodnoty) porovnává plán, hotovou práci a skutečné náklady. PV je plánovaná hodnota, EV dosažená hodnota (rozpočet skutečně hotové práce) a AC skutečné náklady.\nSPI (prováděcí index) = EV / PV ukazuje časový postup; CPI (nákladový index) = EV / AC ukazuje hospodárnost. Index pod 1 znamená zpoždění, případně vyšší náklady. Index nad 1 znamená předstih, případně úsporu.\nPostup: rozpočet A 900, B 500, C 1 800; PV za 1. měsíc = 450 + 500 + 800 = 1 750.\nEV = 0,45 × 900 + 0,8 × 500 + 0,5 × 1 800 = 405 + 400 + 900 = 1 705. AC = 500 + 480 + 1 000 = 1 980.\nSPI = 1 705 / 1 750 = 0,974, tedy 0,97; projekt je mírně ve zpoždění. CPI = 1 705 / 1 980 = 0,861, tedy 0,86; projekt je nákladnější.\nZaokrouhlení 0,861 na 0,86 je správné, 0,85 ne. Ve jmenovateli má SPI hodnotu PV a CPI hodnotu AC.",
+      "read": [
+        {
+          "ref": "PMBOK: řízení nákladů, analýza dosažené hodnoty (EVM)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 25 b.) - Pro uvedený projekt máte k dispozici celkem 4 pracovníky. Určete celkovou dobu trvání a kritickou cestu a navrhněte opatření, aby po celou dobu realizace projektu byli zapojeni maximálně 4 pracovníci. O kolik se změní doba trvání projektu?",
+      "opts": [
+        "Celková doba trvání projektu je 15. Na kritické cestě leží činnosti A-C-E-F. Posunutí začátku u činnosti E o 2. č.j. Doba trvání projektu se změní na 17.",
+        "Celková doba trvání projektu je 17. Na kritické cestě leží činnosti A-B-D-F. Posunutí začátku u činnosti E o 2. č.j. Doba trvání projektu se nezmění.",
+        "Celková doba trvání projektu je 17. Na kritické cestě leží činnosti A-C-E-F. Posunutí začátku u činnosti E o 2. č.j. Doba trvání projektu se prodlouží o 2 č.j.",
+        "Celková doba trvání projektu je 15. Na kritické cestě leží činnosti A-B-D-F. Posunutí začátku u činnosti G o 5. č.j. Doba trvání projektu se nezmění.",
+        "Celková doba trvání projektu je 17. Na kritické cestě leží činnosti A-B-D-F. Na projektu nikdy nepracují více jak 4 pracovníci. Opatření nejsou nutná. Doba trvání projektu se nezmění."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q063.jpg",
+      "info": "Pojem: Vyrovnání zdrojů znamená posunout činnosti v rámci jejich rezervy tak, aby nikdy nepracovalo víc lidí, než je k dispozici.\nNejdřív najdi kritickou cestu. Doby: A 3, B 5, C 2, D 4, E 5, F 5, G 2; cesta A-B-D-F je 3 + 5 + 4 + 5 = 17. Cesta A-C-E-F je 3 + 2 + 5 + 5 = 15, kritická tedy není.\nPracovníci: A 2, B 2, C 2, D 3, E 1, F 2, G 2. Při nejdřívějších začátcích běží v čase 5 až 7 zároveň B (2 lidé), E (1) a G (2). To je 5 lidí, tedy o jednoho víc než 4.\nČinnost mimo kritickou cestu smí začít později jen o svou rezervu. E má rezervu 17 - 15 = 2. Posun E na čas 7 až 12 sníží vytížení nejvýše na 4 lidi.\nKonec projektu zůstane 17, protože posun leží v rezervě. G nelze odsunout o 5 na čas 10 až 12. Tam běží D (3 lidé) a G (2), zase 5 lidí.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        },
+        {
+          "ref": "PMBOK: řízení zdrojů, vyrovnání zdrojů (resource leveling)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Typy komunikace existující v projektovém řízení jsou:",
+      "opts": [
+        "pouze neformální ústní a písemná",
+        "formální a neformální, ústní i písemná",
+        "pouze ústní",
+        "pouze neformální ústní",
+        "pouze formální písemná"
+      ],
+      "correct": [1],
+      "info": "Pojem: Komunikace v projektu je předávání informací mezi členy týmu, zákazníkem a dalšími zainteresovanými stranami.\nKomunikaci dělíme podle dvou hledisek: podle pravidel na formální a neformální, podle formy na ústní a písemnou.\nFormální komunikace má pevná pravidla a podobu: porady se zápisem, zprávy o stavu, smlouvy. Neformální komunikace je rozhovor u kávy nebo rychlá zpráva kolegovi.\nÚstní i písemná forma se vyskytuje ve formální i neformální komunikaci. V projektu se používají všechny kombinace.\nProjekt proto nevystačí jen s jednou formou. Slidy požadují efektivní šíření informací a kvalitní zprávy o stavu projektu.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Řízení komunikace (Project Communication Management)",
+          "pages": "24"
+        },
+        {
+          "ref": "PMBOK: řízení komunikace, formální a neformální, ústní a písemná",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Fáze přijetí změny:",
+      "opts": [
+        "jsou zkoumání a přijetí",
+        "jsou odmítání, odpor, zkoumání a přijetí",
+        "jsou odmítání a přijetí",
+        "neexistují",
+        "je pouze přijetí"
+      ],
+      "correct": [1],
+      "info": "Pojem: Fáze přijetí změny popisují, jak lidé reagují na novinku, kterou projekt přináší, třeba na nový systém nebo postup.\nModel přijetí změny má čtyři fáze: odmítání, odpor, zkoumání a přijetí.\nOdmítání: lidé změnu popírají (to nepotřebujeme). Odpor: aktivně jí vzdorují.\nZkoumání: změnu zkoušejí a zjišťují, co přináší. Přijetí: berou ji za svou a začnou ji používat.\nOdmítání i odpor jsou přirozené a manažer s nimi počítá. Lidi fázemi provede vysvětlováním a školením.\nFáze existují a následují po sobě. Změna se nepřijme hned: lidé nejdřív odmítnou, pak vzdorují, pak zkoumají a nakonec přijmou.",
+      "read": [
+        {
+          "ref": "Model křivky změny (Scott a Jaffe): odmítání, odpor, zkoumání, přijetí",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Jakou roli v týmu má Inovátor?",
+      "opts": [
+        "zabraňuje konfliktům v týmu, umožňuje efektivní jednání",
+        "tvoří nové návrhy, řeší složité problémy, důležitý pro základní fáze projektu",
+        "usiluje o dokončení projektu v daných termínech",
+        "navazuje vnější kontakty, zabezpečuje jednání, získávají informace",
+        "okamžitě realizuje nové nápady"
+      ],
+      "correct": [1],
+      "info": "Pojem: Inovátor je týmová role tvůrčího, nápaditého a nekonvenčního člena týmu, který tvoří nové návrhy a řeší obtížné problémy.\nJe důležitý pro základní fáze projektu, kdy se hledá řešení. Nezabývá se detaily.\nSlidy podle Belbina uvádějí devět týmových rolí: Inovátor, Vyhledavač zdrojů, Koordinátor, Usměrňovač, Monitor vyhodnocovač, Stmelovač, Realizátor, Kompletovač a Specialista.\nStmelovač je kooperativní a diplomatický. Urovnává spory a zabraňuje konfliktům, takže umožňuje efektivní jednání.\nKompletovač odevzdává výsledky včas, hlídá tedy termíny. Vyhledavač zdrojů rozvíjí vnější kontakty a hledá příležitosti.\nRealizátor přivádí myšlenky a nápady v život. Inovátor nápady vymýšlí, ale sám je neprovádí.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Role v týmu, tabulka rolí Inovátor až Specialista",
+          "pages": "48-49"
+        }
+      ]
+    },
+    {
+      "q": "Směrnice ČSN/ISO 10006 pro management jakosti projektů:",
+      "opts": [
+        "je využitelný pouze pro rozsáhlé projekty",
+        "obsahuje obecné zásady a postupy řízení jakosti projektů",
+        "je závazný standard, který nastavuje management kvality v projektech",
+        "má pouze doporučující charakter",
+        "je standard použitelný pro všechny typy projektů"
+      ],
+      "correct": [1, 3],
+      "info": "Pojem: ČSN ISO 10006 je norma s doporučeními pro řízení kvality (jakosti) v projektech.\nProč: Norma obsahuje obecné zásady a postupy řízení kvality projektů. Má doporučující charakter, takže ji firma nemusí dodržovat a nedá se podle ní certifikovat.\nChyták: Norma není závazná. Neplatí jen pro rozsáhlé projekty.\nRozpor: Podle testu možnost „standard použitelný pro všechny typy projektů\" neplatí. Podle samotné normy ISO 10006 je ale určená pro projekty jakékoli složitosti, malé i velké, krátké i dlouhé, bez ohledu na druh výsledku."
+    },
+    {
+      "q": "Nepřímé náklady projektu jsou tvořeny:",
+      "opts": [
+        "jízdné, stravné realizačního týmu",
+        "náklady na vytápění budov",
+        "nákup licencí a patentů",
+        "část osobních nákladů managementu organizace",
+        "úklid a opravy budov užívané organizací"
+      ],
+      "correct": [1, 3, 4],
+      "info": "Pojem: Nepřímé náklady (režie) nejde přiřadit jednomu konkrétnímu projektu. Organizace je platí za celý svůj chod a projektům je rozpočítá.\nPřímé náklady vznikají jen kvůli danému projektu a jde je projektu přiřadit přímo. Nepřímé vznikají, i když projekt neběží.\nNepřímé náklady tvoří vytápění budov, úklid a opravy budov užívané organizací a část osobních nákladů managementu organizace. Projektu se přidělí jen jejich podíl.\nPřímé náklady jsou jízdné a stravné realizačního týmu a nákup licencí a patentů pořízených pro projekt. Vzniknou jen kvůli projektu, proto je projekt nese celé.\nPříklad: nepřímým nákladem je i topení v kanceláři, kde projekt sídlí. Přímým nákladem je jízdenka člena týmu na schůzku se zákazníkem.",
+      "read": [
+        {
+          "ref": "PMBOK: řízení nákladů, přímé a nepřímé náklady",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Mezi skupiny procesů dle ISO 10006 nepatří:",
+      "opts": [
+        "měření, analýza, zlepšování",
+        "strategie",
+        "uzavírání",
+        "realizace produktu",
+        "zdroje"
+      ],
+      "correct": [0, 1, 3, 4],
+      "info": "Pojem: ČSN ISO 10006 je norma s doporučeními pro řízení kvality v projektech. Dělí se do kapitol a skupin procesů.\nProč: Podle testu je mezi nabízenými možnostmi jedinou skupinou procesů uzavírání. Ostatní čtyři test za skupiny procesů podle ISO 10006 nepovažuje.\nChyták: Uzavírání zní jako skupina procesů standardu PMI, a právě to test uznává.\nRozpor: Podle testu do skupin procesů ISO 10006 nepatří zdroje, realizace produktu, strategie ani měření, analýza a zlepšování. Podle normy ISO 10006 jsou ale právě management zdrojů, realizace produktu, strategický proces a měření, analýza a zlepšování její hlavní části. Uzavření projektu je jen jeden z procesů uvnitř."
+    },
+    {
+      "q": "Za dosažení přínosu projektu odpovídá:",
+      "opts": [
+        "určený stakeholder",
+        "vlastník projektu",
+        "projektový manager",
+        "tiskový mluvčí projektu",
+        "osoba určená na základě analýzy zpracované pomocí metody RIPRAN"
+      ],
+      "correct": [2],
+      "info": "Pojem: Přínos projektu je užitek, který výsledek projektu přinese po jeho dokončení, třeba vyšší tržby nebo nižší náklady.\nProč: Podle testu za dosažení přínosu odpovídá projektový manažer. Manažer řídí projekt tak, aby výstupy přinesly očekávaný užitek.\nChyták: Stakeholder obecně ani tiskový mluvčí za přínos neodpovídají. RIPRAN je metoda analýzy rizik a odpovědné osoby neurčuje.\nRozpor: Podle testu odpovídá manažer. Podle učebnice manažer odpovídá za výstupy a cíl projektu, ale přínosy se projeví až po předání a ovlivňují je vnější vlivy. Za přínosy proto odpovídá vlastník projektu, například v PRINCE2 vlastník (executive) a hlavní uživatel."
+    },
+    {
+      "q": "Posuzování dopadu a pravděpodobnosti výskytu identifikovaných rizik je nazýváno jako: (bez záruky)",
+      "opts": [
+        "kvalitativní výsledková analýza",
+        "rizikový management",
+        "kvantitativní výsledková analýza",
+        "řízení kvality",
+        "ohodnocování rizik"
+      ],
+      "correct": [1],
+      "info": "Pojem: Při práci s riziky se nejdřív rizika najdou (identifikace) a pak se posoudí, jak jsou pravděpodobná a jak velkou škodu by způsobila.\nProč: Podle testu se posuzování dopadu a pravděpodobnosti nazývá rizikový management.\nChyták: Řízení kvality s riziky nesouvisí. Výsledková analýza není ustálený pojem.\nRozpor: Podle testu jde o rizikový management. Podle učebnice je rizikový management celý proces od plánu po kontrolu rizik a posouzení dopadu a pravděpodobnosti je jeho dílčí krok, ohodnocování rizik. Správně by tedy měla být možnost „ohodnocování rizik\"."
+    },
+    {
+      "q": "Procesy ukončování je nutné provést: (bez záruky)",
+      "opts": [
+        "k získání formálního odsouhlasení od zákazníka",
+        "u všech projektových fází",
+        "v okamžiku vystavení konečné faktury",
+        "pouze při ukončení projektu z důvodu dosažení cílů",
+        "při ukončení projektu z jakéhokoliv důvodu"
+      ],
+      "correct": [0, 1, 4],
+      "info": "Pojem: Procesy ukončování uzavírají jednotlivou fázi projektu nebo celý projekt. Patří sem převzetí výsledku, uzavření smluv a sepsání ponaučení.\nProvádějí se u všech projektových fází. Uzavření fáze znamená přezkoumat hmotné výstupy a určit, zda projekt může pokračovat do další fáze.\nProvádějí se také při ukončení projektu z jakéhokoliv důvodu. Platí to i pro předčasné zrušení, nejen pro dosažení cílů.\nUkončování slouží k získání formálního odsouhlasení od zákazníka, že výsledek přebírá.\nOkamžik vystavení konečné faktury ukončování nespouští. Faktura je jen jeden z kroků. Zrušený projekt se uzavírá stejně pečlivě jako úspěšný, aby se uvolnily zdroje a zapsalo ponaučení.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Uzavření fáze",
+          "pages": "58"
+        }
+      ]
+    },
+    {
+      "q": "Které z následujících kroků nejsou prováděny v průběhu ukončování projektové fáze nebo ukončování projektu?",
+      "opts": [
+        "sestavení konečné faktury",
+        "zpracování analýzy CBA (Cost Benefit Analysis)",
+        "zpracování poučení z průběhu projektu",
+        "získání formálního souhlasu od zákazníka",
+        "revize rozsahu projektu se zákazníkem"
+      ],
+      "correct": [1],
+      "info": "Pojem: Ukončování projektu nebo fáze je závěrečná skupina procesů. Uzavírá práci, smlouvy a dokumentaci.\nPři ukončování se sestavuje konečná faktura, zpracovává poučení z průběhu projektu a získává formální souhlas zákazníka. Provádí se také revize rozsahu projektu se zákazníkem. Ta ověří, že bylo dodáno vše dohodnuté.\nAnalýza CBA (Cost Benefit Analysis, analýza nákladů a přínosů) porovnává, zda přínosy projektu převýší jeho náklady.\nCBA patří do předprojektové fáze. Slidy ji uvádějí mezi metodami této fáze vedle BEP (plán realizace). Dělá se, když se rozhoduje, zda projekt vůbec spustit, a při ukončování se nedělá.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Předprojektová fáze",
+          "pages": "60"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Uzavření fáze",
+          "pages": "58"
+        }
+      ]
+    },
+    {
+      "q": "Trojimperativ projektu je:",
+      "opts": [
+        "cíl projektu vyjádřený v dimenzích cíl, kvalita, náklady",
+        "cíl projektu vyjádřený v dimenzích cíl, čas, náklady",
+        "cíl projektu vyjádřený v dimenzích kvalita, čas a náklady",
+        "cíl projektu vyjádřený v dimenzích produkt, proces, prostor",
+        "cíl projektu vyjádřený v dimenzích kvalita, náklady, prostor"
+      ],
+      "correct": [1, 2],
+      "info": "Pojem: Trojimperativ projektu (trojí omezení) je cíl projektu vyjádřený ve třech provázaných dimenzích.\nTrojimperativ má tři dimenze: cíl (CO), čas (KDY) a náklady (ZA KOLIK). Slidy ho popisují jako vazbu mezi definovaným cílem, vymezeným časem a přidělenými zdroji.\nCíl se také nazývá rozsah nebo kvalita. Přednášející řekla, že jde o totéž: obrysy a specifikace projektu. Cíl, rozsah a kvalita jsou tedy jedna a tatáž dimenze.\nČas je harmonogram. Náklady jsou rozpočet. Žádná dimenze se nevynechává, čas i náklady jsou vždy součástí.\nProstor, produkt a proces mezi dimenze trojimperativu nepatří.\nZměna jednoho parametru ovlivní ostatní. Rychlejší projekt bývá dražší nebo méně kvalitní.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Trojimperativ Projektu",
+          "pages": "90"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: trojimperativ",
+          "pages": "0:11:19-0:12:00"
+        }
+      ]
+    },
+    {
+      "q": "Atributy projektu jsou:",
+      "opts": [
+        "jedinečnost, jednoduchost, jistota",
+        "vysoká míra nejistoty, vysoké náklady, časová neomezenost",
+        "jedinečnost, komplexnost, vymezenost, vysoká míra nejistoty, tým",
+        "pouze komplexnost",
+        "nejistota, jedinečnost a nákladovost"
+      ],
+      "correct": [2],
+      "info": "Pojem: Atributy projektu jsou typické vlastnosti, podle kterých projekt poznáme.\nProjekt má tyto atributy: jedinečnost, komplexnost, vymezenost, vysokou míru nejistoty a tým.\nJedinečnost: stejná akce se v téže podobě neopakuje. Komplexnost: projekt propojuje víc oborů a činností. Projekt má všechny tyto atributy najednou, ne jen jeden z nich.\nVymezenost: cíl, čas, rozpočet a zdroje jsou omezené. Projekt proto nemá neomezený čas.\nVysoká míra nejistoty plyne z jedinečnosti, protože chybí zkušenost se stejnou akcí. Projekt proto není jednoduchý ani jistý. Realizuje ho projektový tým.\nVysoké náklady ani nákladovost nejsou atribut projektu. Náklady jsou jen jedna z hranic, které projekt vymezují.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Jak definovat projekt?",
+          "pages": "16"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Kdy použít projektový management",
+          "pages": "18"
+        }
+      ]
+    },
+    {
+      "q": "Milník:",
+      "opts": [
+        "má v časovém plánu nulovou délku trvání",
+        "je událost v projektu, která vyžaduje, aby odběratel schválil další etapu prací",
+        "má v časovém plánu projektu nárok na čas a zdroje",
+        "je okamžik dokončení probíhající činnosti",
+        "je rozhodovací okamžik v životním cyklu projektu"
+      ],
+      "correct": [0, 1, 4],
+      "info": "Pojem: Milník je významná událost v projektu, bod zpětné kontroly, ve kterém se přijímá rozhodnutí nebo přejímka.\nMilník má v časovém plánu nulovou délku trvání. Je to okamžik, ne činnost. Nárok na čas a zdroje mají činnosti, milník ne.\nMilník je rozhodovací okamžik v životním cyklu projektu: pokračovat, změnit plán, nebo projekt zastavit. Často je to událost, kdy odběratel schvaluje další etapu prací.\nMilník neoznačuje konec každé probíhající činnosti. Označuje jen důležitý okamžik, třeba dokončení návrhu nebo předání prototypu.\nChvátalová zdůrazňuje: zahájení je milník, ne fáze. Fáze jsou tři: předprojektová, projektová a poprojektová.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Uzavření fáze, Milník",
+          "pages": "58"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: fáze, etapa, milník",
+          "pages": "0:09:08-0:10:18"
+        }
+      ]
+    },
+    {
+      "q": "SMART cíl projektu:",
+      "opts": [
+        "stanovíme v projektové fázi",
+        "je technika využívaná pro správné stanovení cíle projektu",
+        "představuje vlastnosti, které nemá cíl projektu splňovat",
+        "představuje vlastnosti, které by měl cíl projektu splňovat - specifický, měřitelný, akceptovatelný, realistický a termínovaný",
+        "nemusí být pro úspěšné dosažení výstupů projektu stanoven"
+      ],
+      "correct": [1, 3],
+      "info": "Pojem: SMART je technika pro správné stanovení cíle projektu. Popisuje vlastnosti, které má cíl splňovat.\nPísmena znamenají: Specific (specifický, co nejkonkrétnější), Measurable (měřitelný), Achievable (dosažitelný), Realistic (realistický) a Timely (termínovaný). Slidy Chvátalové uvádějí A jako Achievable, tedy dosažitelný. Starší výklad říká akceptovatelný (přijatelný).\nDobrý cíl splňuje všech pět vlastností. Příklad: cíl Do konce června snížit reklamace o 20 % je SMART. Cíl Zlepšit kvalitu není SMART, protože není měřitelný ani termínovaný.\nS cílem projektu se pracuje už v předprojektové fázi. Ta podle slidů posuzuje, zda má projekt vlastní strategii dosažení cíle. SMART není fáze projektu, je to technika formulace cíle.\nChybějící SMART cíle slidy řadí k selháním manažera, stejně jako cíle, které se pravidelně nerevidují. Bez dobře stanoveného cíle se úspěch projektu nedá změřit.",
+      "read": [
+        {
+          "src": "slidy26",
+          "ref": "Selhání v managerské roli: chybějící cíle a směr",
+          "pages": "54"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 4: SMART nastavení cílů",
+          "pages": "0:22:07-0:22:30"
+        }
+      ]
+    },
+    {
+      "q": "Který z následujících vzorců slouží k určení prováděcí odchylky (SV) v metodě EVM:",
+      "opts": [
+        "AC/EV",
+        "EV-PV",
+        "AC/PV",
+        "AC-EV",
+        "EV/AC"
+      ],
+      "correct": [1],
+      "info": "Pojem: Prováděcí (časová) odchylka SV (Schedule Variance) v metodě EVM ukazuje, jestli je projekt napřed, nebo pozadu oproti plánu.\nVzorec zní SV = EV - PV. EV (dosažená hodnota) je rozpočtová cena práce, která je opravdu hotová. PV (plánovaná hodnota) je cena práce, která měla být hotová podle plánu.\nKladná SV znamená předstih, záporná zpoždění. Příklad: mělo být hotovo za 100, je hotovo za 80, SV = 80 - 100 = -20.\nAC (skutečné náklady) do časové odchylky nepatří, používá se pro náklady. Rozdíl AC - EV je obrácená nákladová odchylka.\nPodíly jsou indexy, ne odchylky. EV / AC je nákladový index CPI. Podíly AC / EV a AC / PV nic z toho neměří.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Co čekat od testu? (EVM)",
+          "pages": "13"
+        },
+        {
+          "ref": "PMBOK: EVM, prováděcí odchylka SV",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 15 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 40% pravděpodobnost zpoždění převzetí dílčích částí produktu s náklady 100 000 Kč. Existuje 10% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 125 000 Kč. S 20% pravděpodobností bude montáž rychlejší, což přinese úsporu 25 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 15%.",
+      "opts": [
+        "Není nutné vytvářet rezervu.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 65 750 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 10 000 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 69 250 Kč."
+      ],
+      "correct": [3],
+      "info": "Pojem: Rezerva pro náhlé případy je částka v rozpočtu, která pokryje očekávané dopady rizik.\nVypočítá se jako očekávaná peněžní hodnota (EMV, expected monetary value). Je to součet všech členů pravděpodobnost × dopad. Hrozba (zdražení) dává kladný člen, příležitost (úspora) záporný.\nÚspory rezervu snižují, proto se odečítají. Je-li celkový součet kladný, rezerva je potřeba.\nPostup: Zpoždění: 0,40 × 100 000 = 40 000. Levnější dodávka: -0,10 × 50 000 = -5 000. Nezapadající díly: 0,15 × 125 000 = 18 750.\nRychlejší montáž: -0,20 × 25 000 = -5 000. Chyby v projektu: 0,15 × 70 000 = 10 500. Součet: 40 000 - 5 000 + 18 750 - 5 000 + 10 500 = 59 250 Kč.\nBez odečtení úspor by vyšlo 69 250 Kč, s přičtením úspor 79 250 Kč. Obojí je chybný postup. Součet je kladný, takže rezerva se vytvořit musí.",
+      "read": [
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 3: výpočet finanční rezervy, znaménka zdražení a zlevnění",
+          "pages": "0:37:35-0:42:05"
+        },
+        {
+          "ref": "PMBOK: kvantitativní analýza rizik, očekávaná peněžní hodnota (EMV)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 20 b.) - Vyhodnoťte průběh projektu po 2 měsících metodou analýzy dosažené hodnoty (EVM). Plánovaný průběh projektu je znázorněn v harmonogramu. Předpokládáme rovnoměrné rozložení nákladů v čase. Při kontrole za druhý měsíc byly zjištěny následující výkony a skutečné náklady na skutečně provedené práce (AC). / činnost A - hotovo 80% AC 750 tis. Kč / činnost B - hotovo 100% AC 1.500 tis. Kč / činnost C - hotovo 70% AC 2.000 tis. Kč / Pro uvedený projekt určete nákladovou (CV) a prováděcí (SV) odchylku a vyhodnoťte stav realizace projektu z hlediska času a nákladů.",
+      "opts": [
+        "Prováděcí odchylka SV = -20; nákladová odchylka CV = -170. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí odchylka SV = -20; nákladová odchylka CV = -170. Projekt je v předstihu a nákladnější.",
+        "Prováděcí odchylka SV = -170; nákladová odchylka CV = -20. Projekt je v předstihu a levnější.",
+        "Prováděcí odchylka SV = -170; nákladová odchylka CV = -20. Projekt je ve zpoždění a nákladnější.",
+        "Prováděcí odchylka SV = -20; nákladová odchylka CV = -170. Projekt je ve zpoždění a levnější."
+      ],
+      "correct": [0],
+      "img": "img/projektove-rizeni/q080.jpg",
+      "info": "Pojem: EVM (Earned Value Method, metoda dosažené hodnoty) porovnává plán, hotovou práci a skutečné náklady. PV je plánovaná hodnota, EV dosažená hodnota (rozpočet skutečně hotové práce) a AC skutečné náklady.\nProváděcí (časová) odchylka je SV = EV - PV; nákladová odchylka je CV = EV - AC. Záporná SV znamená zpoždění, kladná předstih, nulová plán. Záporná CV znamená překročení nákladů, kladná úsporu.\nPostup: rozpočet A 900, B 1 400, C 2 800. PV za 2 měsíce = 1 750 + 2 350 = 4 100.\nEV = 0,8 × 900 + 1 × 1 400 + 0,7 × 2 800 = 720 + 1 400 + 1 960 = 4 080.\nAC = 750 + 1 500 + 2 000 = 4 250. SV = 4 080 - 4 100 = -20, projekt je ve zpoždění. CV = 4 080 - 4 250 = -170, projekt je nákladnější.\nHodnota -20 patří prováděcí odchylce (čas), hodnota -170 nákladové. Částky jsou v tisících Kč.",
+      "read": [
+        {
+          "ref": "PMBOK: řízení nákladů, analýza dosažené hodnoty (EVM)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Rezervu celkovou určíme jako:",
+      "opts": [
+        "součet nejpozději přípustného konce a nejdříve možného konce",
+        "rozdíl nejpozději přípustného konce a nejdříve možného konce",
+        "rozdíl nejdříve možného začátku a nejpozději přípustného začátku",
+        "součet nejpozději přípustného začátku a nejdříve možného začátku",
+        "rozdíl nejpozději přípustného začátku a nejdříve možného začátku"
+      ],
+      "correct": [1, 4],
+      "info": "Pojem: Celková rezerva je čas, o který se činnost smí zpozdit, aniž by se posunul konec celého projektu.\nCelková rezerva je rozdíl dvou termínů, nikdy součet. Má dva rovnocenné vzorce: RC = KP - KM = ZP - ZM.\nKP je nejpozději přípustný konec, KM nejdříve možný konec. ZP je nejpozději přípustný začátek, ZM nejdříve možný začátek.\nOba vzorce dávají stejné číslo. Konec je vždy začátek plus stejná doba trvání, takže rozdíl se nezmění. Příklad: činnost smí skončit nejpozději v čase 20, nejdříve skončí v čase 15, rezerva je 5.\nOdečítá se vždy pozdější termín minus dřívější. Nejpozději přípustný termín nikdy nepřijde před nejdříve možným. Opačný rozdíl proto vyjde záporný.\nČinnost na kritické cestě má celkovou rezervu nula.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        },
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 2: výpočet celkové rezervy",
+          "pages": "0:28:47–0:29:56"
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku s náklady 80 000 Kč. Existuje 5% pravděpodobnost, že dodávka dílčích částí bude o 25 500 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 27 300 Kč. S 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 12%.",
+      "opts": [
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 13 820 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Není třeba rezervy vytvářet.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 22 370 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 19 370 Kč."
+      ],
+      "correct": [0],
+      "info": "Pojem: Rezerva pro náhlé případy je částka v rozpočtu, která pokryje očekávané dopady rizik.\nVypočítá se jako očekávaná peněžní hodnota (EMV, expected monetary value). Je to součet všech členů pravděpodobnost × dopad. Hrozba (zdražení) dává kladný člen, příležitost (úspora) záporný.\nÚspory rezervu snižují, proto se odečítají. Je-li celkový součet kladný, rezerva je potřeba.\nPostup: Zpoždění: 0,10 × 80 000 = 8 000. Levnější dodávka: -0,05 × 25 500 = -1 275. Nezapadající díly: 0,15 × 27 300 = 4 095.\nRychlejší montáž: -0,15 × 20 000 = -3 000. Chyby v projektu: 0,12 × 50 000 = 6 000. Součet: 8 000 - 1 275 + 4 095 - 3 000 + 6 000 = 13 820 Kč.\nKdo úspory přičte místo odečtení, dostane 22 370 Kč. To je chybný postup. Součet je kladný, takže rezerva se vytvořit musí.",
+      "read": [
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 3: výpočet finanční rezervy, znaménka zdražení a zlevnění",
+          "pages": "0:37:35-0:42:05"
+        },
+        {
+          "ref": "PMBOK: kvantitativní analýza rizik, očekávaná peněžní hodnota (EMV)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 10% pravděpodobnost zpoždění převzetí dílčích částí výrobku s náklady 100 000 Kč. Existuje 3% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 15 000 Kč. S 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 10%.",
+      "opts": [
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 20 750 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 23 750 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 14 750 Kč.",
+        "Není třeba rezervy vytvářet."
+      ],
+      "correct": [3],
+      "info": "Pojem: Rezerva pro náhlé případy je částka v rozpočtu, která pokryje očekávané dopady rizik.\nVypočítá se jako očekávaná peněžní hodnota (EMV, expected monetary value). Je to součet všech členů pravděpodobnost × dopad. Hrozba (zdražení) dává kladný člen, příležitost (úspora) záporný.\nÚspory rezervu snižují, proto se odečítají. Je-li celkový součet kladný, rezerva je potřeba.\nPostup: Zpoždění: 0,10 × 100 000 = 10 000. Levnější dodávka: -0,03 × 50 000 = -1 500. Nezapadající díly: 0,15 × 15 000 = 2 250.\nRychlejší montáž: -0,15 × 20 000 = -3 000. Chyby v projektu: 0,10 × 70 000 = 7 000. Součet: 10 000 - 1 500 + 2 250 - 3 000 + 7 000 = 14 750 Kč.\nKdo úspory přičte místo odečtení, dostane 23 750 Kč. To je chybný postup. Součet je kladný, takže rezerva se vytvořit musí.",
+      "read": [
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 3: výpočet finanční rezervy, znaménka zdražení a zlevnění",
+          "pages": "0:37:35-0:42:05"
+        },
+        {
+          "ref": "PMBOK: kvantitativní analýza rizik, očekávaná peněžní hodnota (EMV)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "(Příklad za 10 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace výrobku. Máte k dispozici tyto závěry analýzy: Je 20% pravděpodobnost zpoždění převzetí dílčích částí výrobku s náklady 125 000 Kč. Existuje 4% pravděpodobnost, že dodávka dílčích částí bude o 40 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 45 100 Kč. S 15% pravděpodobností bude montáž rychlejší, což přinese úsporu 20 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 50 000 Kč s pravděpodobností 8%.",
+      "opts": [
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 37 365 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 40 365 Kč.",
+        "Není třeba rezervy vytvářet.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 59 250 Kč.",
+        "Výše rezervy pro náhlé případy by měla být u řešeného projektu 31 165 Kč."
+      ],
+      "correct": [4],
+      "info": "Pojem: Rezerva pro náhlé případy je částka v rozpočtu, která pokryje očekávané dopady rizik.\nVypočítá se jako očekávaná peněžní hodnota (EMV, expected monetary value). Je to součet všech členů pravděpodobnost × dopad. Hrozba (zdražení) dává kladný člen, příležitost (úspora) záporný.\nÚspory rezervu snižují, proto se odečítají. Je-li celkový součet kladný, rezerva je potřeba.\nPostup: Zpoždění: 0,20 × 125 000 = 25 000. Levnější dodávka: -0,04 × 40 000 = -1 600. Nezapadající díly: 0,15 × 45 100 = 6 765.\nRychlejší montáž: -0,15 × 20 000 = -3 000. Chyby v projektu: 0,08 × 50 000 = 4 000. Součet: 25 000 - 1 600 + 6 765 - 3 000 + 4 000 = 31 165 Kč.\nKdo úspory přičte místo odečtení, dostane 40 365 Kč. To je chybný postup. Součet je kladný, takže rezerva se vytvořit musí.",
+      "read": [
+        {
+          "src": "prednaska",
+          "ref": "3. 10., část 3: výpočet finanční rezervy, znaménka zdražení a zlevnění",
+          "pages": "0:37:35-0:42:05"
+        },
+        {
+          "ref": "PMBOK: kvantitativní analýza rizik, očekávaná peněžní hodnota (EMV)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "S jakými rolemi se můžete setkat v projektovém týmu?",
+      "opts": [
+        "Vyzyvatel - zkoumá efektivitu a dožaduje se zlepšení výsledků, vyvolává tvůrčí \"konflikty\".",
+        "Realizátor - tvrdě pracuje, zná postupy, procedury.",
+        "Týmový pracovník - stmeluje tým, uvolňuje napětí, udržuje harmonické pracovní vztahy.",
+        "Výživový specialista - dohlíží na dodržování zdravého stravování v týmu.",
+        "Myslitel - vyhledává nová řešení, zkoumá předložené myšlenky a jejich efektivitu a přínos pro cíle projektu."
+      ],
+      "correct": [0, 1, 2, 4],
+      "info": "Pojem: Týmové role popisují, jakým způsobem člověk v týmu přispívá. Slidy uvádějí pět rolí: Koordinátor, Vyzyvatel, Realizátor, Myslitel a Týmový pracovník.\nVyzyvatel zkoumá efektivitu a dožaduje se zlepšení výsledků. Vyvolává tvůrčí konflikty, aby se tým zamyslel, zda to nejde dělat jinak.\nRealizátor tvrdě pracuje a zná postupy a procedury.\nTýmový pracovník stmeluje tým, uvolňuje napětí a udržuje harmonické pracovní vztahy.\nMyslitel vyhledává nová řešení. Zkoumá předložené myšlenky, jejich efektivitu a přínos pro cíle projektu.\nKoordinátor vyjasňuje cíle, zapojuje členy týmu a organizuje činnosti. Role výživový specialista mezi týmovými rolemi neexistuje. Dobrý tým potřebuje víc různých rolí.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Role v projektovém týmu",
+          "pages": "47"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 3: pět rolí v projektovém týmu",
+          "pages": "0:06:16-0:09:40"
+        }
+      ]
+    },
+    {
+      "q": "V projektovém řízení se uplatňují základní manažerské činnosti, k nimž patří:",
+      "opts": [
+        "Realizace pravidelně se opakujících činností v podniku (zadávání objednávek, tvorba mzdových výkazů).",
+        "Plánování (co, kde, kým a v jakém časovém horizontu má být realizováno).",
+        "Vedení lidí (motivace, vytváření společných hodnot).",
+        "Kontrolování (komunikace, zpětné vazby, vyhodnocení).",
+        "Organizování postupů (přidělování rolí v týmu, hospodaření se zdroji - lidé, čas, finance a materiální zdroje)."
+      ],
+      "correct": [1, 2, 3, 4],
+      "info": "Pojem: Základní manažerské činnosti jsou plánování, organizování, vedení lidí a kontrolování. V projektu se uplatňují stejně jako v řízení firmy.\nSlidy odvozují projektové řízení z managementu. Jmenují plánování, koordinaci a organizaci, kontrolování, rozhodování a řízení.\nPlánování určí, co, kde, kým a v jakém čase se udělá. Organizování rozdělí role v týmu a zdroje: lidi, čas, finance a materiál.\nVedení lidí motivuje a vytváří společné hodnoty. Kontrolování porovná výsledky s plánem a využívá komunikaci a zpětnou vazbu.\nZadávání objednávek a tvorba mzdových výkazů jsou pravidelně opakované činnosti. Slidy je řadí mimo projektové řízení, do běžného provozu.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Projektové řízení jako manažerská disciplína",
+          "pages": "30"
+        },
+        {
+          "src": "slidy26",
+          "ref": "Projektové řízení jako manažerská disciplína",
+          "pages": "30"
+        }
+      ]
+    },
+    {
+      "q": "Které standardy projektového řízení pocházejí původně z Anglie?",
+      "opts": [
+        "PMI a Prince 2",
+        "IPMA — International Project Management Association",
+        "Prince 2 — PRoject IN Controlled Environment",
+        "IPMA a PMI",
+        "PMI — Project Management Institute"
+      ],
+      "correct": [2],
+      "info": "Pojem: PRINCE2 (PRojects IN Controlled Environments) je metodika řízení projektů krok za krokem. Vznikla ve Velké Británii pro státní správu.\nZ Anglie pochází PRINCE2. Vydával ho britský vládní úřad OGC. Dnes ho spravuje firma PeopleCert (dříve AXELOS).\nPMI (Project Management Institute) je americká instituce ze Spojených států. Její standard PMBOK vznikl v USA, ne v Anglii.\nIPMA (International Project Management Association) je mezinárodní asociace s evropskými kořeny. Standard IPMA není anglický, je evropský.\nStandard z Anglie je tedy jediný: PRINCE2. Spojení s PMI nebo IPMA k původu z Anglie nevede.",
+      "read": [
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: PMI a další standardy",
+          "pages": "0:39:26–0:40:00"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Hlavní standardy managementu projektů (slide je jen obrázek)",
+          "pages": "36"
+        }
+      ]
+    },
+    {
+      "q": "Kolik elementů mají behaviorální kompetence?",
+      "opts": [
+        "5",
+        "10",
+        "12",
+        "8",
+        "15"
+      ],
+      "correct": [1],
+      "info": "Pojem: Behaviorální kompetence jsou podle standardu IPMA ICB dovednosti v jednání s lidmi a se sebou samým.\nBehaviorálních kompetencí je 10. Slidy je rozdělují po třech až čtyřech na straně.\nPrvní tři popisují jednání se sebou a s lidmi: sebereflexe a sebeřízení, osobní integrita a spolehlivost, komunikační dovednosti.\nDalší tři popisují vztahy: zainteresované strany, vůdcovství, týmová práce.\nPoslední čtyři řeší náročné situace a výsledky: konflikty a krize, kreativita, vyjednávání, orientace na výsledky.\nČíslo 15 patří k ICB verze 3. Slidy učí ICB verze 4, kde je jich 10. Žádné jiné číslo slidy neuvádějí.\nRozpor: Podle testu mají behaviorální kompetence 10 elementů, stejně jako podle slidů Chvátalové (ICB 4). Podle ICB 3 jich je 15 a oblast se jmenuje behaviorální. V ICB 4 se oblast jmenuje lidské kompetence.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Behaviorální kompetence",
+          "pages": "52–54"
+        }
+      ]
+    },
+    {
+      "q": "Projekty můžeme dělit na: (bez záruky)",
+      "opts": [
+        "Klasické, agilní, prediktivní",
+        "Výstavbové, vědecké, technické",
+        "Komplexní, speciální, jednoduché",
+        "Pevné, polopevné, poloflexibilní a flexibilní",
+        "Vlastní, cizí, kombinované"
+      ],
+      "correct": [1, 3, 4],
+      "info": "Pojem: Projekty se dají třídit podle různých hledisek, třeba podle cíle, oboru nebo zadavatele.\nPodle cíle jsou projekty čtyř typů: pevné, polopevné, poloflexibilní a flexibilní. Pevný cíl: vím, co chci, a vím, jak k tomu dojdu.\nPolopevný cíl: vím, co chci, ale ne cestu. Poloflexibilní cíl: znám metodu, ale nevím, kam povede. Flexibilní cíl: nevím co ani jak.\nPodle oboru jsou projekty stavební (výstavbové), IT, výzkumné (vědecké), technické nebo organizační. Podle zadavatele jsou projekty vlastní (pro svou firmu), cizí (pro zákazníka) nebo kombinované.\nKlasický a agilní přístup jsou metodiky řízení, ne druhy projektů. Klasický a prediktivní znamená totéž, takže trojice klasické, agilní, prediktivní nedává smysl jako dělení.\nPodle složitosti je projekt jednoduchý (třeba kolaudace) nebo těžký (třeba Dukovany). Trojice komplexní, speciální, jednoduché není ustálené dělení.",
+      "read": [
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: dělení projektů podle cíle a oboru",
+          "pages": "0:54:41-0:56:10"
+        },
+        {
+          "ref": "Dělení projektů podle zadavatele (vlastní, cizí, kombinované)",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Kdy je vhodné použít principy projektového řízení? (bez záruky)",
+      "opts": [
+        "Když řešíme specifické, neopakující se úkoly (vývoj nových výrobků, inovace výroby, zavádění nových technologií atd.)",
+        "Když používáme dynamické systémy",
+        "Když řešíme periodicky opakované činnosti a jednoduché bezrizikové akce",
+        "Když řešíme náhlé mimořádné, nebo krizové situace",
+        "Když řešíme složité, komplexní problémy s využitím inovativních přístupů"
+      ],
+      "correct": [0, 4],
+      "info": "Pojem: Principy projektového řízení se vyplatí tam, kde jde o jedinečný a složitý úkol s jasným cílem, termínem a rozpočtem.\nProč: Projektově se řeší specifické a neopakující se úkoly, třeba vývoj nového výrobku nebo zavedení nové technologie. Hodí se i pro složité a komplexní problémy, které vyžadují inovativní přístup a spolupráci víc oborů.\nChyták: Opakované a jednoduché činnosti zvládne běžný provoz levněji. Náhlá krize potřebuje okamžitou reakci, na plánování projektu není čas. Dynamické systémy nejsou důvod pro projekt."
+    },
+    {
+      "q": "Fáze projektu zahájení končí schválením zakládací listiny projektu:",
+      "opts": [
+        "Pouze u vědeckých projektů.",
+        "ANO",
+        "Pouze u stavebních projektů.",
+        "NE",
+        "Pouze u skupiny projektů."
+      ],
+      "correct": [1],
+      "info": "Pojem: Zahájení (inicializace) je fáze, v níž se projekt oficiálně zahajuje. Končí schválením zakládací listiny projektu (Project Charter).\nVýstupem zahájení je zakládací (identifikační) listina. Vzniká vedle ní dokument strategie projektu, třeba logický rámec.\nTeprve se schválenou listinou má projekt oficiální mandát a nárok na zdroje a pracovníky. Pak může začít plánování.\nPravidlo platí pro každý projekt bez ohledu na obor. Vědecké, stavební projekty i skupiny projektů mají stejné zahájení. Zakládací listina je obecný nástroj pro všechny typy projektů.\nZahájení navazuje na předprojektovou fázi. Vstupem jsou její výstupy, například studie proveditelnosti, a návrhy na manažera projektu a členy realizačního týmu.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Zahájení (Inicializace) projektu",
+          "pages": "66"
+        }
+      ]
+    },
+    {
+      "q": "Které elementy zařazujeme do kontextových elementů?",
+      "opts": [
+        "K5 Kultura a hodnoty.",
+        "K4 Moc a zájem.",
+        "K2 Systém řízení, struktura a procesy.",
+        "K6 Suroviny a zdroje.",
+        "K3 Shoda se standardy a předpisy."
+      ],
+      "correct": [0, 1, 2, 4],
+      "info": "Pojem: Kontextové kompetence popisují, jak projekt zapadá do prostředí organizace. V ICB 4 se jim říká perspektiva.\nKontextových elementů je pět, označených K1 až K5. K1 je strategie. K2 je systém řízení, struktura a procesy.\nK3 je shoda se standardy a předpisy. Patří sem legislativa, bezpečnost práce a profesní normy. K4 je moc a zájem, tedy neformální vlivy a ambice aktérů projektu.\nK5 je kultura a hodnoty. Popisuje, jak projekt zapadá do kultury organizace a společnosti.\nDalší element K6 mezi kontextovými neexistuje. Suroviny a zdroje do kontextových elementů nepatří.\nStrategie (K1) znamená soulad projektu s misí a vizí organizace. Zahrnuje formální zdůvodnění cílů projektu.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Kontextové elementy kompetence projektového leadera",
+          "pages": "50–51"
+        }
+      ]
+    },
+    {
+      "q": "Projektová koordinace znamená, že: (bez záruky)",
+      "opts": [
+        "Kompetence jsou převedeny na jednotlivé členy projektu, příslušní spolupracovníci jsou vyčleněni z kmenové organizace.",
+        "Manager projektu zastává štábní poradní funkci, oprávnění rozhodovat, vydávat příkazy a celkovou odpovědnost nese jeho nadřízený.",
+        "Je využit kombinovaný systém svisle probíhající funkční odpovědnosti a horizontálně orientované odpovědnosti za projekt.",
+        "Kompetence jsou převedeny na managera projektu, příslušní spolupracovníci jsou vyčleněni z kmenové organizace a přímo podřízeni managerovi projektu.",
+        "Je využit systém svisle probíhající funkční odpovědnosti za projekt."
+      ],
+      "correct": [1],
+      "info": "Pojem: Projektová koordinace (štábní projektové řízení) je nejslabší forma projektové organizace. Projekt běží uvnitř běžné liniové struktury firmy.\nManažer projektu zastává štábní, poradní funkci. Koordinuje, sbírá informace a radí. Oprávnění rozhodovat, vydávat příkazy a celkovou odpovědnost nese jeho nadřízený.\nSlidy obecně uvádějí, že klíčové rozhodovací pravomoci zůstávají v držení liniové mocenské hierarchie.\nStandardní typologie rozlišuje tři formy projektové organizace: projektovou koordinaci, maticovou organizaci a čistou projektovou organizaci.\nMaticová organizace kombinuje svisle probíhající funkční odpovědnost a horizontálně orientovanou odpovědnost za projekt.\nV čisté projektové organizaci dostane kompetence manažer projektu. Spolupracovníci jsou vyčleněni z kmenové organizace a jsou mu přímo podřízeni. Samotná svislá funkční odpovědnost je běžná funkční organizace bez projektové role.",
+      "read": [
+        {
+          "ref": "Typologie projektové organizace: projektová koordinace, maticová a čistá projektová organizace",
+          "note": "Ve slidech není. Příbuzné je jen slide Manažer projektu, s. 42."
+        }
+      ]
+    },
+    {
+      "q": "Problémy, které projektové řízení dokáže řešit:",
+      "opts": [
+        "Zkreslování při vnitrofiremní komunikaci.",
+        "Výskyt ping-pongového efektu.",
+        "Časové ztráty při složité komunikaci.",
+        "Nárůst mzdových prostředků.",
+        "Dlouhé komunikační řetězce."
+      ],
+      "correct": [0, 1, 2, 4],
+      "info": "Pojem: Projektové řízení zavádí jasné role, jednoho odpovědného manažera a přímé komunikační cesty napříč útvary.\nŘeší hlavně problémy komunikace uvnitř firmy. Tým mluví napřímo, proto se informace méně zkreslují.\nDlouhé komunikační řetězce vznikají, když informace putuje přes mnoho úrovní a útvarů. Projektový tým řetězec zkracuje a odstraňuje časové ztráty při složité komunikaci.\nPing-pongový efekt vzniká, když si útvary přehazují úkol a nikdo ho nedotáhne. Jeden odpovědný manažer ho zastaví.\nNárůst mzdových prostředků projektové řízení neřeší. Tým a manažer něco stojí, takže náklady na mzdy spíš mohou vzrůst.\nProjektové řízení zlepšuje organizaci práce, odpovědnost a tok informací.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Výhody PM",
+          "pages": "19"
+        },
+        {
+          "ref": "Projektová a funkční (liniová) organizace: komunikační cesty",
+          "note": "Ve slidech není."
+        }
+      ]
+    },
+    {
+      "q": "Mezi základní pojmy síťové analýzy patří:",
+      "opts": [
+        "Střed - oblast grafu, kde se potkávají dvě a více činností.",
+        "Hrana grafu - činnost kladoucí nároky na čas či zdroje, má dynamický charakter.",
+        "Vazby - oblasti spojující podobné prvky.",
+        "Graf - grafické znázornění modelovaného projektu (průběh akcí prováděných v rámci daného projektu).",
+        "Uzel - časová událost, kterou je počátek nebo konec činnosti."
+      ],
+      "correct": [1, 3, 4],
+      "info": "Pojem: Síťová analýza zobrazuje projekt jako síťový graf z uzlů a hran. Je to metoda časového plánování.\nZákladní pojmy jsou tři: graf, uzel a hrana grafu. Slidy je definují takto.\nGraf je grafické znázornění modelovaného projektu, tedy průběhu akcí prováděných v rámci projektu.\nUzel je časová událost, kterou je počátek nebo konec činnosti.\nHrana grafu je činnost kladoucí nároky na čas či zdroje. Má dynamický charakter, protože trvá.\nVazby vyjadřují návaznost činností, například že jedna začne až po skončení druhé. Nespojují podobné prvky a nejsou to oblasti grafu. Pojem střed se v síťové analýze nepoužívá.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Základní pojmy síťové analýzy",
+          "pages": "107"
+        }
+      ]
+    },
+    {
+      "q": "Čím se zabývá znalostní oblast projektových standardů PMI \"Rozsah\":",
+      "opts": [
+        "Definuje a popisuje procesy, které se týkají zejména integrace informací a jejich efektivního šíření a zajištění kvalitního reportování (podávání zpráv o stavu projektu).",
+        "Zabývá se především plánováním časových aspektů projektu (harmonogramů) ve vztahu k ostatním atributům, jako jsou lidské zdroje, rozpočet, náklady a jiné.",
+        "Analyzuje rozsah projektu. Rozsah projektu je zde chápán jako definice a následný rozklad projektu na menší jednotky činností",
+        "Zajišťuje především integraci a návaznosti na jiné projekty a koordinování změn v celém průběhu projektu.",
+        "Definuje a popisuje procesy, které se týkají zejména zajišťování zdrojů."
+      ],
+      "correct": [2],
+      "info": "Pojem: Znalostní oblasti standardu PMI (PMBOK) jsou tematické části řízení projektu. Slidy jich uvádějí devět.\nOblast Rozsah (Project Scope Management) analyzuje rozsah projektu. Rozsah znamená definici projektu a jeho rozklad na menší jednotky činností.\nZbylé oblasti řeší jiné věci. Integrace zajišťuje návaznost na jiné projekty a koordinaci změn. Čas plánuje časové aspekty, tedy harmonogramy, ve vztahu k ostatním atributům.\nNáklady plánují a řídí náklady. Patří pod ně i správa zdrojů a přehled zdrojových potřeb.\nKomunikace řeší integraci a šíření informací a kvalitní zprávy o stavu projektu. Další oblasti jsou kvalita, lidské zdroje, rizika a dodávky (obstarávání).",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Dílčí oblasti využívané v rámci projektového managementu",
+          "pages": "23–24"
+        }
+      ]
+    },
+    {
+      "q": "Které standardy se dělí na kompetence, behaviorální, technické a kontextové?",
+      "opts": [
+        "PMI a Prince 2",
+        "Prince 2 - PRoject IN Controlled Environment",
+        "IPMA - International Project Management Association",
+        "PMI - Project management Institute",
+        "IPMA a PMI"
+      ],
+      "correct": [2],
+      "info": "Pojem: IPMA (International Project Management Association) je mezinárodní asociace projektového řízení. Její standard ICB dělí kompetence na kontextové, behaviorální a technické.\nRozdělení na kontextové, behaviorální a technické kompetence je typické jen pro IPMA. Slidy ho rozebírají na stranách o kompetencích projektového leadera.\nKontextové kompetence popisují vztah projektu k organizaci. Behaviorální popisují jednání s lidmi a se sebou samým. Technické zahrnují metody řízení projektu, například rozsah, čas a kvalitu.\nPMI dělí řízení na procesy a znalostní oblasti, ne na kompetence. PRINCE2 dělí řízení na principy, témata a procesy.\nŽádný z těchto dvou standardů kompetence tímto způsobem nedělí.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Kontextové elementy kompetence projektového leadera",
+          "pages": "50"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 3: tři typy kompetencí lídra",
+          "pages": "0:12:28–0:13:30"
+        }
+      ]
+    },
+    {
+      "q": "Jaké efekty má projektové řízení?",
+      "opts": [
+        "Zvýšení počtu kontrol.",
+        "Zlepšení koordinace aktivit a tím snížení časové náročnosti.",
+        "Zvýšení pracovní morálky.",
+        "Zvýšení efektivity a rentability.",
+        "Účinnější řízení zdrojů."
+      ],
+      "correct": [1, 2, 3, 4],
+      "info": "Pojem: Efekty projektového řízení jsou přínosy, které firmě přinese řízení práce formou projektů.\nPřednášející uvedla hlavní výhody: přehlednost, procesnost, systematizace, efektivní využití zdrojů a efektivní sledování změn.\nKoordinace aktivit se zlepší, protože jeden manažer propojuje práci útvarů. Projekt proto zabere méně času.\nEfektivita a rentabilita rostou. Zdroje se plánují dopředu a po skončení projektu se uvolní jiným projektům, takže řízení zdrojů je účinnější.\nPracovní morálka roste, protože lidé vidí jasný cíl a odpovědnost za svůj podíl.\nPočet kontrol neroste. Přiřazená odpovědnost zmenšuje potřebu dohledu zadavatele. Kontrola probíhá cíleně v milnících, tedy v bodech zpětné kontroly.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Výhody PM",
+          "pages": "19"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 2: hlavní výhody projektového řízení",
+          "pages": "0:15:32-0:15:45"
+        }
+      ]
+    },
+    {
+      "q": "Projektové řízení definujeme jako:",
+      "opts": [
+        "Způsob řízení, pomocí kterého je možné zabezpečit realizaci požadovaných cílů.",
+        "Aplikace znalostí, dovedností, nástrojů a technik na projektové aktivity za účelem splnění cíle projektu.",
+        "Řízení cesty od jednoho stavu k druhému.",
+        "Souhrn aktivit spočívající v plánování, organizování, řízení a kontrole zdrojů společnosti s relativně krátkodobým cílem, který byl stanoven pro realizaci specifických cílů a záměrů.",
+        "Realizace činností základního marketingového mixu 4P."
+      ],
+      "correct": [0, 1, 2, 3],
+      "info": "Pojem: Projektové řízení je způsob řízení, kterým lze zajistit realizaci požadovaných cílů.\nExistuje víc definic a všechny popisují stejnou věc. PMI (Project Management Institute) ho definuje takto: aplikace znalostí, dovedností, nástrojů a technik na projektové aktivity za účelem splnění cíle projektu.\nPodle slidů je projekt změna. Projektové řízení je proto řízení cesty od jednoho stavu k druhému: od počátečního stavu přes dílčí změny k cílovému.\nKerznerova definice: plánování, organizování, řízení a kontrola zdrojů společnosti s relativně krátkodobým cílem, stanoveným pro realizaci specifických cílů a záměrů.\nMarketingový mix 4P (produkt, cena, místo, propagace) patří do marketingu. Projektové řízení se jím nezabývá.",
+      "read": [
+        {
+          "src": "slidy26",
+          "ref": "Jak definovat projekt?",
+          "pages": "15"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 1: projekt je změna",
+          "pages": "0:37:06-0:39:24"
+        }
+      ]
+    },
+    {
+      "q": "Pomocí metody CPM určete: délku trvání projektu, činnosti ležící na kritické cestě a celkovou časovou rezervu činnosti E. (Pozn. Doba trvání je v levém dolním poli uzlu.)",
+      "opts": [
+        "Délka trvání 16 časových jednotek, činnosti na kritické cestě A-B-D-G, celková rezerva činnosti E je 1.",
+        "Délka trvání 17 časových jednotek, činnosti na kritické cestě A-B-D-F, celková rezerva činnosti E je 3.",
+        "Délka trvání 15 časových jednotek, činnosti na kritické cestě A-B-D-F-G, celková rezerva činnosti E je 0.",
+        "Délka trvání 17 časových jednotek, činnosti na kritické cestě A-C-E-G, celková rezerva činnosti E je 2.",
+        "Délka trvání 16 časových jednotek, činnosti na kritické cestě C-E-G, celková rezerva činnosti E je 0."
+      ],
+      "correct": [1],
+      "img": "img/projektove-rizeni/q101.jpg",
+      "info": "Pojem: CPM (Critical Path Method, metoda kritické cesty) najde nejdelší cestu sítí. Ta určuje délku projektu. Celková rezerva je čas, o který se činnost smí zpozdit bez posunu konce projektu.\nDoby z uzlů: A 3, B 5, C 4, D 4, E 5, F 5, G 2. Vazby: A předchází B a C, pak jdou řetězy B-D-F a C-E-G. F i G jsou koncové činnosti, G nenavazuje na F.\nHorní cesta A-B-D-F je 3 + 5 + 4 + 5 = 17. Dolní cesta A-C-E-G je 3 + 4 + 5 + 2 = 14. Projekt trvá 17 a kritická je cesta A-B-D-F.\nČinnost E nejdříve skončí ve 3 + 4 + 5 = 12. Činnost G musí skončit v 17, takže začít nejpozději v 15. Proto E musí skončit nejpozději v 15.\nRezerva E je 15 - 12 = 3. Totéž dá rozdíl cest: 17 - 14 = 3. Činnost E na kritické cestě neleží, proto rezerva 0 neplatí.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Analýza časového plánu",
+          "pages": "112"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        }
+      ]
+    },
+    {
+      "q": "Které standardy projektového řízení se zaměřuji na kompetence projektového manažera a členů týmu?",
+      "opts": [
+        "IPMA a PMI",
+        "Prince 2 – PRoject IN Controlled Environment",
+        "PMI – Project management Institute",
+        "IPMA – International Project Management Association",
+        "IPMA a Prince 2"
+      ],
+      "correct": [3],
+      "info": "Pojem: IPMA (International Project Management Association) je mezinárodní asociace projektového řízení. Její standard ICB popisuje, co má umět projektový manažer.\nIPMA staví na kompetencích, tedy na znalostech, dovednostech a chování lidí v projektu. Kompetence slidy popisují jako kontextové, behaviorální a technické.\nPodle ICB IPMA certifikuje projektové manažery. Certifikace má čtyři úrovně, od D (nejnižší) po A.\nPMI se zaměřuje na procesy a znalostní oblasti řízení projektu. PRINCE2 je metodika postupu řízení projektu.\nNa kompetence se zaměřuje jen IPMA. Spojení IPMA s PMI nebo s PRINCE2 proto neplatí.\nKompetence znamená uplatnit znalosti, dovednosti a postoje tak, aby projekt dosáhl výsledků.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Behaviorální kompetence",
+          "pages": "52"
+        },
+        {
+          "src": "prednaska",
+          "ref": "19. 9., část 3: tři typy kompetencí lídra",
+          "pages": "0:12:28–0:13:30"
+        }
+      ]
+    },
+    {
+      "q": "Jaké výhody má projektové řízení?",
+      "opts": [
+        "Na základě specifikace požadavků je možno přesně definovat cíle projektu.",
+        "Každá aktivita projektu má přiřazenu odpovědnou osobu.",
+        "Jeho principy lze použít při každé činnosti v podniku.",
+        "Efektivita vynaložených prostředků je vyšší.",
+        "Jsou přesně vymezené časové a finanční podmínky realizace projektu."
+      ],
+      "correct": [0, 1, 3, 4],
+      "info": "Pojem: Výhody projektového řízení jsou přínosy, které firma získá, když jedinečné úkoly řídí jako projekty.\nSpecifikace požadavků umožní přesně definovat cíle projektu. Každá aktivita má přiřazenu odpovědnou osobu a při personální změně v týmu se odpovědnost nemění.\nČasové a finanční podmínky jsou přesně vymezené, včetně rozpočtového omezení.\nEfektivita vynaložených prostředků je vyšší. Zdroje se po skončení projektu spotřebují nebo uvolní pro jiné projekty.\nProjektové řízení se nehodí na každou činnost. Slidy ho vylučují u periodicky opakovaných činností, jednoduchých bezrizikových akcí a náhlých krizových situací. Běžnou práci, třeba účetnictví, zvládne levněji stálý provoz.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Výhody PM",
+          "pages": "19"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Kdy použít projektový management",
+          "pages": "18"
+        }
+      ]
+    },
+    {
+      "q": "Čím se zabývá znalostní oblast projektových standardů PMI \"Human Resource\":",
+      "opts": [
+        "Tato znalostní oblast se týká produktu, který je v rámci projektu vytvářen.",
+        "Zahrnuje procesy jako jsou: identifikace rizik, kvalifikace rizik, zodpovědnosti za rizika a kontrola (sledování) rizik.",
+        "Jedná se o řízení času projektu.",
+        "Jedná se o řízení subjektů, které jsou buď do projektu aktivně zapojeny, nebo jejichž zájmy jsou ovlivněny realizací projektu.",
+        "V této znalostní oblasti jsou popisovány způsoby a procesy vyhledávání nových lidí, vývoje organizační struktury, definování rolí - zodpovědností, zlepšování výkonností týmů a techniky jejich sestavování."
+      ],
+      "correct": [4],
+      "info": "Pojem: Human Resource (lidské zdroje) je znalostní oblast standardu PMI. Slidy ji nazývají Management lidských zdrojů (Project Human Resources Management).\nOblast popisuje způsoby a procesy vyhledávání nových lidí do týmu. Řeší vývoj organizační struktury a definování rolí a odpovědností.\nŘeší také zlepšování výkonnosti týmů a techniky jejich sestavování.\nOstatní oblasti jsou jiné. Rozsah řeší produkt projektu a jeho rozklad na části. Čas je samostatná oblast, řízení času projektu.\nRizika zahrnují identifikaci rizik, kvalifikaci rizik, zodpovědnost za rizika a kontrolu rizik. Řízení subjektů, kterých se projekt týká, je řízení zainteresovaných stran (stakeholderů). Slidy ho mezi devět oblastí neřadí.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Dílčí oblasti využívané v rámci projektového managementu",
+          "pages": "24"
+        }
+      ]
+    },
+    {
+      "q": "Metoda kritické cesty (CPM):",
+      "opts": [
+        "slouží k určení činností, které mají maximální možnou rezervu",
+        "slouží k určení nejdelší možné doby trvání projektu",
+        "je deterministická metoda",
+        "slouží k určení nejkratší doby trvání projektu",
+        "slouží k určení činností, které mají nulovou rezervu celkovou"
+      ],
+      "correct": [2, 3, 4],
+      "info": "Pojem: CPM (Critical Path Method, metoda kritické cesty) je deterministická metoda časového plánování. Hledá kritickou cestu, tedy nejdelší cestu v síťovém grafu.\nCPM je deterministická. Slidy ji řadí mezi deterministické metody (CPM, MPM). Bere doby činností jako pevně dané, bez náhody.\nCPM určuje nejkratší možnou dobu realizace projektu. Ta se rovná délce kritické cesty. Nejdelší možná doba trvání neexistuje, protože projekt se může zpozdit libovolně.\nCPM počítá celkovou rezervu každé činnosti (RC = KP - KM). Kritické činnosti mají celkovou rezervu nulovou. Jejich zpoždění posune konec projektu.\nMaximální rezervu mají naopak činnosti mimo kritickou cestu. CPM je nehledá. Hledá činnosti s nulovou rezervou.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Metoda CPM analýza časového plánu",
+          "pages": "114"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Síťové diagramy CPA",
+          "pages": "106"
+        }
+      ]
+    },
+    {
+      "q": "Manažer projektu je odpovědný za:",
+      "opts": [
+        "Za zajištění finančních prostředků pro projekt.",
+        "Za dosažení cíle projektu.",
+        "Za komunikaci se zainteresovanými skupinami.",
+        "Za plánování a podávání zpráv o stavu projektu.",
+        "Za průběžnou kontrolu podávaných zpráv"
+      ],
+      "correct": [1, 2, 3, 4],
+      "info": "Pojem: Manažer projektu je osoba, která řídí projekt a odpovídá řídícím a kontrolním strukturám za dosažení jeho cíle.\nSlidy uvádějí jeho odpovědnost: za dosažení cíle projektu, za plánování, za podávání zpráv o stavu projektu a za průběžnou kontrolu podávaných zpráv.\nOdpovídá také za komunikaci se zainteresovanými stranami, tedy například se zákazníkem a sponzorem. Podle ICB 4 patří k jeho kompetencím rozvíjet s nimi osobní a pracovní vztahy.\nZa zajištění finančních prostředků pro projekt odpovídá podle PMBOK sponzor projektu. Manažer odhaduje náklady, sestavuje rozpočet a s penězi hospodaří.\nManažer je kreativní, flexibilní a stresu odolná osobnost. Má přiměřeně delegovanou míru pravomocí, klíčové rozhodovací pravomoci ale zůstávají v liniové hierarchii.",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Manažer projektu",
+          "pages": "42"
+        }
+      ]
+    },
+    {
+      "q": "Výhody diagramu PERT jsou:",
+      "opts": [
+        "Zobrazuje vzájemnou závislost činností.",
+        "Lze ho použít při průběžných kontrolách i závěrečném hodnocení projektu.",
+        "Velmi jednoduché použití, nevyžaduje žádné zkušenosti.",
+        "Umožňuje znázornit předpokládaný i skutečný postup projektu.",
+        "Lze ho rozšířit o plánování nákladů."
+      ],
+      "correct": [0, 1, 3, 4],
+      "info": "Pojem: Diagram PERT je síťový graf projektu. Uzly a šipky v něm ukazují činnosti a jejich návaznosti, dobu trvání každé činnosti odhaduje ze tří hodnot: optimistické, nejpravděpodobnější a pesimistické.\nVzájemná závislost činností je v diagramu PERT vidět přímo. Šipky spojují každou činnost s činnostmi, na které navazuje. Tím se liší od klasického Ganttova diagramu, který závislosti nezobrazuje.\nDo síťového grafu lze vedle předpokládaného postupu zakreslit i skutečný postup projektu. Diagram proto slouží při průběžných kontrolách i při závěrečném hodnocení projektu. Odpovídá tomu i název Program Evaluation and Review Technique (metoda hodnocení a kontroly projektu).\nDiagram PERT lze rozšířit o plánování nákladů. Varianta PERT/Cost přiřazuje každé činnosti rozpočet a sleduje jeho čerpání.\nJednoduché použití PERT nemá. Vyžaduje zkušenosti se síťovými grafy, tři odhady pro každou činnost a výpočet pravděpodobnosti. Jednoduchost a nenáročnost na zpracování jsou výhody Ganttova diagramu.\nRozpor: Podle vyhodnocené zkoušky lze diagram PERT použít při průběžných kontrolách i závěrečném hodnocení projektu. Podle otázky \"Metoda PERT (Program Evaluation and Review Technique):\" se PERT při kontrole průběhu projektu nevyužívá. Slidy tuto vlastnost PERT neuvádějí a klíč této otázky je odvozený z bodů za zkoušku (4 správné možnosti z 5).",
+      "read": [
+        {
+          "src": "slidy24",
+          "ref": "Výhody Ganttova diagramu",
+          "pages": "102"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Síťové diagramy CPA",
+          "pages": "106"
+        },
+        {
+          "src": "slidy24",
+          "ref": "Používané síťové diagramy (CPM, PERT, GERT)",
+          "pages": "115",
+          "note": "Výhody diagramu PERT ve slidech nejsou."
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Projekt a jeho vlastnosti",
+      "q": [8, 12, 16, 32, 51, 52, 74, 75, 89, 90, 99]
+    },
+    {
+      "name": "Přínosy a principy projektového řízení",
+      "q": [44, 64, 65, 86, 94, 98, 102]
+    },
+    {
+      "name": "Projektový tým, organizace a role",
+      "q": [1, 5, 66, 70, 85, 93, 105]
+    },
+    {
+      "name": "Fáze projektu, zahájení a ukončení",
+      "q": [11, 14, 15, 17, 24, 25, 36, 72, 73, 91]
+    },
+    {
+      "name": "Plánování: cíle, logický rámec, WBS a náklady",
+      "q": [3, 13, 18, 21, 39, 45, 46, 48, 50, 68, 76, 77]
+    },
+    {
+      "name": "Řízení rizik",
+      "q": [27, 28, 31, 35, 37, 38, 43, 71]
+    },
+    {
+      "name": "Standardy a kompetence (IPMA, PMI, PRINCE2, ISO)",
+      "q": [19, 23, 29, 33, 34, 41, 67, 69, 87, 88, 92, 96, 97, 101, 103]
+    },
+    {
+      "name": "Časové plánování a síťová analýza",
+      "q": [6, 7, 20, 22, 30, 47, 81, 95, 104, 106]
+    },
+    {
+      "name": "Sledování projektu a EVM",
+      "q": [2, 4, 9, 10, 26, 40, 42, 49, 78]
+    },
+    {
+      "name": "Příklady: rezerva pro náhlé případy",
+      "q": [79, 82, 83, 84]
+    },
+    {
+      "name": "Příklady: PERT, CPM a síťové grafy",
+      "q": [53, 54, 55, 56, 57, 58, 60, 63, 100]
+    },
+    {
+      "name": "Příklady: EVM",
+      "q": [59, 61, 62, 80]
+    }
+  ]
+}

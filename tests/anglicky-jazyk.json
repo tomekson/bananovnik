@@ -1,0 +1,2821 @@
+{
+  "id": "anglicky-jazyk",
+  "title": "Anglický jazyk",
+  "updatedAt": "2026-09-19",
+  "rubric": "Zkouškový test: 45 min., 90 otázek (většinou za 1 bod, některé za 2 body), bez pomůcek. K úspěchu je potřeba 51 bodů.",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 100,
+    "openPoints": 0,
+    "passPoints": 51,
+    "questionCount": 90,
+    "openCount": 0
+  },
+  "questions": [
+    {
+      "q": "A: I haven’t had enough time to do it., B: That’s not true! You _______________home 2 hours ago!",
+      "opts": [
+        "come",
+        "have come",
+        "were coming",
+        "came",
+        "has come"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "When I __________ to get into my car somebody ________ me over the head.",
+      "opts": [
+        "tried, hits",
+        "was trying, hit",
+        "tried, is hitting",
+        "tried, was hitting",
+        "was trying, was hitting"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "____________________ the film last Sunday?",
+      "opts": [
+        "Did you enjoyed",
+        "Have you enjoy",
+        "Enjoyed you",
+        "Did you enjoy",
+        "Have you enjoyed"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "When ____________I________________his girlfriend.",
+      "opts": [
+        "was Pete just coming, kiss",
+        "Pete came, kissing",
+        "Pete came, kisses",
+        "Pete came, was just kissing",
+        "Pete comes, kissed"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "While Sue ______________________, her husband was watching TV.",
+      "opts": [
+        "had read",
+        "was reading",
+        "reads",
+        "have read",
+        "read"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "When I____________________on the highway, the police_________________me for speeding.",
+      "opts": [
+        "drives, stops",
+        "drove, was stopped",
+        "am driving, stops",
+        "was driving, stopped",
+        "drove, was stopping"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Chamurappi________________the first code of laws.",
+      "opts": [
+        "has made",
+        "is making",
+        "made",
+        "makes",
+        "had made"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "She ____________________ what to say.",
+      "opts": [
+        "was knowing",
+        "always knew",
+        "always know",
+        "has been knowing",
+        "had always known"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "The weather is going to be nice tomorrow. ____________________to the zoo?",
+      "opts": [
+        "Must we go",
+        "Will we have gone",
+        "Might we go",
+        "Will we be going",
+        "Shall we go"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "My train ___________ in Prague at 5 p.m. according the schedule.",
+      "opts": [
+        "is arriving",
+        "arrives",
+        "will arrive",
+        "is going to arrive",
+        "goes to arrive"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Look at those gorgeous trainers. I __________them, if they are cheap.",
+      "opts": [
+        "am going buy",
+        "am buying",
+        "will buy",
+        "am buiyng",
+        "buy"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Well, she hasn’t called me. I think I ________ to the cinema with her sister.",
+      "opts": [
+        "will go",
+        "going",
+        "will be going",
+        "am going",
+        "go"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "A: Can we meet tomorrow morning?, B: I am sorry, we can´t. I ________________an appointment with my dentist.",
+      "opts": [
+        "can have",
+        "have",
+        "will have",
+        "would have",
+        "will have had"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I hope the weather________better tomorrow.",
+      "opts": [
+        "is being",
+        "is",
+        "will going to be",
+        "will be",
+        "be"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I have bought the ticket. I__________________ France next week.",
+      "opts": [
+        "am going to leave",
+        "going to leave",
+        "will leave",
+        "am leaving",
+        "will be leaving"
+      ],
+      "correct": [0, 3]
+    },
+    {
+      "q": "What______________________to the party tonight?",
+      "opts": [
+        "you wear",
+        "do you wear",
+        "are you going to wear",
+        "will you have been wearing",
+        "you are wearing"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I believe this treatment ____________________ help you.",
+      "opts": [
+        "is",
+        "will have",
+        "going to",
+        "will",
+        "is going"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "It is cold here. ______________ I turn on the heating?",
+      "opts": [
+        "Shall",
+        "Must",
+        "Do",
+        "Will",
+        "Would"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "If I ___________________ you, I wouldn’t drink so much.",
+      "opts": [
+        "be",
+        "been",
+        "were",
+        "will be",
+        "am"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "If I ___________ you, I ____________ buy this car. It´s too old.",
+      "opts": [
+        "were, would",
+        "had been, would have",
+        "am you, won´t",
+        "am you, will",
+        "were, wouldn't"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Martin ____________her if she hadn’t moved to Mozambique.",
+      "opts": [
+        "would marry",
+        "would have married",
+        "will marry",
+        "married",
+        "would married"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "If you ____________ the supper now, I will come later.",
+      "opts": [
+        "are being have",
+        "are having",
+        "have",
+        "had",
+        "have had"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Unless you________________it, the mark will stay there.",
+      "opts": [
+        "would clean",
+        "didn´t clean",
+        "have cleaned",
+        "clean",
+        "don´t clean"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "You would feel better if you ___________________ 8 hours every day.",
+      "opts": [
+        "sleep",
+        "slept",
+        "had slept",
+        "would sleep",
+        "will sleep"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "If this patient________________better, we___________him go home.",
+      "opts": [
+        "would feel, would",
+        "felt, would have let",
+        "feels, will let",
+        "felt, would let",
+        "had felt, would let"
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "They didn´t tell me anything. If I_______________it, I________________him.",
+      "opts": [
+        "know, would help",
+        "knew, will help",
+        "knew, would help",
+        "know, will help",
+        "knows, will help"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "____________ so strict if you knew the truth ?",
+      "opts": [
+        "Are you",
+        "You would be",
+        "Will you be",
+        "Would you have been",
+        "Would you had been"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Silence, please. I _____________ to sleep.",
+      "opts": [
+        "tries",
+        "am tried",
+        "am tring",
+        "try",
+        "am trying"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "_________ an apple? No, it is a tomato.",
+      "opts": [
+        "Have you been eating",
+        "Are you eating",
+        "Do you eating",
+        "Do you eat",
+        "You are eating"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "What _________ for breakfast?",
+      "opts": [
+        "you usually eat",
+        "do you usually eat",
+        "are you usually eating",
+        "do you eat usually",
+        "you are usually eating"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Water _________ at 100 degrees.",
+      "opts": [
+        "is boiling",
+        "boiling",
+        "is boil",
+        "boils",
+        "boil"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I usually_____________________at home on Sunday.",
+      "opts": [
+        "stay",
+        "stays",
+        "am staying",
+        "am stay",
+        "will stay"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "He doesn’t want to____________.",
+      "opts": [
+        "give a kiss me.",
+        "kisses me.",
+        "kiss me.",
+        "gave me a kiss.",
+        "kissing me."
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "_______she _________a sister?",
+      "opts": [
+        "Is, have",
+        "Is, having",
+        "Does, has",
+        "Does, have",
+        "Do, has"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "What are you doing?__________________?",
+      "opts": [
+        "Are you watching TV?",
+        "Are you watching on TV?",
+        "You are watching TV?",
+        "Do you watch TV?",
+        "Do you look TV?"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "I have got a tractor but I_________________it very often.",
+      "opts": [
+        "doesn’t use",
+        "don’t use",
+        "am not used",
+        "am not using",
+        "don’t uses"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "The new TV show ________________ today at 8 o´clock.",
+      "opts": [
+        "will start",
+        "will be starting",
+        "starts",
+        "is to start",
+        "starting"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "He_________________ before he could react.",
+      "opts": [
+        "has been shooting",
+        "has been shot",
+        "has shot",
+        "shooted",
+        "had been shot"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Many houses___________________during the earthquake last month.",
+      "opts": [
+        "were destroyed",
+        "had destroyed",
+        "have destroyed",
+        "have been destroyed",
+        "destroyed"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "He came in and __________ by the security.",
+      "opts": [
+        "stopped",
+        "step",
+        "was stopping",
+        "stop",
+        "was stopped"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "A new building ________ in my street right now.",
+      "opts": [
+        "is being built",
+        "has been build",
+        "was built",
+        "was being built",
+        "is built"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "The thief ____________ by tomorrow morning.",
+      "opts": [
+        "will arrest",
+        "will have been arrested",
+        "will be arresting",
+        "is being arrested",
+        "arrests"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I ________ about him _____ the police.",
+      "opts": [
+        "asked, by",
+        "was asked, for",
+        "been asked, for",
+        "was asked, by",
+        "ask, by"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "The painting________________________by an anonymous painter in 1349.",
+      "opts": [
+        "painted",
+        "has painted",
+        "has been painted",
+        "was painted",
+        "were painted"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "It___________in 2 hours.",
+      "opts": [
+        "is going finish",
+        "will finished",
+        "finish",
+        "will be finished",
+        "would finish"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I________________a lift today.",
+      "opts": [
+        "gived",
+        "was given",
+        "had been given",
+        "has been giving",
+        "give"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I ____________ to the National Theatre only once so far.",
+      "opts": [
+        "have been",
+        "was",
+        "have been being",
+        "was being",
+        "were"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "I_________________ three calls this morning so far.",
+      "opts": [
+        "have had",
+        "had have",
+        "had had",
+        "have",
+        "had"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "She _________________here since 1998.",
+      "opts": [
+        "works",
+        "was working",
+        "is working",
+        "worked",
+        "has been working"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "They ____________on it since 11.",
+      "opts": [
+        "had been worked",
+        "had worked",
+        "had been working",
+        "have been working",
+        "had had been working"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "How many times______________the machine today?",
+      "opts": [
+        "did we stopped",
+        "has the worked been stopping",
+        "does he stop",
+        "have you stopped",
+        "did you stops"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "My hands are very dirty, I_________________my bike.",
+      "opts": [
+        "repair",
+        "have been repairing",
+        "have repaired",
+        "have repair",
+        "repaired"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "The candle _________ for four hours. How awesome.",
+      "opts": [
+        "was burning",
+        "has been burning",
+        "is burning",
+        "burns",
+        "burned"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "This year, the team of scientists ____________ a new medicine.",
+      "opts": [
+        "have been developed",
+        "develops",
+        "developed",
+        "have developed",
+        "is develop"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I´ve got 6 missed calls. Somebody _____________________to get in touch with me all day.",
+      "opts": [
+        "is trying",
+        "has tried",
+        "tries",
+        "has been trying",
+        "was trying"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Sue __________________ here since she was born. She would never leave this place.",
+      "opts": [
+        "is living",
+        "has been living",
+        "lived",
+        "has live",
+        "was living"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "They asked me why it _______________________ so expensive.",
+      "opts": [
+        "are",
+        "will be",
+        "is",
+        "be",
+        "had been"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Before she worked as an accountant, she ____________ a senior executive.",
+      "opts": [
+        "worked",
+        "had been",
+        "was",
+        "had worked",
+        "has been"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "He said that he ________that night and hadn’t gone out.",
+      "opts": [
+        "had very tired",
+        "have been very tired",
+        "had been very tired",
+        "was very tired",
+        "been very tired"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Yesterday we came late. The concert ________________.",
+      "opts": [
+        "begins",
+        "began",
+        "was begining",
+        "had begun",
+        "has begin"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "They ____________on the platform for 50 minutes when the train finally arrived.",
+      "opts": [
+        "have waited",
+        "wait",
+        "had been waiting",
+        "have been waiting",
+        "have wait"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I couldn’t come to the party, because I _______________my leg.",
+      "opts": [
+        "was breaking",
+        "had been breaking",
+        "broken",
+        "had broken",
+        "was broken"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "He ________ my good friend before he betrayed me.",
+      "opts": [
+        "were",
+        "been",
+        "has been",
+        "had been",
+        "is"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Who ________________the laundry inside before it started to rain?",
+      "opts": [
+        "was taking",
+        "has taken",
+        "taked",
+        "had taken",
+        "took"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "She threw away the letter she _________________ .",
+      "opts": [
+        "were finishing",
+        "had just finished",
+        "has finished",
+        "been finishing",
+        "has been finishing"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "When we entered the theatre, the play_________________ .",
+      "opts": [
+        "had already starting",
+        "would already start",
+        "had already started",
+        "will be started",
+        "can be started"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "He told me about his new job, ________________________ he is enjoying very much.",
+      "opts": [
+        "that",
+        "which",
+        "whom",
+        "who",
+        "where"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I had _________________ -3 big bags.",
+      "opts": [
+        "3 luggages",
+        "too much luggage",
+        "too luggages",
+        "many luggage",
+        "too many luggages"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "He has always wanted to be ___________ lawyer.",
+      "opts": [
+        "-",
+        "the",
+        "a",
+        "some",
+        "an"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "She is _________ person in my life.",
+      "opts": [
+        "the most importantly",
+        "importantly",
+        "more important",
+        "the most important",
+        "most important"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I met a boy, _________ I owe a lot of money.",
+      "opts": [
+        "which",
+        "whose",
+        "who",
+        "whom",
+        "that"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I can't work here. There's _____________.",
+      "opts": [
+        "too many noises",
+        "the too much noise",
+        "a too much noise",
+        "too much noise",
+        "the too many noises"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I am going to visit my best friend in India, _______________ he lives.",
+      "opts": [
+        "where",
+        "whom",
+        "that",
+        "which",
+        "there"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "I _________________ to the cinema because I had no homework.",
+      "opts": [
+        "was allowed to go",
+        "can’t go",
+        "don’t have to go",
+        "wouldn’t go",
+        "should go"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "She ordered me to buy strawberries. I ___________ do it.",
+      "opts": [
+        "must",
+        "may",
+        "have to",
+        "can",
+        "might"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "He´s too weak. He will never be_______________lift the boulder.",
+      "opts": [
+        "allowed to",
+        "able to",
+        "may",
+        "have to",
+        "can"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Don´t advise me. You are still telling me what I_____________________do.",
+      "opts": [
+        "may",
+        "must",
+        "should",
+        "can",
+        "could"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Give me advice. What ______________ I do?",
+      "opts": [
+        "must",
+        "do",
+        "can",
+        "will",
+        "should"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "No! I won’t repeat it again. You __________________cross the road alone!",
+      "opts": [
+        "don’t have to",
+        "are not able",
+        "mustn´t",
+        "needn´t",
+        "are not allow to"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "All our employess___________________ speak two foreign languages.",
+      "opts": [
+        "could be able to",
+        "may be able to",
+        "can be able to",
+        "might be able to",
+        "must be able to"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "They _________________________ go to school because they are sick.",
+      "opts": [
+        "may",
+        "ought to",
+        "might",
+        "mustn´t",
+        "should"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Mary was very angry. You________________________ .",
+      "opts": [
+        "should have apologised",
+        "may have apologised",
+        "might have apologised",
+        "mustn’t have apologised",
+        "must have apologised"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Then I started looking for my notes which I _____________ earlier.",
+      "opts": [
+        "have taken",
+        "took",
+        "had been taking",
+        "was taking",
+        "had taken"
+      ],
+      "correct": [2, 4]
+    },
+    {
+      "q": "When I arrived at school, the lesson _______________.",
+      "opts": [
+        "has started",
+        "had started",
+        "will have started",
+        "starts",
+        "would have started"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "What _______________________________ recently?",
+      "opts": [
+        "was the company produce",
+        "has the company produce",
+        "are the company producing",
+        "has the company been producing",
+        "has the company producing"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "You ________________ more, if you want to win the marathon.",
+      "opts": [
+        "could run",
+        "may run",
+        "ought to run",
+        "can run",
+        "shouldn´t run"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Where _______________? He is from Poland.",
+      "opts": [
+        "is Peter coming from?",
+        "Peter comes from?",
+        "do Peter come from?",
+        "is Peter come from?",
+        "does Peter come from?"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "I _____________ to music and my boyfriend _____________ now.",
+      "opts": [
+        "listen, read",
+        "listening, reading",
+        "am listening, is reading",
+        "is listening, is reading",
+        "listen, is reading"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "The train __________________ the station at 3 o´clock.",
+      "opts": [
+        "leave",
+        "will have left",
+        "leaves",
+        "will left",
+        "leaving"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "The policeman _____________________ to catch me, so I __________________ in the park. (bez záruky, sporný klíč školy)",
+      "opts": [
+        "tried, hide",
+        "was trying, hidden",
+        "were trying, hid",
+        "trying, am hiding",
+        "did try, were"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "The police _______________ me on my way home last night.",
+      "opts": [
+        "stop",
+        "has stopped",
+        "stopped",
+        "was stopping",
+        "was stopped"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I ________________________ you soon. I promise.",
+      "opts": [
+        "meeting",
+        "am meeting",
+        "meet",
+        "will meet",
+        "am going to meet"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "We are late. The film _______________________ at 5.30 p.m.",
+      "opts": [
+        "will already has started",
+        "will already start",
+        "is going to start",
+        "is starting",
+        "starts"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Look at those dark clouds. It _____________ soon.",
+      "opts": [
+        "is going to rain",
+        "rains",
+        "is raining",
+        "will be rain",
+        "rain"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "How long ____________________? Sorry, I was delayed.",
+      "opts": [
+        "have you been waiting",
+        "were waiting",
+        "you did wait",
+        "wait you",
+        "you waited"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Have you ever ____________ to Cannes?",
+      "opts": [
+        "tried",
+        "seen",
+        "stayed",
+        "visited",
+        "been"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "He is our best player. He __________________ football for 5 years.",
+      "opts": [
+        "has been playing",
+        "is playing",
+        "played",
+        "was playing",
+        "plays"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "If I had more time, I ____________________ to help you.",
+      "opts": [
+        "will come",
+        "came",
+        "come",
+        "would come",
+        "woukd has come"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "The wind blew away the leaves we __________________________________ .",
+      "opts": [
+        "were collecting",
+        "had collected",
+        "had collect",
+        "collected",
+        "collect"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "_____________ who wants to take the exam must tell me by Thursday.",
+      "opts": [
+        "Noone",
+        "Anything",
+        "Anyone",
+        "Someone",
+        "Somebody"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "His father __________________________ fishing every weekend last year.",
+      "opts": [
+        "did gone",
+        "went",
+        "were going",
+        "gone",
+        "was going"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "The Sun __________________ in the east.",
+      "opts": [
+        "rise",
+        "are rising",
+        "rises",
+        "is rising",
+        "has been rising"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I am a happy person, I don´t have ______________ problems.",
+      "opts": [
+        "some",
+        "much",
+        "no",
+        "any",
+        "a"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "____________ early every Friday.",
+      "opts": [
+        "Usually get up",
+        "Usually get up I",
+        "I usually get up",
+        "I get usually up",
+        "I get up usually"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "You should _________________ . It is very unhealthy.",
+      "opts": [
+        "give up to smoke",
+        "give up smoking",
+        "give up to smoking",
+        "give up smoke",
+        "give up smoked"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Before he drown, he ___________________ in the pond.",
+      "opts": [
+        "swum",
+        "has swum",
+        "had been swimming",
+        "has been swimming",
+        "swimming"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "________________ you please tell me how to get there?",
+      "opts": [
+        "Ought to",
+        "Must",
+        "Should",
+        "May",
+        "Could"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "My colleagues ________________ to finish this project for a long time.",
+      "opts": [
+        "have been",
+        "have been trying",
+        "have tried",
+        "had been finishing",
+        "are trying"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Julia __________ right now. She ______________ .",
+      "opts": [
+        "isn´t working, is relaxing",
+        "isn´t working, relaxes",
+        "work, doesn´t relax",
+        "works, don´t relax",
+        "doesn´t work, relax"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "I __________________ thirsty. Let´s have a drink!",
+      "opts": [
+        "get",
+        "am getting",
+        "don´t get",
+        "shall get",
+        "gets"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "My hamster´s cage _____________ every day.",
+      "opts": [
+        "clean",
+        "must clean",
+        "cleans",
+        "is cleaning",
+        "is cleaned"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "__________ today?",
+      "opts": [
+        "Have a lot of cars been produced",
+        "Have produced a lot of cars",
+        "Have been a lot of cars produced",
+        "Was produced a lot of cars",
+        "Was a lot of cars produced"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "The book ______________ next week.",
+      "opts": [
+        "finishes",
+        "will be finished",
+        "is going to finish",
+        "will be finish",
+        "was finished"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "The trees ____________________ although the citizens protested against it.",
+      "opts": [
+        "cut down",
+        "have cutted down",
+        "have been cut down",
+        "has been cut down",
+        "were cutting"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "How long _____________ fot the exam?",
+      "opts": [
+        "have you already studied",
+        "have already you had studied",
+        "did you already study",
+        "have you been already studying",
+        "had you already studied"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Sue _____________only one clean pair of jeans at the moment.",
+      "opts": [
+        "is hasing",
+        "have",
+        "has",
+        "is having",
+        "is haveing"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I ___________________________ ice cream for a few minutes when they came.",
+      "opts": [
+        "have been eating",
+        "have eaten",
+        "ate",
+        "had been eating",
+        "had eating"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "He thinks that she _______________ .",
+      "opts": [
+        "will goes out with him.",
+        "will be going out with him.",
+        "go out with him.",
+        "will go out with him.",
+        "is going with him."
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I __________________ in a forest when I saw a stag.",
+      "opts": [
+        "have walking",
+        "walked",
+        "was walking",
+        "walk",
+        "have been walking"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I don't want to go to the cinema alone. _____________________ with me?",
+      "opts": [
+        "Will you come",
+        "Do you come",
+        "Want you come",
+        "Will you have come",
+        "Like you come"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "No, it's not necessary. You _____________ worry",
+      "opts": [
+        "can't",
+        "doesn't have to",
+        "mustn't",
+        "needn't",
+        "are not allowed to"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Our house __________ next month.",
+      "opts": [
+        "would finish",
+        "must finish",
+        "will be finished",
+        "can finish",
+        "would have been finished"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I am not sure. It ______________ be him.",
+      "opts": [
+        "ought to",
+        "could",
+        "is",
+        "should",
+        "must"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "If this project _________________ on time, you ________________ better money.",
+      "opts": [
+        "were finished, would have been give",
+        "was finished, would be given",
+        "will be finished are given",
+        "will be finished, you will be given",
+        "is finished, will be given"
+      ],
+      "correct": [1, 4]
+    },
+    {
+      "q": "My field is completely parched! It ___________________ for a few weeks.",
+      "opts": [
+        "won't rain",
+        "hasn't rained",
+        "hadn't rained",
+        "doesn't rain",
+        "shouldn't rain"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "She is very good friend of mine. I _____________ her for many years.",
+      "opts": [
+        "have been knowing",
+        "know",
+        "have known",
+        "am knowing",
+        "was knowing"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I can’t walk anymore. We _________ for hours!",
+      "opts": [
+        "have been walking",
+        "were walking",
+        "walked",
+        "are walking",
+        "is walked"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "He_______________the roof, but it is not finished.",
+      "opts": [
+        "had repaired",
+        "was repairing",
+        "reparied",
+        "has been repairing",
+        "had been repairing"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "They always come ________ Fridays.",
+      "opts": [
+        "on",
+        "at",
+        "by",
+        "to",
+        "in"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "The woman, ___________ lives next door, is very old.",
+      "opts": [
+        "where",
+        "whom",
+        "which",
+        "who",
+        "whose"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I ______________________ this time next week.",
+      "opts": [
+        "will be travelling to Bangkok",
+        "am going to travel to Bangkok",
+        "am travelling to Bangkok",
+        "will travel to Bangkok",
+        "travel to Bangkok"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "He ____________ a new mobile phone. Do you think it is a good idea?",
+      "opts": [
+        "does buy",
+        "will buy",
+        "buys",
+        "is going to buy",
+        "buying"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Do you have a plan for Saturday? Yes, _____________________.",
+      "opts": [
+        "I may go to Brno",
+        "I will go to Brno",
+        "I go to Brno",
+        "I am going to Brno",
+        "I going to Brno"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Your bag looks heavy. I____________________.",
+      "opts": [
+        "will help you",
+        "help you",
+        "am going to help you",
+        "will be help you",
+        "am helping you"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "At 10 o'clock tomorrow, Sue will be in her office, she ____________.",
+      "opts": [
+        "will be working",
+        "will work",
+        "works",
+        "is working",
+        "working"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "This______________Sue. She said she would come at that time.",
+      "opts": [
+        "may be",
+        "must be",
+        "could be",
+        "can be",
+        "might be"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "She crashed the car! She___________me about it.",
+      "opts": [
+        "could say",
+        "should have told",
+        "must say",
+        "could have tell",
+        "must told"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Carl has died. You _________________ him.",
+      "opts": [
+        "should",
+        "should knew",
+        "must knew",
+        "must have known",
+        "must had known"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I am sure he _____________ play the guitar well.",
+      "opts": [
+        "managed",
+        "might",
+        "could",
+        "can",
+        "should"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "What__________I do for you?",
+      "opts": [
+        "can",
+        "am able",
+        "am alloowed",
+        "has not",
+        "have to"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "You __________ the book if you don't like it.",
+      "opts": [
+        "can read",
+        "mustn't read",
+        "don't have to read",
+        "may read",
+        "shall read"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "This scarf ______ in India _______ young girls.",
+      "opts": [
+        "made, by",
+        "makes, by",
+        "was made, by",
+        "made, with",
+        "was made, with"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Our car __________________ by my dad right now.",
+      "opts": [
+        "clean",
+        "is cleaned",
+        "cleans",
+        "is being cleaned",
+        "is cleaning"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Before the war started, many books__________________________. (bez záruky, sporný klíč školy)",
+      "opts": [
+        "is burn by police",
+        "has been burnt by the police",
+        "had been burnt with the police",
+        "was burnt by the police",
+        "burnt by the police"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "My grandfather_______________collecting stamps.",
+      "opts": [
+        "love",
+        "did loved",
+        "is loving",
+        "loved",
+        "was loving"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Yesterday, I came home and _________________ my laptop.",
+      "opts": [
+        "have turned on",
+        "had turned on",
+        "turned on",
+        "was turning on",
+        "have been turning on"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "When I came, she __________________.",
+      "opts": [
+        "has been cooking",
+        "has cooked",
+        "was cooking",
+        "cooked",
+        "coocked"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "The detective wants to know, what ____________ yesterday exactly at 7 a.m.",
+      "opts": [
+        "does",
+        "was you doing",
+        "had you done",
+        "did you",
+        "you were doing"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "I _____________ in Uruguay two years ago.",
+      "opts": [
+        "am",
+        "was",
+        "were",
+        "have been",
+        "has been"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Look! The dog ______________ your dinner!",
+      "opts": [
+        "eat",
+        "eats",
+        "ought to eat",
+        "is eating",
+        "had been eating"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "What kind of chocolate_____________?",
+      "opts": [
+        "is she liking",
+        "she likes",
+        "do she likes",
+        "does she like",
+        "likes she"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Jane____________right now. She__________________.",
+      "opts": [
+        "isn’t working, relaxes",
+        "work, doesn’t relax",
+        "isn’t working, is relaxing",
+        "works, don’t relax",
+        "doesn’t work, relax"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "She usually wears glasses but today she ________________ contact lenses.",
+      "opts": [
+        "wears",
+        "is worn",
+        "is wearing",
+        "wear",
+        "wearing"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "He ____________ for a meal.",
+      "opts": [
+        "has been inviting",
+        "has been invited",
+        "was invites",
+        "has invited",
+        "had been invited"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Two hundred people ______________ by the company.",
+      "opts": [
+        "are employed",
+        "employed",
+        "employ",
+        "be employed",
+        "had been employed"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "It has been 10 years since I _____________ him.",
+      "opts": [
+        "see",
+        "last saw",
+        "have seen",
+        "was seeing",
+        "had seen"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "No daddy, I _______________ the sculpture.",
+      "opts": [
+        "haven't been breaking",
+        "don't break",
+        "didn't break",
+        "not break"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "If I found somebody's identity card, I ______________ it to the police station.",
+      "opts": [
+        "would taken",
+        "take",
+        "took",
+        "would take",
+        "would have taken"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "What ___________ he do if she _____________?",
+      "opts": [
+        "was, left",
+        "would, leave",
+        "will, leaves",
+        "does, leaves",
+        "did, leaves"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "If I _____________ you, I wouldn't watch it.",
+      "opts": [
+        "am",
+        "were",
+        "am being",
+        "have been",
+        "had been"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I ____________ all my friends if my parents weren't at home.",
+      "opts": [
+        "invite",
+        "invited",
+        "will invite",
+        "would invite",
+        "would have invited"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Can I have__________________please? (bez záruky)",
+      "opts": [
+        "some coffee",
+        "coffees",
+        "a cup of coffee",
+        "cup of coffee",
+        "cup of a coffee"
+      ],
+      "correct": [0, 2]
+    },
+    {
+      "q": "They ______________that____________enough time to prepare everything.",
+      "opts": [
+        "told us, they hadn’t have",
+        "told us, they haven’t had",
+        "told us, they didn’t have",
+        "had told us, they did’t have",
+        "told us, they don’t have"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "When I came, she _________________. I didn’t see her.",
+      "opts": [
+        "has left",
+        "had left",
+        "leaved",
+        "left",
+        "was leaving"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "How long_____________ the car before I arrived?",
+      "opts": [
+        "had you washing",
+        "had you been washing",
+        "were you washing",
+        "you had been washing",
+        "you had washing"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "My work is always ____________________ by my supervisor.",
+      "opts": [
+        "checking",
+        "checked",
+        "choken",
+        "chook",
+        "check"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Where ________________? He is from USA.",
+      "opts": [
+        "he comes from",
+        "do he come from",
+        "does he come from",
+        "is he come from",
+        "is he comming from"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Don't be so noisy. __________________.",
+      "opts": [
+        "I study",
+        "I studied",
+        "I am studying",
+        "I was studying",
+        "I have studied"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "Jane_____________only one clean pair of jeans at the moment.",
+      "opts": [
+        "is having",
+        "is haveing",
+        "is hasing",
+        "has",
+        "have"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Look at those black clouds! It________________.",
+      "opts": [
+        "rain",
+        "rains",
+        "will rain",
+        "will have rained",
+        "is going to rain"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "The house was dirty. They_________________ it for weeks.",
+      "opts": [
+        "hadn’t cleaned",
+        "didn’t clean",
+        "have cleaned",
+        "were cleaning",
+        "haven’t cleaning"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "She __________________her leg and was crying.",
+      "opts": [
+        "brake",
+        "broke",
+        "was breaking",
+        "was broking",
+        "breaked"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Last night, I was reading a book when suddenly I _________________ a loud bang.",
+      "opts": [
+        "hear",
+        "was hearing",
+        "heard",
+        "was heard",
+        "have heard"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I __________________ that mail if I knew it had contained a virus.",
+      "opts": [
+        "wouldn't have opened",
+        "wouldn't open",
+        "would open",
+        "would opened",
+        "opened"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "You _________________ some advice.",
+      "opts": [
+        "give",
+        "have given",
+        "would given",
+        "have gave",
+        "will be given"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Have you ever been to __________________ .",
+      "opts": [
+        "the United States of America",
+        "United States of America",
+        "the United States of the America",
+        "the United States America",
+        "United states of america"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "A rock was thrown _________________ my room.",
+      "opts": [
+        "on",
+        "into",
+        "for",
+        "in",
+        "at"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Oh, you took the wrong way. You __________________ right. (bez záruky)",
+      "opts": [
+        "could have turned",
+        "ought to have turned",
+        "can have turned",
+        "should have turned",
+        "must have turned"
+      ],
+      "correct": [1, 3]
+    },
+    {
+      "q": "I must say that I had _______________ .",
+      "opts": [
+        "the luck",
+        "many luck",
+        "a luck",
+        "an luck",
+        "luck"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "The crook _______________ to jail.",
+      "opts": [
+        "must sentence",
+        "was sentencing",
+        "was sentence",
+        "had to be sentenced",
+        "must be sentenced"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "He ___________ the best scientist in the world.",
+      "opts": [
+        "is said being",
+        "said to be",
+        "is said",
+        "is said to be",
+        "says to be"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Look! The window ________________!",
+      "opts": [
+        "broken",
+        "have been broken by",
+        "has broken",
+        "has been broken",
+        "has been broke"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Wolfgang Amadeus Mozart ________________ Prague several times.",
+      "opts": [
+        "has visited",
+        "have visited",
+        "were visiting",
+        "visited",
+        "was visiting"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "_______________________ they manage it when you __________________ there?",
+      "opts": [
+        "Do, was",
+        "Does, did",
+        "Did, are",
+        "Were, do",
+        "Did, were"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "No, I don´t work. I _______________ at the University of Oxford.",
+      "opts": [
+        "had studied",
+        "am studied",
+        "study",
+        "am study",
+        "was study"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "He refused to eat _________________ .",
+      "opts": [
+        "anything",
+        "anyone",
+        "nothing",
+        "anybody",
+        "something"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "This food is really ________________.",
+      "opts": [
+        "disguising",
+        "disgusted",
+        "disguisting",
+        "disgusting",
+        "disgust"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "______________ river Vltava is _______________ longest river in the Czech Republic.",
+      "opts": [
+        "-, the",
+        "The, a",
+        "The, -",
+        "The, the",
+        "A, the"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Peter, ________________ wife is very beautiful, is a lucky man.",
+      "opts": [
+        "which",
+        "whose",
+        "whom",
+        "that",
+        "who"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Do you come ______________ Britain?",
+      "opts": [
+        "of",
+        "out",
+        "from",
+        "in",
+        "at"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "The hippo ______________________ the little lemur, and now he is hot.",
+      "opts": [
+        "has been chasing",
+        "had been chasing",
+        "was chasing",
+        "chased",
+        "has chased"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "I _____________________ here for ages. I am going home now.",
+      "opts": [
+        "have been waiting",
+        "have been waited",
+        "waited",
+        "have waited",
+        "was waiting"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "It would be silly if ____________________ to walk here.",
+      "opts": [
+        "we try",
+        "we are trying",
+        "we had tried",
+        "we tryed",
+        "we tried"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "The professor ________________ hem if he___________________ so arrogant.",
+      "opts": [
+        "will help, wasn´t",
+        "would help, wasn´t",
+        "would have helped, weren´t",
+        "would help, didn´t",
+        "helps him, is"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "Victor __________________ his trip to Bahamy for a long time.",
+      "opts": [
+        "will have worked",
+        "would work",
+        "was working",
+        "worked",
+        "had been working"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "When I left the house, I _________________ breakfast yet.",
+      "opts": [
+        "have had",
+        "had",
+        "hadn´t had",
+        "has had",
+        "haven´t had"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I ________________ stamps for a long time before I sold them all.",
+      "opts": [
+        "had been collecting",
+        "had collected",
+        "collecting",
+        "was collecting",
+        "has been collecting"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "____________ Marek? Yes, I probably am.",
+      "opts": [
+        "Are you going to visit",
+        "Are you visit",
+        "Will you visit",
+        "Won´t you visit",
+        "Do you visit"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "Have you already taken the exam? No, ____________ next week.",
+      "opts": [
+        "I will taking the exam",
+        "I am gioing take the exam",
+        "I take the exam",
+        "I will take the exam",
+        "I am taking the exam"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "The project ___________________ tomorrow in the morning.",
+      "opts": [
+        "finished",
+        "will be being finished",
+        "will finished",
+        "will have been finished",
+        "will be finished"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "He _______________ for less than an hour when his car broke down.",
+      "opts": [
+        "has been driving",
+        "has driven",
+        "drowed",
+        "drove",
+        "had been driving"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Oh, my laptop is broken! I _________________ a new one.",
+      "opts": [
+        "will have buy",
+        "will have to buy",
+        "buy",
+        "am going buy",
+        "will be buying"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I don´t want to pay taxes. But I ________________ do it.",
+      "opts": [
+        "am able to",
+        "have to",
+        "must",
+        "am allowed to",
+        "can"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I couldn´t remember where I __________________ my glasses.",
+      "opts": [
+        "leave",
+        "had left",
+        "leaved",
+        "have left",
+        "left"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "If you are a vegetarian, you _____________________ meat.",
+      "opts": [
+        "do not eat",
+        "ate",
+        "could not be eat",
+        "will not eat",
+        "have been eating"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "If you ________________________ carefully, you wouldn´t have had the accident.",
+      "opts": [
+        "had driven",
+        "drove",
+        "driven",
+        "would drive",
+        "would have driven"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "As soon as she arrives, I _________________ the truth.",
+      "opts": [
+        "must tell her",
+        "might tell her",
+        "tells",
+        "will have told",
+        "could tell her"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "She ____________________ all morning and she is exhausted.",
+      "opts": [
+        "cooked",
+        "has cooked",
+        "has been cooked",
+        "cooking",
+        "has been cooking"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "When it started to rain, our cat _____________________to go inside.",
+      "opts": [
+        "has wanted",
+        "wanted",
+        "was wanting",
+        "has been wanting",
+        "were wanting"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "I bought a car, ___________________________ is the most beautiful in my town.",
+      "opts": [
+        ".",
+        "whose",
+        "who",
+        "which",
+        "whom"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "I get _______________ easily when a lesson is ____________ .",
+      "opts": [
+        "boring, bored",
+        "boring, boredom",
+        "bored, boring",
+        "bore, boring",
+        "bore, bored"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "The building ___________ by a famous architect.",
+      "opts": [
+        "was built",
+        "build",
+        "is build",
+        "built",
+        "was build"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "The concert _______________________ a few hours ago because of the bad weather.",
+      "opts": [
+        "cancelled",
+        "have been cancelled",
+        "has cancelled",
+        "was cancelled",
+        "has been cancelled"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "You can´t enter the room now, it __________________ at the moment.",
+      "opts": [
+        "is cleaning",
+        "cleans",
+        "cleaning",
+        "clean",
+        "is being cleaned"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "I ___________________ enter this room. It is forbidden.",
+      "opts": [
+        "am forbidden",
+        "am allowed",
+        "am not forbidden",
+        "am not allowed to",
+        "allow"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Sue _________________ at home, I am not sure.",
+      "opts": [
+        "can´t be",
+        "mustn´t be",
+        "must be",
+        "should be",
+        "might be"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "I think that the second runner was better. So he _________________________ .",
+      "opts": [
+        "must have won",
+        "had to win",
+        "should have won",
+        "can win",
+        "should win"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "They ______________ next week.",
+      "opts": [
+        "fire",
+        "go to fire",
+        "will fire",
+        "are fired",
+        "will be fired"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "_________________________ to you before he called us?",
+      "opts": [
+        "Spoke he",
+        "Has he spoken",
+        "Did he speak",
+        "Was he speaking",
+        "Had he spoken"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "If Sue cuts the cucumber, John ___________________ the orange for the salad.",
+      "opts": [
+        "would peel",
+        "will peel",
+        "is peeling",
+        "peel",
+        "peels"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "You are out of breath. What ____________________?",
+      "opts": [
+        "did you do",
+        "have you been doing",
+        "were you doing",
+        "have you done",
+        "are you doing"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "A: Have you sent the letter?, B: Oh, I have forgotten! I ______________________ it now.",
+      "opts": [
+        "will send",
+        "send",
+        "will be sending",
+        "will have sent",
+        "am sending"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "I __________________ at 7 p.m. Prepare the bath.",
+      "opts": [
+        "will have came",
+        "am going to come",
+        "am coming",
+        "come",
+        "will coming"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "No matter what they say, I ___________________ the hospital tomorrow.",
+      "opts": [
+        "leave",
+        "will have left",
+        "am leaving",
+        "am going to leave",
+        "will leave"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "The river Nile _________________ very fast yesterday. So strange...",
+      "opts": [
+        "was flowing",
+        "has flowed",
+        "flew",
+        "flows",
+        "was flow"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "If he ________________ a millionaire, I _______________ him. (bez záruky)",
+      "opts": [
+        "was, would marry",
+        "will be, will marry",
+        "would be, would marry",
+        "is, had married",
+        "would have been, would have married"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "A: I can´t find my keys!, B: I´ll tell you if I ____________________________them.",
+      "opts": [
+        "will be finding",
+        "found",
+        "find",
+        "am finding",
+        "will find"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "If you _____________ water to 100°C, it _____________ .",
+      "opts": [
+        "would heat, would boil",
+        "heat, boils",
+        "heated, boils",
+        "will heat, will boil",
+        "had heated, would boil"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "How is she doing? ______________ .",
+      "opts": [
+        "She is good.",
+        "She was doing fine.",
+        "She is doing fine.",
+        "Fine.",
+        "She does."
+      ],
+      "correct": [2, 3]
+    },
+    {
+      "q": "Are you listening to the radio? No, I ______________ .",
+      "opts": [
+        "don´t",
+        "am",
+        "do",
+        "am not",
+        "listen"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "The letter ______________________ yet.",
+      "opts": [
+        "hasn´t sent",
+        "has sent",
+        "sent",
+        "send",
+        "hasn´t been sent"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Oslo´s City Hall _____________ in the middle od 20th century.",
+      "opts": [
+        "was built",
+        "builds",
+        "build",
+        "is build",
+        "built"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "I was exhausted because I __________________ well the night before.",
+      "opts": [
+        "had sleep",
+        "didn´t slept",
+        "slept",
+        "didn´t sleep",
+        "hadn´t slept"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "She was annoyed that she ________________ her own room on the trip the week before.",
+      "opts": [
+        "won´t have",
+        "can´t have",
+        "doesn´t have",
+        "don´t have",
+        "hadn´t had"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "I invited Sue to the party but she couldn´t come. She _____________ something else before.",
+      "opts": [
+        "had arranged",
+        "would arrange",
+        "has arranged",
+        "might arrange",
+        "arranged"
+      ],
+      "correct": [0]
+    },
+    {
+      "q": "My mother ______________ out late.",
+      "opts": [
+        "allowed me staying",
+        "allowed me to staying",
+        "allowed stay",
+        "allowed me to stay",
+        "allowe me to stay"
+      ],
+      "correct": [3]
+    },
+    {
+      "q": "Finnish________ only in Finland.",
+      "opts": [
+        "speaks",
+        "speak",
+        "will speak",
+        "is speaking",
+        "is spoken"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "I was born ___________ November 27th.",
+      "opts": [
+        "_",
+        "at",
+        "of",
+        "in",
+        "on"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "They _______________ him.",
+      "opts": [
+        "decided not inviting",
+        "decided to not invite",
+        "decided not invite",
+        "decided inviting not",
+        "decided not to invite"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "There are ______ people waiting for you. I don´t know them.",
+      "opts": [
+        "a",
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "How many books ________________ at home?",
+      "opts": [
+        "are you having",
+        "you have",
+        "you are having",
+        "have you had",
+        "do you have"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "Who is that man? What _________________ ?",
+      "opts": [
+        "does he wanting",
+        "does he want",
+        "do he wants",
+        "is he wanting",
+        "is he want"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "He ________ for the bus when his phone ______________ .",
+      "opts": [
+        "was waiting, ringed",
+        "waited, rung",
+        "waited, was ringing",
+        "was waiting, rung",
+        "was waiting, rang"
+      ],
+      "correct": [4]
+    },
+    {
+      "q": "______________ the cake since I left?",
+      "opts": [
+        "They had been baking",
+        "Have they been baking",
+        "They bake",
+        "Baked they",
+        "They had baked"
+      ],
+      "correct": [1]
+    },
+    {
+      "q": "You _____________ to bed right now. You have to get up early tomorrow.",
+      "opts": [
+        "shan't go",
+        "might go",
+        "should go",
+        "don't have to go",
+        "can't go"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "I __________ the boy you _____________ about!",
+      "opts": [
+        "know, talking",
+        "am knowing, are talking",
+        "know, are talking",
+        "know, talk",
+        "am knowing, talk"
+      ],
+      "correct": [2]
+    },
+    {
+      "q": "He ___________________ me his photos 2 weeks ago.",
+      "opts": [
+        "has showed",
+        "showed",
+        "shows",
+        "shown",
+        "was showed"
+      ],
+      "correct": [1]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Present simple",
+      "q": [30, 31, 32, 34, 36, 87, 102, 104, 116, 151, 167, 169, 185, 205, 241, 242]
+    },
+    {
+      "name": "Present continuous",
+      "q": [28, 29, 35, 88, 109, 110, 150, 152, 153, 168, 229, 230, 246]
+    },
+    {
+      "name": "Past simple",
+      "q": [1, 3, 7, 8, 91, 101, 145, 146, 149, 157, 172, 183, 209, 247]
+    },
+    {
+      "name": "Past continuous",
+      "q": [2, 4, 5, 6, 90, 119, 147, 173, 184, 225, 243]
+    },
+    {
+      "name": "Předložky a slovní zásoba",
+      "q": [70, 129, 177, 187, 190, 211, 238]
+    },
+    {
+      "name": "Členy, počitatelnost, some/any",
+      "q": [68, 69, 72, 100, 103, 162, 179, 186, 188, 240]
+    },
+    {
+      "name": "Vztažná zájmena",
+      "q": [67, 71, 73, 130, 189, 210]
+    },
+    {
+      "name": "Will vs. going to",
+      "q": [11, 12, 14, 16, 17, 92, 94, 118, 120, 132, 134, 170, 198, 202, 222]
+    },
+    {
+      "name": "Budoucnost: přítomné časy, shall, will be -ing",
+      "q": [9, 10, 13, 15, 18, 37, 89, 93, 131, 133, 135, 199, 223, 224]
+    },
+    {
+      "name": "Modální slovesa",
+      "q": [74, 75, 76, 77, 78, 79, 80, 81, 86, 107, 121, 139, 140, 141, 203, 207, 215, 245]
+    },
+    {
+      "name": "Present perfect",
+      "q": [47, 48, 51, 54, 96, 125, 126, 156, 176]
+    },
+    {
+      "name": "Present perfect continuous",
+      "q": [49, 50, 52, 53, 55, 56, 85, 95, 97, 108, 115, 127, 128, 191, 192, 208, 221, 244]
+    },
+    {
+      "name": "Trpný rod: present a past simple",
+      "q": [39, 40, 43, 44, 46, 111, 142, 155, 166, 212, 213, 232, 237]
+    },
+    {
+      "name": "Kondicionál 0 a 1",
+      "q": [22, 23, 25, 124, 159, 220, 227, 228]
+    },
+    {
+      "name": "Past perfect",
+      "q": [58, 60, 62, 63, 64, 65, 66, 83, 84, 99, 164, 171, 196, 204, 219, 233, 234, 235]
+    },
+    {
+      "name": "Nepřímá řeč a slovesné vazby",
+      "q": [33, 57, 59, 105, 148, 163, 236, 239]
+    },
+    {
+      "name": "Trpný rod: průběhové a perfektní časy",
+      "q": [38, 41, 112, 114, 143, 144, 154, 182, 214, 231]
+    },
+    {
+      "name": "Trpný rod: budoucnost a modální slovesa",
+      "q": [42, 45, 113, 122, 175, 180, 181, 200, 218]
+    },
+    {
+      "name": "Kondicionál 2 a 3",
+      "q": [19, 20, 21, 24, 26, 27, 98, 158, 160, 161, 174, 193, 194, 206, 226]
+    },
+    {
+      "name": "Past perfect continuous",
+      "q": [61, 106, 117, 165, 195, 197, 201]
+    },
+    {
+      "name": "Modální slovesa v minulosti a pravděpodobnost",
+      "q": [82, 123, 136, 137, 138, 178, 216, 217]
+    }
+  ]
+}

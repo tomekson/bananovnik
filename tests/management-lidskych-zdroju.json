@@ -1,0 +1,2602 @@
+{
+  "id": "management-lidskych-zdroju",
+  "title": "Management lidských zdrojů",
+  "updatedAt": "2026-10-18",
+  "rubric": "Zkouškový test: 60 min., 20 otázek po 4 bodech + 1 otevřená za 20 bodů, bez pomůcek",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 80,
+    "openPoints": 20,
+    "passPoints": 51,
+    "questionCount": 20,
+    "openCount": 1
+  },
+  "sets": [
+    {
+      "name": "Pojetí MLZ, strategie a personální útvar",
+      "q": [
+        20,
+        24,
+        48,
+        59,
+        61,
+        63,
+        64,
+        68,
+        71,
+        94,
+        96,
+        106,
+        115,
+        116,
+        117,
+        118,
+        119,
+        121,
+        123,
+        125,
+        129,
+        131,
+        146,
+        147,
+        151
+      ]
+    },
+    {
+      "name": "Personální plánování a analýza pracovních míst",
+      "q": [
+        4,
+        25,
+        39,
+        40,
+        43,
+        50,
+        52,
+        55,
+        56,
+        66,
+        70,
+        72,
+        87,
+        93,
+        103,
+        132
+      ]
+    },
+    {
+      "name": "Získávání pracovníků a personální marketing",
+      "q": [
+        6,
+        8,
+        12,
+        27,
+        28,
+        29,
+        30,
+        34,
+        51,
+        53,
+        74,
+        75,
+        76,
+        77,
+        80,
+        82,
+        92,
+        108,
+        109,
+        110,
+        112,
+        113,
+        136,
+        137,
+        138,
+        141
+      ]
+    },
+    {
+      "name": "Výběr pracovníků",
+      "q": [
+        2,
+        5,
+        32,
+        54,
+        58,
+        60,
+        83,
+        89,
+        101,
+        114,
+        122,
+        124,
+        126,
+        133,
+        148,
+        149,
+        150
+      ]
+    },
+    {
+      "name": "Pracovní poměr a odbory",
+      "q": [
+        1,
+        3,
+        14,
+        22,
+        37,
+        91,
+        107,
+        128,
+        134
+      ]
+    },
+    {
+      "name": "Adaptace pracovníků",
+      "q": [
+        7,
+        9,
+        31,
+        57,
+        78,
+        97,
+        127,
+        130
+      ]
+    },
+    {
+      "name": "Hodnocení a řízení pracovního výkonu",
+      "q": [
+        10,
+        11,
+        13,
+        42,
+        45,
+        46,
+        47,
+        62,
+        90,
+        95,
+        99,
+        105,
+        143
+      ]
+    },
+    {
+      "name": "Odměňování a motivace",
+      "q": [
+        41,
+        44,
+        73,
+        135,
+        139,
+        140,
+        142,
+        144,
+        145
+      ]
+    },
+    {
+      "name": "Vzdělávání a rozvoj",
+      "q": [
+        15,
+        16,
+        17,
+        35,
+        36,
+        38,
+        49,
+        67,
+        79,
+        81,
+        88,
+        98,
+        100,
+        104,
+        120
+      ]
+    },
+    {
+      "name": "Rozmisťování, propouštění a fluktuace",
+      "q": [
+        18,
+        19,
+        21,
+        23,
+        26,
+        33,
+        65,
+        69,
+        84,
+        85,
+        86,
+        102,
+        111
+      ]
+    }
+  ],
+  "openQuestions": [
+    "Co je outplacement (jeho cíle, co by měl program outplacementu obsahovat, příklady z českého trhu práce)?",
+    "Co je to pracovní motivace, stimulace, motivační program organizace. Popište rozdíl mezi vnitřní motivaci a vnější motivací.",
+    "Jaké jsou zdroje získávání pracovníků (charakterizujte jednotlivé zdroje, uveďte jejich výhody a nevýhody)",
+    "Vysvětlete pojem „personální strategie“ (vztah ke strategii organizace, její cíle). Co je podstatou strategického managementu lidských zdrojů?",
+    "Co je cílem procesu přijímání zaměstnance (vysvětlete pojmy zaměstnanec, zaměstnavatel, závislá práce, pracovněprávní vztah, jaké jsou podstatné náležitosti pracovní smlouvy, jakými způsoby lze dle zákoníku práce pracovní poměr ukončit)?",
+    "Popište personální činnosti (metody cíle úskalí).",
+    "Popište proces adaptace zaměstnanců (co je cílem, co by měl proces adaptace obsahovat, vysvětlete úlohu mentora při adaptaci).",
+    "Co je strategie managementu lidských zdrojů (konkurence schopnost lidí).",
+    "Jaká je role liniových manažerů v managementu lidských zdrojů?",
+    "Vysvětlete mechanistický a motivační přístup k vytváření pracovních míst (co mají oba přístupy společného, jaké jsou zásady vytváření motivujících pracovních míst)?",
+    "Jaká je role liniových manažerů?",
+    "Jaké jsou jednotlivé kroky v rámci procesu získávání pracovníků (co je cílem procesu získávání, metody získávání, rozdíl mezi získáváním a náborem, jaké náležitosti by měl mít inzerát)?",
+    "Jaké jsou funkce personálního útvaru a role personalistů v organizaci (uveďte a stručně charakterizujte funkce a role; jaký by měl být odborný a osobnostní profil personálního manažera)?",
+    "Popište fluktuaci (jak jí předejít, jak se počítá).",
+    "Popište rozdíl mezi hodnocením pracovníků a řízením pracovního výkonu. Co je to dohoda o pracovním výkonu a jakou má roli?",
+    "Vysvětlete pojmy mzda, plat a odměna z dohod. Jaký je mezi těmito pojmy rozdíl? Co jsou zaměstnanecké výhody a jaký mají význam v odměňování zaměstnanců?",
+    "Jaké jsou jednotlivé etapy procesu výběru zaměstnanců (co je cílem procesu výběru, jaké jsou úskalí výběrových pohovorů, struktura výběrového pohovoru)?",
+    "Jaká jsou specifika managementu lidských zdrojů jako nejnovější etapy ve vývoji personální práce (stručně charakterizujte jednotlivé etapy ve vývoji personalistiky a zaměřte se na specifika současné etapy)?"
+  ],
+  "questions": [
+    {
+      "q": "Nestanoví-li zákoník práce jinak, zakládá se pracovní poměr:",
+      "opts": [
+        "dohodou o pracovní činnosti mezi zaměstnavatelem a zaměstnancem",
+        "smlouvou o dílo",
+        "dohodou o výpomoci",
+        "pracovní smlouvou mezi zaměstnavatelem a zaměstnancem",
+        "dohodou o provedení práce mezi zaměstnavatelem a zaměstnancem"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Pracovní poměr je základní pracovněprávní vztah, ve kterém fyzická osoba vykonává pro zaměstnavatele závislou práci. Zákoník práce (č. 262/2006 Sb.) ho zakládá pracovní smlouvou mezi zaměstnavatelem a zaměstnancem. Výjimkou je jmenování, kterým vzniká pracovní poměr vedoucích zaměstnanců na některých místech.\nDohoda o provedení práce a dohoda o pracovní činnosti jsou pracovněprávní vztahy mimo pracovní poměr. Zaměstnanec při nich pracuje jen na omezený rozsah práce a má méně nároků než v pracovním poměru.\nSmlouva o dílo patří do občanského zákoníku. Zhotovitel při ní nepracuje v podřízenosti zaměstnavateli, proto nejde o závislou práci. Dohoda o výpomoci zákoník práce nezná."
+    },
+    {
+      "q": "Jaké jsou nejčastější chyby při vedení výběrového pohovoru?",
+      "opts": [
+        "vedení pohovoru na základě prvního dojmu",
+        "nezapisování si poznámek z průběhu výběrového pohovoru",
+        "kladení sugestivních otázek",
+        "kladení diskriminujících otázek",
+        "tendence více naslouchat než hovořit"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Chyby při vedení výběrového pohovoru jsou zkreslení, kterých se tazatel dopouští při posuzování uchazeče. Snižují validitu pohovoru, tedy jeho schopnost předpovědět budoucí výkon. Pohovor je vždy zčásti subjektivní, proto je nutné chyby znát a omezovat.\nNejčastější je hodnocení podle prvního dojmu a haló efekt. První dojem vzniká během prvních třiceti vteřin a stojí hlavně na vzhledu a chování. Snadno vznikne, ale obtížně se mění.\nDalší chyby jsou projekce, efekt zakotvení, efekt kontrastu a stereotypizace. Tazatel si má průběh zapisovat a nespoléhat na paměť, aby závěry nevznikaly z dojmů.\nSugestivní otázky uchazeči napovídají odpověď. Diskriminující otázky porušují zákaz diskriminace podle § 16 zákoníku práce.\nNaslouchání chybou není. Tazatel má uchazeče nechat mluvit a pozorně ho poslouchat. Chyby pomáhá omezit školení tazatelů, pohovor se dvěma hodnotiteli a strukturovaný pohovor."
+    },
+    {
+      "q": "Mezi povinnosti organizace vyplývající z pracovního poměru patří:",
+      "opts": [
+        "dodržovat pracovní podmínky stanovené právními předpisy",
+        "poskytovat všem zaměstnancům ochranné pracovní podmínky",
+        "vytvářet podmínky pro plnění jeho pracovních úkolů",
+        "přidělovat pracovníkovi práci podle pracovní smlouvy",
+        "platit pracovníkovi za vykonanou práci mzdu nebo plat"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Pracovní poměr zavazuje obě strany. Podle § 38 zákoníku práce je zaměstnavatel povinen přidělovat zaměstnanci práci podle pracovní smlouvy, platit mu za vykonanou práci mzdu nebo plat a vytvářet podmínky pro plnění jeho pracovních úkolů.\nZaměstnavatel také dodržuje pracovní podmínky stanovené právními předpisy. Zákoník práce (č. 262/2006 Sb.) k nim řadí například pracovní dobu, odpočinek nebo bezpečnost a ochranu zdraví při práci.\nZaměstnanec naproti tomu pracuje řádně podle svých sil, znalostí a schopností a plní pokyny nadřízených, které jsou v souladu s právními předpisy.\nOsobní ochranné pracovní prostředky a další ochranná opatření zaměstnavatel poskytuje podle rizik konkrétní práce. Nejde o povinnost vůči všem zaměstnancům plošně."
+    },
+    {
+      "q": "Při plánování lidských zdrojů se řeší především otázky:",
+      "opts": [
+        "jaké budou vnitřní zdroje pracovníků",
+        "v jakém časovém horizontu se vymění vrcholové vedení společnosti",
+        "kolik finančních prostředků uvolní organizace na růst mezd",
+        "kolik pracovníků a v jaké struktuře bude třeba přijmout a uvolnit",
+        "jaká bude situace na trhu pracovních sil v budoucnu"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "info": "Pojem: Plánování lidských zdrojů předvídá budoucí potřebu pracovníků a způsoby, jak ji pokrýt. Podle Armstronga zjišťuje, kolik pracovníků organizace potřebuje a v jaké kvalifikační struktuře.\nPlán zjišťuje, jaké vnitřní zdroje organizace má, tedy současné pracovníky a jejich rozvoj. Určuje, kolik lidí a v jaké struktuře je třeba přijmout nebo uvolnit. Sleduje také budoucí nabídku na trhu práce, protože na ní závisí, zda půjde potřebné lidi získat.\nPodle Dvořákové plánování zahrnuje rozbor prostředí, předpověď poptávky po práci a nabídky pracovních sil a identifikaci rozdílu mezi nimi. Výsledkem je zjištěný nedostatek nebo nadbytek pracovníků.\nVýměna vrcholového vedení není předmětem plánování potřeby a pokrytí lidských zdrojů. Rozpočet na růst mezd patří do odměňování."
+    },
+    {
+      "q": "Výběrové pohovory členíme na:",
+      "opts": [
+        "polostrukturovaný",
+        "nestrukturovaný",
+        "strukturovaný",
+        "kmenový",
+        "vázaný"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Výběrový pohovor je rozhovor tazatele s uchazečem, kterým se ověřují předběžné úsudky o jeho předpokladech a motivaci. Podle míry předem stanovené podoby se dělí na strukturovaný, polostrukturovaný a nestrukturovaný.\nStrukturovaný pohovor jde podle pevného scénáře: otázky i jejich pořadí jsou předem dané. Všichni uchazeči dostanou stejné otázky, takže se výsledky dobře porovnávají. Skripta proto doporučují strukturované pohovory jako způsob, jak omezit chyby tazatele.\nPolostrukturovaný pohovor má připravené hlavní okruhy otázek, ale tazatel může doplňovat. Nestrukturovaný pohovor probíhá volně bez připravených otázek a vyžaduje zkušeného tazatele.\nStejné tři stupně se používají i u hodnotícího rozhovoru jako standardizovaný, polostandardizovaný a nestandardizovaný. Kmenový a vázaný pohovor mezi typy pohovoru nepatří."
+    },
+    {
+      "q": "Které pracovníky dané organizace můžeme využít při obsazování volné (nově vytvořené) pracovní funkce v rámci tzv. vnitřních zdrojů?",
+      "opts": [
+        "uspořené v důsledku technického pokroku",
+        "ti, kteří mají vlastní zájem změnit práci",
+        "ti, kteří jsou připraveni vykonávat náročnější práci",
+        "volné pracovníky na trhu práce",
+        "uvolněné v důsledku změn"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Vnitřní zdroje pracovníků jsou lidé, kteří už v organizaci pracují a mohou obsadit volnou nebo nově vytvořenou funkci. Organizace hledá mezi stávajícími zaměstnanci, ne na trhu práce.\nSkripta uvádějí dvě hlavní skupiny: pracovníky, jejichž dosavadní místo bylo zrušeno, a pracovníky, kteří se svými znalostmi a dovednostmi zvládnou náročnější práci. Podle Koubka sem patří také lidé uspoření nebo uvolnění technickým pokrokem a organizačními změnami a ti, kdo sami chtějí změnit práci.\nVolní pracovníci na trhu práce jsou naopak vnější zdroj. Hledá se mezi nimi, když se funkci nepodaří obsadit zevnitř.\nPodle zásad efektivního získávání se volné pozice obsazují nejprve z vnitřních zdrojů."
+    },
+    {
+      "q": "Průběžné obsazování volných (nově vytvořených) pracovních funkcí v organizaci zajišťujeme prostřednictvím následujících personálních činností v tomto pořadí:",
+      "opts": [
+        "získávání, výběr, přijímání a hodnocení pracovníků",
+        "získávání, výběr, přijímání a propouštění pracovníků",
+        "získávání, výběr, přijímání a odměňování pracovníků",
+        "získávání, výběr, přijímání a adaptace pracovníků",
+        "výběr, získávání, přijímání a adaptace pracovníků"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Obsazování volných pracovních míst je soubor personálních činností, které následují v logickém pořadí. Koubek je řadí od získávání přes výběr a přijímání po adaptaci.\nZískávání má přilákat dostatek vhodných uchazečů a výběr z nich určí toho s nejlepšími předpoklady pro práci. Přijímání zahrnuje procedury po oznámení výběru a končí dnem nástupu. Na ně navazuje adaptace, tedy začlenění nového pracovníka do pracovního a sociálního prostředí.\nHodnocení a odměňování jsou další personální činnosti, které proběhnou až u již zaměstnaného pracovníka. Propouštění je ukončení pracovního poměru, tedy opačný krok.\nVýběr nemůže předcházet získávání, protože není z čeho vybírat."
+    },
+    {
+      "q": "Získávání pracovníků zahrnuje tyto činnosti:",
+      "opts": [
+        "nabízení volných pracovních míst",
+        "výběr nejvhodnějšího kandidáta",
+        "rozpoznávání a vyhledávání vhodných pracovních zdrojů",
+        "jednání s uchazeči",
+        "informování o volných pracovních místech v organizaci"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Získávání pracovníků je personální činnost, jejímž cílem je oslovit a přilákat dostatečný počet kvalitních uchazečů o volné (nově vytvořené) pracovní funkce, a to v odpovídajícím čase a s přiměřenými náklady.\nZahrnuje rozpoznávání a vyhledávání vhodných pracovních zdrojů a informování o volných místech včetně jejich nabízení, typicky inzercí. Dále patří k získávání jednání s uchazeči a jejich přesvědčování, aby se o práci ucházeli.\nVýběr pracovníků na získávání navazuje. Vybírá z uchazečů ty nejvhodnější pomocí zvolených metod a končí rozhodnutím o přijetí.\nCílem získávání je zajistit co největší možnost výběru, výběr už je samostatná personální činnost."
+    },
+    {
+      "q": "Jaký je úkol (úkoly) personálního útvaru v rámci adaptace nového pracovníka?",
+      "opts": [
+        "řídit a koordinovat celý průběh útvarové adaptace",
+        "koordinovat celoorganizační adaptaci",
+        "podílet se na počáteční fázi adaptace",
+        "vypracovat koncepci adaptace",
+        "řídit celoorganizační adaptaci"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Adaptace je proces přizpůsobování nového pracovníka pracovnímu a sociálnímu prostředí organizace. Úkoly se dělí mezi personální útvar a vedoucí pracovníky.\nPersonální útvar vypracovává koncepci adaptace a podílí se zejména na realizaci počáteční fáze. Řídí a koordinuje především celoorganizační adaptaci, tedy seznámení s organizační strukturou, základními dokumenty a možnostmi vzdělávání.\nVedoucí pracovníci řídí a kontrolují především útvarovou adaptaci a adaptaci na konkrétní pracovní místo. Pověřují nového pracovníka úkoly, delegují náročnější úkoly a tolerují počáteční neúspěch.\nCelý průběh útvarové adaptace tedy řídí vedoucí, ne personální útvar.\nPersonální útvar tedy tvoří rámec a vedoucí ho naplňují na konkrétním pracovišti. Garant z řad zkušených pracovníků pomáhá nováčkovi odborně i sociálně."
+    },
+    {
+      "q": "Jaké jsou zásady přípravy a vedení hodnoticího rozhovoru?",
+      "opts": [
+        "v hodnocení se nemají objevit překvapení pro hodnoceného",
+        "pracovník, který vede hodnotící rozhovor, by ho měl začít vždy negativní skutečnostní a až potom přecházet k pozitivním skutečnostem",
+        "společné úsilí hodnoceného i hodnotitele o řešení problémů zaměstnance, pracoviště, firmy",
+        "příprava na hodnotící pohovor by neměla přesahovat dva dny",
+        "zapojit zaměstnance do procesu hodnocení a realizovat prvky sebehodnocení"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Hodnotící rozhovor je pravidelný pohovor nadřízeného s podřízeným, v němž se hodnotí uplynulé období a plánuje další. Má podobu přátelského rozhovoru, ne zkoušení. Zpravidla má dvě části: sebehodnocení pracovníka a hodnocení nadřízeným.\nHodnocení nemá přinést překvapení. Pracovník předem zná typ a průběh hodnocení i formuláře a nadřízený mu průběžně dává zpětnou vazbu. Celoroční hodnocení pak není překvapením.\nPracovník se na hodnocení podílí, využívají se prvky sebehodnocení a společně se dohodnou cíle. Pracovník, který cíl sám navrhl nebo ho přijal za svůj, podává lepší výkon. Obě strany společně hledají řešení problémů pracovníka, pracoviště i firmy.\nHodnotitel nezačíná kritikou. Pokud to lze, začíná pochvalou, jinak pracovník odmítne vše, co následuje. Časový limit přípravy skripta nestanovují, hodnotitel si má jen shromáždit podklady a vyhradit dostatek času."
+    },
+    {
+      "q": "Pracovní výkonnost je charakterizována jako:",
+      "opts": [
+        "zkoumání a posuzování pracovního výkonu každého jednotlivého pracovníka",
+        "předpoklad nebo potenciál zaměstnance podat konkrétní pracovní výkon v podobě měřitelných výsledků",
+        "dosahování konkrétních výsledků v požadované kvalitě, kvantitě a ve stanoveném termínu",
+        "zkoumání a posuzování pracovního výkonu týmu / skupiny",
+        "úroveň pracovního úsilí"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Pracovní výkonnost je předpoklad nebo potenciál zaměstnance podat konkrétní pracovní výkon. Vyjadřuje, co pracovník dokáže. Rozvíjí se vzděláváním, zkušenostmi a motivací.\nPracovní výkon je naproti tomu to, co pracovník skutečně vykonal. Znamená dosahování konkrétních výsledků v požadované kvalitě, kvantitě a ve stanoveném termínu. Skripta jej vymezují jako množství práce připadající na měřené časové období.\nHodnocení pracovního výkonu je zkoumání a posuzování výkonu jednotlivce nebo týmu. Úroveň pracovního úsilí je jen jedním z faktorů, které výkon ovlivňují. Samotné úsilí tedy výkonnost nevyjadřuje.\nOrganizace dosahuje vyšší výkonnosti, když rozvíjí schopnosti pracovníků a vytváří jim podmínky."
+    },
+    {
+      "q": "Cílem personálního marketingu je:",
+      "opts": [
+        "Vytvoření adaptačního plánu",
+        "Prodej výrobků a služeb",
+        "Vytvoření kariérové mapy",
+        "Výběr uchazeče",
+        "Budování značky zaměstnavatele jako \"zaměstnavatele první volby\""
+      ],
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Personální marketing je úsilí o zformování a udržení potřebné pracovní síly organizace, které stojí na dobré zaměstnavatelské pověsti. Skripta ho chápou jako synonymum k získávání pracovníků v moderním pojetí.\nStávajícího i potenciálního pracovníka vidí jako zákazníka a staví ho do středu jednání organizace. Snaží se vytvořit příznivý obraz firmy jako atraktivního a prestižního zaměstnavatele.\nK tomu slouží sponzoring, mediální politika, spolupráce se školami a institucemi, inzerce i dobré jméno firmy. Pozitivní značka zaměstnavatele usnadňuje nábor a snižuje fluktuaci.\nProdej výrobků je úkolem obchodního marketingu. Adaptační plán, kariérní mapa a výběr uchazeče patří do jiných personálních činností."
+    },
+    {
+      "q": "Jaký je cíl (cíle) řízení pracovního výkonu?",
+      "opts": [
+        "maximalizace potenciálu jednotlivců a týmů",
+        "zvýšení nákladů",
+        "motivování lidí k nejlepším výsledkům",
+        "propojování individuálních cílů všech pracovníků s cíli organizace",
+        "zaměření úkolů na správné věci a na jejich správné vykonávání"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Řízení pracovního výkonu je systematický proces, který směřuje ke zlepšování výkonu organizace pomocí zlepšování výkonu jednotlivců a týmů. Je to komplexní přístup k ovlivňování lidí, jejich pracovního chování a rozvoje jejich schopností. Nejde jen o hodnocení, ale o kontinuální celoroční proces.\nJeho cílem je propojit individuální cíle pracovníků s cíli organizace tak, aby je pracovníci vzali za své. Zaměřuje úkoly na správné věci a na jejich správné vykonávání. Motivuje lidi k nejlepším výsledkům.\nPracovníky zároveň rozvíjí, aby naplňovali očekávání a plně využili svůj potenciál. Tak se maximalizuje potenciál jednotlivců i týmů.\nZvýšení nákladů cílem není. Skripta vycházejí z toho, že investice do pracovníků zvyšují výkonnost organizace."
+    },
+    {
+      "q": "Základní oblasti působnosti odborových orgánů zahrnují:",
+      "opts": [
+        "součinnost, spolurozhodování, rozhodování a kontrolu",
+        "součinnost, spolurozhodování, rozhodování a koordinaci",
+        "spolusoučinnost, součinnost, rozhodování a kontrolu",
+        "součinnost, spolurozhodování, koordinaci a kontrolu",
+        "součinnost, spolurozhodování, koordinaci a zpětnou vazbu"
+      ],
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Odborový orgán je zástupce zaměstnanců, který jedná se zaměstnavatelem o jejich právech a zájmech. Skripta podle Dvořákové a zákoníku práce (č. 262/2006 Sb.) dělí jeho působnost do čtyř základních oblastí.\nSoučinnost znamená projednávání, výměnu informací a konzultace, konečné rozhodnutí je ale vždy na zaměstnavateli. Spolurozhodování je nejsilnější pravomoc: zaměstnavatel smí určité opatření provést jen po předchozí dohodě s odborovým orgánem, jinak je opatření neplatné.\nRozhodování mají odbory jen v úzké míře, například o stávce nebo o zastavení práce při ohrožení života a zdraví. Kontrola je naopak důležitá oblast: odbory kontrolují dodržování kolektivní smlouvy, pracovněprávních předpisů a bezpečnosti a ochrany zdraví při práci.\nKoordinace ani zpětná vazba mezi základní oblasti působnosti nepatří. Slovo spolusoučinnost se v tomto výčtu nepoužívá."
+    },
+    {
+      "q": "Systém formování pracovních schopností člověka zahrnuje oblast:",
+      "opts": [
+        "odborné vzdělávání",
+        "všeobecného vzdělávání",
+        "zvyšování kvalifikace",
+        "rozvoje",
+        "hodnocení pracovního výkonu"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Systém formování pracovních schopností člověka je celoživotní proces, jímž člověk získává znalosti, dovednosti a návyky potřebné pro práci. Podle Koubka ho tvoří tři oblasti: všeobecné vzdělávání, odborné vzdělávání a rozvoj.\nVšeobecné vzdělávání dává základ, který nesměřuje k jedné profesi: čtení, počty, jazyky a obecný přehled. Odborné vzdělávání připravuje na konkrétní povolání. Zahrnuje základní přípravu na povolání ve školském systému i další odborné vzdělávání v organizaci, tedy doškolování (prohlubování kvalifikace) a přeškolování (rekvalifikaci).\nRozvoj přesahuje požadavky konkrétního pracovního místa. Formuje osobnost, schopnost myslet, rozhodovat a jednat s lidmi a připravuje na budoucí uplatnění.\nZvyšování kvalifikace proto není samostatná oblast systému, ale probíhá v rámci odborného vzdělávání a rozvoje. Hodnocení pracovního výkonu je samostatná personální činnost: zjišťuje, jak pracovník práci zvládá, a poskytuje podklady pro vzdělávání, ale schopnosti sama neformuje."
+    },
+    {
+      "q": "Jaká by měla být úloha vedoucích pracovníků u větších organizací v procesu vzdělávání zaměstnanců?",
+      "opts": [
+        "organizovat a metodicky vést vyhodnocení výsledku",
+        "součinnost při plánování vzdělávání",
+        "identifikovat potřeby vzdělání",
+        "navrhovat politiku vzdělávání pracovníků",
+        "odpovědnost za realizaci vzdělání na pracovišti"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Liniový manažer je vedoucí, který přímo řídí podřízené a odpovídá za výsledky svého útvaru. Ve vzdělávání zaměstnanců je klíčový, protože své lidi zná a vidí jejich práci každý den.\nVe větších organizacích mají vzdělávání na starosti i specialisté personálního útvaru. Rozdělení rolí je zhruba takové: personální útvar navrhuje politiku, strategii, program a rozpočet a metodicky vede hodnocení výsledků.\nLiniový manažer s ním spolupracuje při plánování. Identifikuje potřeby vzdělávání u svých podřízených, protože vidí rozdíl mezi požadovaným a skutečným výkonem. Odpovídá také za realizaci vzdělávání na pracovišti, například za zaškolení, instruktáž a pověřování úkoly.\nTvorba celopodnikové politiky vzdělávání a metodické vedení vyhodnocení tedy patří personálnímu útvaru, ne liniovým manažerům."
+    },
+    {
+      "q": "Mezi metody vzdělávání a rozvoje pracovníků na pracovišti patří:",
+      "opts": [
+        "mentoring",
+        "asistování",
+        "rotace práce",
+        "instruktáž při výkonu práce a pověření úkolem",
+        "workshopy"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Metody vzdělávání na pracovišti (on the job) učí pracovníka přímo při výkonu práce a v jeho pracovním prostředí. Jsou levné, praktické a vázané na konkrétní pracovní místo.\nPatří sem instruktáž při výkonu práce: pracovník pozoruje a napodobuje zkušenějšího kolegu nebo manažera a osvojuje si postup. Dále pověření úkolem, asistování (pomoc zkušenějšímu při jeho práci) a rotace práce, při níž pracovník dočasně střídá pracovní funkce a plní jiné úkoly v jiném prostředí.\nDůležitou metodou je také mentoring, kdy zkušený kolega dlouhodobě vede a radí méně zkušenému.\nWorkshop je naproti tomu skupinová akce s lektorem, která zpravidla probíhá mimo pracoviště. Řadí se proto k metodám vzdělávání mimo pracoviště (off the job)."
+    },
+    {
+      "q": "Do pasivní stránky rozmisťování pracovníků v rámci vnější mobility patří?",
+      "opts": [
+        "rozhodnutí pracovníků z organizace odejít",
+        "přijímání pracovníků",
+        "ukončení pracovního poměru úmrtím",
+        "získávání pracovníků",
+        "penzionování pracovníků"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Vnější mobilita je pohyb pracovníků z organizace a do organizace, tedy mezi organizací a trhem práce. Rozmisťování v jejím rámci má aktivní a pasivní stránku.\nAktivní stránku tvoří kroky, které organizace sama řídí: získávání a přijímání pracovníků. Pasivní stránku tvoří odchody pracovníků z organizace. Patří sem rozhodnutí pracovníka odejít, ukončení pracovního poměru úmrtím a penzionování.\nPodle skript lze mobilitu dělit také na přirozenou (úmrtí, odchod do důchodu) a na odchody iniciované výpovědí pracovníka. Získávání a přijímání pracovníků naproti tomu organizace plánuje a provádí, proto jde o aktivní stránku. Aktivní stránka je v rukou organizace, pasivní z velké části není."
+    },
+    {
+      "q": "Při výběru pracovníků, kteří mají být propuštění se používá metoda:",
+      "opts": [
+        "LIFO",
+        "FIFO",
+        "FOLI",
+        "FOFI",
+        "PIPO"
+      ],
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Výběr pracovníků k propuštění je rozhodování o tom, kterých zaměstnanců se sníží stav. Skripta uvádějí, že důvody bývají na straně organizace, ne pracovníků.\nPři výběru se používá metoda LIFO (last in, first out), tedy poslední přijatý odchází první. Vychází z pořadí nástupu do organizace: nejkratší dobu zaměstnaný pracovník je propuštěn jako první. Metoda je jednoduchá a předvídatelná, Armstrong ji uvádí jako běžné kritérium výběru při nadbytečnosti.\nOpačná zásada FIFO (first in, first out) by propouštěla nejdéle zaměstnané. Označení FOLI, FOFI a PIPO nejsou známé metody výběru k propuštění.\nPropouštění musí respektovat zákoník práce č. 262/2006 Sb., který upravuje způsoby ukončení pracovního poměru."
+    },
+    {
+      "q": "Jaké je v současnosti optimální postavení personálního manažera ve větší organizaci?",
+      "opts": [
+        "funkce personálního manažera by měla být kumulována s funkcí finančního manažera",
+        "personální manažer by měl optimálně být součástí vrcholového vedení organizace",
+        "personální manažer by měl být na úrovni asistentské pozice, protože vykonává převážně administrativní činnosti spojené se zaměstnáváním pracovníků",
+        "funkce personálního manažera by měla být kumulována s funkcí jednatele společnosti",
+        "personální manažer by měl být podřízený finančnímu řediteli"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Personální útvar je vnitřní organizační jednotka, která vykonává personální funkce. Jeho vedoucí, personální manažer nebo ředitel, patří v současnosti do řídící struktury organizace.\nVýznam personální práce se projevuje tím, že se zřizuje pracovní funkce personalisty a personální útvar se začleňuje do organizační struktury. Personální ředitel bývá na stejné úrovni jako ostatní výkonní ředitelé a je přímo podřízen generálnímu řediteli. Takové postavení odpovídá managementu lidských zdrojů, který je jádrem řízení organizace.\nPozice asistenta nebo podřízeného finančnímu řediteli odpovídá starší personální administrativě. Ta se omezovala na vedení dokumentů.\nKumulace funkce s finančním manažerem nebo jednatelem nevychází z žádné koncepce a neodpovídá odbornosti, kterou personální práce vyžaduje."
+    },
+    {
+      "q": "Jaké jsou politiky penzionování pracovníků?",
+      "opts": [
+        "dobrovolná politika",
+        "pasivní politika důchodového věku",
+        "politika výběrového důchodového věku",
+        "nedobrovolná politika důchodového věku",
+        "politika pevného důchodového věku"
+      ],
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Penzionování je ukončení pracovního poměru při odchodu pracovníka do důchodu. Patří do vnější mobility pracovníků.\nOrganizace si pro něj stanoví politiku důchodového věku. Politika pevného důchodového věku určuje jeden věk, v němž pracovníci odcházejí do důchodu. Takové pravidlo je jednoduché a předvídatelné, nebere ale ohled na individuální schopnosti a přání pracovníka.\nOpakem je politika pružného (flexibilního) důchodového věku, která pracovníkovi umožňuje odejít dříve nebo pracovat déle. Označení dobrovolná, pasivní, výběrová a nedobrovolná politika důchodového věku nejsou běžnými typy politik penzionování. Slova dobrovolná a nucená se používají u mobility obecně: podle toho, zda ji inicioval pracovník, nebo organizace."
+    },
+    {
+      "q": "V rámci hromadného propouštění má zaměstnavatel povinnost písemně informovat odborovou organizaci o:",
+      "opts": [
+        "době, kdy se hromadné propouštění uskuteční",
+        "hlediscích pro výběr dotčených zaměstnanců",
+        "důvodech, počtu a profesním složení zaměstnanců",
+        "odstupném",
+        "zaměstnavatel v případě hromadného propouštění nemá povinnost informovat odborovou organizaci"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Hromadné propouštění je skončení pracovního poměru z organizačních důvodů u většího počtu zaměstnanců v krátkém období. Počet zaměstnanců, od kterého jde o hromadné propouštění, určuje zákoník práce (č. 262/2006 Sb.) podle velikosti zaměstnavatele.\nZaměstnavatel musí odborovou organizaci a radu zaměstnanců nejpozději 30 dnů předem písemně informovat a projednat s nimi opatření. Informace zahrnují důvody, počet a profesní složení propouštěných zaměstnanců, dobu, kdy se propouštění uskuteční, hlediska pro výběr dotčených zaměstnanců a odstupné.\nZaměstnavatel také oznamuje záměr úřadu práce.\nZaměstnanci při propouštění náleží odstupné a organizace může využít outplacement, tedy pomoc zaměstnanci při hledání nové práce. Ten zlepšuje morálku zbylých pracovníků a předchází problémům s odbory."
+    },
+    {
+      "q": "Mezi formy rozmisťování pracovníků v rámci tzv. vnitřní mobility  pracovníků patří:",
+      "opts": [
+        "skončení pracovního poměru",
+        "získávání, výběr, přijímání a adaptace pracovníků",
+        "převádění pracovníků na jinou práci",
+        "penzionování pracovníků",
+        "povyšování pracovníků"
+      ],
+      "correct": [
+        2,
+        4
+      ],
+      "info": "Pojem: Vnitřní mobilita je pohyb pracovníků uvnitř organizace, při kterém mění pracovní pozici. Jde o rozmisťování pracovníků, kteří už v organizaci pracují.\nSkripta uvádějí jako příklady povýšení, přeřazení a specializaci, Koubek povyšování, ponižování a převádění. Při povyšování pracovník přechází na funkci s vyšší složitostí, odpovědností a namáhavostí. Při převádění na jinou práci zůstává na srovnatelné úrovni, jen se mění činnost nebo pracoviště.\nSkončení pracovního poměru a penzionování patří do vnější mobility. Stejně tak získávání, výběr, přijímání a adaptace nových pracovníků, protože pracovník přichází z trhu práce nebo jiné organizace. Vnitřní mobilita může být dobrovolná, když se pracovník sám chce posunout, nebo nucená, například při reorganizaci."
+    },
+    {
+      "q": "Podmínkou pro personální práci v organizaci je existence jakých informací?",
+      "opts": [
+        "subjektivních",
+        "podrobných",
+        "věrohodných",
+        "aktuálních",
+        "obecných"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Personální informace jsou údaje o pracovnících a pracovních místech, z nichž vychází rozhodování personalistů a vedoucích. Podmínkou personální práce je existence podrobných, věrohodných a aktuálních informací.\nPodrobné informace dávají úplný obraz o pracovníkovi nebo místě. Věrohodné informace pocházejí ze spolehlivého zdroje a nejsou zkreslené. Aktuální informace odpovídají současnému stavu, proto je personální informační systém průběžně pořizuje, aktualizuje a uchovává.\nSkripta stejný požadavek uvádějí u výběru pracovníků: personalisté mají získat objektivní, dostatečně podrobné, věrohodné a účelem přiměřené informace. Objektivita znamená, že informace nevycházejí z ukvapených závěrů, zaujatosti a předsudků.\nSubjektivní informace jsou zkreslené osobním názorem, proto spolehlivý základ nedávají. Obecné informace jsou příliš hrubé pro rozhodnutí o konkrétním pracovníkovi nebo místě."
+    },
+    {
+      "q": "Personální plánování usiluje o to, aby organizace měla pracovní síly:",
+      "opts": [
+        "s potřebnými znalostmi",
+        "v potřebném množství",
+        "s přiměřenými náklady",
+        "s žádoucími osobnostními charakteristikami",
+        "v požadované věkové struktuře"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Personální plánování je činnost, která předvídá vývoj, stanovuje cíle a připravuje opatření pro zajištění úkolů organizace odpovídající pracovní silou. Usiluje o to, aby organizace měla pracovníky nejen dnes, ale hlavně v budoucnu.\nArmstrong uvádí, jací mají pracovníci být. Mají být v potřebném množství, s potřebnými znalostmi, dovednostmi a zkušenostmi a s žádoucími osobnostními charakteristikami. Mají být také optimálně motivovaní, flexibilní, správně rozmístění, ve správný čas a s přiměřenými náklady.\nKvantita tedy znamená počet lidí, kvalita jejich způsobilost a vlastnosti. Náklady omezují, kolik může organizace za tuto sílu vynaložit.\nPožadovaná věková struktura patří do analýzy stavu zaměstnanců, ale skripta ji mezi cíle personálního plánování neřadí."
+    },
+    {
+      "q": "Při převádění pracovníků na jinou práci (pracoviště) přecházejí pracovníci v hierarchii organizace na:",
+      "opts": [
+        "pracovní funkce s nižší nebo stejnou mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí",
+        "pracovní funkce s nižší mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí",
+        "pracovní funkce s vyšší nebo nižší mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí",
+        "pracovní funkce s přibližně stejnou mírou složitosti, odpovědnosti a namáhavosti práce jako v případě dosavadních pracovních funkcí",
+        "pracovní funkce s vyšší mírou složitosti, odpovědnosti a namáhavosti práce, než tomu bylo v případě jejich dosavadních pracovních funkcí"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Převádění pracovníků na jinou práci je forma vnitřní mobility. Pracovník je přemístěn na jinou funkci nebo pracoviště v rámci organizace.\nJe to horizontální pohyb v hierarchii. Pracovník přechází na funkci s přibližně stejnou mírou složitosti, odpovědnosti a namáhavosti práce. Důvodem bývá například lepší využití schopností, rozšíření zkušeností nebo reorganizace.\nPovyšování je vertikální pohyb nahoru: nová funkce je složitější a odpovědnější. Ponižování je pohyb dolů: funkce je jednodušší. Podle skript může jít o nucenou mobilitu, například jako důsledek závažné chyby pracovníka.\nPři převedení se tedy mění obsah nebo místo práce, ne úroveň funkce v hierarchii."
+    },
+    {
+      "q": "Jaké informace by měla obsahovat nabídka zaměstnání?",
+      "opts": [
+        "počet zaměstnanců pracujících v dané společnosti",
+        "název organizace",
+        "místo výkonu práce",
+        "požadavky na vzdělání, kvalifikaci, dovednosti a zkušenosti",
+        "název pracovní funkce"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Nabídka zaměstnání je sdělení, kterým organizace informuje potenciální uchazeče o volné pracovní funkci. Má je oslovit a přilákat vhodné kandidáty.\nPodle skript by inzerát měl obsahovat název pozice, stručný popis práce, místo výkonu práce a požadavky na vzdělání, kvalifikaci a praxi. Dále název a adresu organizace, pracovní podmínky, možnosti rozvoje a kariérního růstu, požadované dokumenty a způsob reakce a kontakt na osobu, která nábor vede.\nVelikost firmy a počet jejích zaměstnanců běžný obsah nabídky netvoří. Důležitý je obsah, forma i umístění inzerátu, aby oslovil dost vhodných uchazečů.\nZveřejnění má podle Koubka sledovat osvědčená pravidla: vhodné médium, osvědčená forma a záznamy o uveřejněných inzerátech."
+    },
+    {
+      "q": "Jaké činnosti zahrnuje získávání pracovníků?",
+      "opts": [
+        "Inzerování volné pracovní pozice.",
+        "Vytváření plánů rozvoje.",
+        "Jednání s uchazeči.",
+        "Rozpoznávání a vyhledávání vhodných pracovních zdrojů.",
+        "Adaptaci nových zaměstnanců."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Získávání pracovníků je personální činnost, jejímž cílem je oslovit a přilákat dostatečný počet kvalitních uchazečů o volné (nově vytvořené) pracovní funkce, a to v odpovídajícím čase a s přiměřenými náklady.\nPatří sem rozpoznávání a vyhledávání vhodných zdrojů pracovní síly. Dále informování o volných místech a jejich nabízení, nejčastěji inzerováním, a jednání s uchazeči.\nTvorba plánů rozvoje je součást vzdělávání a rozvoje pracovníků. Adaptace nových zaměstnanců následuje až po přijetí, tedy po získání a výběru.\nZískávání tedy končí tím, že organizace má dostatek zájemců, ze kterých může vybírat.\nSkripta ji označují za jednu z nejdůležitějších oblastí personálního řízení."
+    },
+    {
+      "q": "Mezi tzv. vnější zdroje pracovní síly patří:",
+      "opts": [
+        "pracovníci dané firmy, kteří mají vlastní zájem změnit práci",
+        "volní pracovníci na trhu práce",
+        "pracovníci dané firmy uspoření v důsledku technického pokroku",
+        "pracovníci jiných organizací",
+        "absolventi škol a jiných vzdělávacích institucí"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Vnější zdroje pracovní síly jsou lidé mimo organizaci, které může zaměstnavatel oslovit na trhu práce. Z nich organizace získává pracovníky, když vnitřní zdroje nestačí.\nPatří sem volní pracovníci na trhu práce, tedy i uchazeči evidovaní na úřadu práce. Dále pracovníci jiných organizací a absolventi škol a jiných vzdělávacích institucí, které si firma může vytipovat třeba při stážích.\nZaměstnanci, kteří chtějí změnit práci, nebo ti uspoření technickým pokrokem už v organizaci pracují. Jsou to proto vnitřní zdroje.\nK oslovení vnějších zdrojů slouží inzerce, personální agentury, úřady práce, spolupráce se školami a další metody."
+    },
+    {
+      "q": "Mezi tzv. vnitřní zdroje pracovní síly patří:",
+      "opts": [
+        "pracovníci uspoření v důsledku technického pokroku",
+        "pracovníci jiných organizací",
+        "pracovníci dané firmy, kteří mají vlastní zájem změnit práci",
+        "volní pracovníci na trhu práce",
+        "absolventi škol a jiných vzdělávacích institucí"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Vnitřní zdroje pracovní síly jsou stávající pracovníci organizace, kterými lze obsadit volnou funkci. Organizace je zná a může je rozvíjet.\nPodle skript jsou to nejčastěji pracovníci, jejichž místo bylo zrušeno, nebo ti, kdo se svými znalostmi zvládnou náročnější práci. Podle Koubka se řadí mezi ně pracovníci uspoření technickým pokrokem a ti, kdo mají vlastní zájem změnit práci.\nPracovníci jiných organizací, volní pracovníci na trhu práce i absolventi škol jsou vnější zdroje. Organizace je musí teprve oslovit zvenčí, například inzercí nebo spoluprací se školami.\nVnitřní zdroje jsou levnější a rychlejší, ale nepřinášejí nové nápady zvenčí."
+    },
+    {
+      "q": "Adaptačně-vzdělávací program organizace musí zabezpečit:",
+      "opts": [
+        "odborné začlenění nového pracovníka do organizace a pracovní funkce",
+        "seznámení pracovníka s organizací",
+        "sociální začlenění nového pracovníka do organizace a pracovní funkce",
+        "stanovení výše mzdy nebo platu na období minimálně dvou let",
+        "informování nového pracovníka o skutečnostech, které jsou důležité pro jeho úspěšnou činnost v rámci organizace a pracovní funkce"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Adaptačně-vzdělávací program je soubor opatření, který upravuje adaptaci určité kategorie pracovníků. Je také metodickým návodem pro adaptační plány jednotlivců. Musí zabezpečit tři věci.\nPrvní je informovat nového pracovníka o skutečnostech důležitých pro jeho činnost, tedy o cílech, strategii, struktuře a kultuře organizace, právech a povinnostech a pracovních podmínkách. Druhá je jeho odborné začlenění do funkce a třetí sociální začlenění, tedy přivyknutí na nové vztahy.\nSeznámení s organizací je součástí informování.\nVýši mzdy program neurčuje. Mzda vyplývá z pracovní smlouvy a systému odměňování a adaptace se jí nezabývá.\nTyto tři oblasti se promítají do adaptačních plánů jednotlivců. Plán vychází z náročnosti práce, vzdělání, praxe a individuálních zvláštností."
+    },
+    {
+      "q": "Ve strukturovaném životopise by neměly chybět:",
+      "opts": [
+        "údaje o praxi",
+        "osobní údaje",
+        "datum a podpis",
+        "údaje o vzdělávání",
+        "informace o zaměstnání rodičů"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Strukturovaný životopis je životopis, u kterého zaměstnavatel předem určí, jaké údaje má uchazeč uvést a v jakém pořadí. Uchazeč zná přesné pokyny a musí dodržet strukturu. Uchazeči se proto dobře porovnávají.\nObsah odpovídá tomu, co zaměstnavatel potřebuje k předvýběru: osobní údaje, údaje o vzdělávání a údaje o praxi. Životopis uzavírá datum a podpis uchazeče.\nPolostrukturovaný životopis určuje požadované údaje, ale ne jejich pořadí. Volný životopis má strukturu i obsah podle uchazeče a personalista ho zpracovává obtížně.\nInformace o zaměstnání rodičů do životopisu nepatří, protože nesouvisí s požadavky práce. Zaměstnavatel smí od uchazeče vyžadovat jen údaje, které bezprostředně souvisejí s uzavřením pracovní smlouvy (§ 30 odst. 2 zákoníku práce). Na rodinné poměry se ptát nesmí (§ 316 odst. 4)."
+    },
+    {
+      "q": "Mezi formy rozmisťování pracovníků v rámci tzv. vnější mobility pracovníků patří:",
+      "opts": [
+        "povyšování pracovníků",
+        "získávání, výběr, přijímání a adaptace pracovníků",
+        "převádění pracovníků na jinou práci (pracoviště)",
+        "penzionování pracovníků",
+        "skončení pracovního poměru"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Vnější mobilita je pohyb pracovníků z organizace nebo do organizace, tedy z trhu práce a na trh práce. Netýká se změn pozice uvnitř organizace.\nPatří sem získávání, výběr, přijímání a adaptace pracovníků, protože nový zaměstnanec přichází zvenčí. Dále penzionování a skončení pracovního poměru. Skončit může právním úkonem (dohoda, výpověď, okamžité zrušení), právní událostí (uplynutí doby určité, smrt pracovníka) nebo úředním rozhodnutím.\nPovyšování a převádění na jinou práci jsou naopak vnitřní mobilita. Pracovník v organizaci zůstává a mění jen své místo v ní. Všechny tyto formy se týkají vztahu organizace a vnějšího prostředí, tedy trhu práce."
+    },
+    {
+      "q": "Jaké mohou být nevýhody získávání zaměstnanců z vnitřních zdrojů?",
+      "opts": [
+        "uchazeč lépe zná organizaci",
+        "soutěžení o povýšení může negativně ovlivňovat morálku a mezilidské vztahy",
+        "organizace lépe zná slabé stránky uchazeče",
+        "organizace lépe zná silné stránky uchazeče",
+        "vytváření překážek v pronikání nových myšlenek a přístupů z venku"
+      ],
+      "correct": [
+        1,
+        4
+      ],
+      "info": "Pojem: Získávání z vnitřních zdrojů znamená obsadit volnou funkci někým ze stávajících pracovníků. Má výhody i nevýhody, které uvádí Koubek.\nVýhodou je, že organizace zná silné i slabé stránky uchazeče a uchazeč zná organizaci. Lépe se také vrací investice do pracovníků a roste jejich motivace a stabilita.\nNevýhodou je soutěžení o povýšení, které může zhoršit morálku a mezilidské vztahy mezi neúspěšnými a úspěšnými kandidáty. Další nevýhodou jsou překážky v pronikání nových myšlenek a přístupů zvenčí, protože se nepřijímají nové osoby.\nZnalost uchazeče i organizace je proto výhoda, ne nevýhoda.\nSkripta zdůrazňují, že volba zdroje závisí i na kultuře a hodnotách organizace."
+    },
+    {
+      "q": "Kterou aktivitu zařazujeme do systému vzdělávání pracovníků organizace:",
+      "opts": [
+        "prohlubování kvalifikace - training",
+        "rekvalifikace - retraining",
+        "adaptace",
+        "outplacement",
+        "outsourcing"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Systém vzdělávání pracovníků organizace zahrnuje činnosti, které organizace používá k formování a udržování pracovních schopností svých lidí. Patří sem adaptace, prohlubování kvalifikace a rekvalifikace.\nAdaptace (orientace) pomáhá nově příchozímu zvládnout nové pracovní místo a začlenit se do kolektivu. Prohlubování kvalifikace (training) přizpůsobuje znalosti a dovednosti měnícím se požadavkům stávající funkce. Rekvalifikace (retraining) připravuje pracovníka na jinou práci než dosavadní.\nOutplacement mezi vzdělávací činnosti nepatří. Je to pomoc organizace propouštěným pracovníkům při hledání nové práce.\nOutsourcing znamená využívání vnějších zdrojů, tedy zajištění některých činností externími dodavateli. Se vzděláváním nesouvisí. Vzdělávací činnosti spojuje cíl: udržet pracovníky schopné plnit požadavky práce."
+    },
+    {
+      "q": "Systém formování pracovních schopností pracovníka organizace nezahrnuje:",
+      "opts": [
+        "adaptaci (orientaci) pracovníků",
+        "doškolování (prohlubování kvalifikace) pracovníků",
+        "základní přípravu pracovníků na povolání",
+        "profesní rehabilitaci",
+        "přeškolování (rekvalifikace) pracovníků"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Formování pracovních schopností pracovníka v organizaci zahrnuje činnosti, kterými organizace rozvíjí schopnosti svých zaměstnanců. Jde o adaptaci, prohlubování kvalifikace, rekvalifikaci a profesní rehabilitaci.\nAdaptace (orientace) uvádí nového pracovníka do práce a kolektivu. Doškolování neboli prohlubování kvalifikace přizpůsobuje schopnosti novým požadavkům funkce.\nPřeškolování neboli rekvalifikace připravuje na jinou práci. Profesní rehabilitace pomáhá pracovníkům, kteří kvůli zdraví nemohou dosavadní práci vykonávat.\nZákladní příprava na povolání je jiná: probíhá v rámci školského systému, ještě než člověk do organizace vstoupí. Organizace na ni navazuje, sama ji zpravidla neposkytuje. Adaptace, doškolování, rekvalifikace a profesní rehabilitace se naopak týkají lidí, kteří už v organizaci pracují nebo do ní právě vstupují."
+    },
+    {
+      "q": "Zaměstnanec je:",
+      "opts": [
+        "povinen plnit pokyny nadřízených vydané v souladu s právními předpisy a spolupracovat s ostatními zaměstnanci",
+        "fyzická osoba, která se zavázala k výkonu závislé práce v základním pracovněprávním vztahu",
+        "povinen pracovat řádně podle svých sil, znalostí a schopností",
+        "osoba, která se zavázala k výkonu práce v základním pracovněprávním vztahu",
+        "osoba, pro kterou se fyzická osoba zavázala k výkonu závislé práce v základním pracovněprávním vztahu"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Zaměstnanec je fyzická osoba, která se zavázala k výkonu závislé práce v základním pracovněprávním vztahu. Závislá práce je práce ve vztahu nadřízenosti a podřízenosti, vykonávaná osobně pro zaměstnavatele podle jeho pokynů.\nZaměstnancem může být jen fyzická osoba. Právnická osoba zaměstnancem není. Zaměstnavatelem je naopak osoba, pro kterou se fyzická osoba k závislé práci zavázala.\nZe vztahu vyplývají povinnosti zaměstnance: pracuje řádně podle svých sil, znalostí a schopností a plní pokyny nadřízených vydané v souladu s právními předpisy. Spolupracuje také s ostatními zaměstnanci.\nSamotná „práce v pracovněprávním vztahu“ bez přívlastku závislá nestačí. Práci mohou vykonávat i osoby mimo pracovněprávní vztah, například podnikatelé."
+    },
+    {
+      "q": "K podstatným rysům učící se organizace patří:",
+      "opts": [
+        "rozvoj kvalitních mezilidských vztahů",
+        "kultura povzbuzující zpochybňování zaběhnutých způsobů vykonávání práce",
+        "úzké delegování pravomocí",
+        "ve vzdělávání jsou podporování jen pracovníci, kteří řídí další pracovníky",
+        "motivování a podporování zaměstnanců k soustavnému učení, získávání nových schopností"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "info": "Pojem: Učící se organizace je organizace, která systematicky podporuje učení svých lidí a díky tomu se průběžně mění a zlepšuje. Učení se v ní nepovažuje za jednorázovou akci, ale za trvalou součást práce.\nTypické rysy jsou kvalitní mezilidské vztahy a otevřená komunikace, bez kterých se lidé nedělí o poznatky. Dalším rysem je kultura, která podporuje zpochybňování zaběhnutých způsobů práce a hledání lepších řešení. Zaměstnance organizace motivuje a podporuje k soustavnému učení a získávání nových schopností.\nDelegování pravomocí je v ní naopak široké, protože lidé potřebují prostor k vlastnímu rozhodování. Vzdělávání se týká všech zaměstnanců, ne jen těch, kteří řídí další lidi."
+    },
+    {
+      "q": "Cílem personálního plánování je zajistit, aby organizace měla pracovní síly:",
+      "opts": [
+        "S žádoucími osobnostními charakteristikami",
+        "V potřebném množství (kvantita)",
+        "Ve správný čas",
+        "Optimálně motivované a s žádoucím poměrem k práci",
+        "S potřebnými znalostmi, dovednostmi a zkušenostmi (kvalita)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Cílem personálního plánování je zajistit organizaci pracovní sílu, která splní její úkoly nyní i v budoucnu. Podle Armstronga plánování předvídá vývoj, stanovuje cíle a realizuje opatření k jejich dosažení.\nPracovníci mají být v potřebném množství (kvantita) a s potřebnými znalostmi, dovednostmi a zkušenostmi (kvalita). Mají mít žádoucí osobnostní charakteristiky a být optimálně motivovaní, flexibilní a připravení na změny. Dále mají být optimálně rozmístění, k dispozici ve správný čas a s přiměřenými náklady.\nKvantita a kvalita musí platit současně. Organizaci nestačí mít dost lidí, když nemají potřebné schopnosti a postoje.\nSprávný čas znamená, že pracovníci jsou k dispozici, když začíná činnost, kterou mají vykonávat. Proto se cyklus plánování činnosti organizace a cyklus personálního plánování časově sladí."
+    },
+    {
+      "q": "Jak lze dělit plány v oblasti lidských zdrojů? (2/4 bodů) (bez záruky)",
+      "opts": [
+        "Členění dle úrovně rozhodovacího procesu",
+        "Členění dle věcné náplně plánu",
+        "Členění dle smysluplnosti/nesmysluplnosti",
+        "Členění dle časového hlediska",
+        "Členění dle srozumitelnosti"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Plány lidských zdrojů jsou dokumenty, které z obecnějších strategií zabezpečování lidských zdrojů odvozují konkrétní činnosti. Dělit je lze podle více hledisek.\nČasové hledisko rozlišuje plány dlouhodobé (strategické), střednědobé (taktické) a krátkodobé (operativní). Čím delší horizont, tím je plán obecnější a nejistější.\nSkripta podle Koubka člení plány podle oblastí, pro které se vytvářejí, tedy podle věcné náplně. Jde o plán zabezpečování lidských zdrojů (získávání z vnitřních a vnějších zdrojů, plány atraktivního zaměstnavatele), plán flexibility a plán snižování počtu pracovníků.\nČlenění podle smysluplnosti nebo srozumitelnosti se v literatuře nepoužívá.\nRozpor: Podle testu je správné jen členění dle časového hlediska, za tuto odpověď ale student dostal 2/4 bodů. Podle učebnice se plány v oblasti lidských zdrojů člení i dle věcné náplně plánu."
+    },
+    {
+      "q": "Důležitým faktorem v oblasti odměňování je:   (2/4 bodů) (bez záruky)",
+      "opts": [
+        "jednoznačnost odměňování",
+        "daná zastávaná pozice",
+        "jasnost systému odměňování",
+        "dosažené vzdělání",
+        "pravidelnost odměňování"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Odměňování pracovníků je návrh, zavedení a udržování systému odměn, který má zvyšovat pracovní výkon. Odměnou je mzda či plat, ale i uznání, povýšení a výhody.\nSystém odměňování musí být srozumitelný. Pracovníci mají vědět, za co a podle jakých pravidel se odměňují. Vhodné je, aby se na jeho tvorbě podíleli.\nPracovníci také vyžadují pocit spravedlivé odměny, vnější i vnitřní. Výkon je totiž vázán na odměnu, ta ovlivňuje spokojenost s prací a spokojenost ovlivňuje úsilí.\nPozice a vzdělání mohou být kritériem pro zařazení do tarifu. Samy o sobě ale nedělají systém odměňování motivační."
+    },
+    {
+      "q": "Pro jaké účely se v praxi nejčastěji využívá hodnocení pracovníků?",
+      "opts": [
+        "rozmisťování pracovníků (povyšování, převedení, přeřazování)",
+        "vzdělávání a rozvoj pracovníků",
+        "odměňování",
+        "stimulace k zlepšení pracovního výkonu a motivování pracovníků",
+        "stanovení firemní strategie"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Hodnocení pracovníků je personální činnost, která posuzuje výkon, chování a předpoklady každého pracovníka. Je to nástroj monitorování stavu v organizaci. Nemá být jen formalitou ani jen nástrojem odměňování.\nVýsledky se využívají v navazujících personálních procesech. Slouží jako podklad pro rozmísťování pracovníků, tedy povyšování, převedení a přeřazení. Určují potřebu vzdělávání a rozvoje a podkladem jsou pro odměňování.\nČím silněji pracovníci vnímají vazbu hodnocení na odměnu, tím je hodnotící pohovor přínosnější.\nHodnocení také stimuluje zlepšování pracovního výkonu a motivuje pracovníky, protože jim dává zpětnou vazbu a ocenění.\nFiremní strategii hodnocení nestanovuje. Naopak ji pomáhá prosazovat: sjednocuje cíle pracovníků se strategií, kterou určuje vedení organizace."
+    },
+    {
+      "q": "Cíle personálního plánování by měly splňovat tzv. SMART kritéria, co to znamená?",
+      "opts": [
+        "Obecné, měřitelné, dosažitelné, výsledkově orientované, časově ohraničené.",
+        "Specifické, měřitelné, nedosažitelné, výsledkově orientované, časově ohraničené.",
+        "Specifické, měřitelné, dosažitelné, finančně nenáročné, časově ohraničené.",
+        "Specifické, měřitelné, dosažitelné, výsledkově orientované, časově ohraničené.",
+        "Specifické, měřitelné, dosažitelné, výsledkově orientované."
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: SMART je soubor pěti kritérií, která má splňovat dobře stanovený cíl. V personálním plánování zajišťuje, že cíl jde ověřit a skutečně dosáhnout.\nCíl musí být specifický, tedy konkrétní, a měřitelný, aby šlo ověřit jeho splnění. Musí být dosažitelný, tedy akceptovatelný a realistický, a výsledkově orientovaný, protože popisuje, čeho se má dosáhnout. A musí být časově ohraničený, tedy mít termín.\nSkripta uvádějí SMART u řízení podle cílů jako specifické, měřitelné, akceptovatelné, realistické, termínované. Pojmenování písmen se v literatuře mírně liší, význam zůstává stejný.\nChybí-li termín nebo měřitelnost, cíl nejde kontrolovat. Cíl nesmí být nedosažitelný ani omezený na to, že je finančně nenáročný."
+    },
+    {
+      "q": "Jaké jsou základní faktory hmotné odměny, které ovlivňují motivační účinnost a pracovní spokojenost?",
+      "opts": [
+        "prodleva mezi výkonem a oceněním",
+        "uznání nadřízeného pracovníka",
+        "předem stanovená pravidla vztahu mezi výkonem a odměnou",
+        "jasný vztah mezi pracovním výkonem a výší odměny",
+        "výše mzdy"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Hmotná odměna je peněžní nebo jiná odměna vyjádřitelná v penězích, tedy mzda či plat, odměny a benefity. Její motivační účinnost a spokojenost pracovníka ovlivňuje několik faktorů.\nPracovník potřebuje jasný vztah mezi výkonem a výší odměny a předem stanovená pravidla, podle kterých se odměna určuje. Důležitá je také prodleva mezi výkonem a oceněním, protože čím dříve odměna následuje, tím silněji působí. Rozhoduje i výše mzdy.\nPodle dvoufaktorové teorie působí výše mzdy hlavně tak, že při nedostatečné úrovni vyvolá nespokojenost.\nUznání nadřízeného je nehmotná, relační odměna. Hmotnou odměnu netvoří.\nDobře nastavený systém odměňování proto kombinuje pevnou mzdu se zásluhovými odměnami a bonusy."
+    },
+    {
+      "q": "Řízení pracovního výkonu je provázaný systém:",
+      "opts": [
+        "hodnocení pracovního výkonu pro rozhodování o přijímání pracovníků",
+        "pracovních úkolů - plánování pracovní kariéry - povyšování",
+        "pracovních úkolů - vzdělávání a rozvoje pracovníků - hodnocení pracovního výkonu a odměňování",
+        "hodnocení pracovního výkonu pro rozhodování a propuštění",
+        "hodnocení pracovního výkonu pro určení kompetencí, potřebných pro výkon pracovní funkce"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Řízení pracovního výkonu je provázaný proces, který zahrnuje práci s pracovníky, tedy motivaci, vedení, stanovování cílů, hodnocení a odměňování, i hodnocení výstupů jednotlivců a týmů. Je to kontinuální cyklus, který se opakuje po celou dobu působení pracovníka v organizaci.\nZákladem je definování role pracovníka a dohoda o pracovním výkonu. Manažer s pracovníkem stanoví úkoly, požadovaný výkon a znalosti i dovednosti, které k němu pracovník potřebuje. Pak následuje řízení výkonu v průběhu období se zpětnou vazbou a podporou rozvoje.\nCyklus uzavírá hodnocení výkonu. Jeho výsledky slouží k nové dohodě na další období a k rozhodnutím o odměňování a vzdělávání.\nTěžiště systému tedy leží v řetězci úkoly - vzdělávání a rozvoj - hodnocení - odměňování. Rozhodování o přijímání a propouštění do jádra řízení výkonu nepatří."
+    },
+    {
+      "q": "Jaké jsou zásady přípravy a vedení hodnotícího rozhovoru?",
+      "opts": [
+        "společné úsilí hodnoceného i hodnotitele o řešení problému zaměstnance, pracoviště, firmy",
+        "zapojit zaměstnance do procesu hodnocení a realizovat prvky sebehodnocení",
+        "v hodnocení se nemají objevit překvapení pro hodnoceného",
+        "příprava na hodnotící pohovor by neměla přesahovat dva dny",
+        "pracovník, který vede hodnotící rozhovor, by ho měl začít vždy negativní skutečností a až potom přecházet pozitivním skutečnostem"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Hodnotící rozhovor je formalizovaný pohovor nadřízeného s pracovníkem o jeho výkonu za uplynulé období a o cílech do budoucna. Tvoří jej sebehodnocení pracovníka a hodnocení nadřízeného. Nejde o pouhý zápis čísel, ale o kvalitativní rozhovor.\nPracovníka nesmí hodnocení překvapit. Průběžná zpětná vazba během roku zajistí, že roční hodnocení jen shrne to, co pracovník už ví. Předem dostane i formuláře a otázky, aby se mohl připravit.\nPracovník se zapojuje do procesu hodnocení a sebehodnocení mu dává první startovní bod. Hodnotitel a hodnocený společně řeší problémy pracovníka, pracoviště i firmy a domlouvají cíle a zlepšení.\nHodnotitel začíná pochvalou a teprve potom přechází ke kritickým věcem. Kritika na začátku vyvolá odpor. Skripta neomezují přípravu počtem dnů; důležité je mít podklady a dostatek času."
+    },
+    {
+      "q": "Čím se zabývá hodnocení pracovníků?",
+      "opts": [
+        "dosaženými pracovními úspěchy u předešlého zaměstnavatele",
+        "hledáním cest ke zlepšení pracovního výkonu",
+        "pracovním chováním a pracovními vztahy",
+        "plněním pracovníkovi stanovených úkolů",
+        "sdělováním a projednáváním výsledků"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Hodnocení pracovníků je součást managementu lidských zdrojů, která shrnuje uplynulé období a navrhuje cíle a zlepšení na další. Slouží jako nástroj monitorování výkonu, cílů, předpokladů, chování a výsledků každého pracovníka.\nHodnotí se tři oblasti: výstup (výkon), vstup (potenciál, způsobilost, praxe) a proces (pracovní chování a přístup). Patří sem plnění úkolů, které byly pracovníkovi stanoveny, a chování a vztahy na pracovišti.\nSoučástí je sdělení a projednání výsledků. Pracovník se k nim může vyjádřit a má dostat písemné hodnocení nebo čas na seznámení. Hodnocení hledá cesty ke zlepšení výkonu a navrhuje další rozvoj.\nHodnocení se soustředí na práci ve sledovaném období v dané organizaci. Úspěchy u předchozího zaměstnavatele patří spíše k posuzování uchazečů při výběru."
+    },
+    {
+      "q": "Dobrovolná péče v oblasti personálního a sociálního rozvoje zaměstnanců:",
+      "opts": [
+        "stát určuje rozsah dobrovolné péče v oblasti personálního a sociálního rozvoje zaměstnanců",
+        "vymezuje jí zákoník práce",
+        "je výrazem personální politiky zaměstnavatele, výrazem jeho úsilí o získání konkurenční výhody na trhu práce",
+        "je dána zákony",
+        "je vždy dána vyšší kolektivní smlouvou"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Péče o pracovníky je personální činnost, která zahrnuje vytváření příjemného pracovního prostředí, ochranu zdraví při práci a sociální služby. Skripta u zaměstnaneckých výhod rozlišují výhody povinné, smluvní a dobrovolné.\nPovinné výhody stanoví zákon nebo jiné obecně platné předpisy, například zákoník práce (č. 262/2006 Sb.) v oblasti bezpečnosti a ochrany zdraví při práci. Smluvní benefity jsou sjednané v kolektivní nebo jiné smlouvě, tvoří tedy samostatnou skupinu.\nDobrovolné výhody jsou součástí personální politiky organizace a mají podnítit spokojenost pracovníků. Jejich rozsah neurčuje stát ani zákon, ale sám zaměstnavatel podle svých cílů.\nDobrovolnou péčí zaměstnavatel posiluje motivaci, loajalitu a stabilitu pracovníků. Stává se tak atraktivnějším než konkurence a získává výhodu na trhu práce."
+    },
+    {
+      "q": "Doškolování (prohlubování kvalifikace) pracovníků znamená:",
+      "opts": [
+        "získávání znalostí, dovedností a osobních vlastností nad rámec podmínek a požadavků stávajících pracovních funkcí a organizace",
+        "přizpůsobování znalostí, dovedností a osobních vlastností pracovníků novým podmínkám a požadavkům stávajících pracovních funkcí a organizací",
+        "osvojení si nových dovedností a osobních vlastností, které pracovníkům umožní i vykonávání práce v rámci jiných než stávajících pracovních funkcí",
+        "osvojení si nových znalostí, dovedností a osobních vlastností, které pracovníkům umožní vykonávání práce v rámci jiných než stávajících pracovních funkcí",
+        "přivyknutí pracovníků na podmínky a požadavky nových pracovních funkcí a organizace"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Doškolování neboli prohlubování kvalifikace (training) je vzdělávání, které pracovníka udržuje na úrovni požadavků jeho současné práce. Znalosti, dovednosti a osobní vlastnosti přizpůsobuje novým podmínkám a požadavkům stávající pracovní funkce a organizace.\nDůvodem bývá například nová technologie, změna postupů nebo vyšší nároky na kvalitu. Pracovník zůstává na stejné funkci, jen ji zvládá lépe.\nRekvalifikace (retraining) je jiná: osvojení nových znalostí a dovedností, které umožní práci v jiné funkci než dosavadní. Adaptace je přivykání pracovníka podmínkám nové funkce a organizace. Získávání schopností nad rámec stávající funkce patří k rozvoji ve smyslu přípravy na budoucí uplatnění."
+    },
+    {
+      "q": "Princip plánování potřeb lidských zdrojů je založen na:",
+      "opts": [
+        "prognóze potřeby a zdrojů pracovních sil",
+        "prognóze míry nezaměstnanosti",
+        "prognóze poptávky",
+        "prognóze nákladů na adaptaci",
+        "prognóze vývoje tržeb dané organizace"
+      ],
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Plánování potřeb lidských zdrojů je založeno na prognóze, tedy na odhadu budoucího vývoje. Skripta uvádějí, že pro personální plánování je stejně jako u jiných plánů rozhodující předvídání a prognóza.\nPrognóza má dvě části. Odhaduje potřebu pracovníků, tedy poptávku organizace po práci, a odhaduje zdroje pracovních sil uvnitř organizace i na trhu práce, tedy nabídku. Plánování pak hledá rozdíl mezi nimi.\nZ rozdílu vyplývá, zda organizace bude mít nedostatek, nebo nadbytek pracovníků. Podle toho volí získávání, rozvoj nebo snižování počtu lidí.\nPrognóza nezávisí jen na nezaměstnanosti, tržbách ani nákladech na adaptaci. Takové údaje slouží jako vstup, ale základem je odhad potřeby a zdrojů pracovních sil."
+    },
+    {
+      "q": "Jaké informace kompletní by měl obsahovat inzerát?",
+      "opts": [
+        "informace o organizaci, pracovním místě a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o požadavcích na pracovníka, mzdě/platu a zaměstnaneckých výhodách, místě výkonu práce a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o organizaci, pracovním místě, požadavcích na pracovníka, mzdě/platu a zaměstnaneckých výhodách, místě výkonu práce a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o místě výkonu práce a informaci o tom, co by měl uchazeč dělat v reakci na inzerát",
+        "informace o organizaci, pracovním místě, požadavcích na pracovníka"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Inzerát je nejrozšířenější a nejtradičnější forma nabídky zaměstnání. Má v krátkém čase oslovit velký počet vhodných uchazečů.\nKompletní inzerát obsahuje informace o organizaci, o pracovním místě a o požadavcích na pracovníka (vzdělání, kvalifikace, praxe). K tomu patří pracovní podmínky: mzda či plat, zaměstnanecké výhody, možnost rozvoje a místo výkonu práce.\nNakonec musí uvést, co má uchazeč udělat: jaké dokumenty poslat, jakým způsobem a komu.\nPodle Koubka se vybírá vhodné médium a osvědčená forma inzerátu, vedou se záznamy o inzerátech a hodnotí se jejich efektivita. Čím úplnější a konkrétnější inzerát je, tím lépe osloví správné uchazeče."
+    },
+    {
+      "q": "Při plánování lidských zdrojů se sledují:",
+      "opts": [
+        "vývojové tendence míry nezaměstnanosti",
+        "specifické schopnosti a požadavky pracovníků",
+        "náklady na získávání pracovníků",
+        "průměrné mzdy v organizaci",
+        "náklady na adaptaci pracovníků"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Plánování lidských zdrojů sleduje kvantitu i kvalitu pracovní síly. Armstrong shrnuje, že je potřeba zjistit, kolik pracovníků organizace potřebuje a v jaké kvalifikační struktuře.\nK tomu patří sledování specifických schopností a požadavků pracovníků. Plán musí vědět, jaké znalosti, dovednosti a zkušenosti organizace má a jaké bude potřebovat. Pracovníci mají také své požadavky, které ovlivňují jejich ochotu zůstat.\nPlánování zároveň vychází z analýzy prostředí: z legislativy, trhu práce a vnitřních podmínek organizace. Z toho vyplývá předpověď poptávky a nabídky.\nMíra nezaměstnanosti, náklady na získávání a adaptaci a průměrné mzdy jsou ekonomické údaje. Pomáhají plánu, ale nepopisují schopnosti ani požadavky pracovníků."
+    },
+    {
+      "q": "Mezi metody získávání pracovníků patří:",
+      "opts": [
+        "spolupráce se školami",
+        "inzerce v tisku",
+        "spolupráce s úřady práce",
+        "psychologické testy",
+        "zkoumání životopisů"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Metody získávání pracovníků jsou způsoby, jak rozšířit informaci o volném místě a oslovit cílovou skupinu uchazečů. Volba metody závisí na požadavcích na pracovníka, rychlosti obsazení, situaci na trhu práce a nákladech.\nSkripta uvádějí inzerci, e-recruitment, spolupráci s úřady práce, personálními agenturami a vzdělávacími institucemi, doporučení, headhunting, HR event marketing a vývěsky. Uchazeči se mohou nabízet i sami.\nVýhodou úřadů práce je bezplatnost pro zaměstnavatele, výhodou spolupráce se školami možnost vytipovat si absolventa už při praxi či stáži.\nPsychologické testy a zkoumání životopisů nejsou metody získávání. Patří k výběru pracovníků, který na získávání navazuje."
+    },
+    {
+      "q": "Příprava na výběrový pohovor (strukturovaný) zpravidla zahrnuje:",
+      "opts": [
+        "seznámení se s žádostmi o zaměstnání a životopisy uchazečů",
+        "přípravu některých otázek, které budeme uchazeči klást",
+        "návrh struktury (fází) výběrového pohovoru",
+        "adaptační proces",
+        "volbu profesionálního vzhledu a vystupování"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Příprava na výběrový pohovor je souhrn kroků, které tazatel udělá před setkáním s uchazečem. Pohovor slouží k ověření předběžných úsudků o uchazeči a jeho motivaci. Strukturovaný pohovor vyžaduje přípravu nejvíc, protože jde podle předem daného scénáře.\nTazatel nejdřív prostuduje žádosti o zaměstnání a životopisy uchazečů a porovná jejich kvalifikaci s požadavky místa. Dále stanoví kritéria výběru a zpracuje plán pohovoru. Ten obsahuje strukturu (fáze) pohovoru a otázky, které bude klást.\nSoučástí přípravy je také vystupování tazatele. První dojem vzniká během prvních vteřin podle vzhledu a chování, proto tazatel přichází včas a působí profesionálně.\nAdaptace do přípravy nepatří. Je to proces začleňování nového pracovníka, který navazuje až po výběru, přijetí a nástupu do zaměstnání."
+    },
+    {
+      "q": "Metody sloužící k odhadu perspektivní potřeby pracovníků dělíme na:",
+      "opts": [
+        "subjektivní a objektivní",
+        "deduktivní a intuitivní",
+        "kmenové a vázané",
+        "intuitivní a kvantitativní",
+        "intuitivní a poměrné"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Metody odhadu perspektivní potřeby pracovníků slouží k předvídání, kolik lidí organizace v budoucnu potřebuje. Podle Koubka a Armstronga se dělí na intuitivní a kvantitativní.\nIntuitivní metody stojí na znalosti vazby mezi úkoly organizace, technikou a pracovní silou. Vyžadují zkušené odhadce. Patří sem delfská metoda, kaskádová metoda a metoda manažerských odhadů.\nKvantitativní metody používají matematický nebo statistický aparát. Jsou to analýza vývojových trendů, korelace a regrese, grafická analýza, modelování a metoda založená na pracovních normách.\nV praxi se obvykle používá kombinace obou skupin. Dělení na subjektivní a objektivní, deduktivní nebo kmenové a vázané skripta nezavádějí."
+    },
+    {
+      "q": "Která metoda (metody) patří mezi tzv. intuitivní metody personálního plánování?",
+      "opts": [
+        "kaskádová metoda",
+        "metoda manažerských odhadů",
+        "delfská metoda",
+        "korelace a regrese",
+        "grafická analýza"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Intuitivní metody personálního plánování odhadují budoucí potřebu pracovníků na základě zkušeností a úsudku odborníků. Opírají se o důkladnou znalost vazby mezi úkoly organizace, technikou a pracovní silou. Skripta sem řadí tři metody.\nDelfská metoda dotazuje experty ve více kolech, aby se jejich odhady postupně sbližovaly. Metoda manažerských odhadů shromažďuje odhady vedoucích pracovníků. Kaskádová metoda rozpracovává cíle postupně od vyšších úrovní organizace k nižším, které odhadují svou potřebu.\nKorelace a regrese a grafická analýza naopak počítají s daty a statistikou. Jsou to kvantitativní metody.\nV praxi se intuitivní metody často kombinují s kvantitativními.\nPři odhadu proto záleží na zkušenostech těch, kdo odhad provádějí."
+    },
+    {
+      "q": "Adaptace pracovníků je program adaptačních a vzdělávacích aktivit, jež mají tyto specifické úkoly:",
+      "opts": [
+        "vybrat nejvhodnějšího kandidáta na obsazovanou pozici na základě předvýběru uchazečů",
+        "urychlit proces seznamování pracovníka s novými podmínkami, pracovním a sociálním prostředím, potřebnými znalostmi a dovednostmi",
+        "zkrátit období, po které pracovník nepodává standardní výkon a nedostatečně se orientuje v novém pracovním a sociálním prostředí",
+        "zajistit potřebný počet nových pracovníků v požadované profesní struktuře",
+        "urychlit proces seznamování pracovníka s jeho novými pracovními úkoly"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Adaptace pracovníků je program adaptačních a vzdělávacích aktivit, který pomáhá novému pracovníkovi zvládnout nové podmínky. Navazuje na přijímání a končí, když je pracovník adaptovaný.\nSkripta uvádějí tři úkoly. Adaptace urychluje seznamování s novými pracovními úkoly a podmínkami i s pracovním a sociálním prostředím, potřebnými znalostmi a dovednostmi. Zkracuje také období, kdy pracovník nepodává standardní výkon a v novém prostředí se nedostatečně orientuje.\nVýběr nejvhodnějšího kandidáta a zajištění počtu pracovníků v profesní struktuře adaptace neřeší. To jsou úkoly výběru a personálního plánování, které adaptaci předcházejí.\nAdaptace snižuje náklady na fluktuaci, ztráty produktivity a zvyšuje pracovní spokojenost. Dlouhodobě tak podporuje stabilitu organizace."
+    },
+    {
+      "q": "K čemu slouží metoda Assessment Centre (AC)?",
+      "opts": [
+        "urychlení procesu adaptace nových pracovníků",
+        "zvýšení podnikové kultury",
+        "hodnocení pracovníků",
+        "výběru pracovníků",
+        "testování uchazečů při řešení modelových úkolů"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Assessment centre (AC) je soubor metod aplikovaných na skupinu jedinců po dobu jednoho nebo více dnů. Jde o časově ohraničenou zkoušku s individuálními i skupinovými úkoly, které nemají jednoznačně správný výsledek. Chování účastníků pozoruje několik hodnotitelů.\nMetoda slouží ke třem účelům: k výběru nebo povyšování pracovníků, k diagnostice dovedností a schopností a k rozvoji dovedností. Hodnotí se kompetence sledované při plnění úkolů. Varianta zaměřená na budoucí schopnosti a rozvoj se nazývá development centre.\nUchazeči řeší modelové situace a hodnotitelé sledují jejich chování. AC kombinuje individuální, skupinovou a psychodiagnostickou metodu.\nAC není nástrojem adaptace nových pracovníků ani zvyšování podnikové kultury. Adaptace a kultura jsou samostatné oblasti řízení lidských zdrojů."
+    },
+    {
+      "q": "Které činnosti předcházení formulaci personální strategie?",
+      "opts": [
+        "předvýběr zaměstnanců",
+        "analýza současného stavu, vnitřních a vnějších podmínek",
+        "stanovení personálních politik",
+        "zajištění funkčního obsazení personálního útvaru",
+        "výběr zaměstnanců"
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Personální strategie je uspořádaná soustava dlouhodobých cílů v personálním zajištění strategie organizace. Zabývá se cílovou skladbou lidských zdrojů a bývá vytvářena k určitému časovému horizontu.\nPřed jejím formulováním organizace provádí rozbor prostředí. Analyzuje současný stav lidských zdrojů a vnitřní podmínky, tedy strukturu pracovníků, kvalifikaci nebo fluktuaci, a vnější podmínky, například trh práce, legislativu a demografický vývoj. Pak stanoví personální politiky, tedy zásady, jimiž se organizace řídí v personálních činnostech.\nPředvýběr a výběr zaměstnanců patří až do realizace personálních činností. Také obsazení personálního útvaru je organizační opatření, které strategii následuje."
+    },
+    {
+      "q": "Prostřednictvím výběrového pohovoru můžeme:",
+      "opts": [
+        "zjistit představu uchazečů o pracovních podmínkách",
+        "posoudit odbornou způsobilost uchazečů",
+        "zjišťovat náboženské vyznání a politické přesvědčení",
+        "podat uchazečům informace o organizaci, práci a pracovních podmínkách",
+        "posoudit osobnost a motivaci uchazečů"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Výběrový pohovor je metoda výběru, kterou tazatel systematicky sbírá údaje o uchazeči a zároveň ho osobně poznává. Slouží k ověření předběžných úsudků o jeho předpokladech a motivaci k práci.\nPomocí pohovoru tazatel posuzuje odbornou způsobilost a osobnost uchazeče včetně motivace. Zjišťuje také, jakou má uchazeč představu o pracovních podmínkách. Současně uchazeči poskytuje informace o organizaci, práci a pracovních podmínkách.\nOsobní seznámení je pro personalistu důležité: budoucí nadřízený by měl s uchazečem mluvit sám.\nNěkteré údaje zjišťovat nelze. Zaměstnavatel smí vyžadovat jen údaje, které bezprostředně souvisejí s uzavřením pracovní smlouvy (§ 30 odst. 2 zákoníku práce). Na příslušnost k církvi nebo členství v politických stranách se ptát nesmí (§ 316 odst. 4) a takové otázky by mohly vést k diskriminaci (§ 16)."
+    },
+    {
+      "q": "Modely řízení lidských zdrojů jsou:",
+      "opts": [
+        "Model rozporu",
+        "Model neshody",
+        "Model shody",
+        "Harvardský systém",
+        "Londýnský systém"
+      ],
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Model řízení lidských zdrojů je teoretický rámec, který popisuje, jak se lidé v organizaci řídí. Skripta uvádějí dva základní modely, které formulovaly dvě školy.\nModel shody vytvořila Michiganská škola. Říká, že systém lidských zdrojů a struktura organizace mají odpovídat strategii. Popisuje cyklus lidských zdrojů: výběr, hodnocení, odměňování a rozvoj.\nHarvardský systém vychází z širšího a strategičtějšího pohledu a jako první zdůrazňuje, že řízení lidí je záležitostí liniových manažerů. Personální útvar formuluje politiku a zásady personálních činností. Model pracuje se zainteresovanými stranami, situačními faktory a dlouhodobými důsledky.\nModel rozporu, model neshody ani londýnský systém mezi modely nepatří. Existuje také rozlišení tvrdé a měkké podoby managementu lidských zdrojů, ale to nejsou samostatné modely."
+    },
+    {
+      "q": "Jaké jsou tři základní faktory ovlivňující pracovní výkon pracovníka?",
+      "opts": [
+        "organizační struktura",
+        "právní forma organizace",
+        "vnímání role",
+        "úsilí",
+        "schopnosti"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Pracovní výkon je výsledek působení několika faktorů, ne jen jednoho. Podle teorie Portera a Lawlera závisí na úsilí, na schopnostech a na tom, zda představy pracovníka o pracovní náplni odpovídají představám organizace, tedy na vnímání role. Výkon dále ovlivňují zdroje, jasnost cílů a uznání.\nSchopnosti jsou znalosti, dovednosti a zkušenosti, tedy to, co pracovník umí. Úsilí vyjadřuje, kolik energie pracovník do práce vkládá, a závisí na motivaci. Vnímání role je to, jak pracovník chápe, co se od něj očekává.\nProto je důležité jasné definování role a cílů.\nOrganizační struktura a právní forma organizace jsou součástí pracovních a organizačních podmínek, ne faktory výkonu samotného pracovníka. Podmínky tvoří rámec, v němž pracovník může výkon podat. Nutné jsou, ale samy nestačí."
+    },
+    {
+      "q": "V které činnosti většinou spočívá úloha liniových manažerů v realizaci personální strategie? (bez záruky)",
+      "opts": [
+        "v řízení výrobního procesu tak, aby organizace dosahovala co možná nejvyššího zisku",
+        "hodnocení výkonu zaměstnanců",
+        "v praktické realizaci personálních politik a postupů",
+        "propouštění zaměstnanců",
+        "v řízení a dosahování vysokého výkonu zaměstnanců"
+      ],
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Linioví manažeři jsou vedoucí, kteří přímo řídí pracovníky a odpovídají za výsledky svého útvaru. Harvardský model managementu lidských zdrojů zdůrazňuje, že řízení lidí je především jejich záležitost.\nPersonální útvar formuluje personální politiku a zásady a metodicky manažery podporuje. Linioví manažeři je uplatňují v každodenním řízení: přidělují práci, hodnotí, motivují a rozvíjejí podřízené. Podle skript personální útvar politiku iniciuje, ale manažeři ji musí správně realizovat, proto je jejich role pro úspěšnou personální politiku klíčová.\nVedle toho odpovídají za výkon svých lidí. Řízením a podporou mají dosáhnout co nejvyššího pracovního výkonu, který se promítá do výsledků celé organizace.\nRozpor: Podle testu je správně řízení výrobního procesu kvůli co nejvyššímu zisku a řízení a dosahování vysokého výkonu zaměstnanců, za tyto dvě odpovědi ale student dostal 2,67/4 bodu. Podle učebnice patří k úloze liniových manažerů i praktická realizace personálních politik a postupů."
+    },
+    {
+      "q": "Označte hlavní úkoly řízení lidských zdrojů z pohledu současné teorie a praxe:",
+      "opts": [
+        "zvyšování úrovně zaměstnanosti",
+        "vytváření dynamického souladu mezi počtem a strukturou pracovních míst, počtem a strukturou pracovníků",
+        "formování efektivního stylu vedení lidí a zdravých mezilidských vztahů",
+        "optimální využívání pracovních sil v organizaci",
+        "personální a sociální rozvoj pracovníků"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Úkoly personální práce vymezuje Koubek jako čtyři hlavní oblasti. Jejich splnění je předpokladem úspěšného řízení lidských zdrojů.\nPrvním úkolem je vytvářet dynamický soulad mezi počtem a strukturou pracovních míst a počtem a strukturou pracovníků, tak aby odpovídaly pracovním schopnostem pracovníka na daném místě. Druhým je optimální využívání pracovních sil a jejich schopností.\nTřetím úkolem je formování týmu, efektivního stylu vedení lidí a zdravých mezilidských vztahů. Čtvrtým je personální a sociální rozvoj pracovníků, tedy rozvoj schopností, osobnosti, sociálních vlastností a kariéry.\nZvyšování úrovně zaměstnanosti je úkolem státní politiky zaměstnanosti. Organizace plní své potřeby, ne celospolečenské cíle."
+    },
+    {
+      "q": "Mezi formy rozmisťování pracovníků v rámci tzv. \"vnitřní mobility\" nepatří:",
+      "opts": [
+        "přeřazení na nižší funkci",
+        "rozhodnutí pracovníka z organizace odejít",
+        "převedení pracovníka na jinou práci nebo pracoviště",
+        "výběr vhodných kandidátů pro přípravu personálních rezerv",
+        "povyšování pracovníků"
+      ],
+      "correct": [
+        1,
+        3
+      ],
+      "info": "Pojem: Vnitřní mobilita je pohyb pracovníků uvnitř organizace. Skripta uvádějí jako příklady povýšení, přeřazení a specializaci.\nPatří sem povyšování, ponižování (přeřazení na nižší funkci) a převádění na jinou práci nebo pracoviště. Pracovník v organizaci zůstává a mění jen pozici.\nRozhodnutí pracovníka odejít je vnější mobilita, protože pracovník organizaci opouští. Výběr kandidátů pro přípravu personálních rezerv není pohybem pracovníka, ale přípravnou činností. Povýšením se stane až skutečné obsazení vyšší funkce.\nMobilitu lze také členit podle toho, zda ji inicioval pracovník, nebo organizace.\nPříkladem jsou ponížení při závažné chybě nebo reorganizaci a povýšení na vlastní žádost."
+    },
+    {
+      "q": "Co je výstupem analýzy pracovních míst?",
+      "opts": [
+        "Kariérní mapa",
+        "Organizační schéma",
+        "Popis pracovního místa",
+        "Plán flexibility",
+        "Plán vzdělávání"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Analýza pracovního místa je rozbor úkolů, pravomocí a odpovědností a požadavků na pracovníka, který na místě pracuje. Koubek ji řadí mezi základní personální činnosti spolu s vytvářením pracovních míst.\nAnalýza zjišťuje, jaké kompetence, znalosti, dovednosti, zkušenosti a vzdělání jsou pro výkon práce nutné. Její výsledek se zapisuje do popisu pracovního místa. Ten slouží jako podklad pro pracovní nabídku, výběr, hodnocení i odměňování.\nKariérní mapa, plán vzdělávání a plán flexibility patří k plánování rozvoje a organizace práce. Z analýzy vycházejí, ale nejsou jejím přímým výstupem. Organizační schéma zobrazuje strukturu organizace, ne konkrétní místo."
+    },
+    {
+      "q": "Smyslem hodnocení efektivnosti vzdělávacího procesu je:",
+      "opts": [
+        "ověření, zda vynaložené prostředky (čas, náklady) byly využity na dosažení požadovaných cílů",
+        "splnění plánů personálního rozvoje zúčastněných pracovníků",
+        "získání podkladů pro stanovení strategie firmy",
+        "získání podkladů pro personální plánování",
+        "realizace kariérových plánů organizace"
+      ],
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Hodnocení efektivnosti vzdělávání je poslední fáze vzdělávacího procesu. Zjišťuje, zda vzdělávací akce splnila stanovené cíle.\nSmyslem je ověřit, zda vynaložené prostředky, tedy čas a náklady, byly využity na dosažení požadovaných cílů. Porovnává se skutečný výsledek s cílem. Používají se například testy znalostí před a po akci, pozorování na pracovišti a kvantifikace přínosu.\nVýsledky hodnocení pak slouží ke zlepšení dalších vzdělávacích akcí. Realizaci kariérových plánů, tvorbu strategie firmy ani personální plánování hodnocení vzdělávání přímo nenahrazuje.\nHodnocení se plánuje už při přípravě akce, aby cíle byly měřitelné. Bez jasných cílů nelze efektivnost posoudit."
+    },
+    {
+      "q": "Největším bohatstvím organizace jsou lidé, kteří:",
+      "opts": [
+        "jsou nositeli znalostí a zkušeností",
+        "vtiskují organizaci kolektivní charakter",
+        "jsou schopni kreativity",
+        "jsou schopni experimentovat",
+        "jsou schopni dávat si různé věci do vzájemných souvislostí"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Lidský kapitál tvoří znalosti, zkušenosti a schopnosti pracovníků. Skripta ho označují za nejcennější zdroj organizace, protože lidé uvádějí do pohybu ostatní zdroje.\nČlověk je podle skript nositelem znalostí a nápadů a stojí za rozvojem a kvalitou organizace. Lidé jsou tvůrčím faktorem: plánují, vyrábějí, prodávají a kontrolují. Tvořivost, ochota experimentovat a schopnost vidět věci v souvislostech je odlišují od věcných zdrojů a jako kolektiv dávají organizaci její charakter.\nLidský kapitál je také nejdražším zdrojem, zejména u kvalifikovaných pracovníků. Proto organizace věnuje pozornost jeho získávání, výběru, rozvoji, motivaci a odměňování.\nDrucker říká, že lidé jsou největší kapitál, a Jobs, že rozhoduje víra v lidi, ne v technologii."
+    },
+    {
+      "q": "Jaké mohou být negativní důsledky vysoké míry odchodu pracovníků?",
+      "opts": [
+        "úspora nákladů",
+        "možné přechodné zhoršení péče o zákazníky",
+        "ztráta zákazníků",
+        "možný únik citlivých informací",
+        "ztráta zaškolených pracovníků"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Fluktuace neboli mobilita je pohyb pracovníků, zejména jejich odchody z organizace nebo z pracovní pozice. Podle skript ji lze sledovat vzorci míry mobility a míry stability.\nVysoká míra odchodů je pro organizaci nákladná. Odcházející pracovník nepracuje při odchodu na plný výkon a odnáší znalosti, často ke konkurenci. Z toho plyne ztráta zaškolených pracovníků, možný únik citlivých informací a ztráta zákazníků, kteří jsou vázáni na daného člověka.\nDále se zhoršuje péče o zákazníky, minimálně přechodně, a rostou náklady na výběr a adaptaci nových lidí. Úspora nákladů mezi důsledky nepatří: odchody náklady zvyšují. Úsporu může přinést jen řízené snižování stavu."
+    },
+    {
+      "q": "Které tvrzení vystihuje obsah, úkoly a cíle personálního plánování?",
+      "opts": [
+        "zabezpečuje získávání pracovníků",
+        "identifikuje potřebu obsadit určité pracovní místo",
+        "realizuje rozmístění pracovníků",
+        "realizuje propouštění pracovníků",
+        "zabezpečuje výběr pracovníků"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Personální plánování je činnost, která předvídá budoucí potřebu pracovníků a stanovuje opatření k jejímu pokrytí. Skripta rozlišují plánování potřeby, plánování pokrytí potřeby a plánování personálního rozvoje.\nPlánování potřeby se týká pracovních míst. Identifikuje, která místa bude třeba obsadit, kdy a s jakými požadavky.\nSamotné získávání, výběr, rozmístění a propouštění pracovníků už jsou další personální činnosti. Plánování je jen připravuje: určí, kolik lidí a jakých je třeba přijmout nebo uvolnit, ale nerealizuje to.\nProto obsahem plánu je zjištění potřeby, ne její provedení.\nPlán tak propojuje strategii organizace s konkrétními personálními činnostmi. Bez něj by organizace obsazovala místa nahodile a pozdě."
+    },
+    {
+      "q": "Mezi obecná východiska personální strategie patří:",
+      "opts": [
+        "personální strategie společnosti musí být alespoň dvakrát ročně aktualizována",
+        "personální strategie je determinována celkovou strategií organizace",
+        "personální strategie musí brát v úvahu i vnější, mimo organizaci existující podmínky reprodukce pracovní síly",
+        "personální strategie by neměla být determinována celkovou strategií organizace",
+        "personální cíle musí být provázané s ostatními cíli organizace"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Personální strategie je uspořádaná soustava dlouhodobých cílů v personálním zajištění strategie organizace. Zabývá se cílovou skladbou lidských zdrojů a bývá vytvářena k časovému horizontu cílového stavu. Skripta uvádějí tři obecná východiska.\nStrategie je determinována celkovou strategií organizace, protože personální zajištění slouží jejím cílům. Její cíle musí být provázané s ostatními cíli organizace. Musí také brát v úvahu vnější podmínky reprodukce pracovní síly, například demografii, vzdělávací soustavu a trh práce.\nStrategie je dlouhodobá. Pevně stanovená frekvence aktualizace, například dvakrát ročně, mezi východiska nepatří. Opačný požadavek, aby byla nezávislá na strategii organizace, odporuje jejímu smyslu."
+    },
+    {
+      "q": "Z časového hlediska dělíme plány na:",
+      "opts": [
+        "Specifické (faktické)",
+        "Dlouhodobé (strategické)",
+        "Krátkodobé (strategické)",
+        "Střednědobé (taktické)",
+        "Krátkodobé (operativní)"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Časové hledisko dělí plány lidských zdrojů podle délky období, na které se plánují. Rozlišují se tři úrovně.\nDlouhodobé plány jsou strategické a vycházejí z personální strategie s dlouhodobými a obecnými cíli potřeby pracovních sil a jejího pokrytí. Střednědobé plány jsou taktické a rozpracovávají strategii na střednědobý horizont. Krátkodobé plány jsou operativní a řeší konkrétní každodenní personální činnosti.\nKrátkodobý plán proto není strategický. Strategie je vždy dlouhodobá.\nSpecifické (faktické) plány nejsou časovou kategorií. Dělení podle času tento pojem nezná.\nPersonální strategie se podle skript týká dlouhodobých, obecných a komplexně pojatých cílů, operativní plány je převádějí do konkrétních kroků."
+    },
+    {
+      "q": "Jaké mohou být nástroje ovlivňující pracovní úsilí?",
+      "opts": [
+        "atmosféra pracovní skupiny",
+        "účinný mzdový systém",
+        "atraktivní obsah práce",
+        "povzbuzování - neformální vztahy",
+        "právní forma podnikání"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Pracovní úsilí je míra snahy, kterou pracovník vkládá do práce. Zaměstnavatel ho může ovlivňovat nástroji motivace.\nPodle skript výkon závisí na schopnostech, zdrojích, jasnosti cílů a uznání. K tomu patří odměna, vnější i vnitřní, a pocit spravedlnosti.\nNástroji jsou účinný mzdový systém, atraktivní obsah práce a dobrá atmosféra pracovní skupiny. Dále povzbuzování a neformální vztahy, uznání a styl vedení.\nPrávní forma podnikání je formální rámec firmy. Úsilí pracovníků přímo neovlivňuje.\nMotivační program vychází z interních analýz a jeho hlavními nástroji jsou hodnocení pracovníků, systém odměňování a vzdělávání a rozvoj. Motivace funguje jen tehdy, když vychází z toho, co je pro daného pracovníka atraktivní."
+    },
+    {
+      "q": "Jaké máme obecné zásady efektivního získávání pracovníků?",
+      "opts": [
+        "uchazeče získáváme na základě jejich pracovních schopností",
+        "volné pracovní pozice se nejprve snažíme obsadit z vnějších zdrojů",
+        "při oslovování vnějších zdrojů postupujeme neanonymně",
+        "volné pracovní pozice obsazujeme až poté, co uplynou minimálně 3 měsíce od uvolnění této pozice",
+        "uchazečům sdělujeme přesné, relevantní a úplné informace"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Zásady efektivního získávání pracovníků jsou pravidla, která má organizace dodržet v každém náborovém procesu. Skripta je uvádějí podle Dvořákové.\nPrvní zásada říká, že se volné pozice obsazují nejprve z vnitřních zdrojů. Druhá požaduje, aby organizace při oslovování vnějších zdrojů nevystupovala anonymně a sdělovala uchazečům přesné, relevantní a úplné informace.\nDalší zásadou je získávat uchazeče na základě jejich pracovních schopností. Vyvarovat se je třeba jakékoli diskriminace, kterou zakazuje zákoník práce.\nZásada čekat s obsazením několik měsíců po uvolnění místa v učebnici není. Organizace chce volné místo obsadit včas a s přiměřenými náklady."
+    },
+    {
+      "q": "Jaké činnosti zahrnuje získávání pracovníků?",
+      "opts": [
+        "Adaptaci nových zaměstnanců.",
+        "Inzerování volné pracovní pozice.",
+        "Jednání s uchazeči.",
+        "Vytváření plánů rozvoje.",
+        "Rozpoznávání a vyhledávání vhodných pracovních zdrojů."
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Získávání pracovníků je personální činnost, jejímž cílem je oslovit a přilákat dostatečný počet kvalitních uchazečů o volné (nově vytvořené) pracovní funkce, a to v odpovídajícím čase a s přiměřenými náklady.\nZahrnuje rozpoznávání a vyhledávání vhodných pracovních zdrojů a inzerování volné pozice. Součástí je i jednání s uchazeči, kteří se o místo zajímají.\nAdaptace nových zaměstnanců probíhá až po přijetí a patří k formování personálu. Tvorba plánů rozvoje je součástí rozvoje pracovníků.\nZískávání je personální činnost, která předchází výběru. Vytváří z potenciálních kandidátů skupinu uchazečů, ze které se vybírá.\nCílem získávání je zajistit co největší možnost výběru vhodných kandidátů pro danou funkci."
+    },
+    {
+      "q": "Která z uvedených metod se týká získávání pracovníků?",
+      "opts": [
+        "výběrový pohovor",
+        "doporučení současného zaměstnance",
+        "doporučení dřívějšího zaměstnance",
+        "přímé oslovení vyhlédnutého kandidáta",
+        "testy znalostí"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Získávání pracovníků je soubor metod, jimiž organizace oslovuje potenciální uchazeče. Podle skript se uchazeči mohou nabízet sami, někdo je doporučí nebo organizace přímo osloví vhodné kandidáty.\nDoporučení stávajícího pracovníka je levné a rychlé, ale omezuje možnost výběru. Podobně lze využít doporučení dřívějšího pracovníka. Přímé oslovení (headhunting) se používá hlavně u vysoce postavených pozic a vedoucích.\nVýběrový pohovor a testy znalostí patří až k výběru pracovníků. Výběr pracovníků navazuje na získávání a z uchazečů vybírá nejvhodnějšího kandidáta.\nPřímé oslovení má výhodu v nejlepších předpokladech kandidáta. Nevýhodou je, že tito uchazeči kladou vysoké požadavky na pracovní podmínky.\nPersonální agentury, úřady práce, inzerce a sociální sítě jsou další cesty, jak uchazeče oslovit."
+    },
+    {
+      "q": "Mezi nevýhody získávání pracovníků z vnějších zdrojů nepatří:",
+      "opts": [
+        "Možné konflikty se stávajícími pracovníky, kteří se cítili kvalifikováni na danou pozici",
+        "Škála talentů je větší mimo organizaci",
+        "Nábor nových lidí je obtížnější a nákladnější",
+        "Nový pracovník může přinést nové postřehy a přístupy",
+        "Adaptace a orientace je delší"
+      ],
+      "correct": [
+        1,
+        3
+      ],
+      "info": "Pojem: Vnější zdroje pracovníků jsou lidé mimo organizaci. Jejich využití má podle Koubka výhody i nevýhody.\nNevýhodou je, že nábor nových lidí je obtížnější a nákladnější. Delší je také adaptace a orientace nového pracovníka. Mohou vzniknout konflikty se stávajícími pracovníky, kteří se cítili kvalifikováni na danou pozici.\nVýhodou je naopak větší škála talentů, než jaká je uvnitř organizace. Nový pracovník také může přinést nové postřehy a přístupy zvenčí.\nPozitivní vlastnosti vnějších zdrojů proto mezi nevýhody nepatří. Jsou to důvody, proč organizace vnější zdroje vůbec využívají.\nPři rozhodování záleží také na tom, jak rychle organizace pracovníka potřebuje a kolik chce na získání vynaložit."
+    },
+    {
+      "q": "Adaptace pracovníků jakožto speciální adaptačně-vzdělávací program musí zabezpečit:",
+      "opts": [
+        "zajistit pracovníkovi rotaci práce",
+        "sociální začlenění do organizace",
+        "informování o skutečnostech, které jsou důležité pro jeho úspěšnou činnost v rámci organizace",
+        "odborné začlenění na pracovišti a mimo něj",
+        "umožnění prostudování zákoníku práce"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Adaptačně-vzdělávací program je speciální soubor opatření, který řídí začleňování nových pracovníků. Musí zabezpečit tři oblasti.\nPrvní je informování o skutečnostech důležitých pro úspěšnou činnost: o cílech a strategii organizace, struktuře, kultuře, právech a povinnostech i pracovních podmínkách. Druhá je odborné začlenění, tedy přivyknutí na požadavky funkce, které probíhá na pracovišti i mimo něj. Třetí je sociální začlenění do nových vztahů v kolektivu.\nRotace práce nebo prostudování zákoníku práce nepatří mezi povinnosti programu. Pracovník se s právy a povinnostmi seznámí v rámci informování, ne samostudiem zákona.\nÚčinnost plánu se ověřuje průběžnými kontrolami úkolů a hodnocením na konci stanovené lhůty. Používají se objektivní i subjektivní kritéria adaptovanosti."
+    },
+    {
+      "q": "Označte metodu vzdělávání, které patří mezi tzv. \"Metody vzdělávání mimo pracoviště - (off the job)\":",
+      "opts": [
+        "pověření úkolem",
+        "rotace práce",
+        "simulace",
+        "workshop, případová studie",
+        "asistování"
+      ],
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Metody vzdělávání mimo pracoviště (off the job) probíhají mimo místo výkonu práce, často pod vedením lektora. Pracovník se může soustředit na učení bez tlaku běžných pracovních povinností.\nPatří sem přednášky, semináře, workshopy, případové studie a simulace. Případová studie vede účastníky k rozboru popsané situace a hledání řešení. Simulace nacvičuje chování ve vytvořené situaci podobné skutečné.\nPověření úkolem, rotace práce a asistování jsou metody na pracovišti (on the job). Pracovník při nich pracuje v reálných podmínkách a učí se zkušeností. Rotace přitom znamená dočasné přemisťování na jiné pracovní funkce.\nVzdělávání mimo pracoviště bývá dražší, ale nabízí odstup od každodenní praxe a výměnu zkušeností se zástupci jiných organizací."
+    },
+    {
+      "q": "Proces získávání pracovníků obsahuje následující činnosti:",
+      "opts": [
+        "identifikace potřeby obsadit určitou pracovní funkci",
+        "volba metod získávání pracovníků",
+        "volba dokumentů požadovaných od uchazečů",
+        "popis a specifikace obsazované pracovní funkce",
+        "adaptace pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Proces získávání pracovníků je posloupnost kroků od zjištění potřeby po nabídku zaměstnání. Navazuje na personální plánování a analýzu pracovních míst.\nZačíná identifikací potřeby obsadit určitou pracovní funkci. Pak se zpracuje popis a specifikace funkce, tedy požadované kompetence, znalosti, dovednosti, zkušenosti a vzdělání.\nDalší kroky jsou identifikace zdrojů pracovní síly, volba metod získávání a volba dokumentů, které zaměstnavatel od uchazečů požaduje. Na konci stojí formulace a uveřejnění nabídky zaměstnání.\nAdaptace pracovníků následuje až po výběru a přijetí. Do procesu získávání nepatří.\nProces vychází z analýzy pracovního místa, jejíž výsledek slouží k přilákání vhodného uchazeče."
+    },
+    {
+      "q": "Jaká metoda (metody) patří mezi analýzy potřeb vzdělávání?",
+      "opts": [
+        "korelační analýza",
+        "intuitivní metoda",
+        "delfská metoda",
+        "hodnocení pracovního výkonu",
+        "kaskádová metoda"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Analýza potřeb vzdělávání je první fáze vzdělávacího procesu. Zjišťuje rozdíl mezi požadovanou a skutečnou úrovní znalostí a dovedností pracovníků.\nPotřeby se zjišťují na úrovni organizace, pracovního místa a jednotlivce. Při analýze jednotlivce se využívá hodnocení pracovního výkonu, protože ukazuje slabé stránky a rozvojový potenciál pracovníka. Zdrojem informací bývají také rozhovory, dotazníky a pozorování.\nDelfská a kaskádová metoda patří podle skript k intuitivním metodám odhadu perspektivní potřeby pracovníků. Korelace a regrese se řadí ke kvantitativním metodám téhož odhadu.\nJde tedy o nástroje personálního plánování, ne o metody analýzy vzdělávacích potřeb."
+    },
+    {
+      "q": "Mezi zásady efektivního získávání pracovníků patří:",
+      "opts": [
+        "uchazeče získáváme na základě jejich pracovních schopností",
+        "uchazečům sdělujeme přesné, pravdivé, úplné a relevantní informace",
+        "uchazeče, kteří neodpovídají naší věkové představě o ideálním uchazeči vyřadíme",
+        "volné pracovní funkce se snažíme obsadit nejprve z vnitřních zdrojů",
+        "při oslovování vnějších zdrojů vystupujeme anonymně"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Zásady efektivního získávání pracovníků jsou hlavní pravidla náboru podle skript, která vychází z Dvořákové.\nVolné pracovní funkce se nejprve obsazují z vnitřních zdrojů. Při oslovování vnějších zdrojů organizace nevystupuje anonymně a sděluje uchazečům přesné, relevantní a úplné informace. Uchazeči se získávají na základě pracovních schopností.\nJe nutné se vyvarovat jakékoli diskriminace uchazečů. Věk proto nesmí být důvodem k vyřazení, protože zákoník práce (§ 16) vyžaduje rovné zacházení.\nAnonymní vystupování je opakem zásady, protože uchazeč potřebuje vědět, kdo ho oslovuje.\nZásady mají pomoci získat vhodné pracovníky s přiměřenými náklady. Dodržování zásad chrání organizaci před diskriminačními spory."
+    },
+    {
+      "q": "Označte metodu (metody), která se nepoužívá při výběru pracovníků:",
+      "opts": [
+        "výběrový pohovor",
+        "hodnotící rozhovor",
+        "přijetí pracovníka na zkušební dobu",
+        "zkoumání / hodnocení životopisu (osobního dotazníku)",
+        "ověřování referencí"
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "info": "Pojem: Metody výběru pracovníků jsou nástroje, kterými organizace sbírá a vyhodnocuje informace o uchazečích před rozhodnutím o přijetí. Skripta uvádějí zejména údaje z životopisu a dotazníku, výběrový pohovor, psychologické testy, praktické zkoušky, reference a assessment centre.\nReference jsou vyjádření předchozích nebo současných zaměstnavatelů a využívají se až v závěru výběrového řízení. Metody se řadí od méně nákladných a časově náročných k náročnějším.\nHodnotící rozhovor je metoda hodnocení stávajících pracovníků. Vede ho nadřízený se zaměstnancem a zkoumá plnění cílů za uplynulé období.\nZkušební doba také není metoda výběru. Navazuje až po výběru: uchazeč uzavřel pracovní smlouvu a na konci zkušební lhůty se hodnotí jeho výkon."
+    },
+    {
+      "q": "Při rozmisťování pracovníků musíme brát v úvahu:",
+      "opts": [
+        "profil, povahu pracovního místa (má primární roli) a profil pracovníka",
+        "povahu neformálního vztahu pracovníka s jeho přímým nadřízeným pracovníkem",
+        "věk pracovníka",
+        "trvání pracovního poměru",
+        "sociální postavení pracovníka"
+      ],
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Rozmisťování pracovníků je zařazování lidí na konkrétní pracovní místa tak, aby se optimálně využily jejich schopnosti, vzdělání, zkušenosti, talent a dovednosti. Zároveň má uspokojit potřeby pracovníků i organizace.\nZákladem je profil pracovního místa a profil pracovníka. Primární roli má pracovní místo: určuje požadavky, kterým pracovník musí vyhovovat. Pracovník pak musí mít odpovídající kvalifikaci, schopnosti a osobní předpoklady.\nNeformální vztah s nadřízeným, věk, délka pracovního poměru ani sociální postavení nejsou kritériem rozmístění. Mohly by vést k diskriminaci a k nevhodnému obsazení místa. Podle skript může míra fluktuace vybočující z normálu ukazovat právě na nesprávné rozmístění a zařazení pracovníků."
+    },
+    {
+      "q": "Jaké mohou být důvody outplacementu?",
+      "opts": [
+        "zodpovědnost organizace za propouštěné zaměstnance",
+        "poděkování zaměstnancům za jejich práci pro firmu",
+        "úspora nákladů za propuštěné zaměstnance",
+        "marketing a zvýšení prestiže značky zaměstnavatele",
+        "outplacement je v případě hromadného propouštění zákonnou povinností"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Outplacement je podpora propouštěným zaměstnancům, kterou organizace z etických důvodů nabízí lidem propouštěným bez jejich zavinění, nejčastěji z důvodu nadbytečnosti. Zaměstnavatel jim aktivně pomáhá najít novou práci nebo začít novou kariéru.\nDůvodem je zodpovědnost organizace za propouštěné zaměstnance a outplacement může být i formou poděkování za jejich práci pro firmu. Skripta uvádějí také další výhody: zlepšení morálky zbylých pracovníků, dobré vztahy s veřejností v místní komunitě, předcházení problémům ze strany odborů. To posiluje i prestiž značky zaměstnavatele.\nOutplacement je služba navíc, ne úspora: stojí peníze. Zákoník práce ho neukládá jako povinnost ani při hromadném propouštění. Skripta zdůrazňují, že propouštění je třeba zvládnout po právní i lidské stránce."
+    },
+    {
+      "q": "Na co může být zaměřena pomoc zaměstnavatele zaměstnancům při hromadném propouštění?",
+      "opts": [
+        "na poradenství vztahující se k lepší orientaci na trhu práce",
+        "konzultace zaměřené na zahájení nové kariéry",
+        "na převedení zaměstnance na jinou práci ve společnosti",
+        "hledání jiného zaměstnání",
+        "psychologické poradenství"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Pomoc při hromadném propouštění je soubor služeb, které zaměstnavatel poskytuje lidem, jejichž pracovní místa zanikají. Souhrnně se nazývá outplacement.\nZahrnuje poradenství k lepší orientaci na trhu práce, konzultace k zahájení nové kariéry a pomoc s hledáním jiného zaměstnání. Důležité je také psychologické poradenství, protože skripta označují snižování stavů za traumatické. Někteří lidé ale propuštění berou jako příležitost začít lepší kariéru.\nPřevedení na jinou práci ve společnosti není outplacement, ale vnitřní mobilita. Pracovník v organizaci zůstává, proto nejde o pomoc propouštěným. Pomoc se zaměřuje na to, aby si pracovníci poradili s novou situací co nejlépe."
+    },
+    {
+      "q": "V důsledku správného personálního plánování by měla mít organizace zaměstnance:",
+      "opts": [
+        "v potřebném množství",
+        "s žádoucími osobními charakteristikami",
+        "s potřebnými znalostmi, dovednostmi a zkušenostmi",
+        "v požadované věkové struktuře",
+        "ve správný čas"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Správné personální plánování zajišťuje, aby organizace měla pracovníky odpovídající jejím úkolům. Podle Armstronga má mít odpovídající pracovní sílu v současnosti i v budoucnu.\nVýčet ze skript obsahuje potřebné množství, potřebné znalosti, dovednosti a zkušenosti a žádoucí osobnostní charakteristiky. Dále optimální motivaci, flexibilitu, optimální rozmístění na pracovní místa a správný čas. Poslední znak jsou přiměřené náklady.\nČas znamená, že pracovníci jsou k dispozici, když se činnost organizace spouští. Proto se časově sladí plánovací cyklus organizace a cyklus personálního plánování.\nPožadovaná věková struktura je užitečný ukazatel při analýze stavu, ale skripta ji mezi znaky pracovní síly nevyjmenovávají."
+    },
+    {
+      "q": "Úkolem kouče je:",
+      "opts": [
+        "vést přátelský rozhovor s koučovaným",
+        "pomoci realizovat potenciál a cíle koučovaného",
+        "přispívat vlastní zkušeností v procesu koučování",
+        "určit, co má koučovaný udělat",
+        "ptát se proč?"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "info": "Pojem: Koučování je podpůrný rozhovor, v němž kouč pomáhá koučovanému najít vlastní řešení a využít jeho potenciál. Odpovědnost za rozhodnutí zůstává u koučovaného.\nÚkolem kouče je pomoci realizovat potenciál a cíle koučovaného. Vede k tomu přátelský, partnerský rozhovor, ve kterém klade otevřené otázky. Typická je otázka „proč?“, která koučovaného vede k vlastní analýze příčin.\nKouč nenařizuje. Neurčuje, co má koučovaný udělat, a nepředává mu hotová řešení ze své zkušenosti. To je odlišuje od mentora, který radí na základě vlastní praxe, a od instruktora, který učí postup.\nDobrý kouč naslouchá a pomáhá koučovanému formulovat cíle a kroky k nim."
+    },
+    {
+      "q": "Do jakých skupin dělíme uchazeče při předvýběru?",
+      "opts": [
+        "velmi vhodní, vhodnější, vhodní a nevhodní",
+        "velmi vhodní, vhodní a nevhodní",
+        "vhodní, nevhodní a nepřijatelní",
+        "nevhodní a nepřijatelní",
+        "velmi vhodní a vhodní"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Předvýběr uchazečů je třídění uchazečů podle dokumentů, které o sobě poskytli, ještě před vlastním výběrem. Vychází ze žádosti o zaměstnání, životopisu, osobního dotazníku, motivačního dopisu a případně z referencí. Kritéria třídění se stanoví předem a musí odpovídat § 16 zákoníku práce.\nVýsledkem třídění jsou nejčastěji tři kategorie uchazečů. Zjednodušeně se označují jako velmi vhodní, vhodní a nevhodní.\nVelmi vhodní uchazeči splňují kritéria a postupují do dalšího kroku výběru. Vhodní jsou kandidáti na hranici přijatelnosti: lehce nesplňují některé méně důležité kritérium a zůstávají na čekací listině pro případ, že by úplně vhodných uchazečů nebyl dostatek.\nNevhodní uchazeči nesplňují některé základní podmínky pro pozici. Důvody úspěchu či neúspěchu je vhodné uchazečům sdělit konkrétně, protože to posiluje pověst zaměstnavatele na trhu práce."
+    },
+    {
+      "q": "Jaké jsou fáze řízení pracovního výkonu?",
+      "opts": [
+        "koncipování hlavních principů",
+        "získání liniových manažerů",
+        "zápisy z porady vedení organizace",
+        "sestavení pracovní náplně",
+        "obchodní smlouvy"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "info": "Pojem: Fáze řízení pracovního výkonu jsou kroky, kterými se systém zavádí a provozuje. Armstrong jich uvádí deset, Koubek pět. Řízení výkonu je soustavný cyklus, ne jednorázová akce.\nArmstrongovy fáze jsou: rozhodnutí a zdůvodnění zavedení, určení cíle pracovního výkonu, získání liniových manažerů, koncipování hlavních principů, definování procesů, plán osobního rozvoje, plánování vzdělávání, pilotní ověřování, řízení výkonu v průběhu období a závěrečné posouzení.\nLiniové manažery je potřeba získat, protože právě oni řízení výkonu uskutečňují a musí být o správnosti systému přesvědčeni. Principy definují odpovědnost manažerů a pracovníků a zdůrazňují soustavnost.\nPracovní náplň se řeší až při definování role pracovníka, tedy v rámci procesů, ne jako samostatná fáze zavádění. Zápisy z porad ani obchodní smlouvy s řízením výkonu nesouvisejí."
+    },
+    {
+      "q": "Pracovní poměr podle zákoníku práce vzniká:",
+      "opts": [
+        "dnem, který byl sjednán jako den podpisu pracovní smlouvy",
+        "dnem, který byl sjednán v pracovní smlouvě jako den nástupu do práce",
+        "vždy k prvnímu dni v daném měsíci, ve kterém zaměstnanec nastupuje do práce",
+        "dnem, kdy kandidát projeví souhlas s pracovní nabídkou zaměstnavatele",
+        "dnem, který byl sjednán jako den doručení pracovní smlouvy"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Den nástupu do práce je den, kdy zaměstnanec začíná pro zaměstnavatele vykonávat práci. Podle § 36 zákoníku práce (č. 262/2006 Sb.) vzniká pracovní poměr dnem, který byl v pracovní smlouvě sjednán jako den nástupu do práce, popřípadě dnem jmenování na místo vedoucího zaměstnance.\nDen nástupu patří mezi povinné náležitosti pracovní smlouvy vedle druhu práce a místa výkonu práce. Smlouvu lze podepsat dříve a pracovní poměr vznikne až sjednaným dnem.\nDen podpisu ani den doručení smlouvy proto pracovní poměr nezakládá. Souhlas kandidáta s nabídkou je jen krok před uzavřením smlouvy a sám pracovněprávní vztah nevytváří.\nZákon nevyžaduje, aby pracovní poměr začínal prvním dnem měsíce. Strany si den nástupu sjednají podle potřeby."
+    },
+    {
+      "q": "Jako externí zdroje v procesu získávání a výběru jsou označování:",
+      "opts": [
+        "Ženy na mateřské dovolené.",
+        "Pracovníci, kteří jsou již způsobilí k výkonu náročnější pozice, tj. dozráli pro vyšší pozici.",
+        "Lidé ve starobním důchodu.",
+        "Lidé volní na trhu práce.",
+        "Pracovníci přesouvaní na jiné pozice v důsledku organizačních změn."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Externí zdroje v procesu získávání jsou lidé mimo organizaci, které může zaměstnavatel oslovit na trhu práce. Patří sem všichni, kdo u něj zatím nepracují.\nJsou to především volní lidé na trhu práce a pracovníci jiných organizací, ale také absolventi škol. Mezi externí zdroje patří i lidé, kteří právě nepracují, například ženy na mateřské dovolené nebo lidé ve starobním důchodu, pokud mají zájem pracovat.\nPracovníci přesouvaní na jiné pozice při organizačních změnách a ti, kdo dozráli pro vyšší pozici, už v organizaci pracují. Jsou to vnitřní zdroje.\nJejich oslovení vyžaduje vhodnou metodu, například inzerci, úřady práce nebo personální agentury."
+    },
+    {
+      "q": "Jaké jsou přístupy k tvorbě plánů v oblasti lidských zdrojů?",
+      "opts": [
+        "Shora dolů – nadřazený plán a jeho cíle jsou rozpracovány na nižší úroveň. Jedná se o divergentní přístup využívající deduktivní techniky uvažování (matka – dcera). Nevýhoda – absence zpětné vazby.",
+        "Plánování ze středu.",
+        "Obousměrné plánování – kombinace přístupů shora a zdola. Odchylky mezi směry jsou vyhodnocovány a korigovány.",
+        "Zdola nahoru - syntézou dílčích plánů vzniká firemní plán. Jedná se i konvergentní přístup využívající induktivní techniky uvažování.",
+        "Protisměrné plánování – jiné plány vytvářejí řadoví zaměstnanci a jiné manažeři. Odchylky mezi směry jsou vyhodnocovány tak, aby plány šly protisměrně."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Přístupy k tvorbě plánů se liší podle toho, odkud se plán odvozuje. Rozlišuje se plánování shora dolů, zdola nahoru a obousměrné.\nShora dolů znamená, že nadřazený plán a jeho cíle se rozpracují na nižší úroveň. Je to divergentní přístup s deduktivním uvažováním, tedy od obecného k jednotlivému. Jeho nevýhodou je absence zpětné vazby.\nZdola nahoru vzniká firemní plán syntézou dílčích plánů. Je to konvergentní přístup s induktivním uvažováním, tedy od jednotlivého k obecnému.\nObousměrné plánování kombinuje oba směry a odchylky mezi nimi vyhodnocuje a koriguje. Plánování „ze středu“ ani „protisměrné“ plánování se jako přístupy nepoužívají."
+    },
+    {
+      "q": "Jaké jsou principy budování efektivních vztahů na pracovišti?",
+      "opts": [
+        "otevřenost a rovnost vztahů",
+        "problémy se řeší přes rozhodovatele",
+        "nastavení skupinových cílů",
+        "skupině je poskytována zpětná vazba",
+        "mezi členy panuje nerovnost"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Efektivní vztahy na pracovišti vznikají tehdy, když vedoucí dodržuje zásady práce se skupinou. Skripta jmenují jasné a srozumitelné skupinové cíle, průhledné a otevřené vztahy a spravedlivé jednání se členy.\nDalší zásady jsou, že problémy se řeší bezprostředně, iniciativa skupiny má podporu a skupina dostává zpětnou vazbu i ji sama poskytuje. Odpovědnost za konkrétní úkoly nesou adresně konkrétní lidé.\nSkupina s kvalitními vztahy se samoreguluje, kompenzuje chyby a členové si pomáhají. Nerovnost mezi členy takové vztahy narušuje.\nRozpor: Podle testu, stejně jako podle klíče k autotestu na konci 8. kapitoly skript, patří k principům nastavení skupinových cílů, otevřenost a rovnost vztahů a řešení problémů přes rozhodovatele, zpětná vazba skupině ne. Podle učebnice se ve výkladu kapitoly problémy řeší bezprostředně a skupině se zpětná vazba poskytuje."
+    },
+    {
+      "q": "Při zkoumání výkonu - výkonnosti pracovníka lze konstatovat, že výkon je funkcí:",
+      "opts": [
+        "hygienických faktorů",
+        "schopnosti",
+        "výkonosti v určitém čase",
+        "štěstí",
+        "motivace"
+      ],
+      "correct": [
+        1,
+        4
+      ],
+      "info": "Pojem: Pracovní výkon je výsledek práce pracovníka. Armstrong ho vyjadřuje vzorcem P = M × A, výkon je tedy funkcí motivace (chtít) a schopností (umět). K tomu přistupují pracovní a organizační podmínky (moci).\nSchopnosti tvoří znalosti, zkušenosti a dovednosti, tělesné i duševní předpoklady a odborná připravenost. Rozvíjejí se vzděláváním. Motivace je ochota vynaložit úsilí a ovlivňují ji odměny, uznání a jasnost cílů.\nOrganizace musí zajistit podmínky, aby pracovník mohl výkon podat. Podle Tureckiové jsou podmínky nutné, ale nikoli postačující.\nHygienické faktory patří do Herzbergovy teorie motivace. Jejich nedostatek vyvolává nespokojenost, ale samy nikoho nepřimějí k vyšším výkonům. Náhoda mezi faktory výkonu nepatří."
+    },
+    {
+      "q": "Cílem řízení lidských zdrojů je:",
+      "opts": [
+        "srovnání pracovních míst s jinými organizacemi",
+        "personální a sociální rozvoj",
+        "osobní rozvoj pracovníků",
+        "odměňování pracovníků",
+        "spolupráce s konkurenčními organizacemi"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "info": "Pojem: Cíl řízení lidských zdrojů je dosáhnout, aby organizace měla kvalitní, motivované a rozvíjené pracovníky, kteří plní její strategické cíle. Hlavním úkolem je podle Šikýře získat dostatek schopných a motivovaných pracovníků.\nPersonální a sociální rozvoj znamená rozvoj schopností, osobnosti, sociálních vlastností a kariéry pracovníků. Zahrnuje i osobní rozvoj, který zlepšuje výkon a kvalifikaci. Odměňování je stimulační nástroj, kterým organizace zvyšuje motivaci a spokojenost.\nSrovnání pracovních míst s jinými organizacemi je metoda, například při tvorbě mzdových tarifů, nikoli cíl. Spolupráce s konkurencí není cílem řízení lidských zdrojů. Naopak lidé jsou zdrojem konkurenční výhody."
+    },
+    {
+      "q": "Na které oblasti se zaměřuje adaptace pracovníků:",
+      "opts": [
+        "celoorganizační adaptaci",
+        "sociální adaptaci",
+        "útvarovou, skupinovou adaptaci",
+        "adaptaci na konkrétní pracovní místo",
+        "psychologickou adaptaci"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "info": "Pojem: Adaptace nových pracovníků se zaměřuje na oblasti, v nichž se pracovník musí zorientovat. Podle skript jsou tři.\nCeloorganizační adaptace zahrnuje organizační strukturu, základní podnikové dokumenty a přehled možností vzdělávání. Útvarová, skupinová a týmová adaptace se týká funkce útvaru, povinností a odpovědností, postupů, pravidel a omezení. Adaptace na konkrétní pracovní místo se liší podle charakteru a obsahu práce.\nSociální a pracovní adaptace jsou směry (roviny) adaptace, ne oblasti, na něž se adaptace zaměřuje. Psychologická adaptace je pojem, který skripta mezi oblastmi neuvádějí.\nPersonální útvar vede především celoorganizační adaptaci a vedoucí pracovníci útvarovou adaptaci i adaptaci na místo."
+    },
+    {
+      "q": "Jaké tvrzení týkající se vzdělávání a rozvoje pracovníků je pravdivé?",
+      "opts": [
+        "vytváří předpoklady pro neustálé zlepšování pracovního výkonu a chování pracovníků",
+        "formuje osobnost pracovníka",
+        "zvyšuje použitelnost pracovníků v organizaci i na trhu práce",
+        "vzdělávání zaměstnanců je výlučně jejich osobní záležitostí",
+        "zvyšuje připravenost pracovníků na změny podmínek a požadavků pracovních míst"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Vzdělávání a rozvoj pracovníků je systematické utváření, prohlubování a rozšiřování dovedností, znalostí a chování zaměstnanců. Podle Sikýře organizace tím připravuje zaměstnance na neustále se měnící podmínky a požadavky pracovních míst i celé organizace.\nVytváří předpoklady pro neustálé zlepšování pracovního výkonu a chování pracovníků. Formuje také jejich osobnost, zvyšuje jejich použitelnost v organizaci i na trhu práce a zvyšuje jejich připravenost na změny.\nVzdělávání není jen osobní záležitost zaměstnance. Zaměstnavatel ho podle zákoníku práce zajišťuje, hradí a při vzdělávání poskytuje mzdu nebo plat, pokud jde o odborný rozvoj, rekvalifikaci nebo zvyšování kvalifikace v zájmu zaměstnavatele. Koubek navíc označuje vzdělávání za nejdůležitější oblast personální práce."
+    },
+    {
+      "q": "Které personální procesy by se měly vázat na výsledky hodnocení pracovního výkonu?",
+      "opts": [
+        "vzdělávání a rozvoj",
+        "kariérové plánování",
+        "výběr pracovníků",
+        "odměňování",
+        "získávání pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Hodnocení pracovního výkonu navazuje na řízení pracovního výkonu a je podkladem pro další personální rozhodnutí. Výsledky se mají promítnout do navazujících procesů, jinak hodnocení ztrácí smysl.\nJe to odměňování: čím silněji pracovníci vnímají vazbu hodnocení na odměnu, tím přínosnější je pohovor. Je to vzdělávání a rozvoj, protože hodnocení odhalí slabé stránky a potřeby rozvoje. A je to kariérové plánování, tedy povyšování a přeřazování.\nNa výsledcích hodnocení se naopak nestaví získávání ani výběr pracovníků. Týkají se uchazečů, kteří v organizaci dosud nepracují, a nelze je tedy hodnotit podle výkonu. Hodnocení stávajících pracovníků může jen nepřímo odhalit nedostatky dřívějšího výběru.\nHodnocení tak s ostatními procesy tvoří propojený systém se vstupy i výstupy do motivace, odměňování, vzdělávání a rozvoje."
+    },
+    {
+      "q": "Jaká by měla být úloha personálního útvaru v procesu vzdělávání zaměstnanců?",
+      "opts": [
+        "zabezpečit odbornou a organizační stránku všech fází vzdělávání",
+        "navrhovat strategii vzdělávání pracovníků",
+        "vzdělávat pracovníky v odborných znalostech",
+        "navrhovat program a rozpočet vzdělávání",
+        "analyzovat potřebu vzdělávání"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Personální útvar je organizační jednotka odpovědná za personální činnosti, tedy i za vzdělávání zaměstnanců. Zajišťuje odborný a organizační rámec, ne výuku konkrétních odborných znalostí.\nZabezpečuje odbornou a organizační stránku všech fází vzdělávání, od analýzy potřeb po vyhodnocení. Navrhuje strategii vzdělávání pracovníků a program a rozpočet vzdělávání. Analyzuje také potřebu vzdělávání, a to ve spolupráci s liniovými manažery.\nPracovníky v odborných znalostech vzdělávají interní nebo externí lektoři, kolegové a vedoucí podle charakteru oboru. Personální útvar tedy vzdělávání plánuje a organizuje, ale odborně ho zpravidla neprovádí. Spolupracuje při tom s liniovými manažery, kteří potřeby svých podřízených znají nejlépe."
+    },
+    {
+      "q": "Mezi používané metody výběru pracovníků patří:",
+      "opts": [
+        "hodnocení životopisů",
+        "assessment centre",
+        "psychologické testy",
+        "výběrový pohovor",
+        "ověřování referencí"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Metody výběru pracovníků jsou nástroje, kterými organizace zjišťuje, který uchazeč nejlépe vyhoví požadavkům místa. Tradičně se používaly informace z dotazníku, rozhovor a reference. Dnes je doplňují psychometrické nástroje a assessment centre, které zvyšují přesnost výběru.\nHodnocení životopisů a dotazníků je levná metoda na začátku procesu. Výběrový pohovor je základní metodou poznávání lidí a slouží ke sběru údajů i k osobnímu seznámení. Psychologické testy měří poznávací schopnosti a povahové vlastnosti.\nAssessment centre kombinuje více metod a využívá několik hodnotitelů. Reference jsou vyjádření dřívějších nebo současných zaměstnavatelů a používají se až v závěru výběru.\nMetody se řadí podle efektivity: nejdřív méně nákladné a časově nenáročné, potom náročnější. Jejich kombinací roste přesnost výběru."
+    },
+    {
+      "q": "Outplacement je definován jako:",
+      "opts": [
+        "forma osobní odměny při přechodu pracovníka na jinou práci",
+        "provize, určená personální agentuře za zajištění nových pracovníků",
+        "pomoc ze strany organizace, poskytovaná propouštěným pracovníkům z důvodu nadbytečnosti",
+        "motivační program pro snižování nadbytečných pracovníků",
+        "druh hodnotícího rozhovoru"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Outplacement je pomoc ze strany organizace, kterou poskytuje propouštěným pracovníkům z důvodu nadbytečnosti. Skripta ji popisují jako proces podpory, při kterém zaměstnavatel pomáhá najít novou práci nebo založit novou kariéru.\nZajišťují ji pracovníci organizace nebo specializovaná instituce (outsourcing). Cílem je zmírnit dopad propouštění na odcházející i zbývající pracovníky.\nOutplacement není odměna při přechodu na jinou práci ani provize personální agentuře za nové pracovníky. Není to ani motivační program pro snižování stavů ani druh hodnotícího rozhovoru. Důvody propouštění přitom leží na straně organizace, ne pracovníků.\nPodle glosáře skript ji organizace nabízí z etických důvodů."
+    },
+    {
+      "q": "Popis pracovního místa je výsledkem:",
+      "opts": [
+        "Personálního marketingu.",
+        "Procesu získávání a výběru.",
+        "Hodnocení pracovníků.",
+        "Plánů rozvoje.",
+        "Analýzy pracovního místa."
+      ],
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Popis pracovního místa je dokument, který shrnuje úkoly, pravomoci, odpovědnosti a požadavky na pracovníka na daném místě. Vzniká jako výsledek analýzy pracovního místa.\nAnalýza rozebírá a definuje kompetence, znalosti, dovednosti, zkušenosti a vzdělání nutné pro výkon práce. Podle skript se její výsledek použije pro popis pracovní pozice a pro pracovní nabídku. Popis má být součástí pracovní smlouvy, případně se s ním pracovník seznámí při nástupu.\nZískávání a výběr, hodnocení a plány rozvoje popis využívají jako podklad, ale nevytvářejí ho. Personální marketing se týká značky zaměstnavatele a oslovení uchazečů.\nZ popisu pak vychází i požadavky pro inzerát a seznámení nového pracovníka s jeho úkoly."
+    },
+    {
+      "q": "Vzdělávání a rozvoj pracovníků v organizaci probíhá jako neustále se opakující proces, jež zahrnuje posloupnost následujících činností:",
+      "opts": [
+        "plánování, identifikace potřeby, realizace a hodnocení výsledků",
+        "identifikace potřeby, plánování, realizace a hodnocení výsledků",
+        "identifikace potřeby, realizace, plánování a hodnocení výsledků",
+        "identifikace potřeby, hodnocení výsledků, plánování a realizace",
+        "identifikace potřeby, realizace, hodnocení výsledků a plánování"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Vzdělávání a rozvoj pracovníků je cyklický proces. Po vyhodnocení výsledků se zjišťují nové potřeby a cyklus začíná znovu.\nPodle skript vychází většina systematických přístupů z modelu, který tvoří analýza, plánování, realizace a vyhodnocení. Pořadí je logické: nejdřív se zjistí, co pracovníci neumějí a co organizace potřebuje. Teprve na tomto základě se naplánuje cíl, obsah, forma a rozpočet.\nNaplánované vzdělávání se pak realizuje. Nakonec se hodnotí, zda splnilo cíle. Plánovat před identifikací potřeb nebo hodnotit před realizací nedává smysl, protože by nebylo co plánovat ani co hodnotit.\nProces se proto opakuje neustále. Každé hodnocení výsledků zároveň ukazuje, jaké nové potřeby vznikly."
+    },
+    {
+      "q": "Jaké mohou být problémy a chyby hodnocení pracovníků?",
+      "opts": [
+        "tendence hodnotitele hodnotit pracovníky podle svých vlastních měřítek",
+        "přiměřená příprava na hodnocení pracovníků",
+        "tendence k hodnocení pracovníků hodnotami ze středu stupnice",
+        "přílišná shovívavost",
+        "přílišná přísnost"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Chyby hodnocení jsou zkreslení způsobená subjektivním přístupem hodnotitele. Hodnocení nikdy není zcela objektivní, protože ho ovlivňuje lidský úsudek. Chyby snižují důvěru pracovníků a hodnocení pak ztrácí smysl.\nExtrémní přístup znamená přílišnou přísnost nebo naopak přílišnou shovívavost. Shovívavost je častější, protože se hodnotitel chce zavděčit podřízeným a vyhnout se konfliktu. Centrální tendence je hodnocení hodnotami ze středu stupnice, kdy hodnotitel nerad diferencuje.\nDalší chyby jsou hodnocení podle prvního dojmu a oblíbenosti, usuzování podle předešlého hodnocení a posuzování podle vlastních měřítek hodnotitele. Takové hodnocení ohrožuje objektivitu a může přerůst v diskriminaci.\nPřiměřená příprava je naopak předpokladem dobrého hodnocení. Hodnotitele je potřeba proškolit a dát mu k dispozici podklady."
+    },
+    {
+      "q": "Mezi personální činnosti nepatří:",
+      "opts": [
+        "Hodnocení pracovníků",
+        "Personální marketing",
+        "Personální plánování",
+        "Ukončování pracovního poměru",
+        "Strategické analýzy vnějšího a vnitřního prostředí"
+      ],
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Personální činnosti jsou jednotlivé oblasti práce s lidmi, které vykonávají personalisté a vedoucí. Koubek mezi ně řadí vytváření a analýzu pracovních míst, personální plánování, získávání a výběr, hodnocení, zařazování a ukončování pracovního poměru, odměňování, vzdělávání a rozvoj, pracovní vztahy a péči o pracovníky.\nPatří sem také personální informační systém, průzkum trhu práce, zdravotní péče a dodržování zákonů v oblasti práce. Personální marketing patří do získávání pracovníků.\nStrategické analýzy vnějšího a vnitřního prostředí provádí vrcholové vedení v rámci strategického řízení organizace. Personální činnosti z nich vycházejí, ale samy je neřadí mezi své činnosti."
+    },
+    {
+      "q": "Mezi povinné náležitosti pracovní smlouvy podle zákoníku práce patří:",
+      "opts": [
+        "den nástupu do práce",
+        "zařazení zaměstnance do tarifní třídy",
+        "výše mzdy nebo platu",
+        "místo nebo místa výkonu práce, ve kterých má být práce vykonávána",
+        "druh práce, který má zaměstnanec pro zaměstnavatele vykonávat"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "info": "Pojem: Pracovní smlouva je písemná dohoda zaměstnavatele a zaměstnance, kterou vzniká pracovní poměr. Zákoník práce (č. 262/2006 Sb.) stanoví její povinné náležitosti.\nJsou jimi druh práce, který má zaměstnanec vykonávat, místo nebo místa výkonu práce a den nástupu do práce. Bez těchto tří údajů smlouva není úplná.\nVýši mzdy nebo platu zákoník práce mezi povinné náležitosti neřadí. Mzdu nebo plat zaměstnavatel zaměstnanci sdělí v písemném informování o právech a povinnostech.\nZařazení do platové (tarifní) třídy upravují platové předpisy a povinnou náležitostí smlouvy také není. Strany do ní mohou doplnit i další dohodnuté podmínky, například zkušební dobu."
+    },
+    {
+      "q": "Získávání pracovníků je činnost, která zahrnuje:",
+      "opts": [
+        "jednání s uchazeči a přesvědčování vhodných jedinců o výhodnosti práce v organizaci",
+        "rozpoznávání a vyhledávání vhodných pracovních zdrojů",
+        "informování o volných pracovních místech v organizaci a nabízení těchto volných pracovních míst",
+        "výběr pracovníků",
+        "adaptaci pracovníků"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Získávání pracovníků je personální činnost, jejímž cílem je oslovit a přilákat dostatečný počet kvalitních uchazečů o volné (nově vytvořené) pracovní funkce, a to v odpovídajícím čase a s přiměřenými náklady.\nZahrnuje rozpoznávání a vyhledávání vhodných pracovních zdrojů. Dále informování o volných místech a jejich nabízení a jednání s uchazeči včetně přesvědčování vhodných jedinců o výhodnosti práce v organizaci.\nVýběr pracovníků na získávání navazuje. Vybírá z uchazečů nejvhodnějšího a končí rozhodnutím o přijetí.\nAdaptace následuje po přijetí a patří k formování a rozvoji personálu.\nCílem získávání je podle skript zajistit co největší možnost výběru vhodných kandidátů pro danou pozici."
+    },
+    {
+      "q": "Personální marketing představuje:",
+      "opts": [
+        "úsilí o zformování a udržení potřebné pracovní síly organizace",
+        "získávání pracovníků pouze z externích zdrojů",
+        "získávání pracovníků pouze z interních zdrojů",
+        "metodou výběru pracovníků na uvolněné pracovní místo",
+        "úsilí o upoutání pozornosti potencionálních zaměstnanců"
+      ],
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Personální marketing je úsilí o zformování a udržení potřebné pracovní síly organizace. Podle Koubka je to nástroj formování personálu, ne jen získávání, ale i stabilizace pracovníků.\nJeho externí část usiluje o upoutání pozornosti potenciálních zaměstnanců. Staví na tom, že potenciální pracovník je zákazník, kterého je třeba přilákat a získat. Organizace se snaží vytvořit obraz atraktivního a prestižního zaměstnavatele.\nPersonální marketing není omezen na externí nebo interní zdroje, protože se týká stávajících i potenciálních pracovníků. Není ani výběrovou metodou. Výběr navazuje na získávání a vybírá z uchazečů.\nCílem je mít k dispozici dostatek kvalitních uchazečů i stabilní stávající pracovníky."
+    },
+    {
+      "q": "Mezi metody získávání pracovníků patří:",
+      "opts": [
+        "Analýza pracovního místa",
+        "Assessment centre",
+        "Výběrový pohovor",
+        "Inzerce na pracovních portálech",
+        "Doporučení zaměstnance"
+      ],
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Metody získávání pracovníků jsou způsoby, jak se organizace dostane k uchazečům o volné místo. Skripta uvádějí inzerci a e-recruitment, tedy inzeráty na vlastním webu nebo pracovních portálech.\nDále doporučení, personální agentury, headhunting, úřady práce, spolupráci se školami a HR event marketing. Doporučení stávajícího pracovníka je levné a rychlé, ale omezuje výběr.\nAnalýza pracovního místa předchází získávání a slouží k popisu pozice. Assessment centre a výběrový pohovor jsou metody výběru, který na získávání navazuje a hodnotí již získané uchazeče.\nVolba metody závisí na požadavcích na pracovníka, na tom, jak rychle je ho třeba, na situaci na trhu práce a na nákladech."
+    },
+    {
+      "q": "Obecně je možné negativa fluktuace shrnout následovně:",
+      "opts": [
+        "zvýšené náklady na výběr a adaptaci nových pracovníků na uvolněné pracovní místo",
+        "možný únik citlivých informací a obchodního tajemství",
+        "ztráta zaškolených pracovníků na daném pracovním místě",
+        "příliv nových lidí a nápadů do organizace",
+        "vytvoření příležitostí ke kariernímu postupu"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "info": "Pojem: Fluktuace neboli mobilita je pohyb pracovníků uvnitř organizace, do ní i z ní. Dobrovolná fluktuace, zejména ven z organizace, bývá považována za negativní faktor ovlivňující personální zajištění a kontinuitu znalostí.\nPodle skript lze negativa shrnout takto: ztráta zaškolených pracovníků na daném místě, možný únik citlivých informací a obchodního tajemství, ztráta zákazníků vázaných na pracovníka a minimálně přechodné zhoršení péče o zákazníky. K tomu přibývá možná ztráta důvěryhodnosti u dodavatelů.\nRostou také náklady na výběr a adaptaci nových pracovníků a na udržení funkčních procesů.\nPříliv nových lidí a nápadů a příležitosti k postupu jsou naopak přínosy řízené fluktuace. Organizace proto usiluje o nízké procento mobility, ne o nulové."
+    },
+    {
+      "q": "Mezi výhody získávání pracovníků z vnitřních zdrojů patří:",
+      "opts": [
+        "Uchazeč zná lépe organizaci",
+        "Zvyšuje se morálka a motivace zaměstnance (možnost povýšení, zvýšená možnost stability PP)",
+        "Překážky pronikání nových přístupů a myšlenek zvenku",
+        "Pracovníci mohou být povyšování tak dlouho, až se dostanou na pozici, na kterou nestačí",
+        "Lepší návratnost investic, které organizace vložila do pracovní síly"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "info": "Pojem: Získávání z vnitřních zdrojů znamená obsazovat volné funkce stávajícími pracovníky. Podle Koubka přináší tyto výhody.\nUchazeč lépe zná organizaci a organizace zná jeho silné i slabé stránky. Lépe se vrací investice do rozvoje pracovní síly. Roste také morálka a motivace, protože existuje možnost povýšení a pracovní poměr je stabilnější.\nNevýhodou je omezení nových nápadů zvenčí. Pracovník může být povyšován tak dlouho, až se dostane na pozici, na kterou už nestačí. K nevýhodám patří také soutěžení o povýšení, které zhoršuje vztahy.\nVýhody a nevýhody je třeba vážit podle situace organizace a obsazované funkce."
+    },
+    {
+      "q": "Proces získávání pracovníků zpravidla vychází z výsledků:",
+      "opts": [
+        "vzdělávání pracovníků",
+        "odměňování pracovníků a poskytování zaměstnaneckých výhod",
+        "řízení pracovního výkonu a hodnocení pracovníků",
+        "rozvoje pracovníků",
+        "analýzy pracovních funkcí a personálního plánování"
+      ],
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Získávání pracovníků je personální činnost, která navazuje na personální plánování. Plánování stanoví, kolik pracovníků a jakých organizace potřebuje.\nPlán získávání z vnitřních a vnějších zdrojů vychází z plánu pracovní síly a analýzy pracovních funkcí. Analýza určuje, co funkce obnáší, popis a specifikace funkce pak shrnuje požadavky na pracovníka.\nZ nich se odvozuje obsah nabídky zaměstnání, volba zdrojů i metod.\nVzdělávání, rozvoj, odměňování a hodnocení pracovníků se získáváním souvisejí, ale nejsou jeho východiskem. Slouží ke stabilizaci a rozvoji už získaných pracovníků.\nPlán získávání pracovníků je součástí plánu lidských zdrojů a je s ním ve vztahu návaznosti."
+    },
+    {
+      "q": "Co vše je cílem výběru pracovníků:",
+      "opts": [
+        "Cílem je rozpoznat, který z uchazečů, shromážděných během procesu získávání pracovníků a prošlých předvýběrem, bude pravděpodobně nejlépe vyhovovat požadavkům obsazovaného pracovního místa i přispěje k vytváření zdravých mezilidských vztahů v pracovní sku",
+        "Kdo z uchazečů je dostatečně flexibilní a má rozvojový potenciál pro to, aby se přizpůsobil předpokládaným změnám na pracovním místě, v pracovní skupině (týmu) i v organizaci.",
+        "Kdo z uchazečů je schopen přispívat k vytváření žádoucí týmové a organizační kultury.",
+        "Kdo z uchazečů je schopen akceptovat hodnoty příslušné pracovní skupiny (týmu), útvaru a organizace.",
+        "Posoudit odborné, ale i osobnostní charakteristiky uchazeče, jeho potenciál."
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Výběr pracovníků je personální činnost, jejímž cílem je rozhodnout, který z uchazečů shromážděných při získávání a prošlých předvýběrem bude nejlépe vyhovovat požadavkům obsazovaného místa. Nehledá se nejlepší uchazeč obecně, ale ten nejvhodnější pro danou pozici.\nPosuzují se odborné i osobnostní charakteristiky uchazeče a jeho potenciál. Důležité je i to, zda uchazeč zapadne do pracovní skupiny a přispěje ke zdravým mezilidským vztahům. Současným trendem je vybírat tak, aby uchazeč zapadl do týmu, nejen na pracovní pozici.\nUchazeč má být také flexibilní a mít rozvojový potenciál, aby se přizpůsobil změnám na místě, v týmu a v organizaci. K tomu patří schopnost akceptovat hodnoty pracovní skupiny (týmu), útvaru a organizace.\nKritéria výběru musí odpovídat požadavkům místa a nesmějí diskriminovat žádnou skupinu uchazečů."
+    },
+    {
+      "q": "Jaké máme zdroje v organizaci?",
+      "opts": [
+        "lidské",
+        "ani jedna odpověď není správná",
+        "informace",
+        "finanční",
+        "materiální"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Zdroje organizace jsou prostředky, kterými organizace dosahuje svých cílů. Koubek rozlišuje čtyři skupiny: lidské, finanční, materiální a informační zdroje.\nÚkolem personální práce je zlepšovat využití všech těchto zdrojů a tím zvyšovat výkon organizace. Slouží k tomu zvyšování produktivity a lepší využití zdrojů.\nLidské zdroje jsou aktivní zdroje, které ostatní uvádějí do pohybu. Rozhodují o využití věcných zdrojů, proto management lidských zdrojů rozhoduje zprostředkovaně i o nich.\nŽádný jiný druh zdrojů se v tomto členění neuvádí. Organizace tedy všechny čtyři skupiny zdrojů má.\nSkripta pracovníky označují za nejcennější zdroj, protože právě lidé plánují, vyrábějí, prodávají, kontrolují a uvádějí do pohybu ostatní věcné zdroje."
+    },
+    {
+      "q": "V čem spočívá role personálního managera jakožto psychologa organizace?",
+      "opts": [
+        "vede tým pracovníků",
+        "poskytuje informace o situaci na trhu práce, o míře inflace, o praktikách odměňování",
+        "zajišťuje kvalitu a efektivitu všech procesů a systémů řízení lidských zdrojů",
+        "analyzuje vnitřní prostředí podniku a podmínky, ze kterých je možné a vhodné uplatnit procesy personálního řízení",
+        "zkvalitňuje podnikové procesy"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Role personálního manažera popisují, jakou funkci plní vůči organizaci a pracovníkům. Armstrong rozlišuje například roli partnera v podnikání, stratéga, interního konzultanta, monitorovací roli a strážce hodnot. Role se liší podle velikosti organizace a úrovně řízení.\nRole psychologa organizace staví na tom, že personální manažer má podle Grattonové (in Armstrong) znát stav organizace, míru usazení procesů a struktur a chování a postoje pracovníků. Proto analyzuje vnitřní prostředí podniku, tedy klima, kulturu a vztahy. Hledá, v jakých podmínkách lze procesy personálního řízení uplatnit a kde mají smysl.\nVedení týmu je úkolem každého vedoucího, ne zvláštní rolí personalisty. Informace o trhu práce, inflaci a odměňování poskytuje personalista jako znalec vnějšího prostředí, ne jako psycholog. Kvalitu personálních procesů a systémů zajišťuje jako jejich tvůrce a garant, jak píše Tureckiová."
+    },
+    {
+      "q": "Jaké pojetí personální práce (personalistiky) je charakteristické strategickým přístupem k personální práci a všem personálním činnostem?",
+      "opts": [
+        "personálně administrativní řízení",
+        "personalistika",
+        "management lidských zdrojů",
+        "řízení lidských zdrojů",
+        "personální administrativa"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Řízení lidských zdrojů je nejnovější koncepce personální práce, která se začala formovat v 50. a 60. letech. Je charakteristické strategickým přístupem k personální práci a ke všem personálním činnostem. Zaměřuje se na dlouhodobou perspektivu a na provázanost s cíli organizace.\nStarší pojetí byla personální administrativa a personální řízení. Administrativa se omezovala na dokumenty a procedury. Personální řízení se orientovalo na vnitroorganizační problémy a mělo operativní povahu.\nRozpor: Podle testu je správné jen řízení lidských zdrojů. Podle učebnice je management lidských zdrojů nejnovějším strategickým přístupem k personální práci a personálním činnostem a skripta píšou „management (řízení) lidských zdrojů“, jde tedy o totéž pojetí."
+    },
+    {
+      "q": "Projekce jako omyl při vnímání jiných, spočívá:",
+      "opts": [
+        "v předpokladu, že se lidé chovají podobně, jako bych se v dané situaci choval já",
+        "v předpokladu, že se všichni lidé chovají ve stejné situaci stejně",
+        "v tom, že necháváme ovlivnit jejich vlastnostmi",
+        "v tom, že si do nich promítáme naše rysy",
+        "v podvědomém přehlížení některých (nechtěných) osobnostních rysů"
+      ],
+      "correct": [
+        0,
+        3
+      ],
+      "info": "Pojem: Projekce je omyl při vnímání druhých, při kterém hodnotitel posuzuje jiné podle sebe. Při výběrovém pohovoru personalisté a vedoucí vnímají uchazeče podle svých vlastních předností a nedostatků.\nProjekce má dvě podoby. Hodnotitel předpokládá, že se lidé chovají podobně, jako by se v dané situaci choval on. Promítá také do nich své vlastní rysy.\nSouvisející chybou je přijímání lidí, jako jsme my sami. Hodnotitel preferuje lidi, kteří mají společné znaky, což o schopnostech nic nevypovídá.\nPředpoklad, že se všichni lidé chovají ve stejné situaci stejně, je stereotyp, ne projekce. Přehlížení nechtěných rysů je selektivní vnímání."
+    },
+    {
+      "q": "V rámci komunikačního procesu je nutné:",
+      "opts": [
+        "interpretovat sdělení ostatním",
+        "dekódovat",
+        "přenos sdělení mezi odesílatelem a adresátem",
+        "začlenit komunikační šumy",
+        "kódovat"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Komunikace je přenos informací mezi odesílatelem a adresátem určitým kanálem s cílem porozumění a spolupráce. Komunikační proces má jasné kroky.\nOdesílatel sdělení nejprve zakóduje, tedy převede myšlenku do slov, gest nebo písma. Sdělení se pak přenáší kanálem k adresátovi, který ho dekóduje, tedy vyloží si jeho význam. Zpětná vazba ukazuje, zda sdělení dorazilo tak, jak mělo.\nKomunikační šumy jsou rušivé vlivy, například hluk nebo předsudky, které sdělení zkreslují. Komunikace se je snaží omezit, nikoli je do procesu záměrně začlenit. Interpretace sdělení ostatním není samostatný krok, protože význam si vykládá sám adresát.\nSkripta uvádějí, že neformální kanály se dekódují snáze, protože adresáti dobře znají odesílatele."
+    },
+    {
+      "q": "Za metodu hodnocení efektivnosti vzdělávacího procesu (pro porovnání skutečných výsledků s cíli) nelze považovat:",
+      "opts": [
+        "mentoring",
+        "kvantifikace přínosu vzdělávacího procesu",
+        "coaching",
+        "testy znalostí (před a po skončení akce)",
+        "pozorovací checklist k monitorování vzdělávacího programu"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Hodnocení efektivnosti vzdělávání porovnává skutečné výsledky vzdělávací akce s jejími cíli. Využívá k tomu měřitelné nebo pozorovatelné ukazatele.\nPoužívají se testy znalostí před akcí a po ní, pozorovací checklisty pro monitorování programu a kvantifikace přínosu, tedy vyčíslení, co vzdělávání přineslo ve srovnání s náklady. Další možností jsou dotazníky účastníků a hodnocení pracovního výkonu po skončení akce.\nMentoring a coaching jsou naopak metody samotného vzdělávání a rozvoje na pracovišti. Pracovníka učí a vedou, ale výsledek vzdělávacího procesu nehodnotí. Cílem hodnocení je poznat, zda se vynaložené prostředky vrátily a co je třeba příště zlepšit."
+    },
+    {
+      "q": "Mezi funkce personálního útvaru patří:",
+      "opts": [
+        "Funkce plánovací",
+        "Funkce metodická",
+        "Funkce koncepční",
+        "Funkce koordinační",
+        "Funkce informační"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Personální útvar je vnitřní organizační jednotka, která vykonává personální funkce. Funkce se vzájemně prolínají a každá má jiný obsah.\nKoncepční funkce zpracovává a aktualizuje personální strategii a plánovací funkce plánuje rozvoj a potřeby pracovníků. Odborná funkce zjišťuje názory a spokojenost pracovníků a posuzuje například systémy odměňování. Koordinační funkce stanovuje hlavní směry, úkoly a priority a koordinuje jejich naplnění.\nMetodická funkce poskytuje návody a doporučení. Informační funkce zajišťuje informační systém a informovanost pracovníků. Poradenská funkce poskytuje služby vedoucím i pracovníkům.\nVšech sedm funkcí společně umožňuje organizaci dosáhnout jejích cílů. Koubek doplňuje, že záležitosti práce a pracovníků mají být soustředěny v jednom útvaru."
+    },
+    {
+      "q": "Od uchazečů o zaměstnání můžeme běžně požadovat následující dokumenty:",
+      "opts": [
+        "životopis",
+        "kopie diplomů, vysvědčení, certifikátů apod.",
+        "osobní dotazník",
+        "žádost o zaměstnání",
+        "potvrzení o zdravotní způsobilosti"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Dokumenty uchazeče jsou podklady, z nichž organizace při předvýběru získává informace o uchazeči. Čím více informací o uchazeči shromáždí, tím objektivněji se může rozhodnout.\nBěžně se požaduje žádost o zaměstnání, životopis, případně motivační dopis a osobní dotazník. Dotazník poskytuje standardizované informace ke třídění uchazečů. K tomu přibývají kopie dokladů o vzdělání, tedy diplomů, vysvědčení nebo certifikátů, a doklad o dosavadní praxi.\nZaměstnavatel může požadovat i lékařské osvědčení o zdravotní způsobilosti. Některé podklady, například výpis z rejstříku trestů, nejsou standardním postupem u všech pozic.\nPožadované údaje musí bezprostředně souviset s uzavřením pracovní smlouvy (§ 30 odst. 2 zákoníku práce). Informace například o rodinných poměrech nebo trestněprávní bezúhonnosti zaměstnavatel vyžadovat nesmí, ledaže to odůvodňuje povaha práce nebo zvláštní předpis (§ 316 odst. 4)."
+    },
+    {
+      "q": "Personální politika musí být:",
+      "opts": [
+        "neustále se měnící",
+        "dobře zformulovaná",
+        "minimálně jednou ročně aktualizována",
+        "srozumitelná a přijatelná pro pracovníky",
+        "dlouhodobě stabilní"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Personální politika je systém relativně stabilních zásad, metod a nástrojů, kterými se organizace řídí při rozhodování a personálních činnostech. Vyjadřuje obecný způsob jednání, filozofii a hodnoty organizace.\nSkripta shrnují, že personální politika musí být dobře zformulovaná. Musí být srozumitelná a přijatelná pro všechny pracovníky. Musí být také dlouhodobě stabilní.\nStabilita znamená, že politika není neustále měněna. Pracovníci se na ni musí moci spolehnout. Proto pevně daná roční aktualizace mezi požadavky nepatří.\nPolitika je v souladu s podnikatelskou strategií. Personální útvar ji iniciuje, ale liniový manažer ji realizuje.\nPříklad politiky zahrnuje plánování počtů pracovníků, vzdělávání, péči o pracovní podmínky a budování firemní kultury."
+    },
+    {
+      "q": "Cílem výběru zaměstnanců je:",
+      "opts": [
+        "vybrat vhodné uchazeče",
+        "identifikovat nekvalitní uchazeče",
+        "plánovat počet pracovníků",
+        "identifikovat vhodné uchazeče",
+        "hodnotit zaměstnance"
+      ],
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Výběr pracovníků je personální činnost navazující na získávání pracovníků. Jeho cílem je identifikovat a vybrat mezi uchazeči ty nejvhodnější. Nejdřív je potřeba znát, koho a co organizace potřebuje, a teprve potom jak a čím ho vybrat.\nVýběr je proces sbírání a hodnocení informací o uchazečích pomocí zvolených metod. Probíhá postupně jako trychtýř, v němž se počet uchazečů redukuje. Začíná předvýběrem a zpravidla končí rozhodnutím o přijetí.\nPlánování počtu pracovníků je samostatná činnost, která výběru předchází. Určuje, kolik lidí organizace potřebuje, a tím vytváří poptávku po získávání a výběru.\nRozpor: Podle testu je cílem výběru plánovat počet pracovníků a identifikovat vhodné uchazeče, nikoli vybrat vhodné uchazeče. Podle učebnice je cílem výběru identifikovat a vybrat nejvhodnější uchazeče, takže správné je i vybrat vhodné uchazeče, a plánování počtu pracovníků patří do personálního plánování, ne do cíle výběru."
+    },
+    {
+      "q": "Do oblasti personální práce patří:",
+      "opts": [
+        "průzkum trhu práce",
+        "vytváření konkurenčního prostředí",
+        "dodržování zákonů v oblasti práce",
+        "personální plánování",
+        "zdravotní péče o pracovníky"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Oblast personální práce vymezuje Koubek výčtem personálních činností. Patří do ní například průzkum trhu práce, který odhaluje potenciální zdroje pracovních sil a sleduje nabídku, poptávku a konkurenci.\nDále personální plánování, které zjišťuje budoucí stavy lidských zdrojů potřebné organizaci. Zahrnuje zdravotní péči o pracovníky, tedy pravidelné kontroly a rehabilitaci. Zahrnuje také dodržování zákonů v oblasti práce a zaměstnávání, tedy ustanovení zákoníku práce a dalších zákonů.\nVytváření konkurenčního prostředí mezi personální činnosti nepatří. Konkurenční výhodu organizace získává tím, že dobře pracuje s lidmi, konkurenční prostředí ale personální práce nevytváří.\nPersonální činnosti vykonávají personalisté, vedoucí pracovníci nebo externí dodavatelé. Outsourcovat lze jen vedlejší personální činnosti, hlavní zajišťuje personální útvar nebo vedoucí."
+    },
+    {
+      "q": "Jaká jsou kritéria výběru pracovníků?",
+      "opts": [
+        "subjektivní",
+        "neměnná",
+        "stálá",
+        "objektivní",
+        "smíšená"
+      ],
+      "correct": [
+        0,
+        3
+      ],
+      "info": "Pojem: Kritéria výběru pracovníků jsou vlastnosti a požadavky, podle kterých se uchazeči posuzují. Mají odpovídat požadavkům pracovního místa i záměrům organizace, být alespoň trochu měřitelná a nesmějí diskriminovat žádnou skupinu uchazečů.\nPodle povahy se dělí na objektivní a subjektivní. Objektivní kritéria jdou změřit nebo doložit, například vzdělání, praxe nebo jazykové a technické znalosti. Subjektivní kritéria závisejí na úsudku posuzovatele, například osobnostní vlastnosti, sociální dovednosti a motivace, a stanovují se nejobtížněji.\nPodle úrovně se rozlišují celoorganizační kritéria (charakteristiky, které organizace u pracovníků cení), útvarová kritéria (zapadnutí do týmu) a kritéria pracovního místa.\nKritéria nejsou neměnná ani stálá. Mění se s požadavky místa a s tím, co organizace potřebuje."
+    },
+    {
+      "q": "Jaké směry adaptace rozlišujeme?",
+      "opts": [
+        "pracovní směr",
+        "enviromentální směr",
+        "nepřímý směr",
+        "přímý směr",
+        "sociální směr"
+      ],
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Směry adaptace popisují, v čem se pracovník přizpůsobuje. Heinová a Dvořáková rozlišují dva podstatné směry, které probíhají současně.\nPracovní adaptace je přizpůsobení novému pracovnímu místu, jeho úkolům a podmínkám. Sociální adaptace je začlenění do kolektivu a sociálních vztahů v pracovních týmech.\nObě mají fyzickou, psychickou, mentální i sociální stránku. Cílem je co nejrychleji dosáhnout výkonnosti a kvality práce, a to ideálně během zkušební doby.\nPřímý, nepřímý ani environmentální směr skripta nezavádějí, pracovní prostředí je jen podmínkou, na kterou se pracovník adaptuje.\nProces má čtyři fáze: přípravnou, globální orientace, uvědomělé orientace a vpravení se do nových podmínek."
+    },
+    {
+      "q": "Pracovní poměr může skončit:",
+      "opts": [
+        "ve zkušební lhůtě",
+        "okamžitou výpovědí",
+        "dohodou obou zúčastněných stran",
+        "nemocí pracovníka",
+        "skončením jmenovacího období"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Skončení pracovního poměru je zánik právního vztahu mezi zaměstnavatelem a zaměstnancem. Zákoník práce (č. 262/2006 Sb.) vymezuje důvody, kterými může skončit.\nPatří mezi ně dohoda obou stran, výpověď, okamžité zrušení pracovního poměru, zrušení ve zkušební době, uplynutí sjednané doby a smrt zaměstnance. Skripta mezi způsoby skončení uvádějí také skončení jmenovacího období u vedoucích pracovníků, jejichž funkce je časově omezená.\nNemoc zaměstnance pracovní poměr sama nekončí. Zaměstnanec má pracovní neschopnost a výpověď kvůli nemoci zákon omezuje ochrannou dobou.\nOkamžitou výpovědí se v běžné řeči myslí okamžité zrušení pracovního poměru, které zákon připouští jen z vážných důvodů."
+    },
+    {
+      "q": "Úkolem personálního útvaru je:",
+      "opts": [
+        "vytvářet finanční plány",
+        "poskytovat poradenskou činnost v oblasti HR",
+        "zajišťovat administrativní činnost v rámci lidských zdrojů",
+        "vytvářet marketingové plány organizace",
+        "formulovat koncepční a metodickou činnost v oblasti vzdělávání pracovníků"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "info": "Pojem: Úkolem personálního útvaru je umožnit organizaci dosáhnout jejích cílů. Útvar předkládá podněty, poskytuje rady a podporu ve všem, co se týká pracovníků.\nPoskytuje koncepční, metodické, analytické a poradenské služby. Zajišťuje také operativní personální činnosti, tedy administrativu spojenou se zaměstnáváním. Formuluje koncepci a metodiku pro oblasti jako vzdělávání pracovníků.\nFinanční plány vytváří finanční útvar. Marketingové plány organizace vytváří marketing. Personální útvar je ovlivňuje jen tím, že zajišťuje lidské zdroje.\nArmstrong dodává, že útvar vytváří prostředí, v němž pracovníci využívají své schopnosti ke svému užitku i užitku organizace.\nKoubek doporučuje soustředit všechny záležitosti práce a pracovníků do jednoho útvaru, strukturovaného podle potřeb organizace."
+    },
+    {
+      "q": "Adaptace pracovníků by měla zahrnovat:",
+      "opts": [
+        "Maladaptaci",
+        "Adaptační plány",
+        "Adaptaci na organizační kulturu",
+        "Adaptaci v rámci pracovního týmu",
+        "Adaptaci na pracovní místo"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Adaptace pracovníků je plánovaný proces seznamování nového pracovníka s organizací a podmínkami výkonu práce. Formální adaptace probíhá podle adaptačního plánu, neformální spontánně prostřednictvím spolupracovníků.\nAdaptační plán řídí adaptaci konkrétního pracovníka. Vychází z náročnosti práce, délky období, dosaženého vzdělání, praxe a individuálních zvláštností.\nAdaptace zahrnuje celoorganizační adaptaci, tedy i seznámení s kulturou organizace, adaptaci v týmu a adaptaci na konkrétní pracovní místo.\nMaladaptace je stav, kdy se pracovník nepřizpůsobí. Je to selhání adaptace, ne její součást.\nAdaptační plány jsou nutné, protože různé kategorie pracovníků mají různou náročnost práce a různou praxi. Garant z řad zkušených kolegů plán doplňuje osobní pomocí."
+    },
+    {
+      "q": "Hlavním cílem všech personálních činností v organizaci je zabezpečit, aby:",
+      "opts": [
+        "se pravidelně investovalo do finančního kapitálu",
+        "organizace vytvářela vhodnou podnikovou strategii",
+        "organizace vytvářela vhodnou personální strategii a politiku a tak v praxi dosahovala úspěchů",
+        "se zvýšila mobilita pracovníků",
+        "organizace byla srovnatelná s ostatními organizacemi"
+      ],
+      "correct": [
+        2
+      ],
+      "info": "Pojem: Personální činnosti jsou souhrn činností, kterými organizace pracuje s lidmi. Armstrong říká, že jejich hlavním cílem je zabezpečit, aby organizace vytvářela vhodnou personální strategii a politiku a tak v praxi dosahovala úspěchů.\nSprávně nastavená strategie a politika slouží všemu, co se týká zaměstnávání lidí. Zvyšují motivaci a rozvoj lidí a zlepšují vztahy mezi pracovníky a managementem.\nPodnikovou strategii vytváří vedení organizace a personální strategie z ní vychází. Investice do finančního kapitálu ani srovnatelnost s ostatními organizacemi cílem personálních činností nejsou. Mobilitu pracovníků personální práce spíše řídí a usměrňuje, než aby ji jen zvyšovala."
+    },
+    {
+      "q": "Která metoda (metody) patří mezi tzv. kvantitativní metody personálního plánování?",
+      "opts": [
+        "korelace a regrese",
+        "kaskádová metoda",
+        "delfská metoda",
+        "metoda manažerských odhadů",
+        "grafická analýza"
+      ],
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Kvantitativní metody personálního plánování odhadují budoucí potřebu pracovníků pomocí matematického nebo statistického aparátu. Skripta je řadí vedle intuitivních metod.\nPatří sem analýza vývojových trendů, korelace a regrese, grafická analýza, modelování a metoda založená na pracovních normách. Korelace a regrese zkoumá vztah mezi potřebou pracovníků a jiným ukazatelem, například objemem výroby. Grafická analýza zobrazuje tento vztah v grafu.\nDelfská metoda, kaskádová metoda a metoda manažerských odhadů jsou intuitivní. Stojí na úsudku zkušených odhadců.\nOrganizace obvykle obě skupiny kombinuje.\nVýhodou kvantitativních metod je ověřitelnost výpočtu. Nevýhodou je, že předpokládají stabilní vztahy v minulosti i budoucnosti."
+    },
+    {
+      "q": "Mezi psychologické testy používané v rámci výběru pracovníků patří: (3/4 bodů) (bez záruky)",
+      "opts": [
+        "testy osobnosti",
+        "testy schopností (testy inteligence)",
+        "testy znalostí",
+        "testy diagnostické",
+        "testy speciálních schopností a dovedností"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "info": "Pojem: Psychologické testy jsou odborně připravené nástroje, které měří poznávací schopnosti, povahové vlastnosti a další psychické předpoklady uchazeče. Používají se při výběru jako jedna z metod, často spolu s pohovorem. Osobnostní dotazníky lze zadávat online a vyhodnocují se automaticky.\nTesty schopností (inteligence) měří poznávací schopnosti, například logické myšlení. Testy osobnosti zjišťují povahové rysy, například extraverzi nebo neuroticismus. Testy speciálních schopností a dovedností ověřují předpoklady pro konkrétní činnost.\nPraktické zkoušky jsou jiná metoda: ověřují výkon na vzorcích chování, kdežto testy zjišťují příznaky.\nVýkonové testy kognitivních schopností je potřeba zadávat za kontrolovaných podmínek, nejlépe při první návštěvě uchazeče."
+    },
+    {
+      "q": "Kolektivní smlouva:",
+      "opts": [
+        "může být uzavřena na dobu určitou nebo na dobu neurčitou",
+        "je v každé organizaci",
+        "má volnost v obsahu",
+        "upravuje práva zaměstnanců v pracovněprávních vztazích, jakož i práva nebo povinnosti smluvních stran této smlouvy",
+        "upravuje vztahy mezi zaměstnavateli, zaměstnanci a rovněž mezi zaměstnavateli nebo jejich organizací (organizacemi) a odbornou organizací (organizacemi)"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Kolektivní smlouva je dohoda mezi zaměstnavatelem nebo organizací zaměstnavatelů a odborovou organizací. Upravuje práva zaměstnanců v pracovněprávních vztazích a práva a povinnosti smluvních stran. Upravuje také vztahy mezi zaměstnavateli, zaměstnanci a organizacemi zaměstnavatelů a odborů.\nSmlouvu mohou strany uzavřít na dobu určitou i neurčitou. Mají přitom volnost v obsahu, pokud nejdou proti zákonu.\nKolektivní smlouva není v každé organizaci. Vzniká jen tam, kde působí odborová organizace a obě strany se dohodnou.\nKolektivní vyjednávání se řídí zákonem o kolektivním vyjednávání. Každý zaměstnanec v pracovněprávním vztahu má právo předkládat podněty a být informován o jeho průběhu."
+    },
+    {
+      "q": "Motivace pracovníka je:",
+      "opts": [
+        "individuální proces",
+        "stereotypní proces",
+        "proces postupného budování důvěry mezi vedoucím pracovníkem a jeho podřízeným",
+        "proces, který je nutné převést na \"čísla\"",
+        "přístupem pracovníka k práci"
+      ],
+      "correct": [
+        0,
+        4
+      ],
+      "info": "Pojem: Motivace pracovníka je souhrn činností a podnětů, které povzbuzují pracovníka, aby využil své schopnosti a vyvinul úsilí ke splnění cílů organizace. Skripta zdůrazňují, že je to individuální proces.\nKaždý člověk reaguje na podněty jinak, má jiné potřeby, cíle a hodnoty. Motivační program proto musí být individualizovaný a vytvářený na míru. Stejná odměna může jednoho motivovat a jiného nechat netečným.\nMotivace utváří přístup pracovníka k práci. Cílem motivačního programu je dosáhnout žádoucí motivace a optimálního přístupu pracovníků k práci.\nMotivace není stereotypní proces ani něco, co lze převést na čísla. Jako proces postupného budování popisují skripta leadership, ne motivaci.\nMotivační program je proto nutné pravidelně aktualizovat."
+    },
+    {
+      "q": "Jaké jsou možné metody získávání pracovníků?",
+      "opts": [
+        "hodnocení životopisů",
+        "výběrový pohovor",
+        "doporučení stávajícího pracovníka",
+        "doporučení dřívějšího pracovníka",
+        "outplacement"
+      ],
+      "correct": [
+        2,
+        3
+      ],
+      "info": "Pojem: Metody získávání pracovníků jsou způsoby, jak oslovit potenciální uchazeče. Skripta uvádějí mezi nimi doporučení uchazeče.\nDoporučení stávajícího pracovníka je rychlé a levné, ale omezuje možnost výběru. Podobně se využívá doporučení dřívějšího pracovníka.\nDalší metody jsou inzerce, e-recruitment, úřady práce, personální agentury, spolupráce se školami a headhunting.\nHodnocení životopisů a výběrový pohovor patří k výběru pracovníků, který na získávání navazuje. Outplacement pomáhá pracovníkům, kteří organizaci opouštějí, a se získáváním nesouvisí.\nVolba metody záleží na požadavcích na pracovníka, rychlosti obsazení, situaci na trhu práce a nákladech. Organizace metody často vzájemně kombinuje."
+    },
+    {
+      "q": "Kterou činnost (činnosti) zahrnuje činnost získávání pracovníků:",
+      "opts": [
+        "adaptaci pracovníka",
+        "formulace a uveřejnění nabídky zaměstnání",
+        "identifikace zdrojů pracovní síly",
+        "volba dokumentů požadovaných od uchazečů",
+        "identifikace potřeby obsadit určitou funkci"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Získávání pracovníků je personální činnost, jejímž cílem je oslovit a přilákat dostatečný počet kvalitních uchazečů o volné (nově vytvořené) pracovní funkce, a to v odpovídajícím čase a s přiměřenými náklady.\nZačíná identifikací potřeby obsadit určitou funkci. Pak se zpracuje popis funkce, určí zdroje pracovní síly a zvolí metody získávání.\nSoučástí je volba dokumentů, které zaměstnavatel od uchazečů požaduje, například životopis, dotazník nebo motivační dopis. Činnost končí formulací a uveřejněním nabídky zaměstnání.\nAdaptace pracovníka následuje až po výběru a přijetí. Je to samostatná personální činnost.\nCílem je přilákat dostatečný počet kvalitních uchazečů."
+    },
+    {
+      "q": "Úsilí o zformování a udržení potřebné pracovní síly organizace, které se opírá o vytváření dobré zaměstnavatelské pověsti organizace se nazývá:",
+      "opts": [
+        "SWOT analýza",
+        "kariérové plánování",
+        "personální strategie",
+        "personální marketing",
+        "personální plánování"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Personální marketing je úsilí o zformování a udržení potřebné pracovní síly organizace. Opírá se o vytváření dobré zaměstnavatelské pověsti.\nPozitivní značka zaměstnavatele z organizace dělá atraktivního zaměstnavatele. Usnadňuje nábor a zvyšuje identifikaci stávajících pracovníků, takže snižuje fluktuaci.\nTvoří ji komunikace úspěchů firmy, sponzoring, spolupráce se školami, společenská odpovědnost a prezentace na trhu práce.\nSWOT analýza je nástroj analýzy silných a slabých stránek. Kariérní plánování, personální strategie a personální plánování mají jiné cíle. Žádná z nich není primárně budováním pověsti zaměstnavatele.\nPersonální marketing se ve skriptech chápe také jako synonymum k získávání pracovníků."
+    },
+    {
+      "q": "Relační odměny:",
+      "opts": [
+        "jsou vztahovými odměnami",
+        "zahrnují příplatky ke mzdě či platu",
+        "jejich souhrn tvoří celkovou hmotnou odměnu",
+        "zahrnují peněžní odměnu",
+        "jsou vyjádřitelné v penězích"
+      ],
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Relační odměny jsou odměny nepeněžní povahy, které se nazývají také vztahové. Cílí na vnitřní potřeby pracovníků.\nPatří sem uznání, odpovědnost, osobní růst, vzdělávání a rozvoj a zkušenosti a zážitky z práce. Mohou být formální, například diplom nebo povýšení, nebo neformální, například úcta spolupracovníků.\nJsou levné nebo zdarma a pochvala často znamená víc než zvýšení odměny.\nPříplatky ke mzdě, peněžní odměna a vše, co lze vyjádřit v penězích, patří k odměnám transakčním. Jejich souhrn tvoří celkovou hmotnou odměnu.\nArmstrong je řadí mezi odměny vnitřní. Odměny tohoto druhu mohou být pro některé pracovníky velmi důležité."
+    },
+    {
+      "q": "Forma relačních odměn:",
+      "opts": [
+        "je zaměřena na dosažení určitého stupně odpovědnosti",
+        "cílí na vnitřní potřeby pracovníků",
+        "je zaměřena na dosažení určitého stupně výsledků",
+        "je zaměřena na dosažení určitého stupně uznání",
+        "je zaměřena na dosažení určitého stupně osobního růstu"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Relační odměny jsou nazývané také vztahové odměny a mají nepeněžní formu. Cílí na vnitřní potřeby pracovníků.\nJsou zaměřeny na dosažení určitého stupně uznání, výsledků, odpovědnosti nebo osobního růstu. Jde o odměny takzvaně vnitřní.\nPatří sem vzdělávání a rozvoj a zkušenosti a zážitky z práce, například vztahy na pracovišti, míra odpovědnosti nebo naplnění vlastní prací. Mohou být formální i neformální.\nPracovníci mezi důležité relační odměny řadí zejména osobní uznání za dobře odvedenou práci.\nZkušenosti a zážitky z práce jsou levné nebo zdarma, a proto je vhodné je využívat v co nejvyšší míře."
+    },
+    {
+      "q": "Jaké jsou výhody získávání pracovníků z vnitřních zdrojů?",
+      "opts": [
+        "organizace lépe zná slabé stránky uchazeče",
+        "škála talentů v organizaci je mnohem větší, než by bylo možné nalézt vně organizace",
+        "lepší návratnost investic, které organizace vložila do pracovníků",
+        "organizace lépe zná silné a slabé stránky uchazeče",
+        "uchazeč lépe zná organizaci"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Získávání z vnitřních zdrojů znamená obsazovat volné funkce stávajícími zaměstnanci. Podle Koubka mají tento postup tyto výhody.\nOrganizace zná silné i slabé stránky uchazeče a uchazeč zná organizaci. Lépe se vrací investice, které organizace vložila do pracovníků. Zvyšuje se motivace a stabilita zaměstnanců.\nŠkála talentů v organizaci bývá užší, než jaká je na trhu práce mimo ni. Širší výběr nabízejí proto vnější zdroje.\nNevýhodami vnitřních zdrojů jsou soutěžení o povýšení, které zhoršuje vztahy, a omezený přísun nových myšlenek zvenčí.\nUchazeč navíc zná organizaci a její kulturu, takže se rychleji adaptuje."
+    },
+    {
+      "q": "Vyjádření různé míry složitosti, odpovědnosti a namáhavosti práce představuje: (2/4 bodů) (bez záruky)",
+      "opts": [
+        "Platový stupeň",
+        "Platová třída",
+        "Zaučená mzda",
+        "Minimální mzda",
+        "Příplatek ke mzdě či platu"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Platová třída je zařazení práce v platovém systému podle složitosti, odpovědnosti a namáhavosti. Plat se poskytuje v organizacích, jejichž zřizovatelem je stát nebo jeho dílčí orgány.\nPodle § 123 zákoníku práce patří pracovníkovi platový tarif stanovený pro platovou třídu a platový stupeň. Platové tarify mají 16 platových tříd.\nDo třídy se pracovník zařadí podle druhu práce sjednaného v pracovní smlouvě a podle náročnosti práce. Platový stupeň vyjadřuje délku započitatelné praxe a navazuje na třídu.\nMinimální mzda je zákonná spodní hranice odměny. Příplatek ke mzdě nebo platu je doplňková složka za zvláštní podmínky práce.\nRozpor: Podle testu odpovídá popisu jen platová třída a autorka testu za to dostala 2/4 bodů. Podle zákoníku práce (§ 112) se podle složitosti, odpovědnosti a namáhavosti práce odstupňovávají i nejnižší úrovně zaručené mzdy, takže možnost „Zaučená mzda“ je nejspíš překlep za zaručenou mzdu."
+    },
+    {
+      "q": "Hodnocení pracovníků obvykle provádí:",
+      "opts": [
+        "nadřízený pracovník spolu se zástupcem odborové organizace",
+        "nadřízený pracovník",
+        "zástupce poradenské firmy a vedoucí pracovník",
+        "nadřízený pracovník spolu s pracovníkem personálního útvaru",
+        "komise jmenovaná ředitelem"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Hodnotitel je osoba, která pracovníka hodnotí a vede s ním hodnotící rozhovor. Hodnocení obvykle provádí nadřízený pracovník, protože zná práci podřízeného, zadává mu úkoly a odpovídá za jeho výkon. Po hodnocení také zajišťuje, aby se domluvené kroky uskutečnily.\nHodnotitel musí být důkladně proškolen. Před hodnocením si má zopakovat zásady a vyzkoušet si hodnocení i z opačné strany.\nPersonální útvar hodnocení metodicky podporuje: připravuje systém, formuláře a školení hodnotitelů. Formalizované hodnocení výkonu podle skript provádějí zpravidla linioví manažeři nebo personalisté. Hodnotící rozhovor ale vede nadřízený se svým podřízeným.\nDalší hodnotitelé se zapojují jen v rozšířených metodách, například v 360° zpětné vazbě, kde hodnotí kolegové, podřízení nebo zákazníci."
+    },
+    {
+      "q": "Transakční odměny:",
+      "opts": [
+        "jsou vztahovými odměnami",
+        "jejich souhrn tvoří celkovou hmotnou odměnu",
+        "jsou vyjádřitelné v penězích",
+        "zahrnují finanční odměnu",
+        "zahrnují benefity"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Transakční odměny jsou odměny vyjádřitelné v penězích. Jejich souhrn tvoří celkovou hmotnou odměnu.\nPatří sem základní mzda či plat, finanční odměna zásluhová a různé benefity neboli zaměstnanecké výhody. Zahrnují tedy všechny odměny hmotné povahy.\nPeněžní odměna je důležitý důvod, proč pracovník v organizaci pracuje. Její motivační účinek je ale krátkodobý, protože si pracovník na výši zvykne.\nVztahovými odměnami nazývají skripta relační odměny. Ty mají nepeněžní formu a cílí na vnitřní potřeby, jako je uznání či osobní růst.\nHmotné odměny se kombinují s nehmotnými ve správném poměru. Moderní odměňování přesouvá pozornost od hmotných odměn k nehmotným."
+    },
+    {
+      "q": "Typy pracovní motivace zahrnují:  (2/4 bodů) (bez záruky)",
+      "opts": [
+        "Vnitřní a vnější motivaci",
+        "Motivaci smyslem a posláním práce",
+        "Horizontální a vertikální motivaci",
+        "Stimulaci",
+        "Interpersonální a intrapersonální motivaci"
+      ],
+      "correct": [
+        0
+      ],
+      "info": "Pojem: Typy pracovní motivace popisují, odkud pracovník bere chuť podávat výkon. Skripta Urbancové a Depoo je podle Stýbla dělí do pěti skupin.\nVnitřní motivace vychází ze zájmů pracovníka: práce ho baví, přináší mu radost, odpovědnost nebo možnost rozvíjet se. Vnější motivace stojí na odměně, tedy na stimulech zvenčí, například mzdě nebo benefitech.\nDalší tři typy jsou motivace osobní pověstí či odbornou reputací (prestiž pozice a firmy), motivace výzvou (řešení problémů, překonávání překážek) a motivace smyslem a posláním práce. Ta cílí na víru ve smysl práce a opírá se o trvalé osobní hodnoty, často spojené s morálkou a etikou.\nStimulace není typ motivace, ale vnější působení na motivaci. Horizontální a vertikální ani interpersonální a intrapersonální motivaci skripta mezi typy neuvádějí.\nRozpor: Podle testu je správně jen vnitřní a vnější motivace a autorka testu za to dostala 2/4 bodů. Podle učebnice patří mezi typy i motivace smyslem a posláním práce a student, který ji označil navíc, hlásí 4/4 body."
+    },
+    {
+      "q": "Vývojové etapy personální práce zahrnují:",
+      "opts": [
+        "Personální řízení",
+        "Personální administrativu",
+        "Moderní personalistiku",
+        "Management/Řízení lidských zdrojů",
+        "Rozvoj lidských zdrojů"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "info": "Pojem: Vývojové etapy personální práce jsou tři různé koncepce, které se v čase střídaly. Nelze je považovat za synonyma, každá má jiný význam.\nPersonální administrativa je nejstarší koncepce zaměřená na dokumenty a administrativní procedury spojené se zaměstnáváním lidí. Personální řízení se objevilo před druhou světovou válkou a vznikly v něm personální útvary, které formulovaly politiku a rozvíjely metody. Stále se ale soustředilo na operativní, vnitroorganizační problémy zaměstnávání.\nManagement lidských zdrojů je nejnovější koncepce od 50. a 60. let. Má strategický přístup a stává se jádrem řízení organizace.\nModerní personalistika a rozvoj lidských zdrojů nejsou samostatnými etapami."
+    },
+    {
+      "q": "Vedení lidí je: (bez záruky)",
+      "opts": [
+        "způsob managementu, který se opírá o měkké faktory řízení",
+        "působení na lidi ve smyslu podporování jejich vlastní iniciativy, schopností, dovedností",
+        "nová moderní disciplína",
+        "způsob managementu, který se opírá o tvrdé faktory řízení",
+        "ovlivňování lidí s cílem zkvalitnění a zefektivnění plnění stanovených úkolů, v podněcování aktivity a iniciativy lidí, zvláště pak jejich tvůrčího a inovačního ducha (x)"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Vedení lidí je podle skript způsob managementu, který se opírá o měkké faktory řízení. Jde o působení na lidi ve smyslu podporování jejich vlastní iniciativy, schopností a dovedností.\nMěkké faktory jsou nehmatatelné stránky organizace: motivace, vztahy, komunikace a kultura. Lidé jsou v tomto pojetí nositelé inovací a cenné aktivum, které přispívá ke konkurenční výhodě. Tvrdé faktory, jako struktura, systémy a technologie, patří k řízení, ne k vedení.\nLeadership skripta definují zvlášť: je to přístup k vedení pracovníků založený na zkvalitnění a zefektivnění plnění stanovených úkolů a na podněcování aktivity a iniciativy lidí, zvláště jejich tvůrčího a inovačního ducha. Vedení lidí přitom není nová disciplína, je součástí manažerské práce od jejích počátků.\nRozpor: Podle testu je správně jen „působení na lidi ve smyslu podporování jejich vlastní iniciativy, schopností, dovedností“. Podle učebnice patří do definice vedení lidí i „způsob managementu, který se opírá o měkké faktory řízení“. Možnost o zkvalitnění a zefektivnění plnění úkolů je v učebnici definice leadershipu, ne vedení lidí."
+    },
+    {
+      "q": "Které metody patří mezi metody výběru?  (4 b)",
+      "opts": [
+        "Testy a dotazníky.",
+        "Reference.",
+        "Pohovor.",
+        "Assessment centre.",
+        "Telefonické interview."
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Metody výběru pracovníků jsou nástroje, kterými organizace shromažďuje informace o uchazečích. Skripta uvádějí psychologické testy, reference, údaje z životopisu a dotazníků, praktické zkoušky, assessment centre a rozhovor.\nTesty a dotazníky poskytují standardizované informace o uchazeči. Osobnostní dotazník lze vyplnit online a vyhodnocení bývá automatické.\nReference jsou vyjádření předchozích nebo současných zaměstnavatelů a využívají se až v závěru výběrového řízení. Pohovor je základní metodou poznávání lidí a může mít i podobu telefonického interview, tedy rozhovoru na dálku.\nAssessment centre kombinuje více metod a posuzuje chování uchazeče v individuálních i skupinových úkolech. Metody se řadí podle efektivity a jejich kombinací roste přesnost výběru."
+    },
+    {
+      "q": "Jaké by měly být běžně kladené požadavky na vhodného kandidáta při obsazování volného pracovního místa?  (4 b)",
+      "opts": [
+        "politická příslušnost",
+        "požadované chování",
+        "požadovaný věk",
+        "požadavky na postoje",
+        "odborné znalosti"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "info": "Pojem: Požadavky na uchazeče jsou vlastnosti, které organizace stanoví podle popisu pracovního místa a svých záměrů. Musí odpovídat práci, být alespoň částečně měřitelné a nesmějí diskriminovat.\nBěžně se týkají odborných znalostí a dovedností, požadovaného chování a postojů. Odborné znalosti a kvalifikaci je nejsnazší stanovit. Obtížnější je formulovat požadavky na osobnostní vlastnosti, sociální dovednosti a motivaci.\nZákoník práce zakazuje diskriminaci (§ 16) a zaměstnavatel nesmí vyžadovat informace, které nesouvisejí s uzavřením pracovního poměru (§ 316). Politická příslušnost proto požadavkem být nemůže.\nStejně tak věk. Rozlišování podle věku je diskriminací, pokud ho neodůvodňuje podstatný požadavek práce, a běžným požadavkem proto není. Posuzuje se schopnost práci vykonávat."
+    },
+    {
+      "q": "Jaké tvrzení týkající se předvýběru uchazečů je pravdivé? (3/4 bodů) (bez záruky)",
+      "opts": [
+        "výsledkem předvýběru uchazečů je rozdělení uchazečů do dvou skupin, na vhodné a nevhodné uchazeče",
+        "předvýběr uchazečů představuje první fázi procesu získávání zaměstnanců",
+        "předvýběr uchazečů provádíme na základě hodnocení shromážděných dokumentů uchazečů (žádostí o zaměstnání a životopisů)",
+        "předvýběr uchazečů předchází procesu výběru uchazečů",
+        "při předvýběru uchazečů hodnotíme především odbornou způsobilost uchazečů vykonávat práci v rámci obsazené pracovní funkce"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Předvýběr uchazečů je třídění uchazečů, které probíhá po shromáždění jejich žádostí a před vlastním výběrem. Vychází z informací, které o sobě poskytli sami uchazeči: ze žádosti o zaměstnání, životopisu, osobního dotazníku, motivačního dopisu a případně z referencí.\nPosuzují se dokumenty, s uchazečem se zatím nejedná osobně. Sleduje se hlavně, zda uchazeč splňuje kvalifikační a odborné požadavky místa. Kritéria se stanoví předem a musí odpovídat § 16 zákoníku práce.\nPředvýběr nestojí na začátku získávání. Získávání začíná identifikací potřeby pracovníka a analýzou pracovního místa a nábor končí předložením žádostí o zaměstnání.\nVýsledkem předvýběru jsou nejčastěji tři skupiny: uchazeči splňující kritéria, kandidáti na hranici přijatelnosti a nevhodní uchazeči. Po předvýběru následují vlastní metody výběru, například pohovor, testy nebo assessment centre."
+    },
+    {
+      "q": "Management lidských zdrojů Je moderní koncepce práce s lidmi, která zdůrazňuje:",
+      "opts": [
+        "lidi jako zdroj organizace, který musí být kvalitně a efektivně řízen",
+        "nesoulad zájmů managementu a zaměstnanců za účelem zabezpečení potřeb zaměstnanců",
+        "soulad zájmů managementu a zaměstnanců o zabezpečení potřeb všech zainteresovaných stran zaměstnaneckého vztahu",
+        "maximalizaci zisku",
+        "lidi jako zdroj pracovní síly"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "info": "Pojem: Management lidských zdrojů je moderní koncepce práce s lidmi. Zdůrazňuje lidi jako zdroj organizace, který musí být kvalitně a efektivně řízen. Klade důraz na soulad zájmů managementu a zaměstnanců při zabezpečení potřeb všech zainteresovaných stran zaměstnaneckého vztahu.\nKoncepce je strategická. Armstrong ji popisuje jako promyšlený přístup k řízení nejcennějšího kapitálu, tedy lidí, kteří individuálně i kolektivně přispívají k cílům organizace.\nNesoulad zájmů ani zabezpečení potřeb jen zaměstnanců není smyslem koncepce. Lidé nejsou jen pracovní síla, ale investice, do které se vkládá. Maximalizace zisku je cíl organizace, ne koncepce práce s lidmi."
+    }
+  ]
+}

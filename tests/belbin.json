@@ -1,0 +1,392 @@
+{
+  "id": "belbin",
+  "title": "Belbinův test týmových rolí",
+  "updatedAt": "2026-10-03",
+  "rubric": "Nepovinný dotazník, sebehodnocení bez správných odpovědí. V každé ze 7 sekcí rozděl 10 bodů mezi 8 výroků podle toho, jak moc na tebe sedí. Klidně všechno jednomu výroku.\nZdroj: Dotazník týmové role podle Belbina (CDV TUL, belbin.pdf).",
+  "format": {
+    "type": "point-distribution",
+    "budget": 10
+  },
+  "bandLabels": [
+    "velmi nízká",
+    "nízká",
+    "střední",
+    "vysoká",
+    "velmi vysoká"
+  ],
+  "sections": [
+    {
+      "prompt": "Čím podle mého soudu mohu týmu přispět:",
+      "items": [
+        {
+          "t": "myslím, že umím rychle rozpoznat a využít nové možnosti",
+          "role": "hledac"
+        },
+        {
+          "t": "dokážu dobře spolupracovat s mnoha různými lidmi",
+          "role": "tymovy"
+        },
+        {
+          "t": "přicházet s nápady patří mezi mé přirozené klady",
+          "role": "tvurce"
+        },
+        {
+          "t": "dokážu přimět jinou osobu k hovoru kdykoliv zjistím, že může významně přispět k tomu, aby tým dosáhl cíle",
+          "role": "koordinator"
+        },
+        {
+          "t": "moje schopnost dotáhnout věci do konce má hodně společného s mou osobní efektivitou",
+          "role": "dokoncovatel"
+        },
+        {
+          "t": "jestliže to vede k odpovídajícím výsledkům, jsem ochoten čelit dočasné neoblíbenosti",
+          "role": "navigator"
+        },
+        {
+          "t": "rychle vycítím, co se nejspíše osvědčí v situaci, s níž jsem obeznámen",
+          "role": "realizator"
+        },
+        {
+          "t": "logicky podložené alternativy postupů dokážu přednést bez zaujatosti a předsudků",
+          "role": "poradce"
+        }
+      ]
+    },
+    {
+      "prompt": "Jestliže snad mám nedostatky v týmové práci, může to být z těchto důvodů:",
+      "items": [
+        {
+          "t": "nejsem klidný, pokud je špatně sestaven plán porady, není-li její průběh pod kontrolou a je-li celkově špatně vedená",
+          "role": "realizator"
+        },
+        {
+          "t": "mám sklony být příliš velkorysý vůči těm, kteří v diskusi nemají dostatek prostoru vyjádřit své oprávněné stanovisko",
+          "role": "koordinator"
+        },
+        {
+          "t": "když tým přijde na novou myšlenku, mám sklon hodně mluvit",
+          "role": "hledac"
+        },
+        {
+          "t": "moje objektivnost mi brání snadno a s nadšením se připojit ke kolegům",
+          "role": "poradce"
+        },
+        {
+          "t": "je-li zapotřebí něco udělat, bývám někdy považován za energickou a dominantní osobnost",
+          "role": "navigator"
+        },
+        {
+          "t": "být vůdčí osobností je pro mne obtížné snad proto, že příliš citlivě reaguji na náladu v týmu",
+          "role": "tymovy"
+        },
+        {
+          "t": "mám sklon příliš se zabývat vlastními nápady a tak občas ztrácím přehled o tom, co se děje",
+          "role": "tvurce"
+        },
+        {
+          "t": "moji kolegové si někdy o mně myslí, že se zbytečně zabývám detaily a mám obavy z nezdaru",
+          "role": "dokoncovatel"
+        }
+      ]
+    },
+    {
+      "prompt": "Jsem-li s ostatními zapojen do projektu:",
+      "items": [
+        {
+          "t": "mám nadání ovlivňovat druhé, aniž bych na ně vyvíjel nátlak",
+          "role": "koordinator"
+        },
+        {
+          "t": "svou všeobecnou bdělostí zabraňuji tomu, aby docházelo k chybám a opomenutí z nedbalosti",
+          "role": "dokoncovatel"
+        },
+        {
+          "t": "jsem hotov naléhat, aby se přikročilo k činnosti, jestliže se při poradě ztrácí čas,nebo odbíhá-li se od hlavního tématu",
+          "role": "navigator"
+        },
+        {
+          "t": "kolegové mohou počítat s tím, že přispěji něčím originálním",
+          "role": "tvurce"
+        },
+        {
+          "t": "ve společném zájmu jsem vždy připraven podporovat dobrý návrh",
+          "role": "tymovy"
+        },
+        {
+          "t": "se zápalem sleduji poslední vývoj a vyhledávám novinky",
+          "role": "hledac"
+        },
+        {
+          "t": "věřím, že kolegové oceňují mou schopnost střízlivého úsudku",
+          "role": "poradce"
+        },
+        {
+          "t": "lze se spolehnout, že zajistím organizaci nezbytných činností",
+          "role": "realizator"
+        }
+      ]
+    },
+    {
+      "prompt": "Můj typický přístup k týmové práci je následující:",
+      "items": [
+        {
+          "t": "nevtíravým způsobem se snažím své kolegy lépe poznat",
+          "role": "tymovy"
+        },
+        {
+          "t": "nezdráhám se zastávat názor menšiny, ani oponovat názorům ostatních",
+          "role": "navigator"
+        },
+        {
+          "t": "obvykle dokážu najít dostatek argumentů, abych zamítl pochybné návrhy",
+          "role": "poradce"
+        },
+        {
+          "t": "domnívám se, že má-li se uskutečnit nějaký projekt, mám talent zajistit jeho fungování",
+          "role": "realizator"
+        },
+        {
+          "t": "mám tendenci vyhýbat se tomu, co se nabízí a přicházet raději s něčím nečekaným",
+          "role": "tvurce"
+        },
+        {
+          "t": "do každé činnosti, na které se v týmu podílím, vnáším nádech perfekcionismu",
+          "role": "dokoncovatel"
+        },
+        {
+          "t": "jsem ochoten využívat kontaktů mimo skupinu",
+          "role": "hledac"
+        },
+        {
+          "t": "zajímají mě všechny názory, má-li se však zvolit řešení, umím se bez váhání rozhodnout",
+          "role": "koordinator"
+        }
+      ]
+    },
+    {
+      "prompt": "V zaměstnání jsem spokojen, protože:",
+      "items": [
+        {
+          "t": "s potěšením rozebírám různé situace a zvažuji všechny možnosti",
+          "role": "poradce"
+        },
+        {
+          "t": "zajímá mě hledat praktická řešení problémů",
+          "role": "realizator"
+        },
+        {
+          "t": "mám rád pocit, že pěstuji dobré pracovní vztahy",
+          "role": "tymovy"
+        },
+        {
+          "t": "mohu mít velký vliv na rozhodování",
+          "role": "navigator"
+        },
+        {
+          "t": "mám možnost potkávat lidi, kteří nabízejí něco nového",
+          "role": "hledac"
+        },
+        {
+          "t": "dokážu lidi přimět, aby se dohodli o nutném postupu",
+          "role": "koordinator"
+        },
+        {
+          "t": "jsem ve svém živlu, když se mohu nějakému úkolu věnovat s plným zaujetím",
+          "role": "dokoncovatel"
+        },
+        {
+          "t": "rád nacházím oblasti, které rozvíjejí mou představivost",
+          "role": "tvurce"
+        }
+      ]
+    },
+    {
+      "prompt": "Kdybych měl nečekaně splnit obtížný úkol v omezeném čase a mezi neznámými lidmi:",
+      "items": [
+        {
+          "t": "než bych zvolil postup, chtělo by se mi stáhnout do koutku a hledat cestu ze slepé uličky",
+          "role": "tvurce"
+        },
+        {
+          "t": "byl bych připraven ke spolupráci s tím, kdo prokáže nejkonstruktivnější přístup i v případě, že by bylo těžké s ním vyjít",
+          "role": "tymovy"
+        },
+        {
+          "t": "našel bych způsob, jak úkol zjednodušit, zjistil bych, čím může jeden každý přispět k jeho splnění",
+          "role": "koordinator"
+        },
+        {
+          "t": "díky svému vrozenému smyslu pro přesnost bych zabránil jakémukoliv zpoždění oproti harmonogramu",
+          "role": "dokoncovatel"
+        },
+        {
+          "t": "věřím, že bych zůstal klidný a zachoval si schopnost logicky uvažovat",
+          "role": "poradce"
+        },
+        {
+          "t": "i pod tlakem bych neochvějně sledoval svůj cíl",
+          "role": "realizator"
+        },
+        {
+          "t": "kdybych cítil, že skupina nepostupuje kupředu, byl bych připraven převzít iniciativu",
+          "role": "navigator"
+        },
+        {
+          "t": "vyvolával bych diskuse s cílem dát věci do pohybu a podnítit nové myšlenky",
+          "role": "hledac"
+        }
+      ]
+    },
+    {
+      "prompt": "Vztah k problémům, kterým musím v pracovní skupině čelit:",
+      "items": [
+        {
+          "t": "mám sklon dávat najevo svou netrpělivost s těmi, kdo kladou překážky pokroku",
+          "role": "navigator"
+        },
+        {
+          "t": "ostatní mě možná kritizují za to, že můj přístup je příliš analytický a málo intuitivní",
+          "role": "poradce"
+        },
+        {
+          "t": "vždy se chci ujistit, že je práce dobře udělaná, což může zajistit zdržení",
+          "role": "dokoncovatel"
+        },
+        {
+          "t": "mám sklo snadno se začít nudit a spoléhat pak na jednoho či dva nadšené členy skupiny, kteří můj zájem znova vzbudí",
+          "role": "hledac"
+        },
+        {
+          "t": "je pro mne obtížné dát se do práce, dokud nejsou jasně stanoveny cíle",
+          "role": "realizator"
+        },
+        {
+          "t": "někdy mi dělá potíže vysvětlit a objasnit komplikované myšlenky, které mě napadají",
+          "role": "tvurce"
+        },
+        {
+          "t": "jsem si vědom toho, že od jiných vyžaduji to, čeho sám nejsem schopen",
+          "role": "koordinator"
+        },
+        {
+          "t": "když narazím na skutečný odpor, zaleknu se a nejsem schopen srozumitelně podat své argumenty",
+          "role": "tymovy"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "tvurce",
+      "name": "Tvůrce",
+      "en": "Plant",
+      "bands": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "about": "má talent, fantazii, inteligenci a znalosti.",
+      "strengths": "tvořivý, s fantazií, nekonvenční, řeší obtížné problémy",
+      "weakness": "obtíže při řízení obyčejných lidí a při komunikaci s nimi"
+    },
+    {
+      "id": "hledac",
+      "name": "Hledač zdrojů",
+      "en": "Resource Investigator",
+      "bands": [
+        3,
+        4,
+        8,
+        11
+      ],
+      "about": "má schopnost pro práci s lidmi a zkoumání všeho nového. Dokáže reagovat na výzvu.",
+      "strengths": "extrovertní, nadšený, komunikativní, hledá možnosti, rozvíjí kontakty",
+      "weakness": "když vyprchá prvotní nadšení, ztrácí zájem"
+    },
+    {
+      "id": "koordinator",
+      "name": "Koordinátor",
+      "en": "Co-ordinator",
+      "bands": [
+        4,
+        6,
+        10,
+        14
+      ],
+      "about": "dokáže se všemi, kteří by mohli přispět jednat a chovat se k nim nezaujatě. Má silný smysl pro cíl.",
+      "strengths": "vyzrálý, sebevědomý, sebejistý, dobrý vedoucí, objasňuje cíle, podporuje rozhodování",
+      "weakness": "ne nutně nejchytřejší člen skupiny"
+    },
+    {
+      "id": "navigator",
+      "name": "Navigátor",
+      "en": "Shaper",
+      "bands": [
+        4,
+        7,
+        15,
+        19
+      ],
+      "about": "je plný elánu a vždy připraven bojovat s netečností, neschopností, přehnaným uspokojením a sebeklamem",
+      "strengths": "dynamický, společenský, plný neklidu, provokuje, vyvíjí nátlak, hledá cesty, jak obcházet překážky",
+      "weakness": "náchylný k provokaci a ke krátkodobým výbuchům vzteku"
+    },
+    {
+      "id": "poradce",
+      "name": "Poradce-hodnotitel",
+      "en": "Monitor Evaluator",
+      "bands": [
+        3,
+        5,
+        10,
+        12
+      ],
+      "about": "využívá rozvahy a úsudku, je věcný",
+      "strengths": "střízlivý, taktický, soudný, bere v úvahu všechny možnosti, precizní úsudek",
+      "weakness": "chybí mu elán a schopnost inspirovat ostatní"
+    },
+    {
+      "id": "tymovy",
+      "name": "Týmový pracovník",
+      "en": "Teamworker",
+      "bands": [
+        4,
+        6,
+        11,
+        14
+      ],
+      "about": "dokáže reagovat na lidi a situace, podněcuje týmového ducha",
+      "strengths": "společenský, mírný, ochotný, umí naslouchat, konstruktivní, zabraňuje neshodám",
+      "weakness": "nerozhodný v kritických situacích"
+    },
+    {
+      "id": "realizator",
+      "name": "Realizátor",
+      "en": "Implementer",
+      "bands": [
+        6,
+        9,
+        13,
+        16
+      ],
+      "about": "má organizační schopnosti, praktický zdravý rozum, je pracovitý a disciplinovaný. Má schopnost reagovat na lidi a situace a podněcovat týmového ducha.",
+      "strengths": "disciplinovaný, spolehlivý, konzervativní, výkonný, proměňuje myšlenky v praktické činy",
+      "weakness": "trochu nepružný, pomalu reaguje na nové možnosti"
+    },
+    {
+      "id": "dokoncovatel",
+      "name": "Dokončovatel",
+      "en": "Completer Finisher",
+      "bands": [
+        2,
+        4,
+        9,
+        11
+      ],
+      "about": "má schopnost dotahovat věci do konce, je perfekcionista",
+      "strengths": "horlivý, svědomitý, úzkostlivý, hledá a odstraňuje chyby a opomenutí, dodržuje termíny",
+      "weakness": "sklon k přehnaným obavám, neochota delegovat odpovědnost"
+    }
+  ]
+}

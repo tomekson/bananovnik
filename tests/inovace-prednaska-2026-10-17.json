@@ -1,0 +1,1190 @@
+{
+  "id": "inovace-prednaska-2026-10-17",
+  "title": "Inovace (online 17. 10. 2026)",
+  "updatedAt": "2026-10-17",
+  "rubric": "Otázky, které Ing. Cyril Kotulič, Ph.D. ukázal 17. 10. 2026 jako testové (slidy „Opakování“). Klíč je podle odpovědí lektora z audio záznamu. Kde se lektor rozchází se skripty nebo nebyl dobře slyšet, je otázka označená (bez záruky).\nZkouška: 60 min., 12 otázek po 5 bodech + 2 otevřené po 20 bodech, bez pomůcek. K úspěchu je potřeba 51 bodů.",
+  "format": {
+    "type": "multiple-choice",
+    "correctAnswers": "one-or-more"
+  },
+  "exam": {
+    "testPoints": 60,
+    "openPoints": 40,
+    "passPoints": 51,
+    "questionCount": 12,
+    "openCount": 2
+  },
+  "sources": {
+    "slidy": {
+      "label": "Slidy",
+      "title": "Kotulič: Otázky - vzor (výuka), opakování na videocvičení 17. 10. 2026",
+      "pageWord": "slide"
+    }
+  },
+  "questions": [
+    {
+      "q": "Které inovace jsou předmětem šetření Českého statistického úřadu?",
+      "opts": [
+        "produktové, sociální, marketingové",
+        "marketingové, organizační, produktové",
+        "technické a netechnické",
+        "produktové, marketingové, technické",
+        "technické, netechnické, sociální"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "1"
+        }
+      ]
+    },
+    {
+      "q": "U metody 6 klobouků (dle De Bonna) červený klobouk symbolizuje",
+      "opts": [
+        "laterální myšlení",
+        "racionální myšlení",
+        "emoce",
+        "kritické hodnocení",
+        "optimizmus"
+      ],
+      "correct": [
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "2"
+        }
+      ]
+    },
+    {
+      "q": "Klaster je (bez záruky)",
+      "opts": [
+        "soubor regionálně propojených společností a přidružených institucí a organizací",
+        "seskupení vybraných firem rozhodnutím regionální samosprávy",
+        "soubor regionálních firem a zejména institucí terciárního vzdělávání",
+        "soubor regionálně náhodně propojených společností a přidružených institucí za účelem podnikání v oboru",
+        "seskupení firem výhradně ze stejného oboru podnikání"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "3 a 49"
+        }
+      ]
+    },
+    {
+      "q": "Patent:",
+      "opts": [
+        "lze chápat v širším pojetí jako aplikovaný vynález",
+        "je nutné zaregistrovat před zahájením výroby, bez něho nelze vyrábět kvůli ochraně před konkurencí",
+        "lze pronajímat a také prodat po skončení doby, na kterou byl registrovaný",
+        "je forma ochranného dokumentu a jsou s ním spojena vlastnická práva na vynález",
+        "nemůže využívat více než jedna firma"
+      ],
+      "correct": [
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "4"
+        }
+      ]
+    },
+    {
+      "q": "Fáze inovačního procesu jsou:",
+      "opts": [
+        "invence, adorace, difuze",
+        "invence, aberace, difuze",
+        "invence, adopce, difuze",
+        "invence, imitace, intenzifikace",
+        "invence, vynález, inovace"
+      ],
+      "correct": [
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "5"
+        }
+      ]
+    },
+    {
+      "q": "Za zdroje inovací lze považovat:",
+      "opts": [
+        "zákazníky",
+        "dodavatele",
+        "konkurenci",
+        "konzultanty",
+        "školy a univerzity"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "6"
+        }
+      ]
+    },
+    {
+      "q": "Mezi aktéry inovačního procesu řadíme",
+      "opts": [
+        "majitele firmy, dodavatele, stát",
+        "zákazníky, management firmy, zaměstnance",
+        "stát, zaměstnance, zákazníky",
+        "management, zaměstnance, zákazníky",
+        "stát, podniky, zákazníky"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "7"
+        }
+      ]
+    },
+    {
+      "q": "O komerčním úspěchu inovace rozhoduje",
+      "opts": [
+        "firma základě kompetencí delegovaných managementem",
+        "zákazník na základě funkcí inovace a vnímaného užitku, který mu inovace přináší",
+        "firma na základě funkcí inovace a vnímaného užitku, který mu inovace přináší",
+        "konkurence na základě komparace produktů",
+        "spolupracující firma na základě analýzy srovnatelných produktů",
+        "management na základě analýzy srovnatelných produktů"
+      ],
+      "correct": [
+        1
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "8 a 17"
+        }
+      ]
+    },
+    {
+      "q": "Cílem úspěšné inovace je",
+      "opts": [
+        "vyřešení problému zákazníka",
+        "vyřešení problému konkurence",
+        "vyřešení problému spolupracující firmy",
+        "obecný blahobyt",
+        "neutralizace neúspěšných inovací"
+      ],
+      "correct": [
+        0
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "9 a 19"
+        }
+      ]
+    },
+    {
+      "q": "Inovační aktérem",
+      "opts": [
+        "je subjekt, který participuje na inovačním procesu",
+        "může být zákazník",
+        "může být zaměstnanec",
+        "může být konkurence",
+        "může být spolupracující firma"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "10 a 25"
+        }
+      ]
+    },
+    {
+      "q": "Zdrojem inovací z vnitřního prostředí je (bez záruky)",
+      "opts": [
+        "Vlastní VaV",
+        "Technologické útvary – projekce, konstrukce, technologie",
+        "Produkce (výroba, poskytování služeb)",
+        "Marketing a prodej",
+        "Logistika (nákup a zásobování)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "11 a 31"
+        }
+      ]
+    },
+    {
+      "q": "Potřeba inovace může být vyvolána:",
+      "opts": [
+        "okolními podmínkami,",
+        "technologiemi,",
+        "podnikem,",
+        "zákazníky a obchodem,",
+        "konkurencí a odvětvím."
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "12 a 33"
+        }
+      ]
+    },
+    {
+      "q": "Produktové inovace představují",
+      "opts": [
+        "otevření nového trhu",
+        "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "inovaci založenou na změně dodavatele",
+        "změnu struktury odvětví nebo trhu",
+        "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
+      ],
+      "correct": [
+        1
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "13 a 34"
+        }
+      ]
+    },
+    {
+      "q": "Radikální inovace je",
+      "opts": [
+        "zavedení nových a významně vylepšených výrobků inovací založenou na změně pracovního postupu",
+        "zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie",
+        "spojitým kreativním vylepšováním stávajícího výrobku, služby nebo procesu",
+        "zavedení nových a významně vylepšených výrobků inovací založenou na změně pracovního postupu",
+        "založena na náhradě stávajícího řešení principiálně jiným"
+      ],
+      "correct": [
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "14 a 40"
+        }
+      ]
+    },
+    {
+      "q": "Fáze invence inovačního procesu",
+      "opts": [
+        "začíná tvorbou prototypu",
+        "začíná přípravou komercionalizace produktu",
+        "začíná reklamní kampaní",
+        "začíná myšlenkou (návrhem něčeho nového)",
+        "začíná komunikací se zákazníky"
+      ],
+      "correct": [
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "15 a 44"
+        }
+      ]
+    },
+    {
+      "q": "Pokud chce podnik se svými inovacemi uspět",
+      "opts": [
+        "musí znát potřeby svých zákazníků a adekvátně na ně reagovat",
+        "musí znát problémy svých zákazníků a adekvátně na ně reagovat",
+        "musí znát problémy konkurence a adekvátně na ně reagovat",
+        "musí znát potřeby managementu a adekvátně na ně reagovat",
+        "musí čekat na vhodnou příležitost na trhu",
+        "musí spolupracovat s konkurencí"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "18"
+        }
+      ]
+    },
+    {
+      "q": "Při zkoumání budoucích trhů pro připravované inovace je potřeba se zaměřit",
+      "opts": [
+        "na potenciální problémy zákazníků",
+        "na ještě nevyjádřené problémy zákazníků",
+        "na potenciální potřeby managementu",
+        "na ještě nevyjádřené problémy managementu",
+        "na potřeby zákazníků, které vzniknou v budoucnosti"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "20"
+        }
+      ]
+    },
+    {
+      "q": "Konkurenční inovační výhoda (bez záruky)",
+      "opts": [
+        "má vyjadřovat výhodu vůči konkurenci, která je založena na inovačním úsilí podniku a týká se důležitého užitku pro zákazníka",
+        "má vyjadřovat výhodu konkurence, která je založena na inovačním úsilí podniku a týká se důležitého užitku pro zákazníka",
+        "může vyjadřovat výhodu konkurence, vůči zákazníkům",
+        "může vyjadřovat výhodu naší firmy vůči konkurenci",
+        "může vyjadřovat výhodu konkurence vůči naší firmě"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "21"
+        }
+      ]
+    },
+    {
+      "q": "Inovační zisk podle Schumpetera",
+      "opts": [
+        "plyne z inovací, které snižují náklady na výrobu",
+        "ze vstupu zcela nového technického objektu na trh",
+        "z aplikace manažerských postupů na rozvoj stávajících trhů",
+        "z aplikace manažerských postupů na udržení stávajících trhů",
+        "ze vstupu zcela nového technického objektu na trh"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "22"
+        }
+      ]
+    },
+    {
+      "q": "Systém inovací zahrnuje:",
+      "opts": [
+        "ekonomické a sociální prvky, které ovlivňují vývoj a difúzi inovací",
+        "ekonomické a politické prvky, které ovlivňují vývoj a difúzi inovací",
+        "ekonomické a organizační prvky, které ovlivňují vývoj a difúzi inovací",
+        "ekonomické a institucionální prvky, které ovlivňují vývoj a difúzi inovací",
+        "ekonomické a politologické prvky, které ovlivňují vývoj a difúzi inovací"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "23"
+        }
+      ]
+    },
+    {
+      "q": "Výkonnost inovačního systému je určena:",
+      "opts": [
+        "schopností inovačních aktérů přetvářet inovační vstupy",
+        "schopností inovačních aktérů přetvářet inovační výstupy",
+        "schopností inovačních aktérů vytvářet zisk",
+        "schopností inovačních aktérů snižovat náklady",
+        "schopností inovačních aktérů snižovat náklady a vytvářet zisk"
+      ],
+      "correct": [
+        0
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "24"
+        }
+      ]
+    },
+    {
+      "q": "Inovační nabídku",
+      "opts": [
+        "představují subjekty, které vytvářejí inovace",
+        "představují subjekty, které spotřebovávají inovace",
+        "představují subjekty, které poptávají inovací",
+        "představují subjekty, které mění inovace",
+        "představují subjekty, které přeměňují inovace"
+      ],
+      "correct": [
+        0
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "26"
+        }
+      ]
+    },
+    {
+      "q": "Inovační poptávku",
+      "opts": [
+        "představují subjekty, které vytvářejí inovace",
+        "představují subjekty, které spotřebovávají inovace",
+        "představují subjekty, které poptávají inovací",
+        "představují subjekty, které mění inovace",
+        "představují subjekty, které přeměňují inovace"
+      ],
+      "correct": [
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "27"
+        }
+      ]
+    },
+    {
+      "q": "V modelu Triple Helix existují základní prvky integračního zájmu:",
+      "opts": [
+        "podnikatelský a akademický sektor,",
+        "akademický a veřejný sektor,",
+        "veřejný a podnikatelský sektor",
+        "veřejný a akademický sektor",
+        "podnikatelský a konkurenční sektor"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "28 a 53"
+        }
+      ]
+    },
+    {
+      "q": "Ze systémového pohledu lze Regionální Inovační Systém definovat jako systém:",
+      "opts": [
+        "vytvářející koloběh tvořivé destrukce",
+        "negující inovační schopnost firem v regionu",
+        "potlačující inovační výkonnost regionálních firem",
+        "výrazně zjednodušující inovační proces",
+        "stimulující inovační schopnosti firem v regionu"
+      ],
+      "correct": [
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "29"
+        }
+      ]
+    },
+    {
+      "q": "Zdrojem inovací podle subjektu jsou:",
+      "opts": [
+        "zákazníci a jejich požadavky,",
+        "konkurence (její úspěchy a neúspěchy),",
+        "zaměstnanci (tvořivost a výzkum),",
+        "podnikové potřeby,",
+        "politické požadavky (požadavky státu)."
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "30"
+        }
+      ]
+    },
+    {
+      "q": "Potřeba inovací se vztahuje k podnikatelské šanci a podtypu",
+      "opts": [
+        "Zjištění šancí – na trhu je inovační potřeba.",
+        "Objevení šancí – buď potřeba trhu, nebo nabídka inovace.",
+        "Vytvoření šancí – vznik inovace, přestože potřeba ještě neexistuje",
+        "Přetvoření šancí – potřeba trhu, která se změní s příchodem konkurence",
+        "Realizace šancí – realizace příležitosti bez poptávky zákazníků"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "32"
+        }
+      ]
+    },
+    {
+      "q": "Procesní inovace představují",
+      "opts": [
+        "otevření nového trhu",
+        "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "inovaci založenou na změně dodavatele",
+        "změnu struktury odvětví nebo trhu",
+        "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
+      ],
+      "correct": [
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "35"
+        }
+      ]
+    },
+    {
+      "q": "Marketingové inovace představují",
+      "opts": [
+        "otevření nového trhu",
+        "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie",
+        "změnu struktury odvětví nebo trhu",
+        "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
+      ],
+      "correct": [
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "36"
+        }
+      ]
+    },
+    {
+      "q": "Organizační inovace mohou spočívat",
+      "opts": [
+        "nové a oproti dostupným alternativám lepší řešení, která naplňují naléhavé sociální potřeby a zároveň vytvářejí nové sociální vztahy nebo spolupráce",
+        "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie",
+        "zavedení nové organizační metody v podnikových obchodních praktikách, v organizaci pracovního místa nebo v externích vztazích",
+        "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod"
+      ],
+      "correct": [
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "37"
+        }
+      ]
+    },
+    {
+      "q": "Sociální inovace představují",
+      "opts": [
+        "inovace v oblasti výrobních metod, zavedení nové nebo významně vylepšené produkce nebo logistických metod",
+        "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie",
+        "změnu struktury odvětví nebo trhu",
+        "nové a oproti dostupným alternativám lepší řešení, která naplňují naléhavé sociální potřeby a zároveň vytvářejí nové sociální vztahy nebo spolupráce"
+      ],
+      "correct": [
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "38"
+        }
+      ]
+    },
+    {
+      "q": "Inkrementální inovace je",
+      "opts": [
+        "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie",
+        "spojitým kreativním vylepšováním stávajícího výrobku, služby nebo procesu",
+        "zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie"
+      ],
+      "correct": [
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "39"
+        }
+      ]
+    },
+    {
+      "q": "Disruptivní inovace",
+      "opts": [
+        "je spojitým kreativním vylepšováním stávajícího výrobku, služby nebo procesu",
+        "je zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "zavádějí výrobky a služby, které nejsou tak dokonalé jako jako ty už existující, ale nabízejí jiné výhody (jsou jednodušší, levnější, snáze použitelné, ...)",
+        "je zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "je zavedení nové marketingové metody, která nebyla podnikem dříve využívána a je součástí nového marketingového konceptu nebo strategie"
+      ],
+      "correct": [
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "41"
+        }
+      ]
+    },
+    {
+      "q": "Inovační proces",
+      "opts": [
+        "je zavedení nových a významně vylepšených výrobků inovaci založenou na změně pracovního postupu",
+        "začíná sběrem nápadů, tento proces by měl být záměrný, cílený a řízený",
+        "je základní proces, který se zabývá obnovováním produktů, jež organizace nabízí, a způsobů, jak tyto produkty generuje a dodává",
+        "je spojitým kreativním vylepšováním stávajícího výrobku, služby nebo procesu",
+        "je uceleným procesem, který zahrnuje činnosti od výzkumu přes aplikaci jeho výsledků až po jejich komerční využití"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "42"
+        }
+      ]
+    },
+    {
+      "q": "Inovační proces má fáze:",
+      "opts": [
+        "invenci",
+        "adoraci",
+        "difúzi",
+        "adopci",
+        "inventarizaci"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "43"
+        }
+      ]
+    },
+    {
+      "q": "Fáze adopce inovačního procesu představuje",
+      "opts": [
+        "první vytvoření funkčního prototypu",
+        "vytvoření prvního zisku",
+        "první komerční použití invence",
+        "první vážné ohrožení konkurence",
+        "přijetí a aplikace konkurenčního řešení"
+      ],
+      "correct": [
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "45"
+        }
+      ]
+    },
+    {
+      "q": "Fáze difuze inovačního procesu",
+      "opts": [
+        "znamená rozšiřování  podnikatelských plánů",
+        "znamená rozšiřování znalostí o invenci do prostoru",
+        "vytvoření prvního zisku",
+        "první vážné ohrožení konkurence",
+        "přijetí a aplikace konkurenčního řešení"
+      ],
+      "correct": [
+        1
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "46"
+        }
+      ]
+    },
+    {
+      "q": "Strategie modrých oceánu (Blue Ocean Strategy) je zaměřená na:",
+      "opts": [
+        "hledání nových strategických příležitostí růstu",
+        "systematické vytváření nových trhů",
+        "udržení stávajících cílů",
+        "aplikaci manažerských postupů zaměřených na udržení tržních cílů",
+        "na rozvoj strategie v oblasti zajištění LZ"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "47"
+        }
+      ]
+    },
+    {
+      "q": "RPSN a úrok",
+      "opts": [
+        "nemohou být odlišné výše stejného úvěru",
+        "u půjčky mohou být teoreticky stejné, v praxi se nestává často",
+        "RPSN je náklad pro dlužníka",
+        "Úrok je náklad pro věřitele",
+        "RPSN se platí při uzavření dohody, úrok postupně"
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "48"
+        }
+      ]
+    },
+    {
+      "q": "Malé a střední podniky, které jsou často zdrojem inovací, na bankovní úvěr nedosáhnou z důvodu:",
+      "opts": [
+        "rizikovosti projektu",
+        "nízké hodnoty vstupních nákladů",
+        "nedostatku organizačních pracovníků",
+        "špatně koncipovaného podnikatelského plánu",
+        "nízké hodnoty základního kapitálu"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "50"
+        }
+      ]
+    },
+    {
+      "q": "Nepodnikatelské organizace (NPO) by měly při inovačních aktivitách: (bez záruky)",
+      "opts": [
+        "mít jasně a jednoznačně definované cíle svého působení",
+        "dobře specifikovat procesy, umožňující účelný a efektivní postup k definovaným cílům",
+        "získávat co nejvíce rizikového kapitálu dle možností finančních trhů",
+        "mít striktně vymezené oblasti odpovědnosti a pravomocí jednotlivých odborně způsobilých pracovníků",
+        "pravidelně inovovat technologie a organizační procesy"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "51"
+        }
+      ]
+    },
+    {
+      "q": "Označte pravdivé výroky. Při financování projektů rizikovým kapitálem:",
+      "opts": [
+        "je výhodou, že je možné realizovat projekt, na který podnik nedostal úvěr",
+        "je výhodou, že dochází ke zvýšení počtu vlastníků podniku",
+        "jsou poskytovateli kapitálu soukromé osoby označované jako Business Angels",
+        "nedochází ke snížení cash flow a firma pak snadněji získá další úvěr z důvodu dostatku kapitálu",
+        "je výhodou pro podnik možnost využití sítě kontaktů investora"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "52"
+        }
+      ]
+    },
+    {
+      "q": "Trvale udržitelné tempo růstu podniku charakterizuje (bez záruky)",
+      "opts": [
+        "Účetní zvyšování cizího kapitálu",
+        "Zvyšování tržního podílu a přiměřený růst tržeb",
+        "Není nutné zajišťovat dodatečné vnější zdroje",
+        "Sníží se konkurence podniku  na základě komparace produktů",
+        "Dochází k reinvesticím ze zisku"
+      ],
+      "correct": [
+        2,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "54"
+        }
+      ]
+    },
+    {
+      "q": "Přidanou hodnotu charakterizuje (bez záruky)",
+      "opts": [
+        "vyřešení problému zákazníka",
+        "pravidelný odvod DPH",
+        "obecně rozdíl výroby a výrobní spotřeby",
+        "snižování položek manažerského účetnictví v oblasti finančních rezerv",
+        "komparační výhoda"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "55"
+        }
+      ]
+    },
+    {
+      "q": "výnos z investice je",
+      "opts": [
+        "rentabilita investice",
+        "porovnání vynaloženého kapitálu a výnosu",
+        "porovnání tržeb z investice a cizího kapitálu použitého na financování investice",
+        "ztrátou z hlediska nutnosti investovat kapitál",
+        "porovnání výdajů na investici a výnosu"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "56"
+        }
+      ]
+    },
+    {
+      "q": "Při hodnocení investice (bez záruky)",
+      "opts": [
+        "hodnotíme výhradně rizikovost a výnosnost",
+        "hodnotíme likvidnost a rizikovost",
+        "volíme mezi likvidností a výnosností ve vztahu k riziku",
+        "hodnotíme dobu splácení",
+        "nehodnotíme likvidnost"
+      ],
+      "correct": [
+        1,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "57"
+        }
+      ]
+    },
+    {
+      "q": "Náklady ve finančním účetnictví (bez záruky)",
+      "opts": [
+        "nejsme povinni vyjadřovat",
+        "řídí se legislativou o vedení účetnictví pro ekonomicky samostatné subjekty",
+        "charakterizují „co bylo obětováno“ – ekonomicky pojímají náklad",
+        "úzce souvisí s daňovým zatížením",
+        "peněžně vyjadřují spotřeby"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "58"
+        }
+      ]
+    },
+    {
+      "q": "Optimalizace jako proces (bez záruky)",
+      "opts": [
+        "představuje ekonomické zlepšení",
+        "představuje zlepšení dle předem zvolených optimalizačních kritérií",
+        "proces může být i výrazně méně ekonomický po proběhlé optimalizaci",
+        "bere v úvahu omezující podmínky",
+        "vždy jde o hledání procesních úspor"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "59"
+        }
+      ]
+    },
+    {
+      "q": "Mzdová politika v podniku",
+      "opts": [
+        "je povinná pro MSP od 30 zaměstnanců",
+        "přispívá ke snadnější orientaci v odměňování a umožňuje plánovat LZ",
+        "odůvodňuje mzdovou strukturu",
+        "není pro podnik obecně závazná, podléhá však pravidelnému auditu",
+        "jejím úkolem je udržet objem mzdových prostředků tak, aby se neblokovala konkurenční schopnost podniku"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "60"
+        }
+      ]
+    },
+    {
+      "q": "Koncentrace výroby",
+      "opts": [
+        "má ekonomické hranice určené přepravními a výrobními náklady",
+        "nebere v úvahu celkové náklady, důležité jsou minimální mzdové náklady výroby",
+        "logistika je podpůrná a distribuční složka, jejíž výše je nezanedbatelná z hlediska koncentrace výroby",
+        "logistika je podpůrná a distribuční složka, jejíž výše je zanedbatelná z hlediska koncentrace výroby",
+        "nepřináší úspory"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "read": [
+        {
+          "src": "slidy",
+          "ref": "Opakování",
+          "pages": "61"
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Pojem a cíl inovace",
+      "q": [
+        8,
+        9,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "name": "Typy inovací",
+      "q": [
+        1,
+        13,
+        14,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "name": "Inovační proces",
+      "q": [
+        5,
+        15,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "name": "Zdroje a potřeba inovací",
+      "q": [
+        6,
+        11,
+        12,
+        26,
+        27
+      ]
+    },
+    {
+      "name": "Aktéři a inovační systémy",
+      "q": [
+        3,
+        7,
+        10,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "name": "Metody, strategie a ochrana",
+      "q": [
+        2,
+        4,
+        38
+      ]
+    },
+    {
+      "name": "Financování inovací",
+      "q": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "name": "Podniková ekonomika",
+      "q": [
+        39,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    }
+  ]
+}

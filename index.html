@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.71">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.72">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -601,6 +601,17 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   opacity: 0; transition: opacity .3s ease;
 }
 .scroll-hint.visible { opacity: 1; }
+/* Plovoucí kotva zpět na otázku, když je otevřená Teorie a otázka odjela nahoru */
+.q-top-btn {
+  position: absolute; right: max(18px, calc(50% - 302px)); bottom: calc(100% + 10px); z-index: 2;
+  padding: 7px 12px; border-radius: 999px; cursor: pointer;
+  font: inherit; font-size: 13px; font-weight: 700; color: var(--primary);
+  background: var(--card2); border: 1.5px solid var(--line2); box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  opacity: 0; visibility: hidden; transform: translateY(6px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s;
+  -webkit-appearance: none; appearance: none;
+}
+.q-top-btn.visible { opacity: 1; visibility: visible; transform: none; }
 .quiz-ftr-inner { max-width: 640px; width: 100%; display: flex; flex-direction: column; gap: 6px; }
 .quiz-ftr-inner .btn-start { width: 100%; padding: 14px; font-size: 16px; }
 .quiz-ftr-row { display: flex; gap: 9px; }
@@ -1505,6 +1516,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
 
   <div class="quiz-ftr">
     <div class="scroll-hint" id="scroll-hint">▼ zobrazit více ▼</div>
+    <button class="q-top-btn" onclick="scrollToQuestion()" aria-label="Zpět na otázku" title="Zpět na otázku">↑ Otázka</button>
     <div class="quiz-ftr-inner">
       <div class="fb" id="fb">
         <span class="fb-icon" id="fb-icon"></span>
@@ -1565,6 +1577,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
   </div>
 
   <div class="quiz-ftr">
+    <button class="q-top-btn" onclick="scrollToQuestion()" aria-label="Zpět na otázku" title="Zpět na otázku">↑ Otázka</button>
     <div class="quiz-ftr-inner">
       <div class="quiz-ftr-row">
         <button class="btn-retry" id="btn-study-test" onclick="testStudyQ()" style="display:none;">Otestovat</button>
@@ -2919,6 +2932,22 @@ function syncBodyPadding() {
   body.style.paddingBottom = (ftr.offsetHeight + 16) + 'px';
 }
 
+// Kotva zpět na otázku: jen při otevřené Teorii, když text otázky zmizel pod hlavičkou
+function updateQTopBtn() {
+  const scr = document.querySelector('.screen.active');
+  const btn = scr && scr.querySelector('.q-top-btn');
+  document.querySelectorAll('.q-top-btn').forEach(b => { if (b !== btn) b.classList.remove('visible'); });
+  if (!btn) return;
+  const qt = scr.querySelector('.q-text');
+  const hdr = scr.querySelector('.quiz-hdr');
+  const show = !!scr.querySelector('.q-info-box') && !!qt
+    && qt.getBoundingClientRect().bottom < (hdr ? hdr.getBoundingClientRect().bottom : 0);
+  btn.classList.toggle('visible', show);
+}
+function scrollToQuestion() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 var _scrollHintTimer = null;
 function updateScrollHint() {
   var hint = document.getElementById('scroll-hint');
@@ -3881,6 +3910,7 @@ function derange(a) {
 }
 
 window.addEventListener('scroll', updateScrollHint);
+window.addEventListener('scroll', updateQTopBtn, { passive: true });
 window.addEventListener('resize', syncBodyPadding);
 
 // ─────────────────────────────────────────────────────────────────
@@ -4282,6 +4312,7 @@ function togglePreInfo(rerender) {
   const q = S.questions[S.cur];
   preInfoQ = isPreInfoOpen(q) ? null : q;
   if (rerender === 'renderStudy') renderStudy(); else renderQ();
+  updateQTopBtn();
   if (preInfoQ) {
     const el = document.querySelector(rerender === 'renderStudy' ? '#study-q-info .q-info-box' : '#q-info .q-info-box');
     // začátek Teorie těsně pod sticky hlavičku (scrollIntoView nepočítá s hlavičkou ani fixní patičkou)
@@ -4591,7 +4622,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.71';
+const APP_VERSION = '10.72';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

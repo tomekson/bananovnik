@@ -1,7 +1,7 @@
 {
   "id": "projektove-rizeni",
   "title": "Projektové řízení",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-11-01",
   "rubric": "Zkouškový test: 45 min., 14 otázek (z toho 4 příklady po 10 až 25 bodech), celkem 100 bodů, pomůcka: kalkulačka. K úspěchu je potřeba 51 bodů.",
   "format": {
     "type": "multiple-choice",
@@ -2061,7 +2061,7 @@
       ]
     },
     {
-      "q": "Projekty můžeme dělit na: (bez záruky)",
+      "q": "Projekty můžeme dělit na:",
       "opts": [
         "Klasické, agilní, prediktivní",
         "Výstavbové, vědecké, technické",
@@ -2069,8 +2069,8 @@
         "Pevné, polopevné, poloflexibilní a flexibilní",
         "Vlastní, cizí, kombinované"
       ],
-      "correct": [1, 3, 4],
-      "info": "Pojem: Projekty se dají třídit podle různých hledisek, třeba podle cíle, oboru nebo zadavatele.\nPodle cíle jsou projekty čtyř typů: pevné, polopevné, poloflexibilní a flexibilní. Pevný cíl: vím, co chci, a vím, jak k tomu dojdu.\nPolopevný cíl: vím, co chci, ale ne cestu. Poloflexibilní cíl: znám metodu, ale nevím, kam povede. Flexibilní cíl: nevím co ani jak.\nPodle oboru jsou projekty stavební (výstavbové), IT, výzkumné (vědecké), technické nebo organizační. Podle zadavatele jsou projekty vlastní (pro svou firmu), cizí (pro zákazníka) nebo kombinované.\nKlasický a agilní přístup jsou metodiky řízení, ne druhy projektů. Klasický a prediktivní znamená totéž, takže trojice klasické, agilní, prediktivní nedává smysl jako dělení.\nPodle složitosti je projekt jednoduchý (třeba kolaudace) nebo těžký (třeba Dukovany). Trojice komplexní, speciální, jednoduché není ustálené dělení.",
+      "correct": [1, 2, 3, 4],
+      "info": "Pojem: Projekty se třídí podle několika hledisek. Slidy k přednášce je uvádějí na schématu Dělení projektů: kategorie, druh, cíl, původ a zdroje financování.\nPodle kategorie jsou projekty komplexní, speciální a jednoduché. Kategorie vyjadřuje náročnost projektu: jednoduchým projektem je třeba kolaudace, náročným stavba jaderné elektrárny.\nPodle druhu (oboru) jsou projekty výstavbové, IT, technologické, výzkumné (vědecké), technické nebo organizační.\nPodle cíle jsou projekty pevné, polopevné, poloflexibilní a flexibilní. Pevný cíl: vím, co chci, i jak k tomu dojdu. Flexibilní cíl: nevím co ani jak.\nPodle původu (zadavatele) jsou projekty vlastní (interní), cizí (externí) nebo kombinované. Klasický a agilní přístup jsou metodiky řízení a prediktivní je typ životního cyklu, druhy projektů to nejsou.",
       "read": [
         {
           "src": "prednaska",

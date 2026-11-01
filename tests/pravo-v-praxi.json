@@ -1,7 +1,7 @@
 {
   "id": "pravo-v-praxi",
   "title": "Právo v praxi",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-11-01",
   "rubric": "Zkouškový test: 45 min., 20 otázek po 5 bodech\nPomůcky: občanský zákoník, zákon o obchodních korporacích, zákoník práce",
   "format": {
     "type": "multiple-choice",
@@ -898,7 +898,7 @@
       "info": "Pojem: Akcie je cenný papír nebo zaknihovaný cenný papír, se kterým jsou spojena práva akcionáře podílet se na řízení, zisku a likvidačním zůstatku.\nProč: Akcie může vydávat jen akciová společnost, protože její základní kapitál je rozvržen právě na akcie. Žádná jiná forma společnosti akcie nevydává.\nChyták: Společnost s ručením omezeným má podíly, které mohou být představovány kmenovým listem, ne akcií. Družstvo má členské vklady. Veřejná obchodní a komanditní společnost mají podíly bez cenného papíru.\nKde to najdu: Zákon o obchodních korporacích § 243 odst. 1 (základní kapitál akciové společnosti je rozvržen na akcie) a § 256 (co je akcie)."
     },
     {
-      "q": "Mezi obchodní společnosti patří: (bez záruky)",
+      "q": "Mezi obchodní společnosti patří:",
       "opts": [
         "společnost s ručením omezeným",
         "veřejné obchodní společnost",
@@ -2120,6 +2120,124 @@
         3
       ],
       "info": "Pojem: Okamžité zrušení ukončí pracovní poměr dnem doručení, bez výpovědní doby. Zákon ho připouští jen ve vážných situacích, které sám vyjmenovává, a to pro obě strany.\nProč: Zaměstnavatel smí okamžitě zrušit jen z důvodů v § 55 ZP: pravomocné odsouzení pro úmyslný trestný čin k nepodmíněnému trestu odnětí svobody delšímu než 1 rok (u činu při plnění pracovních úkolů nejméně 6 měsíců), nebo porušení povinností zvlášť hrubým způsobem. Ze stejných důvodů může zvolit i mírnější výpověď (§ 52 písm. g) ZP). Zaměstnanec smí okamžitě zrušit jen z důvodů v § 56 ZP: ohrožení zdraví podle lékařského posudku, když ho zaměstnavatel do 15 dnů od předložení posudku nepřevede na jinou vhodnou práci, nebo mzda (i její část či náhrada mzdy) nevyplacená do 15 dnů po uplynutí období splatnosti.\nChyták: Bez důvodu nemůže pracovní poměr okamžitě zrušit ani zaměstnavatel, ani zaměstnanec. Zaměstnanec může dát výpověď bez uvedení důvodu, ta ale skončí až po výpovědní době. Bez uvedení důvodu lze pracovní poměr zrušit jen ve zkušební době (§ 66 ZP), to je ale jiný institut.\nKde to najdu: Zákoník práce § 55 a 56 (důvody okamžitého zrušení zaměstnavatelem a zaměstnancem) a § 52 písm. g) (výpověď z důvodů pro okamžité zrušení)."
+    },
+    {
+      "q": "Obchodní podíl může být podle zákona o obchodních korporacích představován cenným papírem v:",
+      "opts": [
+        "družstvu",
+        "společnosti s ručením omezeným",
+        "komanditní společnosti",
+        "veřejné obchodní společnosti",
+        "akciové společnosti"
+      ],
+      "correct": [
+        1,
+        4
+      ],
+      "info": "Pojem: Podíl představuje účast společníka v obchodní korporaci a práva a povinnosti, které z ní plynou (§ 31 ZOK).\nPodle § 32 odst. 2 ZOK smí být podíl představován cenným papírem jen v kapitálové společnosti. Kapitálové společnosti jsou dvě: společnost s ručením omezeným a akciová společnost.\nV akciové společnosti představuje podíl akcionáře akcie. Akcie je cenný papír nebo zaknihovaný cenný papír (§ 256 ZOK).\nVe společnosti s ručením omezeným může podíl představovat kmenový list, pokud to určí společenská smlouva (§ 137 ZOK). Kmenový list je cenný papír na řad a nesmí se veřejně obchodovat.\nVeřejná obchodní společnost a komanditní společnost jsou osobní společnosti, podíl v nich cenným papírem obecně být nesmí. Výjimkou je podíl komanditisty v investičním fondu podle zákona o investičních společnostech. Ani družstevní podíl cenným papírem není.\nKde to najdu: Zákon o obchodních korporacích § 32 odst. 2 (podíl jako cenný papír jen v kapitálové společnosti), § 137 (kmenový list) a § 256 (akcie)."
+    },
+    {
+      "q": "Živností není:",
+      "opts": [
+        "hostinská činnost",
+        "výroba lihovin",
+        "maloobchod",
+        "velkoobchod",
+        "činnost bank"
+      ],
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Živnost je soustavná činnost provozovaná samostatně, vlastním jménem, na vlastní odpovědnost a za účelem zisku (§ 2 ŽZ). Některé činnosti živnostenský zákon výslovně vyjímá (§ 3 ŽZ).\nČinnost bank se řídí zvláštním zákonem a potřebuje licenci od České národní banky. Živností proto není.\nMaloobchod a velkoobchod jsou běžné volné živnosti. Hostinská činnost je řemeslná živnost.\nVýroba lihovin je také živnost, jen přísněji regulovaná. Pro podnikání v ní platí zvláštní podmínky a koncese.\nKde to najdu: Živnostenský zákon § 2 (definice živnosti) a § 3 (činnosti, které živností nejsou)."
+    },
+    {
+      "q": "V případě smlouvy o dílo platí tyto povinnosti:",
+      "opts": [
+        "povinnost zhotovitele provést na svůj náklad a nebezpečí pro objednatele dílo",
+        "povinnost objednatele převzít dílo vždy osobně",
+        "povinnost objednatele zaplatit cenu díla",
+        "povinnost stran stanovit ve smlouvě místo plnění",
+        "povinnost objednatele převzít dílo"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "info": "Pojem: Smlouvou o dílo se zhotovitel zavazuje provést dílo a objednatel se zavazuje dílo převzít a zaplatit cenu (§ 2586 OZ).\nZhotovitel provádí dílo na svůj náklad a nebezpečí. Obstará materiál a nese riziko, dokud dílo nepředá.\nObjednatel má dvě základní povinnosti: řádně provedené dílo převzít a zaplatit za něj cenu. Převzít dílo může i jeho zástupce, osobní převzetí zákon nevyžaduje.\nMísto plnění strany ve smlouvě stanovit nemusí. Když ho neurčí, doplní ho zákon.\nKde to najdu: Občanský zákoník § 2586 odst. 1 (smlouva o dílo, základní ustanovení) a § 2605 (objednatel převezme dokončené dílo)."
+    },
+    {
+      "q": "Společnost vzniká dnem:",
+      "opts": [
+        "žádná správně",
+        "podpisu společenské smlouvy",
+        "ke kterému byla zapsána do podnikového rejstříku",
+        "který se může lišit ode dne jejího založení",
+        "účinnosti společenské smlouvy"
+      ],
+      "correct": [
+        3
+      ],
+      "info": "Pojem: Založení a vznik společnosti jsou dvě různé chvíle. Založení je uzavření společenské smlouvy, vznik je zápis do obchodního rejstříku.\nPodle § 126 OZ vzniká právnická osoba dnem zápisu do veřejného rejstříku. U obchodních společností je to obchodní rejstřík.\nZaložení předchází zápisu, a proto se den vzniku ode dne založení obvykle liší.\nPodpisem ani účinností společenské smlouvy společnost nevzniká, jen se tím zakládá (§ 123 OZ). Rejstřík, do kterého se společnost zapisuje, se jmenuje obchodní, ne podnikový.\nKde to najdu: Občanský zákoník § 126 odst. 1 (právnická osoba vzniká dnem zápisu do veřejného rejstříku) a § 123 (zakladatelské právní jednání)."
+    },
+    {
+      "q": "Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje:",
+      "opts": [
+        "vždy",
+        "chce-li zřídit provozovnu",
+        "jestliže výše jejích výnosů nebo příjmů za 2 po sobě bezprostředně následující účetní období je extrémně nízká (pod 100 000 Kč)",
+        "jestliže výše jejích výnosů nebo příjmů za 2 po sobě bezprostředně následující účetní období je extrémně vysoká (nad 120 000 000 Kč)",
+        "chce-li zřídit odštěpný závod"
+      ],
+      "correct": [
+        3,
+        4
+      ],
+      "info": "Pojem: Fyzická osoba - podnikatel se do obchodního rejstříku zapisuje jen v případech, které stanoví zákon, nebo na vlastní žádost.\nPovinně se zapisuje podnikatel, jehož výnosy nebo příjmy dosáhly za 2 po sobě jdoucí účetní období v průměru 120 000 000 Kč (§ 45 zákona o veřejných rejstřících).\nOdštěpný závod je pobočka zapsaná do obchodního rejstříku (§ 503 OZ). Kdo ho chce zřídit, musí být v rejstříku zapsán i sám.\nProvozovna se oznamuje živnostenskému úřadu, ne rejstříku. Nízké výnosy k zápisu nevedou a zápis není povinný vždy.\nKde to najdu: Občanský zákoník § 503 odst. 2 (odštěpný závod se zapisuje do obchodního rejstříku)."
+    },
+    {
+      "q": "Splnění závazku:",
+      "opts": [
+        "může mít podobu narovnání",
+        "může mít podobu prodlení",
+        "musí nastat v místě plnění stanoveném smlouvou nebo zákonem",
+        "může být realizováno formou směnky nebo šeku",
+        "musí nastat včas (tedy bez prodlení)"
+      ],
+      "correct": [
+        2,
+        3,
+        4
+      ],
+      "info": "Pojem: Splnění je nejběžnější způsob zániku závazku. Dlužník poskytne věřiteli, co mu dluží (§ 1908 OZ).\nPlnit se musí na místě určeném smlouvou nebo zákonem. Peněžité dluhy se plní v sídle věřitele, nepeněžité v sídle dlužníka.\nPlnit se musí včas, jinak nastává prodlení. Prodlení není forma splnění, je to porušení povinnosti plnit včas.\nPlatit lze i směnkou nebo šekem. Věřitel se má nejdřív pokusit dosáhnout zaplacení přes tento prostředek (§ 1909 OZ).\nNarovnání je samostatný způsob zániku závazku. Strany jím nahradí sporný závazek novým (§ 1903 OZ), dluh se tedy nesplní.\nKde to najdu: Občanský zákoník § 1908 (splnění včas), § 1909 (placení směnkou nebo šekem), § 1954 (místo plnění) a § 1903 (narovnání)."
+    },
+    {
+      "q": "Obecné podmínky provozování živnosti zahrnují:",
+      "opts": [
+        "příčetnost",
+        "plnou svéprávnost (nebo přivolení soudu)",
+        "výborný školní prospěch (nebo souhlas rodiče)",
+        "odhodlanost",
+        "ziskovost"
+      ],
+      "correct": [
+        1
+      ],
+      "info": "Pojem: Všeobecné podmínky provozování živnosti platí pro každou živnost (§ 6 ŽZ). Jsou to plná svéprávnost a bezúhonnost.\nPlnou svéprávnost získá člověk zletilostí. Nezletilý může podnikat, když mu zákonný zástupce dá souhlas a soud souhlas přivolí (§ 33 OZ).\nPříčetnost je trestněprávní pojem, živnostenský zákon vyžaduje svéprávnost. Školní prospěch podmínkou není.\nZiskovost ani odhodlanost podmínkou nejsou. Podnikatel může být i ve ztrátě.\nKde to najdu: Živnostenský zákon § 6 (všeobecné podmínky). Přivolení soudu k podnikání nezletilého je v občanském zákoníku § 33."
+    },
+    {
+      "q": "Sídlo podnikatele:",
+      "opts": [
+        "musí být v případě právnické osoby uvedeno v zakladatelském právním jednání v úplné podobě celé adresy",
+        "nemůže být umístěno v bytě",
+        "není nezbytným znakem podnikatele",
+        "nemusí být v případě právnické osoby uvedeno v zakladatelském právním jednání",
+        "je primárně určeno adresou zapsanou ve veřejném rejstříku (je-li v něm podnikatel zapsán)"
+      ],
+      "correct": [
+        4
+      ],
+      "info": "Pojem: Sídlo je adresa, ke které je podnikatel právně připoután. Má ho každý podnikatel a zapisuje se do rejstříku.\nJe-li podnikatel zapsán ve veřejném rejstříku, rozhoduje adresa zapsaná v něm (§ 429 OZ). Třetí osoby se na ni mohou spolehnout.\nZakladatelské právní jednání sídlo uvést musí, stačí ale název obce (§ 136 OZ). Plnou adresu zapíše až rejstřík.\nSídlo může být i v bytě, pokud to nenaruší klid a pořádek v domě. Sídlo je nezbytným údajem každého podnikatele.\nKde to najdu: Občanský zákoník § 429 odst. 1 (sídlo podnikatele se určí adresou zapsanou ve veřejném rejstříku) a § 136 (sídlo může být i v bytě, v zakladatelském jednání postačí název obce)."
     }
   ],
   "sets": [
@@ -2141,7 +2259,9 @@
         95,
         100,
         102,
-        106
+        106,
+        139,
+        144
       ]
     },
     {
@@ -2153,7 +2273,8 @@
         42,
         60,
         85,
-        99
+        99,
+        142
       ]
     },
     {
@@ -2201,7 +2322,8 @@
         101,
         118,
         123,
-        136
+        136,
+        145
       ]
     },
     {
@@ -2237,7 +2359,8 @@
         115,
         120,
         131,
-        134
+        134,
+        141
       ]
     },
     {
@@ -2254,7 +2377,8 @@
         80,
         93,
         94,
-        105
+        105,
+        138
       ]
     },
     {
@@ -2294,7 +2418,9 @@
         127,
         128,
         129,
-        130
+        130,
+        140,
+        143
       ]
     },
     {

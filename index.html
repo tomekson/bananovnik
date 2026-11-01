@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.70">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.71">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2346,7 +2346,8 @@ const TESTS_REGISTRY = [
     questionCount: 247,
     hasSets: true,
     retired: true,
-    retiredAt: '2026-09-19'
+    retiredAt: '2026-09-19',
+    prevYear: true // předmět 1. ročníku, splněný až v září
   },
   {
     id: 'etika-spolecenska-odpovednost',
@@ -2575,7 +2576,7 @@ function renderDashboard(query) {
   // nesplněné, pak splněné v aktuálním ročníku, pak předchozí ročník; mezi sebou od naposledy splněného
   const now = new Date();
   const yearStart = `${now.getMonth() >= 8 ? now.getFullYear() : now.getFullYear() - 1}-09-01`;
-  const isOld = t => t.retired && (t.retiredAt || '') < yearStart;
+  const isOld = t => t.retired && (t.prevYear || (t.retiredAt || '') < yearStart);
   const group = t => !t.retired ? 0 : isOld(t) ? 2 : 1;
   const sorted = [...TESTS_REGISTRY].sort((a, b) =>
     group(a) - group(b)
@@ -4590,7 +4591,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.70';
+const APP_VERSION = '10.71';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

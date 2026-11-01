@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.69">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.70">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -740,6 +740,13 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
   font: inherit; font-size: 13px; font-weight: 600; color: var(--amber);
 }
 .dash-card-badge--draft { color: var(--amber); background: var(--amber-bg); }
+.dash-card-badge--done { color: var(--green); background: var(--green-bg); }
+.dash-card--done { border-color: color-mix(in oklab, var(--green) 35%, transparent); }
+.dash-card--done .dash-card-sets { color: var(--green); }
+.dash-group-heading {
+  font-size: 12px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted);
+  margin-top: 14px; padding-top: 14px; border-top: 1.5px solid var(--line2);
+}
 .draft-note { color: var(--amber); font-weight: 700; }
 .dash-empty { font-size: 14px; color: var(--muted); }
 .dash-search-wrap { position: relative; }
@@ -1190,6 +1197,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
 [data-theme=dark] .dash-card::before,
 [data-theme=dark] #preset-exam::before { background: rgba(255,255,255,.04); }
 [data-theme=dark] .dash-card-badge { background: rgba(255,255,255,.08); }
+[data-theme=dark] .dash-card-badge--done { background: var(--green-bg); }
 [data-theme=dark] .badge-pass { border-color: color-mix(in oklab, var(--green) 30%, transparent); }
 [data-theme=dark] .badge-fail { border-color: color-mix(in oklab, var(--red) 30%, transparent); }
 [data-theme=dark] .exam-note-pass { border-color: color-mix(in oklab, var(--green) 25%, transparent); }
@@ -2564,21 +2572,33 @@ function renderDashboard(query) {
     container.innerHTML = '<div class="dash-empty">Žádné testy k dispozici.</div>';
     return;
   }
-  // splněné za nesplněné, mezi sebou od naposledy splněného
+  // nesplněné, pak splněné v aktuálním ročníku, pak předchozí ročník; mezi sebou od naposledy splněného
+  const now = new Date();
+  const yearStart = `${now.getMonth() >= 8 ? now.getFullYear() : now.getFullYear() - 1}-09-01`;
+  const isOld = t => t.retired && (t.retiredAt || '') < yearStart;
+  const group = t => !t.retired ? 0 : isOld(t) ? 2 : 1;
   const sorted = [...TESTS_REGISTRY].sort((a, b) =>
-    (a.retired ? 1 : 0) - (b.retired ? 1 : 0)
+    group(a) - group(b)
     || (b.retiredAt || '').localeCompare(a.retiredAt || ''));
   const filtered = sorted.filter(t => testMatchesQuery(t, q));
   if (!filtered.length) {
     container.innerHTML = '<div class="dash-empty">Žádný test neodpovídá hledání.</div>';
     return;
   }
+  const isSearching = q.length > 0;
+  let prevGroup = 0;
   filtered.forEach(t => {
+    if (!isSearching && group(t) !== prevGroup && group(t) > 0) {
+      const sep = document.createElement('div');
+      sep.className = 'dash-group-heading';
+      sep.textContent = group(t) === 1 ? 'Splněno v tomto ročníku' : 'Předchozí ročník';
+      container.appendChild(sep);
+    }
+    prevGroup = group(t);
     const card = document.createElement('button');
-    const isSearching = q.length > 0;
-    card.className = 'dash-card' + (!isSearching && t.retired ? ' dash-card--retired' : '');
+    card.className = 'dash-card' + (isSearching || !t.retired ? '' : isOld(t) ? ' dash-card--retired' : ' dash-card--done');
     const badge = isSearching ? ''
-      : t.retired ? `<div class="dash-card-badge">✓ Splněno</div>`
+      : t.retired ? `<div class="dash-card-badge${isOld(t) ? '' : ' dash-card-badge--done'}">✓ Splněno</div>`
       : t.survey  ? `<div class="dash-card-badge dash-card-badge--draft">Nepovinný dotazník</div>`
       : t.draft   ? `<div class="dash-card-badge dash-card-badge--draft">Pracovní verze</div>`
       : '';
@@ -4570,7 +4590,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.69';
+const APP_VERSION = '10.70';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

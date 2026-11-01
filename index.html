@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.73">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.74">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2944,13 +2944,23 @@ function updateQTopBtn() {
     && qt.getBoundingClientRect().bottom < (hdr ? hdr.getBoundingClientRect().bottom : 0);
   btn.classList.toggle('visible', show);
 }
-// Návrat k otázce zároveň zavře Teorii
+// Návrat k otázce: nejdřív dojet nahoru, pak zavřít Teorii (scrollend, záloha časovačem)
 function scrollToQuestion() {
-  if (preInfoQ) {
-    preInfoQ = null;
-    if (document.getElementById('screen-study').classList.contains('active')) renderStudy(); else renderQ();
-  }
-  updateQTopBtn();
+  const q = preInfoQ;
+  let done = false;
+  const close = () => {
+    if (done) return;
+    done = true;
+    window.removeEventListener('scrollend', close);
+    if (q && preInfoQ === q) {
+      preInfoQ = null;
+      if (document.getElementById('screen-study').classList.contains('active')) renderStudy(); else renderQ();
+    }
+    updateQTopBtn();
+  };
+  if (window.scrollY <= 0) { close(); return; }
+  window.addEventListener('scrollend', close);
+  setTimeout(close, 1000);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -4628,7 +4638,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.73';
+const APP_VERSION = '10.74';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

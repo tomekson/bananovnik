@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.77">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.78">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1180,9 +1180,10 @@ a.dash-card { display: flex; align-items: center; gap: 14px; text-decoration: no
 .skola-ev-dl--soon { background: var(--amber-bg); color: var(--amber); }
 .skola-ev-dl--urgent { background: var(--red-bg); color: var(--red); }
 .skola-past { text-decoration: line-through; opacity: .6; }
-.skola-akce-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.skola-split { display: flex; flex-direction: column; align-items: stretch; cursor: default; }
+.skola-split-main { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; cursor: pointer; }
+.skola-split-link { align-self: flex-start; margin: 4px 0 -6px 38px; }
 .skola-ev-link { display: inline-block; margin-top: 8px; padding: 6px 0; font-size: 13px; font-weight: 700; color: var(--primary); text-decoration: none; }
-.skola-akce-head .skola-ev-link { margin-top: 0; }
 .skola-ev-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .skola-foot { font-size: 12px; color: var(--muted); line-height: 1.5; }
 
@@ -1307,7 +1308,7 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
     </div>
     <p class="skola-intro" id="skola-intro"></p>
     <div class="skola-links" id="skola-links"><div class="dash-empty">Načítám rozcestník…</div></div>
-    <div class="skola-akce-head"><div class="dash-heading" id="skola-akce">Termíny akcí</div><a class="skola-ev-link" id="skola-akce-all" href="https://www.vsem.cz/harmonogram-akci-vsem.html" target="_blank" rel="noopener" hidden>Harmonogram akcí VŠEM ↗</a></div>
+    <div class="dash-heading" id="skola-akce">Přehled nejbližších akcí</div>
     <div class="skola-akce" id="skola-akce-list"></div>
     <p class="skola-foot" id="skola-foot"></p>
   </div>
@@ -3956,8 +3957,9 @@ function renderSkola(d) {
     const inner = `<span class="skola-ico" aria-hidden="true">${skolaEsc(q.icon)}</span>
       <span class="skola-txt"><span class="dash-card-title">${skolaEsc(q.label)}</span>${q.note ? `<span class="dash-card-sub" style="display:block">${skolaEsc(q.note)}</span>` : ''}</span>
       <span class="skola-arrow" aria-hidden="true">${q.url.startsWith('#') ? '↓' : '↗'}</span>`;
+    // karta s kotvou (Termíny akcí): hlavní plocha posune na přehled, pod ní odkaz na harmonogram na vsem.cz
     return q.url.startsWith('#')
-      ? `<a class="dash-card" href="${skolaEsc(q.url)}" onclick="document.getElementById('${skolaEsc(q.url.slice(1))}').scrollIntoView({behavior:'smooth'});return false">${inner}</a>`
+      ? `<div class="dash-card skola-split"><a class="skola-split-main" href="${skolaEsc(q.url)}" onclick="document.getElementById('${skolaEsc(q.url.slice(1))}').scrollIntoView({behavior:'smooth'});return false">${inner}</a>${d.akceUrl ? `<a class="skola-ev-link skola-split-link" href="${skolaEsc(d.akceUrl)}" target="_blank" rel="noopener">Harmonogram akcí VŠEM ↗</a>` : ''}</div>`
       : `<a class="dash-card" href="${skolaEsc(q.url)}" target="_blank" rel="noopener">${inner}</a>`;
   }).join('');
 
@@ -3981,8 +3983,6 @@ function renderSkola(d) {
       ${a.url ? `<a class="skola-ev-link" href="${skolaEsc(a.url)}" target="_blank" rel="noopener">Detail na vsem.cz ↗</a>` : ''}
     </div>`;
   }).join('') || '<div class="dash-empty">Žádné nadcházející akce.</div>';
-  const all = document.getElementById('skola-akce-all');
-  if (d.akceUrl) { all.href = d.akceUrl; all.hidden = false; }
   document.getElementById('skola-foot').textContent =
     `Data ověřena ${new Date(d.updated + 'T12:00:00').toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' })}. Přihlašování a odhlašování vždy ověř v SIS, platí to, co je tam.`;
 }
@@ -4754,7 +4754,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.77';
+const APP_VERSION = '10.78';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

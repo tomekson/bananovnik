@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.79">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.80">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2753,9 +2753,20 @@ function formatDate(iso) {
   return d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
+// Favicon: na rozcestníku pin z jeho CTA (Noto Emoji), jinde banán
+const FAVICON_DEFAULT = BASE + 'favicon.svg';
+function setFavicon(id) {
+  const link = document.querySelector('link[rel="icon"]');
+  const pin = document.querySelector('.skola-cta .ic-pin');
+  if (!link) return;
+  const href = id === 'screen-skola' && pin ? 'data:image/svg+xml,' + encodeURIComponent(pin.outerHTML) : FAVICON_DEFAULT;
+  if (link.getAttribute('href') !== href) link.setAttribute('href', href);
+}
+
 function show(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+  setFavicon(id);
   window.scrollTo(0, 0);
   updateDocTitle(id);
   if (typeof onScreenChange === 'function') onScreenChange(id);
@@ -4754,7 +4765,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.79';
+const APP_VERSION = '10.80';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

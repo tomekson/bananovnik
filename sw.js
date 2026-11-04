@@ -1,5 +1,5 @@
-const CACHE = 'bananovnik-v10.74';
-const CORE = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png'];
+const CACHE = 'bananovnik-v10.75';
+const CORE = ['./', './index.html', './manifest.json', './favicon.svg', './icon-180.png', './skola.json'];
 const TEST_FILES = ['./tests/management-lidskych-zdroju.json', './tests/inovace-prednaska-2026-10-17.json', './tests/pravo-v-praxi.json', './tests/belbin.json', './tests/inovace.json', './tests/manazerska-ekonomie.json', './tests/komunikace.json', './tests/management.json', './tests/management-stare.json', './tests/manazerske-dovednosti.json', './tests/anglicky-jazyk.json', './tests/projektove-rizeni.json'];
 
 self.addEventListener('install', e => {

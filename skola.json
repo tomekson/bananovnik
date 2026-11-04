@@ -1,0 +1,160 @@
+{
+ "updated": "2026-11-04",
+ "intro": "Rozcestník do školních systémů VŠEM. Odkazy vedou do SIS a Portálu studenta, přihlas se svým účtem.",
+ "quick": [
+  {
+   "label": "Teams kódy",
+   "icon": "🔑",
+   "url": "https://portal.vsem.cz/ioxoLckLdP4NNIruV2r9",
+   "note": "Portál studenta → Zobrazit rozvrh → Přehled zapsaných předmětů, sloupec Přístupový kód do MS Teams."
+  },
+  {
+   "label": "Přihlásit se na školní akci",
+   "icon": "✍️",
+   "url": "https://sis.vsem.cz/sfsis/cs_CZ/EventsCalendarSigning/saveParametersToSess/type/signable/user/",
+   "note": "PA, semináře, Hosté VŠEM, Skill-Port, ateliéry. Odhlášení: záložka Administrativní přehled studenta."
+  },
+  {
+   "label": "Přihlášení na zkoušky",
+   "icon": "📝",
+   "url": "https://sis.vsem.cz/sis/vysoka-skola/infosystem-sis/zkousky/",
+   "note": "Přehled zkouškových termínů → sloupec Akce. Tam se i odhlásíš."
+  },
+  {
+   "label": "Online docházka",
+   "icon": "🟢",
+   "url": "https://sis.vsem.cz/sfsis/VideoForum?param=https://teams.microsoft.com",
+   "note": "Na videocvičení zapni ON, na konci OFF. Bez registrace se účast nezapočte."
+  },
+  {
+   "label": "Zkouškové testy",
+   "icon": "📊",
+   "url": "https://sis.vsem.cz/sis/vysoka-skola/infosystem-sis/soubory-uchazece-studenta/?id_file_category=19",
+   "note": "Soubory uchazeče/studenta → Zkouškové a zápočtové testy → Přehled."
+  },
+  {
+   "label": "eIndex",
+   "icon": "🎓",
+   "url": "https://sis.vsem.cz/sis/vysoka-skola/infosystem-sis/e-index/",
+   "note": "Známky, body a ECTS."
+  },
+  {
+   "label": "Termíny akcí",
+   "icon": "🗓️",
+   "url": "#skola-akce",
+   "note": "Vybrané akce VŠEM s termínem přihlášení."
+  }
+ ],
+ "akce": [
+  {
+   "title": "PA Agentic Company: Navrhni firmu pro éru AI",
+   "who": "Brzák",
+   "dates": [
+    "2026-11-02",
+    "2026-11-09",
+    "2026-11-23",
+    "2026-11-30"
+   ],
+   "time": "14:00–17:00",
+   "mode": "osobně"
+  },
+  {
+   "title": "Skill-Port: Moje Vize Nula",
+   "who": "Barbora Lindnerová",
+   "dates": [
+    "2026-11-10"
+   ],
+   "time": "17:30–18:30",
+   "mode": "osobně"
+  },
+  {
+   "title": "Skill-Port: AI v praxi | jak s ní reálně pracovat v byznysu",
+   "dates": [
+    "2026-11-12"
+   ],
+   "time": "17:30–19:00",
+   "mode": "osobně",
+   "note": "Odhlášení podle popisu akce."
+  },
+  {
+   "title": "Advertising Night VŠEM | Christmas Edition",
+   "who": "Stromko, Matoušek, Abraham",
+   "dates": [
+    "2026-12-10"
+   ],
+   "time": "17:30–19:30",
+   "mode": "osobně",
+   "note": "Jde odevzdat esej nebo aplikační studii. Docházku zaregistruj studentským průkazem."
+  },
+  {
+   "title": "Seminář Formální náležitosti závěrečných prací",
+   "who": "Ing. Dana Stará",
+   "dates": [
+    "2026-11-12"
+   ],
+   "time": "18:00–20:00",
+   "mode": "online",
+   "note": "Relevantní pro BPR.",
+   "signupUntil": "2026-11-11 23:59"
+  },
+  {
+   "title": "Seminář BPR",
+   "dates": [
+    "2026-11-21"
+   ],
+   "time": "17:00–18:00",
+   "mode": "online",
+   "note": "Stačí jeden termín. Podmínka pro Klauzurní práci.",
+   "signupUntil": "2026-11-20 23:59"
+  },
+  {
+   "title": "Seminář BPR (alternativní termín)",
+   "dates": [
+    "2026-12-10"
+   ],
+   "time": "15:00–16:00",
+   "mode": "online",
+   "note": "Stačí jeden termín.",
+   "signupUntil": "2026-12-09 23:59"
+  },
+  {
+   "title": "Ateliér: Osobní brand jako zdroj vaší kariéry",
+   "who": "Čejka",
+   "dates": [
+    "2026-11-26",
+    "2026-12-01",
+    "2026-12-08"
+   ],
+   "time": "17:30–20:30",
+   "mode": "osobně",
+   "note": "Jedna akce o 3 lekcích, málo míst.",
+   "signupUntil": "2026-11-25 23:59"
+  },
+  {
+   "title": "Ateliér: Od nápadu k fungujícímu projektu",
+   "who": "Oukde",
+   "dates": [
+    "2026-12-02",
+    "2027-04-14",
+    "2027-06-02"
+   ],
+   "time": "17:30–20:30",
+   "mode": "osobně",
+   "note": "Málo míst.",
+   "signupUntil": "2026-11-29 12:00"
+  },
+  {
+   "title": "Ateliér vlivu: Od influencerů k vlastnímu hlasu",
+   "who": "Jakub Mařík",
+   "dates": [
+    "2027-03-23",
+    "2027-03-30",
+    "2027-04-06"
+   ],
+   "time": "17:30–20:30",
+   "mode": "osobně",
+   "note": "Přihlašování už běží, 10 míst.",
+   "signupUntil": "2027-03-22 23:59"
+  }
+ ]
+}

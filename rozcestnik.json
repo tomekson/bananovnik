@@ -45,21 +45,11 @@
    "note": "Vybrané akce VŠEM s termínem přihlášení."
   }
  ],
- "akceUrl": "https://www.vsem.cz/harmonogram-akci-vsem.html",
+ "akceLink": {
+  "label": "Všechny akce k přihlášení v SIS",
+  "url": "https://sis.vsem.cz/sfsis/cs_CZ/EventsCalendarSigning/saveParametersToSess/type/signable/user/"
+ },
  "akce": [
-  {
-   "title": "PA Agentic Company: Navrhni firmu pro éru AI",
-   "who": "Brzák",
-   "dates": [
-    "2026-11-02",
-    "2026-11-09",
-    "2026-11-23",
-    "2026-11-30"
-   ],
-   "time": "14:00–17:00",
-   "mode": "osobně",
-   "url": "https://www.vsem.cz/pokyny-pro-pa.html"
-  },
   {
    "title": "Skill-Port: Moje Vize Nula",
    "who": "Barbora Lindnerová",

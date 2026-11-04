@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
 <link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.78">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.79">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -3959,12 +3959,12 @@ function renderSkola(d) {
       <span class="skola-arrow" aria-hidden="true">${q.url.startsWith('#') ? '↓' : '↗'}</span>`;
     // karta s kotvou (Termíny akcí): hlavní plocha posune na přehled, pod ní odkaz na harmonogram na vsem.cz
     return q.url.startsWith('#')
-      ? `<div class="dash-card skola-split"><a class="skola-split-main" href="${skolaEsc(q.url)}" onclick="document.getElementById('${skolaEsc(q.url.slice(1))}').scrollIntoView({behavior:'smooth'});return false">${inner}</a>${d.akceUrl ? `<a class="skola-ev-link skola-split-link" href="${skolaEsc(d.akceUrl)}" target="_blank" rel="noopener">Harmonogram akcí VŠEM ↗</a>` : ''}</div>`
+      ? `<div class="dash-card skola-split"><a class="skola-split-main" href="${skolaEsc(q.url)}" onclick="document.getElementById('${skolaEsc(q.url.slice(1))}').scrollIntoView({behavior:'smooth'});return false">${inner}</a>${d.akceLink ? `<a class="skola-ev-link skola-split-link" href="${skolaEsc(d.akceLink.url)}" target="_blank" rel="noopener">${skolaEsc(d.akceLink.label)} ↗</a>` : ''}</div>`
       : `<a class="dash-card" href="${skolaEsc(q.url)}" target="_blank" rel="noopener">${inner}</a>`;
   }).join('');
 
-  const akce = d.akce.map(a => ({ ...a, next: a.dates.find(x => skolaDays(x) >= 0) }))
-    .filter(a => a.next).sort((x, y) => x.next.localeCompare(y.next) || (x.time || '').localeCompare(y.time || ''));
+  // akce, která už začala, se skryje: na vícedílné akce se dá jít jen en bloc
+  const akce = d.akce.filter(a => skolaDays(a.dates[0]) >= 0).map(a => ({ ...a, next: a.dates[0] })).sort((x, y) => x.next.localeCompare(y.next) || (x.time || '').localeCompare(y.time || ''));
   document.getElementById('skola-akce-list').innerHTML = akce.map(a => {
     let dl = '';
     if (a.signupUntil) {
@@ -4754,7 +4754,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.78';
+const APP_VERSION = '10.79';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

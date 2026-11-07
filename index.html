@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.85">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.86">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1200,6 +1200,9 @@ a.dash-card { display: flex; align-items: center; gap: 14px; text-decoration: no
 .skola-split { display: flex; flex-direction: column; align-items: stretch; cursor: default; }
 .skola-split-main { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; cursor: pointer; }
 .skola-split-link { align-self: flex-start; margin: 4px 0 -6px 38px; }
+.skola-split-static { cursor: default; }
+.skola-steps { list-style: none; margin: 4px 0 -6px 38px; padding: 0; display: flex; flex-direction: column; align-items: flex-start; }
+.skola-steps .skola-ev-link { margin-top: 0; }
 .skola-ev-link { display: inline-block; margin-top: 8px; padding: 6px 0; font-size: 13px; font-weight: 700; color: var(--primary); text-decoration: none; }
 .skola-ev-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .skola-foot { font-size: 12px; color: var(--muted); line-height: 1.5; }
@@ -3984,7 +3987,9 @@ function renderSkola(d) {
   document.getElementById('skola-links').innerHTML = d.quick.map(q => {
     const inner = `<span class="skola-ico" aria-hidden="true">${skolaEsc(q.icon)}</span>
       <span class="skola-txt"><span class="dash-card-title">${skolaEsc(q.label)}</span>${q.note ? `<span class="dash-card-sub" style="display:block">${skolaEsc(q.note)}</span>` : ''}</span>
-      <span class="skola-arrow" aria-hidden="true">${q.url.startsWith('#') ? '↓' : '↗'}</span>`;
+      ${q.steps ? '' : `<span class="skola-arrow" aria-hidden="true">${q.url.startsWith('#') ? '↓' : '↗'}</span>`}`;
+    // karta s kroky (Teams kódy): portál nepřihlášenému neukáže přehled, proto nejdřív přihlášení, pak cílová stránka
+    if (q.steps) return `<div class="dash-card skola-split"><div class="skola-split-main skola-split-static">${inner}</div><ol class="skola-steps">${q.steps.map((s, i) => `<li><a class="skola-ev-link" href="${skolaEsc(s.url)}" target="_blank" rel="noopener">${i + 1}. ${skolaEsc(s.label)} ↗</a></li>`).join('')}</ol></div>`;
     // karta s kotvou (Termíny akcí): hlavní plocha posune na přehled, pod ní odkaz na harmonogram na vsem.cz
     return q.url.startsWith('#')
       ? `<div class="dash-card skola-split"><a class="skola-split-main" href="${skolaEsc(q.url)}" onclick="document.getElementById('${skolaEsc(q.url.slice(1))}').scrollIntoView({behavior:'smooth'});return false">${inner}</a>${d.akceLink ? `<a class="skola-ev-link skola-split-link" href="${skolaEsc(d.akceLink.url)}" target="_blank" rel="noopener">${skolaEsc(d.akceLink.label)} ↗</a>` : ''}</div>`
@@ -4783,7 +4788,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.85';
+const APP_VERSION = '10.86';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

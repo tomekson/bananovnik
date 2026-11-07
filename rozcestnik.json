@@ -5,16 +5,15 @@
   {
    "label": "Teams kódy",
    "icon": "🔑",
-   "url": "https://portal.vsem.cz/ioxoLckLdP4NNIruV2r9",
-   "note": "Portál studenta → Zobrazit rozvrh → Přehled zapsaných předmětů, sloupec Přístupový kód do MS Teams.",
+   "url": "https://portal.vsem.cz/student",
+   "personal": "teams",
    "steps": [
     {
      "label": "Přihlas se do Portálu studenta",
      "url": "https://portal.vsem.cz/student"
     },
     {
-     "label": "Otevři přehled kódů Teams",
-     "url": "https://portal.vsem.cz/ioxoLckLdP4NNIruV2r9"
+     "label": "V portálu klikni na Zobrazit rozvrh → Přehled zapsaných předmětů. Kódy jsou ve sloupci Přístupový kód do MS Teams."
     }
    ]
   },

@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.86">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.87">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -1203,6 +1203,16 @@ a.dash-card { display: flex; align-items: center; gap: 14px; text-decoration: no
 .skola-split-static { cursor: default; }
 .skola-steps { list-style: none; margin: 4px 0 -6px 38px; padding: 0; display: flex; flex-direction: column; align-items: flex-start; }
 .skola-steps .skola-ev-link { margin-top: 0; }
+.skola-step-txt { display: block; padding: 6px 0; font-size: 13px; color: var(--dim); line-height: 1.45; }
+.skola-btn-link { background: none; border: 0; font-family: inherit; cursor: pointer; text-align: left; }
+.skola-save { margin: 10px 0 -6px 38px; font-size: 13px; color: var(--dim); line-height: 1.45; }
+.skola-save summary { width: fit-content; padding: 6px 0; font-weight: 700; color: var(--primary); cursor: pointer; }
+.skola-save p { margin: 4px 0 8px; }
+.skola-save form { display: flex; gap: 8px; margin-bottom: 8px; }
+.skola-save input { flex: 1; min-width: 0; padding: 9px 12px; font-family: inherit; font-size: 16px; line-height: 1.2; color: var(--text); background: var(--card); border: 1.5px solid var(--line2); border-radius: 10px; outline: none; }
+.skola-save input:focus { border-color: var(--primary); }
+.skola-save button { flex: none; padding: 9px 16px; font-family: inherit; font-size: 14px; font-weight: 700; color: var(--bg); background: var(--primary); border: 0; border-radius: 10px; cursor: pointer; }
+.skola-save-err { color: var(--red); }
 .skola-ev-link { display: inline-block; margin-top: 8px; padding: 6px 0; font-size: 13px; font-weight: 700; color: var(--primary); text-decoration: none; }
 .skola-ev-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .skola-foot { font-size: 12px; color: var(--muted); line-height: 1.5; }
@@ -3961,7 +3971,37 @@ const skolaEsc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '
 const skolaDays = d => Math.round((new Date(d + 'T12:00:00') - new Date(new Date().toDateString() + ' 12:00')) / 86400000);
 const skolaDate = d => new Date(d + 'T12:00:00').toLocaleDateString('cs-CZ', { weekday: 'short', day: 'numeric', month: 'numeric' });
 const skolaIn = n => n === 0 ? 'dnes' : n === 1 ? 'zítra' : `za ${n} ${n <= 4 ? 'dny' : 'dní'}`;
-let skolaLoaded = false;
+let skolaLoaded = false, skolaData = null;
+
+// Osobní odkaz na přehled v Portálu studenta: adresa s login_RecID funguje i bez přihlášení jako klíč,
+// proto na web nepatří. Student si ho uloží jen do svého prohlížeče (localStorage), nikam se neposílá.
+const SKOLA_PERSONAL = {
+  teams: {
+    store: 'bananovnik-rz-teams-url',
+    ok: u => u.protocol === 'https:' && u.hostname === 'portal.vsem.cz' && /^rec[A-Za-z0-9]{14}$/.test(u.searchParams.get('login_RecID') || ''),
+  },
+};
+const skolaPersonalGet = id => { try { return localStorage.getItem(SKOLA_PERSONAL[id].store) || ''; } catch (e) { return ''; } };
+
+function skolaPersonalSave(e, id) {
+  e.preventDefault();
+  const form = e.target, err = form.nextElementSibling;
+  let u = null;
+  try { u = new URL(form.elements.u.value.trim()); } catch (x) {}
+  if (!u || !SKOLA_PERSONAL[id].ok(u)) {
+    err.textContent = 'Tohle není adresa tvého přehledu z Portálu studenta. Zkopíruj celou adresu z adresního řádku, až budeš na přehledu zapsaných předmětů.';
+    err.hidden = false;
+    return;
+  }
+  try { localStorage.setItem(SKOLA_PERSONAL[id].store, u.href); }
+  catch (x) { err.textContent = 'Prohlížeč odkaz neuložil. V anonymním okně to nejde.'; err.hidden = false; return; }
+  renderSkola(skolaData);
+}
+
+function skolaPersonalForget(id) {
+  try { localStorage.removeItem(SKOLA_PERSONAL[id].store); } catch (e) {}
+  renderSkola(skolaData);
+}
 
 function openSkola(skipPush) {
   if (!skipPush) history.pushState({ skola: true }, '', BASE + 'rozcestnik/');
@@ -3983,13 +4023,26 @@ async function loadSkola() {
 }
 
 function renderSkola(d) {
+  skolaData = d;
   document.getElementById('skola-intro').textContent = d.intro || '';
   document.getElementById('skola-links').innerHTML = d.quick.map(q => {
-    const inner = `<span class="skola-ico" aria-hidden="true">${skolaEsc(q.icon)}</span>
-      <span class="skola-txt"><span class="dash-card-title">${skolaEsc(q.label)}</span>${q.note ? `<span class="dash-card-sub" style="display:block">${skolaEsc(q.note)}</span>` : ''}</span>
-      ${q.steps ? '' : `<span class="skola-arrow" aria-hidden="true">${q.url.startsWith('#') ? '↓' : '↗'}</span>`}`;
-    // karta s kroky (Teams kódy): portál nepřihlášenému neukáže přehled, proto nejdřív přihlášení, pak cílová stránka
-    if (q.steps) return `<div class="dash-card skola-split"><div class="skola-split-main skola-split-static">${inner}</div><ol class="skola-steps">${q.steps.map((s, i) => `<li><a class="skola-ev-link" href="${skolaEsc(s.url)}" target="_blank" rel="noopener">${i + 1}. ${skolaEsc(s.label)} ↗</a></li>`).join('')}</ol></div>`;
+    const card = (note, arrow) => `<span class="skola-ico" aria-hidden="true">${skolaEsc(q.icon)}</span>
+      <span class="skola-txt"><span class="dash-card-title">${skolaEsc(q.label)}</span>${note ? `<span class="dash-card-sub" style="display:block">${skolaEsc(note)}</span>` : ''}</span>
+      ${arrow ? `<span class="skola-arrow" aria-hidden="true">${arrow}</span>` : ''}`;
+    const personal = SKOLA_PERSONAL[q.personal] ? q.personal : '';
+    const saved = personal && skolaPersonalGet(personal);
+    // uložený osobní odkaz: karta otevře rovnou přehled studenta
+    if (saved) return `<div class="dash-card skola-split"><a class="skola-split-main" href="${skolaEsc(saved)}" target="_blank" rel="noopener">${card('Otevře tvůj uložený přehled. Odkaz je jen v tomhle prohlížeči.', '↗')}</a><button type="button" class="skola-ev-link skola-split-link skola-btn-link" onclick="skolaPersonalForget('${personal}')">Odebrat uložený odkaz</button></div>`;
+    // karta s kroky (Teams kódy): přehled kódů má každý student na vlastní adrese, kterou zná jen portál
+    if (q.steps) return `<div class="dash-card skola-split"><div class="skola-split-main skola-split-static">${card(q.note, '')}</div>
+      <ol class="skola-steps">${q.steps.map((s, i) => `<li>${s.url
+        ? `<a class="skola-ev-link" href="${skolaEsc(s.url)}" target="_blank" rel="noopener">${i + 1}. ${skolaEsc(s.label)} ↗</a>`
+        : `<span class="skola-step-txt">${i + 1}. ${skolaEsc(s.label)}</span>`}</li>`).join('')}</ol>
+      ${personal ? `<details class="skola-save"><summary>Zkratka: ulož si odkaz na svůj přehled</summary>
+        <p>Až budeš na přehledu zapsaných předmětů, zkopíruj adresu z adresního řádku a vlož ji sem. Uloží se jen v tomhle prohlížeči a nikam se neposílá. Příště tahle karta otevře rovnou tvoje kódy.</p>
+        <form onsubmit="skolaPersonalSave(event,'${personal}')"><input type="url" name="u" required placeholder="https://portal.vsem.cz/…" autocomplete="off" aria-label="Adresa tvého přehledu v Portálu studenta"><button type="submit">Uložit</button></form>
+        <p class="skola-save-err" role="alert" hidden></p></details>` : ''}</div>`;
+    const inner = card(q.note, q.url.startsWith('#') ? '↓' : '↗');
     // karta s kotvou (Termíny akcí): hlavní plocha posune na přehled, pod ní odkaz na harmonogram na vsem.cz
     return q.url.startsWith('#')
       ? `<div class="dash-card skola-split"><a class="skola-split-main" href="${skolaEsc(q.url)}" onclick="document.getElementById('${skolaEsc(q.url.slice(1))}').scrollIntoView({behavior:'smooth'});return false">${inner}</a>${d.akceLink ? `<a class="skola-ev-link skola-split-link" href="${skolaEsc(d.akceLink.url)}" target="_blank" rel="noopener">${skolaEsc(d.akceLink.label)} ↗</a>` : ''}</div>`
@@ -4788,7 +4841,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.86';
+const APP_VERSION = '10.87';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

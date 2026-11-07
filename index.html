@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.87">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.88">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -3989,7 +3989,7 @@ function skolaPersonalSave(e, id) {
   let u = null;
   try { u = new URL(form.elements.u.value.trim()); } catch (x) {}
   if (!u || !SKOLA_PERSONAL[id].ok(u)) {
-    err.textContent = 'Tohle není adresa tvého přehledu z Portálu studenta. Zkopíruj celou adresu z adresního řádku, až budeš na přehledu zapsaných předmětů.';
+    err.textContent = 'V odkazu chybí tvoje ID (login_RecID). Portál ho z adresního řádku hned smaže, proto zkopíruj odkaz přímo z tlačítka Zobrazit rozvrh v Portálu studenta.';
     err.hidden = false;
     return;
   }
@@ -4039,7 +4039,7 @@ function renderSkola(d) {
         ? `<a class="skola-ev-link" href="${skolaEsc(s.url)}" target="_blank" rel="noopener">${i + 1}. ${skolaEsc(s.label)} ↗</a>`
         : `<span class="skola-step-txt">${i + 1}. ${skolaEsc(s.label)}</span>`}</li>`).join('')}</ol>
       ${personal ? `<details class="skola-save"><summary>Zkratka: ulož si odkaz na svůj přehled</summary>
-        <p>Až budeš na přehledu zapsaných předmětů, zkopíruj adresu z adresního řádku a vlož ji sem. Uloží se jen v tomhle prohlížeči a nikam se neposílá. Příště tahle karta otevře rovnou tvoje kódy.</p>
+        <p>V Portálu studenta podrž prst na tlačítku Zobrazit rozvrh (na počítači klikni pravým tlačítkem) a zvol Kopírovat odkaz. Vlož ho sem. Adresní řádek nepomůže, portál z něj tvoje ID hned smaže.</p><p>Odkaz se uloží jen v tomhle prohlížeči a nikam se neposílá. Příště tahle karta otevře rovnou tvoje kódy.</p>
         <form onsubmit="skolaPersonalSave(event,'${personal}')"><input type="url" name="u" required placeholder="https://portal.vsem.cz/…" autocomplete="off" aria-label="Adresa tvého přehledu v Portálu studenta"><button type="submit">Uložit</button></form>
         <p class="skola-save-err" role="alert" hidden></p></details>` : ''}</div>`;
     const inner = card(q.note, q.url.startsWith('#') ? '↓' : '↗');
@@ -4841,7 +4841,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.87';
+const APP_VERSION = '10.88';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

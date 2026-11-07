@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.91">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.92">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2404,8 +2404,7 @@ const TESTS_REGISTRY = [
     updatedAt: '2026-10-21',
     questionCount: 54,
     hasSets: true,
-    hasAudio: true,
-    draft: true
+    hasAudio: true
   },
   {
     id: 'inovace-prednaska-2026-10-17',
@@ -4783,7 +4782,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.91';
+const APP_VERSION = '10.92';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

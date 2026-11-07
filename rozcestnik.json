@@ -6,19 +6,7 @@
    "label": "Teams kódy",
    "icon": "🔑",
    "url": "https://portal.vsem.cz/student",
-   "note": "Kódy jsou v rozvrhu, který otevřeš z Portálu studenta.",
-   "steps": [
-    {
-     "label": "Otevři Portál studenta",
-     "url": "https://portal.vsem.cz/student"
-    },
-    {
-     "label": "Zadej uživatelské jméno do SIS (e-mail na VŠEM) a ověřovací kód, který ti přijde e-mailem."
-    },
-    {
-     "label": "Klikni na Zobrazit rozvrh. V Přehledu zapsaných předmětů jsou kódy ve sloupci Přístupový kód do MS Teams."
-    }
-   ]
+   "note": "Portál studenta → Zobrazit rozvrh, sloupec Přístupový kód do MS Teams."
   },
   {
    "label": "Přihlásit se na školní akci",

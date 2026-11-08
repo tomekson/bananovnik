@@ -1,7 +1,7 @@
 {
   "id": "projektove-rizeni",
   "title": "Projektové řízení",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-08",
   "rubric": "Zkouškový test: 45 min., 14 otázek (z toho 4 příklady po 10 až 25 bodech), celkem 100 bodů, pomůcka: kalkulačka. K úspěchu je potřeba 51 bodů.",
   "format": {
     "type": "multiple-choice",
@@ -1835,7 +1835,7 @@
       ]
     },
     {
-      "q": "(Příklad za 15 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 40% pravděpodobnost zpoždění převzetí dílčích částí produktu s náklady 100 000 Kč. Existuje 10% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 125 000 Kč. S 20% pravděpodobností bude montáž rychlejší, což přinese úsporu 25 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 15%.",
+      "q": "(Příklad za 10 b., dříve 15 b.) - Určete výši rezervy pro náhlé případy pro projekt inovace produktu. Máte k dispozici tyto závěry z analýzy: Je 40% pravděpodobnost zpoždění převzetí dílčích částí produktu s náklady 100 000 Kč. Existuje 10% pravděpodobnost, že dodávka dílčích částí bude o 50 000 Kč levnější a 15% pravděpodobnost, že některé dílčí části nebudou do sebe zapadat, což navýší celkové náklady o 125 000 Kč. S 20% pravděpodobností bude montáž rychlejší, což přinese úsporu 25 000 Kč. Chyby v projektu mohou způsobit škodu ve výši 70 000 Kč s pravděpodobností 15%.",
       "opts": [
         "Není nutné vytvářet rezervu.",
         "Výše rezervy pro náhlé případy by měla být u řešeného projektu 65 750 Kč.",

@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.99">
+<link rel="manifest" href="/bananovnik/manifest.json?v=11.00">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -4531,7 +4531,7 @@ function renderOpenSets(sets) {
       <div class="open-set-name">${escHtml(s.name)}</div>
       <audio controls preload="none" src="${BASE + s.audio}" data-key="${escHtml(key)}" data-title="${escHtml('Sada ' + (i + 1) + ': ' + s.name)}"></audio>
       <div class="open-set-row">
-        ${s.worksheet ? `<a class="btn-sec open-set-ws" href="${BASE + s.worksheet}" target="_blank" rel="noopener" onclick="worksheetClick(event, ${i})">✍️ Pracovní list</a>` : ''}
+        ${s.worksheet ? `<a class="btn-sec open-set-ws" href="${mediaUrl(s.worksheet)}" target="_blank" rel="noopener" onclick="worksheetClick(event, ${i})">✍️ Pracovní list</a>` : ''}
         ${s.html ? `<button type="button" class="btn-sec" onclick="openSetDoc(${i})">Vypracované odpovědi</button>` : ''}
         <button type="button" class="btn-sec open-set-resume"${pos ? '' : ' hidden'}>▶ Pokračovat ${fmtTime(pos)}</button>
       </div>
@@ -4589,13 +4589,16 @@ function isStandalone() {
 }
 // Pracovní list (prázdné linky k otázkám sady) se v PWA sdílí jako soubor, stejně jako PDF
 // vypracovaných odpovědí: stáhnout předem, sdílení musí proběhnout hned v obsluze klepnutí.
+// Soubory v media/ jdou mimo service worker přes HTTP cache prohlížeče. iPad tak vracel
+// starý pracovní list i po nové verzi webu: adresa s ?v=<verze> a cache: 'no-cache' to zabrání.
+function mediaUrl(p) { return BASE + p + '?v=' + APP_VERSION; }
 let worksheetFiles = [];
 function prefetchWorksheets(sets) {
   worksheetFiles = [];
   if (!isStandalone() || !navigator.canShare) return;
   sets.forEach((s, i) => {
     if (!s.worksheet) return;
-    fetch(BASE + s.worksheet).then(r => r.ok ? r.blob() : Promise.reject(r.status)).then(b => {
+    fetch(mediaUrl(s.worksheet), { cache: 'no-cache' }).then(r => r.ok ? r.blob() : Promise.reject(r.status)).then(b => {
       const f = new File([b], s.worksheet.split('/').pop(), { type: 'application/pdf' });
       if (navigator.canShare({ files: [f] }) && openSetsData === sets) worksheetFiles[i] = f;
     }).catch(() => {});
@@ -4634,12 +4637,12 @@ async function openDoc(title, s) {
   pdf.hidden = !s.pdf;
   docPdfFile = null;
   if (s.pdf) {
-    pdf.href = BASE + s.pdf;
+    pdf.href = mediaUrl(s.pdf);
     // V PWA soubor stáhneme předem: sdílení musí proběhnout hned v obsluze klepnutí,
     // čekání na síť by iOS vyhodnotil jako akci bez klepnutí a sdílení odmítl.
     if (isStandalone() && navigator.canShare) {
       const name = s.pdf.split('/').pop();
-      fetch(BASE + s.pdf).then(r => r.ok ? r.blob() : Promise.reject(r.status)).then(b => {
+      fetch(mediaUrl(s.pdf), { cache: 'no-cache' }).then(r => r.ok ? r.blob() : Promise.reject(r.status)).then(b => {
         const f = new File([b], name, { type: 'application/pdf' });
         if (navigator.canShare({ files: [f] })) docPdfFile = f;
       }).catch(() => {});
@@ -4649,7 +4652,7 @@ async function openDoc(title, s) {
   body.scrollTop = 0;
   dlg.showModal();
   try {
-    const res = await fetch(BASE + s.html);
+    const res = await fetch(mediaUrl(s.html), { cache: 'no-cache' });
     if (!res.ok) throw new Error(res.status);
     body.innerHTML = await res.text();
   } catch (e) {
@@ -4817,7 +4820,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.99';
+const APP_VERSION = '11.00';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

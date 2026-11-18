@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.95">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.96">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -508,7 +508,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .set-doc-body ul, .set-doc-body ol { margin: 0 0 10px; padding-left: 20px; display: grid; gap: 4px; }
 .set-doc-body code { font-size: 13px; }
 .open-set-resume { color: var(--primary); }
-.open-set-row .open-set-ws { color: var(--primary); flex-basis: 100%; text-align: center; }
+.open-set-row .open-set-ws { color: var(--primary); }
 .open-set-resume[hidden] { display: none; }
 #set-doc-pdf[hidden] { display: none; }
 .set-read .q-src { margin-top: 0; padding-top: 0; border-top: 0; }
@@ -4531,7 +4531,7 @@ function renderOpenSets(sets) {
       <div class="open-set-name">${escHtml(s.name)}</div>
       <audio controls preload="none" src="${BASE + s.audio}" data-key="${escHtml(key)}" data-title="${escHtml('Sada ' + (i + 1) + ': ' + s.name)}"></audio>
       <div class="open-set-row">
-        ${s.worksheet ? `<a class="btn-sec open-set-ws" href="${BASE + s.worksheet}" target="_blank" rel="noopener" onclick="worksheetClick(event, ${i})">✍️ Pracovní list k psaní</a>` : ''}
+        ${s.worksheet ? `<a class="btn-sec open-set-ws" href="${BASE + s.worksheet}" target="_blank" rel="noopener" onclick="worksheetClick(event, ${i})">✍️ Pracovní list</a>` : ''}
         ${s.html ? `<button type="button" class="btn-sec" onclick="openSetDoc(${i})">Vypracované odpovědi</button>` : ''}
         <button type="button" class="btn-sec open-set-resume"${pos ? '' : ' hidden'}>▶ Pokračovat ${fmtTime(pos)}</button>
       </div>
@@ -4817,7 +4817,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.95';
+const APP_VERSION = '10.96';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

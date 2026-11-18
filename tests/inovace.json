@@ -1499,7 +1499,8 @@
       "audio": "media/inovace/inovace-sada-1.m4a",
       "duration": "18:03",
       "html": "media/inovace/inovace-sada-1.htm",
-      "pdf": "media/inovace/inovace-sada-1.pdf"
+      "pdf": "media/inovace/inovace-sada-1.pdf",
+      "worksheet": "media/inovace/inovace-sada-1-pracovni-list.pdf"
     },
     {
       "name": "Inovační proces, metody a ochrana výsledků",
@@ -1507,7 +1508,8 @@
       "audio": "media/inovace/inovace-sada-2.m4a",
       "duration": "14:19",
       "html": "media/inovace/inovace-sada-2.htm",
-      "pdf": "media/inovace/inovace-sada-2.pdf"
+      "pdf": "media/inovace/inovace-sada-2.pdf",
+      "worksheet": "media/inovace/inovace-sada-2-pracovni-list.pdf"
     },
     {
       "name": "Spolupráce sektorů a role businessu ve společnosti",
@@ -1515,7 +1517,8 @@
       "audio": "media/inovace/inovace-sada-3.m4a",
       "duration": "18:08",
       "html": "media/inovace/inovace-sada-3.htm",
-      "pdf": "media/inovace/inovace-sada-3.pdf"
+      "pdf": "media/inovace/inovace-sada-3.pdf",
+      "worksheet": "media/inovace/inovace-sada-3-pracovni-list.pdf"
     }
   ]
 }

@@ -85,7 +85,7 @@ def main(src):
             rest = '<div class="line h">Po poslechu: co mi chybí</div>' + '<div class="line"></div>' * 30
             want = f'<div class="want"><b>Co otázka chce:</b> {html.escape(g["want"])}</div>' if g['want'] else ''
             pages.append(f"""<section class="page">
-<div class="head"><span><b>{html.escape(d['title'])}</b> · Sada {i}: {html.escape(s['name'])}</span><span>audio {s.get('duration', '')}</span></div>
+<div class="head"><span><b>{html.escape(d['title'])}</b> · Sada {i}: {html.escape(s['name'])}</span></div>
 <div class="num">Otázka {k} z {n} · č. {qn}</div>
 <div class="q">{html.escape(oq[qn - 1])}</div>
 {want}

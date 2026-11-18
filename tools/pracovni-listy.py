@@ -31,7 +31,7 @@ body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #
 .line { height: 9mm; flex: none; border-bottom: 0.25mm solid #d1d1d6; display: flex; align-items: flex-end; padding-bottom: 1mm; font-size: 8.5pt; color: #aeaeb2; white-space: nowrap; overflow: hidden; }
 .line.h { font-size: 8pt; font-weight: 700; letter-spacing: .6pt; text-transform: uppercase; color: #8e8e93; }
 .line.h.first { height: 6mm; }
-.line.t::after { content: '\00a0–'; }
+.line.t::after { content: '\\a0–'; }
 .rest { flex: 1; overflow: hidden; display: flex; flex-direction: column; }
 .foot { margin-top: 2.5mm; display: flex; justify-content: space-between; font-size: 8pt; color: #aeaeb2; }
 """

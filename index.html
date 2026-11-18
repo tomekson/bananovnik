@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- Banana icon by An Nguyen, CC Attribution License, via SVG Repo (https://www.svgrepo.com/svg/425291/banana) -->
-<link rel="icon" href="/bananovnik/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/bananovnik/favicon.svg?v=2" type="image/svg+xml">
 <meta name="description" content="Procvičování testů ke zkouškám na VŠEM: otázky, režim zkoušky a teorie k látce.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="cs_CZ">
@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.96">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.97">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -27,7 +27,7 @@ var d=s==='dark'?'dark':'light';
 document.documentElement.dataset.theme=d;
 var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d==='dark'?'#131C15':'#DDD7B2';})();
 </script>
-<link rel="apple-touch-icon" href="/bananovnik/icon-180.png">
+<link rel="apple-touch-icon" href="/bananovnik/icon-180.png?v=2">
 <title>Banánovník</title>
 <style>
 /* Den v háji: banánová krémová zůstává podkladem, ale inkoust i akcenty jsou
@@ -4817,7 +4817,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.96';
+const APP_VERSION = '10.97';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

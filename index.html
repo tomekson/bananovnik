@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=10.93">
+<link rel="manifest" href="/bananovnik/manifest.json?v=10.94">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -476,9 +476,17 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .set-read-wrap[open] summary::before { content: '▾'; }
 .set-read-wrap[open] summary { color: var(--primary); border-style: solid; }
 .open-q-label { white-space: nowrap; }
+#start-open-q-sum { flex-wrap: wrap; row-gap: 6px; }
 .open-all-answers { padding: 10px 14px; font-size: 14px; border-radius: var(--r-sm, 9px); margin-bottom: 4px; }
-.open-q-audio { margin-left: auto; display: inline-flex; color: var(--primary); flex: none; }
-.open-q-audio svg { display: block; }
+.open-q-audio {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 5px; flex: none; white-space: nowrap;
+  padding: 3px 9px; border-radius: 999px; border: 1px solid var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  color: var(--primary); font-size: 12px; font-weight: 700;
+}
+.open-q-audio svg { display: block; width: 14px; height: 14px; }
+.open-q-list-h { margin-top: 16px; }
+.open-q-list-h[hidden] { display: none; }
 .open-q-note { font-size: 11px; font-weight: 400; color: var(--muted); opacity: .75; }
 .set-read { margin-top: 10px; padding: 11px 13px 12px; border: 1.5px solid var(--line2); border-radius: var(--r-sm, 9px); background: var(--card); }
 .set-read + .set-read { margin-top: 8px; }
@@ -1357,8 +1365,9 @@ html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
       </div>
       <details class="set-read-wrap" id="start-open-q" style="display:none;">
         <summary id="start-open-q-sum"></summary>
-        <ol class="set-read open-q-list" id="start-open-q-list"></ol>
         <div class="open-sets" id="start-open-sets" hidden></div>
+        <div class="open-sets-h open-q-list-h" id="start-open-q-list-h" hidden>Všechny otevřené otázky</div>
+        <ol class="set-read open-q-list" id="start-open-q-list"></ol>
       </details>
     </div>
 
@@ -2732,8 +2741,9 @@ async function selectTest(id, skipPush) {
     openQEl.style.display = openQ.length ? '' : 'none';
     openQEl.open = false;
     const openSets = test.openSets || [];
-    document.getElementById('start-open-q-sum').innerHTML = `<span class="open-q-label">Otevřené otázky (${openQ.length})</span> <span class="open-q-note">${openSets.length ? 'vypracované, k poslechu' : 'přehled - nevypracováno'}</span>`
-      + (openSets.length ? `<span class="open-q-audio" role="img" aria-label="Audio" title="Vypracované otevřené otázky a audio">${HEADPHONES_SVG}</span>` : '');
+    document.getElementById('start-open-q-sum').innerHTML = `<span class="open-q-label">Otevřené otázky (${openQ.length})</span>` + (openSets.length ? '' : ' <span class="open-q-note">přehled - nevypracováno</span>')
+      + (openSets.length ? `<span class="open-q-audio">${HEADPHONES_SVG}<span>Poslech · ${openSets.length} ${openSets.length === 1 ? 'sada' : openSets.length < 5 ? 'sady' : 'sad'}</span></span>` : '');
+    document.getElementById('start-open-q-list-h').hidden = !openSets.length;
     document.getElementById('start-open-q-list').innerHTML = openQ.map(t => `<li>${escHtml(t)}</li>`).join('');
     renderOpenSets(openSets);
     document.getElementById('all-range-label').textContent = '1–' + total;
@@ -4782,7 +4792,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '10.93';
+const APP_VERSION = '10.94';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

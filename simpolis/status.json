@@ -1,7 +1,7 @@
 {
- "latest": "0.5.0",
+ "latest": "0.6.0",
  "minVersion": "0.0.0",
  "ended": false,
- "message": "",
+ "message": "Nový vzhled a rychlejší přihlášení do SIS",
  "url": "https://tomekson.github.io/bananovnik/simpolis/"
 }

@@ -43,8 +43,8 @@ h3.os { display:inline-block; font-size:15px; margin:18px 0 4px; padding:3px 12p
 <main>
 <header><img src="icon.png" alt=""><h1>Šimpoliš <small>(beta)</small><br>návod</h1></header>
 <div class="lead">
-<p><a class="cta" href="https://drive.google.com/drive/folders/1nOtxz7wB1e0_ju6KFNfE_FqNVacrji7t?usp=sharing" target="_blank" rel="noopener">Otevřít složku Šimpoliše na Google Disku</a></p>
-<p>Instalace je jednorázový úkol na pár minut. Postup pro <a href="#mac">Mac</a> a <a href="#windows">Windows</a> je níže.</p>
+<p><a class="cta" href="simpolis-0.5.0.zip" download>Stáhnout Šimpoliše 0.5.0 (ZIP)</a></p>
+<p>Instalace je jednorázový úkol na pár minut, postup je níže.</p>
 </div>
 <p>Šimpoliš je rozšíření pro Chrome, které hlídá školní akce a přihlašování na ně.</p>
 <ul>
@@ -54,56 +54,38 @@ h3.os { display:inline-block; font-size:15px; margin:18px 0 4px; padding:3px 12p
 <li><strong>Osobní data nesdílí.</strong> Heslo, přihlášení do SIS ani tvoje akce nikdy neopustí tvůj prohlížeč. Sdílí jen veřejný seznam akcí, viz část Co Šimpoliš sdílí.</li>
 </ul>
 <h2>Instalace (jednorázový úkol na pár minut)</h2>
-<p>Šimpoliš se instaluje ze sdílené složky na Google Disku. Díky tomu se pak aktualizuje sám. Postupuj podle svého počítače.</p>
-<h3 class="os" id="mac">Mac</h3>
-<ol>
-<li><strong>Nainstaluj</strong> <a href="https://www.google.com/drive/download/" target="_blank" rel="noopener">Google Drive pro počítač</a> a přihlas se svým Google účtem.</li>
-<li><strong>Otevři</strong> <a href="https://drive.google.com/drive/folders/1nOtxz7wB1e0_ju6KFNfE_FqNVacrji7t?usp=sharing" target="_blank" rel="noopener">složku Simpolis na Google Disku</a>.</li>
-<li><strong>Klikni</strong> na název složky nahoře a zvol <strong>Uspořádat</strong>, pak <strong>Přidat zástupce</strong>, pak <strong>Můj disk</strong>.</li>
-<li><strong>Otevři Finder</strong> a v levém panelu klikni na <strong>Google Drive</strong>, pak <strong>Můj disk</strong>. Tam je složka <strong>Simpolis</strong>.</li>
-<li><strong>Klikni na složku Simpolis pravým tlačítkem</strong> a zvol <strong>Zpřístupnit offline</strong> (anglicky <strong>Make available offline</strong>). Bez toho by Chrome soubory občas nenačetl.</li>
-<li><strong>Otevři</strong> v Chromu adresu <code>chrome://extensions</code> a vpravo nahoře zapni <strong>Režim pro vývojáře</strong>.</li>
-<li><strong>Klikni</strong> na <strong>Načíst rozbalené</strong>, v levém panelu vyber <strong>Google Drive</strong>, pak <strong>Můj disk</strong> a složku <strong>Simpolis</strong>.</li>
-<li><strong>Připni</strong> si ikonu šimpanze: dílek skládačky vpravo od adresního řádku, pak špendlík.</li>
-</ol>
-<h3 class="os" id="windows">Windows</h3>
-<ol>
-<li><strong>Nainstaluj</strong> <a href="https://www.google.com/drive/download/" target="_blank" rel="noopener">Google Drive pro počítač</a> a přihlas se svým Google účtem.</li>
-<li><strong>Otevři</strong> <a href="https://drive.google.com/drive/folders/1nOtxz7wB1e0_ju6KFNfE_FqNVacrji7t?usp=sharing" target="_blank" rel="noopener">složku Simpolis na Google Disku</a>.</li>
-<li><strong>Klikni</strong> na název složky nahoře a zvol <strong>Uspořádat</strong>, pak <strong>Přidat zástupce</strong>, pak <strong>Můj disk</strong>.</li>
-<li><strong>Otevři Průzkumníka souborů</strong> a přejdi na disk <strong>G:</strong> (Google Drive), pak <strong>Můj disk</strong>. Tam je složka <strong>Simpolis</strong>.</li>
-<li><strong>Klikni na složku Simpolis pravým tlačítkem</strong> a zvol <strong>Přístup offline</strong>, pak <strong>K dispozici offline</strong> (anglicky <strong>Offline access</strong>, <strong>Available offline</strong>). Bez toho by Chrome soubory občas nenačetl.</li>
-<li><strong>Otevři</strong> v Chromu adresu <code>chrome://extensions</code> a vpravo nahoře zapni <strong>Režim pro vývojáře</strong>.</li>
-<li><strong>Klikni</strong> na <strong>Načíst rozbalené</strong> a vyber složku <code>G:\Můj disk\Simpolis</code>.</li>
-<li><strong>Připni</strong> si ikonu šimpanze: dílek skládačky vpravo od adresního řádku, pak špendlík.</li>
-</ol>
-<p>Po instalaci se otevře stránka Nastavení s krátkým úvodem. Funguje i v Edge a Brave.</p>
-<h2>Instalace v Chromu krok za krokem</h2>
-<p>Kroky 6 až 8 z postupu výše vypadají na Macu i ve Windows stejně.</p>
-<p><strong>Krok 6: zapni Režim pro vývojáře.</strong> Na stránce <code>chrome://extensions</code> je přepínač vpravo nahoře.</p>
+<p>Šimpoliš není v obchodě Chrome Web Store, instaluje se ze ZIPu. Na Macu i ve Windows je postup stejný, liší se jen rozbalení.</p>
+<p><strong>Krok 1: stáhni ZIP.</strong> Tlačítko <strong>Stáhnout Šimpoliše</strong> je nahoře na stránce s návodem. Soubor se uloží do složky <strong>Stažené soubory</strong>.</p>
+<p><strong>Krok 2: rozbal ho.</strong> Na Macu na stažený soubor dvakrát klikni. Ve Windows na něj klikni pravým tlačítkem a zvol <strong>Extrahovat vše</strong>, pak <strong>Extrahovat</strong>.</p>
+<p><strong>Krok 3: přesuň složku Simpolis do Dokumentů.</strong> Najdeš ji v rozbaleném ZIPu. V Dokumentech zůstane natrvalo, protože Chrome si Šimpoliše načítá právě odtud. Pak ji už nepřesouvej, nepřejmenovávej ani nemaž.</p>
+<p><strong>Krok 4: otevři v Chromu stránku Rozšíření.</strong> Klikni na tři tečky ⋮ vpravo nahoře, pak <strong>Rozšíření</strong>, pak <strong>Spravovat rozšíření</strong>. Nebo napiš do adresního řádku <code>chrome://extensions</code> a stiskni Enter.</p>
+<p><strong>Krok 5: zapni Režim pro vývojáře.</strong> Přepínač je vpravo nahoře.</p>
 <figure><img src="navod/chrome-1-rezim-pro-vyvojare.png" alt="Přepínač Režim pro vývojáře vpravo nahoře na stránce Rozšíření" loading="lazy"></figure>
-<p><strong>Krok 7: klikni na Načíst rozbalené</strong> a vyber složku <strong>Simpolis</strong> na Google Disku.</p>
+<p><strong>Krok 6: klikni na Načíst rozbalené</strong> a vyber složku <strong>Simpolis</strong> v Dokumentech.</p>
 <figure><img src="navod/chrome-2-nacist-rozbalene.png" alt="Tlačítko Načíst rozbalené vlevo pod nadpisem Rozšíření" loading="lazy"></figure>
 <p><strong>Načteno:</strong> v seznamu rozšíření uvidíš kartu Šimpoliše se zapnutým modrým přepínačem.</p>
 <figure><img src="navod/chrome-3-nacteno.png" alt="Karta rozšíření Šimpoliš (beta) se zapnutým přepínačem" loading="lazy"></figure>
-<p><strong>Krok 8: připni si šimpanze,</strong> ať ho máš v liště po ruce.</p>
+<p><strong>Krok 7: připni si šimpanze,</strong> ať ho máš v liště po ruce.</p>
 <figure><img src="navod/chrome-4-pripnout.svg" alt="Dílek skládačky vpravo od adresního řádku a špendlík u Šimpoliše" loading="lazy"></figure>
+<p>Po instalaci se otevře stránka Nastavení s krátkým úvodem. Funguje i v Edge a Brave.</p>
 <h2>Aktualizace</h2>
 <ul>
-<li><strong>Dějí se samy.</strong> Když bude nová verze Šimpoliše, Google Drive ji stáhne a doplněk se automaticky aktualizuje.</li>
-<li><strong>Trezor se při aktualizaci zamkne.</strong> Když ho máš odemčený, Šimpoliš počká, až budeš u počítače, a pak tě požádá o hlavní heslo trezoru.</li>
-<li><strong>Složku Simpolis nepřesouvej, nepřejmenovávej a nemaž.</strong> Chrome ji má načtenou podle cesty. Kdyby zmizela, doplněk Šimpoliš přestane fungovat a hlídané akce se ztratí.</li>
+<li><strong>O nové verzi ti Šimpoliš řekne sám.</strong> V okně šimpanze se objeví modrý pruh a přijde notifikace.</li>
+<li><strong>Postup:</strong> stáhni nový ZIP a rozbal ho jako při instalaci. Novou složku <strong>Simpolis</strong> přetáhni do Dokumentů a zvol <strong>Nahradit</strong>.</li>
+<li><strong>Šimpoliš si novou verzi do minuty načte sám.</strong> Kdyby ne, klikni na stránce Rozšíření u Šimpoliše na kruhovou šipku.</li>
+<li><strong>Hlídané akce zůstanou,</strong> když je složka pořád na stejném místě. Trezor se zamkne a odemkneš ho hlavním heslem.</li>
+<li><strong>Stará verze se může vypnout.</strong> Když vyjde důležitá oprava nebo projekt skončí, stará verze přestane hlídat a v okně šimpanze uvidíš proč.</li>
 <li><strong>Kterou verzi máš,</strong> zjistíš v Nastavení v části Diagnostika.</li>
 </ul>
 <h2>Notifikace</h2>
 <p><strong>Povinné:</strong> povolit oznámení pro Chrome. Bez toho ti Šimpoliš nedá vědět o otevřeném přihlášení. Automatické přihlášení funguje i bez notifikací.</p>
-<h3 class="os">Mac</h3>
+<h3 class="os" id="mac">Mac</h3>
 <ol>
 <li><strong>Otevři</strong> Nastavení systému, pak <strong>Oznámení</strong>, pak <strong>Google Chrome</strong>.</li>
 <li><strong>Zapni</strong> Povolit oznámení. <strong>Povinné.</strong></li>
 <li><strong>Nastav</strong> styl na <strong>Upozornění</strong> (v novějším macOS <strong>Trvalé</strong>). <strong>Doporučené:</strong> jinak notifikace za pár sekund zmizí.</li>
 </ol>
-<h3 class="os">Windows</h3>
+<h3 class="os" id="windows">Windows</h3>
 <ol>
 <li><strong>Otevři</strong> Nastavení, pak <strong>Systém</strong>, pak <strong>Oznámení</strong>.</li>
 <li><strong>Zapni</strong> oznámení pro <strong>Google Chrome</strong>. <strong>Povinné.</strong></li>
@@ -119,7 +101,7 @@ h3.os { display:inline-block; font-size:15px; margin:18px 0 4px; padding:3px 12p
 <ol>
 <li><strong>Klikni</strong> na šimpanze.</li>
 <li><strong>U akce zvol Hlídat.</strong> Online akce mají „přihlásit mě automaticky“ zaškrtnuté předem, akce v budově ne. Obojí můžeš změnit.</li>
-<li><strong>Hotovo.</strong> Hlídat jde nejvýš 3 akce najednou.</li>
+<li><strong>Hotovo.</strong> Hlídat můžeš libovolný počet akcí.</li>
 </ol>
 <p>Akci, kterou nechceš, schováš tlačítkem <strong>Nezajímá mě</strong> / <strong>Už mě nezajímá</strong>. Když se spleteš, najdeš ji dole v sekci <strong>Nezajímá mě</strong> a vrátíš tlačítkem <strong>Vrátit</strong>.</p>
 <p>Akce ze SIS, které nejsou ve veřejném harmonogramu, jsou ve sbalené sekci <strong>Další akce v SIS</strong>. Často jde o povinné semináře a praktické aplikace.</p>
@@ -159,8 +141,9 @@ h3.os { display:inline-block; font-size:15px; margin:18px 0 4px; padding:3px 12p
 <ul>
 <li><strong>Co odchází:</strong> názvy, popisy a termíny akcí, kdy se na ně dá přihlásit a jakou mají kapacitu. Stejné údaje vidí v SIS každý student.</li>
 <li><strong>Co nikdy neodchází:</strong> tvoje jméno, heslo, studijní číslo, trezor, akce, na které jsi přihlášený, ani akce, které hlídáš nebo které tě nezajímají.</li>
-<li><strong>Kam:</strong> do skriptu Google Apps Script na účtu autora Šimpoliše. Ten seznam uloží do sdílené složky Simpolis a zveřejní ho jako <a href="https://tomekson.github.io/simpolis-data/katalog.json" target="_blank" rel="noopener">veřejný katalog akcí</a>.</li>
+<li><strong>Kam:</strong> do skriptu Google Apps Script na účtu autora Šimpoliše. Ten seznam uloží na Google Disk autora a zveřejní ho jako <a href="https://tomekson.github.io/simpolis-data/katalog.json" target="_blank" rel="noopener">veřejný katalog akcí</a>. Seznam od ostatních si Šimpoliš stahuje ze stejného skriptu.</li>
 <li><strong>Bez identifikace:</strong> Šimpoliš k seznamu nepřikládá tvůj Google účet ani přihlášení do SIS. Google jako provozovatel skriptu vidí jen tvou IP adresu, stejně jako u každé webové stránky.</li>
+<li><strong>Kontrola nové verze:</strong> jednou za 6 hodin si Šimpoliš stáhne z webu návodu malý soubor s číslem nejnovější verze. Nic přitom neodesílá.</li>
 <li><strong>Žádná statistika.</strong> Šimpoliš nesleduje, jak ho používáš.</li>
 </ul>
 <h2>Jak často se vše kontroluje</h2>

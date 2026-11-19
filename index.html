@@ -1188,6 +1188,7 @@ body.has-splash #screen-dashboard { opacity: 0; animation: none; }
 .skola-head { margin-right: auto; min-width: 0; }
 .skola-title { font-size: 20px; font-weight: 800; color: var(--text); letter-spacing: -.3px; line-height: 1.2; }
 .skola-updated { font-size: 10px; color: var(--muted); font-weight: 500; letter-spacing: 1px; white-space: nowrap; }
+.skola-updated--stale { color: var(--amber); font-weight: 700; }
 @media (max-width: 360px) { #screen-skola .logo-row { gap: 8px; } .skola-title { font-size: 15.5px; white-space: nowrap; } .skola-updated { letter-spacing: 0; } .skola-logo { width: 40px; height: 40px; } }
 .skola-intro { font-size: 14px; color: var(--dim); line-height: 1.5; }
 .skola-links { display: flex; flex-direction: column; gap: 12px; }
@@ -3962,7 +3963,7 @@ function goToDashboard() {
 }
 
 // ─────────────────────────────────────────────────────────────────
-// Rozcestník VŠEM: /rozcestnik/ (rozcestnik.json generuje deploy VŠEM dashboardu)
+// Rozcestník VŠEM: /rozcestnik/ (rozcestnik.json generuje deploy VŠEM dashboardu, akce doplňuje sdílený katalog)
 // ─────────────────────────────────────────────────────────────────
 const skolaEsc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const skolaDays = d => Math.round((new Date(d + 'T12:00:00') - new Date(new Date().toDateString() + ' 12:00')) / 86400000);
@@ -3977,12 +3978,70 @@ function openSkola(skipPush) {
   if (!skolaLoaded) loadSkola();
 }
 
+// Sdílený katalog akcí (veřejný harmonogram + SIS), plní ho rozšíření Šimpoliš. Bez něj zůstanou ruční data.
+const SKOLA_KATALOG = 'https://tomekson.github.io/simpolis-data/katalog.json';
+const SKOLA_STALE_MS = 3 * 3600000; // starší aktualizace = žlutě
+const skolaNorm = s => String(s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+  .replace(/[^a-z0-9]+/g, ' ').replace(/\bvsem\b/g, ' ').replace(/\s+/g, ' ').trim();
+const skolaSame = (a, b) => { const x = skolaNorm(a), y = skolaNorm(b); return !!x && !!y && (x.includes(y) || y.includes(x)); };
+const skolaPlural = (n, one, few, many) => n === 1 ? one : n >= 2 && n <= 4 ? few : many;
+
+async function loadSkolaKatalog() {
+  try {
+    const res = await fetch(SKOLA_KATALOG, { cache: 'no-cache', credentials: 'omit' });
+    const k = res.ok ? await res.json() : null;
+    return k && k.schema === 1 && Array.isArray(k.harmo?.rows) && Array.isArray(k.sis?.rows) ? k : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+// Řádek SIS ke konkrétní akci: stejný den začátku a podobný název, při shodě víc řádků ten se stejným časem.
+function skolaSisFor(k, title, date, time) {
+  const hits = k.sis.rows.filter(r => r.start?.date === date && skolaSame(r.name, title));
+  return hits.find(r => time && r.start?.time && String(time).startsWith(r.start.time)) || hits[0] || null;
+}
+
+// Ruční akce doplní o termín přihlášení a volná místa ze SIS, k nim přidá akce z harmonogramu
+// s přihlášením v SIS, které v ručním seznamu nejsou. Ruční poznámky mají přednost.
+function skolaMerge(d, k) {
+  const fromSis = (a, r) => {
+    if (!r) return a;
+    const out = { ...a };
+    if (r.signinTo?.date) out.signupUntil = r.signinTo.date + (r.signinTo.time ? ' ' + r.signinTo.time : '');
+    if (Number.isFinite(r.capacity)) out.free = r.capacity;
+    if (!out.time && r.start?.time) out.time = r.start.time + (r.end?.date === r.start.date && r.end.time ? '–' + r.end.time : '');
+    return out;
+  };
+  const akce = d.akce.map(a => fromSis(a, skolaSisFor(k, a.title, a.dates[0], a.time)));
+  for (const h of k.harmo.rows) {
+    if (!h.viaSis || !h.date || akce.some(a => a.dates.includes(h.date) && (skolaSame(a.title, h.title) || skolaSame(a.title, h.type + ' ' + h.title)))) continue;
+    const a = { title: `${h.type}: ${h.title}`, who: h.speaker || '', dates: [h.date], time: h.time || '', mode: h.online ? 'online' : 'osobně', url: 'https://www.vsem.cz/harmonogram-akci-vsem.html' };
+    akce.push(fromSis(a, skolaSisFor(k, h.title, h.date, h.time)));
+  }
+  return { ...d, akce };
+}
+
+let skolaFetchedAt = null;
+function skolaShowUpdated() {
+  const el = document.getElementById('skola-updated');
+  if (!skolaFetchedAt) return;
+  const min = Math.max(0, Math.round((Date.now() - skolaFetchedAt) / 60000));
+  const ago = min < 2 ? 'před chvílí' : min < 60 ? `před ${min} min` : min < 48 * 60 ? `před ${Math.round(min / 60)} h` : `před ${Math.round(min / 1440)} dny`;
+  el.textContent = 'aktualizováno ' + ago;
+  el.classList.toggle('skola-updated--stale', Date.now() - skolaFetchedAt > SKOLA_STALE_MS);
+}
+setInterval(() => { if (document.getElementById('screen-skola')?.classList.contains('active')) skolaShowUpdated(); }, 60000);
+
 async function loadSkola() {
   const links = document.getElementById('skola-links');
   try {
-    const res = await fetch(BASE + 'rozcestnik.json');
+    const [res, k] = await Promise.all([fetch(BASE + 'rozcestnik.json'), loadSkolaKatalog()]);
     if (!res.ok) throw new Error(res.status);
-    renderSkola(await res.json());
+    const d = await res.json();
+    const times = k ? [k.sis.fetchedAt, k.harmo.fetchedAt].map(t => Date.parse(t || '')).filter(Number.isFinite) : [];
+    skolaFetchedAt = times.length ? Math.max(...times) : null;
+    renderSkola(k ? skolaMerge(d, k) : d);
     skolaLoaded = true;
   } catch (e) {
     links.innerHTML = '<div class="dash-empty">Rozcestník se nepodařilo načíst. Zkus to znovu, až budeš online.</div>';
@@ -4010,18 +4069,24 @@ function renderSkola(d) {
       const left = skolaDays(day);
       dl = left < 0 ? '<span class="skola-ev-dl skola-ev-dl--urgent">přihlašování skončilo</span>'
         : `<span class="skola-ev-dl${left <= 3 ? ' skola-ev-dl--urgent' : left <= 7 ? ' skola-ev-dl--soon' : ''}">přihlásit do ${skolaDate(day)}${time ? ' ' + time : ''} · ${skolaIn(left)}</span>`;
+      // volná místa ze SIS: jen dokud přihlašování běží
+      if (left >= 0 && Number.isFinite(a.free)) {
+        if (a.free <= 0) dl += ' <span class="skola-ev-dl skola-ev-dl--urgent">plno</span>';
+        else if (a.free <= 10) dl += ` <span class="skola-ev-dl skola-ev-dl--soon">${skolaPlural(a.free, 'zbývá', 'zbývají', 'zbývá')} ${a.free} ${skolaPlural(a.free, 'místo', 'místa', 'míst')}</span>`;
+      }
     }
     const all = a.dates.length > 1 ? `<div class="skola-ev-sub">Termíny: ${a.dates.map(x => `<span class="${skolaDays(x) < 0 ? 'skola-past' : ''}">${skolaDate(x)}</span>`).join(', ')}</div>` : '';
     return `<div class="skola-ev">
       <div class="skola-ev-top"><span class="skola-pill">${a.mode === 'online' ? '💻 online' : '📍 prezenčně'}</span><span class="skola-pill skola-pill--when">${skolaIn(skolaDays(a.next))}</span></div>
       <div class="skola-ev-title">${skolaEsc(a.title)}</div>
-      <div class="skola-ev-sub">${skolaDate(a.next)} · ${skolaEsc(a.time)}${a.who ? ' · ' + skolaEsc(a.who) : ''}</div>
+      <div class="skola-ev-sub">${skolaDate(a.next)}${a.time ? ' · ' + skolaEsc(a.time) : ''}${a.who ? ' · ' + skolaEsc(a.who) : ''}</div>
       ${all}${dl ? '<div>' + dl + '</div>' : ''}
       ${a.note ? `<div class="skola-ev-sub">${skolaEsc(a.note)}</div>` : ''}
       ${a.url ? `<a class="skola-ev-link" href="${skolaEsc(a.url)}" target="_blank" rel="noopener">Detail na vsem.cz ↗</a>` : ''}
     </div>`;
   }).join('') || '<div class="dash-empty">Žádné nadcházející akce.</div>';
-  document.getElementById('skola-updated').textContent =
+  if (skolaFetchedAt) skolaShowUpdated();
+  else document.getElementById('skola-updated').textContent =
     'aktualizováno k ' + new Date(d.updated + 'T12:00:00').toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' });
   document.getElementById('skola-foot').textContent = 'Přihlašování a odhlašování vždy ověř v SIS, platí to, co je tam.';
 }
@@ -4820,7 +4885,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '11.00';
+const APP_VERSION = '11.01';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

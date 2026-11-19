@@ -236,15 +236,15 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <p>Další pravidla:</p>
 <ul>
 <li><strong>Založení:</strong> v Nastavení vyplň jméno a heslo do SIS a pak dvakrát nové hlavní heslo trezoru.</li>
-<li><strong>Po restartu Chromu</strong> je trezor zamčený. Když ho Šimpoliš potřebuje, ukáže nahoře pole na hlavní heslo.</li>
-<li><strong>Když přihlášení z trezoru selže</strong>, víckrát to nezkouší a automatické přihlašování vypne. Přihlas se ručně, pak trezor zamkni a znovu odemkni.</li>
-<li><strong>Heslo do SIS je zašifrované</strong> a odchází jen přes HTTPS na přihlašovací stránku školy.</li>
+<li><strong>Po restartu Chromu</strong> je trezor zamčený.</li>
+<li><strong>Když automatické přihlášení z trezoru selže</strong>, víckrát to nezkouší a toto přihlašování vypne. Přihlas se ručně, pak trezor zamkni a znovu odemkni.</li>
+<li><strong>Heslo do SIS je uložené zašifrované v prohlížeči</strong> a odchází jen přes HTTPS na přihlašovací stránku školy.</li>
 <li><strong>Smazání:</strong> v Nastavení v části Trezor klikni na <strong>Smazat trezor</strong> a potvrď <strong>Ano, smazat</strong>.</li>
 <li><strong>Hlavní heslo trezoru nejde obnovit.</strong> Když ho zapomeneš, trezor smaž a založ znovu. Do SIS se tím nic nemění.</li>
 <li><strong>Změnil jsi heslo do SIS?</strong> Trezor smaž a založ znovu.</li>
 </ul>
 <h2>Co Šimpoliš sdílí</h2>
-<p>Šimpoliši si mezi sebou předávají seznam akcí. Díky tomu nemusí každý stahovat SIS a web školy zvlášť, což šetří školní server i tvůj počítač.</p>
+<p>Šimpoliši různých uživatelů si předávají seznam akcí z webu školy a SISu.</p>
 <ul>
 <li><strong>Co odchází:</strong> názvy, popisy a termíny akcí, kdy se na ně dá přihlásit a jakou mají kapacitu. Stejné údaje vidí v SIS každý student.</li>
 <li><strong>Co nikdy neodchází:</strong> tvoje jméno, heslo, studijní číslo, trezor, akce, na které jsi přihlášený, ani akce, které hlídáš nebo které tě nezajímají.</li>
@@ -256,10 +256,9 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <h2>Jak často se vše kontroluje</h2>
 <p>Jen tak často, jak je potřeba:</p>
 <ul>
-<li><strong>Když nehlídáš žádnou akci:</strong> sleduje novinky na webu školy každou hodinu. Když má čerstvý seznam akcí od jiného Šimpoliše, do SIS se vůbec neptá.</li>
+<li><strong>Když nehlídáš žádnou akci:</strong> sleduje novinky na webu školy každou hodinu.</li>
 <li><strong>Akce je za více než 14 dní:</strong> hlídá jednou za 10 minut.</li>
-<li><strong>Akce se blíží:</strong> hlídá přihlášení každou minutu, v noci (21 až 6 h) jednou za 5 minut.</li>
-<li><strong>Je uvedený přesný čas otevření přihlašování:</strong> Šimpoliš zkontroluje SIS v daný čas.</li>
+<li><strong>Akce se blíží:</strong> hlídá přihlášení každou minutu, v noci mezi 21 a 6 h jednou za 5 minut.</li>
 <li><strong>Když tě SIS odhlásí:</strong> zkouší to každých 10 minut. Když se v Chromu přihlásíš sám, pozná to do pár sekund.</li>
 </ul>
 </main>

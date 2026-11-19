@@ -15,6 +15,12 @@
    "note": "PA, semináře, Hosté VŠEM, Skill-Port, ateliéry. Odhlášení: záložka Administrativní přehled studenta."
   },
   {
+   "label": "Účasti na akcích",
+   "icon": "🎟️",
+   "url": "https://portal.vsem.cz/student",
+   "note": "Portál studenta → Zobrazit rozvrh → Účasti na akcích VŠEM. Evidence se doplní do 14 dnů od akce."
+  },
+  {
    "label": "Přihlášení na zkoušky",
    "icon": "📝",
    "url": "https://sis.vsem.cz/sis/vysoka-skola/infosystem-sis/zkousky/",

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Šimpoliš (beta): návod</title>
+<meta name="description" content="Rozšíření pro Chrome, které hlídá školní akce a přihlášení na ně. Návod k instalaci a použití.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="Šimpoliš (beta): návod">
+<meta property="og:description" content="Hlídá školní akce a dá vědět, jakmile se dá přihlásit. Instalace za 10 minut.">
+<meta property="og:url" content="https://tomekson.github.io/bananovnik/simpolis/">
+<meta property="og:image" content="https://tomekson.github.io/bananovnik/simpolis/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.png" type="image/png">
+<style>
+:root { --brand:#f0d540; --bg:#fffdf3; --card:#ffffff; --fg:#1d1d1b; --muted:#5f5f58; --line:color-mix(in srgb,var(--fg) 12%,transparent); --blue:#2563eb; color-scheme:light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#1b1b19; --card:#252522; --fg:#f1f1ec; --muted:#a9a9a0; --blue:#6b9bff; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,sans-serif; }
+main { max-width:720px; margin:0 auto; padding:24px 16px 64px; }
+header { display:flex; gap:14px; align-items:center; margin:8px 0 20px; }
+header img { width:64px; height:64px; border-radius:14px; }
+h1 { font-size:28px; line-height:1.2; margin:0; text-wrap:balance; }
+h1 small { font-size:15px; font-weight:500; color:var(--muted); }
+h2 { font-size:21px; margin:36px 0 10px; padding-top:16px; border-top:1px solid var(--line); text-wrap:balance; }
+p, ul, ol { margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--blue); }
+code { font-size:.9em; background:var(--line); padding:1px 5px; border-radius:5px; }
+.cta { display:inline-block; background:var(--blue); color:#fff; text-decoration:none; font-weight:650; padding:12px 18px; border-radius:12px; margin:6px 0 4px; }
+.lead { background:var(--card); border:2px solid var(--brand); border-radius:14px; padding:16px; }
+table { width:100%; border-collapse:collapse; margin:12px 0; font-size:16px; }
+th, td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; }
+footer { margin-top:48px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><h1>Šimpoliš <small>(beta)</small><br>návod</h1></header>
+<div class="lead">
+<p><a class="cta" href="https://drive.google.com/drive/folders/1nOtxz7wB1e0_ju6KFNfE_FqNVacrji7t?usp=sharing">Otevřít složku Šimpoliše na Google Disku</a></p>
+<p>Instalace zabere asi 10 minut. Postup je níže v části Instalace.</p>
+</div>
+<p>Šimpoliš je rozšíření pro Chrome, které hlídá školní akce a přihlašování na ně.</p>
+<ul>
+<li><strong>Hlídá akce, které si vybereš.</strong> Jakmile je možné se přihlásit, dá ti vědět.</li>
+<li><strong>Umí tě přihlásit sám</strong>, když u akce zaškrtneš „přihlásit mě automaticky“.</li>
+<li><strong>Upozorní tě na nové akce.</strong> Ty, které tě nezajímají, schováš jedním kliknutím.</li>
+<li><strong>Žádná tvá data se nesdílí.</strong> Žádný server, žádná statistika. Všechno zůstává v tvém prohlížeči.</li>
+</ul>
+<h2>Instalace (jednou, asi 10 minut)</h2>
+<p>Šimpoliš se instaluje ze sdílené složky na Google Disku. Díky tomu se pak aktualizuje sám.</p>
+<ol>
+<li><strong>Nainstaluj</strong> <a href="https://www.google.com/drive/download/">Google Drive pro počítač</a> a přihlas se svým Google účtem.</li>
+<li><strong>Otevři</strong> <a href="https://drive.google.com/drive/folders/1nOtxz7wB1e0_ju6KFNfE_FqNVacrji7t?usp=sharing">složku Simpolis na Google Disku</a>.</li>
+<li><strong>Klikni</strong> na název složky nahoře a zvol <strong>Uspořádat</strong>, pak <strong>Přidat zástupce</strong>, pak <strong>Můj disk</strong>.</li>
+<li><strong>Najdi složku v počítači:</strong> na Macu ve Finderu v části <strong>Google Drive</strong>, pak <strong>Můj disk</strong>, pak <strong>Simpolis</strong>. Na Windows na disku <strong>G:</strong> ve složce <strong>Můj disk\Simpolis</strong>.</li>
+<li><strong>Klikni na složku pravým tlačítkem</strong> a zvol <strong>Google Drive</strong>, pak <strong>Zpřístupnit offline</strong>. Bez toho by Chrome soubory občas nenačetl.</li>
+<li><strong>Otevři</strong> v Chromu adresu <code>chrome://extensions</code> a vpravo nahoře zapni <strong>Režim pro vývojáře</strong>.</li>
+<li><strong>Klikni</strong> na <strong>Načíst rozbalené</strong> a vyber složku <strong>Simpolis</strong> z kroku 4.</li>
+<li><strong>Připni</strong> si ikonu šimpanze: dílek skládačky vpravo od adresního řádku, pak špendlík.</li>
+</ol>
+<p>Po instalaci se otevře stránka Nastavení s krátkým úvodem. Funguje i v Edge a Brave.</p>
+<h2>Aktualizace</h2>
+<ul>
+<li><strong>Dějí se samy.</strong> Když autor nahraje novou verzi, Google Drive ji stáhne a Šimpoliš se do pár minut sám restartuje. Hlídané akce zůstanou.</li>
+<li><strong>Trezor se při aktualizaci zamkne.</strong> Když ho máš odemčený, Šimpoliš počká, až budeš u počítače, a pak tě požádá o hlavní heslo trezoru.</li>
+<li><strong>Složku Simpolis nepřesouvej, nepřejmenovávej a nemaž.</strong> Chrome ji má načtenou podle cesty. Kdyby zmizela, Šimpoliš přestane fungovat a hlídané akce se ztratí.</li>
+<li><strong>Kterou verzi máš,</strong> zjistíš v Nastavení v části Diagnostika.</li>
+</ul>
+<h2>Notifikace na Macu</h2>
+<p>Bez tohoto kroku notifikace za pár sekund zmizí.</p>
+<ol>
+<li><strong>Otevři</strong> Nastavení systému, pak <strong>Oznámení</strong>, pak <strong>Google Chrome</strong>.</li>
+<li><strong>Zapni</strong> Povolit oznámení.</li>
+<li><strong>Nastav</strong> styl na <strong>Upozornění</strong> (v novějším macOS <strong>Trvalé</strong>).</li>
+</ol>
+<h2>Co musí platit, aby hlídal</h2>
+<ul>
+<li><strong>Chrome běží.</strong> Okno může být zavřené, aplikace ne.</li>
+<li><strong>Počítač nespí.</strong> Když počítač uspíš, Šimpoliš spí s ním.</li>
+<li><strong>Jsi přihlášený do SIS</strong> v tomhle Chromu, nebo máš odemčený trezor (viz níže).</li>
+</ul>
+<h2>Jak hlídat akci</h2>
+<ol>
+<li><strong>Klikni</strong> na šimpanze.</li>
+<li><strong>U akce zvol Hlídat.</strong> Online akce mají „přihlásit mě automaticky“ zaškrtnuté předem, akce v budově ne. Obojí můžeš změnit.</li>
+<li><strong>Hotovo.</strong> Hlídat jde nejvýš 3 akce najednou.</li>
+</ol>
+<p>Akci, kterou nechceš, schováš tlačítkem <strong>Nezajímá mě</strong> (u hlídané <strong>Už mě nezajímá</strong>). Když se spleteš, najdeš ji dole v sekci <strong>Nezajímá mě</strong> a vrátíš tlačítkem <strong>Vrátit</strong>.</p>
+<p>Akce ze SIS, které nejsou ve veřejném harmonogramu, jsou ve sbalené sekci <strong>Další akce v SIS</strong>. Často jde o povinné semináře a praktické aplikace.</p>
+<h2>Pravidla automatického přihlášení</h2>
+<ul>
+<li><strong>Jen na akce, které sis vybral</strong> a u kterých je zaškrtnuté „přihlásit mě automaticky“. Sama nic nezačne hlídat.</li>
+<li><strong>U akcí mimo Skill-Port a Hosté VŠEM se nejdřív zeptá.</strong> Až akci najde v SIS, ukáže přesný název a ty potvrdíš, že je to ona. Ve stejný čas totiž může začínat jiná akce, třeba povinná praktická aplikace.</li>
+<li><strong>Jeden pokus na akci.</strong> Když se něco pokazí, dá vědět a víc nezkouší. Tlačítko <strong>Zkusit znovu</strong> pokus povolí znovu.</li>
+<li><strong>Nikdy tě neodhlásí.</strong></li>
+</ul>
+<h2>Barvy</h2>
+<table><thead><tr><th>Barva</th><th>Co znamená</th></tr></thead><tbody>
+<tr><td>🔴 červená</td><td>Bez tebe Šimpoliš nefunguje. Třeba se máš přihlásit do SIS.</td></tr>
+<tr><td>🔵 modrá</td><td>Stojí za to jednat. Třeba se otevřelo přihlášení, nebo máš potvrdit akci.</td></tr>
+<tr><td>🟢 zelená</td><td>Všechno je v pořádku, nebo je hotovo.</td></tr>
+</tbody></table>
+<p>Ikona šimpanze v liště se barví stejně: žlutá v klidu, modrá při příležitosti, červená, když je potřeba tvůj krok.</p>
+<h2>Trezor (nepovinný)</h2>
+<p>SIS automaticky odhlašuje a Šimpoliš tě pak upozorní, že se máš přihlásit. Díky trezoru se Šimpoliš zvládne přihlásit do SISu automaticky, a tím i na hlídanou akci.</p>
+<p>Pracuješ se dvěma hesly:</p>
+<ul>
+<li><strong>Heslo do SIS</strong> uložíš do trezoru jednou a pak už ho nezadáváš.</li>
+<li><strong>Hlavní heslo trezoru</strong> je jiné heslo, které si vymyslíš (aspoň 8 znaků). Trezor jím odemykáš při založení a po každém restartu Chromu. Nepoužívej ho nikde jinde.</li>
+</ul>
+<p>Další pravidla:</p>
+<ul>
+<li><strong>Založení:</strong> v Nastavení vyplň jméno a heslo do SIS a pak dvakrát nové hlavní heslo trezoru.</li>
+<li><strong>Po restartu Chromu</strong> je trezor zamčený. Když ho Šimpoliš potřebuje, ukáže nahoře pole na hlavní heslo.</li>
+<li><strong>Když přihlášení z trezoru selže</strong>, víckrát to nezkouší a automatické přihlašování vypne. Přihlas se ručně, pak trezor zamkni a znovu odemkni.</li>
+<li><strong>Heslo do SIS je zašifrované</strong> a odchází jen přes HTTPS na přihlašovací stránku školy.</li>
+<li><strong>Smazání:</strong> v Nastavení v části Trezor klikni na <strong>Smazat trezor</strong> a potvrď <strong>Ano, smazat</strong>.</li>
+<li><strong>Hlavní heslo trezoru nejde obnovit.</strong> Když ho zapomeneš, trezor smaž a založ znovu. Do SIS se tím nic nemění.</li>
+<li><strong>Změnil jsi heslo do SIS?</strong> Trezor smaž a založ znovu.</li>
+</ul>
+<h2>Jak často kontroluje</h2>
+<p>Jen tak často, jak je potřeba:</p>
+<ul>
+<li><strong>Ještě nehlídá žádnou akci:</strong> sleduje novinky na webu školy každou hodinu.</li>
+<li><strong>Akce je za více než 14 dní:</strong> hlídá jednou za 10 minut.</li>
+<li><strong>Akce se blíží:</strong> hlídá přihlášení každou minutu, v noci (21 až 6 h) jednou za 5 minut.</li>
+<li><strong>Je uvedený přesný čas otevření přihlašování:</strong> Šimpoliš zkontroluje SIS v daný čas.</li>
+</ul>
+<p>Prosím, nic z toho nezkracuj. Víc dotazů by bylo nefér vůči škole i ostatním.</p>
+<footer>Šimpoliš je neoficiální pomocník od spolužáka, ne aplikace školy.</footer>
+</main>
+</body>
+</html>

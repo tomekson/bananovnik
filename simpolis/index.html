@@ -30,6 +30,7 @@ p, ul, ol { margin:10px 0; }
 li { margin:6px 0; }
 a { color:var(--blue); }
 figure { margin:10px 0 22px; }
+@media (min-width: 1100px) { figure.wide { margin-inline:-120px; } }
 figure img { display:block; max-width:100%; height:auto; border:1px solid var(--line); border-radius:12px; background:#fff; }
 code { font-size:.9em; background:var(--line); padding:1px 5px; border-radius:5px; }
 .cta { display:inline-block; background:var(--blue); color:#fff; text-decoration:none; font-weight:650; padding:12px 18px; border-radius:12px; margin:6px 0 4px; }
@@ -61,7 +62,7 @@ h3.os { display:inline-block; font-size:15px; margin:18px 0 4px; padding:3px 12p
 <p><strong>Krok 4: otevři v Chromu stránku Rozšíření.</strong> Napiš do adresního řádku <code>chrome://extensions</code> a stiskni Enter.</p>
 <p><strong>Krok 5: zapni Režim pro vývojáře.</strong> Přepínač je vpravo nahoře.</p>
 <p><strong>Krok 6: klikni na Načíst rozbalené</strong> a vyber složku <strong>Simpolis</strong> v Dokumentech.</p>
-<figure><img src="navod/chrome-stranka-rozsireni.png" alt="Stránka Rozšíření v Chromu na počítači: 5 je přepínač Režim pro vývojáře vpravo nahoře, 6 je tlačítko Načíst rozbalené vlevo" loading="lazy"></figure>
+<figure class="wide"><img src="navod/chrome-stranka-rozsireni.png" alt="Stránka Rozšíření v Chromu na počítači: 5 je přepínač Režim pro vývojáře vpravo nahoře, 6 je tlačítko Načíst rozbalené vlevo" loading="lazy"></figure>
 <p><strong>Načteno:</strong> v seznamu rozšíření uvidíš kartu Šimpoliše se zapnutým modrým přepínačem.</p>
 <figure><img src="navod/chrome-3-nacteno.png" alt="Karta rozšíření Šimpoliš (beta) se zapnutým přepínačem" loading="lazy"></figure>
 <p><strong>Krok 7: připni si šimpanze,</strong> ať ho máš v liště po ruce.</p>

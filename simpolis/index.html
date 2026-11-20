@@ -145,7 +145,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <main>
 <header><img src="icon.png" alt=""><h1>Šimpoliš <small>(beta)</small></h1></header>
 <div class="lead">
-<p><a class="cta" href="simpolis-0.6.2.zip" download>Stáhnout Šimpoliše 0.6.2 (ZIP)</a></p>
+<p><a class="cta" href="simpolis-0.6.3.zip" download>Stáhnout Šimpoliše 0.6.3 (ZIP)</a></p>
 <p>Instalace je jednorázový úkol na pár minut.</p>
 </div>
 <p>Šimpoliš je šimpanz policajt 🐵👮, rozšíření pro Chrome na počítači (Mac i Windows). Funguje i v Edge a Brave. <strong>Na mobilu nefunguje.</strong></p>
@@ -175,7 +175,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>O nové verzi ti Šimpoliš řekne sám.</strong> V okně šimpanze se objeví modrý pruh a přijde notifikace.</li>
 <li><strong>Postup:</strong> stáhni nový ZIP a rozbal ho jako při instalaci. Novou složku <code>Simpolis</code> přetáhni do Dokumentů a zvol <strong>Nahradit</strong>.</li>
 <li><strong>Hlídané akce i Trezor zůstanou,</strong> když složku jen nahradíš na stejném místě. Rozšíření kvůli aktualizaci neodebírej, to by smazalo všechno.</li>
-<li><strong>Šimpoliš si novou verzi do minuty načte sám.</strong> Kdyby ne, klikni na stránce Rozšíření u Šimpoliše na kruhovou šipku. Trezor se přitom zamkne.</li>
+<li><strong>Šimpoliš si novou verzi do minuty načte sám.</strong> Kdyby ne, klikni na stránce Rozšíření u Šimpoliše na kruhovou šipku. Trezor se přitom vypne.</li>
 <li><strong>Stará verze se může vypnout.</strong> Když vyjde důležitá oprava nebo projekt skončí, stará verze přestane hlídat a v okně šimpanze uvidíš proč.</li>
 <li><strong>Kterou verzi máš,</strong> zjistíš v Nastavení v části Diagnostika.</li>
 </ul>
@@ -202,15 +202,19 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <ul>
 <li><strong>Chrome běží.</strong></li>
 <li><strong>Počítač nespí.</strong> Když počítač uspíš, Šimpoliš usne taky.</li>
-<li><strong>Jsi v Chromu přihlášený do SIS</strong> nebo máš odemčený Trezor (viz níže).</li>
+<li><strong>Jsi v Chromu přihlášený do SIS</strong> nebo máš povolený Trezor (viz níže).</li>
 </ul>
 <p>Jak na tom Šimpoliš je, ověříš v okně šimpanze tlačítkem <strong>Ověřit přihlášení</strong>.</p>
 <h2>Jak hlídat akci</h2>
 <ol>
-<li><strong>Klikni</strong> na šimpanze.</li>
+<li><strong>Klikni na šimpanze</strong> vpravo nahoře v liště Chromu. Otevře se okno Šimpoliše.</li>
 <li><strong>U akce zvol Hlídat.</strong> Šimpoliš tím rovnou zapne i „Auto-přihlášení na akci“: hlídkuje a na akci tě přihlásí, hned jak to půjde.</li>
+<li><strong>Zelené „Auto-přihlášení připravené“</strong> znamená, že jsi přihlášený v SIS a máš povolený Trezor. Šimpoliš tě pak přihlásí, i když u počítače zrovna nejsi.</li>
 <li><strong>Nechceš, aby tě přihlásil sám?</strong> U hlídané akce odškrtni „Auto-přihlášení na akci“. Šimpoliš tě pak jen upozorní, že se přihlašování otevřelo.</li>
 </ol>
+<figure><img src="navod/chrome-5-lista.svg" alt="Lišta Chromu: 1 je šimpanz vpravo od adresního řádku" loading="lazy"></figure>
+<figure><img src="navod/okno-hlidat.png" alt="Okno Šimpoliše: 2 je tlačítko Hlídat u akce, 3 je zelené Auto-přihlášení připravené u hlídané akce" loading="lazy"></figure>
+<p>Akce, na kterou jsi přihlášený, se přesune do sekce <strong>Přihlášeno</strong>. Odhlásit se z ní můžeš jen v SIS, odkaz <strong>Odhlásit se v SIS</strong> tě tam pošle.</p>
 <p>Hlídání zrušíš tlačítkem <strong>Nehlídat</strong>, akce se vrátí do seznamu. Akci, kterou nechceš vůbec, schováš tlačítkem <strong>Akci vynechám</strong>. Když se spleteš, najdeš ji dole v sekci <strong>Skryté akce</strong> a vrátíš tlačítkem <strong>Vrátit</strong>.</p>
 <p>Akce ze SIS, které nejsou ve veřejném harmonogramu, jsou ve sbalené sekci <strong>Další akce v SIS</strong>. Často jde o povinné semináře a praktické aplikace.</p>
 <h2>Pravidla automatického přihlášení</h2>
@@ -223,7 +227,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <h2>Barvy</h2>
 <p>Barva má význam jen u <strong>stavu nahoře v okně šimpanze</strong> a u <strong>ikony šimpanze v liště</strong>.</p>
 <table><thead><tr><th>Barva</th><th>Co znamená</th></tr></thead><tbody>
-<tr><td>🔴 červený rámeček</td><td>Bez tebe Šimpoliš nefunguje. Třeba máš odemknout Trezor nebo se přihlásit do SIS.</td></tr>
+<tr><td>🔴 červený rámeček</td><td>Bez tebe Šimpoliš nefunguje. Třeba máš povolit Trezor nebo se přihlásit do SIS.</td></tr>
 <tr><td>🔵 modrý rámeček</td><td>Šimpoliš čeká na tvé rozhodnutí. Třeba se otevřelo přihlášení, nebo máš potvrdit akci.</td></tr>
 <tr><td>🟢 zelený text</td><td>Všechno je v pořádku.</td></tr>
 </tbody></table>
@@ -241,8 +245,8 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <p>Další pravidla:</p>
 <ul>
 <li><strong>Založení:</strong> v Nastavení vyplň jméno a heslo do SIS a pak dvakrát nové hlavní heslo trezoru.</li>
-<li><strong>Po restartu Chromu</strong> je trezor zamčený.</li>
-<li><strong>Když automatické přihlášení z trezoru selže</strong>, víckrát to nezkouší a toto přihlašování vypne. Přihlas se ručně, pak trezor zamkni a znovu odemkni.</li>
+<li><strong>Po restartu Chromu</strong> je Trezor vypnutý. Povolíš ho hlavním heslem.</li>
+<li><strong>Když automatické přihlášení z trezoru selže</strong>, víckrát to nezkouší a toto přihlašování vypne. Přihlas se do SIS ručně, pak Trezor vypni a znovu povol.</li>
 <li><strong>Heslo do SIS je uložené zašifrované v prohlížeči</strong> a odchází jen přes HTTPS na přihlašovací stránku školy.</li>
 <li><strong>Smazání:</strong> v Nastavení v části Trezor klikni na <strong>Smazat trezor</strong> a potvrď <strong>Ano, smazat</strong>.</li>
 <li><strong>Hlavní heslo trezoru nejde obnovit.</strong> Když ho zapomeneš, trezor smaž a založ znovu. Do SIS se tím nic nemění.</li>

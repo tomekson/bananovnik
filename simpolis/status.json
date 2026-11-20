@@ -1,7 +1,7 @@
 {
- "latest": "0.6.3",
+ "latest": "0.6.4",
  "minVersion": "0.0.0",
  "ended": false,
- "message": "Přehlednější okno, sekce Přihlášeno a Trezor se teď povoluje",
+ "message": "Ověřuje, jestli jsi na akcích pořád přihlášený",
  "url": "https://tomekson.github.io/bananovnik/simpolis/"
 }

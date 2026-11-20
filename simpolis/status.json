@@ -1,7 +1,7 @@
 {
- "latest": "0.6.1",
+ "latest": "0.6.2",
  "minVersion": "0.0.0",
  "ended": false,
- "message": "Jasnější barvy a texty",
+ "message": "Hlídání rovnou zapne auto-přihlášení",
  "url": "https://tomekson.github.io/bananovnik/simpolis/"
 }

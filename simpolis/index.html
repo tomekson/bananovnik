@@ -138,6 +138,9 @@ code { font-size:.9em; background:var(--card); padding:1px 5px; border-radius:5p
 table { width:100%; border-collapse:collapse; margin:12px 0; font-size:16px; }
 th, td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; }
 th { font:700 15px/1.3 var(--display); text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+h2, h3 { scroll-margin-top: 16px; }
+h2 .anchor { font-size: .8em; color: var(--muted); text-decoration: none; opacity: 0; }
+h2:hover .anchor, h2 .anchor:focus { opacity: 1; }
 h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spacing:.06em; margin:22px 0 4px; color:var(--muted); }
 </style>
 </head>
@@ -155,7 +158,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Upozorní tě na nové akce.</strong> Ty, které tě nezajímají, schováš jedním kliknutím.</li>
 <li><strong>Osobní data nesdílí.</strong> Heslo, přihlášení do SIS ani tvoje akce neopustí tvůj prohlížeč.</li>
 </ul>
-<h2>Instalace</h2>
+<h2 id="instalace">Instalace <a class="anchor" href="#instalace" aria-label="Odkaz na sekci">#</a></h2>
 <p>Šimpoliš není v Chrome Web Store, instaluje se ze ZIPu.</p>
 <p><strong>Krok 1: stáhni ZIP.</strong> Tlačítko <strong>Stáhnout Šimpoliše</strong> je nahoře na stránce s návodem. Soubor se uloží do složky <strong>Stažené soubory</strong>.</p>
 <p><strong>Krok 2: rozbal ho.</strong> Na Macu na stažený soubor dvakrát klikni. Ve Windows na něj klikni pravým tlačítkem a zvol <strong>Extrahovat vše</strong>, pak <strong>Extrahovat</strong>.</p>
@@ -170,7 +173,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <p><strong>Krok 8: klikni na špendlík u Šimpoliše.</strong> Šimpanz pak zůstane v liště po ruce.</p>
 <figure><img src="navod/chrome-4-pripnout.svg" alt="Lišta Chromu: 7 je dílek skládačky vpravo od adresního řádku, 8 je špendlík u Šimpoliše" loading="lazy"></figure>
 <p>Po instalaci se otevře Nastavení s krátkým úvodem.</p>
-<h2>Aktualizace</h2>
+<h2 id="aktualizace">Aktualizace <a class="anchor" href="#aktualizace" aria-label="Odkaz na sekci">#</a></h2>
 <ul>
 <li><strong>O důležité nové verzi ti Šimpoliš řekne sám.</strong> Drobné úpravy nehlásí, nemusíš je instalovat. V okně šimpanze se objeví modrý pruh a přijde notifikace.</li>
 <li><strong>Postup:</strong> stáhni nový ZIP a rozbal ho jako při instalaci. Novou složku <code>Simpolis</code> přetáhni do Dokumentů a zvol <strong>Nahradit</strong>.</li>
@@ -179,7 +182,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Stará verze se může vypnout.</strong> Když vyjde důležitá oprava nebo projekt skončí, stará verze přestane hlídat a v okně šimpanze uvidíš proč.</li>
 <li><strong>Kterou verzi máš,</strong> zjistíš v Nastavení v části Diagnostika.</li>
 </ul>
-<h2>Notifikace</h2>
+<h2 id="notifikace">Notifikace <a class="anchor" href="#notifikace" aria-label="Odkaz na sekci">#</a></h2>
 <p>Notifikace jsou nepovinné, ale doporučené. Šimpoliš funguje i bez nich:</p>
 <ul>
 <li><strong>Ikona šimpanze v liště</strong> ukáže, co se děje. Modrá s číslem znamená otevřené přihlášení, červená, že je potřeba tvůj krok.</li>
@@ -198,14 +201,14 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Zapni</strong> oznámení pro <strong>Google Chrome</strong>.</li>
 <li><strong>Vypni</strong> režim <strong>Nerušit</strong>, nebo do výjimek přidej Google Chrome.</li>
 </ol>
-<h2>Co musí platit, aby hlídal</h2>
+<h2 id="co-musi-platit-aby-hlidal">Co musí platit, aby hlídal <a class="anchor" href="#co-musi-platit-aby-hlidal" aria-label="Odkaz na sekci">#</a></h2>
 <ul>
 <li><strong>Chrome běží.</strong></li>
 <li><strong>Počítač nespí.</strong> Když počítač uspíš, Šimpoliš usne taky.</li>
 <li><strong>Jsi v Chromu přihlášený do SIS</strong> nebo máš povolený Trezor (viz níže).</li>
 </ul>
 <p>Jak na tom Šimpoliš je, ověříš v okně šimpanze tlačítkem <strong>Ověřit přihlášení</strong>.</p>
-<h2>Jak hlídat akci</h2>
+<h2 id="jak-hlidat-akci">Jak hlídat akci <a class="anchor" href="#jak-hlidat-akci" aria-label="Odkaz na sekci">#</a></h2>
 <ol>
 <li><strong>Klikni na šimpanze</strong> vpravo nahoře v liště Chromu. Otevře se okno Šimpoliše.</li>
 <li><strong>U akce zvol Hlídat.</strong> Šimpoliš tím rovnou zapne i „Auto-přihlášení na akci“: hlídkuje a na akci tě přihlásí, hned jak to půjde.</li>
@@ -217,14 +220,14 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <p>Akce, na kterou jsi přihlášený, se přesune do sekce <strong>Přihlášeno</strong>. Odhlásit se z ní můžeš jen v SIS, odkaz <strong>Odhlásit se v SIS</strong> tě tam pošle. Šimpoliš to pozná a vrátí akci mezi hlídané s vypnutým auto-přihlášením, takže tě znovu nepřihlásí.</p>
 <p>Hlídání zrušíš tlačítkem <strong>Nehlídat</strong>, akce se vrátí do seznamu. Akci, kterou nechceš vůbec, schováš tlačítkem <strong>Akci vynechám</strong>. Když se spleteš, najdeš ji dole v sekci <strong>Skryté akce</strong> a vrátíš tlačítkem <strong>Vrátit</strong>.</p>
 <p>Akce ze SIS, které nejsou ve veřejném harmonogramu, jsou ve sbalené sekci <strong>Další akce v SIS</strong>. Často jde o povinné semináře a praktické aplikace.</p>
-<h2>Pravidla automatického přihlášení</h2>
+<h2 id="pravidla-automatickeho-prihlaseni">Pravidla automatického přihlášení <a class="anchor" href="#pravidla-automatickeho-prihlaseni" aria-label="Odkaz na sekci">#</a></h2>
 <ul>
 <li><strong>Jen na akce, které sis vybral</strong> a u kterých je zaškrtnuté „Auto-přihlášení na akci“.</li>
 <li><strong>U akcí mimo Skill-Port a Hosté VŠEM se nejdřív zeptá.</strong> Až akci najde v SIS, ukáže přesný název a ty potvrdíš, že je to ona.</li>
 <li><strong>Jeden pokus na akci.</strong> Když se něco pokazí, dá vědět a víc nezkouší. Tlačítko <strong>Zkusit znovu</strong> pokus povolí znovu.</li>
 <li><strong>Nikdy tě neodhlásí.</strong></li>
 </ul>
-<h2>Barvy</h2>
+<h2 id="barvy">Barvy <a class="anchor" href="#barvy" aria-label="Odkaz na sekci">#</a></h2>
 <p>Barva má význam jen u <strong>stavu nahoře v okně šimpanze</strong> a u <strong>ikony šimpanze v liště</strong>.</p>
 <table><thead><tr><th>Barva</th><th>Co znamená</th></tr></thead><tbody>
 <tr><td>🔴 červený rámeček</td><td>Bez tebe Šimpoliš nefunguje. Třeba máš povolit Trezor nebo se přihlásit do SIS.</td></tr>
@@ -235,7 +238,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Ikona v liště:</strong> v klidu je žlutá, při otevřeném přihlášení modrá s číslem, a když je potřeba tvůj krok, červená.</li>
 <li><strong>Modrá tlačítka</strong> jako <strong>Hlídat</strong> nebo <strong>Otevřít SIS</strong> jen ukazují, kam kliknout.</li>
 </ul>
-<h2>Trezor (nepovinný, ale doporučený)</h2>
+<h2 id="trezor">Trezor (nepovinný, ale doporučený) <a class="anchor" href="#trezor" aria-label="Odkaz na sekci">#</a></h2>
 <p>SIS automaticky odhlašuje a Šimpoliš tě pak upozorní, že se máš přihlásit. Díky trezoru se Šimpoliš zvládne přihlásit do SISu automaticky, a tím i na hlídanou akci.</p>
 <p>Pracuješ se dvěma hesly:</p>
 <ul>
@@ -252,7 +255,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Hlavní heslo trezoru nejde obnovit.</strong> Když ho zapomeneš, trezor smaž a založ znovu. Do SIS se tím nic nemění.</li>
 <li><strong>Změnil jsi heslo do SIS?</strong> Trezor smaž a založ znovu.</li>
 </ul>
-<h2>Co Šimpoliš sdílí</h2>
+<h2 id="co-simpolis-sdili">Co Šimpoliš sdílí <a class="anchor" href="#co-simpolis-sdili" aria-label="Odkaz na sekci">#</a></h2>
 <p>Šimpoliši různých uživatelů si předávají seznam akcí z webu školy a SISu.</p>
 <ul>
 <li><strong>Co odchází:</strong> názvy, popisy a termíny akcí, kdy se na ně dá přihlásit a jakou mají kapacitu. Stejné údaje vidí v SIS každý student.</li>
@@ -262,7 +265,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Kontrola nové verze:</strong> jednou za 6 hodin si Šimpoliš stáhne z webu návodu malý soubor s číslem nejnovější verze. Nic přitom neodesílá.</li>
 <li><strong>Žádná statistika.</strong> Šimpoliš nesleduje, jak ho používáš.</li>
 </ul>
-<h2>Jak často se vše kontroluje</h2>
+<h2 id="jak-casto-se-vse-kontroluje">Jak často se vše kontroluje <a class="anchor" href="#jak-casto-se-vse-kontroluje" aria-label="Odkaz na sekci">#</a></h2>
 <p>Jen tak často, jak je potřeba:</p>
 <ul>
 <li><strong>Když nehlídáš žádnou akci:</strong> sleduje novinky na webu školy každou hodinu.</li>

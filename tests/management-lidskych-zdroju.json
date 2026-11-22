@@ -235,7 +235,65 @@
     "Popište rozdíl mezi hodnocením pracovníků a řízením pracovního výkonu. Co je to dohoda o pracovním výkonu a jakou má roli?",
     "Vysvětlete pojmy mzda, plat a odměna z dohod. Jaký je mezi těmito pojmy rozdíl? Co jsou zaměstnanecké výhody a jaký mají význam v odměňování zaměstnanců?",
     "Jaké jsou jednotlivé etapy procesu výběru zaměstnanců (co je cílem procesu výběru, jaké jsou úskalí výběrových pohovorů, struktura výběrového pohovoru)?",
-    "Jaká jsou specifika managementu lidských zdrojů jako nejnovější etapy ve vývoji personální práce (stručně charakterizujte jednotlivé etapy ve vývoji personalistiky a zaměřte se na specifika současné etapy)?"
+    "Jaká jsou specifika managementu lidských zdrojů jako nejnovější etapy ve vývoji personální práce (stručně charakterizujte jednotlivé etapy ve vývoji personalistiky a zaměřte se na specifika současné etapy)?",
+    "Analýza pracovní místa( popis místa, specifikace, k čemu je dobrá pro další personální práce )"
+  ],
+  "openAnswers": {
+    "html": "media/management-lidskych-zdroju/management-lidskych-zdroju-otevrene-otazky.htm",
+    "pdf": "media/management-lidskych-zdroju/management-lidskych-zdroju-otevrene-otazky.pdf"
+  },
+  "openSets": [
+    {
+      "name": "Co je MLZ a kdo ho dělá",
+      "q": [
+        18,
+        13,
+        6,
+        9,
+        11
+      ],
+      "html": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-1.htm",
+      "pdf": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-1.pdf",
+      "worksheet": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-1-pracovni-list.pdf"
+    },
+    {
+      "name": "Strategie a pracovní místo",
+      "q": [
+        4,
+        8,
+        19,
+        10
+      ],
+      "html": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-2.htm",
+      "pdf": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-2.pdf",
+      "worksheet": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-2-pracovni-list.pdf"
+    },
+    {
+      "name": "Od získávání po adaptaci",
+      "q": [
+        12,
+        3,
+        17,
+        5,
+        7
+      ],
+      "html": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-3.htm",
+      "pdf": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-3.pdf",
+      "worksheet": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-3-pracovni-list.pdf"
+    },
+    {
+      "name": "Výkon, odměna a odchod",
+      "q": [
+        2,
+        15,
+        16,
+        14,
+        1
+      ],
+      "html": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-4.htm",
+      "pdf": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-4.pdf",
+      "worksheet": "media/management-lidskych-zdroju/management-lidskych-zdroju-sada-4-pracovni-list.pdf"
+    }
   ],
   "questions": [
     {

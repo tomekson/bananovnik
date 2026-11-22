@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Banánovník: procvičování testů ke zkouškám na VŠEM">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/bananovnik/manifest.json?v=11.04">
+<link rel="manifest" href="/bananovnik/manifest.json?v=11.05">
 <meta name="theme-color" content="#DDD7B2">
 <script>
 (function(){var s=null;try{s=localStorage.getItem('bananovnik-theme')}catch(e){}
@@ -2384,7 +2384,8 @@ const TESTS_REGISTRY = [
     examSchema: '20 uzavřených + 1 otevřená',
     updatedAt: '2026-11-22',
     questionCount: 151,
-    hasSets: true
+    hasSets: true,
+    hasAudio: true
   },
   {
     id: 'pravo-v-praxi',
@@ -4885,7 +4886,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '11.04';
+const APP_VERSION = '11.05';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

@@ -2515,18 +2515,19 @@
       "info": "Pojem: Získávání z vnitřních zdrojů znamená obsazovat volné funkce stávajícími zaměstnanci. Podle Koubka mají tento postup tyto výhody.\nOrganizace zná silné i slabé stránky uchazeče a uchazeč zná organizaci. Lépe se vrací investice, které organizace vložila do pracovníků. Zvyšuje se motivace a stabilita zaměstnanců.\nŠkála talentů v organizaci bývá užší, než jaká je na trhu práce mimo ni. Širší výběr nabízejí proto vnější zdroje.\nNevýhodami vnitřních zdrojů jsou soutěžení o povýšení, které zhoršuje vztahy, a omezený přísun nových myšlenek zvenčí.\nUchazeč navíc zná organizaci a její kulturu, takže se rychleji adaptuje."
     },
     {
-      "q": "Vyjádření různé míry složitosti, odpovědnosti a namáhavosti práce představuje: (2/4 bodů) (bez záruky)",
+      "q": "Vyjádření různé míry složitosti, odpovědnosti a namáhavosti práce představuje: (bez záruky)",
       "opts": [
         "Platový stupeň",
         "Platová třída",
-        "Zaučená mzda",
+        "Zaručená mzda",
         "Minimální mzda",
         "Příplatek ke mzdě či platu"
       ],
       "correct": [
-        1
+        1,
+        2
       ],
-      "info": "Pojem: Platová třída je zařazení práce v platovém systému podle složitosti, odpovědnosti a namáhavosti. Plat se poskytuje v organizacích, jejichž zřizovatelem je stát nebo jeho dílčí orgány.\nPodle § 123 zákoníku práce patří pracovníkovi platový tarif stanovený pro platovou třídu a platový stupeň. Platové tarify mají 16 platových tříd.\nDo třídy se pracovník zařadí podle druhu práce sjednaného v pracovní smlouvě a podle náročnosti práce. Platový stupeň vyjadřuje délku započitatelné praxe a navazuje na třídu.\nMinimální mzda je zákonná spodní hranice odměny. Příplatek ke mzdě nebo platu je doplňková složka za zvláštní podmínky práce.\nRozpor: Podle testu odpovídá popisu jen platová třída a autorka testu za to dostala 2/4 bodů. Podle zákoníku práce (§ 112) se podle složitosti, odpovědnosti a namáhavosti práce odstupňovávají i nejnižší úrovně zaručené mzdy, takže možnost „Zaučená mzda“ je nejspíš překlep za zaručenou mzdu."
+      "info": "Pojem: Platová třída je zařazení práce v platovém systému podle složitosti, odpovědnosti a namáhavosti. Plat se poskytuje v organizacích, jejichž zřizovatelem je stát nebo jeho dílčí orgány.\nPodle § 123 zákoníku práce patří pracovníkovi platový tarif stanovený pro platovou třídu a platový stupeň. Platové tarify mají 16 platových tříd.\nDo třídy se pracovník zařadí podle druhu práce sjednaného v pracovní smlouvě a podle náročnosti práce. Platový stupeň vyjadřuje délku započitatelné praxe a navazuje na třídu.\nZaručená mzda je mzda nebo plat, na které zaměstnanci vzniklo právo podle zákoníku práce. Její nejnižší úrovně se podle § 112 zákoníku práce odstupňovávají podle složitosti, odpovědnosti a namáhavosti práce do skupin prací.\nMinimální mzda je zákonná spodní hranice odměny. Příplatek ke mzdě nebo platu je doplňková složka za zvláštní podmínky práce."
     },
     {
       "q": "Hodnocení pracovníků obvykle provádí:",

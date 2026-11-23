@@ -3940,6 +3940,11 @@ function testStudyQ() {
 function openDialog(id)  { const d = document.getElementById(id); if (!d.open) d.showModal(); }
 function closeDialog(id) { const d = document.getElementById(id); if (d.open) d.close(); }
 function openDialogEl()  { return document.querySelector('dialog[open]'); }
+// Psaní do pole (např. skok na otázku) nesmí spouštět klávesové zkratky obrazovky
+function typingInField(e) {
+  const t = e.target;
+  return !!(t && t.closest && t.closest('input, textarea, select, [contenteditable], .jump-pop'));
+}
 // Klik do ::backdrop má target = dialog; klik do jeho paddingu taky, proto test přes obdélník.
 document.querySelectorAll('dialog.dialog').forEach(d => {
   d.addEventListener('click', function(e) {
@@ -4380,7 +4385,7 @@ function copySurveyResult() {
 
 document.addEventListener('keydown', function(e) {
   if (!document.getElementById('screen-survey').classList.contains('active')) return;
-  if (openDialogEl() || !SV) return;
+  if (openDialogEl() || !SV || typingInField(e)) return;
   if (e.key === 'Enter')      { e.preventDefault(); surveyMain(); return; }
   if (e.key === 'ArrowRight') { e.preventDefault(); goSurvey(1); return; }
   if (e.key === 'ArrowLeft')  { e.preventDefault(); goSurvey(-1); return; }
@@ -4393,6 +4398,7 @@ document.addEventListener('keydown', function(e) {
 var _enterCooldown = false;
 document.addEventListener('keydown', function(e) {
   if (!document.getElementById('screen-quiz').classList.contains('active')) return;
+  if (typingInField(e)) return;
   const dlg = openDialogEl();
   if (dlg) {
     if (e.key === 'x' || e.key === 'X') dlg.close();
@@ -4418,7 +4424,7 @@ document.addEventListener('keydown', function(e) {
 
 document.addEventListener('keyup', function(e) {
   if (e.key === ' ' && document.getElementById('screen-quiz').classList.contains('active')) {
-    if (openDialogEl()) return;
+    if (openDialogEl() || typingInField(e)) return;
     if (!S.questions || S.cur == null) return;
     if (_enterCooldown) return;
     _enterCooldown = true; setTimeout(function(){ _enterCooldown = false; }, 200);
@@ -4439,7 +4445,7 @@ document.addEventListener('keydown', function(e) {
 
 document.addEventListener('keydown', function(e) {
   if (!document.getElementById('screen-study').classList.contains('active')) return;
-  if (openDialogEl()) return;
+  if (openDialogEl() || typingInField(e)) return;
   if (!S.questions || S.cur == null) return;
   if (e.key === 'Enter')      { e.preventDefault(); document.getElementById('btn-study-main').click(); return; }
   if (e.key === 'ArrowRight') { e.preventDefault(); goStudy(1); return; }
@@ -4886,7 +4892,7 @@ function toggleTheme() {
 }
 applyTheme(document.documentElement.dataset.theme || 'light');
 
-const APP_VERSION = '11.07';
+const APP_VERSION = '11.08';
 document.querySelectorAll('#app-version').forEach(el => el.textContent = APP_VERSION);
 loadRegistry();
 

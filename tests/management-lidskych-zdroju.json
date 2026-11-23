@@ -920,7 +920,7 @@
       "info": "Pojem: Cílem personálního plánování je zajistit organizaci pracovní sílu, která splní její úkoly nyní i v budoucnu. Podle Armstronga plánování předvídá vývoj, stanovuje cíle a realizuje opatření k jejich dosažení.\nPracovníci mají být v potřebném množství (kvantita) a s potřebnými znalostmi, dovednostmi a zkušenostmi (kvalita). Mají mít žádoucí osobnostní charakteristiky a být optimálně motivovaní, flexibilní a připravení na změny. Dále mají být optimálně rozmístění, k dispozici ve správný čas a s přiměřenými náklady.\nKvantita a kvalita musí platit současně. Organizaci nestačí mít dost lidí, když nemají potřebné schopnosti a postoje.\nSprávný čas znamená, že pracovníci jsou k dispozici, když začíná činnost, kterou mají vykonávat. Proto se cyklus plánování činnosti organizace a cyklus personálního plánování časově sladí."
     },
     {
-      "q": "Jak lze dělit plány v oblasti lidských zdrojů? (2/4 bodů)",
+      "q": "Jak lze dělit plány v oblasti lidských zdrojů?",
       "opts": [
         "Členění dle úrovně rozhodovacího procesu",
         "Členění dle věcné náplně plánu",
@@ -935,7 +935,7 @@
       "info": "Pojem: Plány lidských zdrojů jsou dokumenty, které z obecnějších strategií zabezpečování lidských zdrojů odvozují konkrétní činnosti. Dělit je lze podle více hledisek.\nČasové hledisko rozlišuje plány dlouhodobé (strategické), střednědobé (taktické) a krátkodobé (operativní). Čím delší horizont, tím je plán obecnější a nejistější. Horizont plánu zároveň odpovídá úrovni řízení, na které se o plánu rozhoduje: strategické plány přijímá vrcholové vedení, operativní plány vedoucí na nižších úrovních.\nSkripta podle Koubka člení plány podle oblastí, pro které se vytvářejí, tedy podle věcné náplně. Jde o plán zabezpečování lidských zdrojů (získávání z vnitřních a vnějších zdrojů, plány atraktivního zaměstnavatele), plán flexibility a plán snižování počtu pracovníků.\nČlenění podle smysluplnosti nebo srozumitelnosti se v literatuře nepoužívá.\nRozpor: Podle testu je správně členění dle časového hlediska a dle úrovně rozhodovacího procesu. Podle učebnice se plány v oblasti lidských zdrojů člení i dle věcné náplně plánu."
     },
     {
-      "q": "Důležitým faktorem v oblasti odměňování je:   (2/4 bodů)",
+      "q": "Důležitým faktorem v oblasti odměňování je:",
       "opts": [
         "jednoznačnost odměňování",
         "daná zastávaná pozice",
@@ -2371,7 +2371,7 @@
       "info": "Pojem: Kvantitativní metody personálního plánování odhadují budoucí potřebu pracovníků pomocí matematického nebo statistického aparátu. Skripta je řadí vedle intuitivních metod.\nPatří sem analýza vývojových trendů, korelace a regrese, grafická analýza, modelování a metoda založená na pracovních normách. Korelace a regrese zkoumá vztah mezi potřebou pracovníků a jiným ukazatelem, například objemem výroby. Grafická analýza zobrazuje tento vztah v grafu.\nDelfská metoda, kaskádová metoda a metoda manažerských odhadů jsou intuitivní. Stojí na úsudku zkušených odhadců.\nOrganizace obvykle obě skupiny kombinuje.\nVýhodou kvantitativních metod je ověřitelnost výpočtu. Nevýhodou je, že předpokládají stabilní vztahy v minulosti i budoucnosti."
     },
     {
-      "q": "Mezi psychologické testy používané v rámci výběru pracovníků patří: (3/4 bodů)",
+      "q": "Mezi psychologické testy používané v rámci výběru pracovníků patří:",
       "opts": [
         "testy osobnosti",
         "testy schopností (testy inteligence)",
@@ -2638,7 +2638,7 @@
       "info": "Pojem: Požadavky na uchazeče jsou vlastnosti, které organizace stanoví podle popisu pracovního místa a svých záměrů. Musí odpovídat práci, být alespoň částečně měřitelné a nesmějí diskriminovat.\nBěžně se týkají odborných znalostí a dovedností, požadovaného chování a postojů. Odborné znalosti a kvalifikaci je nejsnazší stanovit. Obtížnější je formulovat požadavky na osobnostní vlastnosti, sociální dovednosti a motivaci.\nZákoník práce zakazuje diskriminaci (§ 16) a zaměstnavatel nesmí vyžadovat informace, které nesouvisejí s uzavřením pracovního poměru (§ 316). Politická příslušnost proto požadavkem být nemůže.\nStejně tak věk. Rozlišování podle věku je diskriminací, pokud ho neodůvodňuje podstatný požadavek práce, a běžným požadavkem proto není. Posuzuje se schopnost práci vykonávat."
     },
     {
-      "q": "Jaké tvrzení týkající se předvýběru uchazečů je pravdivé? (3/4 bodů)",
+      "q": "Jaké tvrzení týkající se předvýběru uchazečů je pravdivé?",
       "opts": [
         "výsledkem předvýběru uchazečů je rozdělení uchazečů do dvou skupin, na vhodné a nevhodné uchazeče",
         "předvýběr uchazečů představuje první fázi procesu získávání zaměstnanců",

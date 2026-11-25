@@ -1,8 +1,8 @@
 {
- "latest": "0.6.4",
- "newest": "0.6.5",
+ "latest": "0.7.0",
+ "newest": "0.7.0",
  "minVersion": "0.0.0",
  "ended": false,
- "message": "Ověřuje, jestli jsi na akcích pořád přihlášený",
+ "message": "Upozorní, kdy se otevře přihlášení, a nabídne připomínku do kalendáře.",
  "url": "https://tomekson.github.io/bananovnik/simpolis/"
 }

@@ -148,14 +148,14 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <main>
 <header><img src="icon.png" alt=""><h1>Šimpoliš <small>(beta)</small></h1></header>
 <div class="lead">
-<p><a class="cta" href="simpolis-0.6.5.zip" download>Stáhnout Šimpoliše 0.6.5 (ZIP)</a></p>
+<p><a class="cta" href="simpolis-0.7.0.zip" download>Stáhnout Šimpoliše 0.7.0 (ZIP)</a></p>
 <p>Instalace je jednorázový úkol na pár minut.</p>
 </div>
 <p>Šimpoliš je šimpanz policajt 🐵👮, rozšíření pro Chrome na počítači (Mac i Windows). Funguje i v Edge a Brave. <strong>Na mobilu nefunguje.</strong></p>
 <ul>
 <li><strong>Hlídá akce, které si vybereš.</strong> Jakmile je možné se přihlásit, dá ti vědět.</li>
-<li><strong>Umí tě přihlásit sám.</strong> Auto-přihlášení zapne spolu s hlídáním, vypnout si ho můžeš.</li>
-<li><strong>Upozorní tě na nové akce.</strong> Ty, které tě nezajímají, schováš jedním kliknutím.</li>
+<li><strong>Umí tě na akci přihlásit automaticky.</strong> Potřebuje k tomu spuštěný Chrome, počítač, který nespí, a povolený Trezor. Auto-přihlášení zapne spolu s hlídáním, vypnout si ho můžeš.</li>
+<li><strong>Upozorní tě na nové akce</strong> a na čas, kdy se otevře přihlášení. Akce, které tě nezajímají, schováš jedním kliknutím.</li>
 <li><strong>Osobní data nesdílí.</strong> Heslo, přihlášení do SIS ani tvoje akce neopustí tvůj prohlížeč.</li>
 </ul>
 <h2 id="instalace">Instalace <a class="anchor" href="#instalace" aria-label="Odkaz na sekci">#</a></h2>
@@ -174,11 +174,11 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <figure><img src="navod/chrome-4-pripnout.svg" alt="Lišta Chromu: 7 je dílek skládačky vpravo od adresního řádku, 8 je špendlík u Šimpoliše" loading="lazy"></figure>
 <p>Po instalaci se otevře Nastavení s krátkým úvodem.</p>
 <h2 id="aktualizace">Aktualizace <a class="anchor" href="#aktualizace" aria-label="Odkaz na sekci">#</a></h2>
-<p><strong>Kdy aktualizovat, ti Šimpoliš řekne sám.</strong> Drobné úpravy vycházejí potichu. Upozorní jen na verzi, která za to stojí: v okně šimpanze se objeví modrý pruh a přijde notifikace.</p>
+<p><strong>Kdy aktualizovat, ti Šimpoliš řekne.</strong> Drobné úpravy vycházejí potichu. Upozorní jen na verzi, která za to stojí: v okně šimpanze se objeví modrý pruh a přijde notifikace.</p>
 <ol>
 <li><strong>Stáhni nový ZIP</strong> tlačítkem nahoře na stránce a rozbal ho jako při instalaci.</li>
 <li><strong>Přetáhni novou složku <code>Simpolis</code> do Dokumentů</strong> a zvol <strong>Nahradit</strong>.</li>
-<li><strong>Počkej minutu.</strong> Šimpoliš si novou verzi načte sám. Kdyby ne, klikni na stránce Rozšíření u Šimpoliše na kruhovou šipku.</li>
+<li><strong>Počkej minutu.</strong> Šimpoliš si novou verzi načte automaticky. Kdyby ne, klikni na stránce Rozšíření u Šimpoliše na kruhovou šipku.</li>
 <li><strong>Povol Trezor</strong>, pokud ho používáš. Po aktualizaci je vypnutý.</li>
 </ol>
 <p><strong>Hlídané akce i Trezor zůstanou.</strong> Rozšíření kvůli aktualizaci neodebírej, to by smazalo všechno.</p>
@@ -213,14 +213,15 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <h2 id="jak-hlidat-akci">Jak hlídat akci <a class="anchor" href="#jak-hlidat-akci" aria-label="Odkaz na sekci">#</a></h2>
 <ol>
 <li><strong>Klikni na šimpanze</strong> vpravo nahoře v liště Chromu. Otevře se okno Šimpoliše.</li>
-<li><strong>U akce zvol Hlídat.</strong> Šimpoliš tím rovnou zapne i „Auto-přihlášení na akci“: hlídkuje a na akci tě přihlásí, hned jak to půjde.</li>
-<li><strong>Zelené „Auto-přihlášení připravené“</strong> znamená, že jsi přihlášený v SIS a máš povolený Trezor. Šimpoliš tě pak přihlásí, i když u počítače zrovna nejsi.</li>
-<li><strong>Nechceš, aby tě přihlásil sám?</strong> U hlídané akce odškrtni „Auto-přihlášení na akci“. Šimpoliš tě pak jen upozorní, že se přihlašování otevřelo.</li>
+<li><strong>U akce zvol Hlídat.</strong> Šimpoliš tím rovnou zapne i „Auto-přihlášení na akci“: hlídkuje, a jakmile se přihlášení otevře, zkusí tě na akci přihlásit automaticky.</li>
+<li><strong>Zelené „Auto-přihlášení připravené“</strong> znamená, že jsi přihlášený v SIS a máš povolený Trezor. Když poběží Chrome a počítač nebude spát, Šimpoliš tě pak zkusí přihlásit, i když u počítače zrovna nejsi.</li>
+<li><strong>Nechceš, aby tě přihlásil automaticky?</strong> U hlídané akce odškrtni „Auto-přihlášení na akci“. Šimpoliš tě pak jen upozorní, že se přihlašování otevřelo.</li>
 </ol>
 <figure><img src="navod/chrome-5-lista.svg" alt="Lišta Chromu: 1 je šimpanz vpravo od adresního řádku" loading="lazy"></figure>
 <figure><img src="navod/okno-hlidat.png" alt="Okno Šimpoliše: 2 je tlačítko Hlídat u akce, 3 je zelené Auto-přihlášení připravené u hlídané akce" loading="lazy"></figure>
 <p>Akce, na kterou jsi přihlášený, se přesune do sekce <strong>Přihlášeno</strong>. Odhlásit se z ní můžeš jen v SIS, odkaz <strong>Odhlásit se v SIS</strong> tě tam pošle. Šimpoliš to pozná a vrátí akci mezi hlídané s vypnutým auto-přihlášením, takže tě znovu nepřihlásí.</p>
 <p>Hlídání zrušíš tlačítkem <strong>Nehlídat</strong>, akce se vrátí do seznamu. Akci, kterou nechceš vůbec, schováš tlačítkem <strong>Akci vynechám</strong>. Když se spleteš, najdeš ji dole v sekci <strong>Skryté akce</strong> a vrátíš tlačítkem <strong>Vrátit</strong>.</p>
+<p><strong>Přidat do kalendáře</strong> najdeš u každé akce pod datem. Vybereš <strong>Akce</strong>, nebo <strong>Připomínka přihlášení</strong>. Připomínka je jen záznam v tvém kalendáři na chvíli, kdy se v SIS otevře přihlášení. <strong>Přihlásit se pak musíš v SIS ručně.</strong> Automaticky tě Šimpoliš zkusí přihlásit jen na akci, kterou hlídá s auto-přihlášením, a jen když poběží Chrome, počítač nebude spát a budeš mít povolený Trezor. Tlačítko <strong>Připomínka do kalendáře</strong> je i v notifikaci, která přijde, jakmile SIS čas otevření přihlášení ukáže.</p>
 <p>Akce ze SIS, které nejsou ve veřejném harmonogramu, jsou ve sbalené sekci <strong>Další akce v SIS</strong>. Často jde o povinné semináře a praktické aplikace.</p>
 <h2 id="pravidla-automatickeho-prihlaseni">Pravidla automatického přihlášení <a class="anchor" href="#pravidla-automatickeho-prihlaseni" aria-label="Odkaz na sekci">#</a></h2>
 <ul>
@@ -273,7 +274,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Když nehlídáš žádnou akci:</strong> sleduje novinky na webu školy každou hodinu.</li>
 <li><strong>Akce je za více než 14 dní:</strong> hlídá jednou za 10 minut.</li>
 <li><strong>Akce se blíží:</strong> hlídá přihlášení každou minutu, v noci mezi 21 a 6 h jednou za 5 minut.</li>
-<li><strong>Když tě SIS odhlásí:</strong> zkouší to každých 10 minut. Když se v Chromu přihlásíš sám, pozná to do pár sekund.</li>
+<li><strong>Když tě SIS odhlásí:</strong> zkouší to každých 10 minut. Když se do SISu v Chromu přihlásíš ručně, pozná to do pár sekund.</li>
 </ul>
 </main>
 </body>

@@ -1,6 +1,6 @@
 {
  "latest": "0.8.0",
- "newest": "0.8.0",
+ "newest": "0.8.1",
  "minVersion": "0.0.0",
  "ended": false,
  "message": "Hlídané akce se sdílí mezi tvými počítači a Šimpoliš pozná přihlášení i z přehledu studenta. Po aktualizaci znovu zvol hlídané akce a založ Trezor.",

@@ -148,7 +148,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <main>
 <header><img src="icon.png" alt=""><h1>Šimpoliš <small>(beta)</small></h1></header>
 <div class="lead">
-<p><a class="cta" href="simpolis-0.8.0.zip" download>Stáhnout Šimpoliše 0.8.0 (ZIP)</a></p>
+<p><a class="cta" href="simpolis-0.8.1.zip" download>Stáhnout Šimpoliše 0.8.1 (ZIP)</a></p>
 <p>Instalace je jednorázový úkol na pár minut.</p>
 </div>
 <p>Šimpoliš je šimpanz policajt 🐵👮, rozšíření pro Chrome na počítači (Mac i Windows). Funguje i v Edge a Brave. <strong>Na mobilu nefunguje.</strong></p>
@@ -190,7 +190,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Stará karta:</strong> kdyby v <code>chrome://extensions</code> zůstala druhá karta Šimpoliše s chybou, odeber ji.</li>
 </ul>
 <p><strong>Když neaktualizuješ,</strong> stará verze hlídá dál. Jen při vážné chybě nebo po konci projektu ji autor na dálku vypne: přestane hlídat a v okně šimpanze uvidíš červené upozornění s důvodem.</p>
-<p><strong>Kterou verzi máš,</strong> zjistíš v Nastavení v části Diagnostika.</p>
+<p><strong>Kterou verzi máš,</strong> vidíš v hlavičce okna Šimpoliše vedle (beta).</p>
 <h2 id="notifikace">Notifikace <a class="anchor" href="#notifikace" aria-label="Odkaz na sekci">#</a></h2>
 <p>Notifikace jsou nepovinné, ale doporučené. Šimpoliš funguje i bez nich:</p>
 <ul>
@@ -212,7 +212,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 </ol>
 <h2 id="vic-macu">Víc Maců <a class="anchor" href="#vic-macu" aria-label="Odkaz na sekci">#</a></h2>
 <p>Hlídané a skryté akce se sdílí mezi počítači, kde jsi v Chromu přihlášený stejným účtem Google a máš zapnutou synchronizaci. Trezor se nesdílí: na každém počítači ho založ zvlášť.</p>
-<p>Složku <code>Simpolis</code> můžeš dát do iCloud Drive. Nová verze, kterou do ní nahraješ, se pak dostane na všechny tvoje Macy.</p>
+<p>Složku <code>Simpolis</code> můžeš dát do iCloud Drive. Nová verze, kterou do ní nahraješ, se pak dostane na všechny tvoje Macy. Když máš v iCloudu zapnuté <strong>Plochu a Dokumenty</strong>, složka <code>Dokumenty/Simpolis</code> už v iCloud Drive je a krok 1 přeskoč.</p>
 <ol>
 <li><strong>Přesuň složku <code>Simpolis</code></strong> ve Finderu z Dokumentů do iCloud Drive.</li>
 <li><strong>Klikni na ni pravým tlačítkem</strong> a zvol <strong>Vždy ponechat na tomto Macu</strong>. Jinak by macOS soubory z disku uvolnil a Chrome by je nenašel.</li>
@@ -225,7 +225,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Počítač nespí.</strong> Když počítač uspíš, Šimpoliš usne taky.</li>
 <li><strong>Jsi v Chromu přihlášený do SIS</strong> nebo máš povolený Trezor (viz níže).</li>
 </ul>
-<p>Jak na tom Šimpoliš je, ověříš v okně šimpanze tlačítkem <strong>Ověřit přihlášení</strong>.</p>
+<p>Jak na tom Šimpoliš je, ověříš v okně šimpanze tlačítkem <strong>Ověřit přihlášení</strong>. U řádku bez zelené fajfky je odkaz, kde to spravíš: <strong>Přihlásit do SIS</strong>, <strong>Povolit</strong> Trezor, nebo <strong>Nastavení</strong>, kde Trezor založíš.</p>
 <h2 id="jak-hlidat-akci">Jak hlídat akci <a class="anchor" href="#jak-hlidat-akci" aria-label="Odkaz na sekci">#</a></h2>
 <ol>
 <li><strong>Klikni na šimpanze</strong> vpravo nahoře v liště Chromu. Otevře se okno Šimpoliše.</li>
@@ -235,7 +235,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 </ol>
 <figure><img src="navod/chrome-5-lista.svg" alt="Lišta Chromu: 1 je šimpanz vpravo od adresního řádku" loading="lazy"></figure>
 <figure><img src="navod/okno-hlidat.png" alt="Okno Šimpoliše: 2 je tlačítko Hlídat u akce, 3 je zelené Auto-přihlášení připravené u hlídané akce" loading="lazy"></figure>
-<p>Akce, na kterou jsi přihlášený, se přesune do sekce <strong>Přihlášeno</strong>. Šimpoliš to pozná i tehdy, když se přihlásíš ručně nebo z jiného počítače: podívá se do tvého <strong>Administrativního přehledu studenta</strong> v SIS. Odhlásit se z ní můžeš jen v SIS, odkaz <strong>Odhlásit se v SIS</strong> tě tam pošle. Šimpoliš to pozná a vrátí akci mezi hlídané s vypnutým auto-přihlášením, takže tě znovu nepřihlásí.</p>
+<p>Akce, na kterou jsi přihlášený, se přesune do sekce <strong>Přihlášeno</strong>. Šimpoliš to pozná i tehdy, když se přihlásíš ručně nebo z jiného počítače: podívá se do tvého <strong>Administrativního přehledu studenta</strong> v SIS. Odhlásit se z ní můžeš jen v SIS, odkaz <strong>Odhlásit se v SIS</strong> tě pošle rovnou do tvého přehledu. Šimpoliš to pozná a vrátí akci mezi hlídané s vypnutým auto-přihlášením, takže tě znovu nepřihlásí.</p>
 <p>Hlídání zrušíš tlačítkem <strong>Nehlídat</strong>, akce se vrátí do seznamu. Akci, kterou nechceš vůbec, schováš tlačítkem <strong>Akci vynechám</strong>. Když se spleteš, najdeš ji dole v sekci <strong>Skryté akce</strong> a vrátíš tlačítkem <strong>Vrátit</strong>.</p>
 <p><strong>Přidat do kalendáře</strong> najdeš u každé akce pod datem. Vybereš <strong>Akce</strong>, nebo <strong>Připomínka přihlášení</strong>. Připomínka je jen záznam v tvém kalendáři na chvíli, kdy se v SIS otevře přihlášení. <strong>Přihlásit se pak musíš v SIS ručně.</strong> Automaticky tě Šimpoliš zkusí přihlásit jen na akci, kterou hlídá s auto-přihlášením, a jen když poběží Chrome, počítač nebude spát a budeš mít povolený Trezor. Tlačítko <strong>Připomínka do kalendáře</strong> je i v notifikaci, která přijde, jakmile SIS čas otevření přihlášení ukáže.</p>
 <p>Akce ze SIS, které nejsou ve veřejném harmonogramu, jsou ve sbalené sekci <strong>Další akce v SIS</strong>. Často jde o povinné semináře a praktické aplikace.</p>
@@ -291,7 +291,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Když nehlídáš žádnou akci:</strong> sleduje novinky na webu školy každou hodinu.</li>
 <li><strong>Akce je za více než 14 dní:</strong> hlídá jednou za 10 minut.</li>
 <li><strong>Akce se blíží:</strong> hlídá přihlášení každou minutu, v noci mezi 21 a 6 h jednou za 5 minut.</li>
-<li><strong>Když tě SIS odhlásí:</strong> zkouší to každých 10 minut. Když se do SISu v Chromu přihlásíš ručně, pozná to do pár sekund.</li>
+<li><strong>Když tě SIS odhlásí:</strong> zkouší to každých 10 minut. Rychlejší je tlačítko <strong>Přihlásit do SIS</strong> v okně Šimpoliše: otevře SIS a jakmile se přihlásíš, Šimpoliš to do pár sekund ověří.</li>
 </ul>
 </main>
 </body>

@@ -141,6 +141,7 @@ th { font:700 15px/1.3 var(--display); text-transform:uppercase; letter-spacing:
 h2, h3 { scroll-margin-top: 16px; }
 h2 .anchor { font-size: .8em; color: var(--muted); text-decoration: none; opacity: 0; }
 h2:hover .anchor, h2 .anchor:focus { opacity: 1; }
+details summary { cursor:pointer; font-weight:650; margin:8px 0; }
 h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spacing:.06em; margin:22px 0 4px; color:var(--muted); }
 </style>
 </head>
@@ -173,6 +174,12 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <p><strong>Krok 8: klikni na špendlík u Šimpoliše.</strong> Šimpanz pak zůstane v liště po ruce.</p>
 <figure><img src="navod/chrome-4-pripnout.svg" alt="Lišta Chromu: 7 je dílek skládačky vpravo od adresního řádku, 8 je špendlík u Šimpoliše" loading="lazy"></figure>
 <p>Po instalaci se otevře Nastavení s krátkým úvodem.</p>
+<p><strong>Jak začít:</strong></p>
+<ol>
+<li><strong>Přihlas se do SIS</strong> v tomhle Chromu.</li>
+<li><strong>Klikni na šimpanze</strong> vpravo nahoře a u akce zvol <strong>Hlídat</strong>.</li>
+<li><strong>Nastav si notifikace</strong> podle části Notifikace níže, aby ti akce neutekla.</li>
+</ol>
 <h2 id="aktualizace">Aktualizace <a class="anchor" href="#aktualizace" aria-label="Odkaz na sekci">#</a></h2>
 <p><strong>Kdy aktualizovat, ti Šimpoliš řekne.</strong> Drobné úpravy vycházejí potichu. Upozorní jen na verzi, která za to stojí: v okně šimpanze se objeví modrý pruh a přijde notifikace.</p>
 <ol>
@@ -273,8 +280,10 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <ul>
 <li><strong>Založení:</strong> v Nastavení vyplň jméno a heslo do SIS a pak dvakrát nové hlavní heslo trezoru.</li>
 <li><strong>Po restartu Chromu</strong> je Trezor vypnutý. Povolíš ho hlavním heslem.</li>
-<li><strong>Když automatické přihlášení z trezoru selže</strong>, víckrát to nezkouší a toto přihlašování vypne. Přihlas se do SIS ručně, pak Trezor vypni a znovu povol.</li>
-<li><strong>Heslo do SIS je uložené zašifrované v prohlížeči</strong> a odchází jen přes HTTPS na přihlašovací stránku školy.</li>
+<li><strong>Když automatické přihlášení z trezoru selže</strong>, víckrát to nezkouší, aby ti nezablokoval účet, a toto přihlašování vypne. Přihlas se do SIS ručně, pak Trezor vypni a znovu povol.</li>
+<li><strong>Heslo do SIS je uložené zašifrované v prohlížeči.</strong> Klíč vzniká z hlavního hesla a na disk se neukládá.</li>
+<li><strong>Klíč povoleného Trezoru žije jen v paměti Chromu.</strong> Zavřením prohlížeče zmizí a Trezor se vypne.</li>
+<li><strong>Heslo odchází jen přes HTTPS na přihlašovací stránku školy.</strong> Kdyby formulář mířil jinam, Šimpoliš ho neodešle.</li>
 <li><strong>Smazání:</strong> v Nastavení v části Trezor klikni na <strong>Smazat trezor</strong> a potvrď <strong>Ano, smazat</strong>.</li>
 <li><strong>Hlavní heslo trezoru nejde obnovit.</strong> Když ho zapomeneš, trezor smaž a založ znovu. Do SIS se tím nic nemění.</li>
 <li><strong>Změnil jsi heslo do SIS?</strong> Trezor smaž a založ znovu.</li>
@@ -298,6 +307,8 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Akce se blíží:</strong> hlídá přihlášení každou minutu, v noci mezi 21 a 6 h jednou za 5 minut.</li>
 <li><strong>Když tě SIS odhlásí:</strong> zkouší to každých 10 minut. Rychlejší je tlačítko <strong>Přihlásit do SIS</strong> v okně Šimpoliše: otevře SIS a jakmile se přihlásíš, Šimpoliš to do pár sekund ověří.</li>
 </ul>
+<p><strong>Ranní zpráva:</strong> Šimpoliš ti každé ráno v 8:00 pošle notifikaci, že hlídá. Vypnout ji můžeš v Nastavení v části Kontroly.</p>
+<h2 id="novinky">Novinky</h2><h3>Verze 0.9.1</h3><ul><li>Ověřit přihlášení ukáže i to, že je počítač spárovaný. Výsledek je přehledně ve dvou sloupcích.</li><li>Šimpoliš na novém počítači nabídne spárování s tím, kde už ho máš.</li></ul><details><summary>Starší verze</summary><h3>Verze 0.9.0</h3><ul><li>Hlídané akce můžeš mít stejné na všech svých počítačích. Stačí je spárovat v části Víc počítačů.</li><li>Tlačítko Ověřit přihlášení svítí žlutě, dokud není všechno v pořádku.</li><li>Tady v Nastavení přibyl přehled novinek.</li></ul><h3>Verze 0.8.2</h3><ul><li>Šimpoliš pozná, že jsi na akci přihlášený, i když ses přihlásil ručně nebo z jiného počítače.</li><li>Odkaz Odhlásit se v SIS vede rovnou do tvého přehledu v SIS.</li><li>U výsledku Ověřit přihlášení je odkaz, kde co spravíš.</li><li>Po kliknutí na Přihlásit do SIS Šimpoliš hned pozná, že ses přihlásil.</li><li>V hlavičce okna vidíš, kterou verzi máš.</li></ul></details>
 </main>
 </body>
 </html>

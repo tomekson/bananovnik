@@ -148,7 +148,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <main>
 <header><img src="icon.png" alt=""><h1>Šimpoliš <small>(beta)</small></h1></header>
 <div class="lead">
-<p><a class="cta" href="simpolis-0.8.2.zip" download>Stáhnout Šimpoliše 0.8.2 (ZIP)</a></p>
+<p><a class="cta" href="simpolis-0.9.0.zip" download>Stáhnout Šimpoliše 0.9.0 (ZIP)</a></p>
 <p>Instalace je jednorázový úkol na pár minut.</p>
 </div>
 <p>Šimpoliš je šimpanz policajt 🐵👮, rozšíření pro Chrome na počítači (Mac i Windows). Funguje i v Edge a Brave. <strong>Na mobilu nefunguje.</strong></p>
@@ -156,13 +156,13 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Hlídá akce, které si vybereš.</strong> Jakmile je možné se přihlásit, dá ti vědět.</li>
 <li><strong>Umí tě na akci přihlásit automaticky.</strong> Potřebuje k tomu spuštěný Chrome, počítač, který nespí, a povolený Trezor. Auto-přihlášení zapne spolu s hlídáním, vypnout si ho můžeš.</li>
 <li><strong>Upozorní tě na nové akce</strong> a na čas, kdy se otevře přihlášení. Akce, které tě nezajímají, schováš jedním kliknutím.</li>
-<li><strong>Osobní data nesdílí.</strong> Heslo a přihlášení do SIS neopustí tvůj počítač. Hlídané akce si Chrome synchronizuje jen přes tvůj účet Google.</li>
+<li><strong>Osobní data nesdílí.</strong> Heslo a přihlášení do SIS neopustí tvůj počítač. Hlídané akce se přenesou jen na tvoje spárované počítače, a to zašifrované.</li>
 </ul>
 <h2 id="instalace">Instalace <a class="anchor" href="#instalace" aria-label="Odkaz na sekci">#</a></h2>
 <p>Šimpoliš není v Chrome Web Store, instaluje se ze ZIPu.</p>
 <p><strong>Krok 1: stáhni ZIP.</strong> Tlačítko <strong>Stáhnout Šimpoliše</strong> je nahoře na stránce s návodem. Soubor se uloží do složky <strong>Stažené soubory</strong>.</p>
 <p><strong>Krok 2: rozbal ho.</strong> Na Macu na stažený soubor dvakrát klikni. Ve Windows na něj klikni pravým tlačítkem a zvol <strong>Extrahovat vše</strong>, pak <strong>Extrahovat</strong>.</p>
-<p><strong>Krok 3: přesuň rozbalenou složku <code>Simpolis</code> do Dokumentů.</strong> Chrome si Šimpoliše načítá odtud, takže ji nepřejmenovávej ani nemaž. Přesun do iCloud Drive popisuje část Víc Maců.</p>
+<p><strong>Krok 3: přesuň rozbalenou složku <code>Simpolis</code> do Dokumentů.</strong> Chrome si Šimpoliše načítá odtud, takže ji nepřejmenovávej ani nemaž. Přesun do iCloud Drive popisuje část Víc počítačů.</p>
 <p><strong>Krok 4: otevři v Chromu stránku Rozšíření.</strong> Napiš do adresního řádku <code>chrome://extensions</code> a stiskni Enter.</p>
 <p><strong>Krok 5: zapni Režim pro vývojáře.</strong> Přepínač je vpravo nahoře.</p>
 <p><strong>Krok 6: klikni na Načíst rozbalené</strong> a vyber složku <code>Simpolis</code> v Dokumentech.</p>
@@ -210,9 +210,14 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Zapni</strong> oznámení pro <strong>Google Chrome</strong>.</li>
 <li><strong>Vypni</strong> režim <strong>Nerušit</strong>, nebo do výjimek přidej Google Chrome.</li>
 </ol>
-<h2 id="vic-macu">Víc Maců <a class="anchor" href="#vic-macu" aria-label="Odkaz na sekci">#</a></h2>
-<p>Hlídané a skryté akce se sdílí mezi počítači, kde jsi v Chromu přihlášený stejným účtem Google a máš zapnutou synchronizaci. Trezor se nesdílí: na každém počítači ho založ zvlášť.</p>
-<p>Složku <code>Simpolis</code> můžeš dát do iCloud Drive. Nová verze, kterou do ní nahraješ, se pak dostane na všechny tvoje Macy. Když máš v iCloudu zapnuté <strong>Plochu a Dokumenty</strong>, složka <code>Dokumenty/Simpolis</code> už v iCloud Drive je a krok 1 přeskoč.</p>
+<h2 id="vic-pocitacu">Víc počítačů <a class="anchor" href="#vic-pocitacu" aria-label="Odkaz na sekci">#</a></h2>
+<p><strong>Hlídané a skryté akce můžeš mít stejné na všech svých počítačích.</strong> Stačí je jednou spárovat:</p>
+<ol>
+<li><strong>Na prvním počítači</strong> otevři Nastavení Šimpoliše a v části <strong>Víc počítačů</strong> klikni na <strong>Spárovat můj další počítač</strong>. Šimpoliš ukáže kód.</li>
+<li><strong>Na druhém počítači</strong> otevři Nastavení Šimpoliše a kód vlož do pole <strong>Mám kód z jiného počítače</strong>, pak klikni na <strong>Spárovat</strong>.</li>
+</ol>
+<p>Změny se pak přenesou do 5 minut. Trezor se nepřenáší, na každém počítači ho založ zvlášť.</p>
+<p><strong>Složka v iCloud Drive (jen Mac).</strong> Složku <code>Simpolis</code> můžeš dát do iCloud Drive. Nová verze, kterou do ní nahraješ, se pak dostane na všechny tvoje Macy. Když máš v iCloudu zapnuté <strong>Plochu a Dokumenty</strong>, složka <code>Dokumenty/Simpolis</code> už v iCloud Drive je a krok 1 přeskoč.</p>
 <ol>
 <li><strong>Přesuň složku <code>Simpolis</code></strong> ve Finderu z Dokumentů do iCloud Drive.</li>
 <li><strong>Klikni na ni pravým tlačítkem</strong> a zvol <strong>Vždy ponechat na tomto Macu</strong>. Jinak by macOS soubory z disku uvolnil a Chrome by je nenašel.</li>
@@ -281,7 +286,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Co nikdy neodchází:</strong> tvoje jméno, heslo, studijní číslo, trezor, akce, na které jsi přihlášený, ani akce, které hlídáš nebo které tě nezajímají.</li>
 <li><strong>Kam:</strong> do skriptu Google Apps Script na účtu autora Šimpoliše. Ten seznam uloží na Google Disk autora a zveřejní ho jako <a href="https://tomekson.github.io/simpolis-data/katalog.json" target="_blank" rel="noopener">veřejný katalog akcí</a>. Seznam od ostatních si Šimpoliš stahuje ze stejného skriptu.</li>
 <li><strong>Bez identifikace:</strong> Šimpoliš k seznamu nepřikládá tvůj Google účet ani přihlášení do SIS. Google jako provozovatel skriptu vidí jen tvou IP adresu, stejně jako u každé webové stránky.</li>
-<li><strong>Synchronizace mezi tvými počítači:</strong> hlídané a skryté akce a volbu ranní zprávy si Chrome ukládá do tvého účtu Google, když máš zapnutou synchronizaci. Autor Šimpoliše ani ostatní je nevidí. Heslo do SIS ani Trezor se nesynchronizují.</li>
+<li><strong>Spárované počítače:</strong> když počítače spáruješ, hlídané a skryté akce a volba ranní zprávy jdou zašifrované klíčem z párovacího kódu do stejného skriptu. Skript ani autor Šimpoliše je bez kódu nepřečtou. Heslo do SIS ani Trezor se nepřenáší.</li>
 <li><strong>Kontrola nové verze:</strong> jednou za 6 hodin si Šimpoliš stáhne z webu návodu malý soubor s číslem nejnovější verze. Nic přitom neodesílá.</li>
 <li><strong>Žádná statistika.</strong> Šimpoliš nesleduje, jak ho používáš.</li>
 </ul>

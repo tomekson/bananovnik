@@ -1,8 +1,8 @@
 {
- "latest": "0.8.0",
- "newest": "0.8.2",
+ "latest": "0.9.0",
+ "newest": "0.9.0",
  "minVersion": "0.0.0",
  "ended": false,
- "message": "Hlídané akce se sdílí mezi tvými počítači a Šimpoliš pozná přihlášení i z přehledu studenta. Po aktualizaci znovu zvol hlídané akce a založ Trezor.",
+ "message": "Hlídané akce můžeš mít stejné na všech svých počítačích: v Nastavení je nová část Víc počítačů. Přibyl i přehled novinek.",
  "url": "https://tomekson.github.io/bananovnik/simpolis/"
 }

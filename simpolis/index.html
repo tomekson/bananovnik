@@ -148,7 +148,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <main>
 <header><img src="icon.png" alt=""><h1>Šimpoliš <small>(beta)</small></h1></header>
 <div class="lead">
-<p><a class="cta" href="simpolis-0.7.0.zip" download>Stáhnout Šimpoliše 0.7.0 (ZIP)</a></p>
+<p><a class="cta" href="simpolis-0.8.0.zip" download>Stáhnout Šimpoliše 0.8.0 (ZIP)</a></p>
 <p>Instalace je jednorázový úkol na pár minut.</p>
 </div>
 <p>Šimpoliš je šimpanz policajt 🐵👮, rozšíření pro Chrome na počítači (Mac i Windows). Funguje i v Edge a Brave. <strong>Na mobilu nefunguje.</strong></p>
@@ -156,13 +156,13 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Hlídá akce, které si vybereš.</strong> Jakmile je možné se přihlásit, dá ti vědět.</li>
 <li><strong>Umí tě na akci přihlásit automaticky.</strong> Potřebuje k tomu spuštěný Chrome, počítač, který nespí, a povolený Trezor. Auto-přihlášení zapne spolu s hlídáním, vypnout si ho můžeš.</li>
 <li><strong>Upozorní tě na nové akce</strong> a na čas, kdy se otevře přihlášení. Akce, které tě nezajímají, schováš jedním kliknutím.</li>
-<li><strong>Osobní data nesdílí.</strong> Heslo, přihlášení do SIS ani tvoje akce neopustí tvůj prohlížeč.</li>
+<li><strong>Osobní data nesdílí.</strong> Heslo a přihlášení do SIS neopustí tvůj počítač. Hlídané akce si Chrome synchronizuje jen přes tvůj účet Google.</li>
 </ul>
 <h2 id="instalace">Instalace <a class="anchor" href="#instalace" aria-label="Odkaz na sekci">#</a></h2>
 <p>Šimpoliš není v Chrome Web Store, instaluje se ze ZIPu.</p>
 <p><strong>Krok 1: stáhni ZIP.</strong> Tlačítko <strong>Stáhnout Šimpoliše</strong> je nahoře na stránce s návodem. Soubor se uloží do složky <strong>Stažené soubory</strong>.</p>
 <p><strong>Krok 2: rozbal ho.</strong> Na Macu na stažený soubor dvakrát klikni. Ve Windows na něj klikni pravým tlačítkem a zvol <strong>Extrahovat vše</strong>, pak <strong>Extrahovat</strong>.</p>
-<p><strong>Krok 3: přesuň rozbalenou složku <code>Simpolis</code> do Dokumentů.</strong> Chrome si Šimpoliše načítá odtud, takže ji pak nepřesouvej, nepřejmenovávej ani nemaž.</p>
+<p><strong>Krok 3: přesuň rozbalenou složku <code>Simpolis</code> do Dokumentů.</strong> Chrome si Šimpoliše načítá odtud, takže ji nepřejmenovávej ani nemaž. Přesun do iCloud Drive popisuje část Víc Maců.</p>
 <p><strong>Krok 4: otevři v Chromu stránku Rozšíření.</strong> Napiš do adresního řádku <code>chrome://extensions</code> a stiskni Enter.</p>
 <p><strong>Krok 5: zapni Režim pro vývojáře.</strong> Přepínač je vpravo nahoře.</p>
 <p><strong>Krok 6: klikni na Načíst rozbalené</strong> a vyber složku <code>Simpolis</code> v Dokumentech.</p>
@@ -182,6 +182,13 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Povol Trezor</strong>, pokud ho používáš. Po aktualizaci je vypnutý.</li>
 </ol>
 <p><strong>Hlídané akce i Trezor zůstanou.</strong> Rozšíření kvůli aktualizaci neodebírej, to by smazalo všechno.</p>
+<p><strong>Výjimka: přechod na verzi 0.8.0.</strong> Šimpoliš od ní má na všech počítačích stejné ID. Chrome ho proto jednou načte jako nové rozšíření a předchozí nastavení zmizí:</p>
+<ul>
+<li><strong>Hlídané akce</strong> zvol znovu tlačítkem <strong>Hlídat</strong>, u každé zkontroluj auto-přihlášení.</li>
+<li><strong>Skryté akce</strong> znovu schovej tlačítkem <strong>Akci vynechám</strong>.</li>
+<li><strong>Trezor</strong> založ znovu v Nastavení. Heslo do SIS i hlavní heslo zadáš jako poprvé.</li>
+<li><strong>Stará karta:</strong> kdyby v <code>chrome://extensions</code> zůstala druhá karta Šimpoliše s chybou, odeber ji.</li>
+</ul>
 <p><strong>Když neaktualizuješ,</strong> stará verze hlídá dál. Jen při vážné chybě nebo po konci projektu ji autor na dálku vypne: přestane hlídat a v okně šimpanze uvidíš červené upozornění s důvodem.</p>
 <p><strong>Kterou verzi máš,</strong> zjistíš v Nastavení v části Diagnostika.</p>
 <h2 id="notifikace">Notifikace <a class="anchor" href="#notifikace" aria-label="Odkaz na sekci">#</a></h2>
@@ -203,6 +210,15 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Zapni</strong> oznámení pro <strong>Google Chrome</strong>.</li>
 <li><strong>Vypni</strong> režim <strong>Nerušit</strong>, nebo do výjimek přidej Google Chrome.</li>
 </ol>
+<h2 id="vic-macu">Víc Maců <a class="anchor" href="#vic-macu" aria-label="Odkaz na sekci">#</a></h2>
+<p>Hlídané a skryté akce se sdílí mezi počítači, kde jsi v Chromu přihlášený stejným účtem Google a máš zapnutou synchronizaci. Trezor se nesdílí: na každém počítači ho založ zvlášť.</p>
+<p>Složku <code>Simpolis</code> můžeš dát do iCloud Drive. Nová verze, kterou do ní nahraješ, se pak dostane na všechny tvoje Macy.</p>
+<ol>
+<li><strong>Přesuň složku <code>Simpolis</code></strong> ve Finderu z Dokumentů do iCloud Drive.</li>
+<li><strong>Klikni na ni pravým tlačítkem</strong> a zvol <strong>Vždy ponechat na tomto Macu</strong>. Jinak by macOS soubory z disku uvolnil a Chrome by je nenašel.</li>
+<li><strong>Otevři <code>chrome://extensions</code>, klikni na Načíst rozbalené</strong> a vyber složku <code>Simpolis</code> v iCloud Drive. Šimpoliš je pořád stejný, nastavení i Trezor mu zůstanou.</li>
+</ol>
+<p>Na dalším Macu počkej, až se složka v iCloud Drive objeví, udělej krok 2 a pak krok 4 až 8 z instalace se složkou v iCloud Drive.</p>
 <h2 id="co-musi-platit-aby-hlidal">Co musí platit, aby hlídal <a class="anchor" href="#co-musi-platit-aby-hlidal" aria-label="Odkaz na sekci">#</a></h2>
 <ul>
 <li><strong>Chrome běží.</strong></li>
@@ -219,7 +235,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 </ol>
 <figure><img src="navod/chrome-5-lista.svg" alt="Lišta Chromu: 1 je šimpanz vpravo od adresního řádku" loading="lazy"></figure>
 <figure><img src="navod/okno-hlidat.png" alt="Okno Šimpoliše: 2 je tlačítko Hlídat u akce, 3 je zelené Auto-přihlášení připravené u hlídané akce" loading="lazy"></figure>
-<p>Akce, na kterou jsi přihlášený, se přesune do sekce <strong>Přihlášeno</strong>. Odhlásit se z ní můžeš jen v SIS, odkaz <strong>Odhlásit se v SIS</strong> tě tam pošle. Šimpoliš to pozná a vrátí akci mezi hlídané s vypnutým auto-přihlášením, takže tě znovu nepřihlásí.</p>
+<p>Akce, na kterou jsi přihlášený, se přesune do sekce <strong>Přihlášeno</strong>. Šimpoliš to pozná i tehdy, když se přihlásíš ručně nebo z jiného počítače: podívá se do tvého <strong>Administrativního přehledu studenta</strong> v SIS. Odhlásit se z ní můžeš jen v SIS, odkaz <strong>Odhlásit se v SIS</strong> tě tam pošle. Šimpoliš to pozná a vrátí akci mezi hlídané s vypnutým auto-přihlášením, takže tě znovu nepřihlásí.</p>
 <p>Hlídání zrušíš tlačítkem <strong>Nehlídat</strong>, akce se vrátí do seznamu. Akci, kterou nechceš vůbec, schováš tlačítkem <strong>Akci vynechám</strong>. Když se spleteš, najdeš ji dole v sekci <strong>Skryté akce</strong> a vrátíš tlačítkem <strong>Vrátit</strong>.</p>
 <p><strong>Přidat do kalendáře</strong> najdeš u každé akce pod datem. Vybereš <strong>Akce</strong>, nebo <strong>Připomínka přihlášení</strong>. Připomínka je jen záznam v tvém kalendáři na chvíli, kdy se v SIS otevře přihlášení. <strong>Přihlásit se pak musíš v SIS ručně.</strong> Automaticky tě Šimpoliš zkusí přihlásit jen na akci, kterou hlídá s auto-přihlášením, a jen když poběží Chrome, počítač nebude spát a budeš mít povolený Trezor. Tlačítko <strong>Připomínka do kalendáře</strong> je i v notifikaci, která přijde, jakmile SIS čas otevření přihlášení ukáže.</p>
 <p>Akce ze SIS, které nejsou ve veřejném harmonogramu, jsou ve sbalené sekci <strong>Další akce v SIS</strong>. Často jde o povinné semináře a praktické aplikace.</p>
@@ -265,6 +281,7 @@ h3.os { font:700 17px/1.2 var(--display); text-transform:uppercase; letter-spaci
 <li><strong>Co nikdy neodchází:</strong> tvoje jméno, heslo, studijní číslo, trezor, akce, na které jsi přihlášený, ani akce, které hlídáš nebo které tě nezajímají.</li>
 <li><strong>Kam:</strong> do skriptu Google Apps Script na účtu autora Šimpoliše. Ten seznam uloží na Google Disk autora a zveřejní ho jako <a href="https://tomekson.github.io/simpolis-data/katalog.json" target="_blank" rel="noopener">veřejný katalog akcí</a>. Seznam od ostatních si Šimpoliš stahuje ze stejného skriptu.</li>
 <li><strong>Bez identifikace:</strong> Šimpoliš k seznamu nepřikládá tvůj Google účet ani přihlášení do SIS. Google jako provozovatel skriptu vidí jen tvou IP adresu, stejně jako u každé webové stránky.</li>
+<li><strong>Synchronizace mezi tvými počítači:</strong> hlídané a skryté akce a volbu ranní zprávy si Chrome ukládá do tvého účtu Google, když máš zapnutou synchronizaci. Autor Šimpoliše ani ostatní je nevidí. Heslo do SIS ani Trezor se nesynchronizují.</li>
 <li><strong>Kontrola nové verze:</strong> jednou za 6 hodin si Šimpoliš stáhne z webu návodu malý soubor s číslem nejnovější verze. Nic přitom neodesílá.</li>
 <li><strong>Žádná statistika.</strong> Šimpoliš nesleduje, jak ho používáš.</li>
 </ul>

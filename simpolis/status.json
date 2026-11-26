@@ -1,8 +1,8 @@
 {
- "latest": "0.7.0",
- "newest": "0.7.0",
+ "latest": "0.8.0",
+ "newest": "0.8.0",
  "minVersion": "0.0.0",
  "ended": false,
- "message": "Upozorní, kdy se otevře přihlášení, a nabídne připomínku do kalendáře.",
+ "message": "Hlídané akce se sdílí mezi tvými počítači a Šimpoliš pozná přihlášení i z přehledu studenta. Po aktualizaci znovu zvol hlídané akce a založ Trezor.",
  "url": "https://tomekson.github.io/bananovnik/simpolis/"
 }
